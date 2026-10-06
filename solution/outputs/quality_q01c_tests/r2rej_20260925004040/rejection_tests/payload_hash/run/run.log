@@ -1,0 +1,25 @@
+[2026-09-25T00:40:41.123+08:00] TASK-Q01C start run_id=base_run mode=fixture resume=False stage=all pid=31236
+[2026-09-25T00:40:41.255+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-25T00:40:41.258+08:00] stage=s00_preflight done elapsed_s=0.13
+[2026-09-25T00:40:41.356+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-25T00:40:41.356+08:00] stage=s01_synthetic_tests done elapsed_s=0.096
+[2026-09-25T00:40:41.488+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.1
+[2026-09-25T00:40:41.490+08:00] stage=s10_scan_a1 done elapsed_s=0.132
+[2026-09-25T00:40:41.539+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.0
+[2026-09-25T00:40:41.541+08:00] stage=s11_scan_a2 done elapsed_s=0.049
+[2026-09-25T00:40:41.578+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-25T00:40:41.580+08:00] stage=s12_scan_a3 done elapsed_s=0.037
+[2026-09-25T00:40:41.632+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-25T00:40:41.680+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-25T00:40:41.680+08:00] stage=s20_score_primary done elapsed_s=0.098
+[2026-09-25T00:40:41.725+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-25T00:40:41.725+08:00] stage=s30_sensitivity done elapsed_s=0.044
+[2026-09-25T00:40:41.725+08:00] HOOK hold-after-stage=s30_sensitivity: waiting for external interruption pid=31236
+[2026-09-25T00:40:42.657+08:00] TASK-Q01C start run_id=run mode=fixture resume=True stage=all pid=13116
+[2026-09-25T00:40:42.663+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:42.666+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:42.673+08:00] stage=s10_scan_a1 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.680+08:00] stage=s11_scan_a2 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.686+08:00] stage=s12_scan_a3 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.695+08:00] stage=s20_score_primary REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.701+08:00] ERROR stage_failure: stage s30_sensitivity reuse validation returned INVALID: validation failed: payload_sha256 (failed checks: ['payload_sha256']); hard stop - no recomputation, downgrade or marker rewrite

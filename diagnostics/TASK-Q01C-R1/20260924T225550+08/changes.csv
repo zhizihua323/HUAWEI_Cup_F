@@ -1,0 +1,10 @@
+﻿file,change_type,before_sha256,after_sha256,reason,detail
+solution/src/quality_q01c.py,modified,e4024c32315d42c235e2086267062703b0b89489788dd504295c39b97548ffad,9a9c760ebe6acc25403455ca445ba5a8e0b321cfc15c66b2d7ba9c92e2ac0d0e,Q01C-R1 recovery/log repair,"CLI --resume/--stage/--probe-resume contract, v2 checkpoint protocol, scan counters, fixture mode, stage/terminal logging, resume evidence"
+solution/src/quality_q01c_selftest.py,modified,b1c995f0048e193117a8a4e6e3bd1b17396cf8205df43e720649e063322c4b30,f70c7e44536da73f1cdf34b5a11cebbf95d8d888e400e51131b2d003a0bd2e33,Q01C-R1 recovery/log repair,added extension-role imputation isolation test
+solution/src/quality_q01c_verify.py,modified,b4d06a90388f06f6a217d11ab10ca3c7334df6262697cbc29759cbd6b83ee67c,b8d782970a38bb880befd57b453608bd3a405e94f396737603be466f379bad7f,Q01C-R1 recovery/log repair,added fixture-mode verification path (real-data path untouched)
+solution/tests/test_quality_q01c.py,unchanged,fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f,fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f,no change needed,
+solution/tests/q01c_r1_fixture.py,new_file,,2615cb1fedc459c8a3a2b601b218ea677563e7b26534449820288eae07bf49e3,Q01C-R1 recovery/log repair,new synthetic fixture generator
+solution/tests/q01c_r1_two_process.py,new_file,,1382487642d0d81f4424f4493b79bae6af84138fc7dbb2aec5cd9d058c8a0f8b,Q01C-R1 recovery/log repair,new cross-process interruption/resume supervisor
+solution/tests/q01c_r1_extension_isolation.py,new_file,,2d62755362f6f6d987abeb6b4e819d31e07206147063c794e621f4e5025dda91,Q01C-R1 recovery/log repair,new extension isolation test runner
+solution/tests/q01c_r1_verify.py,new_file,,0e4d9b0e95c188e70d1bfc3f859e15c0ea7ed475ea87959f7de6edb55e9fc402,Q01C-R1 recovery/log repair,new independent R1 verifier
+solution/tests/q01c_r1_finalize.py,new_file,,836dd06a82e22971ca372ac30642305f6f1b3ab40131916bdb0626842ef054eb,Q01C-R1 recovery/log repair,new R1 finalizer

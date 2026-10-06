@@ -1,0 +1,9 @@
+{
+  "stage": "audit_and_first_baselines",
+  "seed": 20260924,
+  "raw_data_policy": "read_only",
+  "validation_policy": "select_using_training_only; report_provided_test_sets_without_tuning",
+  "quality_scale_policy": "do_not_assume_A_quality_equals_B_Q_score",
+  "model_claim_policy": "distinguish_observed_semisynthetic_interpolated_estimated",
+  "forecast_policy": "anchor_to_verified_data_cutoff; no_forecast_without_validated_bridge"
+}

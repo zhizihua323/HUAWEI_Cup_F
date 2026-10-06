@@ -1,0 +1,176 @@
+{
+  "pid": 13192,
+  "command": [
+    "D:\\anaconda\\python.exe",
+    "-X",
+    "utf8",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "midstage_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003837\\midstage_interruption",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003837\\synthetic_fixture",
+    "--hold-after-stage",
+    "s30_sensitivity"
+  ],
+  "started_local": "2026-09-25T00:38:38+08:00",
+  "terminated_local": "2026-09-25T00:38:39+08:00",
+  "exit_code": 1,
+  "termination_mechanism": "supervisor SIGTERM after the S30 checkpoint marker",
+  "hold_hook_seen": true,
+  "last_valid_checkpoint_stage": "s30_sensitivity",
+  "checkpoint_hashes_at_termination": {
+    "s10_scan_a1": {
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "fa6e54d249ea692cbce27bd61d5dff516b26a417a09bed69ccdacc33e49cd107",
+      "checkpoint_marker": "9edf7c2c6f5f5fce4a44eafb9d45ab651afba1ae21d374f943a79c7d539c9b6f",
+      "stage_marker": "3aa92ff20b6fdc44405fce98e09b49050e1f08eda1765b4e0aebd4275d2dee0c"
+    },
+    "s11_scan_a2": {
+      "payload": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+      "meta": "35b9634e5f197e15a257f4669b13aec4e46c245659355e4c69361ad213fd4bde",
+      "checkpoint_marker": "07413002e9b15d9c5a5e68208339c3c0f34002e52c4e722932a5d43c7843dc81",
+      "stage_marker": "5c2b31d7f7c352b01d964515a858ab2110b8a6bafa81c3dc884e3aa05ce4fc04"
+    },
+    "s12_scan_a3": {
+      "payload": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+      "meta": "50b73403e0a0bafa2d4d92f8b21a57c8ff94373a5d70ca5c4d9f65d576ddc442",
+      "checkpoint_marker": "abb7289aae253e6d72471fdeb8758ef23c3d22e16b15bf2fea24c3c911ac1109",
+      "stage_marker": "8432cf655bd5b3664116707085e490921ebf6b53715e83bb1c1441519b2a9150"
+    },
+    "s20_score_primary": {
+      "payload": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+      "meta": "db82d952f3d2c1e3718fc10142bea18216bcf870a8118935c0b38008f98c27ff",
+      "checkpoint_marker": "bdf168a7b4523109af512db1c3e597db7db90f059fd4de1e9160a0429a2043df",
+      "stage_marker": "381abed7122a7be6f9295858862101934adf39a6f483facc544a326d48e87b2d"
+    },
+    "s30_sensitivity": {
+      "payload": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f",
+      "meta": "48d786940906920f3def40f9ebffd8bb99f304364c774674ed025342a2b08da7",
+      "checkpoint_marker": "f9fa1c83f044b1db362ca473b0edb6b3a6a5921bff140756f18a0fff690e8916",
+      "stage_marker": "ccf6824b8dbb275ce8393e8e9a119eab662ab5de8cfce262aa2f8c313d92b16a"
+    }
+  },
+  "stage_compute_counters_at_termination": {
+    "protocol_version": 3,
+    "stages": {
+      "s00_preflight": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:38+08:00"
+      },
+      "s01_synthetic_tests": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:38+08:00"
+      },
+      "s10_scan_a1": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:39+08:00"
+      },
+      "s11_scan_a2": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:39+08:00"
+      },
+      "s12_scan_a3": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:39+08:00"
+      },
+      "s20_score_primary": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:39+08:00"
+      },
+      "s30_sensitivity": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 13192,
+        "last_compute_finished": "2026-09-25T00:38:39+08:00"
+      }
+    },
+    "validation_schema_version": 3,
+    "stage_decisions": [
+      {
+        "stage": "s00_preflight",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:38+08:00"
+      },
+      {
+        "stage": "s01_synthetic_tests",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:38+08:00"
+      },
+      {
+        "stage": "s10_scan_a1",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:39+08:00"
+      },
+      {
+        "stage": "s11_scan_a2",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:39+08:00"
+      },
+      {
+        "stage": "s12_scan_a3",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:39+08:00"
+      },
+      {
+        "stage": "s20_score_primary",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:39+08:00"
+      },
+      {
+        "stage": "s30_sensitivity",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 13192,
+        "decided_local": "2026-09-25T00:38:39+08:00"
+      }
+    ]
+  },
+  "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003837\\midstage_interruption\\midstage_run"
+}

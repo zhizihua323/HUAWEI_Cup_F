@@ -1,0 +1,27 @@
+﻿domain,feature,a1_n_total,a1_n_effective,extension_new_n_total,extension_new_n_effective,a1_mean,extension_new_mean,standardized_mean_difference,note
+arxiv,fineweb_edu,1419,1419,16104,16104,2.1768456375340577,2.1457462465248067,-0.049988141156430625,descriptive; both sides use their own effective finite n
+arxiv,ad_en,1419,1419,16104,16104,1.0,0.9990064580228515,-0.04459888080512827,descriptive; both sides use their own effective finite n
+arxiv,fluency_en,1419,1419,16104,16104,0.9936575052854123,0.9918032786885246,-0.02182817942409453,descriptive; both sides use their own effective finite n
+arxiv,qurater_writing_style,1419,1419,16104,16104,2.732912605291021,2.7439185148868406,0.007273749274272616,descriptive; both sides use their own effective finite n
+arxiv,qurater_required_expertise,1419,1419,16104,16104,7.470326693147064,7.464788209130618,-0.0034287584867285143,descriptive; both sides use their own effective finite n
+arxiv,qurater_facts_trivia,1419,1419,16104,16104,1.9511351758867523,1.92857056314295,-0.013509859183529004,descriptive; both sides use their own effective finite n
+arxiv,qurater_educational_value,1419,1419,16104,16104,5.802396294430497,5.843621941182486,0.023317274538745554,descriptive; both sides use their own effective finite n
+arxiv,modernbert_professionalism,1419,1419,16104,16104,4.99154334038055,4.987518628912071,-0.02212375632784952,descriptive; both sides use their own effective finite n
+arxiv,modernbert_readability,1419,1419,16104,16104,4.9048625792811835,4.906482861400894,0.00458705998783898,descriptive; both sides use their own effective finite n
+arxiv,modernbert_reasoning,1419,1419,16104,16104,4.980972515856236,4.967896174863388,-0.03881998696038883,descriptive; both sides use their own effective finite n
+arxiv,modernbert_cleanliness,1419,1419,16104,16104,4.984496124031008,4.977086438152012,-0.02980135075875538,descriptive; both sides use their own effective finite n
+arxiv,Q_baseline,1419,1419,16104,16104,0.8597741201057382,0.8582244882700206,-0.023794422562477532,descriptive; both sides use their own effective finite n
+arxiv,Q_sensitivity_calibration_domain_median,1419,1419,16104,16104,0.8597741201057382,0.8582244882700206,-0.023794422562477532,descriptive; both sides use their own effective finite n
+github,fineweb_edu,10000,10000,193752,193752,1.1413132082864643,1.1425267518377835,0.0026352427216877767,descriptive; both sides use their own effective finite n
+github,ad_en,10000,10000,193752,193752,0.9971,0.9968722903505512,-0.0041540971173956096,descriptive; both sides use their own effective finite n
+github,fluency_en,10000,10000,193752,193752,0.559,0.5581413353152483,-0.0017292353577676482,descriptive; both sides use their own effective finite n
+github,qurater_writing_style,10000,10000,193752,193752,-2.9522187527656554,-2.952123562964978,8.598925179995669e-05,descriptive; both sides use their own effective finite n
+github,qurater_required_expertise,10000,10000,193752,193752,1.9028215609550476,1.9062308817477387,0.0016594401569995736,descriptive; both sides use their own effective finite n
+github,qurater_facts_trivia,10000,10000,193752,193752,-1.8748244435310364,-1.879284833653001,-0.00375064359874178,descriptive; both sides use their own effective finite n
+github,qurater_educational_value,10000,10000,193752,193752,0.28359016246795654,0.28472019208775046,0.0005705430305732492,descriptive; both sides use their own effective finite n
+github,modernbert_professionalism,10000,10000,193752,193751,4.2817,4.275466965331792,-0.006686708186688874,descriptive; both sides use their own effective finite n
+github,modernbert_readability,10000,10000,193752,193752,2.8803,2.8811676782691276,0.0006161777785592328,descriptive; both sides use their own effective finite n
+github,modernbert_reasoning,10000,10000,193752,193752,1.1369,1.1396682356827283,0.0023587755940550096,descriptive; both sides use their own effective finite n
+github,modernbert_cleanliness,10000,10000,193752,193752,2.0325,2.0250216771955905,-0.0073960437517052325,descriptive; both sides use their own effective finite n
+github,Q_baseline,10000,10000,193752,193751,0.4594864291196765,0.4592837211660072,-0.0018758189029989625,descriptive; both sides use their own effective finite n
+github,Q_sensitivity_calibration_domain_median,10000,10000,193752,193752,0.4594864291196765,0.45928271069642884,-0.0018851640450576026,descriptive; both sides use their own effective finite n

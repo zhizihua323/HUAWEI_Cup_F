@@ -1,0 +1,4 @@
+[2026-09-25T00:40:43.855+08:00] TASK-Q01C start run_id=run mode=fixture resume=True stage=all pid=12912
+[2026-09-25T00:40:43.861+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:43.864+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:43.869+08:00] ERROR stage_failure: stage s10_scan_a1 reuse validation returned INVALID: validation failed: config_sha256 (failed checks: ['config_sha256']); hard stop - no recomputation, downgrade or marker rewrite

@@ -1,0 +1,476 @@
+{
+  "task": "TASK-T03E",
+  "run_id": "t03e_complete_run",
+  "generated_local": "2026-09-25T01:59:27+08:00",
+  "pid": 15440,
+  "stage": "phase_b_frozen_validation",
+  "counts": {
+    "PASS": 21,
+    "NOT_CHECKED": 2
+  },
+  "checks": [
+    {
+      "id": "EX-01",
+      "name": "official Q01C input path/size/SHA256 matches its output_manifest",
+      "status": "PASS",
+      "evidence": {
+        "checks": [
+          {
+            "note": "synthetic",
+            "path": "x",
+            "bytes": 10,
+            "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "manifest_bytes": 10,
+            "manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "matches_manifest": true,
+            "checked_local": "t",
+            "pid": 1
+          }
+        ],
+        "expected_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "note": "hash verified before PHASE A, at PHASE B start and at PHASE B end",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-02",
+      "name": "preflight analysis layer only received A1_calibration rows",
+      "status": "PASS",
+      "evidence": {
+        "roles_visible": [
+          "A1_calibration"
+        ],
+        "calibration_rows": 5,
+        "unique_first": 5
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-03",
+      "name": "four preregistered design labels match calibration exactly (character-exact)",
+      "status": "NOT_CHECKED",
+      "evidence": {
+        "design_labels": [
+          "book",
+          "c4",
+          "commoncrawl",
+          "wikipedia"
+        ],
+        "calibration_labels": [
+          "book",
+          "c4",
+          "github"
+        ],
+        "absent_design_labels": [
+          "commoncrawl"
+        ],
+        "matching_rule": "exact string equality only; no fuzzy/alias/merge/fallback"
+      },
+      "note": "DESIGN_LABEL_ABSENT is recorded when a design label does not occur",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-04",
+      "name": "active correction domains frozen from calibration eligibility",
+      "status": "PASS",
+      "evidence": {
+        "active_domains": [
+          "c4"
+        ],
+        "domain_status": {
+          "book": "INSUFFICIENT_CALIBRATION",
+          "c4": "ACTIVE",
+          "commoncrawl": "DESIGN_LABEL_ABSENT",
+          "wikipedia": "ACTIVE"
+        },
+        "min_valid_n": 1000,
+        "quantile_requirement": "q0.99 > q0.95 for both indicators"
+      },
+      "note": "domains below n or with a missing label are excluded, never substituted",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-05",
+      "name": "pre-run artificial rule-cluster/boundary/fallback tests",
+      "status": "PASS",
+      "evidence": {
+        "n_tests": 17,
+        "n_failed": 0,
+        "test_names": [
+          "penalty_midpoint_top2",
+          "penalty_midpoint_top3",
+          "cluster_penalty_mean",
+          "candidate_formula",
+          "penalty_lower_bound",
+          "penalty_upper_bound",
+          "lambda_zero_identity",
+          "rule_not_applicable_identity",
+          "duplicate_member_no_weight_increase",
+          "penalty_monotone_nondecreasing",
+          "candidate_monotone_nonincreasing",
+          "candidate_ge_098q",
+          "new_zero_values",
+          "original_zero_preserved",
+          "degenerate_quantile_detected",
+          "unknown_domain_not_applicable",
+          "invalid_row_status_enumerated"
+        ]
+      },
+      "note": "hand-computed expectations; no real analysis value read before this point",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-06",
+      "name": "bootstrap sub-seeds follow the frozen SHA256 rule",
+      "status": "PASS",
+      "evidence": {
+        "rows": 200,
+        "mismatches": 0,
+        "status": "PASS"
+      },
+      "note": "int(sha256(\"20260925|<domain>|<replicate>\")[:16], 16) -> PCG64",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-07",
+      "name": "200-replicate joint bootstrap stability per active domain",
+      "status": "PASS",
+      "evidence": {
+        "replicates": 200,
+        "required_joint_pass": 190,
+        "per_domain": [
+          {
+            "domain": "c4",
+            "n": 3,
+            "replicates": 200,
+            "joint_pass_count": 200,
+            "required": 190,
+            "status": "PASS"
+          }
+        ],
+        "gates": {
+          "penalty_mae_max": 0.1,
+          "rank_spearman_min": 0.98,
+          "top10_jaccard_min": 0.85
+        }
+      },
+      "note": "the three criteria must hold jointly within one replicate",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-08",
+      "name": "freeze manifest hashed by the seal; every frozen file re-hashed unchanged",
+      "status": "PASS",
+      "evidence": {
+        "freeze_manifest_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "frozen_files_verified": 10,
+        "sealed_local": "2026-09-25T00:00:00+08:00"
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-09",
+      "name": "seal < first holdout read < first extension read",
+      "status": "PASS",
+      "evidence": {
+        "sealed_local": "2026-09-25T00:00:00+08:00",
+        "first_holdout_read_time": "2026-09-25T00:00:01.000+08:00",
+        "first_extension_read_time": "2026-09-25T00:00:02.000+08:00",
+        "holdout_frozen_before_extension_read": true
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-10",
+      "name": "holdout acceptance on the frozen active domains only",
+      "status": "PASS",
+      "evidence": {
+        "holdout_status": "INSUFFICIENT_EVIDENCE_KEEP_D",
+        "per_domain": [
+          {
+            "domain": "c4",
+            "role": "A1_holdout",
+            "n_valid": 3,
+            "min_valid_n": 200,
+            "eligible": 0,
+            "spearman_C_D": null,
+            "top10_jaccard_C_D": null,
+            "penalty_mean_role": null,
+            "penalty_mean_calibration": null,
+            "penalty_mean_abs_diff": null,
+            "oos_rows": null,
+            "oos_fraction": null,
+            "pass_spearman": 0,
+            "pass_jaccard": 0,
+            "pass_penalty_mean": 0,
+            "pass_oos": 0,
+            "status": "INSUFFICIENT_N"
+          }
+        ],
+        "first_holdout_read_time": "2026-09-25T00:00:02.000+08:00"
+      },
+      "note": "a rule-failure is reported as REJECT_KEEP_D and never re-tuned",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-11",
+      "name": "extension overlap reproduction on identical inputs",
+      "status": "PASS",
+      "evidence": {
+        "overlap_rows": 1,
+        "reproduced": 1,
+        "mismatches": 0
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-12",
+      "name": "extension new-record transport status",
+      "status": "PASS",
+      "evidence": {
+        "extension_status": "INSUFFICIENT_EXTENSION_EVIDENCE",
+        "per_domain": []
+      },
+      "note": "C=D agreement in non-applied domains is never counted as transport evidence",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-13",
+      "name": "non-applied domains keep Q_C == Q_baseline exactly and stay out of active evidence",
+      "status": "PASS",
+      "evidence": {
+        "domains": [
+          "github"
+        ],
+        "rows": 3,
+        "max_abs_delta": 0.0,
+        "active_domains": [
+          "c4"
+        ]
+      },
+      "note": "holdout/extension pass rates contain active correction domains only",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-14",
+      "name": "Q_valid=False rows keep Q_C=NaN and Q_INVALID_PRESERVED",
+      "status": "PASS",
+      "evidence": {
+        "Q_valid_false_rows": 1,
+        "Q_INVALID_PRESERVED_rows": 1,
+        "Q_C_nan_rows": 1,
+        "numerator_scope": "all physical rows of the official input"
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-15",
+      "name": "candidate maths on the confirmatory sample",
+      "status": "PASS",
+      "evidence": {
+        "n_confirmatory_rows": 8,
+        "all_finite": true,
+        "P_min": 0.0,
+        "P_max": 0.6000000000000001,
+        "P_within_unit_interval": true,
+        "max_Q_C_minus_D": 0.0,
+        "max_abs_Q_C_minus_D": 0.003599999999999992,
+        "min_ratio_Q_C_over_D_for_positive_D": 0.988,
+        "rows_D_zero": 0,
+        "rows_D_zero_and_C_zero": 0,
+        "new_zero_values": 0,
+        "negative_Q_C_rows": 0,
+        "oos_rows": 0,
+        "supported_rows": 6,
+        "rules": "Q_C <= D, Q_C >= 0.98*D, no new zeros, P in [0, 1] on the confirmatory sample",
+        "rule_not_applicable_rows": 3,
+        "rule_not_applicable_max_abs_delta": 0.0,
+        "rule_not_applicable_zero_delta": true,
+        "rule_not_applicable_domains": [
+          "github"
+        ]
+      },
+      "note": "denominator = A1_calibration + A1_holdout, is_unique_first & Q_valid & finite inputs",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-16",
+      "name": "candidate_Q_scores keeps every physical row and the original order",
+      "status": "PASS",
+      "evidence": {
+        "rows_written": 12,
+        "rows_read": 12
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-17",
+      "name": "protected baseline columns unchanged (role reads vs assembly vs sealed PHASE A)",
+      "status": "PASS",
+      "evidence": {
+        "status": "PASS",
+        "role_reads": [
+          "A1_calibration",
+          "A1_holdout",
+          "extension_new_records",
+          "extension_overlap_A1"
+        ],
+        "frozen_calibration_consistency": {
+          "frozen_rows": 5,
+          "assembly_rows": 5,
+          "key_sequence_identical": true,
+          "Q_baseline": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "Q_C": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "P": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "p_top2gram": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "p_top3gram": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "Q_support_status": true
+        },
+        "input_sha256_stable": true
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-18",
+      "name": "T06 interface columns and forbidden field names",
+      "status": "PASS",
+      "evidence": {
+        "columns": [
+          "file_id",
+          "source_line",
+          "key_sha256",
+          "domain",
+          "evaluation_role",
+          "is_unique_first",
+          "Q_baseline",
+          "Q_C",
+          "P",
+          "p_top2gram",
+          "p_top3gram",
+          "Q_valid",
+          "Q_support_status",
+          "dsir_books",
+          "dsir_wiki",
+          "dsir_math",
+          "candidate_version",
+          "lambda_primary",
+          "in_confirmatory_denominator",
+          "domain_role_n_total",
+          "domain_role_n_analysis_valid",
+          "dsir_relevance_vector"
+        ],
+        "forbidden_field_names_present": [],
+        "primary_Q": "Q_baseline",
+        "limitations": [
+          "Q_C has no independent ground-truth quality label in this project; it is a preregistered rule-sensitivity candidate only",
+          "no field of this interface may be renamed final_Q/best_Q/improved_Q/true_quality",
+          "A-side Q and the B-side Q_score still require separate T06 calibration"
+        ]
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-19",
+      "name": "RegMix/Loss connection and identifiability check without any new fit",
+      "status": "PASS",
+      "evidence": {
+        "status": "NOT_IDENTIFIABLE",
+        "structural_reasons": [
+          "synthetic"
+        ],
+        "checked_inputs": {}
+      },
+      "note": "NOT_IDENTIFIABLE is a method conclusion; it blocks any external quality-gain claim",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-20",
+      "name": "lambda grid reported for calibration only and not used for selection",
+      "status": "PASS",
+      "evidence": {
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.05
+        ],
+        "rows": 4,
+        "primary_lambda": 0.02,
+        "file": "phase_a_calibration_freeze/lambda_sensitivity_calibration.csv"
+      },
+      "note": "PHASE B evaluates lambda=0.02 and D only",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-21",
+      "name": "no A/B candidate, PCA/entropy/CRITIC or lambda learning in the frozen code",
+      "status": "PASS",
+      "evidence": {
+        "t03e_preregistered_rule_sensitivity.py": {
+          "present": true,
+          "prohibited_call_hits": {},
+          "clean": true
+        },
+        "t03e_verify.py": {
+          "present": true,
+          "prohibited_call_hits": {},
+          "clean": true
+        }
+      },
+      "note": "scan of the frozen code snapshot for prohibited calls",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-22",
+      "name": "row-level denominators agree with the role x domain inventory",
+      "status": "PASS",
+      "evidence": {
+        "role_domain_groups": 8,
+        "mismatches": [],
+        "row_level_denominator_mismatch_rows": 0,
+        "rows_checked": 12
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    },
+    {
+      "id": "EX-23",
+      "name": "output_manifest.json generated last by the independent finalizer",
+      "status": "NOT_CHECKED",
+      "evidence": {
+        "note": "written by the finalizer mode after verification.json exists"
+      },
+      "note": "the finalizer re-checks every previously registered file for stability",
+      "checked_local": "2026-09-25T01:59:27+08:00"
+    }
+  ],
+  "verification_note": "verification.json is produced afterwards by the independent verifier t03e_verify.py, which does not import this module"
+}

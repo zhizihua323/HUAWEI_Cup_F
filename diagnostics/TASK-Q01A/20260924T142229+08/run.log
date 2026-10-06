@@ -1,0 +1,33 @@
+[2026-09-24T14:22:33.506+08:00] ========================================================================
+[2026-09-24T14:22:33.506+08:00] TASK-Q01A start local=2026-09-24T14:22:33+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T142229+08
+[2026-09-24T14:22:33.506+08:00] constraints wall_limit_s=1200.0 memory_limit_bytes=2147483648 seed=20260924
+[2026-09-24T14:22:33.632+08:00] stage=precondition hashed_inputs=3
+[2026-09-24T14:22:33.645+08:00] stage=precondition sha256_matches_manifest_and_prior_audit
+[2026-09-24T14:22:34.017+08:00] stage=precondition protected_files=111 raw_tree_files=1849
+[2026-09-24T14:22:34.365+08:00] stage=selftest status=PASS cases=28 failed=0
+[2026-09-24T14:22:34.381+08:00] stage=scan file=A1 order_index=0 decompress_passes=1 start
+[2026-09-24T14:23:30.032+08:00] stage=scan file=A1 rows=50000 elapsed_s=55.7 rate=898/s peak_rss_bytes=150282240
+[2026-09-24T14:23:34.552+08:00] stage=scan file=A1 done rows=51230 invalid_json=0 decode_errors=0 elapsed_s=60.2
+[2026-09-24T14:23:34.553+08:00] stage=scan file=A2_arxiv order_index=1 decompress_passes=1 start
+[2026-09-24T14:24:38.989+08:00] stage=scan file=A2_arxiv done rows=17523 invalid_json=0 decode_errors=0 elapsed_s=64.4
+[2026-09-24T14:24:38.989+08:00] stage=scan file=A3_github order_index=2 decompress_passes=1 start
+[2026-09-24T14:25:16.081+08:00] stage=scan file=A3_github rows=50000 elapsed_s=37.1 rate=1348/s peak_rss_bytes=180854784
+[2026-09-24T14:26:45.211+08:00] stage=scan file=A3_github rows=100000 elapsed_s=126.2 rate=792/s peak_rss_bytes=205754368
+[2026-09-24T14:29:08.405+08:00] stage=scan file=A3_github rows=150000 elapsed_s=269.4 rate=557/s peak_rss_bytes=232976384
+[2026-09-24T14:31:06.769+08:00] stage=scan file=A3_github rows=200000 elapsed_s=387.8 rate=516/s peak_rss_bytes=255332352
+[2026-09-24T14:31:19.359+08:00] stage=scan file=A3_github done rows=203752 invalid_json=0 decode_errors=0 elapsed_s=400.4
+[2026-09-24T14:31:19.371+08:00] stage=scan complete parsed_rows=272505 events=133 norm_inf_rows=0
+[2026-09-24T14:31:24.972+08:00] stage=aggregate written=feature_missing_counts.csv rows=1250
+[2026-09-24T14:31:24.981+08:00] stage=aggregate written=missing_patterns.csv rows=366
+[2026-09-24T14:31:25.362+08:00] stage=aggregate written=missing_pairwise.csv rows=51750
+[2026-09-24T14:31:25.367+08:00] stage=aggregate written=validity_counts.csv rows=50
+[2026-09-24T14:31:25.378+08:00] stage=aggregate written=summary_denominators.csv rows=650
+[2026-09-24T14:31:25.386+08:00] stage=aggregate written=complete_case_count_only.csv rows=150
+[2026-09-24T14:31:25.394+08:00] stage=aggregate written=group_validity_distribution.csv rows=50
+[2026-09-24T14:31:25.401+08:00] stage=aggregate written=group_mask_intersections.csv rows=300
+[2026-09-24T14:31:25.410+08:00] stage=aggregate written=raw_field_counts.csv rows=264
+[2026-09-24T14:31:25.414+08:00] stage=aggregate written=physical_rows_by_file_role.csv rows=24
+[2026-09-24T14:31:25.457+08:00] stage=compare prior_rows=1793 known_domain_rows=36
+[2026-09-24T14:31:56.286+08:00] stage=verify tables=8 invalid_events=133
+[2026-09-24T14:31:56.605+08:00] stage=finalize status=PARTIAL exit_code=2 checks={'n_checks': 40, 'n_pass': 33, 'n_fail': 7, 'n_not_checked': 0} duration_s=562.8
+[2026-09-24T14:31:56.605+08:00] TASK-Q01A end status=PARTIAL exit_code=2

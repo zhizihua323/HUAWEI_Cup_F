@@ -1,0 +1,383 @@
+{
+  "task_id": "TASK-T08",
+  "run_id": "20260925T142203+0800",
+  "verifier": "code/verify_t08.py",
+  "verifier_is_independent": true,
+  "imports_execution_module": false,
+  "generated_at_utc": "2026-09-25T06:23:14.792353+00:00",
+  "environment": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "checks": [
+    {
+      "check_id": "frozen_manifests",
+      "actual": {
+        "T05": "PASS",
+        "T07": "PASS",
+        "T06": "PASS",
+        "C01": "PASS",
+        "C01R1": "PASS"
+      },
+      "expected": {
+        "T05": "PASS",
+        "T07": "PASS",
+        "T06": "PASS",
+        "C01": "PASS",
+        "C01R1": "PASS"
+      },
+      "status": "PASS",
+      "evidence": "input frozen output manifests",
+      "note": ""
+    },
+    {
+      "check_id": "bridge_counts",
+      "actual": [
+        7,
+        38,
+        45
+      ],
+      "expected": [
+        7,
+        38,
+        45
+      ],
+      "status": "PASS",
+      "evidence": "T05 bridge_analysis_dataset.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "c8_counts",
+      "actual": [
+        1854,
+        6,
+        4
+      ],
+      "expected": [
+        1854,
+        6,
+        4
+      ],
+      "status": "PASS",
+      "evidence": "C01/C01-R1 corrected tables",
+      "note": ""
+    },
+    {
+      "check_id": "constant_frozen_candidates",
+      "actual": {
+        "IFEval_pct": "CONSTANT",
+        "BBH_pct": "CONSTANT",
+        "MATH Lvl 5_pct": "CONSTANT",
+        "GPQA_pct": "CONSTANT",
+        "MUSR_pct": "CONSTANT",
+        "MMLU-PRO_pct": "CONSTANT",
+        "benchmark_mean_aux": "CONSTANT"
+      },
+      "expected": {
+        "IFEval_pct": "CONSTANT",
+        "BBH_pct": "CONSTANT",
+        "MATH Lvl 5_pct": "CONSTANT",
+        "GPQA_pct": "CONSTANT",
+        "MUSR_pct": "CONSTANT",
+        "MMLU-PRO_pct": "CONSTANT",
+        "benchmark_mean_aux": "CONSTANT"
+      },
+      "status": "PASS",
+      "evidence": "T05 t08_bridge_contract.json",
+      "note": ""
+    },
+    {
+      "check_id": "time_trend_unvalidated",
+      "actual": false,
+      "expected": false,
+      "status": "PASS",
+      "evidence": "T05 t08_bridge_contract.json",
+      "note": ""
+    },
+    {
+      "check_id": "scale_associated_component_zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS",
+      "evidence": "scale_non_scale_decomposition.csv",
+      "note": ""
+    },
+    {
+      "check_id": "observed_identity",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "scale_non_scale_decomposition.csv",
+      "note": "max_abs=3.552713678800501e-15"
+    },
+    {
+      "check_id": "main_decomposition_rows",
+      "actual": 49,
+      "expected": 49,
+      "status": "PASS",
+      "evidence": "scale_non_scale_decomposition.csv",
+      "note": ""
+    },
+    {
+      "check_id": "medium_D_not_imputed",
+      "actual": 38,
+      "expected": 38,
+      "status": "PASS",
+      "evidence": "T05 bridge_analysis_dataset.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "six_task_vector_plus_mean",
+      "actual": [
+        "BBH_pct",
+        "GPQA_pct",
+        "IFEval_pct",
+        "MATH Lvl 5_pct",
+        "MMLU-PRO_pct",
+        "MUSR_pct",
+        "benchmark_mean_aux"
+      ],
+      "expected": [
+        "BBH_pct",
+        "GPQA_pct",
+        "IFEval_pct",
+        "MATH Lvl 5_pct",
+        "MMLU-PRO_pct",
+        "MUSR_pct",
+        "benchmark_mean_aux"
+      ],
+      "status": "PASS",
+      "evidence": "taskwise_progress.csv",
+      "note": ""
+    },
+    {
+      "check_id": "benchmark_future_eligibility",
+      "actual": [
+        "CONDITIONAL_BASELINE_ONLY"
+      ],
+      "expected": [
+        "CONDITIONAL_BASELINE_ONLY"
+      ],
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "benchmark_progress_not_identifiable",
+      "actual": [
+        "NOT_IDENTIFIABLE_PROGRESS"
+      ],
+      "expected": [
+        "NOT_IDENTIFIABLE_PROGRESS"
+      ],
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "no_benchmark_increment_numbers",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "growth_support_recount",
+      "actual": [
+        1,
+        1
+      ],
+      "expected": [
+        1,
+        1
+      ],
+      "status": "PASS",
+      "evidence": "T05 bridge dataset; recomputed independently",
+      "note": "expected current frozen data"
+    },
+    {
+      "check_id": "growth_gate_not_identifiable",
+      "actual": false,
+      "expected": false,
+      "status": "PASS",
+      "evidence": "T05 bridge dataset",
+      "note": ""
+    },
+    {
+      "check_id": "no_fake_loss_growth",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "loss_space_scale_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "loss_space_not_identifiable",
+      "actual": [
+        "NOT_IDENTIFIABLE"
+      ],
+      "expected": [
+        "NOT_IDENTIFIABLE"
+      ],
+      "status": "PASS",
+      "evidence": "loss_space_scale_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "loss_to_benchmark_conversion_zero",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "forecast and loss output tables",
+      "note": ""
+    },
+    {
+      "check_id": "b1_whole_draw_rows",
+      "actual": 80,
+      "expected": 80,
+      "status": "PASS",
+      "evidence": "T07 parameter_draw_optima.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "b1_draw_complete_columns",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "T07 parameter_draw_optima.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "t07_draws_in_support",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "T07 support_bounds.csv",
+      "note": ""
+    },
+    {
+      "check_id": "physical_compute_units",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "T07 parameter_draw_optima.parquet",
+      "note": "max_relative_error=1.750248106666667e-16"
+    },
+    {
+      "check_id": "damaged_json_no_score",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "model_identity_usage.csv",
+      "note": ""
+    },
+    {
+      "check_id": "partial_mean_excluded",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "model_identity_usage.csv",
+      "note": ""
+    },
+    {
+      "check_id": "same_model_run_leakage",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "leakage_audit.csv",
+      "note": ""
+    },
+    {
+      "check_id": "same_model_split_leakage",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "leakage_audit.csv",
+      "note": ""
+    },
+    {
+      "check_id": "forecast_seal_before_results",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "forecast_seal.json vs forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "scenario_ids_unchanged",
+      "actual": [
+        "SCALE_GROWTH_Q25_CONSERVATIVE",
+        "SCALE_GROWTH_Q50_BASE",
+        "SCALE_GROWTH_Q75_OPTIMISTIC"
+      ],
+      "expected": [
+        "SCALE_GROWTH_Q25_CONSERVATIVE",
+        "SCALE_GROWTH_Q50_BASE",
+        "SCALE_GROWTH_Q75_OPTIMISTIC"
+      ],
+      "status": "PASS",
+      "evidence": "forecast_seal.json vs scenario_registry.csv",
+      "note": ""
+    },
+    {
+      "check_id": "scenario_horizons_frozen",
+      "actual": [
+        12,
+        24
+      ],
+      "expected": [
+        12,
+        24
+      ],
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "forecast_origin",
+      "actual": "2025-03-13",
+      "expected": "2025-03-13",
+      "status": "PASS",
+      "evidence": "forecast_seal.json",
+      "note": ""
+    },
+    {
+      "check_id": "six_uncertainty_components",
+      "actual": [
+        "benchmark_conditional_association",
+        "bridge_model_error",
+        "model_family_heterogeneity",
+        "scaling_parameter",
+        "scenario_structure",
+        "time_extrapolation"
+      ],
+      "expected": [
+        "benchmark_conditional_association",
+        "bridge_model_error",
+        "model_family_heterogeneity",
+        "scaling_parameter",
+        "scenario_structure",
+        "time_extrapolation"
+      ],
+      "status": "PASS",
+      "evidence": "forecast_uncertainty.csv",
+      "note": ""
+    },
+    {
+      "check_id": "no_combined_ci",
+      "actual": true,
+      "expected": true,
+      "status": "PASS",
+      "evidence": "forecast_uncertainty.csv",
+      "note": ""
+    }
+  ],
+  "n_checks": 32,
+  "n_pass": 32,
+  "n_fail": 0,
+  "manifest_status": "PENDING_FINAL_MANIFEST",
+  "manifest_last_rule": "run build_manifest.py only after verification.json and handoff.md are frozen; post-manifest read-only verification must pass"
+}

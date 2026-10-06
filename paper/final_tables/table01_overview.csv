@@ -1,0 +1,5 @@
+﻿问题,冻结主接口,核心输出,最终资格,不可越过的解释边界
+Q1,Q1_GAP + Q01C + T06,质量代理；配比预测与运输,CLOSED_WITH_LIMITATION,Q 不是人工真值；跨尺度仅 TRANSPORT_ONLY
+Q2,Q2_GAP + T06,B1 来源内标度律；分来源验证,CLOSED_WITH_LIMITATION,不得称统一四变量模型已多源验证
+Q3,T07,10^18/10^20/10^22 FLOPs 条件最优 N、D,CLOSED_WITH_LIMITATION,Q 未识别；p 固定；10^22 的 D 达上界
+Q4,Q4_GAP + T05/T08,12/24 月 slow/baseline/upper 情景,CLOSED_WITH_SCENARIO_LIMITATION,全部 SCENARIO_ONLY_UNVALIDATED；Loss 转换为 0 次

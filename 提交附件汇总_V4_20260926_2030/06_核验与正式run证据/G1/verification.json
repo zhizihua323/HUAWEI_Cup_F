@@ -1,0 +1,244 @@
+{
+  "run_id": "20260925T223500+08",
+  "generated_local": "2026-09-25T22:30:03+08:00",
+  "status": "PASS",
+  "summary": {
+    "total": 11,
+    "pass": 11,
+    "fail": 0
+  },
+  "verifier_imports_executor": false,
+  "checks": [
+    {
+      "check": "frozen_author_copy_matches_source_bytes",
+      "status": "PASS",
+      "details": {
+        "frozen": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47",
+        "source": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47",
+        "manifest": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47"
+      }
+    },
+    {
+      "check": "sealed_source_run_registered_files_unchanged",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "author_review_ids_complete_unique",
+      "status": "PASS",
+      "details": {
+        "n": 60,
+        "unique": 60
+      }
+    },
+    {
+      "check": "joined_file_matches_independent_author_parse",
+      "status": "PASS",
+      "details": {
+        "valid_complete": 46,
+        "structural_invalid": 10,
+        "missing": 3,
+        "valid_partial": 1
+      }
+    },
+    {
+      "check": "manual_parse_status_counts_frozen",
+      "status": "PASS",
+      "details": {
+        "valid_complete": 46,
+        "structural_invalid": 10,
+        "missing": 3,
+        "valid_partial": 1
+      }
+    },
+    {
+      "check": "no_imputation_and_invalid_values_excluded",
+      "status": "PASS",
+      "details": {
+        "nonnull_each": {
+          "readability_1to5": 47,
+          "completeness_1to5": 47,
+          "contamination_0to2": 46,
+          "overall_quality_1to5": 47
+        }
+      }
+    },
+    {
+      "check": "manual_rank_statistics_match_independent_recompute",
+      "status": "PASS",
+      "details": [
+        {
+          "metric": "overall_quality_1to5",
+          "recomputed": [
+            47,
+            0.032696063302944264,
+            0.8272925567283275
+          ],
+          "stored": [
+            {
+              "analysis": "spearman_Q_vs_overall_quality",
+              "metric": "Q_baseline__overall_quality_1to5",
+              "group_a": "Q_baseline",
+              "group_b": "overall_quality_1to5",
+              "n_a": 47,
+              "n_b": 47,
+              "estimate": 0.0326960633029442,
+              "ci_low_2_5pct": -0.2533840851904994,
+              "ci_high_97_5pct": 0.3159568348318037,
+              "p_value_descriptive": 0.8272925567283275,
+              "effect_size": 0.0326960633029442,
+              "effect_size_name": "spearman_rho",
+              "bootstrap_replicates": 2000,
+              "seed": 20260925,
+              "note": "Pairwise complete author ratings; no imputation."
+            }
+          ],
+          "match": true
+        },
+        {
+          "metric": "readability_1to5",
+          "recomputed": [
+            47,
+            -0.29355106057419095,
+            0.0452143418127583
+          ],
+          "stored": [
+            {
+              "analysis": "spearman_Q_vs_readability",
+              "metric": "Q_baseline__readability_1to5",
+              "group_a": "Q_baseline",
+              "group_b": "readability_1to5",
+              "n_a": 47,
+              "n_b": 47,
+              "estimate": -0.2935510605741909,
+              "ci_low_2_5pct": -0.5681446343881288,
+              "ci_high_97_5pct": 0.0003251938183059,
+              "p_value_descriptive": 0.0452143418127583,
+              "effect_size": -0.2935510605741909,
+              "effect_size_name": "spearman_rho",
+              "bootstrap_replicates": 2000,
+              "seed": 20260925,
+              "note": "Pairwise complete author ratings; no imputation."
+            }
+          ],
+          "match": true
+        },
+        {
+          "metric": "completeness_1to5",
+          "recomputed": [
+            47,
+            0.05510350407958585,
+            0.7129643207976193
+          ],
+          "stored": [
+            {
+              "analysis": "spearman_Q_vs_completeness",
+              "metric": "Q_baseline__completeness_1to5",
+              "group_a": "Q_baseline",
+              "group_b": "completeness_1to5",
+              "n_a": 47,
+              "n_b": 47,
+              "estimate": 0.0551035040795858,
+              "ci_low_2_5pct": -0.290692719771684,
+              "ci_high_97_5pct": 0.3629654966138102,
+              "p_value_descriptive": 0.7129643207976193,
+              "effect_size": 0.0551035040795858,
+              "effect_size_name": "spearman_rho",
+              "bootstrap_replicates": 2000,
+              "seed": 20260925,
+              "note": "Pairwise complete author ratings; no imputation."
+            }
+          ],
+          "match": true
+        },
+        {
+          "metric": "contamination_0to2",
+          "recomputed": [
+            46,
+            0.058878259978551145,
+            0.6975132798436215
+          ],
+          "stored": [
+            {
+              "analysis": "spearman_Q_vs_contamination",
+              "metric": "Q_baseline__contamination_0to2",
+              "group_a": "Q_baseline",
+              "group_b": "contamination_0to2",
+              "n_a": 46,
+              "n_b": 46,
+              "estimate": 0.0588782599785511,
+              "ci_low_2_5pct": -0.252438977762018,
+              "ci_high_97_5pct": 0.3712485715733397,
+              "p_value_descriptive": 0.6975132798436215,
+              "effect_size": 0.0588782599785511,
+              "effect_size_name": "spearman_rho",
+              "bootstrap_replicates": 2000,
+              "seed": 20260925,
+              "note": "Pairwise complete author ratings; no imputation."
+            }
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "check": "case_registry_rows_use_review_id_and_sealed_redacted_excerpt",
+      "status": "PASS",
+      "details": {
+        "rows": 6,
+        "failures": []
+      }
+    },
+    {
+      "check": "paper_candidate_exists_with_required_boundaries",
+      "status": "PASS",
+      "details": {
+        "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\Q1_GAP_RESULT_FREEZE.md",
+        "bytes": 4769
+      }
+    },
+    {
+      "check": "paper_manuscript_unchanged",
+      "status": "PASS",
+      "details": {
+        "changes": []
+      }
+    },
+    {
+      "check": "preverification_artifacts_present",
+      "status": "PASS",
+      "details": {
+        "missing": []
+      }
+    }
+  ],
+  "independent_parse_counts": {
+    "valid_complete": 46,
+    "structural_invalid": 10,
+    "missing": 3,
+    "valid_partial": 1
+  },
+  "independent_correlations": {
+    "overall_quality_1to5": [
+      47,
+      0.032696063302944264,
+      0.8272925567283275
+    ],
+    "readability_1to5": [
+      47,
+      -0.29355106057419095,
+      0.0452143418127583
+    ],
+    "completeness_1to5": [
+      47,
+      0.05510350407958585,
+      0.7129643207976193
+    ],
+    "contamination_0to2": [
+      46,
+      0.058878259978551145,
+      0.6975132798436215
+    ]
+  },
+  "note": "Verifier ran before output_manifest.json by design."
+}

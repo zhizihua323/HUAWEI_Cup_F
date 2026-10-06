@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "selected_total": 40930,
+  "domains": [
+    "arxiv",
+    "book",
+    "c4",
+    "commoncrawl",
+    "github",
+    "stackexchange",
+    "wikipedia"
+  ],
+  "q_A_star": 0.5695341857475174,
+  "q_C_star": 0.5694585639959848,
+  "q_A_baseline_min": 0.04888888888888889,
+  "q_A_baseline_max": 0.9805414146077935,
+  "B6_unique_Q": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "B6_unique_Q_count": 8,
+  "H3_q_A_star_mapped_Q": 0.6,
+  "H3_q_A_star_support_status": "IN_SUPPORT",
+  "Q_C_same_F_A": true,
+  "A_B_scale_status": "NOT_IDENTIFIABLE"
+}

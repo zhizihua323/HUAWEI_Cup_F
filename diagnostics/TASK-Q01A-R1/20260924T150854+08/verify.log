@@ -1,0 +1,127 @@
+[2026-09-24T15:11:27.159+08:00] TASK-Q01A-R1 verification start local=2026-09-24T15:11:27+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150854+08
+[2026-09-24T15:11:27.159+08:00] boundary: verification reads only saved artifacts; no compressed input is opened or hashed
+[2026-09-24T15:11:27.164+08:00] check V01_pandas_group_statistics_rule: PASS
+[2026-09-24T15:11:27.164+08:00] check V02_six_element_nan_list_rule: PASS
+[2026-09-24T15:11:28.620+08:00] check V03_denominator_tables_match_independent_pandas: PASS
+[2026-09-24T15:11:28.621+08:00] check V04_repair_changed_exactly_the_affected_denominator_rows: PASS
+[2026-09-24T15:11:28.621+08:00] check V05_all_unique_anchor: PASS
+[2026-09-24T15:11:28.629+08:00] check V06_q_std_variance_divisor: PASS
+[2026-09-24T15:11:28.630+08:00] check V07_missing_concentration_has_numerators_and_denominators: PASS
+[2026-09-24T15:11:28.635+08:00] events raw_keys=19 extract=19 identity=0
+[2026-09-24T15:11:57.009+08:00] check V08_corrected_raw_mask_matches_events: PASS
+[2026-09-24T15:11:57.009+08:00] check V09_raw_anomaly_anchors: PASS
+[2026-09-24T15:12:03.345+08:00] check V10_only_permitted_columns_changed: PASS
+[2026-09-24T15:12:32.221+08:00] check V11_raw_events_map_to_the_same_extract_nan_rows: PASS
+[2026-09-24T15:12:36.839+08:00] check V12_corrected_raw_patterns_and_pairwise_recomputed_independently: PASS
+[2026-09-24T15:12:37.427+08:00] check V13_non_raw_layers_unchanged: PASS
+[2026-09-24T15:12:37.652+08:00] check V14_row_identity_uniqueness_and_line_coverage: FAIL
+[2026-09-24T15:12:37.787+08:00] check V15_read_only_inputs_unchanged: PASS
+[2026-09-24T15:12:37.972+08:00] check V16_r_artifacts_unchanged_for_the_111_protected_files: PASS
+[2026-09-24T15:12:37.973+08:00] check V17_static_no_compressed_content_access: FAIL
+[2026-09-24T15:12:37.975+08:00] check V18_no_numeric_q_and_strict_json: PASS
+[2026-09-24T15:12:38.609+08:00] check V19_raw_tree_path_size_registered: PASS
+[2026-09-24T15:12:38.628+08:00] check V20_c12_overlap_role_totals: PASS
+[2026-09-24T15:12:38.629+08:00] check V21_first_failure_statement_from_log: PASS
+[2026-09-24T15:12:48.357+08:00] end status=FAILED n_checks=21 n_fail=2 n_not_verifiable=0
+[2026-09-24T15:13:14.010+08:00] TASK-Q01A-R1 verification start local=2026-09-24T15:13:14+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150854+08
+[2026-09-24T15:13:14.010+08:00] boundary: verification reads only saved artifacts; no compressed input is opened or hashed
+[2026-09-24T15:13:14.012+08:00] check V01_pandas_group_statistics_rule: PASS
+[2026-09-24T15:13:14.012+08:00] check V02_six_element_nan_list_rule: PASS
+[2026-09-24T15:13:15.275+08:00] check V03_denominator_tables_match_independent_pandas: PASS
+[2026-09-24T15:13:15.275+08:00] check V04_repair_changed_exactly_the_affected_denominator_rows: PASS
+[2026-09-24T15:13:15.275+08:00] check V05_all_unique_anchor: PASS
+[2026-09-24T15:13:15.275+08:00] check V06_q_std_variance_divisor: PASS
+[2026-09-24T15:13:15.276+08:00] check V07_missing_concentration_has_numerators_and_denominators: PASS
+[2026-09-24T15:13:15.280+08:00] events raw_keys=19 extract=19 identity=0
+[2026-09-24T15:13:41.393+08:00] check V08_corrected_raw_mask_matches_events: PASS
+[2026-09-24T15:13:41.393+08:00] check V09_raw_anomaly_anchors: PASS
+[2026-09-24T15:13:53.793+08:00] check V10_only_permitted_columns_changed: PASS
+[2026-09-24T15:14:21.255+08:00] check V11_raw_events_map_to_the_same_extract_nan_rows: PASS
+[2026-09-24T15:14:26.035+08:00] check V12_corrected_raw_patterns_and_pairwise_recomputed_independently: PASS
+[2026-09-24T15:14:26.709+08:00] check V13_non_raw_layers_unchanged: PASS
+[2026-09-24T15:14:26.982+08:00] check V14_row_identity_uniqueness_and_line_coverage: PASS
+[2026-09-24T15:14:27.112+08:00] check V15_read_only_inputs_unchanged: PASS
+[2026-09-24T15:14:27.263+08:00] check V16_r_artifacts_unchanged_for_the_111_protected_files: PASS
+[2026-09-24T15:14:27.267+08:00] check V17_static_no_compressed_content_access: PASS
+[2026-09-24T15:14:27.281+08:00] check V18_no_numeric_q_and_strict_json: FAIL
+[2026-09-24T15:14:27.849+08:00] check V19_raw_tree_path_size_registered: PASS
+[2026-09-24T15:14:27.862+08:00] check V20_c12_overlap_role_totals: PASS
+[2026-09-24T15:14:27.862+08:00] check V21_first_failure_statement_from_log: PASS
+[2026-09-24T15:14:34.713+08:00] end status=FAILED n_checks=21 n_fail=1 n_not_verifiable=0
+[2026-09-24T15:14:42.430+08:00] TASK-Q01A-R1 verification start local=2026-09-24T15:14:42+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150854+08
+[2026-09-24T15:14:42.430+08:00] boundary: verification reads only saved artifacts; no compressed input is opened or hashed
+[2026-09-24T15:14:42.433+08:00] check V01_pandas_group_statistics_rule: PASS
+[2026-09-24T15:14:42.433+08:00] check V02_six_element_nan_list_rule: PASS
+[2026-09-24T15:14:43.775+08:00] check V03_denominator_tables_match_independent_pandas: PASS
+[2026-09-24T15:14:43.775+08:00] check V04_repair_changed_exactly_the_affected_denominator_rows: PASS
+[2026-09-24T15:14:43.775+08:00] check V05_all_unique_anchor: PASS
+[2026-09-24T15:14:43.775+08:00] check V06_q_std_variance_divisor: PASS
+[2026-09-24T15:14:43.776+08:00] check V07_missing_concentration_has_numerators_and_denominators: PASS
+[2026-09-24T15:14:43.780+08:00] events raw_keys=19 extract=19 identity=0
+[2026-09-24T15:15:02.633+08:00] check V08_corrected_raw_mask_matches_events: PASS
+[2026-09-24T15:15:02.633+08:00] check V09_raw_anomaly_anchors: PASS
+[2026-09-24T15:15:10.352+08:00] check V10_only_permitted_columns_changed: PASS
+[2026-09-24T15:15:38.425+08:00] check V11_raw_events_map_to_the_same_extract_nan_rows: PASS
+[2026-09-24T15:15:43.022+08:00] check V12_corrected_raw_patterns_and_pairwise_recomputed_independently: PASS
+[2026-09-24T15:15:43.674+08:00] check V13_non_raw_layers_unchanged: PASS
+[2026-09-24T15:15:43.935+08:00] check V14_row_identity_uniqueness_and_line_coverage: PASS
+[2026-09-24T15:15:44.030+08:00] check V15_read_only_inputs_unchanged: PASS
+[2026-09-24T15:15:44.215+08:00] check V16_r_artifacts_unchanged_for_the_111_protected_files: PASS
+[2026-09-24T15:15:44.220+08:00] check V17_static_no_compressed_content_access: PASS
+[2026-09-24T15:15:44.227+08:00] check V18_no_numeric_q_and_strict_json: PASS
+[2026-09-24T15:15:44.776+08:00] check V19_raw_tree_path_size_registered: PASS
+[2026-09-24T15:15:44.794+08:00] check V20_c12_overlap_role_totals: PASS
+[2026-09-24T15:15:44.795+08:00] check V21_first_failure_statement_from_log: PASS
+[2026-09-24T15:15:54.888+08:00] end status=COMPLETED_WITH_NOT_VERIFIABLE_ITEMS n_checks=21 n_fail=0 n_not_verifiable=0
+[2026-09-24T15:16:03.738+08:00] TASK-Q01A-R1 verification start local=2026-09-24T15:16:03+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150854+08
+[2026-09-24T15:16:03.738+08:00] boundary: verification reads only saved artifacts; no compressed input is opened or hashed
+[2026-09-24T15:16:03.740+08:00] check V01_pandas_group_statistics_rule: PASS
+[2026-09-24T15:16:03.740+08:00] check V02_six_element_nan_list_rule: PASS
+[2026-09-24T15:16:05.015+08:00] check V03_denominator_tables_match_independent_pandas: PASS
+[2026-09-24T15:16:05.016+08:00] check V04_repair_changed_exactly_the_affected_denominator_rows: PASS
+[2026-09-24T15:16:05.016+08:00] check V05_all_unique_anchor: PASS
+[2026-09-24T15:16:05.016+08:00] check V06_q_std_variance_divisor: PASS
+[2026-09-24T15:16:05.017+08:00] check V07_missing_concentration_has_numerators_and_denominators: PASS
+[2026-09-24T15:16:05.021+08:00] events raw_keys=19 extract=19 identity=0
+[2026-09-24T15:16:35.477+08:00] check V08_corrected_raw_mask_matches_events: PASS
+[2026-09-24T15:16:35.478+08:00] check V09_raw_anomaly_anchors: PASS
+[2026-09-24T15:16:49.140+08:00] check V10_only_permitted_columns_changed: PASS
+[2026-09-24T15:17:20.407+08:00] check V11_raw_events_map_to_the_same_extract_nan_rows: PASS
+[2026-09-24T15:17:25.439+08:00] check V12_corrected_raw_patterns_and_pairwise_recomputed_independently: PASS
+[2026-09-24T15:17:26.123+08:00] check V13_non_raw_layers_unchanged: PASS
+[2026-09-24T15:17:26.403+08:00] check V14_row_identity_uniqueness_and_line_coverage: PASS
+[2026-09-24T15:17:26.503+08:00] check V15_read_only_inputs_unchanged: PASS
+[2026-09-24T15:17:26.641+08:00] check V16_r_artifacts_unchanged_for_the_111_protected_files: PASS
+[2026-09-24T15:17:26.646+08:00] check V17_static_no_compressed_content_access: PASS
+[2026-09-24T15:17:26.658+08:00] check V18_no_numeric_q_and_strict_json: PASS
+[2026-09-24T15:17:27.172+08:00] check V19_raw_tree_path_size_registered: PASS
+[2026-09-24T15:17:27.186+08:00] check V20_c12_overlap_role_totals: PASS
+[2026-09-24T15:17:27.187+08:00] check V21_first_failure_statement_from_log: PASS
+[2026-09-24T15:17:27.187+08:00] check V22_c08c_historical_full_tree_mtime: NOT_VERIFIABLE
+[2026-09-24T15:17:37.465+08:00] end status=COMPLETED_WITH_NOT_VERIFIABLE_ITEMS n_checks=22 n_fail=0 n_not_verifiable=1
+[2026-09-24T15:18:20.893+08:00] TASK-Q01A-R1 verification start local=2026-09-24T15:18:20+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150854+08
+[2026-09-24T15:18:20.893+08:00] boundary: verification reads only saved artifacts; no compressed input is opened or hashed
+[2026-09-24T15:18:20.896+08:00] check V01_pandas_group_statistics_rule: PASS
+[2026-09-24T15:18:20.896+08:00] check V02_six_element_nan_list_rule: PASS
+[2026-09-24T15:18:22.248+08:00] check V03_denominator_tables_match_independent_pandas: PASS
+[2026-09-24T15:18:22.249+08:00] check V04_repair_changed_exactly_the_affected_denominator_rows: PASS
+[2026-09-24T15:18:22.249+08:00] check V05_all_unique_anchor: PASS
+[2026-09-24T15:18:22.249+08:00] check V06_q_std_variance_divisor: PASS
+[2026-09-24T15:18:22.251+08:00] check V07_missing_concentration_has_numerators_and_denominators: PASS
+[2026-09-24T15:18:22.255+08:00] events raw_keys=19 extract=19 identity=0
+[2026-09-24T15:18:29.889+08:00] check V08_corrected_raw_mask_matches_events: PASS
+[2026-09-24T15:18:29.889+08:00] check V09_raw_anomaly_anchors: PASS
+[2026-09-24T15:18:34.511+08:00] check V10_only_permitted_columns_changed: PASS
+[2026-09-24T15:18:41.251+08:00] check V11_raw_events_map_to_the_same_extract_nan_rows: PASS
+[2026-09-24T15:18:42.957+08:00] check V12_corrected_raw_patterns_and_pairwise_recomputed_independently: PASS
+[2026-09-24T15:18:43.209+08:00] check V13_non_raw_layers_unchanged: PASS
+[2026-09-24T15:18:43.300+08:00] check V14_row_identity_uniqueness_and_line_coverage: PASS
+[2026-09-24T15:18:43.357+08:00] check V15_read_only_inputs_unchanged: PASS
+[2026-09-24T15:18:43.425+08:00] check V16_r_artifacts_unchanged_for_the_111_protected_files: PASS
+[2026-09-24T15:18:43.439+08:00] check V17_static_no_compressed_content_access: PASS
+[2026-09-24T15:18:43.442+08:00] check V18_no_numeric_q_and_strict_json: PASS
+[2026-09-24T15:18:43.574+08:00] check V19_raw_tree_path_size_registered: PASS
+[2026-09-24T15:18:43.580+08:00] check V20_c12_overlap_role_totals: PASS
+[2026-09-24T15:18:43.580+08:00] check V21_first_failure_statement_from_log: PASS
+[2026-09-24T15:18:43.580+08:00] check V22_c08c_historical_full_tree_mtime: NOT_VERIFIABLE
+[2026-09-24T15:18:47.336+08:00] end status=COMPLETED_WITH_NOT_VERIFIABLE_ITEMS n_checks=22 n_fail=0 n_not_verifiable=1

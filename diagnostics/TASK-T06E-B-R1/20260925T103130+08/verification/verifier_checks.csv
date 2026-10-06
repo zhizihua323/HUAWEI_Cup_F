@@ -1,0 +1,12 @@
+﻿check,status,detail
+22_profiles_fixed_and_SSE_reconstructable,PASS,[]
+22_full_fit_points_reproduce,PASS,[]
+full_points_inside_set,PASS,22
+MQadd_G4_jacobian_independent,PASS,53.94407500777401/53.94407500777401
+MQadd_G4_prediction_boundary,PASS,
+MQeff_eta_boundary_separate,PASS,
+G1_G3_field_same,PASS,
+G4_only_MQadd_profiles,PASS,
+final_boolean,PASS,
+original_run_unchanged,PASS,
+required_files_present,PASS,[]

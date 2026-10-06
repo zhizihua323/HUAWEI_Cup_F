@@ -1,0 +1,586 @@
+{
+  "task": "TASK-G1",
+  "seal_version": "g1_text_blind_seal_v1",
+  "generated_local": "2026-09-25T20:19:19+08:00",
+  "seed": 20260925,
+  "sampling_frame": "Q01C A1_sample with Q_valid=True and finite Q_baseline",
+  "high_conflict_threshold": 0.5,
+  "q_grouping": "within-domain Q quartiles: high >= q75, low <= q25",
+  "target_n": 60,
+  "actual_n": 60,
+  "quota_report": {
+    "highQ_lowConflict": {
+      "target": 20,
+      "selected": 20
+    },
+    "lowQ_lowConflict": {
+      "target": 20,
+      "selected": 20
+    },
+    "highConflict_highQ": {
+      "target": 10,
+      "selected": 10
+    },
+    "highConflict_lowQ": {
+      "target": 10,
+      "selected": 10
+    }
+  },
+  "domain_counts": {
+    "arxiv": 8,
+    "book": 10,
+    "c4": 10,
+    "commoncrawl": 9,
+    "github": 9,
+    "stackexchange": 8,
+    "wikipedia": 6
+  },
+  "single_domain_cap": 12,
+  "text_source": "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+  "join_rule": "frozen key_sha256(id,sub_path), exact direct source mapping",
+  "redaction_rule": "only email/URL masking and CR/control normalization; no rewriting",
+  "records": [
+    {
+      "review_id": "G1-001",
+      "key_sha256": "617e56256c16b4ecda0afe681d2bb0e47878df5a4077876e567b36adc042264a",
+      "domain": "github",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "5e12371a2de0f1a6a10adaf04259de84f488abe38222a996ad3db5c574c456bc",
+      "redacted_text_sha256": "923b47a8e9c023cbe7ca6f785bcfc5bdbeaade8a81183d60d567d60859116a9e",
+      "redaction_count": 2
+    },
+    {
+      "review_id": "G1-002",
+      "key_sha256": "c807daf8a82e82c9683948cc7cedfcc6c598a7a9216bcb10fbfd32717ca5ef1c",
+      "domain": "stackexchange",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "195b76e9724a9bf934846446e3bd327506d5b27dc85ecdb9cf114e4771713d84",
+      "redacted_text_sha256": "195b76e9724a9bf934846446e3bd327506d5b27dc85ecdb9cf114e4771713d84",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-003",
+      "key_sha256": "015348ce3e7c3273638e62cfc868ae7bad32411f13896140d6ffee937905e9a5",
+      "domain": "arxiv",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "2f1e5e86985ee430a6b33260c3cf8de23a48d7044291a782eb431f53fdbe9b9c",
+      "redacted_text_sha256": "2f1e5e86985ee430a6b33260c3cf8de23a48d7044291a782eb431f53fdbe9b9c",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-004",
+      "key_sha256": "6656fdb184cc14aac115d87b43e3647790e7a18c6862e94bb4d54997c6954654",
+      "domain": "c4",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "fd5d6b4c90ed049a10b08864547c9cb710899fc16a7fe4a95a7d3b6e48fac633",
+      "redacted_text_sha256": "fd5d6b4c90ed049a10b08864547c9cb710899fc16a7fe4a95a7d3b6e48fac633",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-005",
+      "key_sha256": "2d811f08a3c799c9eca903c3aff1e902b8a874bbc5a1b2c4a6cc81f8e7c1a668",
+      "domain": "wikipedia",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "b18f8f464ffc9e82f3139f84d87016171e9aa250abad1fc9e43c140c09d269f7",
+      "redacted_text_sha256": "b18f8f464ffc9e82f3139f84d87016171e9aa250abad1fc9e43c140c09d269f7",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-006",
+      "key_sha256": "be9f5463af019b26187e338f211fbb9f4b7e4943b3ab3fd7400b8408dccaa45b",
+      "domain": "github",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "1edc38000466f75bc73c6a5677b2e6ec2fa9be937a062f37225a89e87228e80a",
+      "redacted_text_sha256": "a0918a476141486917cd96214f156324bb28e15a98d6c0319e77557d9230411a",
+      "redaction_count": 1
+    },
+    {
+      "review_id": "G1-007",
+      "key_sha256": "9c6b703fe16ca283736d51a65455f12fc873da8d3003fd4cffdb7935fd437af6",
+      "domain": "c4",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "f8ccbdac8d05da651e5afc6eda52f328c292e57757cc773fc90e7bb909a0224b",
+      "redacted_text_sha256": "f8ccbdac8d05da651e5afc6eda52f328c292e57757cc773fc90e7bb909a0224b",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-008",
+      "key_sha256": "1504e70b4ad2fecd1b2a2da3836a546ca649c006e468ffb2166f13a6a21655d2",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "5def9d8d9bab17d7e61b82f327d895a99e056287d7372429306909ab13b8d4f1",
+      "redacted_text_sha256": "5def9d8d9bab17d7e61b82f327d895a99e056287d7372429306909ab13b8d4f1",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-009",
+      "key_sha256": "8a3fc1c06c55dbe4a089621af6b2621ac7a13f4fbb314134e811540e808166c9",
+      "domain": "stackexchange",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "b4f459fbd7fc31369bc1c8d48813d400832ed31bc8c311cc60d2eec3ac850fb6",
+      "redacted_text_sha256": "b4f459fbd7fc31369bc1c8d48813d400832ed31bc8c311cc60d2eec3ac850fb6",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-010",
+      "key_sha256": "7973808eac4a116f74aad19bda03a52c88af2786a34a330e5afd9b8eca58a478",
+      "domain": "book",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "7460145ae2c2daca160e01a4f6d43c1e4c2f703f396a523a4cabdad3b752e5f9",
+      "redacted_text_sha256": "56091c3dc79c02cacd532ed8f85a327f2e8d8f8751e9f3332a57a860b9467e6c",
+      "redaction_count": 124
+    },
+    {
+      "review_id": "G1-011",
+      "key_sha256": "aeec3b8ffe5f241dc991d826a71c86a7b0b3dcecf723bd97d1db1f7e7588bc04",
+      "domain": "arxiv",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "debd253329e9cd565cb28fb3967ed52ca4142b67388ade4e0e417cd422a5ff87",
+      "redacted_text_sha256": "debd253329e9cd565cb28fb3967ed52ca4142b67388ade4e0e417cd422a5ff87",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-012",
+      "key_sha256": "ac05f361913d4b3569c673fae2b7af5d3daf48466ca4b34b05258ab6e036795a",
+      "domain": "book",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "e9472763109f0dd3002b0b512b23006d97e12efd4444cdca4172ec59a9b17f5b",
+      "redacted_text_sha256": "51cf674caa3ae3a9c35dfe19303bd817cee889b4481406864b7a8bddfd2c934f",
+      "redaction_count": 89
+    },
+    {
+      "review_id": "G1-013",
+      "key_sha256": "59e2866ff560732da0e8f3f9efd162f7fa9c4df80d5d4ca024b7dd0b73e77699",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "75ef55ecd328e4d3d92dc56857fd47bea8d2aca4db3eabace762cff938b91f96",
+      "redacted_text_sha256": "8cfba4d86083f9e347e95db6db0ffd9640aecaf629665453bba0d11b4dbab5e9",
+      "redaction_count": 3
+    },
+    {
+      "review_id": "G1-014",
+      "key_sha256": "afb38e3b75e01ceef78c0004966a72486da45a60afd3013e3ea639b51d2378df",
+      "domain": "book",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "fb7b18c88e33128976df0add5efcaab4047ac12d2f0e37904180f485c3d7fad0",
+      "redacted_text_sha256": "f5f5339ad7503d18efb8efcc40efb6e74ef6de6450a89c2d38800ae4ce5eef9d",
+      "redaction_count": 3
+    },
+    {
+      "review_id": "G1-015",
+      "key_sha256": "d41d0daddd33a7ddc0f7a54c4f141eb3897de3af7a02dbefb43524e69ce64e99",
+      "domain": "arxiv",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "49fb26986534a454a981938e2fc93d06f917cb6c881a0ba4da1201cab6645ca5",
+      "redacted_text_sha256": "49fb26986534a454a981938e2fc93d06f917cb6c881a0ba4da1201cab6645ca5",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-016",
+      "key_sha256": "0c0bf4343f1a6fd89ed36d7c6e5211b8d7d94715ce57b4981df92fc9b8bfabe4",
+      "domain": "book",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "e4cb6eae900f86ebb4a6bafac2e7ab3cc0e34d182d22e03e6bae6bda6e6e16a9",
+      "redacted_text_sha256": "95f6dc851f963d2b94775e6e7015640fc64d88c0ae0e525b6c87b7d1baccc090",
+      "redaction_count": 1
+    },
+    {
+      "review_id": "G1-017",
+      "key_sha256": "9cca5ffc58eb6f670eab0392a94e570caaff6aec6731f880ec743425d7d57ea5",
+      "domain": "commoncrawl",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "1aa919cb501791f0efe3064f0d35cd3e1eeeda0e12c8b0b00a16415fa16d724b",
+      "redacted_text_sha256": "7a85c8a7345e074301567677f70f743f74a80e9517c4576200059c2399b84d7f",
+      "redaction_count": 6
+    },
+    {
+      "review_id": "G1-018",
+      "key_sha256": "30a8957a06956fa0eef5a73eef94d199fad01119a9e3f00c3d18f35afb5d13bf",
+      "domain": "github",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "f6bd8e890f4608c88a7b76ccf0a2ceb6101442c8d9d45f03c48a9d68552c1133",
+      "redacted_text_sha256": "f6bd8e890f4608c88a7b76ccf0a2ceb6101442c8d9d45f03c48a9d68552c1133",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-019",
+      "key_sha256": "dc47c631d169ecc2900ed398c39467b1004f4383748fd3141a7cf3ad7e9176fa",
+      "domain": "c4",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "fd7ad0e1595451a1cd6403c2ac4efe4ae8031e29fe21b28b93bd3ff220ae0c0a",
+      "redacted_text_sha256": "fd7ad0e1595451a1cd6403c2ac4efe4ae8031e29fe21b28b93bd3ff220ae0c0a",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-020",
+      "key_sha256": "86861883ceb0f30dc4063d54673980e07e81ab8d641b852efcc1711759a8a51d",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "878cb8ea9d4d07b3b0aca310c58dd9f32bbc893c229fad3804b908afd4d556d2",
+      "redacted_text_sha256": "878cb8ea9d4d07b3b0aca310c58dd9f32bbc893c229fad3804b908afd4d556d2",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-021",
+      "key_sha256": "817d7eefffb410338cbc149ac3b8af23479a8681d11ffdd59dc95c4061b26a5d",
+      "domain": "wikipedia",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "0410dafb123cad7e0a74f56f6f2cfd88f6bf465e1c612c04bba24f8199781032",
+      "redacted_text_sha256": "0410dafb123cad7e0a74f56f6f2cfd88f6bf465e1c612c04bba24f8199781032",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-022",
+      "key_sha256": "00969ffa2d0989a1e90172c57d19c7033d89f8e71d690d7517f6635ba18b1b34",
+      "domain": "c4",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "bf2cbf5398ddc9cdad13ceff9f9b580d21bacdf414a9ca80e14a42ab76b8a558",
+      "redacted_text_sha256": "bf2cbf5398ddc9cdad13ceff9f9b580d21bacdf414a9ca80e14a42ab76b8a558",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-023",
+      "key_sha256": "cc39b8f3e00601632db879f7250325e3dc671a720163b628d276092d99080db4",
+      "domain": "c4",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "69ca5ef3b9d9198c895bafe844f4e881d6bb9eee19143251e77d945aabfe14e0",
+      "redacted_text_sha256": "69ca5ef3b9d9198c895bafe844f4e881d6bb9eee19143251e77d945aabfe14e0",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-024",
+      "key_sha256": "f48d1550fec99f76d1547576b88745341b0434cc349f9c5b7e00cdc0f6b4464b",
+      "domain": "commoncrawl",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "d93eaecab493da63c335f78c722151c86640a6df16a11357cc73d1ac2059ac20",
+      "redacted_text_sha256": "d93eaecab493da63c335f78c722151c86640a6df16a11357cc73d1ac2059ac20",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-025",
+      "key_sha256": "e9b8686e639c442f3fc86477a9000809aa16393324722065ed262a53353fc523",
+      "domain": "wikipedia",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "be4c3fb30a5f6c5d2c530ae8c08adbe2ac22b5a77b9a5a27d79b81b9754a2aac",
+      "redacted_text_sha256": "be4c3fb30a5f6c5d2c530ae8c08adbe2ac22b5a77b9a5a27d79b81b9754a2aac",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-026",
+      "key_sha256": "dcb58e299abaf1d33c7f86e6166a0713555810857de027edb5b7aa540c50fb5f",
+      "domain": "stackexchange",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "84c9ba9a8d8d00665e46d9c1729be1751d4973d030f2fd2b533bb040dc326eea",
+      "redacted_text_sha256": "84c9ba9a8d8d00665e46d9c1729be1751d4973d030f2fd2b533bb040dc326eea",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-027",
+      "key_sha256": "d98e728f1e5e2257530fb06edbfbbb8eb3072f94070efecb70408d863c3b09d3",
+      "domain": "c4",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "ad186acad89b2914978aa6f280fea6111e1580c9aa25ad136bb6d3bfecff08e6",
+      "redacted_text_sha256": "ad186acad89b2914978aa6f280fea6111e1580c9aa25ad136bb6d3bfecff08e6",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-028",
+      "key_sha256": "9e6b4c7be9cd81249f521ef2841be358c4a9c04eb5e2da38e8539fb2319ef5dd",
+      "domain": "github",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "8c8d78179de0f44513663ec4f10459678f5d9eb69d3fc17ac741c06986d20f2d",
+      "redacted_text_sha256": "8c8d78179de0f44513663ec4f10459678f5d9eb69d3fc17ac741c06986d20f2d",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-029",
+      "key_sha256": "def2fe56d2d48fb6d6a4632465e71ae26f6a053bb46569a2746e688aa6ac0c4d",
+      "domain": "arxiv",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "bb205073753ca98fc2b7e66bb73d1419c63ef2c4a31d1d4a205a7d9ef4bf8a07",
+      "redacted_text_sha256": "bb205073753ca98fc2b7e66bb73d1419c63ef2c4a31d1d4a205a7d9ef4bf8a07",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-030",
+      "key_sha256": "5b2d1474763c0aab9bc7810c7593c2b73b5efd6c86132e542388f1046d97d8e1",
+      "domain": "book",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "f6250e6bf85dff140f36a99c5913d6e585ef880804de0e46e791671a1377ab7e",
+      "redacted_text_sha256": "77892f2ac5fa63623ccab6e3b4fe9f2e92881de4f17a546491fd81c3aed6c21b",
+      "redaction_count": 6
+    },
+    {
+      "review_id": "G1-031",
+      "key_sha256": "7e4b1e325362d3a9d200bf8cee625be3aa5e38e478fec715b0fe1e5b75905837",
+      "domain": "c4",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "b389b9d8e9aa078b8e3c31f6a674187ef6d5993590083a732590a89f77208e19",
+      "redacted_text_sha256": "3c887695c13b75b478a6e6e23c6ae2ee2b2d11ac9657d4299e57e1eed039df82",
+      "redaction_count": 1
+    },
+    {
+      "review_id": "G1-032",
+      "key_sha256": "31c7e51c12df9129f93595f02a954dae20b6387c7efa26d05ee21e35ff94c5b9",
+      "domain": "c4",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "b5d47d42fd41e6c19209d65da9785a6d427ee285249c4bd450edadff54a2190a",
+      "redacted_text_sha256": "b5d47d42fd41e6c19209d65da9785a6d427ee285249c4bd450edadff54a2190a",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-033",
+      "key_sha256": "2d94c6caf2a202fbe6f1a601c593179f8c5131c5a90a37a3e722397c30eab229",
+      "domain": "c4",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "1228b807bacd9b3929dbe9b01537346da71c4a49348d13aa57c490611bfc40f1",
+      "redacted_text_sha256": "1228b807bacd9b3929dbe9b01537346da71c4a49348d13aa57c490611bfc40f1",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-034",
+      "key_sha256": "8030755a9c63b1f2b6b36d9e135f529b3efd6919f92870e1cdcfbe3432223143",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "6acf796f303c761bd3f8c4ebfe59eba4ac69bab4af1ff6b1c919638739b68260",
+      "redacted_text_sha256": "6acf796f303c761bd3f8c4ebfe59eba4ac69bab4af1ff6b1c919638739b68260",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-035",
+      "key_sha256": "b7fc1f8693d072f7c4092bde2d5452e7df206bd584363b8d2dfa145b72828de2",
+      "domain": "arxiv",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "dd9d124ea28769ec83932bfdd22a49195273bcebde4131962b8f06d39ab8fbdf",
+      "redacted_text_sha256": "dd9d124ea28769ec83932bfdd22a49195273bcebde4131962b8f06d39ab8fbdf",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-036",
+      "key_sha256": "dfa334a2676fe06142c124fdb99ba7a58494152ce97ba9cafdc5ef456706776b",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "739bbe08062b4fbab73583da38628134e138bbf22157376da5a533e4a565c64e",
+      "redacted_text_sha256": "739bbe08062b4fbab73583da38628134e138bbf22157376da5a533e4a565c64e",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-037",
+      "key_sha256": "fbcc3afbe6870debc18194d07f47dc9cd59d4040ef4e0c8dc1498a4b61d32573",
+      "domain": "arxiv",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "8148cc6a4373ec244d81e502b1241fe7516ba05c2532ca63fff9f319b1c609f2",
+      "redacted_text_sha256": "8148cc6a4373ec244d81e502b1241fe7516ba05c2532ca63fff9f319b1c609f2",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-038",
+      "key_sha256": "a5c1c91f9c144c34e061340c105a85c4fbb5fbf41c9d5bfd26e0a487ee0aeff9",
+      "domain": "book",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "1e3507dbcd0b3aa225586e362b0fbcef0f0a3c6dec3261f23bf12a7dc9702fa7",
+      "redacted_text_sha256": "20e0fc566ffbdd07d3d0740cdfbda74b0582c72f1847aa9e6e108e308b4cf942",
+      "redaction_count": 7
+    },
+    {
+      "review_id": "G1-039",
+      "key_sha256": "de91a39633f966a04553461b9b9f937ba68f099b516bcad531bb205284260f95",
+      "domain": "book",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "4782d819ccd6f9371ff3b40de7f30c4aa069ed90eb6f4b803caa5093d17e8e8d",
+      "redacted_text_sha256": "add924da8f22b74773553619d2cdcbad480df59d492fc92faaf27246ecaa506a",
+      "redaction_count": 3
+    },
+    {
+      "review_id": "G1-040",
+      "key_sha256": "cc81f786020b380a25e8c05d3df882f4a214ba07c26605c4be61d59399c83b0b",
+      "domain": "commoncrawl",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "92791bc22825a2a21aeb31e5959851b6697363981767d04effec3e5d317a7bf8",
+      "redacted_text_sha256": "92791bc22825a2a21aeb31e5959851b6697363981767d04effec3e5d317a7bf8",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-041",
+      "key_sha256": "f950ac3fe748acc64113d3c8d5fd2ccee60edfd41d29c1cc21b266999d925301",
+      "domain": "stackexchange",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "f405890f4380aa34011a6ff9b37180824551f9d68ff8a534e5215c736ae830c8",
+      "redacted_text_sha256": "9383d34b381335321283a620b46d72c4342c3ab26208854df16983be65ed0837",
+      "redaction_count": 2
+    },
+    {
+      "review_id": "G1-042",
+      "key_sha256": "abde7bddea9621f58e2cbff75753d65418eace826efc097763832f5d76c020a9",
+      "domain": "github",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "e8b3468256a98bcb8d38d9639afe2789e382061821c07ac745fde1d12c690bb8",
+      "redacted_text_sha256": "e8b3468256a98bcb8d38d9639afe2789e382061821c07ac745fde1d12c690bb8",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-043",
+      "key_sha256": "e8997b983e3ca0bd27af9715357037806c7f18b2776aea7bf4b0984faf5e92d2",
+      "domain": "arxiv",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "690eb66b01c80a0be06e5309918517f84f51a607fedc4e8b37d8579e021dd63b",
+      "redacted_text_sha256": "690eb66b01c80a0be06e5309918517f84f51a607fedc4e8b37d8579e021dd63b",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-044",
+      "key_sha256": "b5a750850387aae186784e8e203d40eda2c96626070f0c144d4ca848c6313977",
+      "domain": "wikipedia",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "4d94f61d30bc5b761a465ac87701989ce5c571d9eed493621b9e03a6692f8c6b",
+      "redacted_text_sha256": "4d94f61d30bc5b761a465ac87701989ce5c571d9eed493621b9e03a6692f8c6b",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-045",
+      "key_sha256": "4534e0890051a0c01744c7ac552c9f78ad78a0a837bd58fe261a8601c0f1fa80",
+      "domain": "github",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "8b198f10b4a9207d14a66586c974d3c460bd6bd32c3e96accaecca515b1fc565",
+      "redacted_text_sha256": "8b198f10b4a9207d14a66586c974d3c460bd6bd32c3e96accaecca515b1fc565",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-046",
+      "key_sha256": "a13ba9905a75f127f4f061fcd8a514a42e0d7e3f283929678c6d6f339de48ba0",
+      "domain": "book",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "2c8dbc41373da9524833a2ac531990614f00b712f2f7ccaea893d9c2b586f457",
+      "redacted_text_sha256": "716244182478a88c1e5881377c73f3a1861ce4794ef20c2f825e44327cb0070c",
+      "redaction_count": 3
+    },
+    {
+      "review_id": "G1-047",
+      "key_sha256": "cf98db820070d3b9a20c3c1cf306e7d0819a0272fbace676bebcf3eeb002fa4c",
+      "domain": "wikipedia",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "cda9ac5b8ddfe7bb4313caf105345651dbb8200914e5236c81fa1e3fc4cba099",
+      "redacted_text_sha256": "cda9ac5b8ddfe7bb4313caf105345651dbb8200914e5236c81fa1e3fc4cba099",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-048",
+      "key_sha256": "2eb852fb74bb38aa4bdb491a8e85482304dd575baed5f5768cd26e38ad57f3b8",
+      "domain": "stackexchange",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "ebdf4becf71578cd7c03ebff01e1efdb130b082f9da59ad00c7dabb14d4ff030",
+      "redacted_text_sha256": "ebdf4becf71578cd7c03ebff01e1efdb130b082f9da59ad00c7dabb14d4ff030",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-049",
+      "key_sha256": "fc52f7f803bf77d830c18b2ea690aa987120b38a08cb116e121b1e2593283469",
+      "domain": "commoncrawl",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "3e0a7b19b52c2bd0be9c3112583473baf9864d020aba88b48d9df28f46629099",
+      "redacted_text_sha256": "3e0a7b19b52c2bd0be9c3112583473baf9864d020aba88b48d9df28f46629099",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-050",
+      "key_sha256": "3da2f1867eaf80d9a3b41adacdfd1c039650cf228d44570329a5ded01462ee3c",
+      "domain": "stackexchange",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "8471e4dfa53696b403b57ad63b38c4d882e6da5d5737a612b840314ef1b67606",
+      "redacted_text_sha256": "8471e4dfa53696b403b57ad63b38c4d882e6da5d5737a612b840314ef1b67606",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-051",
+      "key_sha256": "5411e5cd0503e52679c79ab4af1e2506540abec3796c339c711e2ad205f66f10",
+      "domain": "book",
+      "sampling_stratum": "highConflict_lowQ",
+      "original_text_sha256": "ea7ea9c85cf93a5cd7cdfae4fc1dd2b532c934085dd10bbffa6e509542f5eb36",
+      "redacted_text_sha256": "eb04fd6afc3c072c6ef1b6efc3e8af48a02d345fdf32962aed38b7984205218b",
+      "redaction_count": 1
+    },
+    {
+      "review_id": "G1-052",
+      "key_sha256": "40aaee3cd288f7155a70663daa2fb44fde93cb7517670fa83704611d2d467eaa",
+      "domain": "github",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "29882bdae93027baf38f35cca311b5e687d7a5fabdc871dae22a273f8d73faae",
+      "redacted_text_sha256": "29882bdae93027baf38f35cca311b5e687d7a5fabdc871dae22a273f8d73faae",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-053",
+      "key_sha256": "543e87313f21c5a779c036baf9151ab0313b1f86f2986fc324a8d1b2c2da6c85",
+      "domain": "github",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "f1ba109f7dac60275652bfaea3c4c44e8df057c2e4344e3fb6aebfc3aed8fdb7",
+      "redacted_text_sha256": "f1ba109f7dac60275652bfaea3c4c44e8df057c2e4344e3fb6aebfc3aed8fdb7",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-054",
+      "key_sha256": "4a424ab12566aba42ba24760e473df5a8afe6332ffe8e602e4e392642871168a",
+      "domain": "stackexchange",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "75d0375994a87e2396fbc22bdec1626e8360b6de11945df191d2a07b28f322d2",
+      "redacted_text_sha256": "75d0375994a87e2396fbc22bdec1626e8360b6de11945df191d2a07b28f322d2",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-055",
+      "key_sha256": "8891986e28177d32dbef7799287aef7a4dcf13f75ed2cb6740c265ad9dba1765",
+      "domain": "arxiv",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "5e602e39cd62610535de591d7a1ad305812fc5c8ef692ac0ab0d3edbcd5d2a26",
+      "redacted_text_sha256": "5e602e39cd62610535de591d7a1ad305812fc5c8ef692ac0ab0d3edbcd5d2a26",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-056",
+      "key_sha256": "df92eb4216b0a645015e874a5cf20e59bf4afc509b5d788c23eb2c6c452b6466",
+      "domain": "stackexchange",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "600dc1c7afaf9025f8cf614da5525497a7fd11a3617ef9cb6a75c7608b0fd9d9",
+      "redacted_text_sha256": "600dc1c7afaf9025f8cf614da5525497a7fd11a3617ef9cb6a75c7608b0fd9d9",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-057",
+      "key_sha256": "6678255da3a07caac72d063a25a255c9bf92210830405ab546fa62b13d8fdc08",
+      "domain": "github",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "f3eef035d491f3dcb11842428532c73ae52c24ddd383dcd084d5cfb5659a2192",
+      "redacted_text_sha256": "f3eef035d491f3dcb11842428532c73ae52c24ddd383dcd084d5cfb5659a2192",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-058",
+      "key_sha256": "894fe7fb9affd23a813f78e91db31c1a194f8fa2b1c4e242f9588bb28e05549b",
+      "domain": "c4",
+      "sampling_stratum": "highConflict_highQ",
+      "original_text_sha256": "33b3ccea725ff3873f2b73530ab0926fcbdd2a18f61a3369c6b6bfc09a230402",
+      "redacted_text_sha256": "33b3ccea725ff3873f2b73530ab0926fcbdd2a18f61a3369c6b6bfc09a230402",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-059",
+      "key_sha256": "6e8d26df701f94b98ea547bbde93dc1d172de067b9f768a31190920af99a4e0d",
+      "domain": "wikipedia",
+      "sampling_stratum": "lowQ_lowConflict",
+      "original_text_sha256": "4c5b7786467f48bbc13151d8110af0ef96eafe9b205fc0837dd25d05d290f799",
+      "redacted_text_sha256": "4c5b7786467f48bbc13151d8110af0ef96eafe9b205fc0837dd25d05d290f799",
+      "redaction_count": 0
+    },
+    {
+      "review_id": "G1-060",
+      "key_sha256": "d8eb29b4325cad2b75cb2b67d9f7b3e5cf6876713d9e80367ab5bc177bacd330",
+      "domain": "book",
+      "sampling_stratum": "highQ_lowConflict",
+      "original_text_sha256": "2d5317c4d9b12cb411008e82f2b0402dc1a2b309fe277aa88ace8c4f304ae7e1",
+      "redacted_text_sha256": "5a1ef94aaceb78b9ebee1b28fc79d70a018ba20e45fb4c12c0b07c8b7403dcb4",
+      "redaction_count": 64
+    }
+  ],
+  "ratings_generated_by_executor": false,
+  "seal_statement": "This seal was written before manual_text_review_blind.csv and before any author ratings."
+}

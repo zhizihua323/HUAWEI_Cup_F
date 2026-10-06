@@ -1,0 +1,128 @@
+{
+  "seal_version": "G4-v1",
+  "task_id": "TASK-G4",
+  "run_id": "20260925T195716+0800",
+  "sealed_at_local": "2026-09-25T20:01:02.420928+08:00",
+  "sealed_before_task_score_values_read": true,
+  "c1_c2_equivalence": {
+    "c1_rows": 4576,
+    "c2_rows": 4576,
+    "common_rows": 4576,
+    "common_models": 4497,
+    "unique_models_match": true,
+    "c1_only_rows": 0,
+    "c2_only_rows": 0,
+    "numeric_tolerance": 1e-09,
+    "tolerant_value_mismatch_cells": 0,
+    "exact_string_mismatches": 0,
+    "max_abs_numeric_difference": 3.552713678800501e-15,
+    "pass": true
+  },
+  "c8_accounting_expected": {
+    "files_total": 1958,
+    "parse_success": 1954,
+    "parse_failed": 4,
+    "complete_six_task": 1854,
+    "partial": 6
+  },
+  "forecast_origin_date": "2025-01-28",
+  "forecast_origin_rule": "maximum audited C8 canonical evaluation date among main eligible identity-unique pretrained open-weight models with at least one finite task result",
+  "horizon_dates": {
+    "12": "2026-01-28",
+    "24": "2027-01-28"
+  },
+  "time_cutoff": "2024-06-19",
+  "time_cutoff_rule": "date-only distribution rule: choose the unique model reference-date cutoff that yields at least 10 test models and train fraction closest to 0.80; ties choose earlier cutoff; fixed before score values were read",
+  "time_cutoff_status": "EVALUABLE",
+  "main_sample_rule": {
+    "base_table": "C2, with C1 used only for equivalence/field audit",
+    "type": "pretrained only in main",
+    "open_weights": "C2 or C4 says Yes and neither source says No",
+    "license": "Hub License present and not unknown/other",
+    "identity": "unique C01/T05 canonical identity, unique C3 Year, unique C4 metadata link, non-ambiguous date",
+    "time_axis": "C8 canonical evaluation date per model-task",
+    "missing": "no imputation of N, D, compute, date, license, or task score",
+    "other_models": "chat/fine-tuned open models estimated only as a separate sensitivity layer"
+  },
+  "candidate_specs": {
+    "M0_CONSTANT": "1",
+    "M1_SCALE": "1 + log10(compute)",
+    "M2_SCALE_TIME": "1 + log10(compute) + time_years",
+    "sensitivity_only": "1 + log10(N_parameters) is reported but never selection-eligible"
+  },
+  "candidate_selection_rule": {
+    "comparison": "nested simplest-model upgrade",
+    "protocols": [
+      "GROUPED_5FOLD",
+      "TIME_OUT_80_20",
+      "LEAVE_ONE_FAMILY_OUT"
+    ],
+    "min_evaluable_protocol_count": 2,
+    "relative_improvement_each_required": 0.05,
+    "required_metrics": [
+      "mean_RMSE",
+      "q90_pinball"
+    ],
+    "max_relative_degradation_allowed": 0.1,
+    "direction_consistency_min": 0.8,
+    "bootstrap_draws": 500,
+    "random_seed": 20260925,
+    "rank_and_condition": "full rank and standardized condition number < 1e8",
+    "scenario_rule": "use validated selected model; if M2 is not validated, still report a separately labelled SCENARIO_ONLY_UNVALIDATED M2 forecast"
+  },
+  "contribution_rule": {
+    "selected_model": "simplest model passing the frozen upgrade gate; M0 if none",
+    "start": "earliest task score date",
+    "end": "forecast origin",
+    "scale_center": "median log10(compute) in +/-365-day endpoint windows; if fewer than 3 records, nearest 3",
+    "equations": {
+      "Delta_scale": "b_C*(logC_origin-logC_start)",
+      "Delta_non_scale": "b_T*(t_origin-t_start), or 0 when the selected model has no time term",
+      "Delta_fitted": "Delta_scale+Delta_non_scale"
+    },
+    "bootstrap": "500 grouped canonical-model resamples; central 5%-95% interval"
+  },
+  "scenario_rule": {
+    "n_observed_ND_records": 18,
+    "n_observed_ND_families": 9,
+    "n_candidate_adjacent_pairs": 9,
+    "n_valid_family_level_intervals": 1,
+    "n_independent_model_families": 1,
+    "min_families_required": 3,
+    "min_family_level_intervals_required": 10,
+    "identifiable": false,
+    "scenario_values": {
+      "SLOW": {
+        "annual_log_growth": 0.0,
+        "multiplier": 1.0,
+        "source": "SLOW_ASSUMED",
+        "quantile": 0.25
+      },
+      "BASELINE": {
+        "annual_log_growth": 0.4054651081081644,
+        "multiplier": 1.5,
+        "source": "BASELINE_ASSUMED",
+        "quantile": 0.5
+      },
+      "UPPER_SENSITIVITY": {
+        "annual_log_growth": 0.6931471805599453,
+        "multiplier": 2.0,
+        "source": "UPPER_SENSITIVITY_ASSUMED",
+        "quantile": 0.75
+      }
+    },
+    "rule": "T08-compatible adjacent same-family N/D pairs, 90-730 days, median within family-period, family-equal quantiles; fallback is the pre-registered mathematical multiplier grid"
+  },
+  "scenario_registry_sha256": "d8a40915c0fe4ae4bea3b2862df0e0bf03f9b2f708991dab03ba78d197e2e645",
+  "direct_benchmark_loss_separation": {
+    "loss_bridge_qualification": "CONDITIONAL_ASSOCIATION_ONLY",
+    "loss_to_benchmark_conversion_allowed": false,
+    "loss_files_used_in_direct_benchmark_selection": false
+  },
+  "external_run_guards": {
+    "c01_r1": "diagnostics/TASK-C01-R1/20260924T225308+08",
+    "t05_read_only": "diagnostics/TASK-T05/20260925T113355+0800",
+    "t08_read_only": "diagnostics/TASK-T08/20260925T142203+0800",
+    "rerun_t05_t08": false
+  }
+}

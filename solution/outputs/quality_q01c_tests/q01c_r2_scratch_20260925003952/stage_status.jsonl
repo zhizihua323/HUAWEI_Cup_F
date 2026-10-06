@@ -1,0 +1,10 @@
+{"ts": "2026-09-25T00:39:52+08:00", "phase": "harness", "event": "start", "pid": 22544, "note": "R2 mid-stage cross-process supervisor"}
+{"ts": "2026-09-25T00:39:52+08:00", "phase": "fixture_build", "event": "start", "pid": 22544}
+{"ts": "2026-09-25T00:39:52+08:00", "phase": "fixture_build", "event": "complete", "pid": 22544, "fixture_id": "q01c_r1_fixture_v1", "rows": 660}
+{"ts": "2026-09-25T00:39:53+08:00", "phase": "p1", "event": "start", "pid": 22544, "hold_after_stage": "s30_sensitivity"}
+{"ts": "2026-09-25T00:39:54+08:00", "phase": "p1", "event": "terminated", "pid": 21880, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-25T00:39:54+08:00", "phase": "probe", "event": "start", "pid": 22544}
+{"ts": "2026-09-25T00:39:55+08:00", "phase": "probe", "event": "complete", "pid": 22544, "exit_code": 0}
+{"ts": "2026-09-25T00:39:55+08:00", "phase": "p2", "event": "start", "pid": 22544}
+{"ts": "2026-09-25T00:39:57+08:00", "phase": "p2", "event": "complete", "pid": 22544, "exit_code": 0, "new_computations": {"s10_scan_a1": 0, "s11_scan_a2": 0, "s12_scan_a3": 0, "s20_score_primary": 0, "s30_sensitivity": 0}, "status": "COMPLETE_PENDING_REVIEW"}
+{"ts": "2026-09-25T00:39:57+08:00", "phase": "harness", "event": "complete", "pid": 22544, "new_computations_total": 0, "checkpoint_invariant": true}

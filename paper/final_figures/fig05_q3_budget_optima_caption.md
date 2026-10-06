@@ -1,0 +1,1 @@
+图 5 | Q3 三档预算下的冻结支持域内条件最优。a–c，在正式主场景 S00_NULL_M0_B1、H=2048 下，仅优化 N 与 D，分别给出十亿参数、十亿 token 和冻结预测 Loss。预算为 10^18、10^20、10^22 FLOPs。10^22 档的 D_B=299.893，达到 B1 支持上界，以空心红圈标识。Q 为 NOT_IDENTIFIED_NOT_OPTIMIZED，p 为 FIXED_P0_NOT_OPTIMIZED；结果只能解释为冻结模型、预算与支持域内的 CONDITIONAL_OPTIMUM。

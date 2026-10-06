@@ -1,0 +1,22 @@
+[2026-09-24T22:55:55.082+08:00] TASK-Q01C start run_id=synthetic_run mode=fixture resume=True stage=all pid=11700
+[2026-09-24T22:55:55.103+08:00] stage=s00_preflight already complete and validated; not recomputed
+[2026-09-24T22:55:55.105+08:00] stage=s01_synthetic_tests already complete and validated; not recomputed
+[2026-09-24T22:55:55.107+08:00] stage=s10_scan_a1 already complete and validated; not recomputed
+[2026-09-24T22:55:55.212+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.1
+[2026-09-24T22:55:55.215+08:00] stage=s11_scan_a2 done elapsed_s=0.108
+[2026-09-24T22:55:55.267+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-24T22:55:55.269+08:00] stage=s12_scan_a3 done elapsed_s=0.054
+[2026-09-24T22:55:55.337+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-24T22:55:55.393+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-24T22:55:55.394+08:00] stage=s20_score_primary done elapsed_s=0.124
+[2026-09-24T22:55:55.454+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-24T22:55:55.454+08:00] stage=s30_sensitivity done elapsed_s=0.061
+[2026-09-24T22:55:55.573+08:00] stage=s40_summarize domain rows=20 denominators=280 sensitivity rows=20 comparison=20
+[2026-09-24T22:55:56.389+08:00] stage=s40_summarize complete (summaries + report)
+[2026-09-24T22:55:56.389+08:00] stage=s40_summarize done elapsed_s=0.935
+[2026-09-24T22:55:56.420+08:00] running independent verifier: D:\anaconda\python.exe -X utf8 C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py --run-dir C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225550+08\interruption_run\synthetic_run --fixture-manifest C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225550+08\synthetic_fixture\fixture_manifest.json
+[2026-09-24T22:55:57.201+08:00] stage=s50_verify complete checks={'n_checks': 14, 'n_pass': 14, 'n_fail': 0, 'n_not_checked': 0}
+[2026-09-24T22:55:57.201+08:00] stage=s50_verify done elapsed_s=0.811
+final manifest written with 65 files; read-only recheck follows
+[2026-09-24T22:55:57.304+08:00] stage=s60_finalize done elapsed_s=0.103
+[2026-09-24T22:55:57+08:00] TASK-Q01C end status=COMPLETE_PENDING_REVIEW exit_code=0

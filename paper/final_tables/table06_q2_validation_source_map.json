@@ -1,0 +1,24 @@
+{
+  "asset": "table06_q2_validation",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/support_oos_audit.csv",
+      "fields": "raw_rows; in_B1_box_rows; finite_positive_N_D_rows",
+      "unit": "count",
+      "denominator": "source-specific records"
+    },
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/validation_metrics_by_source.csv",
+      "fields": "IN_SUPPORT rmse; final_qualification",
+      "unit": "Loss",
+      "denominator": "source-specific support-in rows"
+    },
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/large_model_gt10b_audit.csv",
+      "fields": "B9/B10 counts, estimated_reference_rmse, qualification",
+      "unit": "count; Loss",
+      "denominator": "all B9/B10 records"
+    }
+  ]
+}

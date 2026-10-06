@@ -1,0 +1,11 @@
+{
+  "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T05\\20260925T113355+0800",
+  "contract_eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+  "bridge_rows": 812,
+  "main_bridge_rows": 126,
+  "main_models": 7,
+  "main_model_families": 1,
+  "qualification": "CONDITIONAL_ASSOCIATION_ONLY",
+  "loss_to_benchmark_conversion_count": 0,
+  "used_in_direct_model_selection": false
+}

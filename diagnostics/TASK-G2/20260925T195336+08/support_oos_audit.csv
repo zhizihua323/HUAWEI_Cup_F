@@ -1,0 +1,7 @@
+﻿source_id,raw_rows,finite_positive_N_D_rows,in_B1_box_rows,out_by_N_rows,out_by_D_rows,out_both_rows,invalid_N_or_D_rows,N_below_support,N_above_support,D_below_support,D_above_support,oos_fraction_of_finite,prediction_rule,primary_metric_subset
+B2,1029,1029,120,147,889,127,0,0,147,0,889,0.88338192419825068,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only
+B3,4000,4000,4000,0,0,0,0,0,0,0,0,0,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only
+B4,57,57,8,17,48,16,0,1,16,0,48,0.85964912280701755,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only
+B5,44,44,8,19,32,15,0,0,19,0,32,0.81818181818181823,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only
+B9,132,128,0,128,105,105,4,0,128,3,102,1,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only
+B10,128,128,0,128,105,105,0,0,128,3,102,1,M0_B1 arithmetic prediction; support independent; no clipping,IN_SUPPORT only

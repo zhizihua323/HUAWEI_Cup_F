@@ -1,0 +1,252 @@
+{
+  "run_id": "20260925T203200+08",
+  "generated_local": "2026-09-25T20:19:29+08:00",
+  "summary": {
+    "total": 14,
+    "pass": 14,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "checks": [
+    {
+      "check": "Q01C_T03E_00_05_and_paper_manuscript_hashes_unchanged",
+      "status": "PASS",
+      "details": {
+        "hard_group_changes": {
+          "q01c_run": [],
+          "t03e_run": [],
+          "root_docs": []
+        },
+        "paper_manuscript_changes": [],
+        "external_or_parallel_paper_changes": []
+      }
+    },
+    {
+      "check": "Q01C_row_count_272505",
+      "status": "PASS",
+      "details": {
+        "rows": 272505
+      }
+    },
+    {
+      "check": "unique_keys_261086",
+      "status": "PASS",
+      "details": {
+        "unique": 261086
+      }
+    },
+    {
+      "check": "Q_invalid_19",
+      "status": "PASS",
+      "details": {
+        "physical_invalid": 19,
+        "unique_invalid": 19
+      }
+    },
+    {
+      "check": "overlap_11419_removed_from_all_unique",
+      "status": "PASS",
+      "details": {
+        "q01c_overlap_keys": 11419,
+        "t03e_overlap_keys": 11419,
+        "intersection": 11419
+      }
+    },
+    {
+      "check": "high_conflict_threshold_frozen_0_5",
+      "status": "PASS",
+      "details": {
+        "threshold": 0.5,
+        "source": "Q01C summarize_scope boolean_defined = ranges > 0.5"
+      }
+    },
+    {
+      "check": "scope_denominators_constructed",
+      "status": "PASS",
+      "details": [
+        {
+          "scope": "A1_sample",
+          "physical_rows": 51230,
+          "unique_keys": 51230,
+          "Q_valid": 51212,
+          "Q_missing": 18
+        },
+        {
+          "scope": "A2_extension",
+          "physical_rows": 17523,
+          "unique_keys": 17523,
+          "Q_valid": 17523,
+          "Q_missing": 0
+        },
+        {
+          "scope": "A3_extension",
+          "physical_rows": 203752,
+          "unique_keys": 203752,
+          "Q_valid": 203751,
+          "Q_missing": 1
+        },
+        {
+          "scope": "extension_overlap",
+          "physical_rows": 11419,
+          "unique_keys": 11419,
+          "Q_valid": 11419,
+          "Q_missing": 0
+        },
+        {
+          "scope": "extension_new",
+          "physical_rows": 209856,
+          "unique_keys": 209856,
+          "Q_valid": 209855,
+          "Q_missing": 1
+        },
+        {
+          "scope": "all_unique",
+          "physical_rows": 261086,
+          "unique_keys": 261086,
+          "Q_valid": 261067,
+          "Q_missing": 19
+        }
+      ]
+    },
+    {
+      "check": "text_join_audit_has_selected_direct_source",
+      "status": "PASS",
+      "details": [
+        {
+          "candidate_id": "A18_regmix_domain_sample",
+          "path": "F题/real_attachments/A_data_value/regmix_domain_sample.jsonl.xz",
+          "join_method": "exact sha256(text) to A1 content only",
+          "total_rows": 138034,
+          "unique_candidate_keys": 137795,
+          "matching_q01c_keys": 1,
+          "matched_candidate_rows": 1,
+          "one_to_one_pairs": 1,
+          "one_to_many_pairs": 0,
+          "many_to_one_pairs": 0,
+          "many_to_many_pairs": 0,
+          "text_nonempty_rows": 138029,
+          "text_nonempty_rate": 0.9999637770404393,
+          "mapped_domains": "arxiv|dm_mathematics|enron_emails|europarl|freelaw|github|gutenberg_pg_19|hackernews|nih_exporter|philpapers|pile_cc|pubmed_abstracts|pubmed_central|stackexchange|ubuntu_irc|uspto_backgrounds|wikipedia_en",
+          "join_status": "TEXT_JOINABLE_NOT_SELECTED",
+          "decision_note": "Exact content match exists, but the frozen mapping guide has only 3 direct quality-domain labels and exact join to Q01C A1 reaches only 1 key; it cannot supply 6 domains without fuzzy/alias mapping."
+        },
+        {
+          "candidate_id": "Q01C_A1_raw_source",
+          "path": "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+          "join_method": "frozen key_sha256(id,sub_path) plus exact content",
+          "total_rows": 51230,
+          "unique_candidate_keys": 51230,
+          "matching_q01c_keys": 51230,
+          "matched_candidate_rows": 51230,
+          "one_to_one_pairs": 51230,
+          "one_to_many_pairs": 0,
+          "many_to_one_pairs": 0,
+          "many_to_many_pairs": 0,
+          "text_nonempty_rows": 51230,
+          "text_nonempty_rate": 1.0,
+          "mapped_domains": 7,
+          "join_status": "SELECTED_ONE_TO_ONE",
+          "decision_note": "Direct Q01C source; every A1 sample key has source content and no fuzzy matching is used."
+        },
+        {
+          "candidate_id": "Q01C_A2_raw_source",
+          "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz",
+          "join_method": "frozen key_sha256(id,sub_path)",
+          "total_rows": 17523,
+          "unique_candidate_keys": 17523,
+          "matching_q01c_keys": 17523,
+          "matched_candidate_rows": 17523,
+          "one_to_one_pairs": 0,
+          "one_to_many_pairs": 0,
+          "many_to_one_pairs": 0,
+          "many_to_many_pairs": 0,
+          "text_nonempty_rows": 0,
+          "text_nonempty_rate": 0.0,
+          "mapped_domains": 1,
+          "join_status": "TEXT_ABSENT",
+          "decision_note": "The extension source records do not carry a content field, so they cannot supply author-review text."
+        },
+        {
+          "candidate_id": "Q01C_A3_raw_source",
+          "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz",
+          "join_method": "frozen key_sha256(id,sub_path)",
+          "total_rows": 203752,
+          "unique_candidate_keys": 203752,
+          "matching_q01c_keys": 203752,
+          "matched_candidate_rows": 203752,
+          "one_to_one_pairs": 0,
+          "one_to_many_pairs": 0,
+          "many_to_one_pairs": 0,
+          "many_to_many_pairs": 0,
+          "text_nonempty_rows": 0,
+          "text_nonempty_rate": 0.0,
+          "mapped_domains": 1,
+          "join_status": "TEXT_ABSENT",
+          "decision_note": "The extension source records do not carry a content field, so they cannot supply author-review text."
+        }
+      ]
+    },
+    {
+      "check": "blind_sample_size_48_to_60",
+      "status": "PASS",
+      "details": {
+        "actual_n": 60
+      }
+    },
+    {
+      "check": "blind_review_ids_sealed_unique",
+      "status": "PASS",
+      "details": {
+        "blind": 60,
+        "seal": 60
+      }
+    },
+    {
+      "check": "blind_has_no_Q_conflict_key_or_domain_columns",
+      "status": "PASS",
+      "details": {
+        "forbidden_columns": [],
+        "columns": [
+          "review_id",
+          "text_redacted",
+          "readability_1to5",
+          "completeness_1to5",
+          "contamination_0to2",
+          "overall_quality_1to5",
+          "review_notes_optional"
+        ]
+      }
+    },
+    {
+      "check": "author_rating_columns_blank_no_AI_ratings",
+      "status": "PASS",
+      "details": {
+        "nonblank_cells": 0
+      }
+    },
+    {
+      "check": "sampling_domain_coverage_and_cap",
+      "status": "PASS",
+      "details": {
+        "domain_counts": {
+          "arxiv": 8,
+          "book": 10,
+          "c4": 10,
+          "commoncrawl": 9,
+          "github": 9,
+          "stackexchange": 8,
+          "wikipedia": 6
+        },
+        "cap": 12
+      }
+    },
+    {
+      "check": "independent_verifier_passed",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "fail_count": 0
+      }
+    }
+  ]
+}

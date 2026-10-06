@@ -1,0 +1,25 @@
+{"time": "2026-09-25T19:59:21+08:00", "stage": "start", "status": "RUNNING", "detail": "TASK-G2 execution initialized"}
+{"time": "2026-09-25T19:59:21+08:00", "stage": "input_manifest", "status": "PASS", "detail": "registered 26 files"}
+{"time": "2026-09-25T19:59:21+08:00", "stage": "protected_hash_snapshot", "status": "PASS", "detail": "before hashes captured"}
+{"time": "2026-09-25T19:59:21+08:00", "stage": "source_schema", "status": "PASS", "detail": "B1-B10 source schema and units audited"}
+{"time": "2026-09-25T19:59:21+08:00", "stage": "predictions", "status": "PASS", "detail": "wrote 5390 row predictions without clipping"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "source_metrics", "status": "PASS", "detail": "source-level metrics and cluster bootstrap completed"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "cluster_metrics", "status": "PASS", "detail": "family/trajectory metrics written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "support_oos", "status": "PASS", "detail": "support/OOS and no-clipping audit written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "systematic_bias", "status": "PASS", "detail": "N/D/step and cluster bias structure written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "large_model_audit", "status": "PASS", "detail": "B9/B10 >10B audit written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "generalized_law_spec", "status": "PASS", "detail": "layered generalized law and analytic quantities written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "derivatives", "status": "PASS", "detail": "analytic derivatives and feasible-direction slopes written"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "p_q_audit", "status": "PASS", "detail": "Q_mix/p rank audit recorded"}
+{"time": "2026-09-25T19:59:22+08:00", "stage": "t07_impact", "status": "PASS", "detail": "T07 numeric inputs unchanged"}
+{"time": "2026-09-25T19:59:23+08:00", "stage": "execution_checks", "status": "PASS", "detail": "pre-verification checks written"}
+{"time": "2026-09-25T19:59:23+08:00", "stage": "execution_complete", "status": "COMPLETE_PENDING_CONTROLLER_REVIEW", "detail": "awaiting independent verification"}
+{"time": "2026-09-25T20:03:11+08:00", "stage": "candidate_freeze", "status": "PASS", "detail": "paper/Q2_GAP_RESULT_FREEZE.md"}
+{"time": "2026-09-25T20:03:11+08:00", "stage": "final_checks", "status": "FAIL", "detail": "checks.json finalized"}
+{"time": "2026-09-25T20:03:11+08:00", "stage": "handoff", "status": "PASS", "detail": "handoff.md written"}
+{"time": "2026-09-25T20:03:31+08:00", "stage": "candidate_freeze", "status": "PASS", "detail": "paper/Q2_GAP_RESULT_FREEZE.md"}
+{"time": "2026-09-25T20:03:31+08:00", "stage": "final_checks", "status": "PASS", "detail": "checks.json finalized"}
+{"time": "2026-09-25T20:03:31+08:00", "stage": "handoff", "status": "PASS", "detail": "handoff.md written"}
+{"time": "2026-09-25T20:03:48+08:00", "stage": "candidate_freeze", "status": "PASS", "detail": "paper/Q2_GAP_RESULT_FREEZE.md"}
+{"time": "2026-09-25T20:03:48+08:00", "stage": "final_checks", "status": "PASS", "detail": "checks.json finalized"}
+{"time": "2026-09-25T20:03:48+08:00", "stage": "handoff", "status": "PASS", "detail": "handoff.md written"}

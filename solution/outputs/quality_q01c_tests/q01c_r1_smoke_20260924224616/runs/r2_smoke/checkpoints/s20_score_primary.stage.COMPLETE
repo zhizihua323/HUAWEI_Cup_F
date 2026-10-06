@@ -1,0 +1,11 @@
+{
+  "kind": "stage",
+  "stage": "s20_score_primary",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:37:39+08:00",
+  "checkpoint_identity": "c37f5e416206f5269b678af4ab7a945f2c966e7fec64737d6a80cf639d75faa0",
+  "outputs": {
+    "normalization.json": "ed98f066f5c96a0bdf64f6b0f7d24b8da08fbc2f15066db60c36770ef52c9f8a"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

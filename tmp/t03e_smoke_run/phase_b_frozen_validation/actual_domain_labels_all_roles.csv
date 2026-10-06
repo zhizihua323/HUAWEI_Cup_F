@@ -1,0 +1,4 @@
+﻿domain_label,exact_string_length,n_roles_present,roles_present_in_read_order,first_role_observed,first_read_time
+book,4,1,A1_calibration,A1_calibration,2026-09-25T00:00:00.000+08:00
+c4,2,4,A1_calibration|A1_holdout|extension_overlap_A1|extension_new_records,A1_calibration,2026-09-25T00:00:00.000+08:00
+github,6,3,A1_calibration|A1_holdout|extension_new_records,A1_calibration,2026-09-25T00:00:00.000+08:00

@@ -1,0 +1,203 @@
+{
+  "run_id": "20260925T113355+0800",
+  "task_id": "TASK-T05",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "main_sample_n": 7,
+  "conditional_full_n": 45,
+  "complete_c8_models_available": 1854,
+  "partial_c8_models_excluded": 6,
+  "corrupt_json_files": 4,
+  "multi_file_directories_audited": 95,
+  "c5_c6_overlap_rows": 43,
+  "c5_c6_overlap_exact_value_rows": 43,
+  "main_c5_c6_same_rows": 7,
+  "c6_medium_transfer_rows": 38,
+  "final_eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+  "frozen_thresholds": {
+    "improvement": 0.1,
+    "spearman": 0.5,
+    "reversal": 0.25,
+    "coverage_low": 0.85,
+    "coverage_high": 0.98
+  },
+  "selected_by_cohort": {
+    "main_comparable": {
+      "IFEval_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 2.228113998553129,
+          "one_se": 0.724386949236772,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "BBH_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 1.2437374577482034,
+          "one_se": 0.14709087824257175,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "MATH Lvl 5_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 0.4585353767992179,
+          "one_se": 0.09908572994029916,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "GPQA_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 0.5236692879319471,
+          "one_se": 0.10282905136285128,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "MUSR_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 2.3630383444538414,
+          "one_se": 0.9994440076030916,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "MMLU-PRO_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 0.13415567179902171,
+          "one_se": 0.033531989039927226,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      },
+      "benchmark_mean_aux": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 0.32317203076163,
+          "one_se": 0.056283856877028575,
+          "candidates_within_se": [
+            "CONSTANT"
+          ]
+        }
+      }
+    },
+    "conditional_full": {
+      "IFEval_pct": {
+        "candidate_id": "CONSTANT",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 19.95567455033045,
+          "one_se": 1.8900357048335819,
+          "candidates_within_se": [
+            "CONSTANT",
+            "SIZE_LOG_LINEAR",
+            "LOSS_MONOTONE",
+            "LOSS_SIZE_LINEAR",
+            "LOSS_SIZE_FAMILY"
+          ]
+        }
+      },
+      "BBH_pct": {
+        "candidate_id": "SIZE_LOG_LINEAR",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 7.545852172089024,
+          "one_se": 0.7901495388099137,
+          "candidates_within_se": [
+            "SIZE_LOG_LINEAR",
+            "LOSS_SIZE_FAMILY"
+          ]
+        }
+      },
+      "MATH Lvl 5_pct": {
+        "candidate_id": "SIZE_LOG_LINEAR",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 7.114539230442131,
+          "one_se": 0.9940417208610502,
+          "candidates_within_se": [
+            "SIZE_LOG_LINEAR",
+            "LOSS_SIZE_LINEAR",
+            "LOSS_MONOTONE"
+          ]
+        }
+      },
+      "GPQA_pct": {
+        "candidate_id": "SIZE_LOG_LINEAR",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 3.3317768191550083,
+          "one_se": 0.4548807187108799,
+          "candidates_within_se": [
+            "SIZE_LOG_LINEAR",
+            "LOSS_MONOTONE",
+            "LOSS_SIZE_LINEAR",
+            "LOSS_SIZE_FAMILY"
+          ]
+        }
+      },
+      "MUSR_pct": {
+        "candidate_id": "SIZE_LOG_LINEAR",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 3.303381578363242,
+          "one_se": 0.3518762607295645,
+          "candidates_within_se": [
+            "SIZE_LOG_LINEAR",
+            "LOSS_SIZE_LINEAR",
+            "LOSS_MONOTONE"
+          ]
+        }
+      },
+      "MMLU-PRO_pct": {
+        "candidate_id": "LOSS_SIZE_FAMILY",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 8.045590295230932,
+          "one_se": 0.9823338871288659,
+          "candidates_within_se": [
+            "LOSS_SIZE_FAMILY"
+          ]
+        }
+      },
+      "benchmark_mean_aux": {
+        "candidate_id": "SIZE_LOG_LINEAR",
+        "selection": {
+          "reason": "one-SE simplest within best+1SE",
+          "best_rmse": 6.198113741823463,
+          "one_se": 0.6436668248824298,
+          "candidates_within_se": [
+            "SIZE_LOG_LINEAR",
+            "LOSS_SIZE_FAMILY"
+          ]
+        }
+      }
+    }
+  },
+  "c5_c6_connection": "C5 is an exact 43-row value subset of C6; C6 provides no independent validation set.",
+  "notes": [
+    "No C01 re-run",
+    "No C8 JSON re-parse",
+    "No old run modified",
+    "No T08 started"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "commands": [
+    {
+      "mode": "calibration-preflight",
+      "argv": [
+        "D:\\anaconda\\python.exe",
+        "calibration-preflight",
+        "--input",
+        "solution/outputs/quality_q01c/20260924T215718+08/quality_features_scores.parquet",
+        "--run-dir",
+        "diagnostics\\TASK-T03E\\20260925T015930+08"
+      ],
+      "pid": 36596,
+      "started_local": "2026-09-25T01:59:30+08:00",
+      "finished_local": "2026-09-25T01:59:31+08:00",
+      "exit_code": 0
+    },
+    {
+      "mode": "calibration-freeze",
+      "argv": [
+        "D:\\anaconda\\python.exe",
+        "calibration-freeze",
+        "--run-dir",
+        "diagnostics\\TASK-T03E\\20260925T015930+08",
+        "--seed",
+        "20260925",
+        "--bootstrap-replicates",
+        "200"
+      ],
+      "pid": 42232,
+      "started_local": "2026-09-25T01:59:31+08:00",
+      "finished_local": "2026-09-25T01:59:33+08:00",
+      "exit_code": 0
+    },
+    {
+      "mode": "frozen-validation",
+      "argv": [
+        "D:\\anaconda\\python.exe",
+        "frozen-validation",
+        "--run-dir",
+        "diagnostics\\TASK-T03E\\20260925T015930+08",
+        "--freeze-seal",
+        "diagnostics\\TASK-T03E\\20260925T015930+08\\phase_a_calibration_freeze\\FREEZE_SEALED.json"
+      ],
+      "pid": 5952,
+      "started_local": "2026-09-25T01:59:36+08:00",
+      "finished_local": "2026-09-25T01:59:41+08:00",
+      "exit_code": 0
+    },
+    {
+      "mode": "finalize-manifest",
+      "argv": [
+        "D:\\anaconda\\python.exe",
+        "finalize-manifest",
+        "--run-dir",
+        "diagnostics\\TASK-T03E\\20260925T015930+08"
+      ],
+      "pid": 6888,
+      "started_local": "2026-09-25T01:59:41+08:00",
+      "finished_local": "2026-09-25T01:59:41+08:00",
+      "exit_code": 0
+    },
+    {
+      "mode": "finalize-manifest",
+      "argv": [
+        "D:\\anaconda\\python.exe",
+        "finalize-manifest",
+        "--run-dir",
+        "diagnostics\\TASK-T03E\\20260925T015930+08"
+      ],
+      "pid": 16784,
+      "started_local": "2026-09-25T01:59:52+08:00",
+      "finished_local": "2026-09-25T01:59:52+08:00",
+      "exit_code": 0
+    }
+  ]
+}

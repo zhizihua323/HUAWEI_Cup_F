@@ -1,0 +1,8 @@
+[2026-09-25T00:42:21.767+08:00] TASK-Q01C start run_id=run mode=fixture resume=True stage=all pid=42900
+[2026-09-25T00:42:21.773+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:42:21.776+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:42:21.784+08:00] stage=s10_scan_a1 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:42:21.793+08:00] stage=s11_scan_a2 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:42:21.801+08:00] stage=s12_scan_a3 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:42:21.814+08:00] stage=s20_score_primary REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:42:21.821+08:00] ERROR stage_failure: stage s30_sensitivity reuse validation returned INVALID: validation failed: code_fingerprint (failed checks: ['code_fingerprint']); hard stop - no recomputation, downgrade or marker rewrite

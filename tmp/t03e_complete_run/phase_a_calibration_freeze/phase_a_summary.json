@@ -1,0 +1,24 @@
+{
+  "phase_a_status": "CALIBRATION_QUALIFIED_PENDING_VALIDATION",
+  "bootstrap_summary": [
+    {
+      "domain": "c4",
+      "n": 3,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS"
+    }
+  ],
+  "domains_status": {
+    "book": "INSUFFICIENT_CALIBRATION",
+    "c4": "ACTIVE",
+    "commoncrawl": "DESIGN_LABEL_ABSENT",
+    "wikipedia": "ACTIVE"
+  },
+  "active_domains": [
+    "c4"
+  ],
+  "lambda_rows": 4,
+  "artificial_tests_status": "PASS"
+}

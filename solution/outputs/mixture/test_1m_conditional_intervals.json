@@ -1,0 +1,21 @@
+{
+  "model": "linear",
+  "resamples": 500,
+  "confidence": 0.95,
+  "scope": "test-row sampling, conditional on fixed model; not full pipeline uncertainty",
+  "metrics": [
+    "rmse_equal_domain_mean",
+    "r2_equal_domain_mean",
+    "spearman_equal_domain_mean"
+  ],
+  "lower": [
+    0.2048576253923051,
+    0.21547489284641708,
+    0.5442723794846784
+  ],
+  "upper": [
+    0.24658442580131038,
+    0.432901080015589,
+    0.693467735022112
+  ]
+}

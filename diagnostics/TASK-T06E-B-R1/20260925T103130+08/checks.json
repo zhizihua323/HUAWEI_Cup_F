@@ -1,0 +1,14 @@
+{
+  "profile_fixed_value_atol_rtol": "PASS",
+  "profile_full_fit_point_reproduction_22_of_22": "PASS",
+  "profile_full_points_inside_set": "PASS",
+  "G4_MQadd_only": "PASS",
+  "MQeff_eta_boundary_separate": "PASS",
+  "G1_G3_unchanged_from_original": "PASS",
+  "no_full_fold_bootstrap_B7_B8_refit": "PASS",
+  "original_formal_run_unchanged": "PASS",
+  "forbidden_P_branch_not_read": "PASS",
+  "manifest_generated_last_after_checks": "PASS",
+  "independent_verifier": "PASS",
+  "post_manifest_read_only_check": "REGISTERED_COMMAND_FINAL_STEP"
+}

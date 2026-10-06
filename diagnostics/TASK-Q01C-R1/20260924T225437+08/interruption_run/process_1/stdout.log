@@ -1,0 +1,8 @@
+[2026-09-24T22:54:39.509+08:00] TASK-Q01C start run_id=synthetic_run mode=fixture resume=False stage=all pid=39112
+[2026-09-24T22:54:39.670+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:54:39.672+08:00] stage=s00_preflight done elapsed_s=0.161
+[2026-09-24T22:54:39.808+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-24T22:54:39.808+08:00] stage=s01_synthetic_tests done elapsed_s=0.136
+[2026-09-24T22:54:39.976+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.2
+[2026-09-24T22:54:39.978+08:00] stage=s10_scan_a1 done elapsed_s=0.17
+[2026-09-24T22:54:39.978+08:00] HOOK hold-after-stage=s10_scan_a1: waiting for external interruption pid=39112

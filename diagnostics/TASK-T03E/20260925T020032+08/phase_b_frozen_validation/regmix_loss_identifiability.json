@@ -1,0 +1,75 @@
+{
+  "status": "NOT_IDENTIFIABLE",
+  "checked_inputs": {
+    "mapping": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+    "mapping_rows": 17,
+    "direct_mappings": 3,
+    "near_direct_mappings": 3,
+    "unmapped_regmix_domains": [
+      "dm_mathematics",
+      "freelaw",
+      "nih_exporter",
+      "pubmed_central",
+      "philpapers",
+      "enron_emails",
+      "ubuntu_irc",
+      "europarl",
+      "hackernews",
+      "pubmed_abstracts",
+      "uspto_backgrounds"
+    ],
+    "mapping_unique_by_mixture_domain": true,
+    "quality_side_unique": true,
+    "mixture_model": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\mixture\\model.json",
+    "model_features": [
+      "train_the_pile_arxiv",
+      "train_the_pile_freelaw",
+      "train_the_pile_nih_exporter",
+      "train_the_pile_pubmed_central",
+      "train_the_pile_wikipedia_en",
+      "train_the_pile_dm_mathematics",
+      "train_the_pile_github",
+      "train_the_pile_philpapers",
+      "train_the_pile_stackexchange",
+      "train_the_pile_enron_emails",
+      "train_the_pile_gutenberg_pg_19",
+      "train_the_pile_pile_cc",
+      "train_the_pile_ubuntu_irc",
+      "train_the_pile_europarl",
+      "train_the_pile_hackernews",
+      "train_the_pile_pubmed_abstracts",
+      "train_the_pile_uspto_backgrounds"
+    ],
+    "model_has_full_composition": true,
+    "b6_file": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+    "b6_columns": [
+      "experiment_id",
+      "N_params_B",
+      "D_tokens_B",
+      "Q_score",
+      "val_loss"
+    ],
+    "b6_rows": 360,
+    "quality_like_columns": [
+      "Q_score"
+    ],
+    "aggregate_predictions_rows": 2428
+  },
+  "structural_reasons": [
+    "11 of 17 RegMix domains have no quality-domain mapping (quality_domain=\"(none)\"), so the mapping is neither complete nor unique",
+    "the existing mixture model already includes the full pile composition vector w as features, so with fixed domain qualities q_d the aggregate Q_mix is a deterministic function of w inside that model; adding Q_mix therefore cannot be read as independent quality information",
+    "the B-side experiment table does carry ['Q_score'] over 360 experiment rows, but no documented join key links A-side quality rows/domains to those experiment_id values, so no reliable sample-level or experiment-level A-to-B pairing exists in the read-only inputs",
+    "no independent quality variation under a fixed composition w is available in the read-only inputs (one loss per mixture, one aggregate quality per domain)"
+  ],
+  "composition_vector_assessment": "the existing mixture model already includes the full pile composition vector w as features, so with fixed domain qualities q_d the aggregate Q_mix is a deterministic function of w inside that model",
+  "a_to_b_pairing_assessment": "the B-side experiment table does carry ['Q_score'] over 360 experiment rows, but no documented join key links A-side quality rows/domains to those experiment_id values, so no reliable sample-level or experiment-level A-to-B pairing exists in the read-only inputs",
+  "regression_or_bridge_fitting_performed": false,
+  "new_models_or_scalers_fitted": false,
+  "needed_for_identification": [
+    "a documented, complete and unique quality-domain -> RegMix-domain mapping",
+    "quality variation that is independent of the composition vector w",
+    "an experiment-level A-to-B pairing with a scale calibration (T06)"
+  ],
+  "generated_local": "2026-09-25T02:00:41+08:00",
+  "pid": 23104
+}

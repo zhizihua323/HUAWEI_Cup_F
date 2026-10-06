@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "task": "TASK-T06E-INTEGRATE",
+  "run_id": "20260925T110904+08",
+  "status": "FROZEN_FOR_T07_WORK_ORDER",
+  "primary_model": {
+    "name": "M0_B1",
+    "formula": "L=E+A*N_B^(-alpha)+B*D_B^(-beta)",
+    "parameters": {
+      "E": 1.6897975629820348,
+      "A": 0.3539803206065571,
+      "B": 1.2403055835426349,
+      "alpha": 0.339976581941082,
+      "beta": 0.2798781285468448
+    },
+    "qualification": "IDENTIFIED_SOURCE_CONDITIONAL_B1",
+    "quality_enabled": false,
+    "mixture_transport_enabled": false
+  },
+  "units": {
+    "N_B": "billions of parameters",
+    "D_B": "billions of tokens",
+    "N_physical": "N_B*1e9",
+    "D_physical": "D_B*1e9",
+    "training_compute": "6*N_physical*D_physical FLOPs",
+    "loss": "source validation cross-entropy; do not assume cross-source comparability without audit"
+  },
+  "support": {
+    "B1_N_B": [
+      0.070542,
+      11.965825
+    ],
+    "B1_D_B": [
+      0.134,
+      299.893
+    ],
+    "B6_Q_score_confirmatory": [
+      0.1,
+      0.6
+    ],
+    "A_Q_baseline_calibration": [
+      0.04888888888888889,
+      0.9805414146077935
+    ],
+    "oos_rule": "Any violated source support is explicitly OUT_OF_SUPPORT; never silently clip."
+  },
+  "quality": {
+    "main_A_definition": "Q_baseline",
+    "sensitivity_A_definition": "Q_C",
+    "q_A_star": 0.5695341857475174,
+    "A_B_mapping_status": "NOT_IDENTIFIABLE",
+    "MQ_add_B6": {
+      "formula": "L=M0_6-k_add*(Q_score-0.6)",
+      "parameters": {
+        "E": 1.576717897667643,
+        "A": 0.6003432829036089,
+        "B": 1.3555803863625686,
+        "alpha": 0.2721341490204682,
+        "beta": 0.2912041980912658,
+        "k_add": 0.3544081081063713
+      },
+      "qualification": "B6_SOURCE_CONDITIONAL_ACCEPTED",
+      "cross_source_use": "SCENARIO_ONLY",
+      "G1_to_G4": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "MQ_eff": {
+      "formula": "L=E+A*N_B^(-alpha)+B*(D_B*exp[-eta*(Q_score-0.6)])^(-beta)",
+      "eta": 1.0000000000000025e-06,
+      "eta_at_lower_bound": true,
+      "qualification": "SENSITIVITY_ONLY_WEAKLY_IDENTIFIED"
+    },
+    "bridges": {
+      "H0": "IDENTIFIED_NULL_BASELINE",
+      "H1": "SCENARIO_ONLY",
+      "H2": "SCENARIO_ONLY",
+      "H3": "SCENARIO_ONLY",
+      "H4": "DIRECTION_ONLY_NOT_OPTIMIZABLE"
+    },
+    "B8": "CONFLICT_EVIDENCE; preserve B6 direction, k=0, and B8 reverse direction in parallel"
+  },
+  "mixture": {
+    "feature_order": [
+      "train_the_pile_arxiv",
+      "train_the_pile_freelaw",
+      "train_the_pile_nih_exporter",
+      "train_the_pile_pubmed_central",
+      "train_the_pile_wikipedia_en",
+      "train_the_pile_dm_mathematics",
+      "train_the_pile_github",
+      "train_the_pile_philpapers",
+      "train_the_pile_stackexchange",
+      "train_the_pile_enron_emails",
+      "train_the_pile_gutenberg_pg_19",
+      "train_the_pile_pile_cc",
+      "train_the_pile_ubuntu_irc",
+      "train_the_pile_europarl",
+      "train_the_pile_hackernews",
+      "train_the_pile_pubmed_abstracts",
+      "train_the_pile_uspto_backgrounds"
+    ],
+    "p0": [
+      0.11302252583269279,
+      0.0968248321520278,
+      0.00588968021709595,
+      0.11375419105058357,
+      0.07507775607983627,
+      0.0254628540970504,
+      0.11070066007050916,
+      0.005487697351193036,
+      0.09943242344413017,
+      0.002211033043406226,
+      0.04691494424753537,
+      0.11948759779188561,
+      0.019599998284005892,
+      0.012737064754031531,
+      0.011650822378108678,
+      0.06618116611257162,
+      0.07556475309333588
+    ],
+    "constraint": "p_j>=0 and sum_j p_j=1; preserve zero values",
+    "within_1M_status": "SUPPORTED_BY_FROZEN_SOURCE_CONDITIONAL_LINEAR_MODEL",
+    "test_1M_mse_improvement": 0.5502593290109576,
+    "test_1M_spearman": 0.6250743877317463,
+    "RMSE_60M": 1.5173310791562076,
+    "RMSE_1B": 3.188945347793164,
+    "transport_to_B1": "SCENARIO_ONLY",
+    "tau_p": "FIXED_SCENARIO_ONLY",
+    "mixture_transport_enabled": false
+  },
+  "joint_Q_p": {
+    "independent_optimization_allowed": false,
+    "reason": "For fixed domain quality q, Q_mix=p^Tq lies in the p column space; no fixed-p quality intervention is observed.",
+    "required_action": "Choose a scenario with Q fixed/derived or p fixed; do not expose both as independent controls."
+  },
+  "scenario_registry": {
+    "count": 21,
+    "ids": [
+      "S00_NULL_M0_B1",
+      "S01_QREF_QA_H2_B1_R06_ADD",
+      "S02_QC",
+      "S03_H1_IDENTITY",
+      "S04_H2_B05",
+      "S05_H2_B20",
+      "S06_H3_EQQUANTILE",
+      "S07_H4_DIRECTION_ONLY",
+      "S08_RB1_02",
+      "S09_RB1_09",
+      "S10_RHOQ_00",
+      "S11_RHOQ_05",
+      "S12_EFF_KEEP_ETA",
+      "S13_EFF_KEEP_K",
+      "S14_MIX_TAU05",
+      "S15_MIX_TAU10",
+      "S16_MIX_TAUM10_STRESS",
+      "S17_B8_REVERSE_COMMON_SUPPORT",
+      "X01_Q_HIGH",
+      "X02_Q_CONSERVATIVE",
+      "X03_H3_EFF"
+    ],
+    "seal_sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522",
+    "path": "scenario_registry_filled.csv",
+    "no_posthoc_add_delete": true
+  },
+  "uncertainty": {
+    "joint_draws": "Use saved B1 8-cluster draws and B6 9-N-cluster draws within their source roles; keep structural scenarios separate.",
+    "scenario_probabilities": "PROHIBITED_WITHOUT_EVIDENCE",
+    "B8_propagation": "Report a separate reverse-direction stress result, never average with B6.",
+    "Q_definition_sensitivity": [
+      "Q_baseline",
+      "Q_C"
+    ]
+  },
+  "T07_rules": {
+    "primary_model": "M0_B1",
+    "quality_enabled": false,
+    "mixture_transport_enabled": false,
+    "required_budget_count_min": 3,
+    "cost_terms": [
+      "6*N_physical*D_physical",
+      "quality_cost_scenario",
+      "attention_context_cost_scenario"
+    ],
+    "optimization_output": "budget-by-scenario optima with support, boundary, marginal gain, and uncertainty labels; no single universal optimum"
+  },
+  "provenance": {
+    "B_run": "diagnostics/TASK-T06E-B/20260925T100306+08",
+    "B_R1_run": "diagnostics/TASK-T06E-B-R1/20260925T103130+08",
+    "P_run": "diagnostics/TASK-T06E-P/20260925T075729+08",
+    "T06_sha256": "5b27a8585fef4ca87061c628c7a6e54361651febd6b76b2ae315e1982cb64d8c",
+    "T06E_sha256": "a081f0ec0911e35619d738041ee8753aeb2601f2c56570198a24034b1a321dac"
+  }
+}

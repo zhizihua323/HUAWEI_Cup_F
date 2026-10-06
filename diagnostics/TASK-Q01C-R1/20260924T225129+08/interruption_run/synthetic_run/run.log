@@ -1,0 +1,27 @@
+[2026-09-24T22:51:31.832+08:00] TASK-Q01C start run_id=synthetic_run mode=fixture resume=False stage=all pid=31544
+[2026-09-24T22:51:31.976+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:51:31.979+08:00] stage=s00_preflight done elapsed_s=0.144
+[2026-09-24T22:51:32.110+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-24T22:51:32.110+08:00] stage=s01_synthetic_tests done elapsed_s=0.131
+[2026-09-24T22:51:32.278+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.2
+[2026-09-24T22:51:32.280+08:00] stage=s10_scan_a1 done elapsed_s=0.17
+[2026-09-24T22:51:32.281+08:00] HOOK hold-after-stage=s10_scan_a1: waiting for external interruption pid=31544
+[2026-09-24T22:51:34.325+08:00] TASK-Q01C start run_id=synthetic_run mode=fixture resume=True stage=all pid=8752
+[2026-09-24T22:51:34.335+08:00] stage=s00_preflight already complete and validated; not recomputed
+[2026-09-24T22:51:34.337+08:00] stage=s01_synthetic_tests already complete and validated; not recomputed
+[2026-09-24T22:51:34.339+08:00] stage=s10_scan_a1 already complete and validated; not recomputed
+[2026-09-24T22:51:34.445+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.1
+[2026-09-24T22:51:34.450+08:00] stage=s11_scan_a2 done elapsed_s=0.111
+[2026-09-24T22:51:34.506+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.1
+[2026-09-24T22:51:34.510+08:00] stage=s12_scan_a3 done elapsed_s=0.06
+[2026-09-24T22:51:34.587+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-24T22:51:34.669+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-24T22:51:34.669+08:00] stage=s20_score_primary done elapsed_s=0.158
+[2026-09-24T22:51:34.750+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-24T22:51:34.750+08:00] stage=s30_sensitivity done elapsed_s=0.081
+[2026-09-24T22:51:34.899+08:00] stage=s40_summarize domain rows=20 denominators=280 sensitivity rows=20 comparison=20
+[2026-09-24T22:51:35.748+08:00] stage=s40_summarize complete (summaries + report)
+[2026-09-24T22:51:35.749+08:00] stage=s40_summarize done elapsed_s=0.999
+[2026-09-24T22:51:35.775+08:00] running independent verifier: D:\anaconda\python.exe -X utf8 C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py --run-dir C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225129+08\interruption_run\synthetic_run --fixture-manifest C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225129+08\synthetic_fixture\fixture_manifest.json
+[2026-09-24T22:51:36.536+08:00] stage=s50_verify complete checks={'n_checks': 14, 'n_pass': 14, 'n_fail': 0, 'n_not_checked': 0}
+[2026-09-24T22:51:36.536+08:00] stage=s50_verify done elapsed_s=0.787

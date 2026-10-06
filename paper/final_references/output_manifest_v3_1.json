@@ -1,0 +1,70 @@
+{
+  "version": "V3.1",
+  "generated_at": "2026-09-26",
+  "reference_count": 20,
+  "citation_order": [
+    "kaplan2020scaling",
+    "hoffmann2022training",
+    "penedo2024fineweb",
+    "warner2025modernbert",
+    "xie2023dsir",
+    "spearman1904general",
+    "efron1979bootstrap",
+    "openai_tools",
+    "liu2025regmix",
+    "scheffe1958mixtures",
+    "biderman2023pythia",
+    "zhou2023ifeval",
+    "suzgun2023bbh",
+    "hendrycks2021math",
+    "rein2023gpqa",
+    "sprague2023musr",
+    "wang2024mmlupro",
+    "openllmleaderboard2025results",
+    "epochai2026models",
+    "koenker1978regression"
+  ],
+  "open_llm_license": "UNRESOLVED_NONREDISTRIBUTION_CONTROLLED",
+  "files": [
+    {
+      "path": "paper/final_references/references_final.bib",
+      "bytes": 10427,
+      "sha256": "2f8771f13bd5fd64b737506574a90d67fc4daa2fa675b4c87cf07ad1fa1d6456"
+    },
+    {
+      "path": "paper/final_references/citation_map_final.csv",
+      "bytes": 4545,
+      "sha256": "c1ab5ef75a733de492b4d136a5a7b0b0f9bcbc381597efdc4ea89f7996309dfa"
+    },
+    {
+      "path": "paper/final_references/reference_verification_final.csv",
+      "bytes": 10892,
+      "sha256": "d65967e1485643e62d30646c4b234656ed8cf50795e444a0789d4c132eaa8e8e"
+    },
+    {
+      "path": "paper/final_references/unresolved_citations.csv",
+      "bytes": 752,
+      "sha256": "4e6a089b6e7b3cd1042549ff20ff2959cb24f92fcc1621f79b593ed65eb19f20"
+    },
+    {
+      "path": "paper/final_references/REFERENCE_AUDIT.md",
+      "bytes": 1942,
+      "sha256": "b32602a085b402990365f15f8e40ce7634d9abf2f6d09902c8999c79ccf4ad7e"
+    },
+    {
+      "path": "paper/final_references/OPEN_LLM_LICENSE_HANDLING.md",
+      "bytes": 738,
+      "sha256": "77bd5109eb141c49c474c6d05ea7b775a434122f276e6dac20177decba1ffed1"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V3_1.docx",
+      "bytes": 2808371,
+      "sha256": "aea5a4a12f447e10e47f597a69772531b7ed17e4aa181d939ec2f6493f206ed6"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V3_1.pdf",
+      "bytes": 1950950,
+      "sha256": "5ab5d10f1a5e9e095e8bc1878ee928076a0fa9d2f74000b22770153d4b7dfb5e"
+    }
+  ]
+}

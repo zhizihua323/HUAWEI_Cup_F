@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "science_changed": false,
+  "figure_count": 7,
+  "final_width_mm": 165,
+  "font_contract": {
+    "Chinese": "SimSun",
+    "Latin": "Times New Roman",
+    "target_equivalent_pt": 12
+  },
+  "figures": {
+    "fig01_submission_framework": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig02_submission_q1_quality_validation": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig03_submission_regmix_transport": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig04_submission_q2_validation": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig05_submission_q3_optima": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig06_submission_q4_scenarios": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    },
+    "fig07_submission_qualification_map": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599
+    }
+  },
+  "q4_negative_values": [
+    -3.971071948299685,
+    -1.933709305769927,
+    -0.4881775063174451
+  ],
+  "q4_unvalidated": true,
+  "main_text_min_font_pt": {
+    "fig01_submission_framework": 12.0,
+    "fig02_submission_q1_quality_validation": 12.0,
+    "fig03_submission_regmix_transport": 12.0,
+    "fig04_submission_q2_validation": 12.0,
+    "fig06_submission_q4_scenarios": 12.0
+  },
+  "source_scope": "previously delivered figure/table source CSV/JSON only",
+  "no_refit": true,
+  "no_clipping": true,
+  "no_sampling": true
+}

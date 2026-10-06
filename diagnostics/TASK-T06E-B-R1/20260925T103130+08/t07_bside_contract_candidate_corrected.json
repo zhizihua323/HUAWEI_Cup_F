@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "branch": "TASK-T06E-B-R1",
+  "status": "CANDIDATE_FOR_CONTROLLER_ONLY",
+  "primary_model": "M0_B1",
+  "quality_enabled": false,
+  "mixture_transport_enabled": false,
+  "scientific_result": "ACCEPT_B6_SOURCE_RELATION",
+  "G1": {
+    "PASS": true,
+    "negative_groups": 43,
+    "estimable_groups": 45,
+    "zero_groups": 0,
+    "positive_groups": 2,
+    "not_estimable_groups": 0,
+    "negative_fraction": 0.9555555555555556,
+    "threshold": 0.8
+  },
+  "G2": {
+    "PASS": true,
+    "leave_N": {
+      "macro_RMSE_M0_6": 0.0791586657229001,
+      "macro_RMSE_MQ_add": 0.0529372278724645,
+      "relative_improvement": 0.3312516401201782,
+      "improvement_pass": true,
+      "fold_ratio_pass": 9,
+      "fold_ratio_required": 8,
+      "fold_ratio_pass_gate": true,
+      "n_folds": 9
+    },
+    "leave_D": {
+      "macro_RMSE_M0_6": 0.0818619439862219,
+      "macro_RMSE_MQ_add": 0.0553287699778896,
+      "relative_improvement": 0.3241209860933431,
+      "improvement_pass": true,
+      "fold_ratio_pass": 5,
+      "fold_ratio_required": 4,
+      "fold_ratio_pass_gate": true,
+      "n_folds": 5
+    }
+  },
+  "G3": {
+    "requested": 200,
+    "successful": 200,
+    "success_gate_190": true,
+    "negative_direction_replicates": 200,
+    "negative_direction_required": 180,
+    "negative_direction_pass": true,
+    "PASS": true
+  },
+  "G4_corrected": {
+    "full_rank": true,
+    "rank": 6,
+    "condition_number": 53.94407500777401,
+    "condition_pass": true,
+    "column_norms": [
+      2.9890386686007338,
+      1.338656780111368,
+      0.79476100849218,
+      0.6927528866215521,
+      0.8513476276233055,
+      0.22079694641419353
+    ],
+    "singular_values": [
+      2.1607994081749093,
+      0.9880396316418925,
+      0.4924164877393829,
+      0.326905134685101,
+      0.061466521301467646,
+      0.04005628806988555
+    ],
+    "near_boundary_parameters": [],
+    "boundary_pass": true,
+    "support_finite_nonnegative": true,
+    "support_min": 2.0926534787450124,
+    "multistart_pass": true,
+    "profile_pass": true,
+    "profile_statuses": [
+      {
+        "parameter": "E",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 1,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      },
+      {
+        "parameter": "A",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 1,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      },
+      {
+        "parameter": "B",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 2,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      },
+      {
+        "parameter": "alpha",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 2,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      },
+      {
+        "parameter": "beta",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 2,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      },
+      {
+        "parameter": "k_add",
+        "status": "PROFILE_FINITE_AND_SEPARATED",
+        "n_inside_set": 2,
+        "n_skipped": 0,
+        "touches_fixed_hard_boundary": false
+      }
+    ],
+    "PASS": true
+  },
+  "MQ_add_profiles": [
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "E",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 42,
+      "n_grid_completed": 42,
+      "n_skipped": 0,
+      "n_inside_set": 1,
+      "inside_min": 1.576717897667643,
+      "inside_max": 1.576717897667643,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    },
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "A",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 42,
+      "n_grid_completed": 42,
+      "n_skipped": 0,
+      "n_inside_set": 1,
+      "inside_min": 0.6003432829036089,
+      "inside_max": 0.6003432829036089,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    },
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "B",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 42,
+      "n_grid_completed": 42,
+      "n_skipped": 0,
+      "n_inside_set": 2,
+      "inside_min": 1.3272440320917416,
+      "inside_max": 1.3555803863625686,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    },
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "alpha",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 42,
+      "n_grid_completed": 42,
+      "n_skipped": 0,
+      "n_inside_set": 2,
+      "inside_min": 0.27213414902046823,
+      "inside_max": 0.28284271247461923,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    },
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "beta",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 42,
+      "n_grid_completed": 42,
+      "n_skipped": 0,
+      "n_inside_set": 2,
+      "inside_min": 0.28284271247461923,
+      "inside_max": 0.29120419809126585,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    },
+    {
+      "source": "B6",
+      "model": "MQ-add",
+      "parameter": "k_add",
+      "SSE_min": 0.009644538476606696,
+      "descriptive_threshold": 0.009813712437348635,
+      "n_grid_requested": 43,
+      "n_grid_completed": 43,
+      "n_skipped": 0,
+      "n_inside_set": 2,
+      "inside_min": 0.3544081081063713,
+      "inside_max": 0.37406819256699814,
+      "touches_fixed_hard_boundary": false,
+      "weakly_identified": false,
+      "status": "PROFILE_FINITE_AND_SEPARATED",
+      "full_point_in_inside_set": true
+    }
+  ],
+  "MQ_eff_boundary": {
+    "eta": 1.0000000000000023e-06,
+    "at_lower_bound": true,
+    "status": "SENSITIVITY_ONLY_SEPARATE"
+  },
+  "B7_B8_unchanged": true,
+  "full_fold_bootstrap_refit": false
+}

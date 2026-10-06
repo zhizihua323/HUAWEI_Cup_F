@@ -1,0 +1,18 @@
+{
+  "asset": "table02_q1_quality_definition",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "solution/outputs/quality_q01c/20260924T215718+08/run_config.json",
+      "fields": "primary_q_rule; group_rule",
+      "unit": "0-1",
+      "denominator": "11-feature strict complete case"
+    },
+    {
+      "file": "paper/FINAL_SCIENTIFIC_FREEZE.md",
+      "fields": "physical rows; unique keys; Q valid/missing",
+      "unit": "count",
+      "denominator": "physical and unique reported separately"
+    }
+  ]
+}

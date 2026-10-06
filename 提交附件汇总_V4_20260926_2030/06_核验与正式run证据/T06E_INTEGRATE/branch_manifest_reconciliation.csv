@@ -1,0 +1,4 @@
+﻿branch,manifest_path,manifest_sha256,declared_file_count,entry_count,mismatch_count,status
+TASK-T06E-B,diagnostics/TASK-T06E-B/20260925T100306+08/output_manifest.json,8312ba3b4ceb4edd4a9e322d1b7f5cb3f4f0b8f005bc294a29158321bd24d188,104,104,0,PASS
+TASK-T06E-B-R1,diagnostics/TASK-T06E-B-R1/20260925T103130+08/output_manifest.json,2109b9b8df7a1140300b86e5fc1b5bcbe1bbdfbbffeecaa9c8eca8a796b9d17b,86,86,0,PASS
+TASK-T06E-P,diagnostics/TASK-T06E-P/20260925T075729+08/output_manifest.json,3664d14280389c2e84806e0658a136b68b9c7f5e258341bfa9e3f5a08f85bdd2,49,49,0,PASS

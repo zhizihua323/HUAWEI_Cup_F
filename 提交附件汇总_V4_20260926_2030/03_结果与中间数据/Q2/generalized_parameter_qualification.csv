@@ -1,0 +1,18 @@
+﻿term,source,qualification,numeric,note
+E,B1 frozen M0_B1,IDENTIFIED_SOURCE_CONDITIONAL,True,Exact frozen value; no refit.
+A,B1 frozen M0_B1,IDENTIFIED_SOURCE_CONDITIONAL,True,Exact frozen value; no refit.
+B,B1 frozen M0_B1,IDENTIFIED_SOURCE_CONDITIONAL,True,Exact frozen value; no refit.
+alpha,B1 frozen M0_B1,IDENTIFIED_SOURCE_CONDITIONAL,True,Exact frozen value; no refit.
+beta,B1 frozen M0_B1,IDENTIFIED_SOURCE_CONDITIONAL,True,Exact frozen value; no refit.
+k_add,B6 MQ-add,SOURCE_CONDITIONAL,True,Only 0.1<=Q_B<=0.6; accepted B6 source relation.
+Delta_Q,B6 relation plus A/B bridge,SCENARIO_CALIBRATED,True,Cross-source use requires H1-H3 scenario or H4 direction only.
+rho_Q,frozen scenario registry,SCENARIO_CALIBRATED,True,"Allowed values 0,0.5,1; no post-hoc selection."
+h_s(H0),T06 frozen bridge,IDENTIFIED_NULL_BASELINE,False,Null quality effect.
+h_s(H1-H3),T06 frozen bridge,SCENARIO_ONLY,True,Assumption-defined; no new map estimated.
+h_s(H4),T06 frozen bridge,DIRECTION_ONLY,False,No numeric derivative or optimization.
+Delta_p,frozen RegMix linear model,SOURCE_CONDITIONAL,True,Supported at 1M; cross-scale transport is scenario only.
+c,mean of 13 frozen RegMix coefficient vectors,SOURCE_CONDITIONAL,True,"Used as a directional contrast, not 17 independent p marginals."
+tau_p,frozen scenario registry,SCENARIO_CALIBRATED,True,"Allowed fixed values 0,0.5,1,-1."
+Q_A-to-Q_B scale,A/B bridge,NOT_IDENTIFIABLE,False,No sample-level pairing; H1-H3 are scenarios.
+joint Q_mix and p effects,A/RegMix design geometry,NOT_IDENTIFIABLE,False,Q_mix is in the p column space for fixed q.
+r_B1_fixed_scenario,frozen scenario registry,SCENARIO_CALIBRATED,True,Retained in registry/T07 context; not a new G2 estimate and not separately identified.

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T094853+08",
+  "solver": "scipy.optimize.least_squares",
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0"
+  },
+  "method": "trf",
+  "loss": "linear",
+  "jac": "3-point",
+  "x_scale": 1.0,
+  "ftol": 1e-12,
+  "xtol": 1e-12,
+  "gtol": 1e-12,
+  "max_nfev": 100000,
+  "dtype": "float64",
+  "q_train_max": 0.6,
+  "q_reference": 0.6,
+  "weights": {
+    "B1": "point_equal",
+    "B6": "N_D_group_equal_then_normalized",
+    "residual_scale": "sqrt(weight)*(pred-y)/s_y",
+    "s_y": "max(IQR(y_train),1e-8)"
+  },
+  "multistart": {
+    "full_and_folds_total": 33,
+    "bootstrap_total": 9,
+    "profile_total": 9,
+    "sobol_internal_fraction": [
+      0.05,
+      0.95
+    ]
+  },
+  "parameter_bounds": {
+    "E_A_B_k_relative_to_Lstar": [
+      1e-08,
+      1000.0
+    ],
+    "alpha_beta": [
+      0.0001,
+      4.0
+    ],
+    "eta": [
+      1e-06,
+      50.0
+    ]
+  },
+  "seeds": {
+    "base_multistart": 20260926,
+    "base_bootstrap": 20260925,
+    "model_offsets": {
+      "M0": 0,
+      "MQ-add": 100000,
+      "MQ-eff": 200000
+    },
+    "stage_offsets": {
+      "full": 0,
+      "leave_N": 10000,
+      "leave_D": 20000,
+      "bootstrap": 30000,
+      "profile": 40000
+    }
+  },
+  "profile": {
+    "grid_points_per_positive_parameter": 41,
+    "include_optimum": true,
+    "k_add_and_eta_zero_endpoint": true,
+    "descriptive_chi2_threshold": 3.841458820694124
+  },
+  "gates": {
+    "G1_min_negative_fraction": 0.8,
+    "G2_min_macro_improvement": 0.05,
+    "G2_fold_ratio_limit": 1.1,
+    "G3_replicates": 200,
+    "G3_min_success": 190,
+    "G3_success_direction_fraction": 0.9,
+    "G4_jacobian_relative_singular_threshold": 1e-08,
+    "G4_condition_limit": 100000000.0
+  },
+  "stop_conditions": [
+    "input_anchor_or_hash_mismatch",
+    "need_to_change_model_gate_boundary_solver_profile",
+    "Q_gt_0.6_or_B7_or_B8_feedback",
+    "M0_MQ_fold_keys_differ",
+    "B7_repeats_enter_denominator",
+    "no_finite_converged_solution",
+    "old_artifact_change_or_forbidden_write",
+    "joint_mapping_parameter_attempt",
+    "post_manifest_write"
+  ]
+}

@@ -1,0 +1,30 @@
+[2026-09-24T22:50:58.102+08:00] TASK-Q01C start run_id=synthetic_run mode=fixture resume=True stage=all pid=26844
+[2026-09-24T22:50:58.111+08:00] stage=s00_preflight already complete and validated; not recomputed
+[2026-09-24T22:50:58.113+08:00] stage=s01_synthetic_tests already complete and validated; not recomputed
+[2026-09-24T22:50:58.116+08:00] stage=s10_scan_a1 already complete and validated; not recomputed
+[2026-09-24T22:50:58.225+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.1
+[2026-09-24T22:50:58.228+08:00] stage=s11_scan_a2 done elapsed_s=0.112
+[2026-09-24T22:50:58.274+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-24T22:50:58.277+08:00] stage=s12_scan_a3 done elapsed_s=0.049
+[2026-09-24T22:50:58.350+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-24T22:50:58.419+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-24T22:50:58.420+08:00] stage=s20_score_primary done elapsed_s=0.143
+[2026-09-24T22:50:58.494+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-24T22:50:58.494+08:00] stage=s30_sensitivity done elapsed_s=0.075
+[2026-09-24T22:50:58.629+08:00] stage=s40_summarize domain rows=20 denominators=280 sensitivity rows=20 comparison=20
+[2026-09-24T22:50:59.571+08:00] stage=s40_summarize complete (summaries + report)
+[2026-09-24T22:50:59.571+08:00] stage=s40_summarize done elapsed_s=1.076
+[2026-09-24T22:50:59.598+08:00] running independent verifier: D:\anaconda\python.exe -X utf8 C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py --run-dir C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225053+08\interruption_run\synthetic_run --fixture-manifest C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01C-R1\20260924T225053+08\synthetic_fixture\fixture_manifest.json
+[2026-09-24T22:51:00.374+08:00] stage=s50_verify complete checks={'n_checks': 14, 'n_pass': 14, 'n_fail': 0, 'n_not_checked': 0}
+[2026-09-24T22:51:00.374+08:00] stage=s50_verify done elapsed_s=0.803
+[2026-09-24T22:51:00.412+08:00] ERROR unhandled: AttributeError: 'NoneType' object has no attribute 'get'
+[2026-09-24T22:51:00.415+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2157, in main
+    result = run_stage(ctx, name, state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2067, in run_stage
+    return stage_s60_finalize(ctx, state['config_sha'], state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 1807, in stage_s60_finalize
+    'synthetic_tests_passed': state.get('synthetic', {}).get('status') == 'PASS',
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+

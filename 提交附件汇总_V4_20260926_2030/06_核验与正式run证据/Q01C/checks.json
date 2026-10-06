@@ -1,0 +1,420 @@
+{
+  "run_id": "20260924T215718+08",
+  "generated_local": "2026-09-24T21:58:30+08:00",
+  "summary": {
+    "n_checks": 20,
+    "n_pass": 20,
+    "n_fail": 0,
+    "n_not_checked": 0
+  },
+  "checks": [
+    {
+      "check_id": "V01_totals",
+      "description": "physical rows / unique keys / duplicates match the accepted anchors",
+      "status": "PASS",
+      "actual": {
+        "rows": 272505,
+        "unique": 261086,
+        "duplicates": 11419
+      },
+      "expected": {
+        "rows": 272505,
+        "unique": 261086,
+        "duplicates": 11419
+      },
+      "evidence": "quality_features_scores.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V02_q_valid_equivalence",
+      "description": "Q_valid is exactly \"all 11 normalized features finite\"; Q finite only when Q_valid",
+      "status": "PASS",
+      "actual": {
+        "physical_q_valid": 272486,
+        "unique_q_valid": 261067,
+        "unique_q_missing": 19,
+        "finite_11_physical": 272486,
+        "q_finite_physical": 272486,
+        "mismatch_mask": 0
+      },
+      "expected": {
+        "physical_q_valid": 272486,
+        "unique_q_valid": 261067,
+        "unique_q_missing": 19,
+        "mismatch_mask": 0
+      },
+      "evidence": "physical rows and unique keys are reported separately",
+      "note": ""
+    },
+    {
+      "check_id": "V03_group_and_Q_recomputation",
+      "description": "group means and Q_baseline recomputed independently from the normalized columns",
+      "status": "PASS",
+      "actual": {
+        "groups_match": true,
+        "q_max_abs_diff": 0.0
+      },
+      "expected": {
+        "groups_match": true,
+        "q_max_abs_diff": 0.0
+      },
+      "evidence": "independent pandas recomputation",
+      "note": ""
+    },
+    {
+      "check_id": "V04_no_weight_reallocation",
+      "description": "rows with a missing group keep Q_baseline = NaN (no reallocation to remaining groups)",
+      "status": "PASS",
+      "actual": {
+        "rows_with_one_missing_group": 19,
+        "such_rows_with_NaN_Q": 19
+      },
+      "expected": {
+        "rows_with_one_missing_group": 19,
+        "such_rows_with_NaN_Q": 19
+      },
+      "evidence": "row-level check that Q is never the mean of the two valid groups",
+      "note": ""
+    },
+    {
+      "check_id": "V05_q_range_and_missing_anchors",
+      "description": "Q_valid count and Q range on unique keys (physical counts reported separately)",
+      "status": "PASS",
+      "actual": {
+        "unique_q_valid": 261067,
+        "unique_q_missing": 19,
+        "physical_q_valid": 272486,
+        "q_min": 0.04888888888888889,
+        "q_max": 0.9904747141841104
+      },
+      "expected": {
+        "unique_q_valid": 261067,
+        "unique_q_missing": 19,
+        "q_min>=0": true,
+        "q_max<=1": true
+      },
+      "evidence": "parquet columns; unique keys vs physical rows are never mixed",
+      "note": ""
+    },
+    {
+      "check_id": "V06_usable_group_distribution",
+      "description": "all_unique usable-group histogram 0/1/2/3 equals the accepted anchors (unique keys)",
+      "status": "PASS",
+      "actual": {
+        "unique": {
+          "0": 0,
+          "1": 0,
+          "2": 19,
+          "3": 261067
+        },
+        "physical": {
+          "0": 0,
+          "1": 0,
+          "2": 19,
+          "3": 272486
+        }
+      },
+      "expected": {
+        "unique": {
+          "0": 0,
+          "1": 0,
+          "2": 19,
+          "3": 261067
+        }
+      },
+      "evidence": "parquet n_groups_valid column",
+      "note": ""
+    },
+    {
+      "check_id": "V07_missing_and_overlap_anchors",
+      "description": "missing features, union/intersection, domain/role split and A1 overlap counts",
+      "status": "PASS",
+      "actual": {
+        "professionalism": 6,
+        "reasoning": 13,
+        "union": 19,
+        "intersection": 0,
+        "domains": {
+          "wikipedia": 14,
+          "commoncrawl": 4,
+          "github": 1
+        },
+        "roles": {
+          "A1_calibration": 13,
+          "A1_holdout": 5,
+          "extension_new_records": 1
+        },
+        "overlap_rows": {
+          "A3_github": 10000,
+          "A2_arxiv": 1419
+        }
+      },
+      "expected": {
+        "professionalism": 6,
+        "reasoning": 13,
+        "union": 19,
+        "intersection": 0,
+        "domains": {
+          "wikipedia": 14,
+          "commoncrawl": 4,
+          "github": 1
+        },
+        "roles": {
+          "A1_calibration": 13,
+          "A1_holdout": 5,
+          "extension_new_records": 1
+        },
+        "overlap_rows": {
+          "A2_arxiv": 1419,
+          "A3_github": 10000
+        }
+      },
+      "evidence": "independent recomputation from patient parquet columns",
+      "note": ""
+    },
+    {
+      "check_id": "V08_coverage_fields",
+      "description": "n_total / n_Q_valid / n_Q_missing / coverage recomputed for every scope x domain",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0
+      },
+      "expected": {
+        "n_violations": 0
+      },
+      "evidence": "domain_summary.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V09_q_std_effective_n_and_divisor",
+      "description": "Q_std effective n equals the finite-Q count and the divisor is n-1",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0
+      },
+      "expected": {
+        "n_violations": 0
+      },
+      "evidence": "domain_summary.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V10_disagreement_denominators",
+      "description": "range/std effective n and the boolean denominator use defined-range rows only",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0
+      },
+      "expected": {
+        "n_violations": 0
+      },
+      "evidence": "domain_summary.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V11_sensitivity_parameters_recomputed",
+      "description": "every median/gate/count recomputed from A1_calibration rows only",
+      "status": "PASS",
+      "actual": {
+        "n_parameters": 4,
+        "n_violations": 0,
+        "violations": []
+      },
+      "expected": {
+        "all parameters recomputed equal, gate_ok": true
+      },
+      "evidence": "imputation_parameters_sensitivity.json vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V12_parameter_sources_no_leakage",
+      "description": "every parameter provably comes from A1_calibration of the same domain (candidate count, valid count, coverage, unique count, scope)",
+      "status": "PASS",
+      "actual": {
+        "n_parameters": 4,
+        "provenance_violations": [],
+        "median_coincidences_with_outside_rows": [
+          {
+            "parameter": [
+              "commoncrawl",
+              "modernbert_professionalism"
+            ],
+            "outside_median": 0.4
+          },
+          {
+            "parameter": [
+              "github",
+              "modernbert_professionalism"
+            ],
+            "outside_median": 0.8
+          },
+          {
+            "parameter": [
+              "wikipedia",
+              "modernbert_professionalism"
+            ],
+            "outside_median": 0.4
+          },
+          {
+            "parameter": [
+              "wikipedia",
+              "modernbert_reasoning"
+            ],
+            "outside_median": 0.2
+          }
+        ],
+        "coincidence_note": "discrete normalized values can coincide; provenance is decided by the recorded counts and scope, not by median equality"
+      },
+      "expected": {
+        "provenance_violations": []
+      },
+      "evidence": "imputation_parameters_sensitivity.json vs calibration-only recomputation",
+      "note": ""
+    },
+    {
+      "check_id": "V13_sensitivity_separation_and_coverage",
+      "description": "sensitivity Q is separate; imputed rows carry a value while primary Q stays NaN",
+      "status": "PASS",
+      "actual": {
+        "imputed_rows": 19,
+        "no_imputation_equals_primary": true,
+        "imputed_rows_definition_ok": true
+      },
+      "expected": {
+        "imputed_rows": 19,
+        "no_imputation_equals_primary": true
+      },
+      "evidence": "parquet sensitivity columns",
+      "note": ""
+    },
+    {
+      "check_id": "V14_summary_denominators_long_table",
+      "description": "long denominator table agrees with recomputed effective n and variance divisors",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0
+      },
+      "expected": {
+        "n_violations": 0
+      },
+      "evidence": "summary_denominators.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "V15_sensitivity_comparison_consistency",
+      "description": "sensitivity comparison means/differences are internally consistent with the summaries",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0
+      },
+      "expected": {
+        "n_violations": 0
+      },
+      "evidence": "sensitivity_comparison.csv vs domain_summary.csv",
+      "note": ""
+    },
+    {
+      "check_id": "V16_protected_artifacts_unchanged",
+      "description": "old quality outputs, reports, Q01A/R1 evidence and raw inputs keep their recorded hashes",
+      "status": "PASS",
+      "actual": {
+        "checked": 146,
+        "changed": [],
+        "missing": []
+      },
+      "expected": {
+        "changed": [],
+        "missing": []
+      },
+      "evidence": "old_artifacts_before.json vs current hashes",
+      "note": ""
+    },
+    {
+      "check_id": "V17_no_content_columns",
+      "description": "no content/text column exists in the row-level product",
+      "status": "PASS",
+      "actual": {
+        "content_like_columns": [],
+        "n_columns": 72
+      },
+      "expected": {
+        "content_like_columns": []
+      },
+      "evidence": "parquet schema",
+      "note": ""
+    },
+    {
+      "check_id": "V18_strict_json",
+      "description": "all JSON artifacts are strict (no NaN/Infinity literals)",
+      "status": "PASS",
+      "actual": {
+        "files_with_nonstrict_literals": []
+      },
+      "expected": {
+        "files_with_nonstrict_literals": []
+      },
+      "evidence": "strict parse of every run-dir JSON",
+      "note": ""
+    },
+    {
+      "check_id": "V19_resume_and_checkpoint_evidence",
+      "description": "resume probes reused checkpoints without decompression; markers and input hashes agree",
+      "status": "PASS",
+      "actual": {
+        "resume_probes": [
+          {
+            "stage": "s10_scan_a1",
+            "checkpoint_rows": 51230,
+            "decompress_passes_during_probe": 0,
+            "reused": true
+          },
+          {
+            "stage": "s11_scan_a2",
+            "checkpoint_rows": 17523,
+            "decompress_passes_during_probe": 0,
+            "reused": true
+          },
+          {
+            "stage": "s12_scan_a3",
+            "checkpoint_rows": 203752,
+            "decompress_passes_during_probe": 0,
+            "reused": true
+          }
+        ],
+        "stage_markers_present": true,
+        "checkpoint_input_hashes_match": true,
+        "marker_note": "s50_verify/s60_finalize markers are written after this verification runs"
+      },
+      "expected": {
+        "probe_decompress_passes": 0,
+        "markers_present": true,
+        "input_hashes_match": true
+      },
+      "evidence": "checkpoint_manifest.json / checkpoints/*",
+      "note": ""
+    },
+    {
+      "check_id": "V20_anchors_vs_Q01A_R1",
+      "description": "new run reproduces the accepted Q01A/R1 anchors (read from their own artifacts)",
+      "status": "PASS",
+      "actual": {
+        "mismatches": {},
+        "sources": {
+          "Q01A": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08",
+          "R1": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A-R1\\20260924T150854+08"
+        }
+      },
+      "expected": {
+        "mismatches": {}
+      },
+      "evidence": "Q01A run_summary.json + R1 repair_phase_summary.json",
+      "note": ""
+    }
+  ],
+  "status": "PASS"
+}

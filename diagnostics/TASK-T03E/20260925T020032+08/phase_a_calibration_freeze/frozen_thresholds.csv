@@ -1,0 +1,7 @@
+﻿domain,indicator,a_q95,b_q99,lo_q005,hi_q995,n_valid_source,source_scope
+c4,top_2gram,10.068169900367069,17.10498651675123,0.0,20.920010222335815,8041,A1_calibration & is_unique_first & Q_valid & finite
+c4,top_3gram,10.236220472440944,19.403145377828928,0.0,24.635815775809203,8041,A1_calibration & is_unique_first & Q_valid & finite
+commoncrawl,top_2gram,6.255321791464951,10.793186190584164,0.3948158072041508,12.849200304645828,7688,A1_calibration & is_unique_first & Q_valid & finite
+commoncrawl,top_3gram,5.977031450843722,10.383268579318552,0.0,12.759083312427727,7688,A1_calibration & is_unique_first & Q_valid & finite
+wikipedia,top_2gram,17.880728527955668,26.539302446642385,0.0,32.692207792207554,8013,A1_calibration & is_unique_first & Q_valid & finite
+wikipedia,top_3gram,13.0,26.0,0.0,32.0,8013,A1_calibration & is_unique_first & Q_valid & finite

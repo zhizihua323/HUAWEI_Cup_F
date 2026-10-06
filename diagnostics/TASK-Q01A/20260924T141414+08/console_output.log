@@ -1,0 +1,37 @@
+[2026-09-24T14:22:21.024+08:00] ========================================================================
+[2026-09-24T14:22:21.024+08:00] TASK-Q01A start local=2026-09-24T14:22:21+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08
+[2026-09-24T14:22:21.024+08:00] constraints wall_limit_s=1200.0 memory_limit_bytes=2147483648 seed=20260924
+[2026-09-24T14:22:21.150+08:00] stage=precondition hashed_inputs=3
+[2026-09-24T14:22:21.164+08:00] stage=precondition sha256_matches_manifest_and_prior_audit
+[2026-09-24T14:22:21.626+08:00] stage=precondition protected_files=111 raw_tree_files=1849
+[2026-09-24T14:22:21.626+08:00] ERROR unhandled_exception: NameError: name 'RUN_ID' is not defined
+[2026-09-24T14:22:21.630+08:00] ERROR traceback
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08\diagnose_missingness.py", line 3112, in main
+    run_task(log, ctx)
+    ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08\diagnose_missingness.py", line 2304, in run_task
+    ctx['input_manifest'] = build_input_manifest(
+                            ~~~~~~~~~~~~~~~~~~~~^
+        pre_xz, ctx['pre_snapshot'], prior_manifest_rows, prior_audit,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+                       'quality_features_scores.parquet (absent)', 'all content/text fields'],
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        notes='no project module was imported; content fields were never retained or analysed')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08\diagnose_missingness.py", line 2166, in build_input_manifest
+    manifest = {'run_id': RUN_ID, 'generated_local': now_iso(),
+                          ^^^^^^
+NameError: name 'RUN_ID' is not defined. Did you mean: 'RUN_DIR'?
+
+[2026-09-24T14:22:21.631+08:00] ERROR finalize_failure
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08\diagnose_missingness.py", line 3132, in main
+    exit_code = finalize(log, ctx, exit_code)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A\20260924T141414+08\diagnose_missingness.py", line 2950, in finalize
+    'run_id': RUN_ID, 'task': 'TASK-Q01A',
+              ^^^^^^
+NameError: name 'RUN_ID' is not defined. Did you mean: 'RUN_DIR'?
+
+[2026-09-24T14:22:21.631+08:00] TASK-Q01A end status=FAILED exit_code=2

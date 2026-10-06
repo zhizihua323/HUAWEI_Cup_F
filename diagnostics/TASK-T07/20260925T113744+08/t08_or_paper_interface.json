@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "task": "TASK-T07",
+  "run_id": "20260925T113744+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "primary_model": "M0_B1",
+  "primary_qualification": "IDENTIFIED_SOURCE_CONDITIONAL_B1",
+  "budgets_flops": [
+    1e+18,
+    1e+20,
+    1e+22
+  ],
+  "H_values": [
+    2048,
+    4096,
+    8192,
+    32768,
+    131072
+  ],
+  "H_main": 2048,
+  "H_crit": 30000.0,
+  "scenario_count": 21,
+  "scenario_ids": [
+    "S00_NULL_M0_B1",
+    "S01_QREF_QA_H2_B1_R06_ADD",
+    "S02_QC",
+    "S03_H1_IDENTITY",
+    "S04_H2_B05",
+    "S05_H2_B20",
+    "S06_H3_EQQUANTILE",
+    "S07_H4_DIRECTION_ONLY",
+    "S08_RB1_02",
+    "S09_RB1_09",
+    "S10_RHOQ_00",
+    "S11_RHOQ_05",
+    "S12_EFF_KEEP_ETA",
+    "S13_EFF_KEEP_K",
+    "S14_MIX_TAU05",
+    "S15_MIX_TAU10",
+    "S16_MIX_TAUM10_STRESS",
+    "S17_B8_REVERSE_COMMON_SUPPORT",
+    "X01_Q_HIGH",
+    "X02_Q_CONSERVATIVE",
+    "X03_H3_EFF"
+  ],
+  "quality_and_mixture_qualification": "SCENARIO_ONLY",
+  "S17": {
+    "status": "NO_NUMERIC_OPTIMUM",
+    "legacy_k_minus_20_used": false,
+    "propagated_as_probability": false
+  },
+  "paper_tables": [
+    "budget_scenario_optima.csv",
+    "kkt_boundary_checks.csv",
+    "marginal_returns.csv",
+    "structural_transition_diagnostics.csv",
+    "quality_cost_sensitivity.csv",
+    "context_sensitivity.csv",
+    "uncertainty_summary.csv"
+  ],
+  "key_numbers": {
+    "optimal_main_rows": 69,
+    "budget_feasible_fraction": 1.0,
+    "max_relative_budget_violation": 9.403629568e-13,
+    "max_kkt_residual": 2.7932317030401693e-08,
+    "max_abs_equality_residual": 9.403629568e-13
+  },
+  "handoff_to_T08": "T08 NOT STARTED; consume tables only after controller review.",
+  "independent_verification_status": "PASS",
+  "independent_verification_check_count": 39
+}

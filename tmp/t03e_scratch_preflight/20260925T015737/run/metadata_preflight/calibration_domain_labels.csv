@@ -1,0 +1,8 @@
+﻿domain_label,physical_rows,unique_first_rows,valid_rows,exact_string_length
+arxiv,1122,1122,1122,5
+book,137,137,137,4
+c4,8041,8041,8041,2
+commoncrawl,7691,7691,7688,11
+github,7963,7963,7963,6
+stackexchange,7966,7966,7966,13
+wikipedia,8023,8023,8013,9

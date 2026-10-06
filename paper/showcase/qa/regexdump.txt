@@ -1,0 +1,4 @@
+if re.match(r'^(L0|M0_6|MQ-add|hat L|Q_C|Q_baseline\s*=|N_phys|C_total|κ\(H\)|Λ=|∇|μ_|partial|eta\s*=|G_EXP|G_POWER|G_LOG|scale_associated_component|conditional_remainder|observed\s*=)',s):
+        return None
+    if s.startswith('### ') or s.startswith('## ') or s.startswith('# '): return None
+    

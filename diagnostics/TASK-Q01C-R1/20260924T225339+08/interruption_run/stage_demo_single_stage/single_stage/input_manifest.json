@@ -1,0 +1,103 @@
+{
+  "run_id": "single_stage",
+  "mode": "fixture",
+  "generated_local": "2026-09-24T22:53:48+08:00",
+  "primary": {
+    "A1": {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture\\inputs\\f1_a1.jsonl",
+      "bytes": 620394,
+      "mtime": 1790261620.8356118,
+      "sha256": "7703a40fc17f06b0a77915e9761d9a335de6b853e3269789df67db85721ff2d7",
+      "verification_method": "read-only byte hash of the synthetic fixture input"
+    },
+    "A2_arxiv": {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture\\inputs\\f2_arxiv.jsonl",
+      "bytes": 29879,
+      "mtime": 1790261620.8377666,
+      "sha256": "103560b966b2c1daa89342344fa6827a114b040ab62fbd43df3584f3af1addd9",
+      "verification_method": "read-only byte hash of the synthetic fixture input"
+    },
+    "A3_github": {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture\\inputs\\f3_github.jsonl",
+      "bytes": 30063,
+      "mtime": 1790261620.8401752,
+      "sha256": "0511327f42b52caa13e9565b26d9135785461b2603eada51e3717bf67232cea9",
+      "verification_method": "read-only byte hash of the synthetic fixture input"
+    }
+  },
+  "fixture_manifest": {
+    "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture\\fixture_manifest.json",
+    "sha256": "f74479b32f74341c02d21cc1b9fd5d410da31aea4209b12fda4ace6f2aecc58e"
+  },
+  "source": {
+    "solution/src/common.py": {
+      "path": "solution/src/common.py",
+      "sha256": "fc5a7056de9fe6ceb80ec85071a3b3d026b37e5d841f86b7e93637c8fb7e088d",
+      "bytes": 1432
+    },
+    "solution/src/evolution_audit.py": {
+      "path": "solution/src/evolution_audit.py",
+      "sha256": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+      "bytes": 39343
+    },
+    "solution/src/mixture_baseline.py": {
+      "path": "solution/src/mixture_baseline.py",
+      "sha256": "25231143b96880a8aa7a9b710aecf57e972a752016452e9ae67f74171200c68a",
+      "bytes": 11200
+    },
+    "solution/src/plot_baselines.py": {
+      "path": "solution/src/plot_baselines.py",
+      "sha256": "a44cd200f791f49e8f54e5e319cb18bcc3c1cd0b4b8b42a632e0211c0fa997e1",
+      "bytes": 3367
+    },
+    "solution/src/project_audit.py": {
+      "path": "solution/src/project_audit.py",
+      "sha256": "39ca144bb844e6104507cfc4d14df8d51a28bab0bbbead5cc4fb0a8f65ae3eb7",
+      "bytes": 4557
+    },
+    "solution/src/quality_audit.py": {
+      "path": "solution/src/quality_audit.py",
+      "sha256": "dbcf25ef8d69980409c4cb7d251ac84b6c58da95932b1483fe654e95610a11ae",
+      "bytes": 33716
+    },
+    "solution/src/quality_q01c.py": {
+      "path": "solution/src/quality_q01c.py",
+      "sha256": "68974b688c206ed00b84218eee4f30643d0daadade39abb87128cec03a1c8f47",
+      "bytes": 124132
+    },
+    "solution/src/quality_q01c_selftest.py": {
+      "path": "solution/src/quality_q01c_selftest.py",
+      "sha256": "f70c7e44536da73f1cdf34b5a11cebbf95d8d888e400e51131b2d003a0bd2e33",
+      "bytes": 14316
+    },
+    "solution/src/quality_q01c_verify.py": {
+      "path": "solution/src/quality_q01c_verify.py",
+      "sha256": "b8d782970a38bb880befd57b453608bd3a405e94f396737603be466f379bad7f",
+      "bytes": 53547
+    },
+    "solution/src/scaling_baseline.py": {
+      "path": "solution/src/scaling_baseline.py",
+      "sha256": "bad8e43735f9b9d209034533891fd1bb139309564a25aaa2d93188d4f9e2b1a2",
+      "bytes": 30611
+    },
+    "solution/config.json": {
+      "path": "solution/config.json",
+      "sha256": "224c2ff638b5db2c447dd4aedc121a6b3b9e362d7affda64dabbc267cca498cf",
+      "bytes": 440
+    },
+    "solution/README.md": {
+      "path": "solution/README.md",
+      "sha256": "16a434edb5ab7499402f78dbe2318a07bb81f71138d0a56e16fb816b8e073b38",
+      "bytes": 1763
+    }
+  },
+  "version_checks": [
+    {
+      "check": "fixture_manifest_synthetic_flag",
+      "ok": true
+    }
+  ],
+  "read_policy": "synthetic fixture only: A1/A2/A3 were never opened, hashed, decompressed or stat-ed by this process",
+  "real_inputs_accessed": 0,
+  "content_policy": "no text/content field is read or stored"
+}

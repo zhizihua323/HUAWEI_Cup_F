@@ -1,0 +1,22 @@
+{
+  "kind": "stage",
+  "stage": "s40_summarize",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:42:16+08:00",
+  "checkpoint_identity": "a2376249cee3c0f885b81fcd1144821190859f7f2e379f421b2f5000d4b61646",
+  "outputs": {
+    "audit.json": "e1582a57acf6228c1a28facabef0ecfe37fbd4a6ceb9305bb80c3f87f5ce1a6a",
+    "raw_field_counts.csv": "15617791c0865890968a9183f3be122cedcbce79aa67541b53db5a9ee8759117",
+    "domain_summary.csv": "dd11528349a4c7c3ed4890e6494f0fc4f2aa23c34f31954590e343c9019b0df5",
+    "summary_denominators.csv": "054362f2125c0556c4ff52e490b6b65463c1f356d451ebb9c1f257de395acc8e",
+    "sensitivity_domain_summary.csv": "aac9b6d8b44fe9297da5076183eae75bd09e3d9888dfa7d10bf14647d36e835f",
+    "sensitivity_comparison.csv": "2b9550a8cbcdeccd2840dbc747753d0f003103ff9edc2d7fca1c6acdedfb11e8",
+    "feature_summary.csv": "2f489c753cc0a9c1868f10c866ea3618db95d262ee51ca4839b8362c039fd6f3",
+    "extension_shift.csv": "fe8384cd28071741ff59f46eca53e69c562eca0e37ad309f0f4a648604afd954",
+    "unresolved_indicator_correlations.csv": "f626b002b7acce69b84fab0f5b8a5be2bf90123ddc652ab34dde62b41ad127f2",
+    "indicator_direction_pending.csv": "dac462a75aca67ab24d4648159c2ad8858bc7d383419de010244b0de8d1f1de6",
+    "conditional_bootstrap.csv": "95388b0adf9d5ac489daae8a63bc2e30a7278021f3d3390d5ef46914937f1dba",
+    "quality_baseline_q01c.md": "c4ccce2b895a5620b1eab086bc5fc19b29292fa40c5fd40968a9d974525faa72"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

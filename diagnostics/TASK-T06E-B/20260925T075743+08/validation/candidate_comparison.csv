@@ -1,0 +1,3 @@
+﻿source,split,candidate,null,macro_RMSE_null,macro_RMSE_candidate,relative_improvement,improvement_gate_0.05,fold_ratio_pass_count,fold_ratio_required,fold_ratio_gate,n_folds,pooled_RMSE_null,pooled_RMSE_candidate
+B6,leave_N,MQ-add,M0_6,0.07915866572290016,0.05293722787246455,0.3312516401201782,PASS,9,8,PASS,9,,0.05373036025584223
+B6,leave_D,MQ-add,M0_6,0.08186194398622192,0.055328769977889644,0.32412098609334317,PASS,5,4,PASS,5,,0.05602925510936747

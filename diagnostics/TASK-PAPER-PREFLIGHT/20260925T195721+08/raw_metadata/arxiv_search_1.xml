@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/IigaS/DUXVwmcaMmSSHWnZ4Bu0g</id>
+  <title>arXiv Query: search_query=ti:"RegMix"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-25T11:58:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:%22RegMix%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2106.03374v4</id>
+    <title>RegMix: Data Mixing Augmentation for Regression</title>
+    <updated>2022-08-17T05:13:09Z</updated>
+    <link href="https://arxiv.org/abs/2106.03374v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.03374v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data augmentation is becoming essential for improving regression performance in critical applications including manufacturing, climate prediction, and finance. Existing techniques for data augmentation largely focus on classification tasks and do not readily apply to regression tasks. In particular, the recent Mixup techniques for classification have succeeded in improving the model performance, which is reasonable due to the characteristics of the classification task, but has limitations in regression. We show that mixing examples that have large data distances using linear interpolations may have increasingly-negative effects on model performance. Our key idea is thus to limit the distances between examples that are mixed. We propose RegMix, a data augmentation framework for regression that learns for each example how many nearest neighbors it should be mixed with for the best model performance using a validation set. Our experiments conducted both on synthetic and real datasets show that RegMix outperforms state-of-the-art data augmentation baselines applicable to regression.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-07T07:01:39Z</published>
+    <arxiv:comment>10 pages, 9 figures, 6 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Seong-Hyeon Hwang</name>
+    </author>
+    <author>
+      <name>Steven Euijong Whang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.18663v1</id>
+    <title>RegMix-D: Dynamic Data Mixing via Proxy Training Trajectories</title>
+    <updated>2026-06-17T04:02:38Z</updated>
+    <link href="https://arxiv.org/abs/2606.18663v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.18663v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data mixture selection is critical for Large Language Model pretraining. Existing methods such as RegMix select a single static mixture by fitting a regression model on small-scale proxy runs. We propose RegMix-D, a simple extension of RegMix to dynamic mixing. Our key observation is that proxy runs produce not only endpoint losses, but also full loss trajectories, which can be used to further improve data mixture. By training regression model on these trajectories, we can predict optimal mixtures at multiple training stages. RegMix-D supports two deployment modes: an offline variant that generates a complete mixture schedule before target training, and an online variant that adapts the mixture during training using observed loss. Experiments on 25B tokens of the Pile dataset with a 1B parameter target model show that RegMix-D consistently improves over RegMix and DoReMi across 13 downstream tasks while remaining proxy-efficient: it surpasses RegMix even with only 128 proxy models (25% of RegMix's proxy compute budget).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-17T04:02:38Z</published>
+    <arxiv:comment>Work in progress</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Kaiyan Zhao</name>
+    </author>
+    <author>
+      <name>Zhongtao Miao</name>
+    </author>
+    <author>
+      <name>Akiko Aizawa</name>
+    </author>
+    <author>
+      <name>Yoshimasa Tsuruoka</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.01492v2</id>
+    <title>RegMix: Data Mixture as Regression for Language Model Pre-training</title>
+    <updated>2025-01-23T17:35:43Z</updated>
+    <link href="https://arxiv.org/abs/2407.01492v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.01492v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000x larger and 25x longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-01T17:31:03Z</published>
+    <arxiv:comment>ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qian Liu</name>
+    </author>
+    <author>
+      <name>Xiaosen Zheng</name>
+    </author>
+    <author>
+      <name>Niklas Muennighoff</name>
+    </author>
+    <author>
+      <name>Guangtao Zeng</name>
+    </author>
+    <author>
+      <name>Longxu Dou</name>
+    </author>
+    <author>
+      <name>Tianyu Pang</name>
+    </author>
+    <author>
+      <name>Jing Jiang</name>
+    </author>
+    <author>
+      <name>Min Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.05317v1</id>
+    <title>RegMix: Adversarial Mutual and Generalization Regularization for Enhancing DNN Robustness</title>
+    <updated>2025-10-06T19:30:08Z</updated>
+    <link href="https://arxiv.org/abs/2510.05317v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.05317v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Adversarial training is the most effective defense against adversarial attacks. The effectiveness of the adversarial attacks has been on the design of its loss function and regularization term. The most widely used loss function in adversarial training is cross-entropy and mean squared error (MSE) as its regularization objective. However, MSE enforces overly uniform optimization between two output distributions during training, which limits its robustness in adversarial training scenarios. To address this issue, we revisit the idea of mutual learning (originally designed for knowledge distillation) and propose two novel regularization strategies tailored for adversarial training: (i) weighted adversarial mutual regularization and (ii) adversarial generalization regularization. In the former, we formulate a decomposed adversarial mutual Kullback-Leibler divergence (KL-divergence) loss, which allows flexible control over the optimization process by assigning unequal weights to the main and auxiliary objectives. In the latter, we introduce an additional clean target distribution into the adversarial training objective, improving generalization and enhancing model robustness. Extensive experiments demonstrate that our proposed methods significantly improve adversarial robustness compared to existing regularization-based approaches.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-06T19:30:08Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>24th IEEE International Conference on Trust, Security and Privacy in Computing and Communications (IEEE TrustCom 2025)</arxiv:journal_ref>
+    <author>
+      <name>Zhenyu Liu</name>
+    </author>
+    <author>
+      <name>Varun Ojha</name>
+    </author>
+  </entry>
+</feed>
+

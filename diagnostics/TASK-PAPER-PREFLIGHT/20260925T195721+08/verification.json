@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "summary": {
+    "status": "PASS",
+    "total": 45,
+    "pass": 45,
+    "fail": 0,
+    "generated_at_utc": "2026-09-25T12:12:33.588052+00:00",
+    "verifier_file": "verify_preflight.py",
+    "independent_of_builders": true
+  },
+  "failed_checks": [],
+  "critical_invariants": [
+    "protected inputs hashed in input_manifest.json",
+    "no final DOCX/PDF",
+    "G1/G2/G4 placeholders retained",
+    "verified citation keys only",
+    "formula and asset IDs unique"
+  ]
+}

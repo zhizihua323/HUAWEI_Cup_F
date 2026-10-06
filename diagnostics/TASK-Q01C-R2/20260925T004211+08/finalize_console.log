@@ -1,0 +1,3 @@
+{"ts": "2026-09-25T00:43:06+08:00", "phase": "finalize", "event": "start", "pid": 35424}
+{"ts": "2026-09-25T00:43:06+08:00", "phase": "finalize", "event": "complete", "pid": 35424}
+{"status": "COMPLETE_PENDING_REVIEW", "n_files": 284, "checks": {"n_checks": 13, "n_pass": 13, "n_fail": 0, "n_not_checked": 0, "n_not_verifiable": 0}}

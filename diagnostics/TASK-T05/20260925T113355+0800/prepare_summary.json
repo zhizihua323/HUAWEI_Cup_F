@@ -1,0 +1,14 @@
+{
+  "crosswalk_rows": 23873,
+  "crosswalk_canonical_models": 8051,
+  "loss_definitions": 31,
+  "comparability_strata": 54,
+  "multi_file_directories_checked": 95,
+  "coverage_rows": 10,
+  "bridge_models": 45,
+  "main_comparable_models": 7,
+  "conditional_source_transfer_models": 38,
+  "partial_models_excluded_from_bridge": 6,
+  "corrupt_json_excluded_from_scores": 4,
+  "execution_seal_sha256_expected": "7f6805e168f793040f9faa7889dd4eecba7964be19fef34247d470ed4e051e68"
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp_local": "2026-09-24T13:32:53.046461+08:00",
+  "project_docs": [
+    {
+      "path": "00_PROJECT_BRIEF.md",
+      "bytes": 4614,
+      "sha256": "6d64957a41b33035eb1eb3b0550f4fb48fcb129662b48e5159bea804b4b18058"
+    },
+    {
+      "path": "01_PROJECT_STATUS.md",
+      "bytes": 4640,
+      "sha256": "32cf7adcc46f9c30abb31257e001070805d01f24ee815077149ded7d72a56f1c"
+    },
+    {
+      "path": "02_DECISIONS.md",
+      "bytes": 4424,
+      "sha256": "209b9fb3a50c6d35592c76b1954390be5eb499084179757e88e187900b1254ec"
+    },
+    {
+      "path": "03_DATA_CATALOG.md",
+      "bytes": 11814,
+      "sha256": "c870e449a7e24cf6f92013aeeda5b0b58e1d931b596f2f2c2a581c233659d960"
+    },
+    {
+      "path": "04_TASK_QUEUE.md",
+      "bytes": 3636,
+      "sha256": "c92725e4d8fa1a911e8cc161809317a70be158a7dd0dd1fede0efebee71aa12e"
+    },
+    {
+      "path": "05_REVIEW_LOG.md",
+      "bytes": 6643,
+      "sha256": "6c9ad90d76bffc8379f65f5b165a961694e1cc55b9d95f31793fc95998f0b892"
+    },
+    {
+      "path": "恢复报告.md",
+      "bytes": 3282,
+      "sha256": "f9565bca17f0c11827ffe81a66878c8454f764fae9307386ec887f4d666f9055"
+    }
+  ],
+  "solution_files_unchanged": 92,
+  "solution_new_or_removed_files": [],
+  "state": "RECOVERY_COMPLETE_STOPPED",
+  "models_rerun": false,
+  "original_data_modified": false,
+  "note": "Original data only read. solution files verified byte-identical to pre-document recovery inventory."
+}

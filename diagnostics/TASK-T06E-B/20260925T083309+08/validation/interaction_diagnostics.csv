@@ -1,0 +1,4 @@
+﻿source,support,term,coefficient,standard_error,diagnostic_only,can_enter_T07
+B6,Q<=0.6,Q_Qbar_group,-0.3544081081081082,0.017174632613419012,True,False
+B6,Q<=0.6,interaction_Q_logN,0.057978573363017,0.010496459155034443,True,False
+B6,Q<=0.6,interaction_Q_logD,0.026832083032798118,0.011939449441210758,True,False

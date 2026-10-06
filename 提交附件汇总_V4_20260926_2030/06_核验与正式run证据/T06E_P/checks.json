@@ -1,0 +1,380 @@
+{
+  "summary": {
+    "total": 32,
+    "pass": 32,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "checks": [
+    {
+      "check_id": "ENV-VERSIONS",
+      "requirement": "Python/NumPy/pandas/pyarrow versions match the construction order.",
+      "status": "PASS",
+      "observed": {
+        "python": "3.13.9",
+        "numpy": "2.3.5",
+        "pandas": "2.3.3",
+        "pyarrow": "21.0.0"
+      },
+      "evidence": "environment observed by checks"
+    },
+    {
+      "check_id": "HASH-T06",
+      "requirement": "Upper T06 method hash matches the frozen value used by both branches.",
+      "status": "PASS",
+      "observed": "5b27a8585fef4ca87061c628c7a6e54361651febd6b76b2ae315e1982cb64d8c",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "HASH-ORDER",
+      "requirement": "T06E construction-order hash is frozen.",
+      "status": "PASS",
+      "observed": "a081f0ec0911e35619d738041ee8753aeb2601f2c56570198a24034b1a321dac",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "HASH-INPUTS-CURRENT",
+      "requirement": "Every declared read-only input still matches its manifest hash.",
+      "status": "PASS",
+      "observed": {
+        "file_count": 52,
+        "all_match": true
+      },
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "Q-STOP-CONDITION",
+      "requirement": "q_A* selection has exactly seven frozen domains and 40930 rows.",
+      "status": "PASS",
+      "observed": {
+        "domains": [
+          "arxiv",
+          "book",
+          "c4",
+          "commoncrawl",
+          "github",
+          "stackexchange",
+          "wikipedia"
+        ],
+        "selected": 40930
+      },
+      "evidence": "T03E Parquet fresh recomputation"
+    },
+    {
+      "check_id": "Q-EQUAL-DOMAIN",
+      "requirement": "q_A* is the exact equal-domain mean, not a global document-weighted mean.",
+      "status": "PASS",
+      "observed": {
+        "recomputed": 0.5695341857475175,
+        "stored": 0.5695341857475174,
+        "global_for_comparison": 0.5207311300303592
+      },
+      "evidence": "T03E Parquet"
+    },
+    {
+      "check_id": "Q-DOMAIN-WEIGHTS",
+      "requirement": "Each A domain has exact weight 1/7.",
+      "status": "PASS",
+      "observed": "1/7",
+      "evidence": "q_A definition"
+    },
+    {
+      "check_id": "H3-A-CDF",
+      "requirement": "A ECDF table preserves seven-domain weights, right-continuity and monotonicity.",
+      "status": "PASS",
+      "observed": {
+        "rows": 40929,
+        "domain_cdf_columns": [
+          "F_arxiv",
+          "F_book",
+          "F_c4",
+          "F_commoncrawl",
+          "F_github",
+          "F_stackexchange",
+          "F_wikipedia"
+        ],
+        "last_FA": 1.0
+      },
+      "evidence": "bridge/A_equal_domain_ecdf.csv"
+    },
+    {
+      "check_id": "H3-CDF-LE",
+      "requirement": "CDF row semantics use `<=` and stable ties.",
+      "status": "PASS",
+      "observed": {
+        "step_rule": "right_continuous_<=_IEEE_float64",
+        "ties": "stable_sort_preserve_ties"
+      },
+      "evidence": "bridge/A_equal_domain_ecdf.csv"
+    },
+    {
+      "check_id": "H3-B6-UNIQUE",
+      "requirement": "B6 ECDF uses exactly eight unique Q levels, each weighted 1/8.",
+      "status": "PASS",
+      "observed": {
+        "levels": [
+          0.1,
+          0.2,
+          0.2999999999999999,
+          0.4,
+          0.5999999999999999,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "counts": [
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45
+        ]
+      },
+      "evidence": "bridge/B6_unique_Q_ecdf.csv"
+    },
+    {
+      "check_id": "H3-INVERSE",
+      "requirement": "H3 generalized inverse boundaries and support flags are explicit.",
+      "status": "PASS",
+      "observed": {
+        "first": 0.1,
+        "last": 1.0,
+        "statuses": [
+          "IN_SUPPORT",
+          "OUT_OF_SUPPORT_HIGH",
+          "OUT_OF_SUPPORT_LOW"
+        ]
+      },
+      "evidence": "bridge/H3_mapping_steps.csv"
+    },
+    {
+      "check_id": "Q-C-SAME-FA",
+      "requirement": "Q_C sensitivity reuses the Q_baseline q_A* and F_A rather than building a new CDF.",
+      "status": "PASS",
+      "observed": {
+        "definition": "h(q)=F_B^{-1}(F_A(q))",
+        "eligibility": "SCENARIO_ONLY",
+        "mapped_value_at_q_A_star": 0.6,
+        "q_A_star_support_status": "IN_SUPPORT",
+        "q_A_star_usable": true,
+        "qc_star_uses_same_F_A": true,
+        "mapped_value_at_q_C_star_using_same_F_A": 0.6,
+        "q_C_star_support_status": "IN_SUPPORT",
+        "q_C_star_usable": true
+      },
+      "evidence": "bridge/quality_bridge_scenarios.json"
+    },
+    {
+      "check_id": "BRIDGE-QUALIFICATION",
+      "requirement": "H0-H4 have the exact required identification/scenario qualifications.",
+      "status": "PASS",
+      "observed": {
+        "H0": "IDENTIFIED_NULL_BASELINE",
+        "H1": "SCENARIO_ONLY",
+        "H2": "SCENARIO_ONLY",
+        "H3": "SCENARIO_ONLY",
+        "H4": "DIRECTION_ONLY_NOT_OPTIMIZABLE"
+      },
+      "evidence": "bridge/bridge_qualification.csv"
+    },
+    {
+      "check_id": "A-B-NOT-IDENTIFIABLE",
+      "requirement": "A/B bridge is reported as NOT_IDENTIFIABLE, not converted to a fitted map.",
+      "status": "PASS",
+      "observed": {
+        "bridge": "NOT_IDENTIFIABLE",
+        "pq": "NOT_IDENTIFIABLE"
+      },
+      "evidence": "bridge and p-Q JSON"
+    },
+    {
+      "check_id": "SCENARIO-SEAL-HASH",
+      "requirement": "Scenario registry hash matches its seal and contains exactly the 21 preregistered IDs in order.",
+      "status": "PASS",
+      "observed": {
+        "count": 21,
+        "sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522"
+      },
+      "evidence": "SCENARIO_REGISTRY_SEAL.json"
+    },
+    {
+      "check_id": "SCENARIO-SEAL-FIRST",
+      "requirement": "Registry seal precedes derivative test/migration metric output.",
+      "status": "PASS",
+      "observed": {
+        "registry_mtime": "2026-09-25T07:57:48.522602+08:00",
+        "seal_time_field": "2026-09-25T07:57:48+08:00",
+        "seal_file_mtime": "2026-09-25T07:57:48.581393+08:00",
+        "metric_output_mtime": "2026-09-25T08:01:13.515227+08:00"
+      },
+      "evidence": "registry seal and RegMix audit mtimes"
+    },
+    {
+      "check_id": "SCENARIO-NO-CARTESIAN",
+      "requirement": "Scenario set is exactly 21 fixed rows with no generated Cartesian product.",
+      "status": "PASS",
+      "observed": {
+        "registry_rows": 21,
+        "scenario_input_rows": 21
+      },
+      "evidence": "registry and scenario inputs"
+    },
+    {
+      "check_id": "P0-RECONSTRUCTION",
+      "requirement": "p0 is independently recomputed from A4-normalized training mixtures and exactly matches model.json.reference_p.",
+      "status": "PASS",
+      "observed": {
+        "max_abs_diff": 0.0
+      },
+      "evidence": "reference_p_reconciliation.csv"
+    },
+    {
+      "check_id": "REGMIX-NO-REFIT",
+      "requirement": "Frozen linear model is reused without refitting or reselecting the model family.",
+      "status": "PASS",
+      "observed": {
+        "selected_by_training_only": "linear",
+        "test_usage": "not_used_for_selection"
+      },
+      "evidence": "model.json and T07 candidate contract"
+    },
+    {
+      "check_id": "REGMIX-1M",
+      "requirement": "1M meets both preregistered frozen-linear reporting criteria.",
+      "status": "PASS",
+      "observed": {
+        "mse_improvement": 0.5502593290109576,
+        "spearman": 0.6250743877317463
+      },
+      "evidence": "regmix_fixed_model_validation.csv"
+    },
+    {
+      "check_id": "SCALE-ROLES",
+      "requirement": "1M is deployment test; 60M/1B are transport reports; 10B/70B are estimated non-truth.",
+      "status": "PASS",
+      "observed": {
+        "train_1m": "training_only",
+        "test_1m": "deployment_test",
+        "test_60m": "cross_scale_transport",
+        "test_1B": "cross_scale_transport",
+        "est_10b": "estimated_not_truth",
+        "est_70b": "estimated_not_truth"
+      },
+      "evidence": "regmix_fixed_model_validation.csv"
+    },
+    {
+      "check_id": "A6-A8-CLUSTER",
+      "requirement": "A6/A8 identical per-key recipes are treated as one paired transport cluster.",
+      "status": "PASS",
+      "observed": {
+        "pairs": 256,
+        "all_exact": true
+      },
+      "evidence": "cross_scale_recipe_pairs.csv"
+    },
+    {
+      "check_id": "MAPPING-11-NONE",
+      "requirement": "Exactly 6 mapped and 11 unmapped RegMix domains are preserved without filling or renormalization.",
+      "status": "PASS",
+      "observed": {
+        "mapped": 6,
+        "unmapped": 11
+      },
+      "evidence": "domain_mapping_coverage.csv"
+    },
+    {
+      "check_id": "PQ-COLUMN-SPACE",
+      "requirement": "Q_mix lies in the frozen p design column space for fixed q, so gamma is not separately identified.",
+      "status": "PASS",
+      "observed": {
+        "design_rank": 17,
+        "augmented_rank": 17,
+        "relative_residual": 9.368877196481023e-16
+      },
+      "evidence": "p_q_identifiability.json"
+    },
+    {
+      "check_id": "PQ-NO-DOUBLE-COUNT",
+      "requirement": "No scenario exposes Q and p as two independently optimizable coordinates.",
+      "status": "PASS",
+      "observed": {
+        "unique_flag": [
+          false
+        ]
+      },
+      "evidence": "scenario_inputs.parquet"
+    },
+    {
+      "check_id": "NO-QREF-RESTORE",
+      "requirement": "Legacy Q_ref=0.5 is not restored as a calibration or fixed r_B1 scenario.",
+      "status": "PASS",
+      "observed": "official r_B1 scenarios are 0.2,0.6,0.9",
+      "evidence": "scenario registry"
+    },
+    {
+      "check_id": "NO-T07",
+      "requirement": "P branch does not start T07 or create integration outputs.",
+      "status": "PASS",
+      "observed": {
+        "forbidden_outputs_present": false
+      },
+      "evidence": "run directory inventory"
+    },
+    {
+      "check_id": "STATIC-BOUNDARY-SCAN",
+      "requirement": "Execution code has no random resampling/fit/optimization primitive and no forbidden A1-A3 or B-branch access path.",
+      "status": "PASS",
+      "observed": {
+        "scanned_files": [
+          "01_seal_registry.py",
+          "02_quality_anchor_bridge.py",
+          "03_regmix_readonly_audit.py",
+          "04_scenario_interface.py"
+        ],
+        "hits": []
+      },
+      "evidence": "code static scan"
+    },
+    {
+      "check_id": "NO-B-MODEL",
+      "requirement": "P branch does not fit, estimate, or fill B-side quality parameters.",
+      "status": "PASS",
+      "observed": {
+        "loss_predictions_filled": 0
+      },
+      "evidence": "scenario inputs and candidate contract"
+    },
+    {
+      "check_id": "CODE-SNAPSHOT",
+      "requirement": "Source snapshot manifest matches copied source files.",
+      "status": "PASS",
+      "observed": {
+        "manifest_files": 8,
+        "actual_py_files": 8
+      },
+      "evidence": "code_snapshot_manifest.json"
+    },
+    {
+      "check_id": "INPUT-MANIFEST",
+      "requirement": "Input manifest includes all mandatory sources and no real A1-A3 or B-branch run.",
+      "status": "PASS",
+      "observed": {
+        "file_count": 52
+      },
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "FREEZE-MANIFEST",
+      "requirement": "Freeze manifest preserves registry, input manifest, source snapshot, and frozen decision hashes.",
+      "status": "PASS",
+      "observed": {
+        "scenario_registry_sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522"
+      },
+      "evidence": "freeze_manifest.json"
+    }
+  ],
+  "created_local_time": "2026-09-25T08:07:18+08:00"
+}

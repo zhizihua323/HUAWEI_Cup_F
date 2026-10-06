@@ -1,0 +1,31 @@
+[verify] V01_totals: PASS
+[verify] V02_q_valid_equivalence: FAIL
+[verify] V03_group_and_Q_recomputation: PASS
+[verify] V04_no_weight_reallocation: PASS
+[verify] V05_q_range_and_missing_anchors: FAIL
+[verify] V06_usable_group_distribution: FAIL
+[verify] V07_missing_and_overlap_anchors: PASS
+[verify] V08_coverage_fields: PASS
+[verify] V09_q_std_effective_n_and_divisor: PASS
+[verify] V10_disagreement_denominators: PASS
+[verify] V11_sensitivity_parameters_recomputed: PASS
+[verify] V12_parameter_sources_no_leakage: FAIL
+[verify] V13_sensitivity_separation_and_coverage: PASS
+[verify] V14_summary_denominators_long_table: PASS
+[verify] V15_sensitivity_comparison_consistency: PASS
+[verify] V16_protected_artifacts_unchanged: PASS
+[verify] V17_no_content_columns: PASS
+[verify] V18_strict_json: PASS
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 542, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 177, in main
+    verify_protection_and_hygiene(run_dir, input_manifest, before, run_config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 416, in verify_protection_and_hygiene
+    manifest = read_json(run_dir / 'checkpoint_manifest.json')
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 66, in read_json
+    with open(path, 'r', encoding='utf-8-sig') as fh:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T213654+08\\checkpoint_manifest.json'

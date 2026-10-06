@@ -1,0 +1,9 @@
+{
+  "kind": "checkpoint",
+  "stage": "s11_scan_a2",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:38:39+08:00",
+  "rows": 30,
+  "note": "data-checkpoint completion marker; stage markers use <stage>.stage.COMPLETE",
+  "checkpoint_meta_sha256": "35b9634e5f197e15a257f4669b13aec4e46c245659355e4c69361ad213fd4bde"
+}

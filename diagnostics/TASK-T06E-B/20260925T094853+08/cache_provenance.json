@@ -1,0 +1,25 @@
+{
+  "source_run": "diagnostics/TASK-T06E-B/20260925T090601+08",
+  "source_run_status": "SUPERSEDED_ENGINEERING_RUN",
+  "reason": "B8 key variable shadow; base fits/profiles completed under identical frozen inputs/config",
+  "reuse_scope": "B1/B6 full fitting, folds, profiles only",
+  "not_reused": "B7/B8/bootstrap/gates/verifier/final manifest",
+  "files": {
+    "fit/full_fit_predictions.parquet": "0c855389038d0dabcbb2eff21957c7a4cea27a9757ba069adc0d9d9db6653692",
+    "fit/full_fit_predictions.csv": "bc1bb8d231c6693ffc66ea80fd1bc055154c93ef220ebfef225b4c2b48f18a6a",
+    "fit/scaling_parameters_by_source.csv": "a6ad8735a5a88c7c858d225bf29b304d73d0967011955978321573144ca8d4eb",
+    "fit/multistart_results.csv": "7f32ff6d68c839d9bd06419150433503b6509478d8bf51bf235cfcd320834f0d",
+    "validation/validation_splits.csv": "d219e31fdf7a760b8148975700d548535c60b8f392067420e8ee1d53986be690",
+    "validation/validation_by_group.csv": "b3073bf1cc33fbe8e7e032aa44803e51671b1c032636982ded95bf18556e53f1",
+    "validation/candidate_comparison.csv": "e21765c06120941f1acff16891a2dad70f0403e0641be4d91b4d02510ef0d094",
+    "validation/within_ND_quality_effects.csv": "6878d250187c3628b448b3ac5be7a76b3e069e1be9ec023ca3811190b8df3db2",
+    "validation/interaction_diagnostics.csv": "ab250871237390ddc1c33c67569e7574ece612f1274362033fda58fe620386ff",
+    "validation/high_Q_stress.csv": "db475448c2dd5e2646823bb82ca8dd11869f4aa8b021e344dc6a07ec533ff561",
+    "profiles/profile_grid.csv": "1b23f79e2c83b1b0d8892fa5ffdab5d247f8ad0db73b8e96808656354a81d65c",
+    "profiles/profile_summary.csv": "5f7c781e45f736fe9f373d76939816d9f63880de6bceee5a3b938290be4a7832",
+    "profiles/profile_multistart_results.csv": "1a8c3d5a2fdb23c39d427affe3e0cb9fbce0b5aba3d5020db1879f401ea68474",
+    "profiles/jacobian_diagnostics.csv": "8e286453da8e2a19644ecd9c02d09a2f0958a1be3bff9ca144896aa524bd3611",
+    "profiles/jacobian_matrices.json": "8d3baff9a6564631d741059ca0d90b87392a5e7a835a66f910508c73ccf13e34",
+    "profiles/profile_inputs.json": "470cbbaf3b93f1f69a92a129395b8c4ae4d30bac480df679d9457286184b0aad"
+  }
+}

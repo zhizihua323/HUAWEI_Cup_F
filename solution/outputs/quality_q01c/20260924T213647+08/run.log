@@ -1,0 +1,12 @@
+[2026-09-24T21:36:47.668+08:00] TASK-Q01C start run_id=20260924T213647+08 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c\20260924T213647+08
+[2026-09-24T21:36:48.466+08:00] stage=s00_preflight complete; inputs verified, code snapshot frozen
+[2026-09-24T21:36:48.552+08:00] stage=s01_synthetic_tests complete tests=9
+[2026-09-24T21:36:48.552+08:00] ERROR unhandled: KeyError: 'inputs'
+[2026-09-24T21:36:48.553+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 1563, in main
+    result = scan_file_stage(ctx, spec, state['config_sha'], inputs)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 410, in scan_file_stage
+    expected_input_sha = preflight['inputs']['primary'][spec['file_id']]['sha256']
+                         ~~~~~~~~~^^^^^^^^^^
+KeyError: 'inputs'
+

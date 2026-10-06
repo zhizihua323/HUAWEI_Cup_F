@@ -1,0 +1,43 @@
+﻿branch,component,parameter,status,source,role,numeric_use_in_T07,restriction
+B_R1,B1_M0_B1,E,IDENTIFIED_SOURCE_CONDITIONAL,B1,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B1_M0_B1,A,IDENTIFIED_SOURCE_CONDITIONAL,B1,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B1_M0_B1,B,IDENTIFIED_SOURCE_CONDITIONAL,B1,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B1_M0_B1,alpha,IDENTIFIED_SOURCE_CONDITIONAL,B1,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B1_M0_B1,beta,IDENTIFIED_SOURCE_CONDITIONAL,B1,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_M0_6,E,IDENTIFIED_SOURCE_CONDITIONAL,B6,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_M0_6,A,IDENTIFIED_SOURCE_CONDITIONAL,B6,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_M0_6,B,IDENTIFIED_SOURCE_CONDITIONAL,B6,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_M0_6,alpha,IDENTIFIED_SOURCE_CONDITIONAL,B6,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_M0_6,beta,IDENTIFIED_SOURCE_CONDITIONAL,B6,null_or_baseline,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,E,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,A,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,B,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,alpha,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,beta,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-add,k_add,IDENTIFIED_SOURCE_CONDITIONAL,B6,main_quality_candidate,True,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,E,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,A,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,B,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,alpha,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,beta,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+B_R1,B6_MQ-eff,eta,SENSITIVITY_ONLY,B6,sensitivity_only,False,Source-conditional; B6 quality terms remain scenario-only when transported across sources.
+P,q_A_star,q_A_star,DESCRIPTIVE_RECOMPUTED_SOURCE_STATISTIC,A1_calibration_only,bridge_or_mixture_interface,True,Seven-domain equal-weight mean; not a fitted parameter.
+P,F_A_equal_domain_CDF,F_A_equal_domain_CDF,EMPIRICAL_REFERENCE_DETERMINISTIC,A1_calibration_only,bridge_or_mixture_interface,True,Seven domain ECDFs each weighted 1/7.
+P,F_B_unique_Q_CDF,F_B_unique_Q_CDF,EMPIRICAL_DESIGN_CDF_DETERMINISTIC,B6_design_levels_only,bridge_or_mixture_interface,True,Eight unique Q levels each weighted 1/8.
+P,H0,H0,IDENTIFIED_NULL_BASELINE,no_map,bridge_or_mixture_interface,False,k=0 baseline; no quality effect.
+P,H1,H1,SCENARIO_ONLY,identity_assumption,bridge_or_mixture_interface,False,Identity is not identified across A and B.
+P,H2,H2,SCENARIO_ONLY,fixed_b,bridge_or_mixture_interface,False,"b is fixed at 0.5, 1, or 2 by preregistration."
+P,H3,H3,SCENARIO_ONLY,equal_domain_ECDF_quantile_map,bridge_or_mixture_interface,False,Empirical quantile coupling does not identify A-to-B correspondence.
+P,H4,H4,DIRECTION_ONLY_NOT_OPTIMIZABLE,B6_direction_only,bridge_or_mixture_interface,False,No A-side numeric Loss benefit.
+P,A_B_mapping,A_B_mapping,NOT_IDENTIFIABLE,no_join_key_and_no_fixed_p_quality_variation,bridge_or_mixture_interface,False,No estimated map is produced.
+P,r_B1,r_B1,FIXED_SCENARIO,registry,bridge_or_mixture_interface,False,"Values 0.2, 0.6, 0.9 are scenarios, not estimates."
+P,rho_Q,rho_Q,FIXED_SCENARIO,registry,bridge_or_mixture_interface,False,"Values 0, 0.5, 1 are scenarios, not estimates."
+P,tau_p,tau_p,FIXED_SCENARIO,registry,bridge_or_mixture_interface,False,"Values -1, 0, 0.5, 1 are scenarios; -1 is stress only."
+P,k_add_B6,k_add_B6,PARAMETER_SLOT_PENDING_CONTROLLER,branch_B_candidate_not_read_by_P,bridge_or_mixture_interface,False,P registers a slot and does not fill a B-side value.
+P,eta_B6,eta_B6,PARAMETER_SLOT_PENDING_CONTROLLER,branch_B_candidate_not_read_by_P,bridge_or_mixture_interface,False,Effective-data transport must be filled later by the controller.
+P,RegMix_linear_coefficients,RegMix_linear_coefficients,FROZEN_EXISTING_MODEL_SOURCE_CONDITIONAL,solution/outputs/mixture/model.json,bridge_or_mixture_interface,True,Reused without refitting or model-family reselection.
+P,RegMix_1M_mixture_effects,RegMix_1M_mixture_effects,IDENTIFIED_WITHIN_SOURCE_1M,A6/A7_frozen_linear_predictions,bridge_or_mixture_interface,True,Only same-scale RegMix mixture effect is supported.
+P,RegMix_cross_scale_mixture_effects,RegMix_cross_scale_mixture_effects,SCENARIO_ONLY,A8-A11_reporting,bridge_or_mixture_interface,False,"60M/1B are cross-scale transport diagnostics, not recalibration."
+P,Q_mix_gamma,Q_mix_gamma,NOT_IDENTIFIABLE,p_Q_double_counting,bridge_or_mixture_interface,False,Q_mix lies in the p column space for fixed q.
+P,B8_reverse_direction,B8_reverse_direction,DIRECTION_ONLY_NOT_OPTIMIZABLE,common_support_slot_pending,bridge_or_mixture_interface,False,No legacy boundary k=-20 and no out-of-support numeric generation.
+P,10B_70B_estimates,10B_70B_estimates,ESTIMATED_SCENARIO_NOT_TRUTH,A12-A15,bridge_or_mixture_interface,False,They are not validation truths or pass counts.

@@ -1,0 +1,1 @@
+{"pid": 23008, "finalized": false, "verdict_counts": {"REUSABLE": 7, "NOT_STARTED": 3, "INVALID": 0}, "reusable_stages": ["s00_preflight", "s01_synthetic_tests", "s10_scan_a1", "s11_scan_a2", "s12_scan_a3", "s20_score_primary", "s30_sensitivity"], "invalid_stages": []}

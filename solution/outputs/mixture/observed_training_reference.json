@@ -1,0 +1,24 @@
+{
+  "role": "descriptive_observed_training_best_not_global_optimum",
+  "index": 170,
+  "mean_loss": 4.753428780115568,
+  "p": {
+    "train_the_pile_arxiv": 0.0,
+    "train_the_pile_freelaw": 0.18463073852295409,
+    "train_the_pile_nih_exporter": 0.0029940119760479044,
+    "train_the_pile_pubmed_central": 0.04391217564870259,
+    "train_the_pile_wikipedia_en": 0.13572854291417166,
+    "train_the_pile_dm_mathematics": 0.1317365269461078,
+    "train_the_pile_github": 0.015968063872255488,
+    "train_the_pile_philpapers": 0.021956087824351295,
+    "train_the_pile_stackexchange": 0.10479041916167664,
+    "train_the_pile_enron_emails": 0.0,
+    "train_the_pile_gutenberg_pg_19": 0.010978043912175647,
+    "train_the_pile_pile_cc": 0.05189620758483034,
+    "train_the_pile_ubuntu_irc": 0.007984031936127744,
+    "train_the_pile_europarl": 0.0,
+    "train_the_pile_hackernews": 0.07385229540918163,
+    "train_the_pile_pubmed_abstracts": 0.07684630738522955,
+    "train_the_pile_uspto_backgrounds": 0.13672654690618763
+  }
+}

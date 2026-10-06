@@ -1,0 +1,75 @@
+{
+  "run_id": "20260925T075729+08",
+  "q_A_star": 0.5695341857475174,
+  "q_C_star_sensitivity": 0.5694585639959848,
+  "H0": {
+    "definition": "k=0; no map call",
+    "eligibility": "IDENTIFIED_NULL_BASELINE",
+    "mapped_value_at_anchor": null
+  },
+  "H1": {
+    "definition": "h(q)=q",
+    "eligibility": "SCENARIO_ONLY",
+    "mapped_value_at_q_A_star": 0.5695341857475174,
+    "mapped_value_at_q_C_star": 0.5694585639959848
+  },
+  "H2": {
+    "definition": "h(q)=0.6+b*(q-q_A_star)",
+    "b_fixed_set": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "eligibility": "SCENARIO_ONLY",
+    "mapped_value_at_q_A_star_for_all_b": 0.6,
+    "qc_star_mapped_b_1": 0.5999243782484674,
+    "qc_star_mapped_b_05": 0.5999621891242337
+  },
+  "H3": {
+    "definition": "h(q)=F_B^{-1}(F_A(q))",
+    "eligibility": "SCENARIO_ONLY",
+    "mapped_value_at_q_A_star": 0.6,
+    "q_A_star_support_status": "IN_SUPPORT",
+    "q_A_star_usable": true,
+    "qc_star_uses_same_F_A": true,
+    "mapped_value_at_q_C_star_using_same_F_A": 0.6,
+    "q_C_star_support_status": "IN_SUPPORT",
+    "q_C_star_usable": true
+  },
+  "H4": {
+    "definition": "retain B6 direction only; no A-side numeric benefit",
+    "eligibility": "DIRECTION_ONLY_NOT_OPTIMIZABLE",
+    "numeric_prediction": false
+  },
+  "A_B_scale_identifiability": "NOT_IDENTIFIABLE",
+  "bridge_values_are_scenarios_not_estimated_parameters": true,
+  "Q_support": {
+    "Q_baseline_calibration_min": 0.04888888888888889,
+    "Q_baseline_calibration_max": 0.9805414146077935,
+    "B6_unique_Q_min": 0.1,
+    "B6_unique_Q_max": 1.0
+  },
+  "CDF_rules": {
+    "A_equal_domain_weights": [
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285,
+      0.14285714285714285
+    ],
+    "A_operator": "<=",
+    "B_unique_level_weights": [
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "B6_raw_grid_duplicates_ignored_for_CDF": true
+  }
+}

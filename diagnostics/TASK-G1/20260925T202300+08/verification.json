@@ -1,0 +1,397 @@
+{
+  "run_id": "20260925T202300+08",
+  "generated_local": "2026-09-25T20:14:46+08:00",
+  "status": "FAIL",
+  "summary": {
+    "total": 18,
+    "pass": 16,
+    "fail": 2
+  },
+  "verifier_imports_executor": false,
+  "checks": [
+    {
+      "check": "declared_input_hashes_match",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "independent_scope_denominators",
+      "status": "FAIL",
+      "details": {
+        "actual": {
+          "A1_sample": {
+            "physical": 51230,
+            "unique": 51230,
+            "q_valid": 51212
+          },
+          "A2_extension": {
+            "physical": 17523,
+            "unique": 17523,
+            "q_valid": 17523
+          },
+          "A3_extension": {
+            "physical": 203752,
+            "unique": 203752,
+            "q_valid": 203751
+          },
+          "extension_overlap": {
+            "physical": 11419,
+            "unique": 11419,
+            "q_valid": 11419
+          },
+          "extension_new": {
+            "physical": 209856,
+            "unique": 209856,
+            "q_valid": 209855
+          },
+          "all_unique": {
+            "physical": 261086,
+            "unique": 261086,
+            "q_valid": 261067
+          }
+        },
+        "expected": {
+          "A1_sample": [
+            51230,
+            51230,
+            51212
+          ],
+          "A2_extension": [
+            17523,
+            17523,
+            17523
+          ],
+          "A3_extension": [
+            203752,
+            203752,
+            203752
+          ],
+          "extension_overlap": [
+            11419,
+            11419,
+            11419
+          ],
+          "extension_new": [
+            209856,
+            209856,
+            209855
+          ],
+          "all_unique": [
+            261086,
+            261086,
+            261067
+          ]
+        }
+      }
+    },
+    {
+      "check": "overlap_keys_match_T03E",
+      "status": "PASS",
+      "details": {
+        "q01c": 11419,
+        "t03e": 11419,
+        "intersection": 11419
+      }
+    },
+    {
+      "check": "Q_invalid_19_preserved",
+      "status": "PASS",
+      "details": {
+        "physical": 19,
+        "unique": 19
+      }
+    },
+    {
+      "check": "high_conflict_threshold_from_frozen_code",
+      "status": "PASS",
+      "details": {
+        "threshold": 0.5
+      }
+    },
+    {
+      "check": "executor_scope_denominators_match_independent_recount",
+      "status": "PASS",
+      "details": {
+        "file": [
+          {
+            "scope": "A1_sample",
+            "physical_rows": 51230,
+            "unique_keys": 51230,
+            "Q_valid": 51212,
+            "Q_missing": 18
+          },
+          {
+            "scope": "A2_extension",
+            "physical_rows": 17523,
+            "unique_keys": 17523,
+            "Q_valid": 17523,
+            "Q_missing": 0
+          },
+          {
+            "scope": "A3_extension",
+            "physical_rows": 203752,
+            "unique_keys": 203752,
+            "Q_valid": 203751,
+            "Q_missing": 1
+          },
+          {
+            "scope": "extension_overlap",
+            "physical_rows": 11419,
+            "unique_keys": 11419,
+            "Q_valid": 11419,
+            "Q_missing": 0
+          },
+          {
+            "scope": "extension_new",
+            "physical_rows": 209856,
+            "unique_keys": 209856,
+            "Q_valid": 209855,
+            "Q_missing": 1
+          },
+          {
+            "scope": "all_unique",
+            "physical_rows": 261086,
+            "unique_keys": 261086,
+            "Q_valid": 261067,
+            "Q_missing": 19
+          }
+        ]
+      }
+    },
+    {
+      "check": "blind_schema_exact_no_leakage",
+      "status": "PASS",
+      "details": {
+        "columns": [
+          "review_id",
+          "text_redacted",
+          "readability_1to5",
+          "completeness_1to5",
+          "contamination_0to2",
+          "overall_quality_1to5",
+          "review_notes_optional"
+        ],
+        "forbidden": []
+      }
+    },
+    {
+      "check": "blind_sample_size",
+      "status": "PASS",
+      "details": {
+        "n": 60,
+        "seal_n": 60
+      }
+    },
+    {
+      "check": "review_ids_unique_and_sealed",
+      "status": "PASS",
+      "details": {
+        "blind": 60,
+        "key": 60
+      }
+    },
+    {
+      "check": "author_columns_blank",
+      "status": "PASS",
+      "details": {
+        "nonblank": 0
+      }
+    },
+    {
+      "check": "domain_coverage_and_cap",
+      "status": "PASS",
+      "details": {
+        "domain_counts": {
+          "arxiv": 8,
+          "book": 10,
+          "c4": 10,
+          "commoncrawl": 9,
+          "github": 9,
+          "stackexchange": 8,
+          "wikipedia": 6
+        },
+        "cap": 12
+      }
+    },
+    {
+      "check": "quota_targets_sealed",
+      "status": "PASS",
+      "details": {
+        "highQ_lowConflict": {
+          "target": 20,
+          "selected": 20
+        },
+        "lowQ_lowConflict": {
+          "target": 20,
+          "selected": 20
+        },
+        "highConflict_highQ": {
+          "target": 10,
+          "selected": 10
+        },
+        "highConflict_lowQ": {
+          "target": 10,
+          "selected": 10
+        }
+      }
+    },
+    {
+      "check": "seal_precedes_blind_and_no_completed_ratings",
+      "status": "PASS",
+      "details": {
+        "seal_mtime": 1790338466.3637025,
+        "blind_mtime": 1790338466.4503906,
+        "completed_exists": false
+      }
+    },
+    {
+      "check": "blind_text_reconstructs_from_frozen_A1_source",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "manual_review_key_has_no_rating_columns",
+      "status": "PASS",
+      "details": {
+        "columns": [
+          "review_id",
+          "key_sha256",
+          "domain",
+          "file_id",
+          "sampling_stratum",
+          "Q_baseline",
+          "q_high_domain",
+          "q_low_domain",
+          "high_conflict",
+          "original_text_sha256",
+          "redacted_text_sha256",
+          "redaction_count"
+        ]
+      }
+    },
+    {
+      "check": "text_join_audit_records_direct_A1_and_A18_boundary",
+      "status": "PASS",
+      "details": {
+        "selected": [
+          {
+            "candidate_id": "Q01C_A1_raw_source",
+            "path": "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+            "join_method": "frozen key_sha256(id,sub_path) plus exact content",
+            "total_rows": 51230,
+            "unique_candidate_keys": 51230,
+            "matching_q01c_keys": 51230,
+            "matched_candidate_rows": 51230,
+            "one_to_one_pairs": 51230,
+            "one_to_many_pairs": 0,
+            "many_to_one_pairs": 0,
+            "many_to_many_pairs": 0,
+            "text_nonempty_rows": 51230,
+            "text_nonempty_rate": 1.0,
+            "mapped_domains": "7",
+            "join_status": "SELECTED_ONE_TO_ONE",
+            "decision_note": "Direct Q01C source; every A1 sample key has source content and no fuzzy matching is used."
+          }
+        ],
+        "a18": [
+          {
+            "candidate_id": "A18_regmix_domain_sample",
+            "path": "F题/real_attachments/A_data_value/regmix_domain_sample.jsonl.xz",
+            "join_method": "exact sha256(text) to A1 content only",
+            "total_rows": 138034,
+            "unique_candidate_keys": 137795,
+            "matching_q01c_keys": 1,
+            "matched_candidate_rows": 1,
+            "one_to_one_pairs": 1,
+            "one_to_many_pairs": 0,
+            "many_to_one_pairs": 0,
+            "many_to_many_pairs": 0,
+            "text_nonempty_rows": 138029,
+            "text_nonempty_rate": 0.9999637770404392,
+            "mapped_domains": "arxiv|dm_mathematics|enron_emails|europarl|freelaw|github|gutenberg_pg_19|hackernews|nih_exporter|philpapers|pile_cc|pubmed_abstracts|pubmed_central|stackexchange|ubuntu_irc|uspto_backgrounds|wikipedia_en",
+            "join_status": "TEXT_JOINABLE_NOT_SELECTED",
+            "decision_note": "Exact content match exists, but the frozen mapping guide has only 3 direct quality-domain labels and exact join to Q01C A1 reaches only 1 key; it cannot supply 6 domains without fuzzy/alias mapping."
+          }
+        ]
+      }
+    },
+    {
+      "check": "Q01C_T03E_00_05_paper_hashes_unchanged",
+      "status": "FAIL",
+      "details": {
+        "groups_equal": {
+          "q01c_run": true,
+          "t03e_run": true,
+          "root_docs": true,
+          "paper_files": false
+        }
+      }
+    },
+    {
+      "check": "required_preverification_artifacts_present",
+      "status": "PASS",
+      "details": {
+        "missing": [],
+        "not_yet_expected": [
+          "checks.json",
+          "verification.json",
+          "run_summary.json",
+          "command_log.json",
+          "handoff.md",
+          "output_manifest.json"
+        ]
+      }
+    }
+  ],
+  "independent_recounts": {
+    "A1_sample": {
+      "physical": 51230,
+      "unique": 51230,
+      "q_valid": 51212
+    },
+    "A2_extension": {
+      "physical": 17523,
+      "unique": 17523,
+      "q_valid": 17523
+    },
+    "A3_extension": {
+      "physical": 203752,
+      "unique": 203752,
+      "q_valid": 203751
+    },
+    "extension_overlap": {
+      "physical": 11419,
+      "unique": 11419,
+      "q_valid": 11419
+    },
+    "extension_new": {
+      "physical": 209856,
+      "unique": 209856,
+      "q_valid": 209855
+    },
+    "all_unique": {
+      "physical": 261086,
+      "unique": 261086,
+      "q_valid": 261067
+    }
+  },
+  "high_conflict_threshold": 0.5,
+  "expected_input_hashes": {
+    "solution/outputs/quality_q01c/20260924T215718+08/quality_features_scores.parquet": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+    "solution/outputs/quality_q01c/20260924T215718+08/domain_summary.csv": "788911134f007a6b86448878fbb26ae449525aa9820d7d4be3e2040b822dc8d7",
+    "solution/outputs/quality_q01c/20260924T215718+08/summary_denominators.csv": "f8f913f40b0c00668215964e2e3a3c8f880791a48f5aecb81811f6b368abc163",
+    "solution/outputs/quality_q01c/20260924T215718+08/run_config.json": "8914d234731cb19a002e3f8e88b2efa53af694f6602d472bcddc5aa9df869203",
+    "solution/outputs/quality_q01c/20260924T215718+08/input_manifest.json": "9bbec78050f0f532e62266fc8f10032d9b7bda004f088e6eff551f88956c647b",
+    "solution/outputs/quality_q01c/20260924T215718+08/output_manifest.json": "8286c1bc1a887b5fa24b617c9f8e854bb8515f87cdcd51afb9165352693dde66",
+    "solution/outputs/quality_q01c/20260924T215718+08/code_snapshot/quality_q01c.py": "e4024c32315d42c235e2086267062703b0b89489788dd504295c39b97548ffad",
+    "diagnostics/TASK-T03E/20260925T020032+08/run_config.json": "6ec3fff8d9643abe1b73bc449024d51a2f9e26dae507fe2f115c9707c58fd912",
+    "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/extension_overlap_validation.csv": "fd1c07164125acb22b3506801018cecc936fb69f5f636d8e107b9a936e0074b4",
+    "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/extension_new_validation.csv": "d7456d91c2b90e60e96ab4646f3f00c4ef21cd02a9fa1eb5e854dce9e753a299",
+    "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/actual_domain_labels_all_roles.csv": "2b12ce6ce10113f079fcfa18fc712af006dbea0047c3e0cab35fcb7b0c588fd9",
+    "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+    "F题/real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+    "F题/real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+    "F题/real_attachments/A_data_value/regmix_domain_sample.jsonl.xz": "4fa8eea3d39c7f789abd62a456c88c9d4e032c58a0fff4c27853b9f50e5d7b04"
+  },
+  "note": "Verifier ran before output_manifest.json by design."
+}

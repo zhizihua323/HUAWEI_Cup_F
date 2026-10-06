@@ -1,0 +1,8 @@
+[2026-09-25T00:38:40.980+08:00] TASK-Q01C start run_id=midstage_run mode=fixture resume=True stage=all pid=4364
+[2026-09-25T00:38:40.987+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:38:40.991+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:38:40.999+08:00] stage=s10_scan_a1 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:38:41.007+08:00] stage=s11_scan_a2 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:38:41.015+08:00] stage=s12_scan_a3 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:38:41.026+08:00] stage=s20_score_primary REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:38:41.034+08:00] ERROR stage_failure: stage s30_sensitivity reuse validation returned INVALID: validation failed: layout_is_v2, payload_exists, metadata_exists, checkpoint_marker_exists (failed checks: ['layout_is_v2', 'payload_exists', 'metadata_exists', 'checkpoint_marker_exists']); hard stop - no recomputation, downgrade or marker rewrite

@@ -1,0 +1,124 @@
+{
+  "run_id": "20260925T100306+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "scientific_result": "REJECT_TO_M0_6",
+  "primary_model": "M0_B1",
+  "quality_enabled": false,
+  "mixture_transport_enabled": false,
+  "G1": {
+    "PASS": true,
+    "negative_groups": 43,
+    "estimable_groups": 45,
+    "zero_groups": 0,
+    "positive_groups": 2,
+    "not_estimable_groups": 0,
+    "negative_fraction": 0.9555555555555556,
+    "threshold": 0.8
+  },
+  "G2": {
+    "PASS": true,
+    "leave_N": {
+      "macro_RMSE_M0_6": 0.0791586657229001,
+      "macro_RMSE_MQ_add": 0.0529372278724645,
+      "relative_improvement": 0.3312516401201782,
+      "improvement_pass": true,
+      "fold_ratio_pass": 9,
+      "fold_ratio_required": 8,
+      "fold_ratio_pass_gate": true,
+      "n_folds": 9
+    },
+    "leave_D": {
+      "macro_RMSE_M0_6": 0.0818619439862219,
+      "macro_RMSE_MQ_add": 0.0553287699778896,
+      "relative_improvement": 0.3241209860933431,
+      "improvement_pass": true,
+      "fold_ratio_pass": 5,
+      "fold_ratio_required": 4,
+      "fold_ratio_pass_gate": true,
+      "n_folds": 5
+    }
+  },
+  "G3": {
+    "requested": 200,
+    "successful": 200,
+    "success_gate_190": true,
+    "negative_direction_replicates": 200,
+    "negative_direction_required": 180,
+    "negative_direction_pass": true,
+    "PASS": true
+  },
+  "G4": {
+    "PASS": false,
+    "support_predictions": [
+      {
+        "model": "M0_6",
+        "all_finite": true,
+        "all_nonnegative": true,
+        "min_prediction": 2.191887748943786,
+        "PASS": true
+      },
+      {
+        "model": "MQ-add",
+        "all_finite": true,
+        "all_nonnegative": true,
+        "min_prediction": 2.0926534787450124,
+        "PASS": true
+      },
+      {
+        "model": "MQ-eff",
+        "all_finite": true,
+        "all_nonnegative": true,
+        "min_prediction": 2.1918877427144112,
+        "PASS": true
+      }
+    ],
+    "no_fixed_optimization_boundary_touched": false,
+    "jacobian_full_rank": true,
+    "jacobian_condition_number": 53.94407500357512,
+    "jacobian_gate": true,
+    "profile_weakly_identified": true,
+    "multistart_pass": true
+  },
+  "B6_full_parameters": {
+    "M0_6": {
+      "E": 1.6759521671081978,
+      "A": 0.6003432829160912,
+      "B": 1.355580386009447,
+      "alpha": 0.2721341490157289,
+      "beta": 0.2912041974946752
+    },
+    "MQ-add": {
+      "E": 1.576717897667643,
+      "A": 0.6003432829036089,
+      "B": 1.3555803863625686,
+      "alpha": 0.2721341490204682,
+      "beta": 0.2912041980912658,
+      "k_add": 0.3544081081063713
+    },
+    "MQ-eff": {
+      "E": 1.6759521854788657,
+      "A": 0.6003432829076794,
+      "B": 1.3555804422811233,
+      "alpha": 0.2721341490190135,
+      "beta": 0.2912041994922439,
+      "eta": 1.0000000000000025e-06
+    }
+  },
+  "B1_full_parameters": {
+    "E": 1.6897975629820348,
+    "A": 0.3539803206065571,
+    "B": 1.2403055835426349,
+    "alpha": 0.339976581941082,
+    "beta": 0.2798781285468448
+  },
+  "B7": {
+    "new_keys": 90,
+    "repeat_keys": 360
+  },
+  "B8": {
+    "common_support": 160,
+    "outside_support": 1544
+  },
+  "verification_status": "PASS",
+  "completion_status": "COMPLETE_PENDING_CONTROLLER_REVIEW"
+}

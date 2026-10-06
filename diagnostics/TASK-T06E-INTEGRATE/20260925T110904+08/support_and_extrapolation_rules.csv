@@ -1,0 +1,8 @@
+﻿module,quantity,lower,upper,unit,rule
+M0_B1,N,0.070542,11.965825,billion parameters,Outside range is extrapolation
+M0_B1,D,0.134,299.893,billion tokens,Outside range is extrapolation
+MQ-add_B6,Q_score,0.1,0.6,B6 design scale,Q>0.6 is frozen stress only
+A_quality,Q_baseline,0.04888888888888889,0.9805414146077935,A-side unitless,No cross-source equality implied
+mixture,p,0.0,1.0,17-simplex,sum(p)=1; preserve zeros; exact feature order in contract
+joint_Q_p,free_coordinates,,,structural,Forbidden without fixed-p quality intervention
+B8,quality direction,,,conflict evidence,Common support and OOS retained separately; no numeric reverse parameter

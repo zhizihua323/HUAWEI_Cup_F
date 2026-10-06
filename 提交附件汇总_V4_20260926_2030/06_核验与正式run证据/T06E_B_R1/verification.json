@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "run_id": "20260925T103130+08",
+  "independent_verifier": true,
+  "imports_executor": false,
+  "failures": [],
+  "checks": [
+    {
+      "check": "22_profiles_fixed_and_SSE_reconstructable",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "22_full_fit_points_reproduce",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "full_points_inside_set",
+      "status": "PASS",
+      "detail": "22"
+    },
+    {
+      "check": "MQadd_G4_jacobian_independent",
+      "status": "PASS",
+      "detail": "53.94407500777401/53.94407500777401"
+    },
+    {
+      "check": "MQadd_G4_prediction_boundary",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MQeff_eta_boundary_separate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "G1_G3_field_same",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "G4_only_MQadd_profiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_boolean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original_run_unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required_files_present",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

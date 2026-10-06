@@ -1,0 +1,130 @@
+{
+  "contract_status": "CANDIDATE_P_ONLY_PENDING_CONTROLLER",
+  "task_id": "TASK-T06E-P",
+  "run_id": "20260925T075729+08",
+  "primary_model": {
+    "name": "M0_B1",
+    "quality_enabled": false,
+    "mixture_transport_enabled": false,
+    "meaning": "Identified default only for controller integration; no B1 parameters are estimated in this branch."
+  },
+  "units": {
+    "physical_N_multiplier": 1000000000.0,
+    "physical_D_multiplier": 1000000000.0,
+    "note": "B-table values are billions and must not be inserted directly into 6ND."
+  },
+  "quality": {
+    "official_main_Q": "Q_baseline",
+    "q_A_star": 0.5695341857475174,
+    "calibration_support": [
+      0.04888888888888889,
+      0.9805414146077935
+    ],
+    "Q_C_role": "SENSITIVITY_ONLY",
+    "Q_C_star": 0.5694585639959848,
+    "A_to_B_mapping_status": "NOT_IDENTIFIABLE",
+    "H0": "k=0 and no map call",
+    "H1": "h(q)=q SCENARIO_ONLY",
+    "H2": "h(q)=0.6+b*(q-q_A_star), b fixed in {0.5,1,2} SCENARIO_ONLY",
+    "H3": "h(q)=F_B^{-1}(F_A(q)); equal-domain A CDF and B6 unique-level CDF SCENARIO_ONLY",
+    "H4": "DIRECTION_ONLY_NOT_OPTIMIZABLE",
+    "out_of_support": "UNUSABLE; never silently clip or fill a missing domain",
+    "Q_C_reuses_same_q_A_star_and_F_A": true
+  },
+  "mixture": {
+    "feature_order": [
+      "train_the_pile_arxiv",
+      "train_the_pile_freelaw",
+      "train_the_pile_nih_exporter",
+      "train_the_pile_pubmed_central",
+      "train_the_pile_wikipedia_en",
+      "train_the_pile_dm_mathematics",
+      "train_the_pile_github",
+      "train_the_pile_philpapers",
+      "train_the_pile_stackexchange",
+      "train_the_pile_enron_emails",
+      "train_the_pile_gutenberg_pg_19",
+      "train_the_pile_pile_cc",
+      "train_the_pile_ubuntu_irc",
+      "train_the_pile_europarl",
+      "train_the_pile_hackernews",
+      "train_the_pile_pubmed_abstracts",
+      "train_the_pile_uspto_backgrounds"
+    ],
+    "p0": [
+      0.11302252583269279,
+      0.0968248321520278,
+      0.00588968021709595,
+      0.11375419105058357,
+      0.07507775607983627,
+      0.0254628540970504,
+      0.11070066007050916,
+      0.005487697351193036,
+      0.09943242344413017,
+      0.002211033043406226,
+      0.04691494424753537,
+      0.11948759779188561,
+      0.019599998284005892,
+      0.012737064754031531,
+      0.011650822378108678,
+      0.06618116611257162,
+      0.07556475309333588
+    ],
+    "p_simplex_required": true,
+    "preserve_zero_values": true,
+    "linear_model_frozen": true,
+    "model_family_reselection_allowed": false,
+    "within_1M_effect_status": "SUPPORTED_BY_FROZEN_SOURCE_CONDITIONAL_LINEAR_MODEL",
+    "cross_scale_effect_status": "SCENARIO_ONLY",
+    "p_Q_joint_independent_optimization_allowed": false,
+    "missing_quality_domain_policy": "UNMAPPED; do not fill; do not renormalize six mapped domains as a 17-domain total"
+  },
+  "scenario_registry": {
+    "path": "scenario_registry/scenario_registry_preregistered.csv",
+    "seal_path": "scenario_registry/SCENARIO_REGISTRY_SEAL.json",
+    "seal_sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522",
+    "scenario_count": 21,
+    "scenario_ids": [
+      "S00_NULL_M0_B1",
+      "S01_QREF_QA_H2_B1_R06_ADD",
+      "S02_QC",
+      "S03_H1_IDENTITY",
+      "S04_H2_B05",
+      "S05_H2_B20",
+      "S06_H3_EQQUANTILE",
+      "S07_H4_DIRECTION_ONLY",
+      "S08_RB1_02",
+      "S09_RB1_09",
+      "S10_RHOQ_00",
+      "S11_RHOQ_05",
+      "S12_EFF_KEEP_ETA",
+      "S13_EFF_KEEP_K",
+      "S14_MIX_TAU05",
+      "S15_MIX_TAU10",
+      "S16_MIX_TAUM10_STRESS",
+      "S17_B8_REVERSE_COMMON_SUPPORT",
+      "X01_Q_HIGH",
+      "X02_Q_CONSERVATIVE",
+      "X03_H3_EFF"
+    ],
+    "no_add_delete_reorder_after_seal": true,
+    "cartesian_product_generated": false
+  },
+  "pending_controller_parameters": {
+    "B1_parameters": "SOURCE-SPECIFIC_PENDING",
+    "B6_k_add_or_eta": "SOURCE-SPECIFIC_PENDING",
+    "B8_reverse_common_support": "DIRECTION_ONLY_PENDING",
+    "A_B_map": "NOT_IDENTIFIABLE_SCENARIO_ONLY"
+  },
+  "allowed_numeric_prediction_status": {
+    "quality_scenarios": "B_SIDE_PARAMETER_SLOT_PENDING",
+    "S07_S17": "NO_NUMERIC_PREDICTION"
+  },
+  "forbidden": [
+    "Do not combine Q and p as independently tunable coordinates without a fixed-p quality intervention.",
+    "Do not average scenario parameters or assign scenario probabilities without evidence.",
+    "Do not select a scenario by lowest Loss.",
+    "Do not use 10B or 70B estimated outputs as truth.",
+    "Do not start T07 from this candidate contract."
+  ]
+}

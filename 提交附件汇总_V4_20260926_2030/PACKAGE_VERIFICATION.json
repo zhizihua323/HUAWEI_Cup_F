@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "bundle": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\提交附件汇总_V4_20260926_2030",
+  "checks": [
+    {
+      "name": "source_files_unchanged_since_copy",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "copied_files_match_copy_map",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "python_copies_syntax_valid",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "forbidden_large_raw_or_cache_files_absent",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "required_submission_assets_present",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "bundle_under_50_MiB",
+      "status": "PASS",
+      "detail": 18061376
+    },
+    {
+      "name": "ai_headers_added_to_code_copies",
+      "status": "PASS",
+      "detail": 63
+    }
+  ],
+  "files_before_manifest_refresh": 367,
+  "bytes_before_manifest_refresh": 18061376
+}

@@ -1,0 +1,237 @@
+{
+  "run_id": "20260924T150854+08",
+  "task": "TASK-Q01A-R1",
+  "generated_local": "2026-09-24T15:18:47+08:00",
+  "note": "replaces the earlier self-review for scope/arithmetic; the original R checks.json, run_summary.json and handoff.md are untouched and still show 33 PASS / 7 FAIL / PARTIAL / exit 2",
+  "items": [
+    {
+      "item_id": "C07_protected_files_unchanged",
+      "title": "protected files unchanged",
+      "original_proposition": "source/config/quality outputs/recovery/task files/00-05 are unchanged",
+      "actual_evidence_scope": "only the 111 file paths listed in R/input_manifest.json secondary_inputs",
+      "original_in_run_result": "FAIL (ctx[\"snapshot_diff\"] was never populated: check wiring defect)",
+      "current_verification_result": "PASS_LIMITED_SCOPE",
+      "details": {
+        "n_files": 111,
+        "sha256_changed": []
+      },
+      "limitation": "does not prove that no other file anywhere in the workspace changed; it covers the listed paths only",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C08a_raw_tree_path_size",
+      "title": "raw tree path/size unchanged (supplementary evidence)",
+      "original_proposition": "every registered file under F题/real_attachments exists with the registered byte size",
+      "actual_evidence_scope": "all 2012 registered raw files, stat only (no content read)",
+      "original_in_run_result": "FAIL (ctx[\"raw_tree_diff\"] was never populated; in-run walk covered 1849/2012 via Path.rglob)",
+      "current_verification_result": "PASS",
+      "details": {
+        "files_on_disk": 2012,
+        "files_registered": 2012,
+        "size_mismatch": [],
+        "unregistered": [],
+        "missing": [],
+        "ok": true
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C08b_three_xz_sha256_pre_post",
+      "title": "three permitted compressed inputs unchanged by SHA256",
+      "original_proposition": "A1/A2/A3 compressed bytes hash equal before and after the diagnostic scan",
+      "actual_evidence_scope": "R in-run C09 record and the scan code path that hashed the compressed bytes twice",
+      "original_in_run_result": "FAIL was recorded only because the auxiliary tree check was mis-wired; C09 itself PASSED",
+      "current_verification_result": "PASS_FROM_IN_RUN_EVIDENCE_NOT_RECHECKED_IN_R1",
+      "details": {
+        "in_run_C09_all_three_xz_sha256_equal_pre_post": true
+      },
+      "limitation": "status rests on the original in-run evidence, not on an R1 re-measurement",
+      "unverifiable": "R1 is forbidden to re-read or re-hash the compressed inputs, so no new R1 hash exists"
+    },
+    {
+      "item_id": "C08c_historical_full_tree_mtime",
+      "title": "historical full-directory mtime unchanged",
+      "original_proposition": "all files under F题/real_attachments keep their pre-run mtime",
+      "actual_evidence_scope": "no pre-run full-tree mtime snapshot exists in R",
+      "original_in_run_result": "FAIL",
+      "current_verification_result": "NOT_VERIFIABLE",
+      "details": {
+        "snapshot_available": false
+      },
+      "limitation": "",
+      "unverifiable": "R only recorded size/mtime inside the run; a retrospective snapshot cannot prove the past state and must not be manufactured"
+    },
+    {
+      "item_id": "C11_totals_match_prior_audit",
+      "title": "run totals equal prior audit.json",
+      "original_proposition": "records/unique keys/duplicates equal the prior audit",
+      "actual_evidence_scope": "R/run_summary.json totals vs solution/outputs/quality/audit.json",
+      "original_in_run_result": "FAIL (prior_audit was not stored in ctx)",
+      "current_verification_result": "PASS",
+      "details": {
+        "ok": true,
+        "prior": {
+          "total_records": 272505,
+          "unique_keys": 261086,
+          "duplicates": 11419
+        },
+        "run": {
+          "total_records": 272505,
+          "unique_keys": 261086,
+          "duplicates": 11419
+        }
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C12_file_level_counts_match_prior",
+      "title": "per-file counts and extension overlap rows equal prior audit.json",
+      "original_proposition": "rows/unique/within-file duplicates/overlapping A1 rows per file",
+      "actual_evidence_scope": "R/run_summary.json + R/physical_rows_by_file_role.csv + R/comparison_with_prior.csv",
+      "original_in_run_result": "FAIL (same prior_audit wiring defect), and the first post-run JSON added ALL rows to domain rows",
+      "current_verification_result": "PASS",
+      "details": {
+        "overlap_rows_ALL": {
+          "A2_arxiv": 1419,
+          "A3_github": 10000
+        },
+        "detail_sum_equals_ALL": true,
+        "n_a2": 1419,
+        "n_a3": 10000,
+        "ok": true
+      },
+      "limitation": "the corrected算术 uses the domain=ALL row per file/role; the domain detail sum is only used to demonstrate the earlier double counting",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C13_pairwise_key_intersections_match_prior",
+      "title": "file-pair key-set intersections equal prior audit.json",
+      "original_proposition": "A1∩A2, A1∩A3, A2∩A3 key counts",
+      "actual_evidence_scope": "R/run_summary.json pairwise_intersections vs prior audit.json",
+      "original_in_run_result": "FAIL (same prior_audit wiring defect)",
+      "current_verification_result": "PASS",
+      "details": {
+        "ok": true,
+        "prior": {
+          "A1__A2_arxiv": 1419,
+          "A1__A3_github": 10000,
+          "A2_arxiv__A3_github": 0
+        },
+        "run": {
+          "A1__A2_arxiv": 1419,
+          "A1__A3_github": 10000,
+          "A2_arxiv__A3_github": 0
+        }
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C15_row_masks_covers_all_physical_lines",
+      "title": "row_masks keeps every decompressed physical line",
+      "original_proposition": "one row per decompressed line, unique line identity, full 1..n coverage",
+      "actual_evidence_scope": "R/row_masks.csv.gz, R/run_summary.json read_counts, R/checks.json reaggregation counters",
+      "original_in_run_result": "FAIL (ctx[\"row_masks_rows\"] was never set)",
+      "current_verification_result": "PASS",
+      "details": {
+        "ok": true,
+        "rows_reaggregated": 272505,
+        "distinct_row_identities": 272505,
+        "per_file_uniqueness_and_1_to_n_coverage": "PASS in V14",
+        "note": "the earlier attempt of this item read a non-existent counter key n_row_keys; the identity count is recorded in R/checks.json invalid_values_reconciliation"
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "C23_norm_layer_equals_extract_layer",
+      "title": "extraction and normalized NaN masks agree per main-Q feature",
+      "original_proposition": "for each of the 11 main-Q features, extraction NaN equals normalized NaN; no non-NaN non-finite normalized value",
+      "actual_evidence_scope": "R/row_masks.csv.gz compared by feature name using the index maps in diagnostic_spec.json",
+      "original_in_run_result": "FAIL because the counter compared bit positions of two different feature spaces and used a default of 1 for absent zero counters",
+      "current_verification_result": "PASS",
+      "details": {
+        "ok": true,
+        "rows_with_name_mapped_mismatch": 0,
+        "zero_counts_recorded_explicitly": true,
+        "note": "the original check compared bit positions across the 25-feature and 11-feature spaces and defaulted absent counters to 1, which turned a true zero into a FAIL"
+      },
+      "limitation": "zero counts are now recorded explicitly instead of relying on a default value",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "R1-01_raw_record_counts",
+      "title": "raw anomaly record counts corrected",
+      "original_proposition": "nan_rows/posinf_rows/neginf_rows must count anomaly records, not elements",
+      "actual_evidence_scope": "invalid_values.csv.gz raw events joined to row_masks.csv.gz; per-domain and file-level",
+      "original_in_run_result": "not part of the original fail list: discovered by the main controller as a substantive error",
+      "current_verification_result": "PASS",
+      "details": {
+        "A1|modernbert_professionalism": 5,
+        "A1|modernbert_reasoning": 13,
+        "A3_github|modernbert_professionalism": 1
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "R1-02_raw_mask_rebuilt",
+      "title": "raw_invalid mask rebuilt from saved events",
+      "original_proposition": "raw anomaly masks must reflect the NaN/Inf element events, not only structural reasons",
+      "actual_evidence_scope": "invalid_values.csv.gz raw events; R/row_masks.csv.gz; corrected copy",
+      "original_in_run_result": "not part of the original fail list: discovered by the main controller as a substantive error",
+      "current_verification_result": "PASS",
+      "details": {
+        "profile": {
+          "A1|modernbert_professionalism": 5,
+          "A1|modernbert_reasoning": 13,
+          "A3_github|modernbert_professionalism": 1
+        },
+        "union": 19,
+        "changed_rows": 19,
+        "column_diffs": {
+          "raw_invalid_bits": 19,
+          "raw_invalid_count": 19
+        },
+        "ok": true
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "R1-03_disagreement_denominators",
+      "title": "disagreement range/std denominators corrected",
+      "original_proposition": "range and ddof=0 group std are defined when at least one quality group is usable",
+      "actual_evidence_scope": "R/row_masks.csv.gz would_group_*_be_nan masks; pandas recomputation",
+      "original_in_run_result": "not part of the original fail list: discovered by the main controller as a substantive error",
+      "current_verification_result": "PASS",
+      "details": {
+        "q_std_n_effective": 261067,
+        "q_std_variance_divisor": 261066,
+        "range_mean_n_effective": 261086,
+        "range_std_n_effective": 261086,
+        "false_from_missing_range": 0
+      },
+      "limitation": "",
+      "unverifiable": ""
+    },
+    {
+      "item_id": "first_failure_statement",
+      "title": "first aborted attempt statement corrected",
+      "original_proposition": "the aborted attempt failed before reading any raw data",
+      "actual_evidence_scope": "diagnostics/TASK-Q01A/20260924T141414+08/run.log",
+      "original_in_run_result": "original hand-off wording was imprecise",
+      "current_verification_result": "CORRECTED",
+      "details": {
+        "hash_stage_completed_before_abort": true,
+        "aborted_in_build_input_manifest": true,
+        "corrected_statement": "the aborted attempt completed the compressed-byte hashing precondition (stage=precondition hashed_inputs=3) and then failed inside build_input_manifest because RUN_ID was undefined, i.e. before any decompression scan; it contributes no diagnostic rows",
+        "evidence": "diagnostics/TASK-Q01A/20260924T141414+08/run.log"
+      },
+      "limitation": "",
+      "unverifiable": ""
+    }
+  ]
+}

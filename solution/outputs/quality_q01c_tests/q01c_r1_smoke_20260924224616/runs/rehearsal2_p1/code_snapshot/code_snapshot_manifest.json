@@ -1,0 +1,27 @@
+{
+  "run_id": "rehearsal2_p1",
+  "mode": "fixture",
+  "frozen_local": "2026-09-24T22:48:21+08:00",
+  "files": [
+    {
+      "file": "quality_q01c.py",
+      "sha256": "5bfa30255418be79138abebab0d6e39451e32468b7bc4af0f1cf22932d72aeac",
+      "bytes": 123447
+    },
+    {
+      "file": "quality_q01c_selftest.py",
+      "sha256": "b1c995f0048e193117a8a4e6e3bd1b17396cf8205df43e720649e063322c4b30",
+      "bytes": 11092
+    },
+    {
+      "file": "quality_q01c_verify.py",
+      "sha256": "b8d782970a38bb880befd57b453608bd3a405e94f396737603be466f379bad7f",
+      "bytes": 53547
+    },
+    {
+      "file": "test_quality_q01c.py",
+      "sha256": "fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f",
+      "bytes": 2121
+    }
+  ]
+}

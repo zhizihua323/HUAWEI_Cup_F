@@ -1,0 +1,112 @@
+{
+  "status": "COMPLETE",
+  "version": "FINAL_MANUSCRIPT_V4",
+  "science_closed": true,
+  "files": [
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V4.docx",
+      "bytes": 3262014,
+      "sha256": "8de5a249f96a82a1a7c29777017ed98fdd6c9cb6e7c158bd900796fab2c62ef1"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V4.pdf",
+      "bytes": 2201068,
+      "sha256": "a2435aee777fef70562f533b7633e91c44a2f82c251819b8ce665da418d72f7a"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V4_SOURCE.md",
+      "bytes": 62743,
+      "sha256": "ac066ee62ae5ad6443550aca8dfa77c54064b780f8936f8da1f7adb947957e02"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V4_INTEGRATED.md",
+      "bytes": 62743,
+      "sha256": "ac066ee62ae5ad6443550aca8dfa77c54064b780f8936f8da1f7adb947957e02"
+    },
+    {
+      "path": "paper/final_work/V4_REVISION_LOG.md",
+      "bytes": 2048,
+      "sha256": "7277991eda6b8fedb0d83003f6bb2d50bc52e11f81f3ced511ff64b0c4c22e1c"
+    },
+    {
+      "path": "paper/final_work/WORD_QA_REPORT_V4.md",
+      "bytes": 1500,
+      "sha256": "7b01ad8f5064fc520d4162bb76e4c75b3510df4a4df0bb63a55ddbf2b05c0623"
+    },
+    {
+      "path": "paper/final_work/PDF_QA_REPORT_V4.md",
+      "bytes": 1578,
+      "sha256": "e53b53afdcb22d49a47c2520a8f234051d5fe3c0bd51b8b366b0fa715693290f"
+    },
+    {
+      "path": "paper/final_work/_qa/V4_FINAL_CHECKS.json",
+      "bytes": 4419,
+      "sha256": "f93bd7e5691a40eb10d1ef8799a1919d2313d9d941d1f63cf25cef29e737db21"
+    },
+    {
+      "path": "paper/final_work/_qa/v4_build_audit.json",
+      "bytes": 4423,
+      "sha256": "39d3a0cfec38d68c0f83f580495ae2669db63a9d5f0536681ee09cdef5177353"
+    },
+    {
+      "path": "paper/final_work/_qa/word_native_check_v4.json",
+      "bytes": 249,
+      "sha256": "eee7aa9f38fb73f36c17ad1f155181f33c39681ed14984d1fe45de34aed314bc"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/ASSET_INDEX.md",
+      "bytes": 1671,
+      "sha256": "a2292ec52537f565ac721fb1f9bd046843bdca7c6f34ef3e462a8132816710b8"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/VISUAL_QA.md",
+      "bytes": 1215,
+      "sha256": "a2aca8dc4bcae995154e37d8b53913fa7136212bc8e980396459d83afb941fb5"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/build_q3_v4.py",
+      "bytes": 7816,
+      "sha256": "f7c184f1d252934ea97490374096046a32d1ad326b0435e6a148b85048a99784"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/fig05_v4_q3_budget_context.svg",
+      "bytes": 37740,
+      "sha256": "3ce56c419603e7ca66d784a4ec09fc324c98944ccc8f62a04050ed746d73f914"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/fig05_v4_q3_budget_context.pdf",
+      "bytes": 76721,
+      "sha256": "0a04d4c08d81d381597658cce60a07cf5cba50a116081a12b5ef2f77822372e5"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/fig05_v4_q3_budget_context.png",
+      "bytes": 524454,
+      "sha256": "a044d733636a7c975ddc48c9dc10ddbcf8ff7a6d8b8fccab6e96bfc54e8baaa6"
+    },
+    {
+      "path": "paper/final_figures/submission_v4/source_data/fig05_v4_q3_budget_context.csv",
+      "bytes": 2314,
+      "sha256": "bd7acb757955de3ca5d016ed331ac2ab3d4698bbb6f2f776f92473a6a33341d3"
+    },
+    {
+      "path": "paper/final_references/references_final.bib",
+      "bytes": 10427,
+      "sha256": "2f8771f13bd5fd64b737506574a90d67fc4daa2fa675b4c87cf07ad1fa1d6456"
+    },
+    {
+      "path": "paper/final_references/citation_map_final.csv",
+      "bytes": 4545,
+      "sha256": "c1ab5ef75a733de492b4d136a5a7b0b0f9bcbc381597efdc4ea89f7996309dfa"
+    },
+    {
+      "path": "paper/final_references/reference_verification_final.csv",
+      "bytes": 10892,
+      "sha256": "d65967e1485643e62d30646c4b234656ed8cf50795e444a0789d4c132eaa8e8e"
+    },
+    {
+      "path": "paper/final_references/OPEN_LLM_LICENSE_HANDLING.md",
+      "bytes": 738,
+      "sha256": "77bd5109eb141c49c474c6d05ea7b775a434122f276e6dac20177decba1ffed1"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{"event":"start","run_id":"20260924T213909+08","stage":"s00_preflight","ts":"2026-09-24T21:39:09.666+08:00"}
+{"elapsed_s":0.772,"event":"complete","rss_mb":97.1,"run_id":"20260924T213909+08","stage":"s00_preflight","ts":"2026-09-24T21:39:10.448+08:00"}
+{"event":"start","run_id":"20260924T213909+08","stage":"s01_synthetic_tests","ts":"2026-09-24T21:39:10.451+08:00"}
+{"elapsed_s":0.136,"event":"complete","failed":0,"n_tests":9,"run_id":"20260924T213909+08","stage":"s01_synthetic_tests","ts":"2026-09-24T21:39:10.587+08:00"}
+{"decompress_passes":1,"event":"start","file":"A1","run_id":"20260924T213909+08","stage":"s10_scan_a1","ts":"2026-09-24T21:39:10.587+08:00"}
+{"decompress_passes":1,"elapsed_s":16.3,"event":"complete","line_count":51230,"parquet_sha256":"935ee275158490d7e224c8e7b8ade7ef6f42dc5f6ff5c9424c6ce98239d82626","rows":51230,"rss_mb":262.6,"run_id":"20260924T213909+08","stage":"s10_scan_a1","ts":"2026-09-24T21:39:26.889+08:00"}
+{"decompress_passes":0,"event":"resume_probe_reused","input_sha256":"14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579","note":"no decompression performed for this file","reason":"valid","run_id":"20260924T213909+08","stage":"s10_scan_a1","ts":"2026-09-24T21:39:26.937+08:00"}
+{"decompress_passes":1,"event":"start","file":"A2_arxiv","run_id":"20260924T213909+08","stage":"s11_scan_a2","ts":"2026-09-24T21:39:26.938+08:00"}
+{"decompress_passes":1,"elapsed_s":3.18,"event":"complete","line_count":17523,"parquet_sha256":"b6f339a0e26d62bb80dd1d612f91b05d0fc8385082408b2e542da1c2adbcd2a0","rows":17523,"rss_mb":262.6,"run_id":"20260924T213909+08","stage":"s11_scan_a2","ts":"2026-09-24T21:39:30.118+08:00"}
+{"decompress_passes":0,"event":"resume_probe_reused","input_sha256":"ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a","note":"no decompression performed for this file","reason":"valid","run_id":"20260924T213909+08","stage":"s11_scan_a2","ts":"2026-09-24T21:39:30.143+08:00"}
+{"decompress_passes":1,"event":"start","file":"A3_github","run_id":"20260924T213909+08","stage":"s12_scan_a3","ts":"2026-09-24T21:39:30.143+08:00"}
+{"decompress_passes":1,"elapsed_s":51.079,"event":"complete","line_count":203752,"parquet_sha256":"764b5ed69f4353e3a44c4f7f1eaf55f56371e0918bb7803284b3cb186d5a1e5f","rows":203752,"rss_mb":755.8,"run_id":"20260924T213909+08","stage":"s12_scan_a3","ts":"2026-09-24T21:40:21.222+08:00"}
+{"decompress_passes":0,"event":"resume_probe_reused","input_sha256":"7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382","note":"no decompression performed for this file","reason":"valid","run_id":"20260924T213909+08","stage":"s12_scan_a3","ts":"2026-09-24T21:40:21.502+08:00"}
+{"event":"start","run_id":"20260924T213909+08","stage":"s20_score_primary","ts":"2026-09-24T21:40:21.502+08:00"}
+{"event":"start","run_id":"20260924T213909+08","stage":"s30_sensitivity","ts":"2026-09-24T21:40:33.275+08:00"}
+{"elapsed_s":7.074,"event":"complete","imputed_records":19,"run_id":"20260924T213909+08","stage":"s30_sensitivity","ts":"2026-09-24T21:40:40.349+08:00"}
+{"event":"start","run_id":"20260924T213909+08","stage":"s40_summarize","ts":"2026-09-24T21:40:40.377+08:00"}
+{"domain_rows":38,"elapsed_s":-0.0,"event":"complete","run_id":"20260924T213909+08","sensitivity_rows":38,"stage":"s40_summarize","ts":"2026-09-24T21:40:55.940+08:00"}
+{"event":"start","run_id":"20260924T213909+08","stage":"s50_verify","ts":"2026-09-24T21:40:55.940+08:00"}
+{"event":"failed","exit_code":2,"run_id":"20260924T213909+08","stage":"s50_verify","ts":"2026-09-24T21:40:59.704+08:00"}

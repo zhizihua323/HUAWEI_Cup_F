@@ -1,0 +1,13 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "20260924T213647+08",
+  "status": "FAILED",
+  "error": "KeyError: 'inputs'",
+  "stage_exit_codes": {
+    "s00_preflight": 0,
+    "s01_synthetic_tests": 0
+  },
+  "stages_completed": 2,
+  "fallback_used": false,
+  "finished_local": "2026-09-24T21:36:48+08:00"
+}

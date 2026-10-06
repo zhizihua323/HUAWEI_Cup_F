@@ -1,0 +1,24 @@
+{
+  "asset": "table03_q1_extension_manual",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-G1/20260925T204300+08/stability_decision.json",
+      "fields": "A2/A3 criteria and domain evaluability",
+      "unit": "criteria count",
+      "denominator": "4 global criteria; common valid domains"
+    },
+    {
+      "file": "diagnostics/TASK-G1/20260925T223500+08/manual_validation_statistics.csv",
+      "fields": "effect_size; ci bounds; n_a",
+      "unit": "Spearman rho",
+      "denominator": "pairwise complete author ratings"
+    },
+    {
+      "file": "diagnostics/TASK-G1/20260925T223500+08/manual_review_parse_audit.csv",
+      "fields": "parse_status",
+      "unit": "count",
+      "denominator": "60 sealed review IDs"
+    }
+  ]
+}

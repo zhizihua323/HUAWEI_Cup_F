@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ljYUYDU70jIL3Z7qKe2id4qOtjM</id>
+  <title>arXiv Query: search_query=all:"MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"&amp;id_list=&amp;start=0&amp;max_results=20</title>
+  <updated>2026-09-25T11:58:56Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22MuSR:+Testing+the+Limits+of+Chain-of-thought+with+Multistep+Soft+Reasoning%22&amp;start=0&amp;max_results=20&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2310.16049v2</id>
+    <title>MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning</title>
+    <updated>2024-03-23T21:21:44Z</updated>
+    <link href="https://arxiv.org/abs/2310.16049v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.16049v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) equipped with techniques like chain-of-thought prompting have demonstrated impressive capabilities, they still fall short in their ability to reason robustly in complex settings. However, evaluating LLM reasoning is challenging because system capabilities continue to grow while benchmark datasets for tasks like logical deduction have remained static. We introduce MuSR, a dataset for evaluating language models on multistep soft reasoning tasks specified in a natural language narrative. This dataset has two crucial features. First, it is created through a novel neurosymbolic synthetic-to-natural generation algorithm, enabling the construction of complex reasoning instances that challenge GPT-4 (e.g., murder mysteries roughly 1000 words in length) and which can be scaled further as more capable LLMs are released. Second, our dataset instances are free text narratives corresponding to real-world domains of reasoning; this makes it simultaneously much more challenging than other synthetically-crafted benchmarks while remaining realistic and tractable for human annotators to solve with high accuracy. We evaluate a range of LLMs and prompting techniques on this dataset and characterize the gaps that remain for techniques like chain-of-thought to perform robust reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-24T17:59:20Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>ICLR 2024 (Spotlight)</arxiv:journal_ref>
+    <author>
+      <name>Zayne Sprague</name>
+    </author>
+    <author>
+      <name>Xi Ye</name>
+    </author>
+    <author>
+      <name>Kaj Bostrom</name>
+    </author>
+    <author>
+      <name>Swarat Chaudhuri</name>
+    </author>
+    <author>
+      <name>Greg Durrett</name>
+    </author>
+  </entry>
+</feed>
+

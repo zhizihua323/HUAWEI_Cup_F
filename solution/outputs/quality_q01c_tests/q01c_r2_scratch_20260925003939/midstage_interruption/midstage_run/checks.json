@@ -1,0 +1,423 @@
+{
+  "run_id": "midstage_run",
+  "mode": "fixture",
+  "generated_local": "2026-09-25T00:39:44+08:00",
+  "summary": {
+    "n_checks": 14,
+    "n_pass": 14,
+    "n_fail": 0,
+    "n_not_checked": 0
+  },
+  "checks": [
+    {
+      "check_id": "F01_fixture_rows",
+      "description": "fixture row counts match the fixture manifest (per file and total)",
+      "status": "PASS",
+      "actual": {
+        "rows": 660,
+        "by_file": {
+          "A1": 600,
+          "A2_arxiv": 30,
+          "A3_github": 30
+        },
+        "expected_rows": {
+          "A1": 600,
+          "A2_arxiv": 30,
+          "A3_github": 30
+        }
+      },
+      "expected": {
+        "rows": 660,
+        "by_file": {
+          "A1": 600,
+          "A2_arxiv": 30,
+          "A3_github": 30
+        }
+      },
+      "evidence": "fixture manifest vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "F02_q_valid_equivalence",
+      "description": "Q_valid equals the all-11-finite mask and Q is finite only for valid rows",
+      "status": "PASS",
+      "actual": {
+        "q_valid_physical": 658,
+        "q_valid_unique": 658,
+        "q_missing_unique": 2
+      },
+      "expected": {
+        "q_valid_unique": 658,
+        "q_missing_unique": 2
+      },
+      "evidence": "parquet columns",
+      "note": ""
+    },
+    {
+      "check_id": "F03_group_and_q_recomputation",
+      "description": "group means and Q recomputed independently; no reallocation of missing groups",
+      "status": "PASS",
+      "actual": {
+        "groups_match": true,
+        "no_reallocation": true
+      },
+      "expected": {
+        "groups_match": true
+      },
+      "evidence": "independent pandas recomputation",
+      "note": ""
+    },
+    {
+      "check_id": "F04_coverage_fields",
+      "description": "coverage fields recomputed for every scope x domain",
+      "status": "PASS",
+      "actual": {
+        "violations": []
+      },
+      "expected": {
+        "violations": []
+      },
+      "evidence": "domain_summary.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "F05_denominators",
+      "description": "effective n, variance divisor and boolean denominator are consistent",
+      "status": "PASS",
+      "actual": {
+        "violations": []
+      },
+      "expected": {
+        "violations": []
+      },
+      "evidence": "domain_summary.csv vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "F06_missing_marking",
+      "description": "missing features are marked, Q is NaN for those rows and the union matches the manifest",
+      "status": "PASS",
+      "actual": {
+        "missing_rows": 2,
+        "expected": 2
+      },
+      "expected": {
+        "missing_rows": 2
+      },
+      "evidence": "parquet columns",
+      "note": ""
+    },
+    {
+      "check_id": "F07_sensitivity_parameters",
+      "description": "every sensitivity parameter recomputed from calibration rows only",
+      "status": "PASS",
+      "actual": {
+        "n_parameters": 2,
+        "violations": []
+      },
+      "expected": {
+        "violations": []
+      },
+      "evidence": "imputation_parameters_sensitivity.json vs parquet",
+      "note": ""
+    },
+    {
+      "check_id": "F08_sensitivity_separation",
+      "description": "sensitivity column is separate, imputed rows stay Q_valid=False and the count matches the fixture",
+      "status": "PASS",
+      "actual": {
+        "imputed_rows": 2,
+        "no_imputation_equals_primary": true
+      },
+      "expected": {
+        "imputed_rows": 2
+      },
+      "evidence": "parquet sensitivity columns",
+      "note": ""
+    },
+    {
+      "check_id": "F09_checkpoint_marker_chain",
+      "description": "payload/meta/checkpoint/stage markers are distinct and hash-linked; stage markers bind only stage-local immutable outputs and never the materialized global parquet",
+      "status": "PASS",
+      "actual": {
+        "details": [
+          {
+            "stage": "s10_scan_a1",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s10_scan_a1",
+            "rows": 600,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "checkpoints/s10_scan_a1.meta.json",
+              "checkpoints/s10_scan_a1.payload.parquet"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          },
+          {
+            "stage": "s11_scan_a2",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s11_scan_a2",
+            "rows": 30,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "checkpoints/s11_scan_a2.meta.json",
+              "checkpoints/s11_scan_a2.payload.parquet"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          },
+          {
+            "stage": "s12_scan_a3",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s12_scan_a3",
+            "rows": 30,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "checkpoints/s12_scan_a3.meta.json",
+              "checkpoints/s12_scan_a3.payload.parquet"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          },
+          {
+            "stage": "s20_score_primary",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s20_score_primary",
+            "rows": 660,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "normalization.json"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          },
+          {
+            "stage": "s30_sensitivity",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s30_sensitivity",
+            "rows": 660,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "imputation_applied_counts.csv",
+              "imputation_parameters_sensitivity.json"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          },
+          {
+            "stage": "s40_summarize",
+            "payload": true,
+            "meta": true,
+            "checkpoint_marker": true,
+            "stage_marker": true,
+            "distinct_marker_files": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "marker_kind": "checkpoint",
+            "stage_field": "s40_summarize",
+            "rows": 660,
+            "protocol_version": 3,
+            "input_sha256_present": true,
+            "config_sha256_present": true,
+            "code_fingerprint_present": true,
+            "stage_marker_kind": "stage",
+            "stage_marker_bound_outputs": [
+              "audit.json",
+              "conditional_bootstrap.csv",
+              "domain_summary.csv",
+              "extension_shift.csv",
+              "feature_summary.csv",
+              "indicator_direction_pending.csv",
+              "quality_baseline_q01c.md",
+              "raw_field_counts.csv",
+              "sensitivity_comparison.csv",
+              "sensitivity_domain_summary.csv",
+              "summary_denominators.csv",
+              "unresolved_indicator_correlations.csv"
+            ],
+            "stage_marker_binds_global_parquet": false,
+            "stage_marker_outputs_hash_match": true,
+            "ok": true
+          }
+        ]
+      },
+      "expected": {
+        "all_ok": true
+      },
+      "evidence": "independent re-hash of the marker chain",
+      "note": ""
+    },
+    {
+      "check_id": "F10_stage_events",
+      "description": "every completed stage has a start event and exactly one terminal event (s50_verify/s60_finalize finish after this verification runs)",
+      "status": "PASS",
+      "actual": {
+        "started": {
+          "s00_preflight": true,
+          "s01_synthetic_tests": true,
+          "s10_scan_a1": true,
+          "s11_scan_a2": true,
+          "s12_scan_a3": true,
+          "s20_score_primary": true,
+          "s30_sensitivity": true,
+          "s40_summarize": true,
+          "s50_verify": true
+        },
+        "terminal": {
+          "s00_preflight": [
+            "complete"
+          ],
+          "s01_synthetic_tests": [
+            "complete"
+          ],
+          "s10_scan_a1": [
+            "complete"
+          ],
+          "s11_scan_a2": [
+            "complete"
+          ],
+          "s12_scan_a3": [
+            "complete"
+          ],
+          "s20_score_primary": [
+            "complete"
+          ],
+          "s30_sensitivity": [
+            "complete"
+          ],
+          "s40_summarize": [
+            "complete"
+          ]
+        }
+      },
+      "expected": {
+        "all_stages_single_terminal": true
+      },
+      "evidence": "stage_status.jsonl",
+      "note": ""
+    },
+    {
+      "check_id": "F11_scan_counters",
+      "description": "scan counters and reuse events recorded for the fixture files",
+      "status": "PASS",
+      "actual": {
+        "passes": {
+          "A1": 1,
+          "A2_arxiv": 1,
+          "A3_github": 1
+        },
+        "total_passes": 3,
+        "reuse_events": 0
+      },
+      "expected": {
+        "passes>=1": true
+      },
+      "evidence": "scan_counters.json / resume_evidence.json",
+      "note": ""
+    },
+    {
+      "check_id": "F12_no_real_inputs_and_no_content",
+      "description": "fixture run references only fixture inputs and stores no content columns",
+      "status": "PASS",
+      "actual": {
+        "mode": "fixture",
+        "content_like": [],
+        "real_path_hits": []
+      },
+      "expected": {
+        "mode": "fixture",
+        "real_inputs_accessed": 0
+      },
+      "evidence": "run_config.json / input_manifest.json / parquet schema",
+      "note": ""
+    },
+    {
+      "check_id": "F13_strict_json",
+      "description": "fixture-run JSON artefacts are strict",
+      "status": "PASS",
+      "actual": {
+        "files": []
+      },
+      "expected": {
+        "files": []
+      },
+      "evidence": "strict parse",
+      "note": ""
+    },
+    {
+      "check_id": "F14_required_artifacts",
+      "description": "fixture run produced every required artefact",
+      "status": "PASS",
+      "actual": {
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      },
+      "evidence": "run directory listing",
+      "note": ""
+    }
+  ],
+  "status": "PASS"
+}

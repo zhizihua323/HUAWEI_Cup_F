@@ -1,0 +1,31 @@
+D:\anaconda\Lib\site-packages\numpy\linalg\_linalg.py:2792: RuntimeWarning: overflow encountered in dot
+  sqnorm = x.dot(x)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:141: RuntimeWarning: invalid value encountered in scalar multiply
+  alpha = max(0.001 * alpha_upper, (alpha_lower * alpha_upper)**0.5)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:115: RuntimeWarning: overflow encountered in square
+  phi_prime = -np.sum(suf ** 2 / denom**3) / p_norm
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:115: RuntimeWarning: invalid value encountered in divide
+  phi_prime = -np.sum(suf ** 2 / denom**3) / p_norm
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:398: RuntimeWarning: invalid value encountered in cast
+  return min_step, np.equal(steps, min_step) * np.sign(s).astype(int)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:283: RuntimeWarning: overflow encountered in dot
+  a = np.dot(v, v)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:285: RuntimeWarning: overflow encountered in multiply
+  a += np.dot(s * diag, s)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:288: RuntimeWarning: overflow encountered in dot
+  b = np.dot(g, s)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:316: RuntimeWarning: invalid value encountered in scalar divide
+  extremum = -0.5 * b / a
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:320: RuntimeWarning: invalid value encountered in multiply
+  y = t * (a * t + b) + c
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\least_squares.py:965: RuntimeWarning: overflow encountered in dot
+  initial_cost = 0.5 * np.dot(f0, f0)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\trf.py:224: RuntimeWarning: overflow encountered in dot
+  cost = 0.5 * np.dot(f, f)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:595: RuntimeWarning: overflow encountered in dot
+  return J.T.dot(f)
+C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-T06E-B\20260925T090601+08\code\profile_one.py:38: RuntimeWarning: overflow encountered in exp
+  return np.array([v*(Lstar if nm in ('E','A','B','k_add') else 1.0) for v,nm in zip(np.exp(x),names)],float)
+D:\anaconda\Lib\site-packages\scipy\optimize\_numdiff.py:721: RuntimeWarning: invalid value encountered in subtract
+  df.append(f2 - f1)
+{"source": "B6", "model": "M0_6", "parameter": "A", "n": 42, "skipped": 4}

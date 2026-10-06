@@ -1,0 +1,8 @@
+{
+  "failed_stage": "B8_STRESS",
+  "status": "FAILED_ENGINEERING_VARIABLE_SHADOW",
+  "scientific_result": "NOT_REACHED",
+  "exception": "AttributeError: Row.experiment_id because r was overwritten in inner model loop",
+  "correction": "new run required; no profile checkpoint had been written",
+  "preserve_run": true
+}

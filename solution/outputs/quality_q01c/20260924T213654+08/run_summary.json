@@ -1,0 +1,23 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "20260924T213654+08",
+  "status": "FAILED",
+  "error": "independent verification exited 1",
+  "stage_exit_codes": {
+    "s00_preflight": 0,
+    "s01_synthetic_tests": 0,
+    "s10_scan_a1": 0,
+    "s11_scan_a2": 0,
+    "s12_scan_a3": 0,
+    "s20_score_primary": 0,
+    "s30_sensitivity": 0,
+    "s40_summarize": 0,
+    "s50_verify": 2
+  },
+  "stages_completed": 8,
+  "synthetic_tests": "PASS",
+  "protected_artifacts_untouched": true,
+  "content_read": false,
+  "fallback_used": false,
+  "finished_local": "2026-09-24T21:38:06+08:00"
+}

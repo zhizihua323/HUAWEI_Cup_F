@@ -1,0 +1,8 @@
+{"argv":["solution/src/quality_q01c.py","--run-id","smoke_full2","--out-root","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs","--fixture-dir","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture"],"event":"invocation","mode":"fixture","pid":16712,"resume":false,"run_id":"smoke_full2","stage":"s00_preflight","stage_selection":"all","ts":"2026-09-24T22:46:24.592+08:00"}
+{"event":"start","pid":16712,"run_id":"smoke_full2","stage":"s00_preflight","ts":"2026-09-24T22:46:24.592+08:00"}
+{"event":"start","mode":"fixture","pid":16712,"run_id":"smoke_full2","stage":"s00_preflight","ts":"2026-09-24T22:46:24.592+08:00"}
+{"elapsed_s":0.225,"event":"complete","mode":"fixture","pid":16712,"rss_mb":96.8,"run_id":"smoke_full2","stage":"s00_preflight","ts":"2026-09-24T22:46:24.832+08:00"}
+{"event":"start","pid":16712,"run_id":"smoke_full2","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:24.835+08:00"}
+{"event":"start","pid":16712,"run_id":"smoke_full2","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:24.835+08:00"}
+{"elapsed_s":0.208,"event":"complete","failed":0,"n_tests":9,"pid":16712,"run_id":"smoke_full2","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:25.044+08:00"}
+{"event":"start","pid":16712,"run_id":"smoke_full2","stage":"s10_scan_a1","ts":"2026-09-24T22:46:25.044+08:00"}

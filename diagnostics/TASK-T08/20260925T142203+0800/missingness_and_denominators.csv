@@ -1,0 +1,12 @@
+scope,n_directories,n_model_rows,n_complete_six_task,n_partial,n_corrupt_json_files,n_valid_scores,n_missing_scores,missing_rate,rule
+C8_all,1863.0,1860,1854.0,6.0,4.0,,,,corrupt files affect coverage only and receive no score
+C8_task:BBH,1863.0,1860,1854.0,6.0,4.0,1858.0,2.0,0.001075268817204301,partial models enter only actual valid tasks; no score for corrupted JSON
+C8_task:GPQA,1863.0,1860,1854.0,6.0,4.0,1854.0,6.0,0.0032258064516129032,partial models enter only actual valid tasks; no score for corrupted JSON
+C8_task:IFEval,1863.0,1860,1854.0,6.0,4.0,1856.0,4.0,0.002150537634408602,partial models enter only actual valid tasks; no score for corrupted JSON
+C8_task:MATH Lvl 5,1863.0,1860,1854.0,6.0,4.0,1857.0,3.0,0.0016129032258064516,partial models enter only actual valid tasks; no score for corrupted JSON
+C8_task:MMLU-PRO,1863.0,1860,1854.0,6.0,4.0,1856.0,4.0,0.002150537634408602,partial models enter only actual valid tasks; no score for corrupted JSON
+C8_task:MUSR,1863.0,1860,1854.0,6.0,4.0,1854.0,6.0,0.0032258064516129032,partial models enter only actual valid tasks; no score for corrupted JSON
+T05_main_comparable,7.0,7,7.0,0.0,0.0,49.0,0.0,0.0,7 models x 7 targets; CONSTANT only
+T05_conditional_full,38.0,38,38.0,0.0,0.0,266.0,0.0,0.0,source-transfer diagnostics only
+T05_bridge_complete,45.0,45,45.0,6.0,4.0,315.0,0.0,0.0,45 complete bridge models total
+C6_Medium_D_tokens_B,,75,,,,7.0,38.0,0.8444444444444444,no D imputation

@@ -1,0 +1,24 @@
+﻿module,parameter,point_value,source,role,status,support,can_enter_T07_identified,notes
+B1_M0,E,1.6897975629820348,B1,source_baseline,WEAKLY_IDENTIFIED,B1 8 N trajectories,False,source/transform conditional; 8-cluster bootstrap
+B1_M0,A,0.3539803206065571,B1,source_baseline,WEAKLY_IDENTIFIED,B1 8 N trajectories,False,source/transform conditional; 8-cluster bootstrap
+B1_M0,B,1.2403055835426349,B1,source_baseline,WEAKLY_IDENTIFIED,B1 8 N trajectories,False,source/transform conditional; 8-cluster bootstrap
+B1_M0,alpha,0.339976581941082,B1,source_baseline,WEAKLY_IDENTIFIED,B1 8 N trajectories,False,source/transform conditional; 8-cluster bootstrap
+B1_M0,beta,0.2798781285468448,B1,source_baseline,WEAKLY_IDENTIFIED,B1 8 N trajectories,False,source/transform conditional; 8-cluster bootstrap
+B6_M0_6,E,1.6759521671081978,B6,null,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_M0_6,A,0.6003432829160912,B6,null,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_M0_6,B,1.355580386009447,B6,null,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_M0_6,alpha,0.2721341490157289,B6,null,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_M0_6,beta,0.2912041974946752,B6,null,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,E,1.576717897667643,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,A,0.6003432829036089,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,B,1.3555803863625686,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,alpha,0.2721341490204682,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,beta,0.2912041980912658,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-add,k_add,0.3544081081063713,B6,main_quality_candidate,WEAKLY_IDENTIFIED,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,E,1.6759521854788657,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,A,0.6003432829076794,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,B,1.3555804422811233,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,alpha,0.2721341490190135,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,beta,0.2912041994922439,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,eta,1.0000000000000025e-06,B6,sensitivity_only,SENSITIVITY_ONLY,B6 exact N-D-Q grid Q<=0.6,False,source-internal only; no cross-source quality interpretation
+B6_MQ-eff,k_eff,3.4340164109708765e-06,B6,derived_sensitivity_only,SENSITIVITY_ONLY,B6 exact grid Q<=0.6,False,derived eta/beta; never substitutes MQ-add

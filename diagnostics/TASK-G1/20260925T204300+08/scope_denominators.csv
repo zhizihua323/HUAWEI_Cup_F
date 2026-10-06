@@ -1,0 +1,7 @@
+﻿scope,physical_rows,unique_keys,Q_valid,Q_missing,coverage,domain_count,active_domain_count,overlap_rows_excluded_from_all_unique,definition
+A1_sample,51230,51230,51212,18,0.9996486433730236,7,3,0,file_id=A1 & is_unique_first
+A2_extension,17523,17523,17523,0,1.0,1,0,0,file_id=A2_arxiv; physical rows are unique within A1->A2 read order
+A3_extension,203752,203752,203751,1,0.9999950920727159,1,0,0,file_id=A3_github; physical rows are unique within A1->A3 read order
+extension_overlap,11419,11419,11419,0,1.0,2,0,0,overlap_a1=True extension occurrences only
+extension_new,209856,209856,209855,1,0.9999952348276914,2,0,0,evaluation_role=extension_new_records & is_unique_first
+all_unique,261086,261086,261067,19,0.9999272270439625,7,3,11419,is_unique_first; overlap occurrences excluded from denominator

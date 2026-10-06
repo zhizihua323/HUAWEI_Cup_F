@@ -1,0 +1,69 @@
+{
+  "run_id": "20260924T225155+08",
+  "frozen_local": "2026-09-24T22:52:14+08:00",
+  "files": [
+    {
+      "file": "quality_q01c.py",
+      "source_path": "solution/src/quality_q01c.py",
+      "before_sha256": "e4024c32315d42c235e2086267062703b0b89489788dd504295c39b97548ffad",
+      "after_sha256": "25cc7b94a74a29398a958c9155480abb6b32510ff65c856d6014873fd10cbce8",
+      "bytes": 123829
+    },
+    {
+      "file": "quality_q01c_selftest.py",
+      "source_path": "solution/src/quality_q01c_selftest.py",
+      "before_sha256": "b1c995f0048e193117a8a4e6e3bd1b17396cf8205df43e720649e063322c4b30",
+      "after_sha256": "f70c7e44536da73f1cdf34b5a11cebbf95d8d888e400e51131b2d003a0bd2e33",
+      "bytes": 14316
+    },
+    {
+      "file": "quality_q01c_verify.py",
+      "source_path": "solution/src/quality_q01c_verify.py",
+      "before_sha256": "b4d06a90388f06f6a217d11ab10ca3c7334df6262697cbc29759cbd6b83ee67c",
+      "after_sha256": "b8d782970a38bb880befd57b453608bd3a405e94f396737603be466f379bad7f",
+      "bytes": 53547
+    },
+    {
+      "file": "test_quality_q01c.py",
+      "source_path": "solution/tests/test_quality_q01c.py",
+      "before_sha256": "fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f",
+      "after_sha256": "fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f",
+      "bytes": 2121
+    },
+    {
+      "file": "q01c_r1_fixture.py",
+      "source_path": "solution/tests/q01c_r1_fixture.py",
+      "before_sha256": null,
+      "after_sha256": "2615cb1fedc459c8a3a2b601b218ea677563e7b26534449820288eae07bf49e3",
+      "bytes": 8311
+    },
+    {
+      "file": "q01c_r1_two_process.py",
+      "source_path": "solution/tests/q01c_r1_two_process.py",
+      "before_sha256": null,
+      "after_sha256": "5d08842ddc5c3ab2003e514d64e6768e74e629a23dfc9987b8c3d2e4e9d1029d",
+      "bytes": 18072
+    },
+    {
+      "file": "q01c_r1_extension_isolation.py",
+      "source_path": "solution/tests/q01c_r1_extension_isolation.py",
+      "before_sha256": null,
+      "after_sha256": "2d62755362f6f6d987abeb6b4e819d31e07206147063c794e621f4e5025dda91",
+      "bytes": 4021
+    },
+    {
+      "file": "q01c_r1_verify.py",
+      "source_path": "solution/tests/q01c_r1_verify.py",
+      "before_sha256": null,
+      "after_sha256": "60815382a024b697a6d6fd42e99aedd3dd5df7cac787cd006aa2f174b7dcd53d",
+      "bytes": 18812
+    },
+    {
+      "file": "q01c_r1_finalize.py",
+      "source_path": "solution/tests/q01c_r1_finalize.py",
+      "before_sha256": null,
+      "after_sha256": "900356db37b33a6406de6125c5e5aceb6ba5b68efcf5889840ea46704ed6019c",
+      "bytes": 13535
+    }
+  ]
+}

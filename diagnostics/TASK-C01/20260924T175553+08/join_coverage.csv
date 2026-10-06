@@ -1,0 +1,30 @@
+﻿check,left,right,left_rows,left_distinct,matched_rows,matched_distinct,match_rate_rows,match_rate_distinct,note
+C9_vs_C1_row_count,C9,C1,4576,4497.0,4576.0,4497.0,,1.0,row counts compared directly
+C9_vs_C1_fullname_Model_set_equality,C9.fullname,C1.Model,4576,4497.0,4576.0,4497.0,1.0,1.0,"sets compared; equality measured, not presumed"
+C9_vs_C1_row_order_identity,C9.fullname,C1.Model,4576,4497.0,4576.0,,,,row-by-row position equality = True
+C9_vs_C1_value_agreement[#Params (B)],C9.#Params (B),C1.#Params (B),4576,483.0,4573.0,,0.999344,,max abs diff=0.0; rows equal to <=1e-12: 4573; rows where only one side is missing=3; negatives in C9 side=3; negatives in C1 side=0; NOTE the C9 side uses -1 as a missing sentinel where C1 has NaN
+C9_vs_C1_value_agreement[Submission Date],C9.Submission Date,C1.Submission Date,4576,263.0,4564.0,,0.997378,,"string comparison after strip; unequal rows=12, of which 12 are the SAME missingness encoded differently (C1 CSV empty field -> NaN vs C9 parquet empty string); genuine value differences=0"
+C9_vs_C1_value_agreement[Hub License],C9.Hub License,C1.Hub License,4576,27.0,2823.0,,0.616914,,"string comparison after strip; unequal rows=1753, of which 1753 are the SAME missingness encoded differently (C1 CSV empty field -> NaN vs C9 parquet empty string); genuine value differences=0"
+C9_vs_C1_value_agreement[Type],C9.Type,C1.Type,4576,7.0,4576.0,,1.0,,"string comparison after strip; unequal rows=0, of which 0 are the SAME missingness encoded differently (C1 CSV empty field -> NaN vs C9 parquet empty string); genuine value differences=0"
+C9_vs_C1_value_agreement[Average ⬆️],C9.Average ⬆️,C1.Average ⬆️,4576,4522.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[IFEval],C9.IFEval,C1.IFEval,4576,3769.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[BBH],C9.BBH,C1.BBH,4576,4477.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[MATH Lvl 5],C9.MATH Lvl 5,C1.MATH Lvl 5,4576,739.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[GPQA],C9.GPQA,C1.GPQA,4576,227.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[MUSR],C9.MUSR,C1.MUSR,4576,3338.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C9_vs_C1_value_agreement[MMLU-PRO],C9.MMLU-PRO,C1.MMLU-PRO,4576,2697.0,4576.0,,1.0,,max abs diff=0.0; rows equal to <=1e-12: 4576; rows where only one side is missing=0; negatives in C9 side=0; negatives in C1 side=0
+C2_contains_C1_columns,C1,C2,4576,4497.0,4576.0,,,,all C1 column names present in C2: True
+C1_vs_C2_exact_dataframe_equality,C1,C2[C1 columns],4576,4497.0,,,,,DataFrame.equals = False; float cells differ only at machine precision (see C1_vs_C2_float_cell_diff)
+C1_vs_C2_float_cell_diff,C1,C2,4576,,515.0,,,,numeric cells strictly unequal: 515; max absolute difference=3.552713678800501e-15
+C3_vs_C1_model_names,C3.Model,C1.Model,4599,4520.0,4573.0,4494.0,0.994347,0.994248,exact string match on Model
+C1_vs_C3_model_names,C1.Model,C3.Model,4576,4497.0,4573.0,4494.0,0.999344,0.999333,exact string match on Model
+C3_vs_C1_model_and_six_score_match,C3 (Model + 6 scores),C1 (Model + 6 scores),4599,4599.0,4572.0,4572.0,0.994129,0.994129,scores rounded to 6 decimals before comparison
+C4_vs_C1_exact_normalised_name_match,C4.Model,C1.Model,3523,3518.0,104.0,,0.02952,,lowercased alphanumeric-only comparison of full name and repository basename
+C4_language_domain_rows,C4.Domain,(not a join),3523,173.0,1961.0,,0.556628,,Domain contains 'Language'
+C4_params_available_for_language_rows,C4.Parameters,(filter),1961,,1530.0,,0.780214,,Parameters non-null among Language rows
+C8_vs_C1_model_name_exact,C8 resolved model_name,C1.Model,1954,1861.0,1952.0,1859.0,0.998976,0.998925,exact string match; unresolved names fall back to the directory name
+C8_dirname_vs_C1_model_name_exact,C8 directory name,C1.Model,1954,1860.0,0.0,0.0,0.0,0.0,directory name uses '_' where the hub id uses '/'
+C1_vs_C8_model_name_exact,C1.Model,C8 resolved model_name,4576,4497.0,1898.0,1859.0,0.414773,0.413387,reverse direction
+C8_vs_C1_params_consistency,C8 config.model_num_parameters/1e9,C1 #Params (B),1954,1951.0,1928.0,,0.988211,,"joined rows=1951; ratio inside [0.5,2] = 1928; ratio inside [0.99,1.01] = 1626"
+C5_D_tokens_coverage,C5.D_tokens_B,(not a join),43,,7.0,,0.162791,,D_tokens_B is missing for the Medium comparability rows
+C6_D_tokens_coverage,C6.D_tokens_B,(not a join),75,,7.0,,0.093333,,D_tokens_B is missing for the Medium comparability rows

@@ -1,0 +1,26 @@
+[
+  {
+    "seq": 1,
+    "command": "python diagnostics/TASK-T06E-B/20260925T100306+08/code/00_audit_inputs.py",
+    "status": "PASS",
+    "purpose": "freeze input hashes and validate anchors"
+  },
+  {
+    "seq": 2,
+    "command": "python diagnostics/TASK-T06E-B/20260925T100306+08/code/02_run_tail.py",
+    "status": "PASS",
+    "purpose": "load hash-bound B1/B6/profile cache; recompute B7/B8/bootstrap/gates"
+  },
+  {
+    "seq": 3,
+    "command": "python diagnostics/TASK-T06E-B/20260925T100306+08/code/03_verifier.py",
+    "status": "PASS",
+    "purpose": "independent verification"
+  },
+  {
+    "seq": 4,
+    "command": "python diagnostics/TASK-T06E-B/20260925T100306+08/code/04_finalize.py",
+    "status": "PASS",
+    "purpose": "freeze non-manifest artifacts and write output manifest"
+  }
+]

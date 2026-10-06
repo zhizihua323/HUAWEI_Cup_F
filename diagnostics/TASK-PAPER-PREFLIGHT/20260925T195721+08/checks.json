@@ -1,0 +1,283 @@
+{
+  "summary": {
+    "status": "PASS",
+    "total": 45,
+    "pass": 45,
+    "fail": 0,
+    "generated_at_utc": "2026-09-25T12:12:33.588052+00:00",
+    "verifier_file": "verify_preflight.py",
+    "independent_of_builders": true
+  },
+  "checks": [
+    {
+      "check_id": "REQ-FINAL_CHAPTER_SKELETON",
+      "description": "required output FINAL_CHAPTER_SKELETON.md",
+      "status": "PASS",
+      "detail": "8401"
+    },
+    {
+      "check_id": "REQ-CITATION_MAP",
+      "description": "required output CITATION_MAP.csv",
+      "status": "PASS",
+      "detail": "5913"
+    },
+    {
+      "check_id": "REQ-REFERENCE_VERIFICATION",
+      "description": "required output REFERENCE_VERIFICATION.csv",
+      "status": "PASS",
+      "detail": "12456"
+    },
+    {
+      "check_id": "REQ-references_verified",
+      "description": "required output references_verified.bib",
+      "status": "PASS",
+      "detail": "9509"
+    },
+    {
+      "check_id": "REQ-FORMULA_REGISTRY",
+      "description": "required output FORMULA_REGISTRY.csv",
+      "status": "PASS",
+      "detail": "5969"
+    },
+    {
+      "check_id": "REQ-FIGURE_TABLE_REGISTRY",
+      "description": "required output FIGURE_TABLE_REGISTRY.csv",
+      "status": "PASS",
+      "detail": "11732"
+    },
+    {
+      "check_id": "REQ-AI_DISCLOSURE_DRAFT",
+      "description": "required output AI_DISCLOSURE_DRAFT.md",
+      "status": "PASS",
+      "detail": "5497"
+    },
+    {
+      "check_id": "REQ-V1_EDITORIAL_ISSUES",
+      "description": "required output V1_EDITORIAL_ISSUES.csv",
+      "status": "PASS",
+      "detail": "5147"
+    },
+    {
+      "check_id": "REQ-FULL_MANUSCRIPT_PREFLIGHT",
+      "description": "required output FULL_MANUSCRIPT_PREFLIGHT.md",
+      "status": "PASS",
+      "detail": "77392"
+    },
+    {
+      "check_id": "REF-UNIQUE",
+      "description": "reference keys unique",
+      "status": "PASS",
+      "detail": "28 rows"
+    },
+    {
+      "check_id": "REF-META",
+      "description": "all references have title/year/venue/url",
+      "status": "PASS",
+      "detail": "28"
+    },
+    {
+      "check_id": "REF-STATUS",
+      "description": "no unverified reference status",
+      "status": "PASS",
+      "detail": "['VERIFIED_DOI', 'VERIFIED_OFFICIAL_DATASET', 'VERIFIED_OFFICIAL_DOC', 'VERIFIED_OFFICIAL_INDEX', 'VERIFIED_OFFICIAL_PREPRINT']"
+    },
+    {
+      "check_id": "CIT-UNIQUE",
+      "description": "citation IDs unique",
+      "status": "PASS",
+      "detail": "24 rows"
+    },
+    {
+      "check_id": "CIT-KEYS",
+      "description": "citation map references all resolve to verified keys",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "FORM-UNIQUE",
+      "description": "formula IDs unique",
+      "status": "PASS",
+      "detail": "37 rows"
+    },
+    {
+      "check_id": "FORM-SEQUENCE",
+      "description": "Q1-Q4 formula IDs continuous by chapter",
+      "status": "PASS",
+      "detail": "{'Q1': 5, 'Q2': 16, 'Q3': 12, 'Q4': 4}"
+    },
+    {
+      "check_id": "ASSET-UNIQUE",
+      "description": "figure/table IDs unique",
+      "status": "PASS",
+      "detail": "25 rows"
+    },
+    {
+      "check_id": "CITE-RESOLVE",
+      "description": "every in-text citation key is verified",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "ASSET-RESOLVE",
+      "description": "every in-text asset key exists",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "FORM-RESOLVE",
+      "description": "every in-text formula key exists",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "PLACE-G1",
+      "description": "G1 explicit placeholders retained",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check_id": "PLACE-G2",
+      "description": "G2 explicit placeholders retained",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check_id": "PLACE-G4",
+      "description": "G4 explicit placeholders retained",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check_id": "NO-OLD-STATE",
+      "description": "no stale status or old asset placeholder in cleaned copy",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "NUM-PRESERVE",
+      "description": "original numeric tokens preserved in preflight copy",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "QUAL-NOT_IDENTIFIABLE_PROGRESS",
+      "description": "NOT_IDENTIFIABLE_PROGRESS retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "QUAL-CONDITIONAL_ASSOCIATION_ONLY",
+      "description": "CONDITIONAL_ASSOCIATION_ONLY retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "QUAL-UNVALIDATED_FOR_EXTRAPOLATION",
+      "description": "UNVALIDATED_FOR_EXTRAPOLATION retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "QUAL-CONDITIONAL_BASELINE_ONLY",
+      "description": "CONDITIONAL_BASELINE_ONLY retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "BIB-KEYS",
+      "description": "BibTeX keys equal verification table",
+      "status": "PASS",
+      "detail": "{'missing_bib': [], 'extra_bib': []}"
+    },
+    {
+      "check_id": "ASSET-SOURCES",
+      "description": "registry source files exist",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "NO-FINAL-OUTPUT",
+      "description": "no final DOCX/PDF generated",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "FORMAT-封面",
+      "description": "封面 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-摘要",
+      "description": "摘要 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-关键词",
+      "description": "关键词 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-目录",
+      "description": "目录 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-参考文献",
+      "description": "参考文献 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-AI工具使用声明",
+      "description": "AI工具使用声明 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "FORMAT-附录",
+      "description": "附录 requirement resides in skeleton",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check_id": "INPUT-MANIFEST",
+      "description": "protected input hashes match input_manifest",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "REF-LOCATOR",
+      "description": "all references have a DOI or official URL",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "CIT-JOIN",
+      "description": "verified citation-map keys occur in preflight text",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "NO-UNVERIFIED",
+      "description": "no UNVERIFIED entry in verified bibliography",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check_id": "MANIFEST-PENDING",
+      "description": "output_manifest is regenerated after verification",
+      "status": "PASS",
+      "detail": "finalizer runs after verifier; final read-only check validates hashes and mtime"
+    },
+    {
+      "check_id": "DOI-RECHECK",
+      "description": "all DOI references match cached Crossref title/year metadata",
+      "status": "PASS",
+      "detail": "{'total_doi_refs': 16, 'pass': 16, 'review': 0, 'rows': [{'reference_key': 'bahri2024explaining', 'doi': '10.1073/pnas.2311878121', 'crossref_found': True, 'title_match': True, 'expected_title': 'Explaining neural scaling laws', 'crossref_title': 'Explaining neural scaling laws', 'expected_year': 2024, 'crossref_year': 2024, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'asai2026openscholar', 'doi': '10.1038/s41586-025-10072-4', 'crossref_found': True, 'title_match': True, 'expected_title': 'Synthesizing scientific literature with retrieval-augmented language models', 'crossref_title': 'Synthesizing scientific literature with retrieval-augmented language models', 'expected_year': 2026, 'crossref_year': 2026, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'schaeffer2023emergent', 'doi': '10.52202/075280-2425', 'crossref_found': True, 'title_match': True, 'expected_title': 'Are Emergent Abilities of Large Language Models a Mirage?', 'crossref_title': 'Are Emergent Abilities of Large Language Models a Mirage?', 'expected_year': 2023, 'crossref_year': 2023, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'suzgun2023bbh', 'doi': '10.18653/v1/2023.findings-acl.824', 'crossref_found': True, 'title_match': True, 'expected_title': 'Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them', 'crossref_title': 'Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them', 'expected_year': 2023, 'crossref_year': 2023, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'wang2024mmlupro', 'doi': '10.52202/079017-3018', 'crossref_found': True, 'title_match': True, 'expected_title': 'MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark', 'crossref_title': 'MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark', 'expected_year': 2024, 'crossref_year': 2024, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'penedo2024fineweb', 'doi': '10.52202/079017-0970', 'crossref_found': True, 'title_match': True, 'expected_title': 'The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale', 'crossref_title': 'The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale', 'expected_year': 2024, 'crossref_year': 2024, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'warner2025modernbert', 'doi': '10.18653/v1/2025.acl-long.127', 'crossref_found': True, 'title_match': True, 'expected_title': 'Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference', 'crossref_title': 'Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference', 'expected_year': 2025, 'crossref_year': 2025, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'xie2023dsir', 'doi': '10.52202/075280-1482', 'crossref_found': True, 'title_match': True, 'expected_title': 'Data Selection for Language Models via Importance Resampling', 'crossref_title': 'Data Selection for Language Models via Importance Resampling', 'expected_year': 2023, 'crossref_year': 2023, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'scheffe1958mixtures', 'doi': '10.1111/j.2517-6161.1958.tb00299.x', 'crossref_found': True, 'title_match': True, 'expected_title': 'Experiments with Mixtures', 'crossref_title': 'Experiments with Mixtures', 'expected_year': 1958, 'crossref_year': 1958, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'aitchison1982compositional', 'doi': '10.1111/j.2517-6161.1982.tb01195.x', 'crossref_found': True, 'title_match': True, 'expected_title': 'The Statistical Analysis of Compositional Data', 'crossref_title': 'The Statistical Analysis of Compositional Data', 'expected_year': 1982, 'crossref_year': 1982, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'koenker1978regression', 'doi': '10.2307/1913643', 'crossref_found': True, 'title_match': True, 'expected_title': 'Regression Quantiles', 'crossref_title': 'Regression Quantiles', 'expected_year': 1978, 'crossref_year': 1978, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'rosen1974hedonic', 'doi': '10.1086/260169', 'crossref_found': True, 'title_match': True, 'expected_title': 'Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition', 'crossref_title': 'Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition', 'expected_year': 1974, 'crossref_year': 1974, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'aigner1977frontier', 'doi': '10.1016/0304-4076(77)90052-5', 'crossref_found': True, 'title_match': True, 'expected_title': 'Formulation and estimation of stochastic frontier production function models', 'crossref_title': 'Formulation and estimation of stochastic frontier production function models', 'expected_year': 1977, 'crossref_year': 1977, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'meeusen1977efficiency', 'doi': '10.2307/2525757', 'crossref_found': True, 'title_match': True, 'expected_title': 'Efficiency Estimation from Cobb-Douglas Production Functions with Composed Error', 'crossref_title': 'Efficiency Estimation from Cobb-Douglas Production Functions with Composed Error', 'expected_year': 1977, 'crossref_year': 1977, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'efron1979bootstrap', 'doi': '10.1214/aos/1176344552', 'crossref_found': True, 'title_match': True, 'expected_title': 'Bootstrap Methods: Another Look at the Jackknife', 'crossref_title': 'Bootstrap Methods: Another Look at the Jackknife', 'expected_year': 1979, 'crossref_year': 1979, 'year_match': True, 'status': 'PASS'}, {'reference_key': 'spearman1904general', 'doi': '10.2307/1412107', 'crossref_found': True, 'title_match': True, 'expected_title': 'General Intelligence, Objectively Determined and Measured', 'crossref_title': '\"General Intelligence,\" Objectively Determined and Measured', 'expected_year': 1904, 'crossref_year': 1904, 'year_match': True, 'status': 'PASS'}]}"
+    }
+  ]
+}

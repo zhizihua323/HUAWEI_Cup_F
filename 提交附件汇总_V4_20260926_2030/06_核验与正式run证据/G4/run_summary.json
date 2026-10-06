@@ -1,0 +1,62 @@
+{
+  "run_id": "20260925T195716+0800",
+  "task_id": "TASK-G4",
+  "status": "CANDIDATE_VERIFIED_PENDING_MAIN_CONTROL",
+  "started_local": "2026-09-25T19:57:16+08:00",
+  "finalized_local": "2026-09-25T20:31:10.605085+08:00",
+  "forecast_origin": "2025-01-28",
+  "time_cutoff": "2024-06-19",
+  "main_models": 25,
+  "selected_models": {
+    "IFEval": "M0_CONSTANT",
+    "BBH": "M1_SCALE",
+    "MATH Lvl 5": "M1_SCALE",
+    "GPQA": "M1_SCALE",
+    "MUSR": "M0_CONSTANT",
+    "MMLU-PRO": "M1_SCALE",
+    "six_task_mean_complete_only": "M1_SCALE"
+  },
+  "scenario_models": {
+    "IFEval": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "BBH": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MATH Lvl 5": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "GPQA": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MUSR": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MMLU-PRO": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "six_task_mean_complete_only": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    }
+  },
+  "checks_overall": "PASS",
+  "outputs": "diagnostics/TASK-G4/20260925T195716+0800",
+  "paper_candidate": "paper/Q4_GAP_RESULT_FREEZE.md",
+  "q4_closed_by_executor": false,
+  "loss_bridge_qualification": "CONDITIONAL_ASSOCIATION_ONLY",
+  "loss_to_benchmark_conversion_count": 0,
+  "independent_verification": {
+    "status": "PASS",
+    "checks_pass": 19,
+    "checks_total": 19,
+    "file": "verification.json",
+    "verifier_imported_execution_module": false
+  }
+}

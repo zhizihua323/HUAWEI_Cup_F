@@ -1,0 +1,202 @@
+{
+  "task": "TASK-Q01A-R1",
+  "run_id": "20260924T150854+08",
+  "status": "COMPLETED_WITH_NOT_VERIFIABLE_ITEMS",
+  "start_local": "2026-09-24T15:18:20+08:00",
+  "end_local": "2026-09-24T15:18:47+08:00",
+  "duration_s": 26.378,
+  "phases": {
+    "repair_from_artifacts": {
+      "run_id": "20260924T150854+08",
+      "phase": "repair_from_artifacts",
+      "status": "COMPLETED",
+      "errors": [],
+      "event_cross_check_mismatches": [],
+      "anchors": {
+        "raw_anomaly_record_counts_by_file_field": {
+          "A1|modernbert_professionalism": 5,
+          "A1|modernbert_reasoning": 13,
+          "A3_github|modernbert_professionalism": 1
+        },
+        "raw_anomaly_union_records": {
+          "A1": 18,
+          "A3_github": 1
+        },
+        "raw_anomaly_union_total": 19,
+        "two_field_union_records": 19,
+        "two_field_intersection_records": 0,
+        "nan_element_totals_by_file_field": {
+          "A1|modernbert_professionalism": 30,
+          "A1|modernbert_reasoning": 78,
+          "A3_github|modernbert_professionalism": 6
+        },
+        "nan_element_grand_total": 114,
+        "all_unique_raw_union": 19,
+        "all_unique_raw_intersection_two_fields": 0,
+        "all_unique_denominators": {
+          "n_total": 261086,
+          "n_valid_0": 0,
+          "n_valid_1": 0,
+          "n_valid_2": 19,
+          "n_valid_3": 261067,
+          "n_range_defined": 261086,
+          "n_std0_defined": 261086,
+          "n_false_from_missing_range": 0,
+          "n_q_nonmissing": 261067,
+          "n_q_missing": 19
+        },
+        "denominator_rule_check": {
+          "q_std_n_effective": 261067,
+          "q_std_variance_divisor": 261066,
+          "range_mean_n_effective": 261086,
+          "range_std_n_effective": 261086,
+          "false_from_missing_range": 0
+        }
+      },
+      "tables": {
+        "raw_field_counts_corrected": 264,
+        "raw_mask_corrections": 19,
+        "missing_patterns_corrected": 395,
+        "missing_pairwise_corrected": 51750,
+        "summary_denominators_corrected": 650,
+        "missing_concentration": 254,
+        "changes": 794
+      },
+      "rows": {
+        "row_masks": 272505,
+        "parsed": 272505
+      },
+      "boundary_evidence": {
+        "compressed_inputs_opened": 0,
+        "compressed_inputs_hashed": 0,
+        "unchanged_columns_outside_permitted": {}
+      },
+      "numeric_Q_computed": false,
+      "strategy_selected": false
+    },
+    "verify_repairs": {
+      "n_checks": 22,
+      "n_fail": 0,
+      "n_not_verifiable": 1
+    }
+  },
+  "repair_exit_code": 0,
+  "verify_exit_code": 0,
+  "original_run": {
+    "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08",
+    "status_preserved": "PARTIAL",
+    "exit_code_preserved": 2,
+    "checks_json_modified": false,
+    "run_summary_modified": false,
+    "handoff_modified": false,
+    "row_masks_and_tables_modified": false
+  },
+  "aborted_r1_attempts": [
+    {
+      "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A-R1\\20260924T150623+08",
+      "outcome": "aborted in the input preflight; no data product written",
+      "cause": "the read-only input list included the R __pycache__ directory, which the is_file() preflight reported as a missing input"
+    },
+    {
+      "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A-R1\\20260924T150813+08",
+      "outcome": "completed but its corrected raw_field_counts were discarded; no data product reused",
+      "cause": "event lines were strings while the domain map keys were integers, so domain-level record/element counts resolved to 0; fixed by int(line) and re-run in this directory"
+    }
+  ],
+  "first_failure_statement_corrected": {
+    "hash_stage_completed_before_abort": true,
+    "aborted_in_build_input_manifest": true,
+    "corrected_statement": "the aborted attempt completed the compressed-byte hashing precondition (stage=precondition hashed_inputs=3) and then failed inside build_input_manifest because RUN_ID was undefined, i.e. before any decompression scan; it contributes no diagnostic rows",
+    "evidence": "diagnostics/TASK-Q01A/20260924T141414+08/run.log"
+  },
+  "key_numbers": {
+    "raw_anomaly_records": {
+      "A1|modernbert_professionalism": 5,
+      "A1|modernbert_reasoning": 13,
+      "A3_github|modernbert_professionalism": 1
+    },
+    "raw_anomaly_union": 19,
+    "nan_elements": {
+      "A1|modernbert_professionalism": 30,
+      "A1|modernbert_reasoning": 78,
+      "A3_github|modernbert_professionalism": 6
+    },
+    "all_unique_range_std_denominators": {
+      "q_std_n_effective": 261067,
+      "q_std_variance_divisor": 261066,
+      "range_mean_n_effective": 261086,
+      "range_std_n_effective": 261086,
+      "false_from_missing_range": 0
+    },
+    "all_unique_usable_group_histogram": {
+      "n_total": 261086,
+      "n_valid_0": 0,
+      "n_valid_1": 0,
+      "n_valid_2": 19,
+      "n_valid_3": 261067,
+      "n_range_defined": 261086,
+      "n_std0_defined": 261086,
+      "n_false_from_missing_range": 0,
+      "n_q_nonmissing": 261067,
+      "n_q_missing": 19
+    },
+    "c12_overlap_rows": {
+      "A2_arxiv": 1419,
+      "A3_github": 10000
+    },
+    "rows_changed_in_corrected_row_masks": 19,
+    "denominator_rows_changed": 60
+  },
+  "verification_iterations": [
+    {
+      "run": 1,
+      "exit_code": 2,
+      "failed_checks": [
+        "V14",
+        "V17"
+      ],
+      "cause": "V14 read a counter key that R never recorded; V17 matched its own pattern line. No repair data product was affected."
+    },
+    {
+      "run": 2,
+      "exit_code": 2,
+      "failed_checks": [
+        "V18"
+      ],
+      "cause": "V18 flagged the word NaN inside JSON prose instead of parsing JSON values strictly."
+    },
+    {
+      "run": 3,
+      "exit_code": 0,
+      "failed_checks": [],
+      "note": "all 21 checks passed; the historical-mtime NOT_VERIFIABLE check was added next"
+    },
+    {
+      "run": 4,
+      "exit_code": 0,
+      "failed_checks": [],
+      "note": "V22 added: 21 PASS / 0 FAIL / 1 NOT_VERIFIABLE"
+    },
+    {
+      "run": 5,
+      "exit_code": 0,
+      "failed_checks": [],
+      "note": "final run after correcting the C15 reconciliation evidence source"
+    }
+  ],
+  "not_verifiable_items": [
+    "V22_c08c_historical_full_tree_mtime",
+    "C08c_historical_full_tree_mtime"
+  ],
+  "unresolved_items": [],
+  "hygiene": {
+    "csv_with_q_columns": [],
+    "json_with_nan_or_infinity": []
+  },
+  "final_strategy_selected": false,
+  "final_Q_recomputed": false,
+  "numeric_Q_computed": false,
+  "compressed_inputs_read": 0,
+  "compressed_inputs_hashed": 0,
+  "handoff_file": "handoff.md"
+}

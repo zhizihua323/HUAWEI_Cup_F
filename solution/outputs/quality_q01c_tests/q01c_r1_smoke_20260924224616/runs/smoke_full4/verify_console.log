@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 852, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 99, in main
+    return verify_fixture_mode(Path(args.run_dir), Path(args.fixture_manifest))
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 644, in verify_fixture_mode
+    resume_evidence = _load_json(run_dir / 'resume_evidence.json')
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 590, in _load_json
+    with open(path, 'r', encoding='utf-8-sig') as fh:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs\\smoke_full4\\resume_evidence.json'

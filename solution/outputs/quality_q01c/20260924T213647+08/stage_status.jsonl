@@ -1,0 +1,4 @@
+{"event":"start","run_id":"20260924T213647+08","stage":"s00_preflight","ts":"2026-09-24T21:36:47.668+08:00"}
+{"elapsed_s":0.787,"event":"complete","rss_mb":96.9,"run_id":"20260924T213647+08","stage":"s00_preflight","ts":"2026-09-24T21:36:48.466+08:00"}
+{"event":"start","run_id":"20260924T213647+08","stage":"s01_synthetic_tests","ts":"2026-09-24T21:36:48.468+08:00"}
+{"elapsed_s":0.083,"event":"complete","failed":0,"n_tests":9,"run_id":"20260924T213647+08","stage":"s01_synthetic_tests","ts":"2026-09-24T21:36:48.552+08:00"}

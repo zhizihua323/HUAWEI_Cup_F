@@ -1,0 +1,347 @@
+{
+  "task": "TASK-T03E",
+  "run_id": "20260925T020032+08",
+  "generated_local": "2026-09-25T02:00:56+08:00",
+  "pid": 35696,
+  "command": [
+    "D:\\anaconda\\python.exe",
+    "finalize-manifest",
+    "--run-dir",
+    "diagnostics\\TASK-T03E\\20260925T020032+08"
+  ],
+  "file_count": 53,
+  "files": [
+    {
+      "path": "access_log.jsonl",
+      "bytes": 8274,
+      "sha256": "3ecc3f6ed5c753438b4552a8bbae6c89356282963c1c70f5de568f1aaedb33a7",
+      "append_only": true
+    },
+    {
+      "path": "candidate_Q_scores.parquet",
+      "bytes": 24126420,
+      "sha256": "8143148d1ac130cf532ca497ada948c84cf2cead35852ccb68673708fe2e7551",
+      "append_only": false
+    },
+    {
+      "path": "checks.json",
+      "bytes": 24915,
+      "sha256": "031a475240d4fcc5c65e412e62d22f0c2f070a1ae5542bd1904e8b8a012f6215",
+      "append_only": false
+    },
+    {
+      "path": "command_log.json",
+      "bytes": 2220,
+      "sha256": "1128a5df76e3e87de5e344405b8a8d4f9bcfc17c83f8ec0e046cd9b399940582",
+      "append_only": true
+    },
+    {
+      "path": "environment.json",
+      "bytes": 1115,
+      "sha256": "0a27971ace00d7df4d33b7c7402fe179e844df0b5df39489348a39a143fc07c7",
+      "append_only": false
+    },
+    {
+      "path": "handoff.md",
+      "bytes": 4946,
+      "sha256": "4ffb6c06428fb7fac0ad0f686498203c983c5df626a1afe84e86cefcbd7aa3ca",
+      "append_only": false
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 7690,
+      "sha256": "ca454f23ab9169051c76471f3e827e77db2639c09938a2565754206ff3f599a2",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/artificial_tests.json",
+      "bytes": 3098,
+      "sha256": "ae30e520271a58a392f816521803d8a08516a3fb93723d2b8c6d526d236d5f76",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_inventory.csv",
+      "bytes": 226,
+      "sha256": "0e485009013a919dc0cf1004c86f0c35bac0b432affe92956a0da79d890f6d88",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_label_match.csv",
+      "bytes": 220,
+      "sha256": "65f96ea5a8ed68a476d1d2d442690f5e89a6585c95108ebf9ee4b32c249b2ec2",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_labels.csv",
+      "bytes": 262,
+      "sha256": "d6ecc41ffaa98b11ec2b5732ab5e0be3edddee61feb007dc24026eae1d5e0945",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/calibration_key_commitment.json",
+      "bytes": 374,
+      "sha256": "c2fc1df4d968584a3f4d854737cc923e3d3e819a23c415e4d86e387e179a4fac",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/calibration_rows.parquet",
+      "bytes": 8262835,
+      "sha256": "abc44e5b2b4ef50d35faad837472e74f95d185007ff9ea6648cde2254085a77d",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/input_manifest_preflight.json",
+      "bytes": 7784,
+      "sha256": "037bf2f96c0e3133afcca2a1584ec8ba36c0699f69da8d88373379aa510a0280",
+      "append_only": false
+    },
+    {
+      "path": "metadata_preflight/preflight_summary.json",
+      "bytes": 4778,
+      "sha256": "bd19104a37ecdb99fab17bc2ef12f9a5c11efe60006fc99a357338b24da21b38",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/artificial_tests.json",
+      "bytes": 3098,
+      "sha256": "02ddb264ad8417e8ce705a3311bec3cc41dd94811ff31847aff35748845711b6",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_seed_manifest.csv",
+      "bytes": 84151,
+      "sha256": "9b3514744b20c04078d1c341967ed6ef7aaa36c6812466859312def8d5a6ceaf",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_stability_detail.csv",
+      "bytes": 93800,
+      "sha256": "b678e9e31c88829096d239289952e4e2fc7b9d7767ec3b6e480d704bb7d34e73",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_stability_summary.csv",
+      "bytes": 151,
+      "sha256": "0a546a4cd3e7daaf31df723f0f251399a67b8bfa5ceb43fce04da042c235fcb8",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/calibration_candidate_rows.parquet",
+      "bytes": 8720500,
+      "sha256": "19d099d3d5ac457acb1ec8133f5c401e5bdd532f458e50081ecfbaec783e41aa",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/calibration_feature_profile.csv",
+      "bytes": 1131,
+      "sha256": "f45b32dfc1447225a6a8083f0ba33f61c5e14b2a566bf1a648cd611da2175b01",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/code_snapshot_manifest.json",
+      "bytes": 726,
+      "sha256": "6fbd1607dbecb0cd18ba4d1782e345be8042e8faa687a0cd40bbf0c9cf124f3b",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/requirements_frozen.txt",
+      "bytes": 207,
+      "sha256": "25297de048f1456f9c530c3d2849f111d405d3f933ea92975c4d7fdafecd43df",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_preregistered_rule_sensitivity.py",
+      "bytes": 131669,
+      "sha256": "a7765badb37417ee5ab7a8441dbdbc2a7c992ec015953dfa38d9d56497327265",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_selftest.py",
+      "bytes": 9072,
+      "sha256": "bc9bd0772af7b56819cbc842d09469fd79794ec3b8dd7d4584566d0422e3ffb3",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_verify.py",
+      "bytes": 73528,
+      "sha256": "750800f329da5d01a3970816d887bf3ee40ac1f557523cd4cfc8ae5bdd24e9e3",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/freeze_manifest.json",
+      "bytes": 11907,
+      "sha256": "bdb3edc11637853f4e5488aad37fd1afae8d2a3c96532088a3c424dc810aa93f",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/FREEZE_SEALED.json",
+      "bytes": 1751,
+      "sha256": "ed37aa8591bf97ba37fa40126337c5a3cff3b0cfda17897453e555e2796b5218",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_active_domains.csv",
+      "bytes": 365,
+      "sha256": "91bf929edf8234eb3b6d2ce132dabfaf4150f045c6e57ff3bdd2b4236f59bcd6",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_primary_spec.json",
+      "bytes": 2560,
+      "sha256": "3233daf58cb717d30466f54a1c5fabb8ea9146bd2d6498ae15678ca898b5760a",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_thresholds.csv",
+      "bytes": 871,
+      "sha256": "df44ae65e0396c3a598e450090ca91571bb87feabe545f527021cc030d8c7aea",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/lambda_sensitivity_calibration.csv",
+      "bytes": 542,
+      "sha256": "c420a5db6838f167abe2f57fe321d002164db048b78e5bc9e557ba3a6629d7a6",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/phase_a_summary.json",
+      "bytes": 3776,
+      "sha256": "3542026ef8e92d55e049b0f36e6d2eda94b3ca16bf38196f29951ab6f0b11c46",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/preregistered_acceptance.json",
+      "bytes": 2260,
+      "sha256": "a97595a1da44d0c88cd74b76ceef5c617299b9665c0fc573e04e93a25ec7c496",
+      "append_only": false
+    },
+    {
+      "path": "phase_a_calibration_freeze/prior_exposure.md",
+      "bytes": 1553,
+      "sha256": "5baa31b1b7cb66714f8a5cf56041acafdf43851d8af5abe8c88264b9b1f48b8e",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/actual_domain_labels_all_roles.csv",
+      "bytes": 766,
+      "sha256": "2b12ce6ce10113f079fcfa18fc712af006dbea0047c3e0cab35fcb7b0c588fd9",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/domain_label_match_all_roles.csv",
+      "bytes": 503,
+      "sha256": "657a8166fbdae8be066ca5dd059fa34e7e744ca0e2d7d145f48292072b5141a4",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/domain_role_inventory.csv",
+      "bytes": 2916,
+      "sha256": "27dd2a1147b2225878e2f1e684e4b05921192bbb44eb5875668453a110dd238e",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/extension_new_validation.csv",
+      "bytes": 459,
+      "sha256": "d7456d91c2b90e60e96ab4646f3f00c4ef21cd02a9fa1eb5e854dce9e753a299",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/extension_overlap_validation.csv",
+      "bytes": 1321906,
+      "sha256": "fd1c07164125acb22b3506801018cecc936fb69f5f636d8e107b9a936e0074b4",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/extension_summary.json",
+      "bytes": 2578,
+      "sha256": "1bbee12dccec4df53af7c4c914e4c66941557b6e8513a058600a22fd0603ec12",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/holdout_freeze_manifest.json",
+      "bytes": 595,
+      "sha256": "89d8f2a797a6291196c46104add80a93a53b6fa214cd8caa8ca2a725116f8c8d",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/holdout_summary.json",
+      "bytes": 2626,
+      "sha256": "0c1b7636079526489329103c6ae7f57ab0a1806f4c2e5f1319d77465ff3395cb",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/holdout_validation.csv",
+      "bytes": 717,
+      "sha256": "cae3e095ae22ea767bceeab9248e9486ccc242a3492a852d3f67989d55494348",
+      "append_only": false
+    },
+    {
+      "path": "phase_b_frozen_validation/regmix_loss_identifiability.json",
+      "bytes": 3777,
+      "sha256": "ad07f5dcf5eb8c043cbafc60c6c000f35e63e8c650d9ff1777cbd0ad9f4e3635",
+      "append_only": false
+    },
+    {
+      "path": "protected_baseline_check.json",
+      "bytes": 4295,
+      "sha256": "0d9e5ebe5fca2cca3e81c740cb944853ef178a62b37f8b06f089f04c49d03d74",
+      "append_only": false
+    },
+    {
+      "path": "run.log",
+      "bytes": 1956,
+      "sha256": "8a36ce3218c48fddcfa2d02b3a9d9df8a78d2ddaaa9d5e5a1e05bdde6999a5fe",
+      "append_only": true
+    },
+    {
+      "path": "run_config.json",
+      "bytes": 5022,
+      "sha256": "6ec3fff8d9643abe1b73bc449024d51a2f9e26dae507fe2f115c9707c58fd912",
+      "append_only": false
+    },
+    {
+      "path": "run_summary.json",
+      "bytes": 15960,
+      "sha256": "aadf5aa3f9d6c9e513774d15e10077ae401cab96e0e41b40045fba933accc018",
+      "append_only": false
+    },
+    {
+      "path": "stage_status.jsonl",
+      "bytes": 2645,
+      "sha256": "a7a8fab5268b090d18673de44a9043e84a38637d1a25d2047401448a0daf7f80",
+      "append_only": true
+    },
+    {
+      "path": "t06_quality_interface.json",
+      "bytes": 10559,
+      "sha256": "63a72e00ee522879b58c490c17c775694c775ed3e195257dec2b8cc0484f4d8d",
+      "append_only": false
+    },
+    {
+      "path": "t06_quality_interface.parquet",
+      "bytes": 38165145,
+      "sha256": "5106802c32058c922b6dbda3c31e4d84651acacbd74e089d37964107d0004480",
+      "append_only": false
+    },
+    {
+      "path": "verification.json",
+      "bytes": 30069,
+      "sha256": "e9bc0ba8aa067178ca0dca035e41bfbd3f97126cdaedf0c24a22606d0b368a5d",
+      "append_only": false
+    }
+  ],
+  "excludes": [
+    "output_manifest.json"
+  ],
+  "append_only_files": [
+    "access_log.jsonl",
+    "command_log.json",
+    "run.log",
+    "stage_status.jsonl"
+  ],
+  "note": "generated last by the finalizer after the logs, checks, run_summary, handoff and verification were closed; every registered file must stay unchanged afterwards",
+  "previous_manifest_generated_local": "2026-09-25T02:00:52+08:00",
+  "previous_manifest_changed_files": [],
+  "previous_manifest_missing_files": [],
+  "previous_manifest_stable_excluding_append_only": true
+}

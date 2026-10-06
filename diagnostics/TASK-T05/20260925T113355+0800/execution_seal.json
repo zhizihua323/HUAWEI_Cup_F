@@ -1,0 +1,61 @@
+{
+  "task_id": "TASK-T05",
+  "run_id": "20260925T113355+0800",
+  "sealed_before_metric_computation": true,
+  "sealed_at": "2026-09-25T11:34:00+08:00",
+  "date_cutoff": "2024-09-01",
+  "date_cutoff_reason": "Pre-specified calendar boundary before Qwen2.5 late-September submissions; coverage check only, no model-performance metrics inspected before sealing.",
+  "main_comparable_cohort": {
+    "definition": "Exact C8-R1 complete-six-task model matched to C5 High (same model, same validation set; Pythia final checkpoint D=299.893B).",
+    "source_table": "C5",
+    "loss_comparability": "High (same model, same validation set)",
+    "pooling_rule": "Only records with this exact loss definition are pooled into the main bridge."
+  },
+  "c6_role": "C6 High duplicates the C5 rows and is not independent. C6 Medium is restricted to stratified/source-transfer analysis because its loss definitions are not comparable.",
+  "identity_rules": {
+    "bridge_join": "Exact raw Model string; no fuzzy merge for bridge eligibility.",
+    "canonicalization": "Aliases are descriptive only; normalized matches cannot confer bridge eligibility.",
+    "duplicate_directory_rule": "Distinct interpretable evaluation timestamps: retain latest and report the other run. No reliable temporal ordering: retain all runs under the same canonical model group and never split them."
+  },
+  "c8_rules": {
+    "source": "TASK-C01-R1 corrected tables only",
+    "complete_denominator": 1854,
+    "partial_denominator": 6,
+    "corrupt_json_effect": "coverage only; never assign scores",
+    "target_scale": "six task scores multiplied by 100 to match leaderboard units; mean is auxiliary"
+  },
+  "missing_data_rules": {
+    "medium_missing_D": "never impute",
+    "log_D_models": "only records with observed D_tokens_B are eligible for logD models"
+  },
+  "candidate_selection": {
+    "method": "grouped internal cross-validation by canonical model ID",
+    "fold_count": 5,
+    "minimum_training_rows": 4,
+    "rule": "one-standard-error preference for the simplest candidate whose mean RMSE is within one standard error of the best valid internal RMSE",
+    "test_metrics_used_for_selection": false
+  },
+  "candidate_layers": {
+    "L0": ["CONSTANT", "UNIVARIATE_DESCRIPTIVE"],
+    "L1": ["SIZE_LOG_LINEAR", "LOSS_MONOTONE", "LOSS_SIZE_LINEAR"],
+    "L2": ["LOSS_SIZE_FAMILY", "LOSS_SIZE_TIME", "LOSS_SIZE_FAMILY_TIME", "LOSS_SIZE_LOG_D"],
+    "L3": ["LOSS_SIZE_FAMILY_TIME_SPLINE_DF4"]
+  },
+  "validation": {
+    "internal": "5-fold group cross-validation by model ID; duplicate runs remain in one group",
+    "time": "train Submission Date < 2024-09-01; test Submission Date >= 2024-09-01",
+    "family": "leave one family out when both train and test have at least 3 models; otherwise OOS only",
+    "scale": "train below 20B parameters; test >=20B; size strata <=3B, >3B to <20B, >=20B",
+    "source_transfer": "train C5 High, test C6 Medium excluding any same-model overlap; label source-transfer, never holdout"
+  },
+  "frozen_upgrade_thresholds": {
+    "rmse_improvement_vs_constant_or_size_baseline": 0.10,
+    "spearman_min": 0.5,
+    "direction_reversal_fraction_max": 0.25,
+    "prediction_interval_coverage_min": 0.85,
+    "prediction_interval_coverage_max": 0.98,
+    "prediction_interval_nominal": 0.95
+  },
+  "identifiability_rule": "IDENTIFIED_PREDICTIVE_BRIDGE only if all frozen thresholds pass in internal, time-out, and leave-family validation for the same main direction. Otherwise CONDITIONAL_ASSOCIATION_ONLY unless identity or loss alignment fails, in which case NOT_IDENTIFIABLE.",
+  "no_causality_rule": "Correlations and residual associations are not labeled causal technological progress."
+}

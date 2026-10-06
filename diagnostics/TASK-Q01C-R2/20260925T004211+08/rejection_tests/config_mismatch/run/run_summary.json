@@ -1,0 +1,32 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "run",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "stage s10_scan_a1 reuse validation returned INVALID: validation failed: config_sha256 (failed checks: ['config_sha256']); hard stop - no recomputation, downgrade or marker rewrite",
+  "exit_code": 2,
+  "stage_seconds": {},
+  "executed_stages": [],
+  "skipped_stages": {},
+  "reused_stages": {
+    "s00_preflight": "stage marker validated",
+    "s01_synthetic_tests": "stage marker validated"
+  },
+  "stage_terminal_events": {},
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\rejection_tests\\config_mismatch",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\synthetic_fixture",
+    "--resume"
+  ],
+  "process_pid": 29616,
+  "finished_local": "2026-09-25T00:42:20+08:00"
+}

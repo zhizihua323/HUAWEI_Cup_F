@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-09-26T08:33:53+08:00",
+  "science_status": "SCIENCE_CLOSED",
+  "manuscript_status": "FIRST_ROUND_CANDIDATE_WITH_PENDING_FIG_REF_AND_COVER_IDENTITY",
+  "priority_order": [
+    "paper/FINAL_SCIENTIFIC_FREEZE.md",
+    "paper/FINAL_PAPER_PATCH_CONTRACT.md",
+    "paper/FINAL_RESULT_INDEX_V2.md",
+    "paper/Q1_GAP_RESULT_FREEZE.md",
+    "paper/Q2_GAP_RESULT_FREEZE.md",
+    "paper/T07_RESULT_FREEZE.md",
+    "paper/Q4_GAP_RESULT_FREEZE.md",
+    "paper/preflight/FULL_MANUSCRIPT_PREFLIGHT.md"
+  ],
+  "template": {
+    "path": "参考资料/2026华为杯研赛latex模板/附件3：“华为杯”第二十三届中国研究生数学建模竞赛论文模板.doc",
+    "bytes": 894976,
+    "sha256": "195b06cf670ec1aeb796bfd07e6d3e98e36d16db119308dcf4d0756319fe2e29",
+    "converted_path": "paper/final_work/_qa/official_template_converted.docx",
+    "converted_bytes": 877531,
+    "converted_sha256": "9423744f3c985f5d7ae4e4198e5b99d12581cf22e123312e2d411e866d1922bc"
+  },
+  "sources": [
+    {
+      "path": "paper/FINAL_SCIENTIFIC_FREEZE.md",
+      "role": "highest_priority_scientific_ruling",
+      "bytes": 7221,
+      "sha256": "55c413033b7675466fb46f2f070494b8ffae6fd2cbbfaec9895bdb8feed3d977"
+    },
+    {
+      "path": "paper/FINAL_PAPER_PATCH_CONTRACT.md",
+      "role": "paper_patch_contract",
+      "bytes": 10482,
+      "sha256": "fd698917f6cb2c5f4a98a7c5a402d7d9afaaf9ff166ceed72a5cd7a742ce40c1"
+    },
+    {
+      "path": "paper/FINAL_RESULT_INDEX_V2.md",
+      "role": "result_index",
+      "bytes": 3966,
+      "sha256": "5fbc51ea0fd5138392b33d3f695dd8b7430ed4327f320477598bf363a8a67595"
+    },
+    {
+      "path": "paper/Q1_GAP_RESULT_FREEZE.md",
+      "role": "q1_frozen_interface",
+      "bytes": 4769,
+      "sha256": "e78ae4b24e67dad9d496d2c4e797defb71d20b1580d8dd25c95282a0ef90c4a9"
+    },
+    {
+      "path": "paper/Q2_GAP_RESULT_FREEZE.md",
+      "role": "q2_frozen_interface",
+      "bytes": 6237,
+      "sha256": "91b974d1377f5548c631dd3d5a9d6a488d3e56ba35518594a058ffd0146ba434"
+    },
+    {
+      "path": "paper/T07_RESULT_FREEZE.md",
+      "role": "q3_frozen_interface",
+      "bytes": 4000,
+      "sha256": "c96b481932daedfac92ef0e45fd17f2938cec6f26cf7e7a991baa46ab4c8b86b"
+    },
+    {
+      "path": "paper/Q4_GAP_RESULT_FREEZE.md",
+      "role": "q4_frozen_interface",
+      "bytes": 6554,
+      "sha256": "5a06f16a87c15e63c655c4a135b3625846a623afe174cb352f44ac552a28ff4b"
+    },
+    {
+      "path": "paper/preflight/FULL_MANUSCRIPT_PREFLIGHT.md",
+      "role": "prose_base",
+      "bytes": 77392,
+      "sha256": "b177dcaae836b56cd58f27cacddbafea62eb97033588058336e6264f08104891"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_SOURCE.md",
+      "bytes": 29036,
+      "sha256": "68d4163891d107689d0bb205f1a656427929ac7f1845d8d0c808b37aff610e97"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V1.docx",
+      "bytes": 805022,
+      "sha256": "80a2946067e576dc569893772154e7bcd570e88cbff86b532f26801c44bd423e"
+    },
+    {
+      "path": "paper/final_work/FINAL_MANUSCRIPT_V1.pdf",
+      "bytes": 601794,
+      "sha256": "afd7e3b2f6a459da89b2f4cf34003f1935fc438c4301950464387375bf9a68ee"
+    }
+  ],
+  "render": {
+    "method": "Microsoft Word 2024 ExportAsFixedFormat",
+    "raster_check": "Poppler pdftoppm 150 dpi",
+    "page_count": 21,
+    "page_size": "A4 portrait",
+    "visual_qa": "passed_all_pages"
+  },
+  "pending_assets": {
+    "figures": [
+      "FIG-00",
+      "FIG-Q1-01",
+      "FIG-Q1-02",
+      "FIG-Q2-01",
+      "FIG-Q3-01",
+      "FIG-Q3-02",
+      "FIG-Q4-01"
+    ],
+    "references": [
+      "REF-01",
+      "REF-02",
+      "REF-03",
+      "REF-04",
+      "REF-05",
+      "REF-06"
+    ],
+    "cover_identity": [
+      "school",
+      "team_number",
+      "member_1",
+      "member_2",
+      "member_3"
+    ]
+  },
+  "scientific_actions_performed": {
+    "new_experiments": false,
+    "refits": false,
+    "threshold_changes": false,
+    "model_search": false,
+    "numeric_cherry_picking": false
+  }
+}

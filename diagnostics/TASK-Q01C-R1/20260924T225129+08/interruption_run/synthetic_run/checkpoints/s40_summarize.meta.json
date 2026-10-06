@@ -1,0 +1,17 @@
+{
+  "source": "summaries written from the scored parquet",
+  "rows": 660,
+  "input_sha256": "a71d930947ec50728e53e98e6fde92d861f4e7cf3daa3f3846fee39ee6b1e06b",
+  "stage": "s40_summarize",
+  "protocol_version": 2,
+  "input_kind": "fixture",
+  "columns": [
+    "key_sha256",
+    "Q_valid"
+  ],
+  "payload": "s40_summarize.payload.parquet",
+  "payload_sha256": "b2ad7bc64aa0b5a3b87b2ebed918e1db36c374f0bc84dd0c87ec3c4185e2756a",
+  "code_fingerprint": "67944cb6829f9dcc72047a695582ddf5cfd52cc217f1489b7db6220000313d27",
+  "config_sha256": "60103b03f0d67e0d784cd8619d98543985e1401c682934f9787e87113a2419eb",
+  "written_local": "2026-09-24T22:51:35+08:00"
+}

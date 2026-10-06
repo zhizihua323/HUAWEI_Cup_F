@@ -1,0 +1,63 @@
+{
+  "total_records": 272505,
+  "unique_id_sub_path_keys": 261086,
+  "duplicate_occurrences": 11419,
+  "pairwise_key_intersections": {
+    "A1__A2_arxiv": 1419,
+    "A1__A3_github": 10000,
+    "A2_arxiv__A3_github": 0
+  },
+  "per_file": {
+    "A1": {
+      "rows": 51230,
+      "unique_keys_in_file": 51230,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 0,
+      "domains": {
+        "c4": 10000,
+        "github": 10000,
+        "stackexchange": 10000,
+        "wikipedia": 10000,
+        "commoncrawl": 9640,
+        "arxiv": 1419,
+        "book": 171
+      },
+      "content_read": false
+    },
+    "A2_arxiv": {
+      "rows": 17523,
+      "unique_keys_in_file": 17523,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 1419,
+      "domains": {
+        "arxiv": 17523
+      },
+      "content_read": false
+    },
+    "A3_github": {
+      "rows": 203752,
+      "unique_keys_in_file": 203752,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 10000,
+      "domains": {
+        "github": 203752
+      },
+      "content_read": false
+    }
+  },
+  "quality_conflicts": 0,
+  "domain_collisions": 0,
+  "raw_quality_fields": 22,
+  "expanded_scalar_features": 25,
+  "main_q_features": 11,
+  "joint_key": [
+    "id",
+    "sub_path"
+  ],
+  "content_read": false,
+  "q_valid_true": 272486,
+  "q_valid_false": 19,
+  "extract_missing_union_records": 19,
+  "generated_local": "2026-09-24T21:40:44+08:00",
+  "run_id": "20260924T213909+08"
+}

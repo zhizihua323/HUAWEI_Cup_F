@@ -1,0 +1,12 @@
+{
+  "kind": "stage",
+  "stage": "s12_scan_a3",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:42:18+08:00",
+  "checkpoint_identity": "5db052dcf4bdcc93957c65f13df80fe0f03681d73fb12e83e6800fa37f9bef58",
+  "outputs": {
+    "checkpoints/s12_scan_a3.payload.parquet": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+    "checkpoints/s12_scan_a3.meta.json": "7479712fb82d327ad976fc325ab34a563ce9f703efec15b38ba5ad1eb4433edc"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

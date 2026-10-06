@@ -1,0 +1,31 @@
+[2026-09-25T00:37:39.147+08:00] TASK-Q01C start run_id=r2_smoke mode=fixture resume=False stage=all pid=28656
+[2026-09-25T00:37:39.272+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-25T00:37:39.274+08:00] stage=s00_preflight done elapsed_s=0.122
+[2026-09-25T00:37:39.458+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-25T00:37:39.458+08:00] stage=s01_synthetic_tests done elapsed_s=0.182
+[2026-09-25T00:37:39.613+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.2
+[2026-09-25T00:37:39.615+08:00] stage=s10_scan_a1 done elapsed_s=0.155
+[2026-09-25T00:37:39.697+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.1
+[2026-09-25T00:37:39.698+08:00] stage=s11_scan_a2 done elapsed_s=0.082
+[2026-09-25T00:37:39.731+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-25T00:37:39.732+08:00] stage=s12_scan_a3 done elapsed_s=0.032
+[2026-09-25T00:37:39.781+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-25T00:37:39.822+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-25T00:37:39.822+08:00] stage=s20_score_primary done elapsed_s=0.088
+[2026-09-25T00:37:39.863+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-25T00:37:39.863+08:00] stage=s30_sensitivity done elapsed_s=0.039
+[2026-09-25T00:37:39.948+08:00] stage=s40_summarize domain rows=20 denominators=280 sensitivity rows=20 comparison=20
+[2026-09-25T00:37:40.685+08:00] ERROR unhandled: NameError: name 's30_binding' is not defined
+[2026-09-25T00:37:40.687+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2363, in main
+    result = run_stage(ctx, name, state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2249, in run_stage
+    stage_s40_write(ctx, state['config_sha'], df, domain_rows, sensitivity_rows,
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    comparison_rows, state['parameters'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 1893, in stage_s40_write
+    config_sha, input_sha=s30_binding)
+                          ^^^^^^^^^^^
+NameError: name 's30_binding' is not defined
+

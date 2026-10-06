@@ -1,0 +1,25 @@
+{
+  "protocol_version": 3,
+  "files": {
+    "A1": {
+      "passes": 1,
+      "last_scan_pid": 42824,
+      "last_scan_started": "2026-09-25T00:42:18+08:00",
+      "last_scan_finished": "2026-09-25T00:42:18+08:00"
+    },
+    "A2_arxiv": {
+      "passes": 1,
+      "last_scan_pid": 42824,
+      "last_scan_started": "2026-09-25T00:42:18+08:00",
+      "last_scan_finished": "2026-09-25T00:42:18+08:00"
+    },
+    "A3_github": {
+      "passes": 1,
+      "last_scan_pid": 42824,
+      "last_scan_started": "2026-09-25T00:42:18+08:00",
+      "last_scan_finished": "2026-09-25T00:42:18+08:00"
+    }
+  },
+  "reuse_events": [],
+  "total_passes": 3
+}

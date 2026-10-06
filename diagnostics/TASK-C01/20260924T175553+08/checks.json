@@ -1,0 +1,477 @@
+{
+  "run_id": "20260924T175553+08",
+  "task": "TASK-C01",
+  "counts": {
+    "PASS": 33,
+    "WARN": 6,
+    "FAIL": 0
+  },
+  "checks": [
+    {
+      "id": "INV-01",
+      "description": "C1-C9 tabular datasets were read and sized from disk",
+      "status": "PASS",
+      "observed": [
+        "C1",
+        "C10",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9"
+      ],
+      "expected": "C1..C10 all present in data_inventory.csv",
+      "evidence": "data_inventory.csv"
+    },
+    {
+      "id": "INV-02",
+      "description": "C8 JSON file count",
+      "status": "PASS",
+      "observed": 1958,
+      "expected": "1958 as recorded in 03_DATA_CATALOG.md",
+      "evidence": "data_inventory.csv, c8_parse_log.csv"
+    },
+    {
+      "id": "INV-03",
+      "description": "Every C8 JSON has an explicit parse status (no silent skip)",
+      "status": "PASS",
+      "observed": 1958,
+      "expected": "== 1958",
+      "evidence": "c8_parse_log.csv"
+    },
+    {
+      "id": "INV-04",
+      "description": "Corrupt/truncated C8 JSONs are reported, not dropped",
+      "status": "PASS",
+      "observed": {
+        "failed": 4,
+        "logged": 4,
+        "likely_truncated": 4
+      },
+      "expected": "all failures listed with error type, message, character offset",
+      "evidence": "c8_parse_log.csv"
+    },
+    {
+      "id": "ID-01",
+      "description": "C1 Model repeats are documented, not silently dropped",
+      "status": "PASS",
+      "observed": 79,
+      "expected": "measured count recorded in duplicate_audit.csv",
+      "evidence": "duplicate_audit.csv"
+    },
+    {
+      "id": "ID-02",
+      "description": "C9 eval_name is a unique primary key",
+      "status": "PASS",
+      "observed": 0,
+      "expected": "0 duplicate rows on the candidate primary key",
+      "evidence": "duplicate_audit.csv"
+    },
+    {
+      "id": "ID-03",
+      "description": "C1 has no unique single-column primary key",
+      "status": "PASS",
+      "observed": {
+        "Model_dups": 79
+      },
+      "expected": "Model alone is not unique; a composite key is required",
+      "evidence": "duplicate_audit.csv"
+    },
+    {
+      "id": "ID-04",
+      "description": "C1/C2/C9 all carry a parameter field and a licence field",
+      "status": "PASS",
+      "observed": {
+        "C1_params_missing": 3,
+        "C1_license_missing": 1753,
+        "C9_license_missing": 1753
+      },
+      "expected": "missingness reported as measured, never imputed",
+      "evidence": "missingness.csv, model_identity_audit.csv"
+    },
+    {
+      "id": "ID-05",
+      "description": "C8 carries no licence and no model-Type field",
+      "status": "PASS",
+      "observed": {
+        "license_field": false,
+        "type_field": false
+      },
+      "expected": "C8 identity fields limited to model_name/model_sha/params; licence must be joined",
+      "evidence": "c8_parse_log.csv, model_identity_audit.csv"
+    },
+    {
+      "id": "ID-06",
+      "description": "C3 has no month/day resolution and no licence/type field",
+      "status": "PASS",
+      "observed": {
+        "C3_columns": [
+          "Model",
+          "Year",
+          "Params_B",
+          "Average",
+          "IFEval",
+          "BBH",
+          "MATH_Lvl5",
+          "GPQA",
+          "MUSR",
+          "MMLU_PRO",
+          "Source"
+        ]
+      },
+      "expected": "C3 exposes only a 'Year' integer field",
+      "evidence": "date_audit.csv, model_identity_audit.csv"
+    },
+    {
+      "id": "ID-07",
+      "description": "C7 has no date field and no licence field",
+      "status": "PASS",
+      "observed": {
+        "C7_columns": [
+          "model_name",
+          "n_layers",
+          "n_heads",
+          "d_model",
+          "vocab_size",
+          "max_position_embeddings",
+          "training_data_TB"
+        ]
+      },
+      "expected": "documented in model_identity_audit.csv",
+      "evidence": "model_identity_audit.csv"
+    },
+    {
+      "id": "DATE-01",
+      "description": "C1 submission dates parse at 100% of non-null values",
+      "status": "PASS",
+      "observed": {
+        "dataset": "C1",
+        "field": "Submission Date",
+        "rows": 4576,
+        "nonnull": 4564,
+        "parsed_ok": 4564,
+        "parse_fail": 0,
+        "parse_rate_of_nonnull": 1.0,
+        "granularity_present_in_data": "day",
+        "granularity_assumed_for_use": "day",
+        "min": "2024-06-08 00:00:00",
+        "max": "2025-03-13 00:00:00",
+        "distinct_dates": 262,
+        "duplicate_date_rows": 4302.0,
+        "span_days": 278.0,
+        "span_years": null,
+        "note": null,
+        "rows_before_2000": null,
+        "publication_after_submission_rows": null,
+        "publication_after_submission_over_7d": null
+      },
+      "expected": "all non-null values parse to day resolution",
+      "evidence": "date_audit.csv"
+    },
+    {
+      "id": "DATE-02",
+      "description": "C3 time field is a calendar year only",
+      "status": "PASS",
+      "observed": {
+        "dataset": "C3",
+        "field": "Year",
+        "rows": 4599,
+        "nonnull": 4599,
+        "parsed_ok": 4599,
+        "parse_fail": 0,
+        "parse_rate_of_nonnull": 1.0,
+        "granularity_present_in_data": "year",
+        "granularity_assumed_for_use": "year",
+        "min": "2019",
+        "max": "2025",
+        "distinct_dates": 7,
+        "duplicate_date_rows": 4592.0,
+        "span_days": null,
+        "span_years": 6.0,
+        "note": "raw integer calendar year; it is NOT converted to a timestamp, so no spurious sub-second value is introduced",
+        "rows_before_2000": null,
+        "publication_after_submission_rows": null,
+        "publication_after_submission_over_7d": null
+      },
+      "expected": "year granularity; no sub-annual time index exists in C3",
+      "evidence": "date_audit.csv"
+    },
+    {
+      "id": "DATE-03",
+      "description": "C4 publication date has unresolved values that are NOT imputed",
+      "status": "PASS",
+      "observed": {
+        "rows": 3523,
+        "nonnull": 3500,
+        "parse_fail": 0
+      },
+      "expected": "missing dates stay missing; no date is invented in this task",
+      "evidence": "date_audit.csv"
+    },
+    {
+      "id": "DATE-04",
+      "description": "C8 evaluation timestamps parse for all parseable documents",
+      "status": "PASS",
+      "observed": {
+        "dataset": "C8",
+        "field": "date (unix seconds, top level)",
+        "rows": 1954,
+        "nonnull": 1954,
+        "parsed_ok": 1954,
+        "parse_fail": 0,
+        "parse_rate_of_nonnull": 1.0,
+        "granularity_present_in_data": "second",
+        "granularity_assumed_for_use": "second",
+        "min": "2024-06-13 15:02:57.932000",
+        "max": "2025-03-13 18:16:04.922000",
+        "distinct_dates": 1864,
+        "duplicate_date_rows": 90.0,
+        "span_days": 273.0,
+        "span_years": null,
+        "note": "unix seconds with sub-second fraction; displayed truncated to milliseconds. start_time/end_time strings are kept verbatim in c8_parse_log.csv",
+        "rows_before_2000": null,
+        "publication_after_submission_rows": null,
+        "publication_after_submission_over_7d": null
+      },
+      "expected": "unix seconds in the top-level 'date' field",
+      "evidence": "date_audit.csv, c8_parse_log.csv"
+    },
+    {
+      "id": "DATE-05",
+      "description": "C2 matched publication dates are later than the submission date for some rows",
+      "status": "WARN",
+      "observed": {
+        "rows_with_both_dates": 446,
+        "after": 21,
+        "after_over_7d": 12
+      },
+      "expected": "such rows are flagged, never rewritten; the sign convention is not silently reversed",
+      "evidence": "date_audit.csv"
+    },
+    {
+      "id": "UNIT-01",
+      "description": "Leaderboard-style benchmark fields stay inside 0-100",
+      "status": "PASS",
+      "observed": 0,
+      "expected": "0 out-of-range values across C1/C2/C3/C5/C6",
+      "evidence": "unit_audit.csv"
+    },
+    {
+      "id": "UNIT-02",
+      "description": "C8 raw group scores stay inside 0-1",
+      "status": "PASS",
+      "observed": 0,
+      "expected": "0 out-of-range values in the six extracted group metrics",
+      "evidence": "unit_audit.csv, c8_model_task_aggregate.csv"
+    },
+    {
+      "id": "UNIT-03",
+      "description": "Parameter and data-volume fields are reported in known units",
+      "status": "WARN",
+      "observed": {
+        "C1_C2_C3_C6_params_B": "billion",
+        "C4_Parameters": "absolute count",
+        "C5_C6_D_tokens_B": "billion tokens",
+        "C7_training_data_TB": "TB token count implied by C7 sizing but not documented inside C7"
+      },
+      "expected": "units differ across tables; TB in C7 is not resolved from the file itself",
+      "evidence": "unit_audit.csv"
+    },
+    {
+      "id": "UNIT-04",
+      "description": "Loss fields are finite and positive",
+      "status": "PASS",
+      "observed": 0,
+      "expected": "no non-positive or non-finite Val_Loss in C5/C6",
+      "evidence": "unit_audit.csv"
+    },
+    {
+      "id": "UNIT-05",
+      "description": "'-1' is used as a missing sentinel for parameters in C9",
+      "status": "WARN",
+      "observed": {
+        "C9_rows_with_minus1": 3
+      },
+      "expected": "C1 stores NaN on the same rows; the sentinel must not be averaged as a real size",
+      "evidence": "unit_audit.csv, join_coverage.csv"
+    },
+    {
+      "id": "CMP-01",
+      "description": "C5 rows are a subset of C6 rows and carry identical values",
+      "status": "PASS",
+      "observed": {
+        "n_merged": 43,
+        "c6_strata": 2,
+        "all_identical": true
+      },
+      "expected": "measured on the merged 43 models",
+      "evidence": "c5_c6_comparability_audit.csv"
+    },
+    {
+      "id": "CMP-02",
+      "description": "Comparability stratification is available for both tables",
+      "status": "PASS",
+      "observed": 2,
+      "expected": "High and Medium strata present",
+      "evidence": "c5_c6_comparability_audit.csv"
+    },
+    {
+      "id": "CMP-03",
+      "description": "No bridging/calibration model is fitted in this task",
+      "status": "PASS",
+      "observed": "descriptive strata statistics only",
+      "expected": "no regression, no LOMO, no forecast",
+      "evidence": "c5_c6_comparability_audit.csv, run_summary.json"
+    },
+    {
+      "id": "C8-01",
+      "description": "C8 task inventory covers every result key found",
+      "status": "PASS",
+      "observed": {
+        "distinct_task_keys": 45
+      },
+      "expected": "== number of distinct keys collected from all documents",
+      "evidence": "c8_task_inventory.csv"
+    },
+    {
+      "id": "C8-02",
+      "description": "Every parseable document yields six group scores or an explicit count",
+      "status": "PASS",
+      "observed": {
+        "parse_ok": 1954,
+        "records": 1954
+      },
+      "expected": "one record per parseable document",
+      "evidence": "c8_model_task_aggregate.csv"
+    },
+    {
+      "id": "C8-03",
+      "description": "Per-model per-task valid-result counts exist for the aggregate table",
+      "status": "PASS",
+      "observed": {
+        "aggregate_rows": 11160,
+        "sum_n_valid": 11699,
+        "rows_with_at_least_one_valid": 11135
+      },
+      "expected": "counts are explicit; missing combinations stay at 0",
+      "evidence": "c8_model_task_aggregate.csv"
+    },
+    {
+      "id": "C8-04",
+      "description": "Directories holding more than one evaluation file are disclosed",
+      "status": "WARN",
+      "observed": {
+        "directories_with_2_json": 95,
+        "files_not_used_by_a_latest-filename-only rule": 95
+      },
+      "expected": "a single latest-file rule discards the other run; the aggregate keeps both and flags the canonical one",
+      "evidence": "c8_model_task_aggregate.csv, c8_parse_log.csv"
+    },
+    {
+      "id": "C8-05",
+      "description": "Four documents in C8 do not carry the six leaderboard groups",
+      "status": "WARN",
+      "observed": {
+        "documents_without_leaderboard_ifeval": 4
+      },
+      "expected": "older run schema; scores are left missing rather than back-filled",
+      "evidence": "c8_parse_log.csv, c8_model_task_aggregate.csv"
+    },
+    {
+      "id": "C8-06",
+      "description": "Non-numeric metric payloads are counted instead of silently skipped",
+      "status": "PASS",
+      "observed": {
+        "nonnumeric_metric_values": 7806
+      },
+      "expected": "counted per task in c8_task_inventory.csv",
+      "evidence": "c8_task_inventory.csv"
+    },
+    {
+      "id": "JOIN-01",
+      "description": "C9 and C1 row identity was measured, not assumed",
+      "status": "PASS",
+      "observed": {
+        "c9_rows": 4576,
+        "c1_rows": 4576,
+        "set_equality": true,
+        "position_equality": true
+      },
+      "expected": "set equality and position equality reported separately",
+      "evidence": "join_coverage.csv"
+    },
+    {
+      "id": "JOIN-02",
+      "description": "C1 vs C2 exact DataFrame equality fails at machine precision",
+      "status": "WARN",
+      "observed": {
+        "DataFrame_equals": false,
+        "differing_numeric_cells": 515,
+        "max_abs_difference": 3.552713678800501e-15
+      },
+      "expected": "a strict equality guard on C2 would abort the run; recorded as a source-code risk in handoff.md",
+      "evidence": "join_coverage.csv"
+    },
+    {
+      "id": "JOIN-03",
+      "description": "C4 metadata linkage rate measured on exact normalised names only",
+      "status": "PASS",
+      "observed": 0.02952,
+      "expected": "no fuzzy matching, no invented matches",
+      "evidence": "join_coverage.csv"
+    },
+    {
+      "id": "JOIN-04",
+      "description": "C8 linkage to C1 measured in both directions",
+      "status": "PASS",
+      "observed": 0.998976,
+      "expected": "exact name match only; unresolved names fall back to the directory name",
+      "evidence": "join_coverage.csv"
+    },
+    {
+      "id": "JOIN-05",
+      "description": "C3 is not treated as a superset or clone of C1",
+      "status": "PASS",
+      "observed": 0.994347,
+      "expected": "C3 row/model coverage is reported separately; equivalence is not asserted",
+      "evidence": "join_coverage.csv"
+    },
+    {
+      "id": "SCOPE-01",
+      "description": "No future 12/24-month prediction was produced",
+      "status": "PASS",
+      "observed": "no forecasting code path exists in this run",
+      "expected": "no forecast artifact may be found in this run directory",
+      "evidence": "run_summary.json"
+    },
+    {
+      "id": "SCOPE-02",
+      "description": "No final problem-4 statistical model was selected",
+      "status": "PASS",
+      "observed": "no model selection or specification search performed",
+      "expected": "only descriptive audits were written",
+      "evidence": "run_summary.json"
+    },
+    {
+      "id": "SCOPE-03",
+      "description": "Existing solution/src/evolution_audit.py was not executed or modified",
+      "status": "PASS",
+      "observed": true,
+      "expected": "sha256 of the source file recorded before and after this run, and identical",
+      "evidence": "run_summary.json, output_manifest.json"
+    },
+    {
+      "id": "SCOPE-04",
+      "description": "No row of a raw attachment was modified",
+      "status": "PASS",
+      "observed": {
+        "c1_sha256_stable": true
+      },
+      "expected": "raw file hashes recorded; all raw access was read-only",
+      "evidence": "data_inventory.csv"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "combining_rule": "Keep statistical, structural, bridge, transport, and conflict components separate; do not form one CI or scenario probability.",
+  "B_branch": {
+    "schema_version": 1,
+    "components_separate": true,
+    "B1_parameter_uncertainty": {
+      "status": "EXISTING_8_CLUSTER_CONDITIONAL",
+      "not_a_population_CI": true
+    },
+    "B6_parameter_uncertainty": {
+      "status": "NINE_N_CLUSTER_CONDITIONAL",
+      "successful": 200,
+      "requested": 200,
+      "not_a_population_CI": true
+    },
+    "model_structure_uncertainty": {
+      "MQ-add": "pre-registered_main_candidate",
+      "MQ-eff": "sensitivity_only",
+      "k_0": "null_always_retained"
+    },
+    "B8_conflict": {
+      "status": "CONFLICT_EVIDENCE",
+      "common_support_rows": 160,
+      "propagated_as_probability": false
+    },
+    "cross_source_transport": {
+      "status": "NOT_ESTIMATED_IN_B_BRANCH",
+      "components": [
+        "A/B mapping",
+        "rho_Q",
+        "tau_p",
+        "r_B1",
+        "h"
+      ]
+    },
+    "combining_rule": "No single statistical CI formed across these components."
+  },
+  "P_branch": {
+    "run_id": "20260925T075729+08",
+    "principle": "Components are kept separate and are not combined into a single confidence interval.",
+    "components": [
+      {
+        "name": "q_A_anchor",
+        "type": "descriptive deterministic recomputation",
+        "uncertainty_claim": null,
+        "note": "No bootstrap or random resampling was performed in P."
+      },
+      {
+        "name": "A_equal_domain_CDF",
+        "type": "empirical deterministic reference",
+        "uncertainty_claim": null,
+        "note": "Ties retained; each domain contributes weight 1/7."
+      },
+      {
+        "name": "B6_unique_Q_CDF",
+        "type": "empirical design-level reference",
+        "uncertainty_claim": null,
+        "note": "Repeated N-D grid occurrences do not add weight."
+      },
+      {
+        "name": "A_to_B_bridge",
+        "type": "scenario assumption uncertainty",
+        "uncertainty_claim": null,
+        "note": "H1-H3 are SCENARIO_ONLY; mapping status is NOT_IDENTIFIABLE."
+      },
+      {
+        "name": "RegMix_linear_model",
+        "type": "frozen existing model uncertainty",
+        "uncertainty_claim": null,
+        "note": "Existing test_1m interval is carried only as a frozen conditional artifact."
+      },
+      {
+        "name": "RegMix_cross_scale_transport",
+        "type": "structural transport uncertainty",
+        "uncertainty_claim": null,
+        "note": "60M and 1B are reported without recalibration or selection."
+      },
+      {
+        "name": "B8_conflict",
+        "type": "direction conflict uncertainty",
+        "uncertainty_claim": null,
+        "note": "Reverse direction remains a common-support slot; no probability assigned."
+      },
+      {
+        "name": "p_Q_double_counting",
+        "type": "structural non-identifiability",
+        "uncertainty_claim": null,
+        "note": "Fixed q makes Q_mix a p-column-space identity."
+      },
+      {
+        "name": "B_side_parameters",
+        "type": "pending controller integration slot",
+        "uncertainty_claim": null,
+        "note": "P does not read or estimate B1/B6/B7/B8 parameters."
+      }
+    ],
+    "frozen_existing_conditional_interval": {
+      "source": "solution/outputs/mixture/test_1m_conditional_intervals.json",
+      "scope": "test-row sampling, conditional on fixed model; not full pipeline uncertainty",
+      "model": "linear",
+      "metrics": [
+        "rmse_equal_domain_mean",
+        "r2_equal_domain_mean",
+        "spearman_equal_domain_mean"
+      ],
+      "lower": [
+        0.2048576253923051,
+        0.21547489284641708,
+        0.5442723794846784
+      ],
+      "upper": [
+        0.24658442580131038,
+        0.432901080015589,
+        0.693467735022112
+      ],
+      "reused_not_recomputed_in_P": true
+    },
+    "probabilities_assigned_to_scenarios": false,
+    "scenario_averaging_performed": false
+  },
+  "R1_profile_correction": {
+    "MQ_add_profiles": "6/6 PROFILE_FINITE_AND_SEPARATED",
+    "G4": "PASS",
+    "condition_number": 53.94407500777401,
+    "MQ_eff_eta": 1.0000000000000025e-06,
+    "MQ_eff_eta_boundary": true
+  },
+  "controller_rules": {
+    "A_B_bridge": "NOT_IDENTIFIABLE",
+    "RegMix_to_B1": "SCENARIO_ONLY",
+    "B8": "CONFLICT_EVIDENCE; no probability and no legacy k=-20",
+    "joint_Q_p": "NOT_INDEPENDENTLY_OPTIMIZABLE"
+  }
+}

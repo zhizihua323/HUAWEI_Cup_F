@@ -1,0 +1,9 @@
+﻿role,domain,n_total,n_unique_first,n_Q_valid,n_Q_missing,n_analysis_valid,analysis_coverage,confirmatory_rows,analysis_scope,first_read_time
+A1_calibration,book,1,1,0,1,0,0.0,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:00.000+08:00
+A1_calibration,c4,3,3,3,0,3,1.0,3,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:00.000+08:00
+A1_calibration,github,1,1,1,0,1,1.0,1,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:00.000+08:00
+A1_holdout,c4,3,3,3,0,3,1.0,3,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:01.000+08:00
+A1_holdout,github,1,1,1,0,1,1.0,1,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:01.000+08:00
+extension_overlap_A1,c4,1,1,1,0,1,1.0,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:02.000+08:00
+extension_new_records,c4,1,1,1,0,1,1.0,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:03.000+08:00
+extension_new_records,github,1,1,1,0,1,1.0,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T00:00:03.000+08:00

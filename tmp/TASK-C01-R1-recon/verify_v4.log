@@ -1,0 +1,12 @@
+====================================================================================================
+TASK-C01-R1 independent verification
+run dir    : C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-C01-R1\20260924T225308+08
+source dir : C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-C01\20260924T175553+08
+started    : 2026-09-24T22:53:13.228221+08:00
+====================================================================================================
+[recount] {"files_total": 1958, "files_ok": 1954, "files_failed": 4, "dirs": 1863, "dirs_one_file": 1768, "dirs_two_files": 95, "corrupt_dirs": ["DreadPoor_Winter_Dawn-8B-TIES", "FINGU-AI_Chocolatine-Fusion-14B", "Intel_neural-chat-7b-v3-3", "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"], "pure_corrupt_dirs": ["FINGU-AI_Chocolatine-Fusion-14B", "Intel_neural-chat-7b-v3-3", "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"], "group_rows": 11724, "group_finite": 11699, "group_missing": 25, "dir_valid_sum": 11699, "mt_rows": 11160, "mt_valid_rows": 11135, "mt_zero_rows": 25, "mt_valid_sum": 11699, "wide_rows": 1860, "nonnumeric_inventory": 7806, "nonnumeric_leaf": 7806}
+[verify] model x task table
+[verify] model wide table
+[verify] checker hygiene
+[verify] original checker repair ledger
+[verify] checks=39 PASS=39 FAIL=0 overall=COMPLETE_PENDING_REVIEW

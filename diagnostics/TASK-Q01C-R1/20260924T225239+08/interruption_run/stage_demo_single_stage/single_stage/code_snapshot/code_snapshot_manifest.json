@@ -1,0 +1,27 @@
+{
+  "run_id": "single_stage",
+  "mode": "fixture",
+  "frozen_local": "2026-09-24T22:52:48+08:00",
+  "files": [
+    {
+      "file": "quality_q01c.py",
+      "sha256": "25cc7b94a74a29398a958c9155480abb6b32510ff65c856d6014873fd10cbce8",
+      "bytes": 123829
+    },
+    {
+      "file": "quality_q01c_selftest.py",
+      "sha256": "f70c7e44536da73f1cdf34b5a11cebbf95d8d888e400e51131b2d003a0bd2e33",
+      "bytes": 14316
+    },
+    {
+      "file": "quality_q01c_verify.py",
+      "sha256": "b8d782970a38bb880befd57b453608bd3a405e94f396737603be466f379bad7f",
+      "bytes": 53547
+    },
+    {
+      "file": "test_quality_q01c.py",
+      "sha256": "fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f",
+      "bytes": 2121
+    }
+  ]
+}

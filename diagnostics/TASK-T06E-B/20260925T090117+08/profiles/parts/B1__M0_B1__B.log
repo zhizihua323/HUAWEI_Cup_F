@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-T06E-B\20260925T090117+08\code\profile_one.py", line 51, in <module>
+    rows=[]; ms=[]; base_seed=int(CFG['seeds']['base_multistart'])+int(CFG['seeds']['model_offsets'][model])+int(CFG['seeds']['stage_offsets']['profile'])
+                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'M0_B1'

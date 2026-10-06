@@ -1,0 +1,368 @@
+{
+  "task_id": "TASK-T05",
+  "run_id": "20260925T113355+0800",
+  "independent": true,
+  "imports_execution_module": false,
+  "verifier": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T05\\20260925T113355+0800\\code\\verify_t05.py",
+  "checks": [
+    {
+      "verification_id": "V-C8-01",
+      "claim": "corrected C8 directory denominator",
+      "status": "PASS",
+      "actual": 1863,
+      "expected": 1863,
+      "evidence": "c8_directory_aggregate_corrected.csv"
+    },
+    {
+      "verification_id": "V-C8-02",
+      "claim": "1958 JSON accounting",
+      "status": "PASS",
+      "actual": {
+        "total": 1958,
+        "ok": 1954,
+        "failed": 4
+      },
+      "expected": {
+        "total": 1958,
+        "ok": 1954,
+        "failed": 4
+      },
+      "evidence": "corrected directory table"
+    },
+    {
+      "verification_id": "V-C8-03",
+      "claim": "complete/partial model denominator",
+      "status": "PASS",
+      "actual": {
+        "complete": 1854,
+        "partial": 6
+      },
+      "expected": {
+        "complete": 1854,
+        "partial": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv"
+    },
+    {
+      "verification_id": "V-C8-04",
+      "claim": "partial models excluded from bridge dataset",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "evidence": "bridge_analysis_dataset.parquet"
+    },
+    {
+      "verification_id": "V-C8-05",
+      "claim": "four corrupt JSON files are coverage-only",
+      "status": "PASS",
+      "actual": {
+        "corrupt": 4,
+        "no_score": 4
+      },
+      "expected": {
+        "corrupt": 4,
+        "no_score": 4
+      },
+      "evidence": "corrupt_and_partial_coverage.csv"
+    },
+    {
+      "verification_id": "V-ID-01",
+      "claim": "C5/C6/C8 exact identity intersection",
+      "status": "PASS",
+      "actual": 23,
+      "expected": 23,
+      "evidence": "exact raw Model strings"
+    },
+    {
+      "verification_id": "V-ID-02",
+      "claim": "bridge dataset is complete six-task exact intersection",
+      "status": "PASS",
+      "actual": {
+        "bridge_n": 45,
+        "complete_exact_n": 45
+      },
+      "expected": {
+        "bridge_n": 45,
+        "complete_exact_n": 45
+      },
+      "evidence": "bridge dataset vs corrected wide"
+    },
+    {
+      "verification_id": "V-ID-03",
+      "claim": "main comparable cohort is exact C5 High",
+      "status": "PASS",
+      "actual": 7,
+      "expected": 7,
+      "evidence": "seal + bridge dataset"
+    },
+    {
+      "verification_id": "V-ID-04",
+      "claim": "canonical crosswalk preserves C5/C6/C8 raw names",
+      "status": "PASS",
+      "actual": {
+        "cross_c5c6": "118",
+        "cross_c8": 1860
+      },
+      "expected": {
+        "c5c6": 118,
+        "c8": 1860
+      },
+      "evidence": "model_identity_crosswalk.csv"
+    },
+    {
+      "verification_id": "V-LINK-01",
+      "claim": "C5 is exact 43-row value subset of C6",
+      "status": "PASS",
+      "actual": {
+        "rows": 43,
+        "equal_columns": 10
+      },
+      "expected": {
+        "rows": 43,
+        "equal_columns": 10
+      },
+      "evidence": "C5/C6 source tables"
+    },
+    {
+      "verification_id": "V-LOSS-01",
+      "claim": "main loss definition single comparable stratum",
+      "status": "PASS",
+      "actual": [
+        "High (same model, same validation set)"
+      ],
+      "expected": [
+        "High (same model, same validation set)"
+      ],
+      "evidence": "loss_definition_catalog.csv"
+    },
+    {
+      "verification_id": "V-LOSS-02",
+      "claim": "C6 Medium has no observed D in bridge records",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "evidence": "bridge_analysis_dataset.parquet"
+    },
+    {
+      "verification_id": "V-LOSS-03",
+      "claim": "no D imputation",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "evidence": "logD remains null"
+    },
+    {
+      "verification_id": "V-LOSS-04",
+      "claim": "separate C5/C6 source columns preserved",
+      "status": "PASS",
+      "actual": [
+        "c5_Loss_Source",
+        "c6_Loss_Source",
+        "primary_loss_source"
+      ],
+      "expected": "all present",
+      "evidence": "bridge dataset schema"
+    },
+    {
+      "verification_id": "V-SPLIT-01",
+      "claim": "95 multi-file directories audited",
+      "status": "PASS",
+      "actual": 95,
+      "expected": 95,
+      "evidence": "duplicate_run_resolution.csv"
+    },
+    {
+      "verification_id": "V-SPLIT-02",
+      "claim": "no bridge candidate uses a multi-file directory",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "evidence": "duplicate_run_resolution.csv"
+    },
+    {
+      "verification_id": "V-SPLIT-03",
+      "claim": "main_comparable model IDs assigned to one internal fold",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "evidence": "split_registry.csv"
+    },
+    {
+      "verification_id": "V-SPLIT-04",
+      "claim": "conditional_full model IDs assigned to one internal fold",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "evidence": "split_registry.csv"
+    },
+    {
+      "verification_id": "V-TIME-01",
+      "claim": "time rows have a unique deterministic submission date",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "evidence": "C1 Submission Date"
+    },
+    {
+      "verification_id": "V-TIME-02",
+      "claim": "time train/test model IDs disjoint",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "evidence": "split_registry/taskwise"
+    },
+    {
+      "verification_id": "V-FAM-01",
+      "claim": "main comparable family is insufficient for upgrade holdout",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "evidence": "aggregate_bridge_results.csv"
+    },
+    {
+      "verification_id": "V-METRIC-01",
+      "claim": "selected internal metrics independently reproduce",
+      "status": "PASS",
+      "actual": [
+        {
+          "target": "IFEval_pct",
+          "rmse": 2.228113998553129,
+          "mae": 1.5407676499413105,
+          "rho": -0.2886751345948129,
+          "slope": -1.0,
+          "coverage": 0.8571428571428571,
+          "matches": true
+        },
+        {
+          "target": "BBH_pct",
+          "rmse": 1.243737457748204,
+          "mae": 1.17373802497913,
+          "rho": -0.2886751345948129,
+          "slope": -1.0000000000000084,
+          "coverage": 0.7142857142857143,
+          "matches": true
+        },
+        {
+          "target": "MATH Lvl 5_pct",
+          "rmse": 0.4585353767992179,
+          "mae": 0.3884333189469129,
+          "rho": 0.0,
+          "slope": -1.0000000000000007,
+          "coverage": 0.8571428571428571,
+          "matches": true
+        },
+        {
+          "target": "GPQA_pct",
+          "rmse": 0.5236692879319466,
+          "mae": 0.46140939597315167,
+          "rho": -0.14433756729740646,
+          "slope": -1.0000000000000289,
+          "coverage": 0.8571428571428571,
+          "matches": true
+        },
+        {
+          "target": "MUSR_pct",
+          "rmse": 2.363038344453841,
+          "mae": 1.5117157974300863,
+          "rho": 0.14433756729740646,
+          "slope": -0.9999999999999991,
+          "coverage": 0.8571428571428571,
+          "matches": true
+        },
+        {
+          "target": "MMLU-PRO_pct",
+          "rmse": 0.1341556717990213,
+          "mae": 0.10388962765957517,
+          "rho": -0.2886751345948129,
+          "slope": -1.0000000000000024,
+          "coverage": 0.8571428571428571,
+          "matches": true
+        },
+        {
+          "target": "benchmark_mean_aux",
+          "rmse": 0.32317203076163015,
+          "mae": 0.2804283389194683,
+          "rho": -0.2886751345948129,
+          "slope": -0.9999999999999528,
+          "coverage": 0.7142857142857143,
+          "matches": true
+        }
+      ],
+      "expected": "all close",
+      "evidence": "taskwise vs aggregate"
+    },
+    {
+      "verification_id": "V-THRESH-01",
+      "claim": "frozen thresholds unchanged",
+      "status": "PASS",
+      "actual": {
+        "rmse_improvement_vs_constant_or_size_baseline": 0.1,
+        "spearman_min": 0.5,
+        "direction_reversal_fraction_max": 0.25,
+        "prediction_interval_coverage_min": 0.85,
+        "prediction_interval_coverage_max": 0.98,
+        "prediction_interval_nominal": 0.95
+      },
+      "expected": {
+        "improvement": 0.1,
+        "spearman": 0.5,
+        "coverage": [
+          0.85,
+          0.98
+        ]
+      },
+      "evidence": "execution_seal.json"
+    },
+    {
+      "verification_id": "V-THRESH-02",
+      "claim": "final eligibility follows frozen gates",
+      "status": "PASS",
+      "actual": "CONDITIONAL_ASSOCIATION_ONLY",
+      "expected": "CONDITIONAL_ASSOCIATION_ONLY",
+      "evidence": "identifiability_decision.json"
+    },
+    {
+      "verification_id": "V-SOURCE-01",
+      "claim": "C5-High to C6-Medium is labeled source transfer",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "evidence": "taskwise_bridge_results.csv"
+    },
+    {
+      "verification_id": "V-CAUSAL-01",
+      "claim": "no causal claim allowed",
+      "status": "PASS",
+      "actual": false,
+      "expected": false,
+      "evidence": "identifiability_decision.json"
+    },
+    {
+      "verification_id": "V-MANIFEST-01",
+      "claim": "pre-final manifest hashes match listed artifacts",
+      "status": "PASS",
+      "actual": {
+        "files": 33,
+        "bad": [],
+        "self_excluded": true
+      },
+      "expected": "all match",
+      "evidence": "output_manifest.json"
+    },
+    {
+      "verification_id": "V-GUARD-01",
+      "claim": "evolution_audit.py hash remains frozen",
+      "status": "PASS",
+      "actual": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+      "expected": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+      "evidence": "solution/src/evolution_audit.py"
+    }
+  ],
+  "summary": {
+    "pass": 28,
+    "fail": 0,
+    "total": 28
+  },
+  "overall": "PASS",
+  "manifest_scope": "Verifier checks the pre-final manifest (all artifacts except verification.json/output_manifest.json); final manifest is generated afterward and records the pre-final manifest hash."
+}

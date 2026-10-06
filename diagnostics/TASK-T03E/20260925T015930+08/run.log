@@ -1,0 +1,17 @@
+[2026-09-25T01:59:30.797+08:00] [calibration-preflight] input verification (calibration-preflight): matches=True
+[2026-09-25T01:59:31.169+08:00] [calibration-preflight] preflight complete: labels=["arxiv", "book", "c4", "commoncrawl", "github", "stackexchange", "wikipedia"]
+[2026-09-25T01:59:31.761+08:00] [calibration-freeze] input verification (calibration-freeze): matches=True
+[2026-09-25T01:59:31.815+08:00] [calibration-freeze] PHASE A calibration labels: ["arxiv", "book", "c4", "commoncrawl", "github", "stackexchange", "wikipedia"]
+[2026-09-25T01:59:32.162+08:00] [calibration-freeze] bootstrap c4: joint_pass 200/200
+[2026-09-25T01:59:32.436+08:00] [calibration-freeze] bootstrap commoncrawl: joint_pass 200/200
+[2026-09-25T01:59:32.716+08:00] [calibration-freeze] bootstrap wikipedia: joint_pass 200/200
+[2026-09-25T01:59:33.059+08:00] [calibration-freeze] PHASE A complete: CALIBRATION_QUALIFIED_PENDING_VALIDATION active=["c4", "commoncrawl", "wikipedia"]
+[2026-09-25T01:59:36.272+08:00] [frozen-validation] freeze seal verified (28 frozen files)
+[2026-09-25T01:59:36.340+08:00] [frozen-validation] input verification (frozen-validation start): matches=True
+[2026-09-25T01:59:36.503+08:00] [frozen-validation] holdout frozen: ACCEPT_STABILITY
+[2026-09-25T01:59:37.349+08:00] [frozen-validation] extension status: NOT_TESTED_FOR_ACTIVE_CORRECTION
+[2026-09-25T01:59:37.575+08:00] [frozen-validation] RegMix/Loss identifiability: NOT_IDENTIFIABLE
+[2026-09-25T01:59:39.299+08:00] [frozen-validation] input verification (frozen-validation end): matches=True
+[2026-09-25T01:59:41.344+08:00] [frozen-validation] PHASE B complete: task_status=COMPLETE_PENDING_REVIEW holdout=ACCEPT_STABILITY extension=NOT_TESTED_FOR_ACTIVE_CORRECTION checks={"PASS": 22, "NOT_CHECKED": 1}
+[2026-09-25T01:59:41.906+08:00] [finalize-manifest] finalizer: previous manifest absent
+[2026-09-25T01:59:52.493+08:00] [finalize-manifest] finalizer: previous manifest present

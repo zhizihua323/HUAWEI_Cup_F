@@ -1,0 +1,1 @@
+图 6 | Q4 六任务及辅助均值的 12/24 月三情景。a、b，以 2025-01-28 为原点，分别展示 2026-01-28 和 2027-01-28 的 SLOW、BASELINE、UPPER_SENSITIVITY 数学情景，单位为 Benchmark 点。所有数值均为 SCENARIO_ONLY_UNVALIDATED，且时间位于训练范围外；情景增长率来自预注册数学网格，不是历史估计。MATH Lvl 5 的 24 个月三项原始预测均为负值，图中不截断、不替换为 0。直接 Benchmark 模型未使用 Loss，Loss 到 Benchmark 的数值转换次数为 0。

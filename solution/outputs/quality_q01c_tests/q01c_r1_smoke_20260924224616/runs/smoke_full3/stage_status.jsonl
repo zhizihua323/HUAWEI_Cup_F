@@ -1,0 +1,10 @@
+{"argv":["solution/src/quality_q01c.py","--run-id","smoke_full3","--out-root","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs","--fixture-dir","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture"],"event":"invocation","mode":"fixture","pid":39340,"resume":false,"run_id":"smoke_full3","stage":"s00_preflight","stage_selection":"all","ts":"2026-09-24T22:46:31.108+08:00"}
+{"event":"start","pid":39340,"run_id":"smoke_full3","stage":"s00_preflight","ts":"2026-09-24T22:46:31.109+08:00"}
+{"event":"start","mode":"fixture","pid":39340,"run_id":"smoke_full3","stage":"s00_preflight","ts":"2026-09-24T22:46:31.109+08:00"}
+{"elapsed_s":0.193,"event":"complete","mode":"fixture","pid":39340,"rss_mb":97.3,"run_id":"smoke_full3","stage":"s00_preflight","ts":"2026-09-24T22:46:31.314+08:00"}
+{"event":"start","pid":39340,"run_id":"smoke_full3","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:31.317+08:00"}
+{"event":"start","pid":39340,"run_id":"smoke_full3","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:31.318+08:00"}
+{"elapsed_s":0.265,"event":"complete","failed":0,"n_tests":9,"pid":39340,"run_id":"smoke_full3","stage":"s01_synthetic_tests","ts":"2026-09-24T22:46:31.583+08:00"}
+{"event":"start","pid":39340,"run_id":"smoke_full3","stage":"s10_scan_a1","ts":"2026-09-24T22:46:31.583+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:46:31+08:00","event":"checkpoint_decision","file_id":"A1","layout":null,"payload_sha256":null,"pid":39340,"process_pid":39340,"reason":"legacy: missing file(s)","rows":null,"run_id":"smoke_full3","stage":"s10_scan_a1","ts":"2026-09-24T22:46:31.584+08:00"}
+{"decompress_passes":1,"event":"start","file":"A1","pid":39340,"run_id":"smoke_full3","stage":"s10_scan_a1","ts":"2026-09-24T22:46:31.587+08:00"}

@@ -1,0 +1,27 @@
+{
+  "run_id": "20260924T225550+08",
+  "generated_local": "2026-09-24T22:56:03+08:00",
+  "status": "PASS",
+  "protected_roots": [
+    "solution/outputs/quality",
+    "solution/outputs/quality_q01c",
+    "solution/reports",
+    "diagnostics/TASK-Q01A",
+    "diagnostics/TASK-Q01A-R1"
+  ],
+  "n_entries_before": 476,
+  "n_entries_after": 476,
+  "changed": [],
+  "removed": [],
+  "added": [],
+  "hash_scope": "sha256 for files <= 8 MiB; size+mtime for every file",
+  "formal_run": {
+    "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08",
+    "manifest_files": 56,
+    "matching_files": 56,
+    "mismatches": [],
+    "status": "COMPLETE_PENDING_REVIEW"
+  },
+  "a1_a3_policy": "F题/real_attachments and diagnostics/TASK-C01* were deliberately excluded from every R1 snapshot: A1-A3 were never opened, hashed, decompressed or stat-ed",
+  "previous_scientific_runs_included": true
+}

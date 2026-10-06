@@ -1,0 +1,7 @@
+{
+  "stage": "s01_synthetic_tests",
+  "completed_local": "2026-09-24T21:39:10+08:00",
+  "outputs": {
+    "synthetic_tests.json": "c8ccc089f1273caaaa9116d43babec839c22f67d5169d5faeae82e64da016f4e"
+  }
+}

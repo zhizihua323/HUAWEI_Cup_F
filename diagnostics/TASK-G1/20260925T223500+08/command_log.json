@@ -1,0 +1,37 @@
+{
+  "run_id": "20260925T223500+08",
+  "argv": [
+    "diagnostics/TASK-G1/20260925T223500+08/code/finalize_post_author.py"
+  ],
+  "stages": [
+    {
+      "run_id": "20260925T223500+08",
+      "timestamp": "2026-09-25T22:30:01+08:00",
+      "stage": "s45_recovery_finalize",
+      "status": "start",
+      "scientific_outputs_reused": true,
+      "no_recompute": true
+    },
+    {
+      "run_id": "20260925T223500+08",
+      "timestamp": "2026-09-25T22:30:03+08:00",
+      "stage": "s45_recovery_finalize",
+      "status": "complete",
+      "checks": {
+        "total": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "no_recompute": true
+    }
+  ],
+  "verifier_command": [
+    "D:\\anaconda\\python.exe",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T223500+08\\code\\verify_post_author.py",
+    "--run-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T223500+08"
+  ],
+  "verifier_stdout": "{\"status\": \"PASS\", \"summary\": {\"total\": 11, \"pass\": 11, \"fail\": 0}}\n",
+  "verifier_stderr": "",
+  "note": "Recovery finalizer only; scientific files reused unchanged."
+}

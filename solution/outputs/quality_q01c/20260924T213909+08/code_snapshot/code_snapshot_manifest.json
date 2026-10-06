@@ -1,0 +1,26 @@
+{
+  "run_id": "20260924T213909+08",
+  "frozen_local": "2026-09-24T21:39:09+08:00",
+  "files": [
+    {
+      "file": "quality_q01c.py",
+      "sha256": "ce15962838b252e827ca25d8b6b1dd832d2515537eec116a1f4642ddb1e7e549",
+      "bytes": 90665
+    },
+    {
+      "file": "quality_q01c_selftest.py",
+      "sha256": "b1c995f0048e193117a8a4e6e3bd1b17396cf8205df43e720649e063322c4b30",
+      "bytes": 11092
+    },
+    {
+      "file": "quality_q01c_verify.py",
+      "sha256": "cddc89e31b5070de92ac18e66c548c492aabe1a25f11a4e4ff854fac4cc8ad7c",
+      "bytes": 35036
+    },
+    {
+      "file": "test_quality_q01c.py",
+      "sha256": "fa367f09014341f4938bdf64ebaad89aa78ae1b2726dcb2231aa78191e7ec19f",
+      "bytes": 2121
+    }
+  ]
+}

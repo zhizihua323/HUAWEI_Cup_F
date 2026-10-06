@@ -1,0 +1,2 @@
+[2026-09-25T01:57:37.564+08:00] [calibration-preflight] input verification (calibration-preflight): matches=True
+[2026-09-25T01:57:37.960+08:00] [calibration-preflight] FAILED: AttributeError: module 'pyarrow.parquet' has no attribute '__version__'

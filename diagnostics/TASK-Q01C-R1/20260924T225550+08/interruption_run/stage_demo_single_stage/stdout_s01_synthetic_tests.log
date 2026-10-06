@@ -1,0 +1,3 @@
+[2026-09-24T22:55:59.807+08:00] TASK-Q01C start run_id=single_stage mode=fixture resume=True stage=s01_synthetic_tests pid=24884
+[2026-09-24T22:56:00.033+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-24T22:56:00.033+08:00] stage=s01_synthetic_tests done elapsed_s=0.217

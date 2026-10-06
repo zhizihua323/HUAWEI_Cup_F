@@ -1,0 +1,72 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "smoke_full6",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "independent verification exited 1",
+  "exit_code": 2,
+  "stage_seconds": {
+    "s00_preflight": 0.169,
+    "s01_synthetic_tests": 0.126,
+    "s10_scan_a1": 0.189,
+    "s11_scan_a2": 0.068,
+    "s12_scan_a3": 0.055,
+    "s20_score_primary": 0.137,
+    "s30_sensitivity": 0.064,
+    "s40_summarize": 0.934
+  },
+  "executed_stages": [
+    "s00_preflight",
+    "s00_preflight",
+    "s01_synthetic_tests",
+    "s10_scan_a1",
+    "s11_scan_a2",
+    "s12_scan_a3",
+    "s20_score_primary",
+    "s30_sensitivity",
+    "s40_summarize"
+  ],
+  "skipped_stages": {},
+  "reused_stages": {},
+  "stage_terminal_events": {
+    "s00_preflight": [
+      "complete"
+    ],
+    "s01_synthetic_tests": [
+      "complete"
+    ],
+    "s10_scan_a1": [
+      "complete"
+    ],
+    "s11_scan_a2": [
+      "complete"
+    ],
+    "s12_scan_a3": [
+      "complete"
+    ],
+    "s20_score_primary": [
+      "complete"
+    ],
+    "s30_sensitivity": [
+      "complete"
+    ],
+    "s40_summarize": [
+      "complete"
+    ]
+  },
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "solution/src/quality_q01c.py",
+    "--run-id",
+    "smoke_full6",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture"
+  ],
+  "process_pid": 40328,
+  "finished_local": "2026-09-24T22:47:05+08:00"
+}

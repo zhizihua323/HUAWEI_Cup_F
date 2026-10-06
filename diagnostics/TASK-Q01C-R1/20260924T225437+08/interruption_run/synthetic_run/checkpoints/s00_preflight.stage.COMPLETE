@@ -1,0 +1,13 @@
+{
+  "kind": "stage",
+  "stage": "s00_preflight",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:54:39+08:00",
+  "outputs": {
+    "input_manifest.json": "3169fbcda41bbf451b6a69c1d535f663a35a258d91d217419397cacbcc501962",
+    "environment.json": "e83fc8817b92dec75da6193615f0386e5cbd7a2d218fcd1b978bd157290fabce",
+    "old_artifacts_before.json": "15ba15c325dd82b578741453802b855bc831b417cc5eb8b2e100c87c2b1c4dbe",
+    "changes.csv": "fa11a1912d7d50e1c31b10b2abec54cadfa2a5e579a5300bf8d8ba76fb20beeb",
+    "code_snapshot/code_snapshot_manifest.json": "124e8536e5171e742d773cee1000d28290b1de49cf6c562d18a00e196c378806"
+  }
+}

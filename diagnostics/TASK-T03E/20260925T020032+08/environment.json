@@ -1,0 +1,27 @@
+{
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\anaconda\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "timezone": "Asia/Shanghai (+08:00)",
+  "logical_cpu_count": 20,
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.3.3",
+  "pyarrow_version": "21.0.0",
+  "scipy_version": "1.16.3",
+  "quantile_implementation": "numpy.quantile(values, q, method=\"linear\")",
+  "bootstrap_rng": "numpy.random.default_rng(int(sha256(\"20260925|<domain>|<replicate>\")[:16], 16))",
+  "bootstrap_rng_bit_generator": "PCG64",
+  "memory_bytes_total": 16831508480,
+  "memory_budget_GiB": 8,
+  "cpu_budget": "min(50% of visible logical cores, 8 workers); this run is single-process",
+  "wall_clock_budgets_seconds": {
+    "calibration-preflight": 900,
+    "calibration-freeze": 5400,
+    "frozen-validation": 2700,
+    "finalize": 600
+  },
+  "generated_local": "2026-09-25T02:00:33+08:00",
+  "pid": 592
+}

@@ -1,0 +1,87 @@
+{
+  "timestamp_local": "2026-09-24T13:26:54.210170+08:00",
+  "source": "saved audits + summary CSVs + static code inspection; no raw records reread",
+  "feature_deficits": [
+    {
+      "file_id": "A1",
+      "domain": "commoncrawl",
+      "feature": "modernbert_professionalism",
+      "unique_group_rows": 9640,
+      "nonmissing_count": 9636,
+      "missing_count": 4
+    },
+    {
+      "file_id": "A1",
+      "domain": "wikipedia",
+      "feature": "modernbert_professionalism",
+      "unique_group_rows": 10000,
+      "nonmissing_count": 9999,
+      "missing_count": 1
+    },
+    {
+      "file_id": "A1",
+      "domain": "wikipedia",
+      "feature": "modernbert_reasoning",
+      "unique_group_rows": 10000,
+      "nonmissing_count": 9987,
+      "missing_count": 13
+    },
+    {
+      "file_id": "A3_github",
+      "domain": "github",
+      "feature": "modernbert_professionalism",
+      "unique_group_rows": 193752,
+      "nonmissing_count": 193751,
+      "missing_count": 1
+    }
+  ],
+  "aggregation_discrepancies": [
+    {
+      "domain": "commoncrawl",
+      "weighted_by_total_rows": 0.5526938689417324,
+      "saved_all_mean": 0.5526938216380821,
+      "difference": 4.730365033012163e-08
+    },
+    {
+      "domain": "wikipedia",
+      "weighted_by_total_rows": 0.47794705500356005,
+      "saved_all_mean": 0.4779470490124903,
+      "difference": 5.991069751409839e-09
+    }
+  ],
+  "raw_list_audit": [
+    {
+      "file_id": "A1",
+      "field": "modernbert_professionalism",
+      "list_rows": 51230,
+      "valid_finite_list_rows": 51225,
+      "nan_elements": 30
+    },
+    {
+      "file_id": "A1",
+      "field": "modernbert_reasoning",
+      "list_rows": 51230,
+      "valid_finite_list_rows": 51217,
+      "nan_elements": 78
+    },
+    {
+      "file_id": "A3_github",
+      "field": "modernbert_professionalism",
+      "list_rows": 203752,
+      "valid_finite_list_rows": 203751,
+      "nan_elements": 6
+    }
+  ],
+  "confirmed_code_behavior": {
+    "get_features": "Nonfinite list -> NaN scalar",
+    "score_quality": "Group and Q row means use skipna=False",
+    "summarize": "n is total rows; Q.mean() and group.mean() silently skip NaN",
+    "verify": "Requires Q_baseline.notna().all() (line 442)"
+  },
+  "interpretation": "Existing saved summaries contain different effective denominators. Total n is not valid-Q n. Under current code, nonfinite required features propagate to missing Q; the all-nonmissing assertion conflicts with these data. This is not evidence that the interrupted run reached that assertion.",
+  "unconfirmed": [
+    "Exact identities and count of unique rows with any missing Q; overlaps between missing features unavailable without row artifact.",
+    "Actual exception, termination point, and quota interruption time."
+  ],
+  "action_taken": "Registered only; original code and outputs unchanged."
+}

@@ -1,0 +1,10 @@
+[2026-09-24T22:46:18.555+08:00] TASK-Q01C start run_id=smoke_full mode=fixture resume=False stage=all pid=24528
+[2026-09-24T22:46:18.555+08:00] ERROR unhandled: TypeError: RunContext.status() got multiple values for argument 'stage'
+[2026-09-24T22:46:18.557+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2112, in main
+    ctx.status('s00_preflight' if args.stage == 'all' else args.stage, 'invocation',
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               mode=ctx.mode, resume=args.resume, stage=args.stage, argv=[str(x) for x in sys.argv])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RunContext.status() got multiple values for argument 'stage'
+

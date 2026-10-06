@@ -1,0 +1,63 @@
+{
+  "run_id": "20260925T222800+08",
+  "generated_local": "2026-09-25T22:28:16+08:00",
+  "source_run": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T204300+08",
+  "author_source_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T204300+08\\manual_text_review_completed.csv",
+  "author_source_bytes": 4591368,
+  "author_source_mtime": 1790346043.4617329,
+  "author_source_sha256": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47",
+  "author_source_encoding": "gb18030/cp936-compatible",
+  "inputs": [
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/sampling_seal.json",
+      "bytes": 27488,
+      "mtime": 1790338989.392756,
+      "sha256": "a2c239cf8c3823b4da5a2dcbad007c960cb285d5f67587bfd4818638e87dde3a",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/manual_text_review_blind.csv",
+      "bytes": 3334798,
+      "mtime": 1790338989.421272,
+      "sha256": "5c014fa275e2ee46494cefab9471a1c9cf79f6afb0c8635421f4e45bab71aba3",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/manual_review_key.csv",
+      "bytes": 16266,
+      "mtime": 1790338989.3947575,
+      "sha256": "f308718a636e12e29afb5e7524d8999f7718875cff4965ec6ab654b2ad2111fe",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/stability_decision.json",
+      "bytes": 3322,
+      "mtime": 1790338955.8618338,
+      "sha256": "4c89b3da134342b3cfb9ce6798171ba2adcafce4f2f1135485047842a9a6b6c5",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/run_summary.json",
+      "bytes": 8741,
+      "mtime": 1790338999.2847586,
+      "sha256": "9ab022f72f9e5f9e9b1534b157ae1ae1db63507c48358a48bcb4ea89657943a4",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T204300+08/output_manifest.json",
+      "bytes": 4813,
+      "mtime": 1790338999.3127606,
+      "sha256": "56344cdaa32894188b81153a5049a8ad8a310a65aa698b407c8e2ad5b75f5943",
+      "role": "sealed stage-1 input"
+    },
+    {
+      "path": "diagnostics/TASK-G1/20260925T222800+08/input_author_manual_text_review_completed.csv",
+      "bytes": 4591368,
+      "mtime": 1790346151.5125184,
+      "sha256": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47",
+      "role": "author completed table frozen copy"
+    }
+  ],
+  "no_imputation": true,
+  "no_resampling": true
+}

@@ -1,0 +1,9 @@
+check_id,claim,actual,expected,status,evidence,notes
+same_run_group_cross_model_leakage,same run_group_id mapped to multiple model identities,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+same_model_duplicate_split_assignment,same model/run has duplicate conflicting split assignment,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+c5_c6_duplicate_rows_not_independent,C5 rows duplicated in C6 are not counted as independent evidence,7,,DIAGNOSTIC,"T05 frozen bridge dataset, split registry, T08 outputs",reported as diagnostic count
+loss_to_benchmark_conversion,numeric Loss-to-benchmark conversion count,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+c6_medium_as_main_independent,C6 Medium used as independent main-layer evidence,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+mean_aux_replaces_task_vector,mean auxiliary replaces a six-task vector,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+unselected_model_progress_claim,unselected SIZE/LOSS/full-leaderboard models used for formal future progress,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",
+posthoc_scenario_add_delete_rename,scenario IDs changed after seal,0,0.0,PASS,"T05 frozen bridge dataset, split registry, T08 outputs",

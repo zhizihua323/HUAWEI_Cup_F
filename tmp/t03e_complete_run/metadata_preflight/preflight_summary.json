@@ -1,0 +1,28 @@
+{
+  "analysis_layer_roles_visible": [
+    "A1_calibration"
+  ],
+  "labels": [
+    "book",
+    "c4",
+    "github"
+  ],
+  "commitment": {
+    "calibration_physical_rows": 5,
+    "calibration_unique_first_rows": 5
+  },
+  "design_match": [],
+  "input_check": {
+    "note": "synthetic",
+    "path": "x",
+    "bytes": 10,
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "manifest_bytes": 10,
+    "manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "matches_manifest": true,
+    "checked_local": "t",
+    "pid": 1
+  },
+  "holdout_or_extension_read": false,
+  "generated_local": "t"
+}

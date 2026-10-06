@@ -1,0 +1,12 @@
+{"ts": "2026-09-24T22:55:08+08:00", "phase": "fixture_build", "event": "start", "pid": 40808}
+{"ts": "2026-09-24T22:55:08+08:00", "phase": "fixture_build", "event": "complete", "pid": 40808, "fixture_id": "q01c_r1_fixture_v1", "rows": 660, "manifest_sha256": "f74479b32f74341c02d21cc1b9fd5d410da31aea4209b12fda4ace6f2aecc58e"}
+{"ts": "2026-09-24T22:55:09+08:00", "phase": "p1", "event": "start", "pid": 40808, "hold_after_stage": "s10_scan_a1"}
+{"ts": "2026-09-24T22:55:10+08:00", "phase": "p1", "event": "terminated", "pid": 27464, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-24T22:55:10+08:00", "phase": "probe", "event": "start", "pid": 40808}
+{"ts": "2026-09-24T22:55:11+08:00", "phase": "probe", "event": "complete", "pid": 40808, "exit_code": 0, "reusable": [{"stage": "s00_preflight", "reason": "valid", "layout": null}, {"stage": "s01_synthetic_tests", "reason": "valid", "layout": null}, {"stage": "s10_scan_a1", "reason": "valid", "layout": "v2"}]}
+{"ts": "2026-09-24T22:55:11+08:00", "phase": "p2", "event": "start", "pid": 40808}
+{"ts": "2026-09-24T22:55:14+08:00", "phase": "p2", "event": "complete", "pid": 40808, "exit_code": 0, "reused": ["s00_preflight", "s01_synthetic_tests", "s10_scan_a1"]}
+{"ts": "2026-09-24T22:55:14+08:00", "phase": "stage_demo", "event": "start", "pid": 40808}
+{"ts": "2026-09-24T22:55:18+08:00", "phase": "stage_demo", "event": "complete", "pid": 40808, "missing_prereq_exit": 6, "single_stage_exits": [0, 0, 0]}
+{"ts": "2026-09-24T22:55:18+08:00", "phase": "harness", "event": "complete", "pid": 40808, "new_passes_in_p2": 2, "checkpoint_invariant": true}
+{"r1_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225508+08", "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225508+08\\interruption_run\\synthetic_run", "p1_pid": 27464, "p2_exit": 0, "probe_exit": 0, "new_passes_in_p2": {"A1": 0, "A2_arxiv": 1, "A3_github": 1}, "checkpoint_invariant": true, "run_status": "COMPLETE_PENDING_REVIEW"}

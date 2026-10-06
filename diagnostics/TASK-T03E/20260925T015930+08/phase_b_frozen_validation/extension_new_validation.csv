@@ -1,0 +1,4 @@
+﻿domain,role,n_valid,min_valid_n,eligible,spearman_C_D,top10_jaccard_C_D,top_k,penalty_mean_role,penalty_mean_calibration,penalty_mean_abs_diff,oos_rows,oos_fraction,pass_spearman,pass_jaccard,pass_penalty_mean,pass_oos,status
+c4,extension_new_records,0,200,0,,,,,,,,,,,,,NOT_PRESENT_IN_EXTENSION
+commoncrawl,extension_new_records,0,200,0,,,,,,,,,,,,,NOT_PRESENT_IN_EXTENSION
+wikipedia,extension_new_records,0,200,0,,,,,,,,,,,,,NOT_PRESENT_IN_EXTENSION

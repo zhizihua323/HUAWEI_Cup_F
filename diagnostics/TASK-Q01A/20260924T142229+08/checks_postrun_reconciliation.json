@@ -1,0 +1,189 @@
+{
+  "run_id": "20260924T142229+08",
+  "task": "TASK-Q01A",
+  "generated_local": "2026-09-24T14:33:54+08:00",
+  "scope": "post-run read-only reconciliation of the seven FAIL entries in checks.json",
+  "raw_inputs_reread": false,
+  "compressed_inputs_reread_for_hash_only": true,
+  "in_run_artifacts_modified": false,
+  "summary": {
+    "n_reconciled": 7,
+    "n_still_failing": 0,
+    "in_run_failure_cause": "check-layer wiring/index-space defects; none of them indicates a data, count or propagation discrepancy"
+  },
+  "results": [
+    {
+      "check_id": "C07_protected_files_unchanged",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "in-run check read ctx[\"snapshot_diff\"] which run_task never populated (wiring defect); the pre-run SHA256 of every protected file is recorded in input_manifest.json",
+      "actual": {
+        "n_files_checked": 111,
+        "sha_changed": [],
+        "missing": []
+      },
+      "expected": "no changed or missing protected file",
+      "evidence": "input_manifest.json secondary_inputs vs current files",
+      "conclusion": "source/config/quality/recovery/task/00-05 files are byte-identical to the pre-run snapshot"
+    },
+    {
+      "check_id": "C08_raw_tree_bytes_mtime_unchanged",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "in-run check read ctx[\"raw_tree_diff\"] which run_task never populated (wiring defect); additionally the in-run pre/post tree walk used Path.rglob and therefore covered 1849/2012 files (163 C8 detailed_results files exceed the legacy MAX_PATH during rglob)",
+      "actual": {
+        "files_on_disk_extended_path": 2012,
+        "files_registered": 2012,
+        "size_mismatch": [],
+        "unregistered": [],
+        "registered_not_on_disk": [],
+        "xz_files": {
+          "A1": {
+            "sha256_now": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+            "sha256_prerun": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+            "bytes_now": 103349792,
+            "bytes_registered": 103349792
+          },
+          "A2_arxiv": {
+            "sha256_now": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+            "sha256_prerun": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+            "bytes_now": 3652724,
+            "bytes_registered": 3652724
+          },
+          "A3_github": {
+            "sha256_now": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+            "sha256_prerun": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+            "bytes_now": 37618172,
+            "bytes_registered": 37618172
+          }
+        },
+        "rglob_covered_files": 1849
+      },
+      "expected": "all registered files present with unchanged size; 3 XZ SHA256 unchanged",
+      "evidence": "raw_source_manifest.csv vs current sizes (extended-path walk) + XZ SHA256 re-read",
+      "conclusion": "raw data unchanged for all 2012 registered files by size; the three permitted XZ inputs are byte-identical by SHA256 re-read after the scan"
+    },
+    {
+      "check_id": "C11_totals_match_prior_audit",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "in-run check used ctx[\"prior_audit\"], but a global text substitution in the patch step also rewrote the assignment ctx[\"prior_audit\"]=... inside run_task, so the check saw an empty default",
+      "actual": {
+        "actual": {
+          "total_records": 272505,
+          "unique_keys": 261086,
+          "duplicate_rows": 11419
+        },
+        "expected": {
+          "total_records": 272505,
+          "unique_keys": 261086,
+          "duplicate_rows": 11419
+        }
+      },
+      "expected": "equal counts",
+      "evidence": "run_summary.json totals vs solution/outputs/quality/audit.json",
+      "conclusion": "counts match exactly"
+    },
+    {
+      "check_id": "C12_file_level_counts_match_prior",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "same missing ctx[\"prior_audit\"] wiring defect as C11; per-file rows/unique/within-file duplicates/overlap rows were cross-checked from run_summary.json and comparison_with_prior.csv instead (an earlier attempt of this reconciliation script wrongly summed n_duplicate over roles, which conflates extension rows that duplicate A1 with duplicates inside the same file)",
+      "actual": {
+        "rows_unique_duplicates_overlap": {
+          "A1": {
+            "rows": 51230,
+            "unique": 51230,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 0
+          },
+          "A2_arxiv": {
+            "rows": 17523,
+            "unique": 17523,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 1419
+          },
+          "A3_github": {
+            "rows": 203752,
+            "unique": 203752,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 10000
+          }
+        },
+        "overlap_role_row_totals": {
+          "A1": 0,
+          "A2_arxiv": 2838,
+          "A3_github": 20000
+        },
+        "expected": {
+          "A1": {
+            "rows": 51230,
+            "unique": 51230,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 0
+          },
+          "A2_arxiv": {
+            "rows": 17523,
+            "unique": 17523,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 1419
+          },
+          "A3_github": {
+            "rows": 203752,
+            "unique": 203752,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 10000
+          }
+        }
+      },
+      "expected": "equal counts",
+      "evidence": "run_summary.json + comparison_with_prior.csv + physical_rows_by_file_role.csv vs prior audit.json",
+      "conclusion": "counts match exactly"
+    },
+    {
+      "check_id": "C13_pairwise_key_intersections_match_prior",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "same missing ctx[\"prior_audit\"] wiring defect as C11",
+      "actual": {
+        "actual": {
+          "A1__A2_arxiv": 1419,
+          "A1__A3_github": 10000,
+          "A2_arxiv__A3_github": 0
+        },
+        "expected": {
+          "A1__A2_arxiv": 1419,
+          "A1__A3_github": 10000,
+          "A2_arxiv__A3_github": 0
+        }
+      },
+      "expected": "equal counts",
+      "evidence": "run_summary.json totals vs prior audit.json pairwise_key_intersections",
+      "conclusion": "counts match exactly"
+    },
+    {
+      "check_id": "C15_row_masks_covers_all_physical_lines",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "in-run check read ctx[\"row_masks_rows\"] which was never set (wiring defect); the independent re-read of row_masks.csv.gz in the same process counted the rows",
+      "actual": {
+        "row_masks_rows_from_reaggregation": 272505,
+        "decompressed_lines": 272505,
+        "parsed_rows": 272505,
+        "unparsed_rows": null
+      },
+      "expected": "equal counts",
+      "evidence": "checks.json reaggregation_counters vs run_summary.json read_counts",
+      "conclusion": "row_masks.csv.gz contains exactly one row per decompressed physical line"
+    },
+    {
+      "check_id": "C23_norm_layer_equals_extract_layer",
+      "postrun_status": "PASS",
+      "in_run_failure_cause": "in-run counter compared (extract_nan & MODEL_feature_bits) with norm_nan directly, i.e. bit j of the 25-feature space against bit j of the 11-feature space; that mixes two different bit orders, so every row with a missing main-Q feature (19 rows) was counted as a mismatch",
+      "actual": {
+        "rows_with_true_mismatch": 0,
+        "norm_nonfinite_non_nan_rows": 0,
+        "mainQ_extract_pm_inf_rows": 0,
+        "parsed_rows_checked": 272505,
+        "examples": []
+      },
+      "expected": "zero true mismatches",
+      "evidence": "row_masks.csv.gz per-feature comparison using the index maps in diagnostic_spec.json",
+      "conclusion": "extraction NaN and normalized NaN agree per main-Q feature; no non-NaN non-finite normalized value"
+    }
+  ]
+}

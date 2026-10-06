@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "source": "B1 only",
+  "formula": "E + A*N_B**(-alpha) + B*D_B**(-beta)",
+  "units": {
+    "N_B": "1e9 parameters",
+    "D_B": "1e9 tokens",
+    "loss": "B1 cross entropy"
+  },
+  "parameters": {
+    "E": 1.6897975629820348,
+    "A": 0.35398032060655715,
+    "B": 1.2403055835426349,
+    "alpha": 0.33997658194108205,
+    "beta": 0.27987812854684485
+  },
+  "observed_ranges": {
+    "N_B": [
+      0.070542,
+      11.965825
+    ],
+    "D_B": [
+      0.134,
+      299.893
+    ]
+  },
+  "model_selection": {
+    "configuration": "point__linear",
+    "criterion": "mean of pooled leave-one-model-out RMSE and last-20%-tokens RMSE; within 1% prefer simpler point-weighted linear loss",
+    "data_use": "all 1176 B1 checkpoints; no random row split; validation-guided choice is exploratory",
+    "comparison_file": "model_comparison.csv"
+  },
+  "bootstrap_percentiles": {
+    "E": {
+      "p2_5": 1.6896796064165815,
+      "median": 1.6898089978159654,
+      "p97_5": 1.6899216658735459
+    },
+    "A": {
+      "p2_5": 0.35384486161414913,
+      "median": 0.3539801072296606,
+      "p97_5": 0.3541157711891072
+    },
+    "B": {
+      "p2_5": 1.2401741687049004,
+      "median": 1.240300267890293,
+      "p97_5": 1.240394913487451
+    },
+    "alpha": {
+      "p2_5": 0.3398737267320493,
+      "median": 0.33997507030965973,
+      "p97_5": 0.34010544124817793
+    },
+    "beta": {
+      "p2_5": 0.27983764455989735,
+      "median": 0.2798837818968136,
+      "p97_5": 0.2799271104910376
+    }
+  },
+  "bootstrap_caution": "Only 8 trajectory clusters; descriptive conditional intervals, not reliable broad population confidence.",
+  "quality_scenario": {
+    "E": 1.6897975629820348,
+    "A": 0.35398032060655715,
+    "B": 1.2403055835426349,
+    "alpha": 0.33997658194108205,
+    "beta": 0.27987812854684485,
+    "k": 3.1917719226071957,
+    "Q_ref": 0.5
+  },
+  "quality_scenario_status": "UNVALIDATED_SCENARIO_ONLY",
+  "quality_assumptions": [
+    "B6 effective-token quality coefficient transfers to B1.",
+    "A-derived Q is mapped to B Q_score; identity mapping is not empirically calibrated.",
+    "Pythia reference corpus is assigned Q_ref=0.5 for scenario anchoring only."
+  ],
+  "not_included": [
+    "A-derived quality scale calibration",
+    "domain mixture transfer",
+    "architecture/family offsets"
+  ],
+  "limitations": [
+    "B1 is labeled real by the attachment manual, but its near-deterministic law signature requires source/transformation verification.",
+    "Extrapolation beyond observed N,D unsupported by B1 alone.",
+    "B2 is half-synthetic and B3 interpolated, neither independent empirical validation.",
+    "B4/B5 cross-family loss comparisons have uncontrolled tokenizer and validation-corpus differences.",
+    "B10 losses are estimates and cannot validate the generating law.",
+    "B8 quality trend must be checked separately."
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "file_id": "A3_github",
+  "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\A_data_value\\slimpajama_quality_extended\\github_part-6777d8857c6e-000275.jsonl.xz",
+  "input_sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+  "bytes": 37618172,
+  "stats": {
+    "rows": 203752,
+    "invalid_json": 0,
+    "domains": {
+      "github": 203752
+    },
+    "id_types": {
+      "str": 203752
+    },
+    "within_file_duplicate_rows": 0,
+    "overlap_a1_rows": 10000,
+    "quality_conflicting_rows": 0,
+    "missing_source_domain_rows": 203752,
+    "fingerprint_errors": 0,
+    "raw_invalid_rows": 1,
+    "raw_nan_element_rows": 1,
+    "raw_nan_elements": 6,
+    "line_count": 203752
+  },
+  "prior_files": [
+    [
+      "A1",
+      51230
+    ],
+    [
+      "A2_arxiv",
+      17523
+    ]
+  ],
+  "seed": 20260924,
+  "split_rule": "int(sha256(str(20260924)+key_json)[:16],16)%5; 0 -> A1_holdout",
+  "content_read": false,
+  "stage": "s12_scan_a3",
+  "rows": 203752,
+  "columns": [
+    "file_id",
+    "source_line",
+    "id_json",
+    "sub_path_json",
+    "key_sha256",
+    "quality_sha256",
+    "domain",
+    "domain_source",
+    "is_unique_first",
+    "overlap_a1",
+    "evaluation_role",
+    "raw_invalid_fields",
+    "raw_anomaly_json",
+    "extract_nan_features",
+    "extract_nonfinite_features",
+    "raw_invalid_count",
+    "extract_nan_count",
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_mean_word_length",
+    "rps_doc_frac_unique_words",
+    "rps_doc_unigram_entropy",
+    "rps_doc_word_count",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_lines_uppercase_letter_fraction",
+    "rps_doc_num_sentences",
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "dsir_books",
+    "dsir_wiki",
+    "dsir_math",
+    "fineweb_edu",
+    "ad_en",
+    "fluency_en",
+    "qurater_writing_style",
+    "qurater_required_expertise",
+    "qurater_facts_trivia",
+    "qurater_educational_value",
+    "modernbert_professionalism",
+    "modernbert_readability",
+    "modernbert_reasoning",
+    "modernbert_cleanliness"
+  ],
+  "parquet": "s12_scan_a3.parquet",
+  "parquet_sha256": "764b5ed69f4353e3a44c4f7f1eaf55f56371e0918bb7803284b3cb186d5a1e5f",
+  "code_fingerprint": "1441ab4dddd7131be108f2f68e9996ba68d82f863933ac95e76edd5111493d08",
+  "config_sha256": "810c97769d743610c8d629c95a8888d28920b1231ba7726b89c9cdf8d4f6a6ca",
+  "written_local": "2026-09-24T21:44:08+08:00"
+}

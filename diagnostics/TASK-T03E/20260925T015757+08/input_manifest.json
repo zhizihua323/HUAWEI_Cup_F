@@ -1,0 +1,129 @@
+{
+  "task": "TASK-T03E",
+  "phase": "phase_b-frozen-validation",
+  "official_input": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+  "official_input_manifest_sha256": "8286c1bc1a887b5fa24b617c9f8e854bb8515f87cdcd51afb9165352693dde66",
+  "entries": [
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+      "purpose": "official row-level input for the candidate computation",
+      "access_status": "read (size and SHA256 verified against the Q01C output manifest)",
+      "bytes": 75668880,
+      "mtime_local": "2026-09-24T21:58:20+08:00",
+      "sha256": "verified against the Q01C output manifest (see EX-01)"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\output_manifest.json",
+      "purpose": "reference for the official input path/size/SHA256",
+      "access_status": "read",
+      "bytes": 9506,
+      "mtime_local": "2026-09-24T21:58:31+08:00",
+      "sha256": "8286c1bc1a887b5fa24b617c9f8e854bb8515f87cdcd51afb9165352693dde66"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08\\diagnostic_spec.json",
+      "purpose": "22->25 feature mapping and evaluation-role definition",
+      "access_status": "read (feature/role definitions only; no diagnostic values used for thresholds)",
+      "bytes": 20905,
+      "mtime_local": "2026-09-24T14:31:56+08:00",
+      "sha256": "ee34520aeebce1ffb965f1ebba9ec3cc2074a7306bb3ebe973fc11730d238127"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\run_config.json",
+      "purpose": "role definitions and Q01C scope reference",
+      "access_status": "available_not_read",
+      "bytes": 1487,
+      "mtime_local": "2026-09-24T21:57:20+08:00",
+      "sha256": "8914d234731cb19a002e3f8e88b2efa53af694f6602d472bcddc5aa9df869203"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\input_manifest.json",
+      "purpose": "Q01C provenance reference",
+      "access_status": "available_not_read",
+      "bytes": 12997,
+      "mtime_local": "2026-09-24T21:57:19+08:00",
+      "sha256": "9bbec78050f0f532e62266fc8f10032d9b7bda004f088e6eff551f88956c647b"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\summary_denominators.csv",
+      "purpose": "cross-check denominators only (not used for freezing)",
+      "access_status": "available_not_read",
+      "bytes": 71201,
+      "mtime_local": "2026-09-24T21:58:24+08:00",
+      "sha256": "f8f913f40b0c00668215964e2e3a3c8f880791a48f5aecb81811f6b368abc163"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\domain_summary.csv",
+      "purpose": "cross-check domain counts only",
+      "access_status": "available_not_read",
+      "bytes": 15340,
+      "mtime_local": "2026-09-24T21:58:24+08:00",
+      "sha256": "788911134f007a6b86448878fbb26ae449525aa9820d7d4be3e2040b822dc8d7"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_baseline_q01c.md",
+      "purpose": "Q01C method description",
+      "access_status": "available_not_read",
+      "bytes": 1719,
+      "mtime_local": "2026-09-24T21:58:27+08:00",
+      "sha256": "84cf909845ba1041e62fc5168706b649bf2b7faa027f16047a75eb30612f331e"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\mixture\\model.json",
+      "purpose": "PHASE B RegMix/Loss identifiability check",
+      "access_status": "read",
+      "bytes": 77379,
+      "mtime_local": "2026-09-24T07:57:03+08:00",
+      "sha256": "3ddd88c26476b5965d507c9b242f7e16ea2fd4e9f33bf81a0e0815b86fda3fed"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\mixture\\aggregate_predictions.csv",
+      "purpose": "PHASE B RegMix/Loss identification check",
+      "access_status": "read",
+      "bytes": 162603,
+      "mtime_local": "2026-09-24T07:57:03+08:00",
+      "sha256": "983845c61c45757e4d899d64f4f9c8abc35cd1793f6dac1a71b71288030ee01e"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+      "purpose": "PHASE B quality-domain to RegMix-domain mapping",
+      "access_status": "read",
+      "bytes": 1296,
+      "mtime_local": "2026-08-31T07:28:20+08:00",
+      "sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\B_scaling_laws\\supplementary_NQ_experiment.csv",
+      "purpose": "PHASE B B-side quality pairing check",
+      "access_status": "read",
+      "bytes": 13670,
+      "mtime_local": "2026-08-31T07:28:20+08:00",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\tasks\\TASK-T03E_预注册规则修正稳定性与适用性验证.md",
+      "purpose": "the single execution order for this task",
+      "access_status": "read",
+      "bytes": 36587,
+      "mtime_local": "2026-09-25T01:38:36+08:00",
+      "sha256": "e2499041766b81eafb0f427577b203af4685db3ebc0bf12b50c7f7e042b57b92"
+    },
+    {
+      "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\tasks\\TASK-T03_完整质量体系与14项规则DSIR融合方法设计.md",
+      "purpose": "parent design document",
+      "access_status": "available_not_read",
+      "bytes": 34608,
+      "mtime_local": "2026-09-25T01:08:38+08:00",
+      "sha256": "f854bf7d2890e5fa58a452f80295e3793308076349b4bdd2bf97e238047d4a50"
+    },
+    {
+      "path": "F题/** raw A1/A2/A3 archives",
+      "purpose": "permanently prohibited input for this task",
+      "access_status": "not_read (never opened, stat-ed or hashed in this run)"
+    }
+  ],
+  "access_log": "access_log.jsonl (canonical per-access record with column projection and role filter)",
+  "note": "input_manifest.json is refreshed at the end of PHASE B to record the actual access status; the preflight snapshot metadata_preflight/input_manifest_preflight.json is frozen by the seal",
+  "generated_local": "2026-09-25T01:58:16+08:00",
+  "pid": 8228
+}

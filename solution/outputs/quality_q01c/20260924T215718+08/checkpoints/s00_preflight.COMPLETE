@@ -1,0 +1,11 @@
+{
+  "stage": "s00_preflight",
+  "completed_local": "2026-09-24T21:57:20+08:00",
+  "outputs": {
+    "input_manifest.json": "9bbec78050f0f532e62266fc8f10032d9b7bda004f088e6eff551f88956c647b",
+    "environment.json": "575eb6ef3024119da4db9a6d38a760cb6ad7276963e214fe729d25e2c1189a0d",
+    "old_artifacts_before.json": "d5e9c024b4936b263af33eba530d4dca7e3a5f33cf9504b6d45b789d0b756582",
+    "changes.csv": "c7e3d8f8107ec1f295ab6bd652aa853dc40878cbcdb1127da93f46a6570b3683",
+    "code_snapshot/code_snapshot_manifest.json": "71fa75bb1e7c8d996bb6b65442bf0199364f700162efb6dc9a253f7ac1d08a71"
+  }
+}

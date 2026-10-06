@@ -1,0 +1,1 @@
+图 4 | Q2 B1 来源内拟合与分来源外部验证资格。a，冻结 M0_B1 在 B1 来源内的观测与拟合；支持框为 N_B∈[0.070542,11.965825]、D_B∈[0.134,299.893]，单位分别为十亿参数和十亿 token。b，B2–B5 的全部有效预测行按来源绘制，实心圆为支持内、空心方形为 OOS；各来源不合并计算 RMSE。c，逐来源支持内/OOS 记录数和最终资格。B2、B4、B5 为 VALIDATION_FAILED；B3 为同源 Pythia 插值下的 VALIDATION_SUPPORTED，不是独立复制；B9 无观测 Loss，仅 OOS_STRESS_ONLY；B10 的 Loss 为估算参考，仅 ESTIMATED_SCENARIO_ONLY。

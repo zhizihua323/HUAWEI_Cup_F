@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "protected_B_manifest_current",
+      "status": "PASS",
+      "detail": "mismatch_count=0"
+    },
+    {
+      "check": "protected_B_R1_manifest_current",
+      "status": "PASS",
+      "detail": "mismatch_count=0"
+    },
+    {
+      "check": "protected_P_manifest_current",
+      "status": "PASS",
+      "detail": "mismatch_count=0"
+    },
+    {
+      "check": "scenario_registry_exact_21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_scenario_cartesian_expansion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "R1_all_four_pass",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "primary_contract_frozen_null",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "bridge_not_identifiable",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MQ_add_source_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MQ_eff_boundary_sensitivity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B8_conflict_parallel",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "joint_Q_p_forbidden",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "q_A_star_exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "units_for_compute_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B1_parameters_byte_source_consistent",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MQ_add_parameter_slots_filled",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "direction_only_scenarios_non_numeric",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_full_loss_fabricated",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_joint_Q_p_enabled",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "summary_matches_contract",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "integration_contains_no_model_fit",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

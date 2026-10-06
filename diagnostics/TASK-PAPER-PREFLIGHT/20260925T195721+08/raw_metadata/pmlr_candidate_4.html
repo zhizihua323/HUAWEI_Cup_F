@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Search Engine Info --><title>Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling</title><meta name="description" content="Pythia: A Suite for Analyzing Large Language Models Across Training and ScalingStella Biderman,&nbsp;Hailey Schoelkopf,&nbsp;Quentin Gregory Anthony,&nbsp;He..."><!-- Solution from http://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard -->
+<script src="https://proceedings.mlr.press/v202/assets/js/copy_input.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://proceedings.mlr.press/v202/assets/js/download.js"></script>
+<meta name="citation_publisher" content="PMLR"/><meta name="citation_title" content="Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"/><meta name="citation_language" content="en"/>
+<meta name="citation_abstract_html_url" content="https://proceedings.mlr.press/v202/biderman23a.html"/><meta name="citation_pdf_url" content="https://proceedings.mlr.press/v202/biderman23a/biderman23a.pdf"><meta name="citation_firstpage" content="2397"><meta name="citation_lastpage" content="2430"><meta name="citation_author" content="Stella Biderman"><meta name="citation_author" content="Hailey Schoelkopf"><meta name="citation_author" content="Quentin Gregory Anthony"><meta name="citation_author" content="Herbie Bradley"><meta name="citation_author" content="Kyle O’Brien"><meta name="citation_author" content="Eric Hallahan"><meta name="citation_author" content="Mohammad Aflah Khan"><meta name="citation_author" content="Shivanshu Purohit"><meta name="citation_author" content="Usvsn Sai Prashanth"><meta name="citation_author" content="Edward Raff"><meta name="citation_author" content="Aviya Skowron"><meta name="citation_author" content="Lintang Sutawika"><meta name="citation_author" content="Oskar Van Der Wal"><meta name="citation_publication_date" content="2023/07/03"><meta name="citation_inbook_title" content="International Conference on Machine Learning"/><meta name="citation_conference_title" content="International Conference on Machine Learning"/><meta name="citation_issn" content="2640-3498"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"/><meta name="twitter:site" content="@MLResearchPress" /><meta name="twitter:description" content="How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, ..."/><meta name="twitter:image" content="https://proceedings.mlr.press/v202/assets/images/logo-pmlr.png"/>
+<meta name="twitter:image:alt" content="PMLR Logo"/><meta property="og:title" content="Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"/>
+<meta property="og:description" content="How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce <em>Pythia</em>, a suite of..."/>
+<meta property="og:type" content="article"/><meta property="article:published_time" content="2023-07-03T00:00:00+00:00"><meta property="og:url" content="https://proceedings.mlr.press/v202/biderman23a.html"/><meta property="og:image" content="https://proceedings.mlr.press/v202/assets/images/logo-pmlr.png"/><meta property="og:site_name" content="PMLR"/><!-- Style Info -->
+  <link rel="stylesheet" type="text/css" href="https://proceedings.mlr.press/v202/assets/css/pmlr.css" />
+  <style>.hero-text {
+    color: #303030;
+  }</style>
+
+  <!-- Icon Info -->
+  <link rel="shortcut icon" href="https://proceedings.mlr.press/v202/assets/images/favicon-pmlr.ico" type="image/x-icon">
+  <link rel="icon" href="https://proceedings.mlr.press/v202/assets/images/favicon-pmlr.ico" type="image/x-icon">
+
+  <!-- Feed Info --><link type="application/atom+xml" rel="alternate" href="https://proceedings.mlr.press/v202/feed.xml" title="Proceedings of Machine Learning Research" /><!-- Scripting info --><!-- Solution from http://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard -->
+<script src="https://proceedings.mlr.press/v202/assets/js/copy_input.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://proceedings.mlr.press/v202/assets/js/download.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92432422-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <!-- User custom header -->
+</head>
+
+
+
+
+
+
+<body>
+
+
+<header class="site-header">
+  <div class="wrapper">
+    
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <a href="/" target="_top"><img src="/v202/assets/images/logo-pmlr.svg" alt="[International Conference on Machine Learning Logo]"></a>
+    Proceedings of Machine Learning Research
+  </div>
+</div>
+
+
+    <nav class="site-nav">
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger">
+  <span class="menu-icon"><svg viewBox="0 0 18 15" width="18px" height="15px">
+  <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+</svg>
+</span>
+  </label>
+  <div class="trigger"><a class="page-link" href="https://proceedings.mlr.press/v202/">Volume 202</a><a class="page-link" href="https://www.jmlr.org/">JMLR</a> 
+    <a class="page-link" href="https://data.mlr.press/">DMLR</a> 
+    <a class="page-link" href="https://jmlr.org/tmlr/">TMLR</a> 
+    <a class="page-link" href="https://www.jmlr.org/mloss">MLOSS</a>
+    <a class="page-link" href="/faq.html">FAQ</a>
+    <a class="page-link" href="/spec.html">Submission Format</a>
+    <a class="page-link" href="https://proceedings.mlr.press//v202/assets/rss/feed.xml">
+      <img src="https://proceedings.mlr.press/v202/assets/images/RSS.gif" class="rss" alt="RSS Feed">
+    </a>
+  </div>
+</nav>
+
+  </div>
+</header>
+
+
+
+
+
+<main class="page-content" aria-label="Content"><div class="wrapper">
+
+
+<p style="text-align:right">[<a href="https://github.com/mlresearch/v202/edit/gh-pages/_posts/2023-07-03-biderman23a.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/mlresearch/v202/edit/gh-pages/_posts/2023-07-03-biderman23a.md', 13);">edit</a>]</p>
+
+<article class="post-content">
+  <h1>Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling</h1><span class="authors">Stella Biderman,&nbsp;Hailey Schoelkopf,&nbsp;Quentin Gregory Anthony,&nbsp;Herbie Bradley,&nbsp;Kyle O’Brien,&nbsp;Eric Hallahan,&nbsp;Mohammad Aflah Khan,&nbsp;Shivanshu Purohit,&nbsp;Usvsn Sai Prashanth,&nbsp;Edward Raff,&nbsp;Aviya Skowron,&nbsp;Lintang Sutawika,&nbsp;Oskar Van Der Wal</span>
+<div id="info"><i>Proceedings of the 40th International Conference on Machine Learning</i>,&nbsp;PMLR 202:2397-2430,&nbsp;2023.
+  </div> <!-- info -->
+  
+  <h4>Abstract</h4>
+  <div id="abstract" class="abstract">
+    How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce <em>Pythia</em>, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend <em>Pythia</em> to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at https://github.com/EleutherAI/pythia.
+  </div>
+  <h4>Cite this Paper</h4>
+<hr class="bibhr">
+
+<div class="bibbuttongroup row row--justified">
+  <div class="bibbuttontext column">
+    BibTeX
+  </div>
+  <div class="column">
+  <div class="codebox">
+    <code class="citecode" id="bibtex">@InProceedings{pmlr-v202-biderman23a,
+  title = 	 {Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling},
+  author =       {Biderman, Stella and Schoelkopf, Hailey and Anthony, Quentin Gregory and Bradley, Herbie and O'Brien, Kyle and Hallahan, Eric and Khan, Mohammad Aflah and Purohit, Shivanshu and Prashanth, Usvsn Sai and Raff, Edward and Skowron, Aviya and Sutawika, Lintang and Van Der Wal, Oskar},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {2397--2430},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/biderman23a/biderman23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/biderman23a.html},
+  abstract = 	 {How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce <em>Pythia</em>, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend <em>Pythia</em> to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at https://github.com/EleutherAI/pythia.}
+}
+</code>
+  </div>
+  <button class="button"  id="button-bibtex1" onclick="CopyToClipboard('bibtex');  ga('send', 'event', 'Ref Copy', 'CopyToClipboard', '/v202/pmlr-v202-biderman23a.bib', 15);">Copy to Clipboard</button>
+  <button class="button" id="button-bibtex2" onclick="DownloadTexToFile('pmlr-v202-biderman23a.bib', 'bibtex'); ga('send', 'event', 'Ref Downloads', 'Download', '/v202/pmlr-v202-biderman23a.bib', 16);">Download</button>
+  </div>
+</div>
+
+
+<div class="bibbuttongroup row row--justified">
+  <div class="bibbuttontext column">
+    Endnote
+  </div>
+  <div class="column">
+  <div class="codebox">
+    <code class="citecode" id="endnote">%0 Conference Paper
+%T Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling
+%A Stella Biderman
+%A Hailey Schoelkopf
+%A Quentin Gregory Anthony
+%A Herbie Bradley
+%A Kyle O’Brien
+%A Eric Hallahan
+%A Mohammad Aflah Khan
+%A Shivanshu Purohit
+%A Usvsn Sai Prashanth
+%A Edward Raff
+%A Aviya Skowron
+%A Lintang Sutawika
+%A Oskar Van Der Wal
+%B Proceedings of the 40th International Conference on Machine Learning
+%C Proceedings of Machine Learning Research
+%D 2023
+%E Andreas Krause
+%E Emma Brunskill
+%E Kyunghyun Cho
+%E Barbara Engelhardt
+%E Sivan Sabato
+%E Jonathan Scarlett	
+%F pmlr-v202-biderman23a
+%I PMLR
+%P 2397--2430
+%U https://proceedings.mlr.press/v202/biderman23a.html
+%V 202
+%X How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce <em>Pythia</em>, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend <em>Pythia</em> to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at https://github.com/EleutherAI/pythia.
+</code>
+  </div>
+  <button class="button"  id="button-endnote1" onclick="CopyToClipboard('endnote');  ga('send', 'event', 'Ref Copy', 'CopyToClipboard', '/v202/pmlr-v202-biderman23a.enw', 15);">Copy to Clipboard</button>
+  <button class="button" id="button-endnote2" onclick="DownloadTexToFile('pmlr-v202-biderman23a.enw', 'endnote'); ga('send', 'event', 'Ref Downloads', 'Download', '/v202/pmlr-v202-biderman23a.enw', 16);">Download</button>
+  </div>
+</div>
+
+
+
+<div class="bibbuttongroup row row--justified">
+  <div class="bibbuttontext column">
+    APA
+  </div>
+  <div class="column">
+  <div class="codebox">
+    <code class="citecode" id="apa">Biderman, S., Schoelkopf, H., Anthony, Q.G., Bradley, H., O’Brien, K., Hallahan, E., Khan, M.A., Purohit, S., Prashanth, U.S., Raff, E., Skowron, A., Sutawika, L. & Van Der Wal, O.. (2023). Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. <i>Proceedings of the 40th International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i> 202:2397-2430 Available from https://proceedings.mlr.press/v202/biderman23a.html.
+
+</code>
+  </div>
+  <button class="button"  id="button-apa1" onclick="CopyToClipboard('apa');  ga('send', 'event', 'Ref Copy', 'CopyToClipboard', '/v202/pmlr-v202-biderman23a.txt', 15);">Copy to Clipboard</button>
+  <button class="button" id="button-apa2" onclick="DownloadTexToFile('pmlr-v202-biderman23a.txt', 'apa'); ga('send', 'event', 'Ref Downloads', 'Download', '/v202/pmlr-v202-biderman23a.txt', 16);">Download</button>
+  </div>
+</div>
+
+<hr class="bibhr">
+
+
+  
+  <h4>Related Material</h4>
+  <div id="extras">
+    <ul>
+      <li><a href="https://proceedings.mlr.press/v202/biderman23a/biderman23a.pdf" target="_blank" onclick="ga('send', 'event', 'PDF Downloads', 'Download', 'https://proceedings.mlr.press/v202/biderman23a/biderman23a.pdf', 10);">Download PDF</a></li>
+      <li><a href="https://openreview.net/forum?id=bpRTAnJ8LW" target="_blank" onclick="ga('send', 'event', 'OpenReview site', 'Openreview', 'https://openreview.net/forum?id=bpRTAnJ8LW', 10);">OpenReview</a></li>
+    </ul>
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>This site last compiled Thu, 29 May 2025 08:55:19 +0000</p>
+      <div class="footer-left"><i><a href="https://github.com/mlresearch/v202">Github Account</a></i>
+      </div>
+      <div class="footer-right">Copyright &copy; <a href="https://proceedings.mlr.press">The authors and PMLR</a> 2025.<a href="https://twitter.com/MLResearchPress"><i class="icon-twitter"></i>&nbsp;MLResearchPress</a></div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
+

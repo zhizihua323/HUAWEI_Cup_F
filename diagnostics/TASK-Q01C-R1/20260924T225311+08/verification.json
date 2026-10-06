@@ -1,0 +1,623 @@
+{
+  "run_id": "20260924T225311+08",
+  "task": "TASK-Q01C-R1",
+  "generated_local": "2026-09-24T22:53:25+08:00",
+  "summary": {
+    "n_checks": 16,
+    "n_pass": 15,
+    "n_fail": 1,
+    "n_not_checked": 0,
+    "n_not_verifiable": 0
+  },
+  "checks": [
+    {
+      "check_id": "R01_distinct_processes",
+      "description": "P1 and P2 executed in two distinct OS processes sharing one run directory",
+      "status": "PASS",
+      "actual": {
+        "p1_pid": 28584,
+        "p2_pid": 19792,
+        "harness_pid": 3060,
+        "same_run_dir": true
+      },
+      "expected": {
+        "p1_pid != p2_pid": true
+      },
+      "evidence": "resume_evidence.json / termination_evidence.json",
+      "note": ""
+    },
+    {
+      "check_id": "R02_p1_external_termination",
+      "description": "P1 was terminated by the supervisor after its first checkpoint marker appeared",
+      "status": "PASS",
+      "actual": {
+        "hold_hook_seen": true,
+        "exit_code": 1,
+        "last_valid_checkpoint": {
+          "stage": "s10_scan_a1",
+          "payload_sha256": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+          "meta_sha256": "df965a06fbc313ee46e08b8543f187eb1d918a2d8d93b4809ef200765c31e69c",
+          "checkpoint_marker_sha256": "3ed7b0fb91e4b12e8cf8548fc52c24a4df289d9a7ee3eb5202e8704ce570110d",
+          "stage_marker_sha256": "84594b6dbab308347416b7d72b0a1403080f8a6afb298362f9d6eebff875e330"
+        }
+      },
+      "expected": {
+        "hold_hook_seen": true
+      },
+      "evidence": "interruption_run/process_1/termination_evidence.json",
+      "note": ""
+    },
+    {
+      "check_id": "R03_no_rescan_of_completed_stage",
+      "description": "P2 added zero scan passes for the stage that P1 had already checkpointed; the two later files are scanned exactly once by P2 (they were never scanned by P1)",
+      "status": "PASS",
+      "actual": {
+        "new_passes_in_p2": {
+          "A1": 0,
+          "A2_arxiv": 1,
+          "A3_github": 1
+        },
+        "a1_new_passes": 0,
+        "p1_scan_pid": 28584,
+        "before": {
+          "A1": 1
+        },
+        "after": {
+          "A1": 1,
+          "A2_arxiv": 1,
+          "A3_github": 1
+        },
+        "reuse_events": 0
+      },
+      "expected": {
+        "A1 new passes in P2": 0,
+        "A2/A3 first scanned by P2": 1
+      },
+      "evidence": "scan_counters.json (before/after P2); per-file semantics",
+      "note": ""
+    },
+    {
+      "check_id": "R04_checkpoint_hash_invariant",
+      "description": "the P1 checkpoint payload/metadata/markers keep identical hashes across P2",
+      "status": "PASS",
+      "actual": {
+        "before": {
+          "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+          "meta": "df965a06fbc313ee46e08b8543f187eb1d918a2d8d93b4809ef200765c31e69c",
+          "checkpoint_marker": "3ed7b0fb91e4b12e8cf8548fc52c24a4df289d9a7ee3eb5202e8704ce570110d",
+          "stage_marker": "84594b6dbab308347416b7d72b0a1403080f8a6afb298362f9d6eebff875e330"
+        },
+        "after": {
+          "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+          "meta": "df965a06fbc313ee46e08b8543f187eb1d918a2d8d93b4809ef200765c31e69c",
+          "checkpoint_marker": "3ed7b0fb91e4b12e8cf8548fc52c24a4df289d9a7ee3eb5202e8704ce570110d",
+          "stage_marker": "84594b6dbab308347416b7d72b0a1403080f8a6afb298362f9d6eebff875e330"
+        }
+      },
+      "expected": {
+        "identical": true
+      },
+      "evidence": "checkpoint_manifest.json / resume_evidence.json",
+      "note": ""
+    },
+    {
+      "check_id": "R05_checkpoint_protocol",
+      "description": "v2 checkpoint marker and stage marker are separate files with a valid hash chain (including S20/S30/S40)",
+      "status": "PASS",
+      "actual": {
+        "details": [
+          {
+            "stage": "s10_scan_a1",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 600,
+            "ok": true
+          },
+          {
+            "stage": "s11_scan_a2",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 30,
+            "ok": true
+          },
+          {
+            "stage": "s12_scan_a3",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 30,
+            "ok": true
+          },
+          {
+            "stage": "s20_score_primary",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 660,
+            "ok": true
+          },
+          {
+            "stage": "s30_sensitivity",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 660,
+            "ok": true
+          },
+          {
+            "stage": "s40_summarize",
+            "files_present": true,
+            "distinct_marker_names": true,
+            "payload_sha_matches": true,
+            "marker_binds_meta": true,
+            "checkpoint_kind": "checkpoint",
+            "stage_kind": "stage",
+            "input_sha256": true,
+            "config_sha256": true,
+            "code_fingerprint": true,
+            "rows": 660,
+            "ok": true
+          }
+        ]
+      },
+      "expected": {
+        "all_ok": true
+      },
+      "evidence": "independent re-hash of checkpoints/",
+      "note": ""
+    },
+    {
+      "check_id": "R06_stage_event_completeness",
+      "description": "every stage of the synthetic run has a start event and exactly one terminal event",
+      "status": "PASS",
+      "actual": {
+        "started": {
+          "s00_preflight": true,
+          "s01_synthetic_tests": true,
+          "s10_scan_a1": true,
+          "s11_scan_a2": true,
+          "s12_scan_a3": true,
+          "s20_score_primary": true,
+          "s30_sensitivity": true,
+          "s40_summarize": true,
+          "s50_verify": true,
+          "s60_finalize": true
+        },
+        "terminal": {
+          "s00_preflight": [
+            "complete"
+          ],
+          "s01_synthetic_tests": [
+            "complete"
+          ],
+          "s10_scan_a1": [
+            "complete"
+          ],
+          "s11_scan_a2": [
+            "complete"
+          ],
+          "s12_scan_a3": [
+            "complete"
+          ],
+          "s20_score_primary": [
+            "complete"
+          ],
+          "s30_sensitivity": [
+            "complete"
+          ],
+          "s40_summarize": [
+            "complete"
+          ],
+          "s50_verify": [
+            "complete"
+          ],
+          "s60_finalize": [
+            "complete"
+          ]
+        }
+      },
+      "expected": {
+        "all stages single terminal": true
+      },
+      "evidence": "synthetic run stage_status.jsonl",
+      "note": ""
+    },
+    {
+      "check_id": "R07_stage_seconds_and_skips",
+      "description": "stage_seconds covers every executed stage; every stage is accounted for as executed, reused from a validated checkpoint, or explicitly SKIPPED",
+      "status": "PASS",
+      "actual": {
+        "executed": [
+          "s11_scan_a2",
+          "s12_scan_a3",
+          "s20_score_primary",
+          "s30_sensitivity",
+          "s40_summarize",
+          "s50_verify"
+        ],
+        "executed_with_seconds": [
+          "s11_scan_a2",
+          "s12_scan_a3",
+          "s20_score_primary",
+          "s30_sensitivity",
+          "s40_summarize",
+          "s50_verify"
+        ],
+        "reused": [
+          "s00_preflight",
+          "s01_synthetic_tests",
+          "s10_scan_a1"
+        ],
+        "skipped": {},
+        "stage_seconds_keys": [
+          "s11_scan_a2",
+          "s12_scan_a3",
+          "s20_score_primary",
+          "s30_sensitivity",
+          "s40_summarize",
+          "s50_verify"
+        ]
+      },
+      "expected": {
+        "executed covered; executed+reused+skipped == all stages": true
+      },
+      "evidence": "synthetic run run_summary.json",
+      "note": ""
+    },
+    {
+      "check_id": "R08_command_log",
+      "description": "actual commands recorded for the harness, P1, P2, probe and stage demos",
+      "status": "PASS",
+      "actual": {
+        "roles": [
+          "probe_process",
+          "process_1",
+          "process_2",
+          "r1_harness",
+          "stage_demo_s00_preflight",
+          "stage_demo_s01_synthetic_tests",
+          "stage_demo_s10_scan_a1",
+          "stage_scope_demo"
+        ]
+      },
+      "expected": {
+        "required roles": [
+          "process_1",
+          "process_2",
+          "probe_process",
+          "r1_harness"
+        ]
+      },
+      "evidence": "command_log.json",
+      "note": ""
+    },
+    {
+      "check_id": "R09_no_real_input_access",
+      "description": "the synthetic run and harness reference only fixture inputs (A1-A3 access counters are 0)",
+      "status": "PASS",
+      "actual": {
+        "opened": 0,
+        "hashed": 0,
+        "decompressed": 0,
+        "stat_calls": 0,
+        "note": "the harness and pipeline only ever reference the synthetic fixture directory in this test"
+      },
+      "expected": {
+        "all zero": true
+      },
+      "evidence": "resume_evidence.json / input_manifest.json",
+      "note": ""
+    },
+    {
+      "check_id": "R10_fixture_run_checks",
+      "description": "the synthetic run finished with its own independent fixture verification at 0 FAIL",
+      "status": "PASS",
+      "actual": {
+        "fixture_checks": {
+          "n_checks": 14,
+          "n_pass": 14,
+          "n_fail": 0,
+          "n_not_checked": 0
+        },
+        "status": "COMPLETE_PENDING_REVIEW"
+      },
+      "expected": {
+        "n_fail": 0,
+        "status": "COMPLETE_PENDING_REVIEW"
+      },
+      "evidence": "synthetic run checks.json",
+      "note": ""
+    },
+    {
+      "check_id": "R11_synthetic_manifest",
+      "description": "the synthetic run manifest is internally consistent after finalize",
+      "status": "PASS",
+      "actual": {
+        "files": 65,
+        "mismatches": []
+      },
+      "expected": {
+        "mismatches": []
+      },
+      "evidence": "interruption_run/synthetic_run/output_manifest.json",
+      "note": ""
+    },
+    {
+      "check_id": "R12_extension_isolation",
+      "description": "extension-role mutation leaves the calibration parameter set bit-identical and the gate still hard-stops",
+      "status": "PASS",
+      "actual": {
+        "status": "PASS",
+        "identical": true,
+        "provenance": true,
+        "hard_stop": true,
+        "role_counts": {
+          "A1_calibration": 200,
+          "A1_holdout": 30,
+          "extension_overlap_A1": 20,
+          "extension_new_records": 20
+        }
+      },
+      "expected": {
+        "status": "PASS"
+      },
+      "evidence": "extension_isolation_test.json",
+      "note": ""
+    },
+    {
+      "check_id": "R13_stage_scope_behaviour",
+      "description": "--stage refuses to run without prerequisites and executes only the selected stage",
+      "status": "FAIL",
+      "actual": {
+        "missing_prereq": {
+          "command": [
+            "D:\\anaconda\\python.exe",
+            "-X",
+            "utf8",
+            "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+            "--run-id",
+            "missing_prereq",
+            "--out-root",
+            "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\interruption_run\\stage_demo_missing_prereq",
+            "--fixture-dir",
+            "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\synthetic_fixture",
+            "--stage",
+            "s20_score_primary"
+          ],
+          "exit_code": 6,
+          "missing_prerequisites": [
+            {
+              "stage": "s10_scan_a1",
+              "reason": "stage marker missing"
+            },
+            {
+              "stage": "s11_scan_a2",
+              "reason": "stage marker missing"
+            },
+            {
+              "stage": "s12_scan_a3",
+              "reason": "stage marker missing"
+            }
+          ],
+          "status": "FAILED"
+        },
+        "single_stage_runs": [
+          {
+            "stage": "s00_preflight",
+            "command": [
+              "D:\\anaconda\\python.exe",
+              "-X",
+              "utf8",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+              "--run-id",
+              "single_stage",
+              "--out-root",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\interruption_run\\stage_demo_single_stage",
+              "--fixture-dir",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\synthetic_fixture",
+              "--stage",
+              "s00_preflight"
+            ],
+            "exit_code": 0,
+            "run_summary_copy": "run_summary_s00_preflight.json",
+            "executed_stages": [
+              "s00_preflight"
+            ],
+            "reused_stages": {},
+            "skipped_stages": {
+              "s01_synthetic_tests": "not executed (stage plan: s00_preflight)",
+              "s10_scan_a1": "not executed (stage plan: s00_preflight)",
+              "s11_scan_a2": "not executed (stage plan: s00_preflight)",
+              "s12_scan_a3": "not executed (stage plan: s00_preflight)",
+              "s20_score_primary": "not executed (stage plan: s00_preflight)",
+              "s30_sensitivity": "not executed (stage plan: s00_preflight)",
+              "s40_summarize": "not executed (stage plan: s00_preflight)",
+              "s50_verify": "not executed (stage plan: s00_preflight)",
+              "s60_finalize": "not executed (stage plan: s00_preflight)"
+            }
+          },
+          {
+            "stage": "s01_synthetic_tests",
+            "command": [
+              "D:\\anaconda\\python.exe",
+              "-X",
+              "utf8",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+              "--run-id",
+              "single_stage",
+              "--out-root",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\interruption_run\\stage_demo_single_stage",
+              "--fixture-dir",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\synthetic_fixture",
+              "--stage",
+              "s01_synthetic_tests",
+              "--resume"
+            ],
+            "exit_code": 0,
+            "run_summary_copy": "run_summary_s01_synthetic_tests.json",
+            "executed_stages": [
+              "s01_synthetic_tests"
+            ],
+            "reused_stages": {},
+            "skipped_stages": {
+              "s00_preflight": "not executed (stage plan: s01_synthetic_tests)",
+              "s10_scan_a1": "not executed (stage plan: s01_synthetic_tests)",
+              "s11_scan_a2": "not executed (stage plan: s01_synthetic_tests)",
+              "s12_scan_a3": "not executed (stage plan: s01_synthetic_tests)",
+              "s20_score_primary": "not executed (stage plan: s01_synthetic_tests)",
+              "s30_sensitivity": "not executed (stage plan: s01_synthetic_tests)",
+              "s40_summarize": "not executed (stage plan: s01_synthetic_tests)",
+              "s50_verify": "not executed (stage plan: s01_synthetic_tests)",
+              "s60_finalize": "not executed (stage plan: s01_synthetic_tests)"
+            }
+          },
+          {
+            "stage": "s10_scan_a1",
+            "command": [
+              "D:\\anaconda\\python.exe",
+              "-X",
+              "utf8",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+              "--run-id",
+              "single_stage",
+              "--out-root",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\interruption_run\\stage_demo_single_stage",
+              "--fixture-dir",
+              "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\synthetic_fixture",
+              "--stage",
+              "s10_scan_a1",
+              "--resume"
+            ],
+            "exit_code": 0,
+            "run_summary_copy": "run_summary_s10_scan_a1.json",
+            "executed_stages": [
+              "s10_scan_a1"
+            ],
+            "reused_stages": {},
+            "skipped_stages": {
+              "s00_preflight": "not executed (stage plan: s10_scan_a1)",
+              "s01_synthetic_tests": "not executed (stage plan: s10_scan_a1)",
+              "s11_scan_a2": "not executed (stage plan: s10_scan_a1)",
+              "s12_scan_a3": "not executed (stage plan: s10_scan_a1)",
+              "s20_score_primary": "not executed (stage plan: s10_scan_a1)",
+              "s30_sensitivity": "not executed (stage plan: s10_scan_a1)",
+              "s40_summarize": "not executed (stage plan: s10_scan_a1)",
+              "s50_verify": "not executed (stage plan: s10_scan_a1)",
+              "s60_finalize": "not executed (stage plan: s10_scan_a1)"
+            }
+          }
+        ]
+      },
+      "expected": {
+        "missing_prereq exit 6, single stage scope limited": true
+      },
+      "evidence": "interruption_run/stage_scope_demo.json",
+      "note": ""
+    },
+    {
+      "check_id": "R14_probe_behaviour",
+      "description": "--probe-resume produced a read-only eligibility report naming the reusable stages",
+      "status": "PASS",
+      "actual": {
+        "exit_code": 0,
+        "reused_stages": [
+          "s00_preflight",
+          "s01_synthetic_tests",
+          "s10_scan_a1"
+        ]
+      },
+      "expected": {
+        "reused includes s00/s01/s10": true
+      },
+      "evidence": "interruption_run/process_probe/",
+      "note": ""
+    },
+    {
+      "check_id": "R15_formal_run_manifest",
+      "description": "the frozen TASK-Q01C run still matches its own 56-entry manifest",
+      "status": "PASS",
+      "actual": {
+        "n_files": 56,
+        "mismatches": [],
+        "status": "COMPLETE_PENDING_REVIEW",
+        "checks": {
+          "n_checks": 20,
+          "n_pass": 20,
+          "n_fail": 0,
+          "n_not_checked": 0
+        }
+      },
+      "expected": {
+        "n_files": 56,
+        "mismatches": [],
+        "status": "COMPLETE_PENDING_REVIEW",
+        "checks": {
+          "n_fail": 0
+        }
+      },
+      "evidence": "solution/outputs/quality_q01c/20260924T215718+08/",
+      "note": ""
+    },
+    {
+      "check_id": "R16_protected_runs_unchanged",
+      "description": "the formal run, the seven earlier runs, old quality outputs and Q01A/R1 evidence are byte-identical before and after R1",
+      "status": "PASS",
+      "actual": {
+        "changed": [],
+        "removed": [],
+        "added": [],
+        "n_files_compared": 476,
+        "hash_scope": "sha256 for files <= 8 MiB; size+mtime for all"
+      },
+      "expected": {
+        "changed": [],
+        "removed": [],
+        "added": []
+      },
+      "evidence": "protected_artifacts_before.json vs protected_artifacts_after.json",
+      "note": ""
+    }
+  ],
+  "independent_of_pipeline_module": true,
+  "key_metrics": {
+    "p1_pid": 28584,
+    "p2_pid": 19792,
+    "new_passes_in_p2_total": 2,
+    "checkpoint_hash_invariant": true,
+    "synthetic_run_status": "COMPLETE_PENDING_REVIEW",
+    "formal_run_files_matching": 56,
+    "formal_run_files_total": 56
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "run_id": "20260924T214129+08",
+  "generated_local": "2026-09-24T21:44:25+08:00",
+  "gates": {
+    "n_valid_min": 100,
+    "coverage_min": 0.95,
+    "n_unique_finite_min": 2
+  },
+  "source_scope": "A1_calibration & is_unique_first",
+  "a3_github_rule": "github parameter must come from A1_calibration/github; no fallback",
+  "parameters": [
+    {
+      "domain": "commoncrawl",
+      "feature": "modernbert_professionalism",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "commoncrawl",
+      "candidate_rows": 7691,
+      "n_valid": 7688,
+      "coverage": 0.9996099336887271,
+      "n_unique_finite": 5,
+      "median": 0.4,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=commoncrawl); no holdout/extension/global fallback permitted"
+    },
+    {
+      "domain": "github",
+      "feature": "modernbert_professionalism",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "github",
+      "candidate_rows": 7963,
+      "n_valid": 7963,
+      "coverage": 1.0,
+      "n_unique_finite": 5,
+      "median": 0.8,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=github); no holdout/extension/global fallback permitted"
+    },
+    {
+      "domain": "wikipedia",
+      "feature": "modernbert_professionalism",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "wikipedia",
+      "candidate_rows": 8023,
+      "n_valid": 8023,
+      "coverage": 1.0,
+      "n_unique_finite": 5,
+      "median": 0.4,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=wikipedia); no holdout/extension/global fallback permitted"
+    },
+    {
+      "domain": "wikipedia",
+      "feature": "modernbert_reasoning",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "wikipedia",
+      "candidate_rows": 8023,
+      "n_valid": 8013,
+      "coverage": 0.9987535834475881,
+      "n_unique_finite": 6,
+      "median": 0.2,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=wikipedia); no holdout/extension/global fallback permitted"
+    }
+  ],
+  "all_gates_passed": true,
+  "applied_imputation_counts": {
+    "modernbert_professionalism": {
+      "imputed_records": 6,
+      "by_domain": {
+        "commoncrawl": 4,
+        "github": 1,
+        "wikipedia": 1
+      },
+      "by_role": {
+        "A1_calibration": 3,
+        "A1_holdout": 2,
+        "extension_new_records": 1
+      }
+    },
+    "modernbert_reasoning": {
+      "imputed_records": 13,
+      "by_domain": {
+        "wikipedia": 13
+      },
+      "by_role": {
+        "A1_calibration": 10,
+        "A1_holdout": 3
+      }
+    }
+  },
+  "imputed_records_total": 19,
+  "imputed_records_with_any_fill": 19
+}

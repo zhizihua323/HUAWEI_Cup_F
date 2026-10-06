@@ -1,0 +1,176 @@
+{
+  "run_id": "20260925T195721+08",
+  "generated_at_utc": "2026-09-25T12:11:18.262697+00:00",
+  "scope": "read-only inputs for paper preflight",
+  "reference_paper_boundary": "Only organization and layout were inspected; its text, numbers, models, figures and conclusions must not be copied.",
+  "items": [
+    {
+      "path": "tasks/TASK-PAPER-PREFLIGHT_参考文献与成品结构.md",
+      "role": "task_contract",
+      "exists": true,
+      "bytes": 6224,
+      "sha256": "5bbf046a26e44d9dc32a6ebe5b7a2a3e6c975cba254b188c3e6f83e7e51d7363"
+    },
+    {
+      "path": "F题/算力约束下提升大语言模型能力的资源配置建模.docx",
+      "role": "problem_statement",
+      "exists": true,
+      "bytes": 36267,
+      "sha256": "51c86a4aae8fb794409c1ec11571ee486ada143c0125bc3265a48abe71910eb7"
+    },
+    {
+      "path": "F题/数据说明.pdf",
+      "role": "data_documentation",
+      "exists": true,
+      "bytes": 635267,
+      "sha256": "f9070ca95d4b61845505559faa0b03831a8d044f5e9cc3d5a5b4cf62157aee13"
+    },
+    {
+      "path": "附件2：“华为杯”第二十三届中国研究生数学建模竞赛论文格式规范.docx",
+      "role": "official_format",
+      "exists": true,
+      "bytes": 93167,
+      "sha256": "46d2e2a87e90608ace764203d5326d7c7e41f01a5eb79986724a6f159fd70e16"
+    },
+    {
+      "path": "附件3：“华为杯”第二十三届中国研究生数学建模竞赛论文模板.doc",
+      "role": "official_template",
+      "exists": true,
+      "bytes": 894976,
+      "sha256": "195b06cf670ec1aeb796bfd07e6d3e98e36d16db119308dcf4d0756319fe2e29"
+    },
+    {
+      "path": "附件4：“华为杯”第二十三届中国研究生数学建模竞赛人工智能工具及输出使用规定.docx",
+      "role": "official_ai_policy",
+      "exists": true,
+      "bytes": 18523,
+      "sha256": "5922c1f92530c88eab3214e67de981aeda195c27d5b583ddc2380ee24db0e539"
+    },
+    {
+      "path": "paper/manuscript/FULL_MANUSCRIPT_V1.md",
+      "role": "frozen_input_copy_not_modified",
+      "exists": true,
+      "bytes": 72340,
+      "sha256": "3e649ea11c5d1d3feffd42a6c5aec0c270dc911f4819f0edfed5701a91405876"
+    },
+    {
+      "path": "paper/manuscript/Q1_Q2_STABLE_BODY.md",
+      "role": "stable_body",
+      "exists": true,
+      "bytes": 39886,
+      "sha256": "700349f5dd20e93fcc0e14f61b07ab7be4b0dd60a81a417294ac592e4b6204ad"
+    },
+    {
+      "path": "paper/manuscript/Q3_STABLE_BODY.md",
+      "role": "stable_body",
+      "exists": true,
+      "bytes": 17266,
+      "sha256": "3bc4c413552a71dfcd3c857836c2904468238c587d406ca7e27d44dfe176098b"
+    },
+    {
+      "path": "paper/manuscript/Q4_STABLE_BODY.md",
+      "role": "stable_body",
+      "exists": true,
+      "bytes": 9420,
+      "sha256": "b751ad95b7ffc67c585cc0431e3cacd2eb00d6b0bf4aca7d53d9ab2217e67099"
+    },
+    {
+      "path": "paper/T06_RESULT_FREEZE.md",
+      "role": "result_freeze",
+      "exists": true,
+      "bytes": 2990,
+      "sha256": "dd34f802a6f940065864b30312fdc436549d8b7a3da215bece4131db6182efad"
+    },
+    {
+      "path": "paper/T07_RESULT_FREEZE.md",
+      "role": "result_freeze",
+      "exists": true,
+      "bytes": 4000,
+      "sha256": "c96b481932daedfac92ef0e45fd17f2938cec6f26cf7e7a991baa46ab4c8b86b"
+    },
+    {
+      "path": "paper/T05_RESULT_FREEZE.md",
+      "role": "result_freeze",
+      "exists": true,
+      "bytes": 2415,
+      "sha256": "984b4e771d1d193eaf8f87c83f6d5784b634ef7960d4763a428bfd6fd45bb0ed"
+    },
+    {
+      "path": "paper/T08_RESULT_FREEZE.md",
+      "role": "result_freeze",
+      "exists": true,
+      "bytes": 4404,
+      "sha256": "67d7ae79ea25df01c76c809bc0874a52485b954d406d607b7c33e219ee28b08d"
+    },
+    {
+      "path": "paper/FINAL_RESULT_INDEX.md",
+      "role": "result_index",
+      "exists": true,
+      "bytes": 2348,
+      "sha256": "ab726cb1c215990bc9784ffdec53a4d68d0f33d484820119bcbbcf2d72a653de"
+    },
+    {
+      "path": "audit/FINAL_PROJECT_STATE.md",
+      "role": "project_state",
+      "exists": true,
+      "bytes": 5759,
+      "sha256": "1ab95bb6225baafcfe21d2da8d7ee6a1595889c1405ac06bb9f762b13f86ebee"
+    },
+    {
+      "path": "audit/QUESTION_REQUIREMENT_COVERAGE.md",
+      "role": "requirement_coverage",
+      "exists": true,
+      "bytes": 11962,
+      "sha256": "dc8d0017624a77154960ebf4a6b41ab96041cf8192b12eda8a4f695d6e90844b"
+    },
+    {
+      "path": "audit/FINAL_RESULT_SOURCE_OF_TRUTH.md",
+      "role": "source_of_truth",
+      "exists": true,
+      "bytes": 5438,
+      "sha256": "586fcfefff8bcd59bf25670b6cdb70cf57e4ee5c2edcbfd7bba97a4c7f92cd96"
+    },
+    {
+      "path": "audit/FINAL_ACTION_PLAN.md",
+      "role": "action_plan",
+      "exists": true,
+      "bytes": 3872,
+      "sha256": "b4fe8b98c2a9642990e04548d02325965f4eed83700f7c9e4579356cc71e51dd"
+    },
+    {
+      "path": "paper/manuscript/FINAL_FIGURE_TABLE_PLAN.md",
+      "role": "figure_table_plan",
+      "exists": true,
+      "bytes": 4469,
+      "sha256": "9738c2484116ee892b3650815060849e5b7ff678e03831a7fcdc9b09e1b3de43"
+    },
+    {
+      "path": "paper/manuscript/FINAL_CLAIM_EVIDENCE_AUDIT.md",
+      "role": "claim_evidence_audit",
+      "exists": true,
+      "bytes": 7164,
+      "sha256": "a98ab45e06f48fbc176d83d1f60660867b4374d911aedc7e6d6e268a5cf5fca4"
+    },
+    {
+      "path": "paper/data_sources.md",
+      "role": "data_source_map",
+      "exists": true,
+      "bytes": 12015,
+      "sha256": "16bbb6636ac070b8e8f57725bdcf1df283e847c64b657acd556d2ef46e4d1b4d"
+    },
+    {
+      "path": "paper/figure_table_registry.md",
+      "role": "legacy_asset_registry",
+      "exists": true,
+      "bytes": 9573,
+      "sha256": "ff8dbf2d98d0f2bd3fc92e365597fbc26b9640f9a7536d5b59f3fcac84e579b0"
+    },
+    {
+      "path": "参考资料/2026华为杯研赛F题成品参考论文！.pdf",
+      "role": "form_and_layout_reference_only",
+      "exists": true,
+      "bytes": 7626486,
+      "sha256": "e6205f40ce3b8f278bf0ebded26f2fb030394935ae719469a35199b21fb3656b"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:115: RuntimeWarning: overflow encountered in power
+  phi_prime = -np.sum(suf ** 2 / denom**3) / p_norm
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:154: RuntimeWarning: divide by zero encountered in scalar divide
+  ratio = phi / phi_prime
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:115: RuntimeWarning: invalid value encountered in scalar divide
+  phi_prime = -np.sum(suf ** 2 / denom**3) / p_norm
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:398: RuntimeWarning: invalid value encountered in cast
+  return min_step, np.equal(steps, min_step) * np.sign(s).astype(int)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:283: RuntimeWarning: overflow encountered in dot
+  a = np.dot(v, v)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:285: RuntimeWarning: overflow encountered in dot
+  a += np.dot(s * diag, s)
+D:\anaconda\Lib\site-packages\scipy\optimize\_lsq\common.py:320: RuntimeWarning: invalid value encountered in multiply
+  y = t * (a * t + b) + c
+{"source": "B6", "model": "M0_6", "parameter": "alpha", "n": 42, "skipped": 0}

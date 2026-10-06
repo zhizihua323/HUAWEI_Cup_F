@@ -1,0 +1,18 @@
+{
+  "generated_local": "2026-09-25T02:00:40+08:00",
+  "first_holdout_read_time": "2026-09-25T02:00:40.710+08:00",
+  "freeze_manifest_sha256": "bdb3edc11637853f4e5488aad37fd1afae8d2a3c96532088a3c424dc810aa93f",
+  "holdout_status": "ACCEPT_STABILITY",
+  "files": [
+    {
+      "path": "holdout_validation.csv",
+      "bytes": 717,
+      "sha256": "cae3e095ae22ea767bceeab9248e9486ccc242a3492a852d3f67989d55494348"
+    },
+    {
+      "path": "holdout_summary.json",
+      "bytes": 2626,
+      "sha256": "0c1b7636079526489329103c6ae7f57ab0a1806f4c2e5f1319d77465ff3395cb"
+    }
+  ]
+}

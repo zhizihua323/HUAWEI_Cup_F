@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/TVzmLj+6iRQf/yYoLKucAdoZl+0</id>
+  <title>arXiv Query: search_query=ti:"MuSR"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-25T11:58:24Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:%22MuSR%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>66</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1204.2920v1</id>
+    <title>The 10 Tesla muSR instrument: detector solutions</title>
+    <updated>2012-04-13T08:51:29Z</updated>
+    <link href="https://arxiv.org/abs/1204.2920v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1204.2920v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Solutions to the detector system of the High-Field muSR instrument at the Paul Scherrer Institut (PSI) in Switzerland are presented. The strict technical requirements are fulfilled through the application of Geiger-mode Avalanche Photodiodes.</summary>
+    <category term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-04-13T08:51:29Z</published>
+    <arxiv:comment>6 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.ins-det"/>
+    <arxiv:journal_ref>Physics Procedia 30 (2012) 7</arxiv:journal_ref>
+    <author>
+      <name>A. Stoykov</name>
+    </author>
+    <author>
+      <name>R. Scheuermann</name>
+    </author>
+    <author>
+      <name>K. Sedlak</name>
+    </author>
+    <author>
+      <name>J. Rodriguez</name>
+    </author>
+    <author>
+      <name>U. Greuter</name>
+    </author>
+    <author>
+      <name>A. Amato</name>
+    </author>
+    <arxiv:doi>10.1016/j.phpro.2012.04.028</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.phpro.2012.04.028" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0905.4414v1</id>
+    <title>NMR and muSR in Highly Frustrated Magnets</title>
+    <updated>2009-05-27T13:36:31Z</updated>
+    <link href="https://arxiv.org/abs/0905.4414v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0905.4414v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We present a brief overview on some of the most significant achievements obtained by means of NMR and muSR techniques in highly frustrated magnets. First the basic quantities measured by the two techniques will be presented and their connection to the microscopic static and dynamical spin susceptibility recalled. Then the main findings will be outlined, starting from the most simple frustrated units, the molecular nanomagnets, to artificially built frustrated systems as $^{3}$He on graphite, to magnets with a macroscopically degenerate ground-state as the ones on a pyrochlore or kagomé lattices.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2009-05-27T13:36:31Z</published>
+    <arxiv:comment>26 pages, 18 figures, to appear as a chapter of the book "Highly Frustrated Megnetism" Eds. C. Lacroix, P. Mendels and F. Mila</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <author>
+      <name>Pietro Carretta</name>
+    </author>
+    <author>
+      <name>Amit Keren</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0207704v1</id>
+    <title>MuSR and SQUID Investigation of Superconductivity in (NH_3)_0.75NaK_2C_60</title>
+    <updated>2002-07-30T10:38:57Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0207704v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0207704v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  The family of superconducting fullerides (NH_3)_xNaK_2C_60 shows an anomalous correlation between T_c and lattice parameter. To better understand the origin of this anomaly we have studied a representative x=0.75 compound using SQUID magnetometry and MuSR spectroscopy. The lower critical field H_c1, measured by the trapped magnetization method, is less than 1 G, a very small value as compared with that of other fullerides. Muon spin depolarization in the superconducting phase shows also quite small local field inhomogeneities, of the order of those arising from nuclear dipolar fields. On the other hand, the 40 T value for H_c2, as extracted from magnetometry data, is comparable to that of other fullerides. We show that these observations cannot be rationalized within the framework of the Ginzburg-Landau theory of superconductivity. Instead, the anomalous magnetic properties could be interpreted taking into account the role played by polaronic instabilities in this material.</summary>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-07-30T10:38:57Z</published>
+    <arxiv:comment>7 pages, 6 figures, RevTex4, submitted to Phys. Rev. B</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.supr-con"/>
+    <arxiv:journal_ref>Phys. Rev. B 67, 024519 (2003)</arxiv:journal_ref>
+    <author>
+      <name>M. Ricco</name>
+    </author>
+    <author>
+      <name>T. Shiroka</name>
+    </author>
+    <author>
+      <name>E. Zannoni</name>
+    </author>
+    <author>
+      <name>F. Barbieri</name>
+    </author>
+    <author>
+      <name>C. Bucci</name>
+    </author>
+    <author>
+      <name>F. Bolzoni</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.67.024519</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.67.024519" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0211142v1</id>
+    <title>muSR study of carbon-doped MgB2 superconductors</title>
+    <updated>2002-11-07T19:26:51Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0211142v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0211142v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  The evolution of the superconducting properties of the carbon-doped MgB2 superconductors, MgB(2-x)Cx (x= 0.02, 0.04, 0.06) have been investigated by the transverse-field muon spin rotation (TF-muSR) technique. The low-temperature depolarisation rate, sigma(0) at 0.6 T which is proportional to the second moment of the field distribution of the vortex lattice decreases monotonically with increasing electron doping and decreasing Tc. In addition, the temperature dependence of sigma(T) has been analysed in terms of a two-gap model. The size of the two superconducting gaps decreases linearly as the carbon content increases, while the doping effect is more pronounced for the smaller gap related to the 3D pi-sheets of the Fermi surface.</summary>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-11-07T19:26:51Z</published>
+    <arxiv:comment>7 pages, 2 Figures, 1 Table, Europhys. Lett. in press</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.supr-con"/>
+    <author>
+      <name>K. Papagelis</name>
+      <arxiv:affiliation>University of Sussex</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Arvanitidis</name>
+      <arxiv:affiliation>University of Sussex</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Prassides</name>
+      <arxiv:affiliation>University of Sussex</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Schenck</name>
+      <arxiv:affiliation>ETH Zurich</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Takenobu</name>
+      <arxiv:affiliation>University of Tohoku</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Iwasa</name>
+      <arxiv:affiliation>University of Tohoku</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1209/epl/i2003-00102-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1209/epl/i2003-00102-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1802.07334v1</id>
+    <title>Multigap superconductivity in RbCa2Fe4As4F2 investigated using muSR measurements</title>
+    <updated>2018-02-19T17:17:42Z</updated>
+    <link href="https://arxiv.org/abs/1802.07334v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1802.07334v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The superconducting properties of the recently discovered double Fe$_2$As$_2$ layered high-$T_c$ superconductor RbCa$_2$Fe$_4$As$_4$F$_2$ with $T_c\approx$ 30~K have been investigated using magnetization, heat capacity, transverse-field (TF) and zero-field (ZF) muon-spin rotation/relaxation ($μ$SR) measurements. Our low field magnetization measurements and heat capacity (C$_p$) reveal an onset of bulk superconductivity with $T_{\bf c}\sim$ 30.0(4) K. Furthermore, the heat capacity exhibits a jump at $T_{\bf c}$ of $Δ$C$_p$/$T_{\bf c}$=94.6 (mJ/mole-K$^2$) and no clear effect of applied magnetic fields was observed on C$_p$(T) up to 9 T between 2 K and 5 K. Our analysis of the TF-$μ$SR results shows that the temperature dependence of the magnetic penetration depth is better described by a two-gap model, either isotropic $s$+$s$-wave or $s$+$d$-wave than a single gap isotropic $s$-wave or $d$-wave model for the superconducting gap. The presence of two superconducting gaps in RbCa$_2$Fe$_4$As$_4$F$_2$ suggests a multiband nature of the superconductivity, which is consistent with the multigap superconductivity observed in other Fe-based superconductors, including ACa$_2$Fe$_4$As$_4$F$_2$ (A=K and Cs). Furthermore, from our TF-$μ$SR study we have estimated an in-plane penetration depth $λ_{\mathrm{ab}}$$(0)$ =231.5(3) nm, superconducting carrier density $n_s = 7.45 \times 10^{26}~ $m$^{-3}$, and carrier's effective-mass $m^*$ = 2.45\textit{m}$_{e}$. Our ZF $μ$SR measurements do not reveal a clear sign of time reversal symmetry breaking at $T_{\bf c}$, but the temperature dependent relaxation between 150 K and 1.2 K might indicate the presence of spin-fluctuations. The results of our present study have been compared with those reported for other Fe pnictide superconductors.</summary>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-02-19T17:17:42Z</published>
+    <arxiv:comment>10 pages, 7 figures. arXiv admin note: text overlap with arXiv:1706.03641</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.supr-con"/>
+    <arxiv:journal_ref>J. Phys. Soc. Jpn. 87, 124705 (2018)</arxiv:journal_ref>
+    <author>
+      <name>D. T Adroja</name>
+    </author>
+    <author>
+      <name>F. K. K. Kirschner</name>
+    </author>
+    <author>
+      <name>F. Lang</name>
+    </author>
+    <author>
+      <name>M. Smidman</name>
+    </author>
+    <author>
+      <name>A. D. Hillier</name>
+    </author>
+    <author>
+      <name>Zhi-Cheng Wang</name>
+    </author>
+    <author>
+      <name>Guang-Han Cao</name>
+    </author>
+    <author>
+      <name>G. B. G. Stenning</name>
+    </author>
+    <author>
+      <name>S. J. Blundell</name>
+    </author>
+    <arxiv:doi>10.7566/JPSJ.87.124705</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.7566/JPSJ.87.124705" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1105.1083v1</id>
+    <title>muSR investigation of magnetism and magnetoelectric coupling in Cu2OSeO3</title>
+    <updated>2011-05-05T14:22:32Z</updated>
+    <link href="https://arxiv.org/abs/1105.1083v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1105.1083v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A detailed zero and transverse field (ZF&amp;TF) muon spin rotation (muSR) investigation of magnetism and the magneto-electric coupling in Cu2OSeO3 is reported. An internal magnetic field B_int(T=0) = 85.37(25) mT was found, in agreement with a ferrimagnetic state below Tc = 57.0(1) K. The temperature dependence of the magnetic order parameter is well described by the relation B_int = B(0)(1-(T/Tc)^2)^b with an effective exponent b = 0.39(1) which is close to the critical exponent B ~ 1/3 for a three dimensional (3D) magnetic system. Just above Tc the muon relaxation rate follows the power low λ(T)\propto (T/Tc - 1)^ωwith ω= 1.06(9), which is characteristic for 3D ferromagnets. Measurements of B_int(T) with and without an applied electrostatic field E = 1.66 x 10^5 V/m suggest a possible electric field effect of magnitude ΔBv = Bv(0 V)-Bv(500 V) = - 0.4(4) mT.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-05-05T14:22:32Z</published>
+    <arxiv:comment>7 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <author>
+      <name>A. Maisuradze</name>
+    </author>
+    <author>
+      <name>Z. Guguchia</name>
+    </author>
+    <author>
+      <name>B. Graneli</name>
+    </author>
+    <author>
+      <name>H. M. Ronnow</name>
+    </author>
+    <author>
+      <name>H. Berger</name>
+    </author>
+    <author>
+      <name>H. Keller</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.84.064433</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.84.064433" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0206250v3</id>
+    <title>muSR linewidth and isotropic pairing in superconducting PrOs4Sb12</title>
+    <updated>2002-09-18T22:59:34Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0206250v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0206250v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Transverse-field muon spin rotation measurements in the vortex-lattice mixed state of the heavy-fermion (HF) superconductor PrOs4Sb12 yield a temperature dependence of the penetration depth indicative of an isotropic or nearly isotropic energy gap. This is not seen to date in any other HF superconductor and is a signature of isotropic pairing symmetry, possibly related to a novel nonmagnetic "quadrupolar Kondo" HF mechanism in PrOs4Sb12. The T = 0 relaxation rate σ_s(0) = 0.91(1) μs^-1 yields an estimated penetration depth λ(0) = 3440(20) Å, which is considerably shorter than in other HF superconductors.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-06-13T21:21:35Z</published>
+    <arxiv:comment>4 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <author>
+      <name>D. E. MacLaughlin</name>
+    </author>
+    <author>
+      <name>J. E. Sonier</name>
+    </author>
+    <author>
+      <name>R. H. Heffner</name>
+    </author>
+    <author>
+      <name>O. O. Bernal</name>
+    </author>
+    <author>
+      <name>B. -L. Young</name>
+    </author>
+    <author>
+      <name>M. S. Rose</name>
+    </author>
+    <author>
+      <name>G. D. Morris</name>
+    </author>
+    <author>
+      <name>E. D. Bauer</name>
+    </author>
+    <author>
+      <name>T. D. Lo</name>
+    </author>
+    <author>
+      <name>M. B. Maple</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.89.157001</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.89.157001" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0207462v1</id>
+    <title>muSR in Ce_{1-x}La_xAl_3: anisotropic Kondo effect?</title>
+    <updated>2002-07-18T17:32:58Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0207462v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0207462v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Zero-field muSR experiments in the heavy-fermion alloys Ce_{1-x}La_xAl_3, x = 0 and 0.2, examine a recent proposal that the system exhibits a strong anisotropic Kondo effect. We resolve a damped oscillatory component for both La concentrations, indicative of disordered antiferromagnetism. For x = 0.2 the oscillation frequency decreases smoothly with increasing temperature, and vanishes at the specific heat anomaly temperature T* \approx 2.2 K. Our results are consistent with the view that T* is due to a magnetic transition rather than anisotropic Kondo behavior.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-07-18T17:32:58Z</published>
+    <arxiv:comment>5 pages, 2 figures. To be published in proceedings of musr2002 (Physica B)</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <author>
+      <name>D. E. MacLaughlin</name>
+    </author>
+    <author>
+      <name>M. S. Rose</name>
+    </author>
+    <author>
+      <name>B. -L. Young</name>
+    </author>
+    <author>
+      <name>O. O. Bernal</name>
+    </author>
+    <author>
+      <name>R. H. Heffner</name>
+    </author>
+    <author>
+      <name>G. J. Nieuwenhuys</name>
+    </author>
+    <author>
+      <name>R. Pietri</name>
+    </author>
+    <author>
+      <name>B. Andraka</name>
+    </author>
+    <arxiv:doi>10.1016/S0921-4526(02)01639-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0921-4526(02)01639-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.03641v1</id>
+    <title>Multigap superconductivity in ThAsFeN investigated using muSR measurements</title>
+    <updated>2017-06-09T08:12:07Z</updated>
+    <link href="https://arxiv.org/abs/1706.03641v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.03641v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We have investigated the superconducting ground state of the newly discovered superconductor ThFeAsN with a tetragonal layered crystal structure using resistivity, magnetization, heat capacity and transverse-field (TF) muon-spin rotation ($μ$SR) measurements. Our resistivity and magnetization measurements reveal an onset of bulk superconductivity with $T_{\bf c}\sim$ 30 K. The heat capacity results show a very small anomaly, $Δ$C$_{ele}$$\sim$0.214 (J/mol-K) at $T_{\bf c}\sim$ 30 K and exhibits exponential behavior below $T_{\bf c}$, which fits better to two superconducting gaps rather than a single gap. Further a nonlinear magnetic field dependence of the electronic specific heat coefficient $γ$(H) has been found in the low temperature limit, which indicates that the smaller energy gap is nodal. Our analysis of the TF-$μ$SR results shows that the temperature dependence of the superfluid density is better described by a two-gap model either isotropic $s$+$s$-wave or $s$+$d$-wave than a single gap isotropic $s$-wave model for the superconducting gap, consistent with other Fe-based superconductors. The combine $γ$(H) and TF-$μ$SR results confirm $s$+$d$-wave model for the gap structure of ThFeAsN. The observation of two gaps in ThFeAsN suggests multiband nature of the superconductivity possibly arising from the d-bands of Fe ions. Furthermore, from our TF-$μ$SR study we have estimated the magnetic penetration depth, in the polycrystalline sample, of $λ_{\mathrm{L}}$$(0)$ = 375 nm, superconducting carrier density $n_s = 4.6 \times 10^{27}~ $m$^{-3}$, and carrier's effective-mass $m^*$ = 2.205\textit{m}$_{e}$. We will compare the results of our present study with those reported for the Fe-pnictide family of superconductors.</summary>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-09T08:12:07Z</published>
+    <arxiv:comment>8 pages, 5 figures. arXiv admin note: text overlap with arXiv:1602.06976</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.supr-con"/>
+    <arxiv:journal_ref>Phys. Rev. B 96, 144502 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Devashibhai Adroja</name>
+    </author>
+    <author>
+      <name>Amitava Bhattacharyya</name>
+    </author>
+    <author>
+      <name>Pabitra Kumar Biswas</name>
+    </author>
+    <author>
+      <name>Michael Smidman</name>
+    </author>
+    <author>
+      <name>Adrian Hillier</name>
+    </author>
+    <author>
+      <name>Huican Mao</name>
+    </author>
+    <author>
+      <name>Huiqian Luo</name>
+    </author>
+    <author>
+      <name>Guang-Han Cao</name>
+    </author>
+    <author>
+      <name>Zhicheng Wang</name>
+    </author>
+    <author>
+      <name>Cao Wang</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.96.144502</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.96.144502" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1007.3814v1</id>
+    <title>MuSR method and tomographic probability representation of spin states</title>
+    <updated>2010-07-22T07:45:01Z</updated>
+    <link href="https://arxiv.org/abs/1007.3814v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1007.3814v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Muon spin rotation/relaxation/resonance (MuSR) technique for studying matter structures is considered by means of a recently introduced probability representation of quantum spin states. A relation between experimental MuSR histograms and muon spin tomograms is established. Time evolution of muonium, anomalous muonium, and a muonium-like system is studied in the tomographic representation. Entanglement phenomenon of a bipartite muon-electron system is investigated via tomographic analogues of Bell number and positive partial transpose (PPT) criterion. Reconstruction of the muon-electron spin state as well as the total spin tomography of composed system is discussed.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.other" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.atom-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-07-22T07:45:01Z</published>
+    <arxiv:comment>20 pages, 4 figures, LaTeX, submitted to Journal of Russian Laser Research</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Journal of Russian Laser Research 31 (2010) 421-442</arxiv:journal_ref>
+    <author>
+      <name>Yu. M. Belousov</name>
+    </author>
+    <author>
+      <name>S. N. Filippov</name>
+    </author>
+    <author>
+      <name>V. N. Gorelkin</name>
+    </author>
+    <author>
+      <name>V. I. Man'ko</name>
+    </author>
+    <arxiv:doi>10.1007/s10946-010-9164-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10946-010-9164-0" title="doi"/>
+  </entry>
+</feed>
+

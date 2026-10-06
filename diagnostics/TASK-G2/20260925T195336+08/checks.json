@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T195336+08",
+  "status": "PASS",
+  "summary": {
+    "total": 18,
+    "pass": 18,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "check": "frozen_M0_B1_parameters_exact",
+      "pass": true
+    },
+    {
+      "check": "no_new_model_fit_or_selection",
+      "pass": true,
+      "detail": "execution computes predictions only; no optimizer/fit call"
+    },
+    {
+      "check": "support_evaluated_without_clipping",
+      "pass": true
+    },
+    {
+      "check": "B2_and_B3_both_executed",
+      "pass": true
+    },
+    {
+      "check": "B2_or_B3_nonempty_comparable_validation",
+      "pass": true,
+      "detail": "value checked below"
+    },
+    {
+      "check": "B4_and_B5_kept_separate",
+      "pass": true
+    },
+    {
+      "check": "B9_and_B10_gt10b_audited",
+      "pass": true
+    },
+    {
+      "check": "B10_not_used_as_truth",
+      "pass": true
+    },
+    {
+      "check": "no_global_cross_source_RMSE",
+      "pass": true,
+      "detail": "one pooled RMSE across all sources is absent"
+    },
+    {
+      "check": "Q_and_p_not_independent",
+      "pass": true
+    },
+    {
+      "check": "T07_numeric_input_decision_is_NO",
+      "pass": true
+    },
+    {
+      "check": "protected_T06_T07_hashes_unchanged",
+      "pass": true
+    },
+    {
+      "check": "all_execution_outputs_present",
+      "pass": true
+    },
+    {
+      "check": "independent_verifier_all_pass",
+      "pass": true,
+      "detail": "55/55 PASS"
+    },
+    {
+      "check": "code_snapshot_matches_code",
+      "pass": true,
+      "detail": "all *.py byte-identical"
+    },
+    {
+      "check": "candidate_freeze_generated_after_verification",
+      "pass": true,
+      "detail": "paper/Q2_GAP_RESULT_FREEZE.md"
+    },
+    {
+      "check": "T07_impact_is_NO",
+      "pass": true
+    },
+    {
+      "check": "required_files_present_before_manifest",
+      "pass": true
+    }
+  ],
+  "manifest_policy": "output_manifest.json is written after this file and after all other registered outputs."
+}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.716535pt" height="234pt" viewBox="0 0 467.716535 234" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-26T12:48:38.216520</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 234 
+L 467.716535 234 
+L 467.716535 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 64.989213 105.91776 
+L 124.435984 105.91776 
+Q 129.873189 105.91776 129.873189 103.21506 
+L 129.873189 62.85474 
+Q 129.873189 60.15204 124.435984 60.15204 
+L 64.989213 60.15204 
+Q 59.552008 60.15204 59.552008 62.85474 
+L 59.552008 103.21506 
+Q 59.552008 105.91776 64.989213 105.91776 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #f1f1ef; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 137.485276 105.91776 
+L 196.932047 105.91776 
+Q 202.369252 105.91776 202.369252 103.21506 
+L 202.369252 62.85474 
+Q 202.369252 60.15204 196.932047 60.15204 
+L 137.485276 60.15204 
+Q 132.048071 60.15204 132.048071 62.85474 
+L 132.048071 103.21506 
+Q 132.048071 105.91776 137.485276 105.91776 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #e7eef2; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 209.981339 105.91776 
+L 269.42811 105.91776 
+Q 274.865315 105.91776 274.865315 103.21506 
+L 274.865315 62.85474 
+Q 274.865315 60.15204 269.42811 60.15204 
+L 209.981339 60.15204 
+Q 204.544134 60.15204 204.544134 62.85474 
+L 204.544134 103.21506 
+Q 204.544134 105.91776 209.981339 105.91776 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #e7eef2; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 282.477402 105.91776 
+L 341.924173 105.91776 
+Q 347.361378 105.91776 347.361378 103.21506 
+L 347.361378 62.85474 
+Q 347.361378 60.15204 341.924173 60.15204 
+L 282.477402 60.15204 
+Q 277.040197 60.15204 277.040197 62.85474 
+L 277.040197 103.21506 
+Q 277.040197 105.91776 282.477402 105.91776 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #e7eef2; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 354.973465 105.91776 
+L 414.420236 105.91776 
+Q 419.857441 105.91776 419.857441 103.21506 
+L 419.857441 62.85474 
+Q 419.857441 60.15204 414.420236 60.15204 
+L 354.973465 60.15204 
+Q 349.53626 60.15204 349.53626 62.85474 
+L 349.53626 103.21506 
+Q 349.53626 105.91776 354.973465 105.91776 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #e7eef2; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 120.08622 179.79156 
+L 359.323228 179.79156 
+Q 363.672992 179.79156 363.672992 177.6294 
+L 363.672992 139.7916 
+Q 363.672992 137.62944 359.323228 137.62944 
+L 120.08622 137.62944 
+Q 115.736457 137.62944 115.736457 139.7916 
+L 115.736457 177.6294 
+Q 115.736457 179.79156 120.08622 179.79156 
+z
+" clip-path="url(#p67cfe344af)" style="fill: #f6ecec; stroke: #9f3d3d; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(70.712598 80.588025)">数据整理</text>
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(70.712598 93.4974)">统一口径</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 129.33584 83.0349 
+Q 130.959677 83.0349 131.241872 83.0349 
+" style="fill: none; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 126.441872 80.6349 
+L 131.241872 83.0349 
+L 126.441872 85.4349 
+z
+" style="fill: #3f6f8f; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(149.208661 80.480213)">问题一</text>
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(137.208661 93.277088)">质量与配比</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 201.831903 83.0349 
+Q 203.45574 83.0349 203.737935 83.0349 
+" style="fill: none; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 198.937935 80.6349 
+L 203.737935 83.0349 
+L 198.937935 85.4349 
+z
+" style="fill: #3f6f8f; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(221.704724 80.367713)">问题二</text>
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(215.704724 93.389588)">标度建模</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 274.327966 83.0349 
+Q 275.951803 83.0349 276.233998 83.0349 
+" style="fill: none; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 271.433998 80.6349 
+L 276.233998 83.0349 
+L 271.433998 85.4349 
+z
+" style="fill: #3f6f8f; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(294.200787 80.367713)">问题三</text>
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(288.200787 93.389588)">预算优化</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 346.824029 83.0349 
+Q 348.447866 83.0349 348.730061 83.0349 
+" style="fill: none; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 343.930061 80.6349 
+L 348.730061 83.0349 
+L 343.930061 85.4349 
+z
+" style="fill: #3f6f8f; stroke: #3f6f8f; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(366.69685 80.367713)">问题四</text>
+    <text style="font-size: 12px; font-family: 'SimSun'" transform="translate(354.69685 93.389588)">能力与情景</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'SimSun'; text-anchor: middle; fill: #9f3d3d" x="239.704724" y="162.718313" transform="rotate(-0 239.704724 162.718313)">全过程保留适用范围与证据资格</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 169.036107 106.37494 
+Q 203.458159 121.774256 237.063761 136.808318 
+" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 233.66231 132.657399 
+L 237.063761 136.808318 
+L 231.702155 137.038928 
+z
+" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 239.704724 107.556712 
+Q 239.704724 121.77207 239.704724 135.093 
+" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 242.104724 130.293 
+L 239.704724 135.093 
+L 237.304724 130.293 
+z
+" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 310.373341 106.37494 
+Q 275.95129 121.774256 242.345687 136.808318 
+" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 247.707293 137.038928 
+L 242.345687 136.808318 
+L 245.747139 132.657399 
+z
+" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 382.74551 105.993883 
+Q 312.200752 121.773608 242.528852 137.358088 
+" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 247.73699 138.65242 
+L 242.528852 137.358088 
+L 246.689201 133.968177 
+z
+" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'SimSun'; text-anchor: middle; fill: #777777" x="239.704724" y="195.6474" transform="rotate(-0 239.704724 195.6474)">建模、验证、优化与情景分析共享同一结果口径</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p67cfe344af">
+   <rect x="58.464567" y="28.08" width="362.480315" height="180.18"/>
+  </clipPath>
+ </defs>
+</svg>

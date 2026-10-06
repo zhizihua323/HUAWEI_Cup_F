@@ -1,0 +1,117 @@
+{
+  "task_id": "TASK-T08",
+  "run_id": "20260925T142203+0800",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "forecast_origin": "2025-03-13",
+  "eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+  "time_extrapolation": "UNVALIDATED",
+  "allowed_core_conclusions": [
+    "The frozen main benchmark model is CONSTANT for all six tasks and the auxiliary mean.",
+    "The main-layer scale-associated component is exactly zero.",
+    "Observed benchmark values decompose as fitted constant plus a non-scale associated residual/conditional remainder.",
+    "Future benchmark progress is NOT_IDENTIFIABLE_PROGRESS; only the conditional baseline can be displayed.",
+    "Loss-space scaling scenarios are separate and are not identifiable because historical compute-growth support failed."
+  ],
+  "prohibited_wording": [
+    "algorithmic progress",
+    "engineering progress",
+    "causal technological progress",
+    "validated time-trend forecast",
+    "Loss improvement converted to benchmark points",
+    "six-task mean replacing the task vector"
+  ],
+  "taskwise_entries": {
+    "IFEval_pct": {
+      "baseline_points": 22.165077549790112,
+      "conditional_interval_low_points": 18.533524118122976,
+      "conditional_interval_high_points": 26.17220852312077,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": 0.35281386720568264,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "BBH_pct": {
+      "baseline_points": 30.840379894363576,
+      "conditional_interval_low_points": 29.197146659392793,
+      "conditional_interval_high_points": 32.27200965440854,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": 0.4513105363652059,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "MATH Lvl 5_pct": {
+      "baseline_points": 1.068191627104007,
+      "conditional_interval_low_points": 0.34527406128613863,
+      "conditional_interval_high_points": 1.7479499352611074,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": -0.07552870090634001,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "GPQA_pct": {
+      "baseline_points": 25.491371045062316,
+      "conditional_interval_low_points": 24.646452540747838,
+      "conditional_interval_high_points": 26.300335570469795,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": 0.12583892617449166,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "MUSR_pct": {
+      "baseline_points": 36.451247165532884,
+      "conditional_interval_low_points": 32.97430083144369,
+      "conditional_interval_high_points": 39.62585034013606,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": -0.529100529100532,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "MMLU-PRO_pct": {
+      "baseline_points": 11.284194528875373,
+      "conditional_interval_low_points": 11.045743097771012,
+      "conditional_interval_high_points": 11.501670149442754,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": -0.01385195035461173,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    },
+    "benchmark_mean_aux": {
+      "baseline_points": 21.21674363512138,
+      "conditional_interval_low_points": 20.737286746543106,
+      "conditional_interval_high_points": 21.656457500390804,
+      "scale_associated_component_mean_points": 0.0,
+      "conditional_remainder_median_points": 0.04854043278203335,
+      "future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+      "progress_12m_status": "NOT_IDENTIFIABLE_PROGRESS",
+      "progress_24m_status": "NOT_IDENTIFIABLE_PROGRESS"
+    }
+  },
+  "support": {
+    "benchmark_main_models": 7,
+    "benchmark_conditional_models": 38,
+    "bridge_complete_models": 45,
+    "c8_complete_partial_corrupt": [
+      1854,
+      6,
+      4
+    ],
+    "growth_model_families": 1,
+    "growth_family_level_intervals": 1,
+    "loss_space_support": "NOT_EVALUABLE_GROWTH_RATE_NOT_IDENTIFIABLE"
+  },
+  "uncertainty_components": [
+    "scaling_parameter",
+    "bridge_model_error",
+    "benchmark_conditional_association",
+    "model_family_heterogeneity",
+    "time_extrapolation",
+    "scenario_structure"
+  ],
+  "loss_benchmark_conversion_count": 0
+}

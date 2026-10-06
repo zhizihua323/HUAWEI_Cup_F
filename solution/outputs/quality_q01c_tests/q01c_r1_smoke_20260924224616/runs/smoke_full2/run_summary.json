@@ -1,0 +1,42 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "smoke_full2",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "TypeError: RunContext.status() got multiple values for argument 'stage'",
+  "exit_code": 2,
+  "stage_seconds": {
+    "s00_preflight": 0.24,
+    "s01_synthetic_tests": 0.208
+  },
+  "executed_stages": [
+    "s00_preflight",
+    "s00_preflight",
+    "s01_synthetic_tests"
+  ],
+  "skipped_stages": {},
+  "reused_stages": {},
+  "stage_terminal_events": {
+    "s00_preflight": [
+      "complete"
+    ],
+    "s01_synthetic_tests": [
+      "complete"
+    ]
+  },
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "solution/src/quality_q01c.py",
+    "--run-id",
+    "smoke_full2",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture"
+  ],
+  "process_pid": 16712,
+  "finished_local": "2026-09-24T22:46:25+08:00"
+}

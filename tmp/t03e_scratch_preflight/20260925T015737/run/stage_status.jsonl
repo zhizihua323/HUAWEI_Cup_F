@@ -1,0 +1,2 @@
+{"ts": "2026-09-25T01:57:37+08:00", "mode": "calibration-preflight", "stage": "calibration_preflight", "event": "start", "pid": 11032}
+{"ts": "2026-09-25T01:57:37+08:00", "mode": "calibration-preflight", "stage": "calibration-preflight", "event": "failed", "pid": 11032, "error": "AttributeError", "message": "module 'pyarrow.parquet' has no attribute '__version__'"}

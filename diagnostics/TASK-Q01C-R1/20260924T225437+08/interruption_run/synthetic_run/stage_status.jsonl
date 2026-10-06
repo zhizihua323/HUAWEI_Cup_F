@@ -1,0 +1,39 @@
+{"argv":["C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py","--run-id","synthetic_run","--out-root","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225437+08\\interruption_run","--fixture-dir","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225437+08\\synthetic_fixture","--hold-after-stage","s10_scan_a1"],"event":"invocation","mode":"fixture","pid":39112,"resume":false,"run_id":"synthetic_run","stage":"s00_preflight","stage_selection":"all","ts":"2026-09-24T22:54:39.509+08:00"}
+{"event":"start","pid":39112,"run_id":"synthetic_run","stage":"s00_preflight","ts":"2026-09-24T22:54:39.509+08:00"}
+{"event":"start","mode":"fixture","pid":39112,"run_id":"synthetic_run","stage":"s00_preflight","ts":"2026-09-24T22:54:39.509+08:00"}
+{"elapsed_s":0.149,"event":"complete","mode":"fixture","pid":39112,"rss_mb":97.2,"run_id":"synthetic_run","stage":"s00_preflight","ts":"2026-09-24T22:54:39.670+08:00"}
+{"event":"start","pid":39112,"run_id":"synthetic_run","stage":"s01_synthetic_tests","ts":"2026-09-24T22:54:39.673+08:00"}
+{"event":"start","pid":39112,"run_id":"synthetic_run","stage":"s01_synthetic_tests","ts":"2026-09-24T22:54:39.673+08:00"}
+{"elapsed_s":0.136,"event":"complete","failed":0,"n_tests":10,"pid":39112,"run_id":"synthetic_run","stage":"s01_synthetic_tests","ts":"2026-09-24T22:54:39.808+08:00"}
+{"event":"start","pid":39112,"run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:39.809+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:54:39+08:00","event":"checkpoint_decision","file_id":"A1","layout":null,"payload_sha256":null,"pid":39112,"process_pid":39112,"reason":"legacy: missing file(s)","rows":null,"run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:39.809+08:00"}
+{"decompress_passes":1,"event":"start","file":"A1","pid":39112,"run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:39.810+08:00"}
+{"decompress_passes":1,"elapsed_s":0.165,"event":"complete","line_count":600,"payload_sha256":"df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9","pid":39112,"rows":600,"rss_mb":107.1,"run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:39.976+08:00"}
+{"event":"hold_after_stage","note":"test-only hook: waiting for the supervisor to interrupt this process","pid":39112,"run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:39.978+08:00"}
+{"argv":["C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py","--run-id","synthetic_run","--out-root","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225437+08\\interruption_run","--fixture-dir","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225437+08\\synthetic_fixture","--resume"],"event":"invocation","mode":"fixture","pid":25308,"resume":true,"run_id":"synthetic_run","stage":"s00_preflight","stage_selection":"all","ts":"2026-09-24T22:54:41.876+08:00"}
+{"event":"stage_reused","pid":25308,"reason":"valid","run_id":"synthetic_run","stage":"s00_preflight","ts":"2026-09-24T22:54:41.881+08:00"}
+{"event":"stage_reused","pid":25308,"reason":"valid","run_id":"synthetic_run","stage":"s01_synthetic_tests","ts":"2026-09-24T22:54:41.883+08:00"}
+{"event":"stage_reused","pid":25308,"reason":"valid","run_id":"synthetic_run","stage":"s10_scan_a1","ts":"2026-09-24T22:54:41.884+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s11_scan_a2","ts":"2026-09-24T22:54:41.885+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:54:41+08:00","event":"checkpoint_decision","file_id":"A2_arxiv","layout":null,"payload_sha256":null,"pid":25308,"process_pid":25308,"reason":"legacy: missing file(s)","rows":null,"run_id":"synthetic_run","stage":"s11_scan_a2","ts":"2026-09-24T22:54:41.885+08:00"}
+{"decompress_passes":1,"event":"start","file":"A2_arxiv","pid":25308,"run_id":"synthetic_run","stage":"s11_scan_a2","ts":"2026-09-24T22:54:41.888+08:00"}
+{"decompress_passes":1,"elapsed_s":0.085,"event":"complete","line_count":30,"payload_sha256":"1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47","pid":25308,"rows":30,"rss_mb":105.6,"run_id":"synthetic_run","stage":"s11_scan_a2","ts":"2026-09-24T22:54:41.986+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s12_scan_a3","ts":"2026-09-24T22:54:41.989+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:54:41+08:00","event":"checkpoint_decision","file_id":"A3_github","layout":null,"payload_sha256":null,"pid":25308,"process_pid":25308,"reason":"legacy: missing file(s)","rows":null,"run_id":"synthetic_run","stage":"s12_scan_a3","ts":"2026-09-24T22:54:41.989+08:00"}
+{"decompress_passes":1,"event":"start","file":"A3_github","pid":25308,"run_id":"synthetic_run","stage":"s12_scan_a3","ts":"2026-09-24T22:54:41.992+08:00"}
+{"decompress_passes":1,"elapsed_s":0.042,"event":"complete","line_count":30,"payload_sha256":"e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b","pid":25308,"rows":30,"rss_mb":107.1,"run_id":"synthetic_run","stage":"s12_scan_a3","ts":"2026-09-24T22:54:42.034+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s20_score_primary","ts":"2026-09-24T22:54:42.036+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s20_score_primary","ts":"2026-09-24T22:54:42.036+08:00"}
+{"elapsed_s":0.059,"event":"complete","pid":25308,"q_valid_false":2,"q_valid_true":658,"rows":660,"rss_mb":111.7,"run_id":"synthetic_run","stage":"s20_score_primary","ts":"2026-09-24T22:54:42.154+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s30_sensitivity","ts":"2026-09-24T22:54:42.155+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s30_sensitivity","ts":"2026-09-24T22:54:42.155+08:00"}
+{"elapsed_s":0.092,"event":"complete","imputed_records":2,"pid":25308,"run_id":"synthetic_run","stage":"s30_sensitivity","ts":"2026-09-24T22:54:42.247+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s40_summarize","ts":"2026-09-24T22:54:42.247+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s40_summarize","ts":"2026-09-24T22:54:42.247+08:00"}
+{"domain_rows":20,"elapsed_s":-0.0,"event":"complete","pid":25308,"run_id":"synthetic_run","sensitivity_rows":20,"stage":"s40_summarize","ts":"2026-09-24T22:54:43.469+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s50_verify","ts":"2026-09-24T22:54:43.470+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s50_verify","ts":"2026-09-24T22:54:43.470+08:00"}
+{"elapsed_s":1.033,"event":"complete","n_fail":0,"n_not_checked":0,"n_pass":14,"pid":25308,"run_id":"synthetic_run","stage":"s50_verify","ts":"2026-09-24T22:54:44.503+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s60_finalize","ts":"2026-09-24T22:54:44.503+08:00"}
+{"event":"start","pid":25308,"run_id":"synthetic_run","stage":"s60_finalize","ts":"2026-09-24T22:54:44.503+08:00"}
+{"elapsed_s":0.047,"event":"complete","pid":25308,"run_id":"synthetic_run","stage":"s60_finalize","status":"COMPLETE_PENDING_REVIEW","ts":"2026-09-24T22:54:44.550+08:00"}

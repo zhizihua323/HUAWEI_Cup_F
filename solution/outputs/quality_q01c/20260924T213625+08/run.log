@@ -1,0 +1,22 @@
+[2026-09-24T21:36:26.189+08:00] TASK-Q01C start run_id=20260924T213625+08 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c\20260924T213625+08
+[2026-09-24T21:36:27.104+08:00] stage=s00_preflight complete; inputs verified, code snapshot frozen
+[2026-09-24T21:36:27.185+08:00] ERROR unhandled: ValueError: Out of range float values are not JSON compliant: np.float64(nan)
+[2026-09-24T21:36:27.202+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 1540, in main
+    state['synthetic'] = stage_s01_synthetic_tests(ctx, state['config_sha'])
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 677, in stage_s01_synthetic_tests
+    write_json_atomic(ctx.run_dir / 'synthetic_tests.json', report)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 129, in write_json_atomic
+    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False, default=str),
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\anaconda\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\anaconda\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: np.float64(nan)
+

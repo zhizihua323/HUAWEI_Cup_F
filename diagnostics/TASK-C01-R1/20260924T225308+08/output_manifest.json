@@ -1,0 +1,115 @@
+{
+  "task": "TASK-C01-R1",
+  "run_id": "20260924T225308+08",
+  "artifact_count": 18,
+  "artifacts": [
+    {
+      "file": "c8_directory_aggregate_corrected.csv",
+      "bytes": 291117,
+      "sha256": "1bfab2f7e1078a43bbe9a14a30237640e192c0ec54776144eed3eb66d6af1218",
+      "role": "required_output"
+    },
+    {
+      "file": "c8_model_task_aggregate_corrected.csv",
+      "bytes": 6331059,
+      "sha256": "4b36dd039ecb89d6d1c84912718f61d1555b6f62b7d64d796a29b16bc87f790f",
+      "role": "required_output"
+    },
+    {
+      "file": "c8_model_wide_corrected.csv",
+      "bytes": 966210,
+      "sha256": "6d78edf205cd4cdb082a2f98eb0d26a7b0bcc028e45bca9ce9e23723c9214ff5",
+      "role": "required_output"
+    },
+    {
+      "file": "changes.csv",
+      "bytes": 3833,
+      "sha256": "2e8287276b266aa94054d2c349716e7de70b310410df1d1badf92082fe2eda1c",
+      "role": "required_output"
+    },
+    {
+      "file": "environment.json",
+      "bytes": 930,
+      "sha256": "2454d9529f154bb2bf55292b153e942244e3eb2593d3d1a7ee7a35d0fd8c8ebd",
+      "role": "required_output"
+    },
+    {
+      "file": "handoff.md",
+      "bytes": 17831,
+      "sha256": "281fa795a02cca5bce30976e9508e2a28d9ae439d3c8c53f9728471aed8db30c",
+      "role": "required_output"
+    },
+    {
+      "file": "input_manifest.json",
+      "bytes": 14769,
+      "sha256": "00d569e66ffad4921aaef840fef18472a1c8fe5ad27ae0b5b2891a665ceea49d",
+      "role": "required_output"
+    },
+    {
+      "file": "protected_original_run_check.json",
+      "bytes": 423,
+      "sha256": "9a6e6d81f0ab62308d342ddc3bb81c7e0c111f3529a2d88347bd3ea1ac748351",
+      "role": "required_output"
+    },
+    {
+      "file": "repair_c01_from_artifacts.py",
+      "bytes": 131643,
+      "sha256": "72641f80e3304de883df0a02569b284acf976ec930064af8633d58a61724d491",
+      "role": "execution_code"
+    },
+    {
+      "file": "repaired_checks.json",
+      "bytes": 82010,
+      "sha256": "ac435479da20eff2839292ebe8407318111b94e7ee648c8045409c286d3a3eac",
+      "role": "required_output"
+    },
+    {
+      "file": "run.log",
+      "bytes": 3149,
+      "sha256": "bba98dc0e5366d9b5f4331b6131da8f964f007434dc00e4a7c9b4c3c4e8c2cc5",
+      "role": "run_log"
+    },
+    {
+      "file": "run_summary.json",
+      "bytes": 3962,
+      "sha256": "4727bce1e2a0f7914bd660663bbbf6e606fe856c8b1148894b3a97d5b1396076",
+      "role": "required_output"
+    },
+    {
+      "file": "schema.md",
+      "bytes": 4383,
+      "sha256": "fd5a867eb23fb3996c25748e57c5028c3ddb0a2d47b2ea46958f71703a6069dd",
+      "role": "required_output"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 27727,
+      "sha256": "c3fa7822a80241cda902dcd9c820138b5bc1bab14b4daa49b3fa3fcaea9ce25e",
+      "role": "required_output"
+    },
+    {
+      "file": "verify.log",
+      "bytes": 1449,
+      "sha256": "7c65c1856b1ae5a8364a83bc604e0d00f98ad83f828e167f161ec90d00236537",
+      "role": "run_log"
+    },
+    {
+      "file": "verify_c01_repairs.py",
+      "bytes": 45286,
+      "sha256": "37667daf0aa45a4c9740618a3d4b064e02d23bded01d9cf89231e31041641578",
+      "role": "execution_code"
+    },
+    {
+      "file": "code_snapshot/repair_c01_from_artifacts.py",
+      "bytes": 131643,
+      "sha256": "72641f80e3304de883df0a02569b284acf976ec930064af8633d58a61724d491",
+      "role": "code_snapshot"
+    },
+    {
+      "file": "code_snapshot/verify_c01_repairs.py",
+      "bytes": 45286,
+      "sha256": "37667daf0aa45a4c9740618a3d4b064e02d23bded01d9cf89231e31041641578",
+      "role": "code_snapshot"
+    }
+  ]
+}

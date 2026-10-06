@@ -1,0 +1,29 @@
+{
+  "eta": 0.0002,
+  "H_crit": 30000.0,
+  "cost_equation": "C_total=6*N_physical*D_physical + D_physical*max(g(Q_A)-g(Q0),0) + eta*N_physical*D_physical*H",
+  "N_physical": "N_B*1e9",
+  "D_physical": "D_B*1e9",
+  "Q0": 0.5695341857475174,
+  "functions": {
+    "G_EXP": {
+      "formula": "1e7*exp(6Q)",
+      "gamma": 10000000.0,
+      "lambda": 6.0,
+      "role": "PRIMARY_DISPLAY_ASSUMPTION_NOT_SELECTED"
+    },
+    "G_POWER": {
+      "formula": "5e9*Q^4",
+      "gamma": 5000000000.0,
+      "lambda": 4.0,
+      "role": "SCENARIO_COST_COMPARISON"
+    },
+    "G_LOG": {
+      "formula": "2e9*ln(1+10Q)",
+      "gamma": 2000000000.0,
+      "lambda": 10.0,
+      "role": "SCENARIO_COST_COMPARISON"
+    }
+  },
+  "selection_rule": "No official g is selected; G_EXP is used only as the display convention for non-sensitivity scenarios. All three functions are compared on S01 and supplementary S03."
+}

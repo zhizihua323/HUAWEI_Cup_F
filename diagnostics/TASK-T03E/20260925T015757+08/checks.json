@@ -1,0 +1,699 @@
+{
+  "task": "TASK-T03E",
+  "run_id": "20260925T015757+08",
+  "generated_local": "2026-09-25T01:58:18+08:00",
+  "pid": 8228,
+  "stage": "phase_b_frozen_validation",
+  "counts": {
+    "PASS": 22,
+    "NOT_CHECKED": 1
+  },
+  "checks": [
+    {
+      "id": "EX-01",
+      "name": "official Q01C input path/size/SHA256 matches its output_manifest",
+      "status": "PASS",
+      "evidence": {
+        "checks": [
+          {
+            "note": "frozen-validation start",
+            "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+            "bytes": 75668880,
+            "sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+            "manifest_bytes": 75668880,
+            "manifest_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+            "matches_manifest": true,
+            "checked_local": "2026-09-25T01:58:13+08:00",
+            "pid": 8228
+          },
+          {
+            "note": "frozen-validation end",
+            "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+            "bytes": 75668880,
+            "sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+            "manifest_bytes": 75668880,
+            "manifest_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+            "matches_manifest": true,
+            "checked_local": "2026-09-25T01:58:16+08:00",
+            "pid": 8228
+          }
+        ],
+        "expected_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a"
+      },
+      "note": "hash verified before PHASE A, at PHASE B start and at PHASE B end",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-02",
+      "name": "preflight analysis layer only received A1_calibration rows",
+      "status": "PASS",
+      "evidence": {
+        "roles_visible": [
+          "A1_calibration"
+        ],
+        "calibration_rows": 40943,
+        "unique_first": 40943
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-03",
+      "name": "four preregistered design labels match calibration exactly (character-exact)",
+      "status": "PASS",
+      "evidence": {
+        "design_labels": [
+          "book",
+          "c4",
+          "commoncrawl",
+          "wikipedia"
+        ],
+        "calibration_labels": [
+          "arxiv",
+          "book",
+          "c4",
+          "commoncrawl",
+          "github",
+          "stackexchange",
+          "wikipedia"
+        ],
+        "absent_design_labels": [],
+        "matching_rule": "exact string equality only; no fuzzy/alias/merge/fallback"
+      },
+      "note": "DESIGN_LABEL_ABSENT is recorded when a design label does not occur",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-04",
+      "name": "active correction domains frozen from calibration eligibility",
+      "status": "PASS",
+      "evidence": {
+        "active_domains": [
+          "c4",
+          "commoncrawl",
+          "wikipedia"
+        ],
+        "domain_status": {
+          "book": "INSUFFICIENT_CALIBRATION",
+          "c4": "ACTIVE",
+          "commoncrawl": "ACTIVE",
+          "wikipedia": "ACTIVE"
+        },
+        "min_valid_n": 1000,
+        "quantile_requirement": "q0.99 > q0.95 for both indicators"
+      },
+      "note": "domains below n or with a missing label are excluded, never substituted",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-05",
+      "name": "pre-run artificial rule-cluster/boundary/fallback tests",
+      "status": "PASS",
+      "evidence": {
+        "n_tests": 17,
+        "n_failed": 0,
+        "test_names": [
+          "penalty_midpoint_top2",
+          "penalty_midpoint_top3",
+          "cluster_penalty_mean",
+          "candidate_formula",
+          "penalty_lower_bound",
+          "penalty_upper_bound",
+          "lambda_zero_identity",
+          "rule_not_applicable_identity",
+          "duplicate_member_no_weight_increase",
+          "penalty_monotone_nondecreasing",
+          "candidate_monotone_nonincreasing",
+          "candidate_ge_098q",
+          "new_zero_values",
+          "original_zero_preserved",
+          "degenerate_quantile_detected",
+          "unknown_domain_not_applicable",
+          "invalid_row_status_enumerated"
+        ]
+      },
+      "note": "hand-computed expectations; no real analysis value read before this point",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-06",
+      "name": "bootstrap sub-seeds follow the frozen SHA256 rule",
+      "status": "PASS",
+      "evidence": {
+        "rows": 600,
+        "mismatches": 0,
+        "status": "PASS"
+      },
+      "note": "int(sha256(\"20260925|<domain>|<replicate>\")[:16], 16) -> PCG64",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-07",
+      "name": "200-replicate joint bootstrap stability per active domain",
+      "status": "PASS",
+      "evidence": {
+        "replicates": 200,
+        "required_joint_pass": 190,
+        "per_domain": [
+          {
+            "domain": "c4",
+            "n": 8041,
+            "replicates": 200,
+            "joint_pass_count": 200,
+            "required": 190,
+            "status": "PASS",
+            "thresholds": {
+              "penalty_mae_max": 0.1,
+              "rank_spearman_min": 0.98,
+              "top10_jaccard_min": 0.85
+            }
+          },
+          {
+            "domain": "commoncrawl",
+            "n": 7688,
+            "replicates": 200,
+            "joint_pass_count": 200,
+            "required": 190,
+            "status": "PASS",
+            "thresholds": {
+              "penalty_mae_max": 0.1,
+              "rank_spearman_min": 0.98,
+              "top10_jaccard_min": 0.85
+            }
+          },
+          {
+            "domain": "wikipedia",
+            "n": 8013,
+            "replicates": 200,
+            "joint_pass_count": 200,
+            "required": 190,
+            "status": "PASS",
+            "thresholds": {
+              "penalty_mae_max": 0.1,
+              "rank_spearman_min": 0.98,
+              "top10_jaccard_min": 0.85
+            }
+          }
+        ],
+        "gates": {
+          "penalty_mae_max": 0.1,
+          "rank_spearman_min": 0.98,
+          "top10_jaccard_min": 0.85
+        }
+      },
+      "note": "the three criteria must hold jointly within one replicate",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-08",
+      "name": "freeze manifest hashed by the seal; every frozen file re-hashed unchanged",
+      "status": "PASS",
+      "evidence": {
+        "freeze_manifest_sha256": "ff4d7d12877c2fdd3d7af342f09448312231dcbbb5160f32a310f5f81c3b24f2",
+        "frozen_files_verified": 28,
+        "sealed_local": "2026-09-25T01:58:03+08:00"
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-09",
+      "name": "seal < first holdout read < first extension read",
+      "status": "PASS",
+      "evidence": {
+        "sealed_local": "2026-09-25T01:58:03+08:00",
+        "first_holdout_read_time": "2026-09-25T01:58:13.276+08:00",
+        "first_extension_read_time": "2026-09-25T01:58:13.467+08:00",
+        "holdout_frozen_before_extension_read": true
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-10",
+      "name": "holdout acceptance on the frozen active domains only",
+      "status": "PASS",
+      "evidence": {
+        "holdout_status": "ACCEPT_STABILITY",
+        "active_domains": [
+          "c4",
+          "commoncrawl",
+          "wikipedia"
+        ],
+        "per_domain": [
+          {
+            "domain": "c4",
+            "role": "A1_holdout",
+            "n_valid": 1959,
+            "spearman_C_D": 0.9999883272381607,
+            "top10_jaccard_C_D": 1.0,
+            "top_k": 196,
+            "penalty_mean_role": 0.019511458841929678,
+            "penalty_mean_calibration": 0.024114443341129978,
+            "penalty_mean_abs_diff": 0.0046029844992003,
+            "oos_rows": 13,
+            "oos_fraction": 0.006636038795303726,
+            "min_valid_n": 200,
+            "pass_spearman": 1,
+            "pass_jaccard": 1,
+            "pass_penalty_mean": 1,
+            "pass_oos": 1,
+            "eligible": 1,
+            "status": "PASS"
+          },
+          {
+            "domain": "commoncrawl",
+            "role": "A1_holdout",
+            "n_valid": 1948,
+            "spearman_C_D": 0.9999688802130032,
+            "top10_jaccard_C_D": 0.9897959183673469,
+            "top_k": 195,
+            "penalty_mean_role": 0.026737726002369934,
+            "penalty_mean_calibration": 0.023569841033833045,
+            "penalty_mean_abs_diff": 0.003167884968536889,
+            "oos_rows": 28,
+            "oos_fraction": 0.014373716632443531,
+            "min_valid_n": 200,
+            "pass_spearman": 1,
+            "pass_jaccard": 1,
+            "pass_penalty_mean": 1,
+            "pass_oos": 1,
+            "eligible": 1,
+            "status": "PASS"
+          },
+          {
+            "domain": "wikipedia",
+            "role": "A1_holdout",
+            "n_valid": 1973,
+            "spearman_C_D": 0.999982999217464,
+            "top10_jaccard_C_D": 1.0,
+            "top_k": 198,
+            "penalty_mean_role": 0.023250361275660686,
+            "penalty_mean_calibration": 0.02413571502416115,
+            "penalty_mean_abs_diff": 0.0008853537485004649,
+            "oos_rows": 16,
+            "oos_fraction": 0.008109477952356817,
+            "min_valid_n": 200,
+            "pass_spearman": 1,
+            "pass_jaccard": 1,
+            "pass_penalty_mean": 1,
+            "pass_oos": 1,
+            "eligible": 1,
+            "status": "PASS"
+          }
+        ],
+        "failed_domains": [],
+        "insufficient_domains": [],
+        "rule": "only active correction domains with holdout n>=200 enter the pass rate; Spearman>=0.98, top-10% Jaccard>=0.85, |mean(P_holdout)-mean(P_calibration)|<=0.05, OUT_OF_SUPPORT share<=0.05",
+        "first_holdout_read_time": "2026-09-25T01:58:13.276+08:00",
+        "freeze_manifest_sha256": "ff4d7d12877c2fdd3d7af342f09448312231dcbbb5160f32a310f5f81c3b24f2",
+        "sealed_local": "2026-09-25T01:58:03+08:00",
+        "candidate_version": "t03e_candidate_v1",
+        "statement": "D = Q_baseline stays the official main result regardless of this status",
+        "generated_local": "2026-09-25T01:58:13+08:00",
+        "pid": 8228
+      },
+      "note": "a rule-failure is reported as REJECT_KEEP_D and never re-tuned",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-11",
+      "name": "extension overlap reproduction on identical inputs",
+      "status": "PASS",
+      "evidence": {
+        "overlap_rows": 11419,
+        "reproduced": 11419,
+        "mismatches": 0
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-12",
+      "name": "extension new-record transport status",
+      "status": "PASS",
+      "evidence": {
+        "extension_status": "NOT_TESTED_FOR_ACTIVE_CORRECTION",
+        "per_domain": [
+          {
+            "domain": "c4",
+            "role": "extension_new_records",
+            "n_valid": 0,
+            "min_valid_n": 200,
+            "eligible": 0,
+            "spearman_C_D": null,
+            "top10_jaccard_C_D": null,
+            "top_k": null,
+            "penalty_mean_role": null,
+            "penalty_mean_calibration": null,
+            "penalty_mean_abs_diff": null,
+            "oos_rows": null,
+            "oos_fraction": null,
+            "pass_spearman": null,
+            "pass_jaccard": null,
+            "pass_penalty_mean": null,
+            "pass_oos": null,
+            "status": "NOT_PRESENT_IN_EXTENSION"
+          },
+          {
+            "domain": "commoncrawl",
+            "role": "extension_new_records",
+            "n_valid": 0,
+            "min_valid_n": 200,
+            "eligible": 0,
+            "spearman_C_D": null,
+            "top10_jaccard_C_D": null,
+            "top_k": null,
+            "penalty_mean_role": null,
+            "penalty_mean_calibration": null,
+            "penalty_mean_abs_diff": null,
+            "oos_rows": null,
+            "oos_fraction": null,
+            "pass_spearman": null,
+            "pass_jaccard": null,
+            "pass_penalty_mean": null,
+            "pass_oos": null,
+            "status": "NOT_PRESENT_IN_EXTENSION"
+          },
+          {
+            "domain": "wikipedia",
+            "role": "extension_new_records",
+            "n_valid": 0,
+            "min_valid_n": 200,
+            "eligible": 0,
+            "spearman_C_D": null,
+            "top10_jaccard_C_D": null,
+            "top_k": null,
+            "penalty_mean_role": null,
+            "penalty_mean_calibration": null,
+            "penalty_mean_abs_diff": null,
+            "oos_rows": null,
+            "oos_fraction": null,
+            "pass_spearman": null,
+            "pass_jaccard": null,
+            "pass_penalty_mean": null,
+            "pass_oos": null,
+            "status": "NOT_PRESENT_IN_EXTENSION"
+          }
+        ]
+      },
+      "note": "C=D agreement in non-applied domains is never counted as transport evidence",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-13",
+      "name": "non-applied domains keep Q_C == Q_baseline exactly and stay out of active evidence",
+      "status": "PASS",
+      "evidence": {
+        "domains": [
+          "arxiv",
+          "github",
+          "stackexchange"
+        ],
+        "rows": 242693,
+        "max_abs_delta": 0.0,
+        "active_domains": [
+          "c4",
+          "commoncrawl",
+          "wikipedia"
+        ]
+      },
+      "note": "holdout/extension pass rates contain active correction domains only",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-14",
+      "name": "Q_valid=False rows keep Q_C=NaN and Q_INVALID_PRESERVED",
+      "status": "PASS",
+      "evidence": {
+        "Q_valid_false_rows": 19,
+        "Q_INVALID_PRESERVED_rows": 19,
+        "Q_C_nan_rows": 19,
+        "numerator_scope": "all physical rows of the official input"
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-15",
+      "name": "candidate maths on the confirmatory sample",
+      "status": "PASS",
+      "evidence": {
+        "n_confirmatory_rows": 51212,
+        "all_finite": true,
+        "P_min": 0.0,
+        "P_max": 1.0,
+        "P_within_unit_interval": true,
+        "max_Q_C_minus_D": 0.0,
+        "max_abs_Q_C_minus_D": 0.01580750144022236,
+        "min_ratio_Q_C_over_D_for_positive_D": 0.9799999999999999,
+        "rows_D_zero": 0,
+        "rows_D_zero_and_C_zero": 0,
+        "new_zero_values": 0,
+        "negative_Q_C_rows": 0,
+        "oos_rows": 285,
+        "supported_rows": 29337,
+        "rules": "Q_C <= D, Q_C >= 0.98*D, no new zeros, P in [0, 1] on the confirmatory sample",
+        "rule_not_applicable_rows": 242693,
+        "rule_not_applicable_max_abs_delta": 0.0,
+        "rule_not_applicable_zero_delta": true,
+        "rule_not_applicable_domains": [
+          "arxiv",
+          "github",
+          "stackexchange"
+        ]
+      },
+      "note": "denominator = A1_calibration + A1_holdout, is_unique_first & Q_valid & finite inputs",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-16",
+      "name": "candidate_Q_scores keeps every physical row and the original order",
+      "status": "PASS",
+      "evidence": {
+        "rows_written": 272505,
+        "rows_read": 272505
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-17",
+      "name": "protected baseline columns unchanged (role reads vs assembly vs sealed PHASE A)",
+      "status": "PASS",
+      "evidence": {
+        "status": "PASS",
+        "role_reads": [
+          "A1_calibration",
+          "A1_holdout",
+          "extension_new_records",
+          "extension_overlap_A1"
+        ],
+        "frozen_calibration_consistency": {
+          "frozen_rows": 40943,
+          "assembly_rows": 40943,
+          "key_sequence_identical": true,
+          "Q_baseline": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "Q_C": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "P": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "p_top2gram": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "p_top3gram": {
+            "nan_pattern_identical": true,
+            "max_abs_delta": 0.0,
+            "within_1e-12": true
+          },
+          "Q_support_status": true
+        },
+        "input_sha256_stable": true
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-18",
+      "name": "T06 interface columns and forbidden field names",
+      "status": "PASS",
+      "evidence": {
+        "columns": [
+          "file_id",
+          "source_line",
+          "key_sha256",
+          "domain",
+          "evaluation_role",
+          "is_unique_first",
+          "Q_baseline",
+          "Q_C",
+          "P",
+          "p_top2gram",
+          "p_top3gram",
+          "Q_valid",
+          "Q_support_status",
+          "dsir_books",
+          "dsir_wiki",
+          "dsir_math",
+          "candidate_version",
+          "lambda_primary",
+          "in_confirmatory_denominator",
+          "domain_role_n_total",
+          "domain_role_n_analysis_valid",
+          "dsir_relevance_vector"
+        ],
+        "forbidden_field_names_present": [],
+        "primary_Q": "Q_baseline",
+        "limitations": [
+          "Q_C has no independent ground-truth quality label in this project; it is a preregistered rule-sensitivity candidate only",
+          "no field of this interface may be renamed final_Q/best_Q/improved_Q/true_quality",
+          "A-side Q and the B-side Q_score still require separate T06 calibration"
+        ]
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-19",
+      "name": "RegMix/Loss connection and identifiability check without any new fit",
+      "status": "PASS",
+      "evidence": {
+        "status": "NOT_IDENTIFIABLE",
+        "structural_reasons": [
+          "11 of 17 RegMix domains have no quality-domain mapping (quality_domain=\"(none)\"), so the mapping is neither complete nor unique",
+          "no independent quality variation under a fixed composition w is available in the read-only inputs (one loss per mixture, one aggregate quality per domain)"
+        ],
+        "checked_inputs": {
+          "mapping": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+          "mapping_rows": 17,
+          "direct_mappings": 3,
+          "near_direct_mappings": 3,
+          "unmapped_regmix_domains": [
+            "dm_mathematics",
+            "freelaw",
+            "nih_exporter",
+            "pubmed_central",
+            "philpapers",
+            "enron_emails",
+            "ubuntu_irc",
+            "europarl",
+            "hackernews",
+            "pubmed_abstracts",
+            "uspto_backgrounds"
+          ],
+          "mapping_unique_by_mixture_domain": true,
+          "quality_side_unique": true,
+          "mixture_model": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\mixture\\model.json",
+          "model_features": [
+            "train_the_pile_arxiv",
+            "train_the_pile_freelaw",
+            "train_the_pile_nih_exporter",
+            "train_the_pile_pubmed_central",
+            "train_the_pile_wikipedia_en",
+            "train_the_pile_dm_mathematics",
+            "train_the_pile_github",
+            "train_the_pile_philpapers",
+            "train_the_pile_stackexchange",
+            "train_the_pile_enron_emails",
+            "train_the_pile_gutenberg_pg_19",
+            "train_the_pile_pile_cc",
+            "train_the_pile_ubuntu_irc",
+            "train_the_pile_europarl",
+            "train_the_pile_hackernews",
+            "train_the_pile_pubmed_abstracts",
+            "train_the_pile_uspto_backgrounds"
+          ],
+          "model_has_full_composition": true,
+          "b6_file": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+          "b6_columns": [
+            "experiment_id",
+            "N_params_B",
+            "D_tokens_B",
+            "Q_score",
+            "val_loss"
+          ],
+          "b6_rows": 360,
+          "quality_like_columns": [
+            "Q_score"
+          ],
+          "aggregate_predictions_rows": 2428
+        }
+      },
+      "note": "NOT_IDENTIFIABLE is a method conclusion; it blocks any external quality-gain claim",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-20",
+      "name": "lambda grid reported for calibration only and not used for selection",
+      "status": "PASS",
+      "evidence": {
+        "grid": [
+          0.0,
+          0.01,
+          0.02,
+          0.05
+        ],
+        "rows": 4,
+        "primary_lambda": 0.02,
+        "file": "phase_a_calibration_freeze/lambda_sensitivity_calibration.csv"
+      },
+      "note": "PHASE B evaluates lambda=0.02 and D only",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-21",
+      "name": "no A/B candidate, PCA/entropy/CRITIC or lambda learning in the frozen code",
+      "status": "PASS",
+      "evidence": {
+        "t03e_preregistered_rule_sensitivity.py": {
+          "present": true,
+          "prohibited_call_hits": {},
+          "clean": true
+        },
+        "t03e_verify.py": {
+          "present": true,
+          "prohibited_call_hits": {},
+          "clean": true
+        }
+      },
+      "note": "scan of the frozen code snapshot for prohibited calls",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-22",
+      "name": "row-level denominators agree with the role x domain inventory",
+      "status": "PASS",
+      "evidence": {
+        "role_domain_groups": 18,
+        "mismatches": [],
+        "row_level_denominator_mismatch_rows": 0,
+        "rows_checked": 272505
+      },
+      "note": "",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    },
+    {
+      "id": "EX-23",
+      "name": "output_manifest.json generated last by the independent finalizer",
+      "status": "NOT_CHECKED",
+      "evidence": {
+        "note": "written by the finalizer mode after verification.json exists"
+      },
+      "note": "the finalizer re-checks every previously registered file for stability",
+      "checked_local": "2026-09-25T01:58:18+08:00"
+    }
+  ],
+  "verification_note": "verification.json is produced afterwards by the independent verifier t03e_verify.py, which does not import this module"
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260925T100306+08",
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "pandas": "2.3.3",
+  "pyarrow": "21.0.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "solver_frozen": {
+    "lib": "scipy.optimize.least_squares",
+    "method": "trf",
+    "loss": "linear",
+    "jac": "3-point",
+    "x_scale": 1.0,
+    "max_nfev": 100000
+  }
+}

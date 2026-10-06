@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "original_run_manifest_count": 104,
+  "original_run_manifest_current": true,
+  "original_run_files_sha256": {
+    "fit/scaling_parameters_by_source.csv": {
+      "sha256": "b16cee5e572c1345cbf4592d7725babcc7834c421307c4dc24be132581e2b6e8",
+      "bytes": 164156
+    },
+    "fit/full_fit_predictions.parquet": {
+      "sha256": "0c855389038d0dabcbb2eff21957c7a4cea27a9757ba069adc0d9d9db6653692",
+      "bytes": 61740
+    },
+    "validation/candidate_comparison.csv": {
+      "sha256": "e21765c06120941f1acff16891a2dad70f0403e0641be4d91b4d02510ef0d094",
+      "bytes": 459
+    },
+    "validation/validation_splits.csv": {
+      "sha256": "d219e31fdf7a760b8148975700d548535c60b8f392067420e8ee1d53986be690",
+      "bytes": 5948
+    },
+    "bootstrap/bootstrap_summary.csv": {
+      "sha256": "0fd2e6f9d07d9b933aa117d0efd24e53b04f824ed8e848ce1339e5dacab0115c",
+      "bytes": 1728
+    },
+    "profiles/profile_inputs.json": {
+      "sha256": "470cbbaf3b93f1f69a92a129395b8c4ae4d30bac480df679d9457286184b0aad",
+      "bytes": 1744
+    },
+    "profiles/jacobian_diagnostics.csv": {
+      "sha256": "8e286453da8e2a19644ecd9c02d09a2f0958a1be3bff9ca144896aa524bd3611",
+      "bytes": 1149
+    },
+    "config/solver_config.json": {
+      "sha256": "bfb83304bf5bed402f3ef6a63c8d5f57afb6f08a6b3a1b8fa8e6c018ac7b1bec",
+      "bytes": 2275
+    },
+    "run_summary.json": {
+      "sha256": "47a596dc6d0a5eebdd50cd5b3a9a85b5bf899563028a8ef03819f66522eb70dd",
+      "bytes": 3327
+    },
+    "checks.json": {
+      "sha256": "3324bcb5c1134817aae27fa9bbd45f9f42a8628a60644c790603a9044d8079e8",
+      "bytes": 885
+    },
+    "verification.json": {
+      "sha256": "baa730d062b676cc13caf5f838e9cb8456e20a5bf40587631d523de1d19ec7e7",
+      "bytes": 2443
+    },
+    "output_manifest.json": {
+      "sha256": "8312ba3b4ceb4edd4a9e322d1b7f5cb3f4f0b8f005bc294a29158321bd24d188",
+      "bytes": 18233
+    }
+  },
+  "original_run_manifest_sha256": "8312ba3b4ceb4edd4a9e322d1b7f5cb3f4f0b8f005bc294a29158321bd24d188",
+  "original_run_modified": false,
+  "forbidden_paths_not_read": [
+    "TASK-T06E-P",
+    "A-side T03E interface",
+    "A1-A17",
+    "Q>0.6/B7/B8 profile data",
+    "T07/T05 inputs"
+  ]
+}

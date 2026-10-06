@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "components_separate": true,
+  "B1_parameter_uncertainty": {
+    "status": "EXISTING_8_CLUSTER_CONDITIONAL",
+    "not_a_population_CI": true
+  },
+  "B6_parameter_uncertainty": {
+    "status": "NINE_N_CLUSTER_CONDITIONAL",
+    "successful": 200,
+    "requested": 200,
+    "not_a_population_CI": true
+  },
+  "model_structure_uncertainty": {
+    "MQ-add": "pre-registered_main_candidate",
+    "MQ-eff": "sensitivity_only",
+    "k_0": "null_always_retained"
+  },
+  "B8_conflict": {
+    "status": "CONFLICT_EVIDENCE",
+    "common_support_rows": 160,
+    "propagated_as_probability": false
+  },
+  "cross_source_transport": {
+    "status": "NOT_ESTIMATED_IN_B_BRANCH",
+    "components": [
+      "A/B mapping",
+      "rho_Q",
+      "tau_p",
+      "r_B1",
+      "h"
+    ]
+  },
+  "combining_rule": "No single statistical CI formed across these components."
+}

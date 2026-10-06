@@ -1,0 +1,18 @@
+{
+  "asset": "fig07_qualification_map",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "paper/FINAL_SCIENTIFIC_FREEZE.md",
+      "fields": "Q1-Q4 final status, allowed and prohibited interpretation",
+      "unit": "none",
+      "denominator": "not applicable"
+    },
+    {
+      "file": "paper/FINAL_PAPER_PATCH_CONTRACT.md",
+      "fields": "mandatory figure/table qualification language",
+      "unit": "none",
+      "denominator": "not applicable"
+    }
+  ]
+}

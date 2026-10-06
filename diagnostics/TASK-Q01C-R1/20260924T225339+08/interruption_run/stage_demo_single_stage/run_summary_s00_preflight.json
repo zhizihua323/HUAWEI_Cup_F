@@ -1,0 +1,48 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "single_stage",
+  "status": "PARTIAL",
+  "mode": "fixture",
+  "stage": "s00_preflight",
+  "missing_prerequisites": [],
+  "reason": "single-stage run s00_preflight: no finalize",
+  "exit_code": 0,
+  "stage_seconds": {
+    "s00_preflight": 0.185
+  },
+  "executed_stages": [
+    "s00_preflight"
+  ],
+  "skipped_stages": {
+    "s01_synthetic_tests": "not executed (stage plan: s00_preflight)",
+    "s10_scan_a1": "not executed (stage plan: s00_preflight)",
+    "s11_scan_a2": "not executed (stage plan: s00_preflight)",
+    "s12_scan_a3": "not executed (stage plan: s00_preflight)",
+    "s20_score_primary": "not executed (stage plan: s00_preflight)",
+    "s30_sensitivity": "not executed (stage plan: s00_preflight)",
+    "s40_summarize": "not executed (stage plan: s00_preflight)",
+    "s50_verify": "not executed (stage plan: s00_preflight)",
+    "s60_finalize": "not executed (stage plan: s00_preflight)"
+  },
+  "reused_stages": {},
+  "stage_terminal_events": {
+    "s00_preflight": [
+      "complete"
+    ]
+  },
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "single_stage",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\stage_demo_single_stage",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+    "--stage",
+    "s00_preflight"
+  ],
+  "process_pid": 34532,
+  "finished_local": "2026-09-24T22:53:48+08:00"
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "20260925T223500+08",
+  "generated_local": "2026-09-25T22:30:03+08:00",
+  "summary": {
+    "total": 8,
+    "pass": 8,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "check": "recovery_finalize_did_not_recompute_scientific_outputs",
+      "status": "PASS",
+      "details": {
+        "scientific_outputs_reused": true
+      }
+    },
+    {
+      "check": "source_run_registered_files_unchanged",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "paper_manuscript_unchanged",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "check": "joined_rows_60",
+      "status": "PASS",
+      "details": {
+        "rows": 60
+      }
+    },
+    {
+      "check": "statistics_rows_11",
+      "status": "PASS",
+      "details": {
+        "rows": 11
+      }
+    },
+    {
+      "check": "case_rows_at_most_6",
+      "status": "PASS",
+      "details": {
+        "rows": 6
+      }
+    },
+    {
+      "check": "paper_candidate_present",
+      "status": "PASS",
+      "details": {
+        "sha256": "e78ae4b24e67dad9d496d2c4e797defb71d20b1580d8dd25c95282a0ef90c4a9"
+      }
+    },
+    {
+      "check": "independent_verifier_passed",
+      "status": "PASS",
+      "details": {
+        "total": 11,
+        "pass": 11,
+        "fail": 0
+      }
+    }
+  ]
+}

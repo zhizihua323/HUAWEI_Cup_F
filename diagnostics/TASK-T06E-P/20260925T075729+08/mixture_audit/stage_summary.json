@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "p0_exact_match": true,
+  "p0_max_abs_difference": 0.0,
+  "unmapped_domain_count": 11,
+  "mapped_domain_count": 6,
+  "test_1m_mse_improvement": 0.5502593290109576,
+  "test_1m_spearman": 0.6250743877317463,
+  "test_1m_both_criteria_pass": true,
+  "test_60m_transport_role": "REPORT_ONLY_NOT_RECALIBRATED",
+  "test_1B_transport_role": "REPORT_ONLY_NOT_RECALIBRATED",
+  "est_10b_70b_truth_status": "ESTIMATED_NOT_TRUTH",
+  "A6_A8_same_recipe_cluster": true,
+  "p_q_status": "NOT_IDENTIFIABLE",
+  "linear_refit": false,
+  "quadratic_reselected": false
+}

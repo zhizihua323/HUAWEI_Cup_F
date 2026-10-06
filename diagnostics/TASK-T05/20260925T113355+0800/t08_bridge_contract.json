@@ -1,0 +1,261 @@
+{
+  "contract_version": "T08-v1",
+  "task_id": "TASK-T05",
+  "eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+  "scale_progress": {
+    "available": true,
+    "definition": "Prediction component explained by observed N and, where present, observed D; no missing D imputation.",
+    "formula_by_target": {
+      "IFEval_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "BBH_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MATH Lvl 5_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "GPQA_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MUSR_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MMLU-PRO_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "benchmark_mean_aux": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      }
+    },
+    "inputs": [
+      "params_B",
+      "D_tokens_B_observed_only"
+    ],
+    "uncertainty": "Conditional/statistical; use uncertainty field by component.",
+    "validated_for_causal_interpretation": false
+  },
+  "non_scale_residual": {
+    "available": true,
+    "definition": "Observed benchmark minus fitted conditional prediction; association only.",
+    "causal_technological_progress_claim": false,
+    "artifact": "residual_audit.csv"
+  },
+  "time_trend": {
+    "available": false,
+    "validated_for_extrapolation": false,
+    "cutoff": "2024-09-01",
+    "rule": "Use only if validated_for_extrapolation is true; otherwise descriptive time association only."
+  },
+  "benchmark_prediction": {
+    "tasks": [
+      "IFEval",
+      "BBH",
+      "MATH Lvl 5",
+      "GPQA",
+      "MUSR",
+      "MMLU-PRO"
+    ],
+    "vector_required": true,
+    "mean_is_auxiliary": true,
+    "units": "leaderboard points (0-100)",
+    "scope": "Main comparable C5 High same-validation-set layer; conditional C6 Medium only for source-transfer diagnostics.",
+    "per_task_structures": {
+      "IFEval_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "BBH_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MATH Lvl 5_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "GPQA_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MUSR_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "MMLU-PRO_pct": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      "benchmark_mean_aux": {
+        "candidate_id": "CONSTANT",
+        "layer": "L0",
+        "formula": "target ~ 1",
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      }
+    },
+    "artifact": "prediction_table.parquet"
+  },
+  "uncertainty": {
+    "identity_match": "exact raw Model string only for bridge eligibility",
+    "loss_definition": "main cohort one verified same-validation-set definition; C6 Medium not comparable",
+    "run_repetition": "95 multi-file directories audited; no bridge candidate overlaps them",
+    "model_error": "grouped internal CV and conformal residual intervals",
+    "extrapolation": "time, family and >=20B scale rows reported separately; do not propagate as identified when status is conditional"
+  },
+  "eligibility_detail": {
+    "run_id": "20260925T113355+0800",
+    "task_id": "TASK-T05",
+    "eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+    "decision_basis": "Frozen thresholds applied without movement; main comparable cohort contains 7 models with one verified loss definition and one model family.",
+    "main_comparable_n": 7,
+    "conditional_full_n": 45,
+    "partial_excluded_n": 6,
+    "corrupt_json_no_score_n": 4,
+    "task_decisions": [
+      {
+        "target": "IFEval_pct",
+        "target_label": "IFEval",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": true,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "BBH_pct",
+        "target_label": "BBH",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": false,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "MATH Lvl 5_pct",
+        "target_label": "MATH Lvl 5",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": true,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "GPQA_pct",
+        "target_label": "GPQA",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": true,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "MUSR_pct",
+        "target_label": "MUSR",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": true,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "MMLU-PRO_pct",
+        "target_label": "MMLU-PRO",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": true,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      },
+      {
+        "target": "benchmark_mean_aux",
+        "target_label": "Six-task mean (auxiliary)",
+        "selected_candidate_id": "CONSTANT",
+        "checks": {
+          "internal_rmse_improvement_ge_0.10": false,
+          "internal_spearman_ge_0.50": false,
+          "internal_coverage_0.85_to_0.98": false,
+          "time_pass": false,
+          "leave_family_pass": false,
+          "scale_oos_pass": false,
+          "no_major_direction_reversal": false
+        },
+        "eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+      }
+    ],
+    "limitations": [
+      "C5 High and C6 High are the same seven model rows; C6 does not provide an independent replication set.",
+      "C6 Medium has report-specific/different validation sets and is therefore source-transfer or conditional association only.",
+      "Only one model family is present in the main comparable layer, so a complete leave-family upgrade test is not identifiable.",
+      "Four damaged C8 JSON files affect coverage only and receive no score."
+    ],
+    "causal_language_allowed": false
+  }
+}

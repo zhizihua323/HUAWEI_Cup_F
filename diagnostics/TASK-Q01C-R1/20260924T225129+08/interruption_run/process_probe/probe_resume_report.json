@@ -1,0 +1,223 @@
+{
+  "run_id": "synthetic_run",
+  "mode": "fixture",
+  "generated_local": "2026-09-24T22:51:33+08:00",
+  "process_pid": 20028,
+  "finalized_run": false,
+  "resumable": true,
+  "read_only_probe": true,
+  "writes": [
+    "probe_resume_report.json"
+  ],
+  "scan_counters": {
+    "protocol_version": 2,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 31544,
+        "last_scan_started": "2026-09-24T22:51:32+08:00",
+        "last_scan_finished": "2026-09-24T22:51:32+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 1
+  },
+  "scan_passes_during_probe": 0,
+  "checked_stages": [
+    {
+      "stage": "s00_preflight",
+      "stage_marker": {
+        "valid": true,
+        "reason": "valid",
+        "checked": true
+      },
+      "checkpoint": null,
+      "decision": "reusable"
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "stage_marker": {
+        "valid": true,
+        "reason": "valid",
+        "checked": true
+      },
+      "checkpoint": null,
+      "decision": "reusable"
+    },
+    {
+      "stage": "s10_scan_a1",
+      "stage_marker": {
+        "valid": true,
+        "reason": "valid",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": true,
+        "reason": "valid (v2 layout)",
+        "layout": "v2",
+        "expected_input_sha256": "7703a40fc17f06b0a77915e9761d9a335de6b853e3269789df67db85721ff2d7"
+      },
+      "decision": "reusable"
+    },
+    {
+      "stage": "s11_scan_a2",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": false,
+        "reason": "legacy: missing file(s)",
+        "layout": null,
+        "expected_input_sha256": "103560b966b2c1daa89342344fa6827a114b040ab62fbd43df3584f3af1addd9"
+      },
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s12_scan_a3",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": false,
+        "reason": "legacy: missing file(s)",
+        "layout": null,
+        "expected_input_sha256": "0511327f42b52caa13e9565b26d9135785461b2603eada51e3717bf67232cea9"
+      },
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s20_score_primary",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": false,
+        "reason": "legacy: missing file(s)",
+        "layout": null,
+        "expected_input_sha256": null
+      },
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s30_sensitivity",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": false,
+        "reason": "legacy: missing file(s)",
+        "layout": null,
+        "expected_input_sha256": null
+      },
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s40_summarize",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": {
+        "valid": false,
+        "reason": "legacy: missing file(s)",
+        "layout": null,
+        "expected_input_sha256": null
+      },
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s50_verify",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": null,
+      "decision": "not_reusable"
+    },
+    {
+      "stage": "s60_finalize",
+      "stage_marker": {
+        "valid": false,
+        "reason": "stage marker missing",
+        "checked": true
+      },
+      "checkpoint": null,
+      "decision": "not_reusable"
+    }
+  ],
+  "reusable_stages": [
+    {
+      "stage": "s00_preflight",
+      "reason": "valid",
+      "layout": null
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "reason": "valid",
+      "layout": null
+    },
+    {
+      "stage": "s10_scan_a1",
+      "reason": "valid",
+      "layout": "v2"
+    }
+  ],
+  "not_reusable_stages": [
+    {
+      "stage": "s11_scan_a2",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": "legacy: missing file(s)"
+    },
+    {
+      "stage": "s12_scan_a3",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": "legacy: missing file(s)"
+    },
+    {
+      "stage": "s20_score_primary",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": "legacy: missing file(s)"
+    },
+    {
+      "stage": "s30_sensitivity",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": "legacy: missing file(s)"
+    },
+    {
+      "stage": "s40_summarize",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": "legacy: missing file(s)"
+    },
+    {
+      "stage": "s50_verify",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": null
+    },
+    {
+      "stage": "s60_finalize",
+      "stage_marker_reason": "stage marker missing",
+      "checkpoint_reason": null
+    }
+  ],
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "synthetic_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225129+08\\interruption_run",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225129+08\\synthetic_fixture",
+    "--probe-resume"
+  ],
+  "note": "read-only eligibility check: no stage was executed and no scan was performed"
+}

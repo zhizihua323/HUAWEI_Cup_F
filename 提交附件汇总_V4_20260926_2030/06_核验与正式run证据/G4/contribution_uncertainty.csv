@@ -1,0 +1,29 @@
+benchmark_task,component_id,selected_model,draws_ok,low_5pct,median,high_95pct,status,notes
+IFEval,contrib_bootstrap_scale,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+IFEval,contrib_bootstrap_non_scale,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+IFEval,contrib_bootstrap_fitted,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+IFEval,robust_structure_sensitivity,M0_CONSTANT,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+BBH,contrib_bootstrap_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+BBH,contrib_bootstrap_non_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+BBH,contrib_bootstrap_fitted,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+BBH,robust_structure_sensitivity,M1_SCALE,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+MATH Lvl 5,contrib_bootstrap_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MATH Lvl 5,contrib_bootstrap_non_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MATH Lvl 5,contrib_bootstrap_fitted,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MATH Lvl 5,robust_structure_sensitivity,M1_SCALE,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+GPQA,contrib_bootstrap_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+GPQA,contrib_bootstrap_non_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+GPQA,contrib_bootstrap_fitted,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+GPQA,robust_structure_sensitivity,M1_SCALE,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+MUSR,contrib_bootstrap_scale,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MUSR,contrib_bootstrap_non_scale,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MUSR,contrib_bootstrap_fitted,M0_CONSTANT,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MUSR,robust_structure_sensitivity,M0_CONSTANT,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+MMLU-PRO,contrib_bootstrap_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MMLU-PRO,contrib_bootstrap_non_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MMLU-PRO,contrib_bootstrap_fitted,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+MMLU-PRO,robust_structure_sensitivity,M1_SCALE,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0
+six_task_mean_complete_only,contrib_bootstrap_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+six_task_mean_complete_only,contrib_bootstrap_non_scale,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+six_task_mean_complete_only,contrib_bootstrap_fitted,M1_SCALE,500,0.0,0.0,0.0,EVALUABLE,canonical-model grouped bootstrap; fixed endpoint windows; no threshold change
+six_task_mean_complete_only,robust_structure_sensitivity,M1_SCALE,1,,0.0,,DESCRIPTIVE,scale=0.0; non_scale=0.0

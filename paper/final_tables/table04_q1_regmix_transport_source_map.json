@@ -1,0 +1,12 @@
+{
+  "asset": "table04_q1_regmix_transport",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "solution/outputs/mixture/metrics.csv",
+      "fields": "n; rmse_all_domains; mae_all_domains; spearman_equal_domain_mean; role",
+      "unit": "Loss; rank correlation",
+      "denominator": "frozen scale-specific test sets"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "TASK-PAPER-PREFLIGHT",
+  "run_id": "20260925T195721+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "started_local": "2026-09-25T19:57:21+08:00",
+  "finished_local": "2026-09-25T20:12:00+08:00",
+  "scope": [
+    "chapter skeleton",
+    "formal reference verification",
+    "citation map",
+    "formula registry",
+    "figure/table registry",
+    "AI disclosure draft",
+    "V1 editorial clean copy"
+  ],
+  "explicitly_not_performed": [
+    "final DOCX/PDF generation",
+    "final figure generation",
+    "new scientific modeling",
+    "G1/G2/G4 result substitution",
+    "modification of FULL_MANUSCRIPT_V1 or 00-05",
+    "modification of formal scientific runs"
+  ],
+  "outputs": {
+    "paper_preflight_files": 9,
+    "references_verified": 28,
+    "citation_rows": 24,
+    "formula_rows": 37,
+    "figure_table_rows": 25,
+    "editorial_issue_rows": 21
+  },
+  "scientific_boundaries": {
+    "G1": "EXPLICIT_PLACEHOLDER_PENDING_CONTROLLER_REVIEW",
+    "G2": "EXPLICIT_PLACEHOLDER_PENDING_CONTROLLER_REVIEW",
+    "G4": "EXPLICIT_PLACEHOLDER_PENDING_CONTROLLER_REVIEW",
+    "frozen_numbers": "UNCHANGED",
+    "final_render_created": false
+  },
+  "verification": {
+    "checks_file": "checks.json",
+    "verification_file": "verification.json",
+    "status": "PASS",
+    "n_checks": 39,
+    "n_fail": 0
+  },
+  "network_verification": [
+    "Crossref DOI metadata",
+    "arXiv official API",
+    "OpenReview official API",
+    "PMLR official pages",
+    "DBLP/OpenAlex attempted; OpenAlex rate-limited and not used as sole evidence",
+    "official Hugging Face dataset API",
+    "official Epoch AI CSV endpoint",
+    "OpenAI official Codex documentation"
+  ],
+  "catalogue_corrections": [
+    "RegMix: official record is Qian Liu et al., ICLR 2025 Spotlight; task text says Xia et al., ICML 2024.",
+    "MuSR: official recorded venue is ICLR 2024 Spotlight, not ICML 2024.",
+    "Hoffmann/Kaplan/IFEval entries retain official preprint status where conference metadata was not independently confirmed."
+  ],
+  "manifest_status": "PENDING_FINAL_GENERATION",
+  "generated_at_utc": "2026-09-25T12:11:26.855681+00:00"
+}

@@ -1,0 +1,9 @@
+[2026-09-24T22:55:16.286+08:00] TASK-Q01C start run_id=single_stage mode=fixture resume=False stage=s00_preflight pid=41648
+[2026-09-24T22:55:16.436+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:55:16.439+08:00] stage=s00_preflight done elapsed_s=0.149
+[2026-09-24T22:55:17.162+08:00] TASK-Q01C start run_id=single_stage mode=fixture resume=True stage=s01_synthetic_tests pid=25576
+[2026-09-24T22:55:17.355+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-24T22:55:17.355+08:00] stage=s01_synthetic_tests done elapsed_s=0.186
+[2026-09-24T22:55:18.096+08:00] TASK-Q01C start run_id=single_stage mode=fixture resume=True stage=s10_scan_a1 pid=31620
+[2026-09-24T22:55:18.284+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.2
+[2026-09-24T22:55:18.287+08:00] stage=s10_scan_a1 done elapsed_s=0.184

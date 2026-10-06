@@ -1,0 +1,6 @@
+﻿quantity,lower,upper,unit,rule
+N_B,0.070542,11.965825,billion parameters,B1 marginal support; joint trajectory audited separately
+D_B,0.134,299.893,billion tokens,B1 marginal support; joint trajectory audited separately
+Q_A,0.04888888888888889,0.9805414146077935,A-side score,A calibration support; mapping support checked separately
+Q_B,0.1,0.6,B6 score,T07 confirmatory support; no clipping
+p,0.0,1.0,17-simplex,A4 training-recipe convex hull; preserve zeros

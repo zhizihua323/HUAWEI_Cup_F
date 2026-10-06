@@ -1,0 +1,11 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "diagnostics/TASK-T07/20260925T113744+08/code/t07_run.py"
+      ],
+      "purpose": "T07 deterministic optimization, uncertainty propagation, and interface generation"
+    }
+  ]
+}

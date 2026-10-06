@@ -1,0 +1,8 @@
+[2026-09-25T00:40:42.657+08:00] TASK-Q01C start run_id=run mode=fixture resume=True stage=all pid=13116
+[2026-09-25T00:40:42.663+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:42.666+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:40:42.673+08:00] stage=s10_scan_a1 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.680+08:00] stage=s11_scan_a2 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.686+08:00] stage=s12_scan_a3 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.695+08:00] stage=s20_score_primary REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:40:42.701+08:00] ERROR stage_failure: stage s30_sensitivity reuse validation returned INVALID: validation failed: payload_sha256 (failed checks: ['payload_sha256']); hard stop - no recomputation, downgrade or marker rewrite

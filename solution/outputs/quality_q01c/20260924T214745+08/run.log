@@ -1,0 +1,24 @@
+[2026-09-24T21:47:45.678+08:00] TASK-Q01C start run_id=20260924T214745+08 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c\20260924T214745+08
+[2026-09-24T21:47:46.476+08:00] stage=s00_preflight complete; inputs verified, code snapshot frozen
+[2026-09-24T21:47:46.612+08:00] stage=s01_synthetic_tests complete tests=9
+[2026-09-24T21:48:01.584+08:00] stage=s10_scan_a1 rows=50000 elapsed_s=15.0 rss_mb=213.9
+[2026-09-24T21:48:02.268+08:00] stage=s10_scan_a1 complete rows=51230 elapsed_s=15.7
+[2026-09-24T21:48:02.318+08:00] stage=s10_scan_a1 checkpoint reuse (valid); decompress_passes=0
+[2026-09-24T21:48:02.318+08:00] stage=s10_scan_a1 done rows=51230 probe_reused=True
+[2026-09-24T21:48:05.346+08:00] stage=s11_scan_a2 complete rows=17523 elapsed_s=3.0
+[2026-09-24T21:48:05.367+08:00] stage=s11_scan_a2 checkpoint reuse (valid); decompress_passes=0
+[2026-09-24T21:48:05.367+08:00] stage=s11_scan_a2 done rows=17523 probe_reused=True
+[2026-09-24T21:48:13.439+08:00] stage=s12_scan_a3 rows=50000 elapsed_s=8.1 rss_mb=262.4
+[2026-09-24T21:48:21.671+08:00] stage=s12_scan_a3 rows=100000 elapsed_s=16.3 rss_mb=336.5
+[2026-09-24T21:48:30.060+08:00] stage=s12_scan_a3 rows=150000 elapsed_s=24.7 rss_mb=437.5
+[2026-09-24T21:48:38.519+08:00] stage=s12_scan_a3 rows=200000 elapsed_s=33.2 rss_mb=538.7
+[2026-09-24T21:48:40.481+08:00] stage=s12_scan_a3 complete rows=203752 elapsed_s=35.1
+[2026-09-24T21:48:40.657+08:00] stage=s12_scan_a3 checkpoint reuse (valid); decompress_passes=0
+[2026-09-24T21:48:40.657+08:00] stage=s12_scan_a3 done rows=203752 probe_reused=True
+[2026-09-24T21:48:41.712+08:00] stage=s20_score_primary normalization fitted on 40943 calibration rows
+[2026-09-24T21:48:45.236+08:00] stage=s20_score_primary complete rows=272505 Q_valid=272486 Q_missing=19
+[2026-09-24T21:48:48.669+08:00] stage=s30_sensitivity complete; imputed records=19
+[2026-09-24T21:48:51.588+08:00] stage=s40_summarize domain rows=38 denominators=532 sensitivity rows=38 comparison=38
+[2026-09-24T21:48:54.308+08:00] stage=s40_summarize complete (summaries + report)
+[2026-09-24T21:48:54.513+08:00] running independent verifier: D:\anaconda\python.exe -X utf8 C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py --run-dir C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c\20260924T214745+08
+[2026-09-24T21:48:58.123+08:00] stage=s50_verify complete checks={'n_checks': 20, 'n_pass': 20, 'n_fail': 0, 'n_not_checked': 0}

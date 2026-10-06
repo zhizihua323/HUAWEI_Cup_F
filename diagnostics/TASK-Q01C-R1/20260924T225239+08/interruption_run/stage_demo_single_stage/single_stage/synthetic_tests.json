@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "n_tests": 10,
+  "n_failed": 0,
+  "tests": [
+    {
+      "test": "all_11_features_valid",
+      "status": "PASS",
+      "detail": {
+        "Q_valid": [
+          true,
+          true,
+          true
+        ],
+        "Q_baseline": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "expected_group_mean": 0.5
+      }
+    },
+    {
+      "test": "missing_modernbert_professionalism_propagates",
+      "status": "PASS",
+      "detail": {
+        "Q_valid": false,
+        "n_groups_valid": 2,
+        "missing_features": "modernbert_professionalism",
+        "group_values": {
+          "usability": 0.5,
+          "knowledge": null,
+          "education_reasoning": 0.5
+        },
+        "range_defined": true
+      }
+    },
+    {
+      "test": "missing_modernbert_reasoning_propagates",
+      "status": "PASS",
+      "detail": {
+        "Q_valid": false,
+        "n_groups_valid": 2,
+        "missing_features": "modernbert_reasoning",
+        "group_values": {
+          "usability": 0.5,
+          "knowledge": 0.5,
+          "education_reasoning": null
+        },
+        "range_defined": true
+      }
+    },
+    {
+      "test": "two_missing_features_one_valid_group",
+      "status": "PASS",
+      "detail": {
+        "n_groups_valid": 1,
+        "std": 0.0,
+        "range": 0.0
+      }
+    },
+    {
+      "test": "zero_valid_groups_range_undefined",
+      "status": "PASS",
+      "detail": {
+        "n_groups_valid": 0,
+        "range_defined": false
+      }
+    },
+    {
+      "test": "disagreement_matches_pandas_skipna",
+      "status": "PASS",
+      "detail": {
+        "expected_range": [
+          0.39999999999999997,
+          0.39999999999999997,
+          0.0,
+          null
+        ],
+        "actual_range": [
+          0.39999999999999997,
+          0.39999999999999997,
+          0.0,
+          null
+        ],
+        "expected_std0": [
+          0.1632993161855452,
+          0.19999999999999998,
+          0.0,
+          null
+        ],
+        "actual_std0": [
+          0.1632993161855452,
+          0.19999999999999998,
+          0.0,
+          null
+        ]
+      }
+    },
+    {
+      "test": "q_std_effective_n_and_divisor",
+      "status": "PASS",
+      "detail": {
+        "one": "UNDEFINED_N_LT_2",
+        "two_n": 2,
+        "two_divisor": 1,
+        "std": 0.0
+      }
+    },
+    {
+      "test": "sensitivity_parameters_calibration_only",
+      "status": "PASS",
+      "detail": {
+        "median_before": 0.4,
+        "median_after": 0.4,
+        "calibration_median": 0.4,
+        "candidates": 200
+      }
+    },
+    {
+      "test": "gate_hard_stop_no_fallback",
+      "status": "PASS",
+      "detail": {
+        "small_n_valid": 49,
+        "coverage_case": 0.5,
+        "single_value_unique": 1,
+        "gate_stop_raised": true
+      }
+    },
+    {
+      "test": "extension_role_isolation",
+      "status": "PASS",
+      "detail": {
+        "role_counts": {
+          "A1_calibration": 200,
+          "A1_holdout": 30,
+          "extension_overlap_A1": 20,
+          "extension_new_records": 20
+        },
+        "baseline": {
+          "candidate_rows": 200,
+          "n_valid": 199,
+          "coverage": 0.995,
+          "n_unique_finite": 5,
+          "median": 0.4,
+          "gate_ok": true,
+          "source_scope": "A1_calibration & is_unique_first"
+        },
+        "per_role_after_extreme_mutation": {
+          "A1_holdout": {
+            "candidate_rows": 200,
+            "n_valid": 199,
+            "coverage": 0.995,
+            "n_unique_finite": 5,
+            "median": 0.4,
+            "gate_ok": true,
+            "source_scope": "A1_calibration & is_unique_first"
+          },
+          "extension_overlap_A1": {
+            "candidate_rows": 200,
+            "n_valid": 199,
+            "coverage": 0.995,
+            "n_unique_finite": 5,
+            "median": 0.4,
+            "gate_ok": true,
+            "source_scope": "A1_calibration & is_unique_first"
+          },
+          "extension_new_records": {
+            "candidate_rows": 200,
+            "n_valid": 199,
+            "coverage": 0.995,
+            "n_unique_finite": 5,
+            "median": 0.4,
+            "gate_ok": true,
+            "source_scope": "A1_calibration & is_unique_first"
+          }
+        },
+        "provenance_calibration_only": true,
+        "gate_failure_hard_stop_raised": true,
+        "small_case_n_valid": 49
+      }
+    }
+  ],
+  "run_id": "single_stage",
+  "generated_local": "2026-09-24T22:52:49+08:00",
+  "synthetic_only": true,
+  "note": "counts here are artificial and never mixed into real statistics"
+}

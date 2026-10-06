@@ -1,0 +1,9 @@
+﻿object,evidence_role,eligibility,boundary
+Q1 主 Q,操作性代理,CLOSED_WITH_LIMITATION,人工核验弱且方向不一致
+Q1 A2/A3,PARTIALLY_STABLE,NOT_EVALUABLE（域级）,全局判据 1/4 与 3/4
+Q2 B1,来源内识别,条件广义表达,不同来源模块不可合并资格
+Q2 B2/B4/B5,外部检验,VALIDATION_FAILED,负结果必须保留
+Q2 B3,同源插值支持,VALIDATION_SUPPORTED,非独立复制
+Q2 B9/B10,OOS/估算,SCENARIO_ONLY,不得宣称大模型真值外推
+Q3 三档预算,条件优化,CONDITIONAL_OPTIMUM,Q 未识别；p 固定
+Q4 12/24 月,数值情景,SCENARIO_ONLY_UNVALIDATED,M2 未通过升级门槛

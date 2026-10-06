@@ -1,0 +1,74 @@
+{
+  "run_id": "20260924T142229+08",
+  "task": "TASK-Q01A",
+  "script": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08\\diagnose_missingness.py",
+  "script_sha256": "5951fb83f5e4227fa3caca4c4ebc853f853d80b103bcf5e7b7bac4f93ff6f146",
+  "python_executable": "D:\\anaconda\\python.exe",
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "python_implementation": "CPython",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26200",
+    "machine": "AMD64"
+  },
+  "cwd": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+  "timezone": "中国标准时间",
+  "start_local": "2026-09-24T14:22:33+08:00",
+  "end_local": "2026-09-24T14:31:56+08:00",
+  "duration_s": 562.825,
+  "stage_seconds": {
+    "precondition": 0.513,
+    "selftest": 0.355,
+    "scan": 524.997,
+    "aggregate": 6.044,
+    "compare": 0.043,
+    "verify": 30.829
+  },
+  "libraries": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "psutil": "7.0.0"
+  },
+  "actual_command": "\"D:\\anaconda\\python.exe\" -X utf8 \"C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08\\diagnose_missingness.py\"",
+  "exit_code": 2,
+  "seed": 20260924,
+  "split_rule": "int(sha256(str(20260924)+key_json)[:16],16) % 5; remainder 0 => A1_holdout",
+  "utf8_mode": true,
+  "single_process_cpu": true,
+  "gpu_used": false,
+  "network_used": false,
+  "resource_limits": {
+    "wall_limit_s": 1200.0,
+    "memory_limit_bytes": 2147483648
+  },
+  "resource_observed": {
+    "peak_rss_bytes": 392937472,
+    "measurement": "psutil memory_info().peak_wset"
+  },
+  "decompression": {
+    "A1": {
+      "passes": 1,
+      "retries": 0,
+      "rows": 51230,
+      "line_count": 51230
+    },
+    "A2_arxiv": {
+      "passes": 1,
+      "retries": 0,
+      "rows": 17523,
+      "line_count": 17523
+    },
+    "A3_github": {
+      "passes": 1,
+      "retries": 0,
+      "rows": 203752,
+      "line_count": 203752
+    }
+  },
+  "hash_reads_per_file": 2,
+  "errors": [
+    "7 acceptance checks FAILED"
+  ],
+  "unfinished": []
+}

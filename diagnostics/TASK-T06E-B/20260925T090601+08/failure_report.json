@@ -1,0 +1,8 @@
+{
+  "exception": "B8 exact-key membership used stale loop variable r; reported common=0 instead of 160",
+  "scientific_result": "NOT_REACHED",
+  "failed_stage": "B8_SUPPORT_PARTITION",
+  "completed": "B1/B6 folds and all 22 parameter profiles",
+  "status": "FAILED_ENGINEERING_RUN",
+  "correction": "Use b8row for all B8 key and failure fields; retain completed B1/B6 folds and profiles as hash-bound cache in the new formal run"
+}

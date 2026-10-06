@@ -1,0 +1,68 @@
+{
+  "equations": 35,
+  "references": 20,
+  "citation_order": [
+    "kaplan2020scaling",
+    "hoffmann2022training",
+    "penedo2024fineweb",
+    "warner2025modernbert",
+    "xie2023dsir",
+    "spearman1904general",
+    "efron1979bootstrap",
+    "openai_tools",
+    "liu2025regmix",
+    "scheffe1958mixtures",
+    "biderman2023pythia",
+    "zhou2023ifeval",
+    "suzgun2023bbh",
+    "hendrycks2021math",
+    "rein2023gpqa",
+    "sprague2023musr",
+    "wang2024mmlupro",
+    "openllmleaderboard2025results",
+    "epochai2026models",
+    "koenker1978regression"
+  ],
+  "figures": [
+    {
+      "caption": "图1 总体技术路线。统一口径的数据依次用于质量代理与配比回归、条件标度与分来源验证、预算约束优化及未来情景分析；适用范围和证据资格在各阶段持续保留。",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v3\\fig01_v3_framework.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 8.383371824480369
+    },
+    {
+      "caption": "图2 质量得分的构造、扩展稳定性与人工核验。扩展检验仅达到部分稳定；有限作者盲审未显示质量得分与人工判断之间稳定的正向一致性。",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v3\\fig02_v3_q1_quality.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 18.67205542725173
+    },
+    {
+      "caption": "图3 领域配比模型的同尺度检验与跨尺度运输。n表示配方数；散点表示配方与13个领域的组合，1M、60M、1B分别含3328、3328、832个点。图内RMSE合并全部配方×域点，ρ为逐域计算后等权平均，区别于正文另报的逐域等权RMSE。",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v3\\fig03_v3_regmix_transport.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 12.956120092378752
+    },
+    {
+      "caption": "图4 基础标度模型的支持覆盖、来源内拟合与分来源误差。B2、B3、B4、B5的图示误差限于支持内记录且不跨来源合并；B2、B4、B5外部验证失败，B3仅获同源插值支持。B9缺少观测Loss，故不计算误差；B10的误差仅为估算参考。",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v3\\fig04_v3_q2_validation.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 18.163972286374133
+    },
+    {
+      "caption": "图5 六项任务及辅助均值在12个月和24个月的三种独立情景。预测以2025年1月28日为相对起点；三种标记不是置信区间，所有负值保持原样。全部结果仅用于情景分析，未经时间外验证。",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v3\\fig05_v3_q4_scenarios.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 16.131639722863742
+    }
+  ],
+  "source_chars": 27906,
+  "heading_count": 41,
+  "science_executed": false,
+  "template": "official_template_converted.docx",
+  "toc": "automatic Word TOC field, levels 1-2, hyperlinks enabled",
+  "intentional_deviations": [
+    "Anonymous submission copy begins at abstract page 1",
+    "Remove identity cover and template artwork",
+    "Official all-other-Chinese 12pt SimSun overrides smaller captions/tables and Hei H2"
+  ]
+}

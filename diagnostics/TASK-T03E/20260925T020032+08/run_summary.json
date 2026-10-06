@@ -1,0 +1,427 @@
+{
+  "task": "TASK-T03E",
+  "task_status": "COMPLETE_PENDING_REVIEW",
+  "run_id": "20260925T020032+08",
+  "run_dir": "diagnostics\\TASK-T03E\\20260925T020032+08",
+  "primary_result": "D = Q_baseline",
+  "candidate_positioning": "C = Q_baseline * (1 - 0.02 * P) is a preregistered rule-sensitivity candidate; it is never final_Q, best_Q or the official main Q",
+  "candidate_version": "t03e_candidate_v1",
+  "input_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+  "input_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+  "input_bytes": 75668880,
+  "phase_a_status": "CALIBRATION_QUALIFIED_PENDING_VALIDATION",
+  "active_domains": [
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "domains_status": {
+    "book": "INSUFFICIENT_CALIBRATION",
+    "c4": "ACTIVE",
+    "commoncrawl": "ACTIVE",
+    "wikipedia": "ACTIVE"
+  },
+  "calibration_labels": [
+    "arxiv",
+    "book",
+    "c4",
+    "commoncrawl",
+    "github",
+    "stackexchange",
+    "wikipedia"
+  ],
+  "thresholds": {
+    "c4": {
+      "a2": 10.068169900367069,
+      "b2": 17.10498651675123,
+      "lo2": 0.0,
+      "hi2": 20.920010222335815,
+      "a3": 10.236220472440944,
+      "b3": 19.403145377828928,
+      "lo3": 0.0,
+      "hi3": 24.635815775809203
+    },
+    "commoncrawl": {
+      "a2": 6.255321791464951,
+      "b2": 10.793186190584164,
+      "lo2": 0.3948158072041508,
+      "hi2": 12.849200304645828,
+      "a3": 5.977031450843722,
+      "b3": 10.383268579318552,
+      "lo3": 0.0,
+      "hi3": 12.759083312427727
+    },
+    "wikipedia": {
+      "a2": 17.880728527955668,
+      "b2": 26.539302446642385,
+      "lo2": 0.0,
+      "hi2": 32.692207792207554,
+      "a3": 13.0,
+      "b3": 26.0,
+      "lo3": 0.0,
+      "hi3": 32.0
+    }
+  },
+  "bootstrap_summary": [
+    {
+      "domain": "c4",
+      "n": 8041,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "commoncrawl",
+      "n": 7688,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "wikipedia",
+      "n": 8013,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    }
+  ],
+  "bootstrap_seed_manifest": "phase_a_calibration_freeze/bootstrap_seed_manifest.csv",
+  "freeze_manifest_sha256": "bdb3edc11637853f4e5488aad37fd1afae8d2a3c96532088a3c424dc810aa93f",
+  "sealed_local": "2026-09-25T02:00:35+08:00",
+  "first_holdout_read_time": "2026-09-25T02:00:40.710+08:00",
+  "first_extension_read_time": "2026-09-25T02:00:40.902+08:00",
+  "read_order_ok": true,
+  "holdout_status": "ACCEPT_STABILITY",
+  "holdout_rows": [
+    {
+      "domain": "c4",
+      "role": "A1_holdout",
+      "n_valid": 1959,
+      "spearman_C_D": 0.9999883272381607,
+      "top10_jaccard_C_D": 1.0,
+      "top_k": 196,
+      "penalty_mean_role": 0.019511458841929678,
+      "penalty_mean_calibration": 0.024114443341129978,
+      "penalty_mean_abs_diff": 0.0046029844992003,
+      "oos_rows": 13,
+      "oos_fraction": 0.006636038795303726,
+      "min_valid_n": 200,
+      "pass_spearman": 1,
+      "pass_jaccard": 1,
+      "pass_penalty_mean": 1,
+      "pass_oos": 1,
+      "eligible": 1,
+      "status": "PASS"
+    },
+    {
+      "domain": "commoncrawl",
+      "role": "A1_holdout",
+      "n_valid": 1948,
+      "spearman_C_D": 0.9999688802130032,
+      "top10_jaccard_C_D": 0.9897959183673469,
+      "top_k": 195,
+      "penalty_mean_role": 0.026737726002369934,
+      "penalty_mean_calibration": 0.023569841033833045,
+      "penalty_mean_abs_diff": 0.003167884968536889,
+      "oos_rows": 28,
+      "oos_fraction": 0.014373716632443531,
+      "min_valid_n": 200,
+      "pass_spearman": 1,
+      "pass_jaccard": 1,
+      "pass_penalty_mean": 1,
+      "pass_oos": 1,
+      "eligible": 1,
+      "status": "PASS"
+    },
+    {
+      "domain": "wikipedia",
+      "role": "A1_holdout",
+      "n_valid": 1973,
+      "spearman_C_D": 0.999982999217464,
+      "top10_jaccard_C_D": 1.0,
+      "top_k": 198,
+      "penalty_mean_role": 0.023250361275660686,
+      "penalty_mean_calibration": 0.02413571502416115,
+      "penalty_mean_abs_diff": 0.0008853537485004649,
+      "oos_rows": 16,
+      "oos_fraction": 0.008109477952356817,
+      "min_valid_n": 200,
+      "pass_spearman": 1,
+      "pass_jaccard": 1,
+      "pass_penalty_mean": 1,
+      "pass_oos": 1,
+      "eligible": 1,
+      "status": "PASS"
+    }
+  ],
+  "extension_status": "NOT_TESTED_FOR_ACTIVE_CORRECTION",
+  "extension": {
+    "extension_status": "NOT_TESTED_FOR_ACTIVE_CORRECTION",
+    "active_domains": [
+      "c4",
+      "commoncrawl",
+      "wikipedia"
+    ],
+    "per_domain_new": [
+      {
+        "domain": "c4",
+        "role": "extension_new_records",
+        "n_valid": 0,
+        "min_valid_n": 200,
+        "eligible": 0,
+        "spearman_C_D": null,
+        "top10_jaccard_C_D": null,
+        "top_k": null,
+        "penalty_mean_role": null,
+        "penalty_mean_calibration": null,
+        "penalty_mean_abs_diff": null,
+        "oos_rows": null,
+        "oos_fraction": null,
+        "pass_spearman": null,
+        "pass_jaccard": null,
+        "pass_penalty_mean": null,
+        "pass_oos": null,
+        "status": "NOT_PRESENT_IN_EXTENSION"
+      },
+      {
+        "domain": "commoncrawl",
+        "role": "extension_new_records",
+        "n_valid": 0,
+        "min_valid_n": 200,
+        "eligible": 0,
+        "spearman_C_D": null,
+        "top10_jaccard_C_D": null,
+        "top_k": null,
+        "penalty_mean_role": null,
+        "penalty_mean_calibration": null,
+        "penalty_mean_abs_diff": null,
+        "oos_rows": null,
+        "oos_fraction": null,
+        "pass_spearman": null,
+        "pass_jaccard": null,
+        "pass_penalty_mean": null,
+        "pass_oos": null,
+        "status": "NOT_PRESENT_IN_EXTENSION"
+      },
+      {
+        "domain": "wikipedia",
+        "role": "extension_new_records",
+        "n_valid": 0,
+        "min_valid_n": 200,
+        "eligible": 0,
+        "spearman_C_D": null,
+        "top10_jaccard_C_D": null,
+        "top_k": null,
+        "penalty_mean_role": null,
+        "penalty_mean_calibration": null,
+        "penalty_mean_abs_diff": null,
+        "oos_rows": null,
+        "oos_fraction": null,
+        "pass_spearman": null,
+        "pass_jaccard": null,
+        "pass_penalty_mean": null,
+        "pass_oos": null,
+        "status": "NOT_PRESENT_IN_EXTENSION"
+      }
+    ],
+    "insufficient_extension_domains": [],
+    "not_present_domains": [
+      "c4",
+      "commoncrawl",
+      "wikipedia"
+    ],
+    "first_extension_read_time": "2026-09-25T02:00:40.902+08:00",
+    "overlap_rows": 11419,
+    "overlap_reproduced": 11419,
+    "overlap_mismatches": 0,
+    "note": "overlap reproduces identical inputs only; new records carry the transport evidence; C=D perfect agreement in rule-not-applicable or insufficient domains is never counted as transport success",
+    "freeze_manifest_sha256": "bdb3edc11637853f4e5488aad37fd1afae8d2a3c96532088a3c424dc810aa93f",
+    "statement": "D = Q_baseline stays the official main result",
+    "generated_local": "2026-09-25T02:00:41+08:00",
+    "pid": 23104
+  },
+  "regmix": {
+    "status": "NOT_IDENTIFIABLE",
+    "checked_inputs": {
+      "mapping": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\F题\\real_attachments\\A_data_value\\domain_mapping_guide.csv",
+      "mapping_rows": 17,
+      "direct_mappings": 3,
+      "near_direct_mappings": 3,
+      "unmapped_regmix_domains": [
+        "dm_mathematics",
+        "freelaw",
+        "nih_exporter",
+        "pubmed_central",
+        "philpapers",
+        "enron_emails",
+        "ubuntu_irc",
+        "europarl",
+        "hackernews",
+        "pubmed_abstracts",
+        "uspto_backgrounds"
+      ],
+      "mapping_unique_by_mixture_domain": true,
+      "quality_side_unique": true,
+      "mixture_model": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\mixture\\model.json",
+      "model_features": [
+        "train_the_pile_arxiv",
+        "train_the_pile_freelaw",
+        "train_the_pile_nih_exporter",
+        "train_the_pile_pubmed_central",
+        "train_the_pile_wikipedia_en",
+        "train_the_pile_dm_mathematics",
+        "train_the_pile_github",
+        "train_the_pile_philpapers",
+        "train_the_pile_stackexchange",
+        "train_the_pile_enron_emails",
+        "train_the_pile_gutenberg_pg_19",
+        "train_the_pile_pile_cc",
+        "train_the_pile_ubuntu_irc",
+        "train_the_pile_europarl",
+        "train_the_pile_hackernews",
+        "train_the_pile_pubmed_abstracts",
+        "train_the_pile_uspto_backgrounds"
+      ],
+      "model_has_full_composition": true,
+      "b6_file": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "b6_columns": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss"
+      ],
+      "b6_rows": 360,
+      "quality_like_columns": [
+        "Q_score"
+      ],
+      "aggregate_predictions_rows": 2428
+    },
+    "structural_reasons": [
+      "11 of 17 RegMix domains have no quality-domain mapping (quality_domain=\"(none)\"), so the mapping is neither complete nor unique",
+      "the existing mixture model already includes the full pile composition vector w as features, so with fixed domain qualities q_d the aggregate Q_mix is a deterministic function of w inside that model; adding Q_mix therefore cannot be read as independent quality information",
+      "the B-side experiment table does carry ['Q_score'] over 360 experiment rows, but no documented join key links A-side quality rows/domains to those experiment_id values, so no reliable sample-level or experiment-level A-to-B pairing exists in the read-only inputs",
+      "no independent quality variation under a fixed composition w is available in the read-only inputs (one loss per mixture, one aggregate quality per domain)"
+    ],
+    "composition_vector_assessment": "the existing mixture model already includes the full pile composition vector w as features, so with fixed domain qualities q_d the aggregate Q_mix is a deterministic function of w inside that model",
+    "a_to_b_pairing_assessment": "the B-side experiment table does carry ['Q_score'] over 360 experiment rows, but no documented join key links A-side quality rows/domains to those experiment_id values, so no reliable sample-level or experiment-level A-to-B pairing exists in the read-only inputs",
+    "regression_or_bridge_fitting_performed": false,
+    "new_models_or_scalers_fitted": false,
+    "needed_for_identification": [
+      "a documented, complete and unique quality-domain -> RegMix-domain mapping",
+      "quality variation that is independent of the composition vector w",
+      "an experiment-level A-to-B pairing with a scale calibration (T06)"
+    ],
+    "generated_local": "2026-09-25T02:00:41+08:00",
+    "pid": 23104
+  },
+  "boundaries": {
+    "n_confirmatory_rows": 51212,
+    "all_finite": true,
+    "P_min": 0.0,
+    "P_max": 1.0,
+    "P_within_unit_interval": true,
+    "max_Q_C_minus_D": 0.0,
+    "max_abs_Q_C_minus_D": 0.01580750144022236,
+    "min_ratio_Q_C_over_D_for_positive_D": 0.9799999999999999,
+    "rows_D_zero": 0,
+    "rows_D_zero_and_C_zero": 0,
+    "new_zero_values": 0,
+    "negative_Q_C_rows": 0,
+    "oos_rows": 285,
+    "supported_rows": 29337,
+    "rules": "Q_C <= D, Q_C >= 0.98*D, no new zeros, P in [0, 1] on the confirmatory sample",
+    "rule_not_applicable_rows": 242693,
+    "rule_not_applicable_max_abs_delta": 0.0,
+    "rule_not_applicable_zero_delta": true,
+    "rule_not_applicable_domains": [
+      "arxiv",
+      "github",
+      "stackexchange"
+    ]
+  },
+  "seed_check": {
+    "rows": 600,
+    "mismatches": 0,
+    "status": "PASS"
+  },
+  "source_scan": {
+    "t03e_preregistered_rule_sensitivity.py": {
+      "present": true,
+      "prohibited_call_hits": {},
+      "clean": true
+    },
+    "t03e_verify.py": {
+      "present": true,
+      "prohibited_call_hits": {},
+      "clean": true
+    }
+  },
+  "coverage_consistency": {
+    "ok": true,
+    "evidence": {
+      "role_domain_groups": 18,
+      "mismatches": [],
+      "row_level_denominator_mismatch_rows": 0,
+      "rows_checked": 272505
+    }
+  },
+  "protected_baseline_check": "protected_baseline_check.json",
+  "checks_summary": {
+    "PASS": 22,
+    "NOT_CHECKED": 1
+  },
+  "verification_summary": "see verification.json (independent verifier, written after checks.json)",
+  "artifacts": {
+    "candidate_scores": "candidate_Q_scores.parquet",
+    "t06_interface_parquet": "t06_quality_interface.parquet",
+    "t06_interface_json": "t06_quality_interface.json",
+    "holdout_validation": "phase_b_frozen_validation/holdout_validation.csv",
+    "extension_new_validation": "phase_b_frozen_validation/extension_new_validation.csv",
+    "extension_overlap_validation": "phase_b_frozen_validation/extension_overlap_validation.csv",
+    "regmix_identifiability": "phase_b_frozen_validation/regmix_loss_identifiability.json",
+    "domain_role_inventory": "phase_b_frozen_validation/domain_role_inventory.csv",
+    "output_manifest": "output_manifest.json (generated last)"
+  },
+  "restrictions_honoured": [
+    "no A/B candidate was computed or compared",
+    "no PCA / entropy weighting / CRITIC selection",
+    "lambda grid reported on calibration only, primary fixed at 0.02",
+    "no lambda learning and no Q_baseline-supervised direction learning",
+    "no bonus, no clip, no extra penalty, no cross-domain fallback",
+    "no A1-A3 raw compressed input was read, scanned, stat-ed or hashed",
+    "the official Q01C run, quality outputs and 00-05 documents were not modified"
+  ],
+  "open_items": [
+    "controller decision on whether the rule-sensitivity candidate deserves any further role; D = Q_baseline stays the official main result either way",
+    "RegMix/Loss identification status is recorded as a method conclusion, not as a candidate failure",
+    "holdout history was partly known before this stage: results are a parameter-freeze validation, not a fully blinded test",
+    "extension transport evidence is reported per active domain; insufficient or not-tested statuses must not be quoted as transport success"
+  ],
+  "generated_local": "2026-09-25T02:00:51+08:00",
+  "pid": 23104,
+  "open_items_controller": [
+    "controller decision on whether the rule-sensitivity candidate deserves any further role; D = Q_baseline stays the official main result either way",
+    "RegMix/Loss identification status is recorded as a method conclusion, not as a candidate failure",
+    "holdout history was partly known before this stage: results are a parameter-freeze validation, not a fully blinded test",
+    "extension transport evidence is reported per active domain; insufficient or not-tested statuses must not be quoted as transport success"
+  ]
+}

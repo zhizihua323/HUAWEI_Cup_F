@@ -1,0 +1,41 @@
+{
+  "run_id": "base_run",
+  "mode": "fixture",
+  "start_local": "2026-09-25T00:40:29+08:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\anaconda\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "",
+  "timezone": "中国标准时间",
+  "seed": 20260924,
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "base_run",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003952\\rejection_tests\\base",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003952\\synthetic_fixture",
+        "--hold-after-stage",
+        "s30_sensitivity"
+      ],
+      "executable": "D:\\anaconda\\python.exe",
+      "cwd": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+      "pid": 40516,
+      "recorded_local": "2026-09-25T00:40:29+08:00"
+    }
+  ],
+  "single_process_cpu": true,
+  "gpu_used": false,
+  "network_used": false,
+  "libraries": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0"
+  },
+  "content_read": false,
+  "real_inputs_accessed": 0,
+  "fixture_manifest_sha256": "f185fa529567570d7ffb59a1f2b293a2f89223f993c2aee077db62eb869137d0"
+}

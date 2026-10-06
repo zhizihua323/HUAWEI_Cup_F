@@ -1,0 +1,22 @@
+scenario_order,scenario_id,family,base_scenario,bridge,q_source,h_parameter_b,r_B1,rho_Q,quality_transport,transport_parameter,tau_p,p_change,use,eligibility,frozen_definition
+1,S00_NULL_M0_B1,null_reference,S00,H0,none,,,,off,off,,none,NO_QUALITY_EFFECT,default,H0; quality off; mixture transport off; T07 default
+2,S01_QREF_QA_H2_B1_R06_ADD,quality_reference,S01,H2,Q_baseline,1.0,0.6,1.0,additive,off,0.0,none,SCENARIO_REFERENCE,scenario_only,Q_baseline; H2 b=1; r_B1=0.6; rho_Q=1; additive; p fixed/transport off
+3,S02_QC,quality_univariate,S01,H2,Q_C,1.0,0.6,1.0,additive,off,0.0,none,PAIRED_SENSITIVITY,scenario_only,relative S01: Q_baseline -> Q_C
+4,S03_H1_IDENTITY,quality_univariate,S01,H1,Q_baseline,,0.6,1.0,additive,off,0.0,none,BRIDGE_ALTERNATIVE,scenario_only,relative S01: H2 -> H1
+5,S04_H2_B05,quality_univariate,S01,H2,Q_baseline,0.5,0.6,1.0,additive,off,0.0,none,BRIDGE_ALTERNATIVE,scenario_only,relative S01: H2 b=1 -> b=0.5
+6,S05_H2_B20,quality_univariate,S01,H2,Q_baseline,2.0,0.6,1.0,additive,off,0.0,none,BRIDGE_ALTERNATIVE,scenario_only,relative S01: H2 b=1 -> b=2
+7,S06_H3_EQQUANTILE,quality_univariate,S01,H3,Q_baseline,,0.6,1.0,additive,off,0.0,none,BRIDGE_ALTERNATIVE,scenario_only,relative S01: H2 -> H3
+8,S07_H4_DIRECTION_ONLY,quality_univariate,S01,H4,none,,0.6,1.0,direction_only,off,0.0,none,NO_NUMERIC_PREDICTION,direction_only_not_optimizable,relative S01: H2 -> H4; direction only; no numeric loss; not optimizable
+9,S08_RB1_02,quality_univariate,S01,H2,Q_baseline,1.0,0.2,1.0,additive,off,0.0,none,R_B1_FIXED_SCENARIO,scenario_only,relative S01: r_B1=0.6 -> 0.2
+10,S09_RB1_09,quality_univariate,S01,H2,Q_baseline,1.0,0.9,1.0,additive,off,0.0,none,R_B1_FIXED_SCENARIO,scenario_only,relative S01: r_B1=0.6 -> 0.9
+11,S10_RHOQ_00,quality_univariate,S01,H2,Q_baseline,1.0,0.6,0.0,off,off,0.0,none,DEGENERATE_KERNEL_CHECK,scenario_only,relative S01: rho_Q=1 -> 0; quality term off
+12,S11_RHOQ_05,quality_univariate,S01,H2,Q_baseline,1.0,0.6,0.5,additive,off,0.0,none,RHO_Q_FIXED_SCENARIO,scenario_only,relative S01: rho_Q=1 -> 0.5
+13,S12_EFF_KEEP_ETA,quality_univariate,S01,H2,Q_baseline,1.0,0.6,1.0,effective_data_keep_eta,eta,0.0,none,TRANSPORT_FIXED_SCENARIO,scenario_only,relative S01: additive -> effective-data; transport keeps eta
+14,S13_EFF_KEEP_K,quality_univariate,S01,H2,Q_baseline,1.0,0.6,1.0,effective_data_keep_k,k,0.0,none,TRANSPORT_FIXED_SCENARIO,scenario_only,relative S01: additive -> effective-data; transport keeps k; target beta recomputes eta
+15,S14_MIX_TAU05,mixture_transport_univariate,S00,H0,none,,,,off,off,0.5,none,TAU_P_FIXED_SCENARIO,scenario_only,base S00: quality off; tau_p=0.5; mixture transport perturbation
+16,S15_MIX_TAU10,mixture_transport_univariate,S00,H0,none,,,,off,off,1.0,none,TAU_P_FIXED_SCENARIO,scenario_only,base S00: quality off; tau_p=1; mixture transport perturbation
+17,S16_MIX_TAUM10_STRESS,mixture_transport_univariate,S00,H0,none,,,,off,off,-1.0,none,FAILURE_STRESS_ONLY,failure_stress,base S00: quality off; tau_p=-1; failure stress only
+18,S17_B8_REVERSE_COMMON_SUPPORT,conflict_univariate,S00,H0,none,,,,off,off,0.0,none,B8_COMMON_SUPPORT_SLOT_ONLY,NO_NUMERIC_PREDICTION,base S00: B8 common-support reverse-evidence slot; no legacy k=-20; no out-of-support numeric prediction
+19,X01_Q_HIGH,extreme_combination,X01,H2,Q_baseline,2.0,0.2,1.0,additive,off,0.0,none,EXTREME_FIXED_COMBINATION,scenario_only,Q_baseline; H2 b=2; r_B1=0.2; rho_Q=1; additive; tau_p=0; no p change
+20,X02_Q_CONSERVATIVE,extreme_combination,X02,H2,Q_C,0.5,0.9,0.5,additive,off,0.0,none,EXTREME_FIXED_COMBINATION,scenario_only,Q_C; H2 b=0.5; r_B1=0.9; rho_Q=0.5; additive; tau_p=0; no p change
+21,X03_H3_EFF,extreme_combination,X03,H3,Q_baseline,,0.6,1.0,effective_data_keep_eta,eta,0.0,none,EXTREME_FIXED_COMBINATION,scenario_only,Q_baseline; H3; r_B1=0.6; rho_Q=1; effective-data keep eta; tau_p=0; no p change

@@ -1,0 +1,30 @@
+{"time": "2026-09-25T09:06:10.377656+08:00", "stage": "B1_B6_fit", "status": "START", "detail": "input anchors frozen; begin B1 and B6 fitting"}
+{"time": "2026-09-25T09:07:28.712742+08:00", "stage": "B1_B6_fit", "status": "PASS", "detail": "B1 full validations and 14 B6 folds complete"}
+{"time": "2026-09-25T09:21:41.991332+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B1:M0_B1:E: completed=42"}
+{"time": "2026-09-25T09:21:41.992454+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B1:M0_B1:A: completed=42"}
+{"time": "2026-09-25T09:21:41.993481+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B1:M0_B1:B: completed=42"}
+{"time": "2026-09-25T09:21:42.002683+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B1:M0_B1:alpha: completed=42"}
+{"time": "2026-09-25T09:21:42.003766+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B1:M0_B1:beta: completed=42"}
+{"time": "2026-09-25T09:22:37.842299+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:M0_6:E: completed=42"}
+{"time": "2026-09-25T09:22:37.845252+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:M0_6:A: completed=42"}
+{"time": "2026-09-25T09:22:37.848561+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:M0_6:B: completed=42"}
+{"time": "2026-09-25T09:22:37.851668+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:M0_6:alpha: completed=42"}
+{"time": "2026-09-25T09:22:37.853111+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:M0_6:beta: completed=42"}
+{"time": "2026-09-25T09:42:21.445427+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:E: completed=42"}
+{"time": "2026-09-25T09:42:21.449005+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:A: completed=42"}
+{"time": "2026-09-25T09:42:21.452089+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:B: completed=42"}
+{"time": "2026-09-25T09:42:21.455521+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:alpha: completed=42"}
+{"time": "2026-09-25T09:42:21.458911+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:beta: completed=42"}
+{"time": "2026-09-25T09:42:21.462525+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-add:k_add: completed=43"}
+{"time": "2026-09-25T09:43:42.221750+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:E: completed=42"}
+{"time": "2026-09-25T09:43:42.223261+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:A: completed=42"}
+{"time": "2026-09-25T09:43:42.224586+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:B: completed=42"}
+{"time": "2026-09-25T09:43:42.225801+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:alpha: completed=42"}
+{"time": "2026-09-25T09:43:42.226686+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:beta: completed=42"}
+{"time": "2026-09-25T09:43:42.227499+08:00", "stage": "profile_parameter", "status": "PASS", "detail": "B6:MQ-eff:eta: completed=42"}
+{"time": "2026-09-25T09:43:42.454432+08:00", "stage": "profiles", "status": "PASS", "detail": "22 parameter profiles completed"}
+{"time": "2026-09-25T09:43:44.526733+08:00", "stage": "B7_B8", "status": "PASS", "detail": "B7 new=90 repeats=360; B8 common=0 outside=1704"}
+{"time": "2026-09-25T09:43:44.527730+08:00", "stage": "bootstrap", "status": "START", "detail": "200 N-cluster bootstrap replicates on Q<=0.6"}
+{"time": "2026-09-25T09:50:11.889031+08:00", "stage": "cache_load", "status": "START", "detail": "hash-bound deterministic B1/B6 folds and profiles from interrupted engineering run"}
+{"time": "2026-09-25T09:50:11.952305+08:00", "stage": "cache_load", "status": "PASS", "detail": "22 profiles and frozen split evidence loaded; no Q>0.6 training"}
+{"time": "2026-09-25T09:50:12.632903+08:00", "stage": "B7_B8", "status": "PASS", "detail": "B7 new=90 repeats=360; B8 common=160 outside=1544"}

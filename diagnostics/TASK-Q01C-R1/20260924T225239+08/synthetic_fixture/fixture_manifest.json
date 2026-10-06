@@ -1,0 +1,64 @@
+{
+  "fixture_id": "q01c_r1_fixture_v1",
+  "synthetic": true,
+  "protocol_version": 2,
+  "description": "synthetic run used by TASK-Q01C-R1 to prove cross-process checkpoint reuse; contains no real attachment data",
+  "files": [
+    {
+      "file_id": "A1",
+      "path": "inputs/f1_a1.jsonl",
+      "fallback_domain": null,
+      "stage": "s10_scan_a1"
+    },
+    {
+      "file_id": "A2_arxiv",
+      "path": "inputs/f2_arxiv.jsonl",
+      "fallback_domain": "arxiv",
+      "stage": "s11_scan_a2"
+    },
+    {
+      "file_id": "A3_github",
+      "path": "inputs/f3_github.jsonl",
+      "fallback_domain": "github",
+      "stage": "s12_scan_a3"
+    }
+  ],
+  "expected_rows": {
+    "A1": 600,
+    "A2_arxiv": 30,
+    "A3_github": 30
+  },
+  "expected_rows_total": 660,
+  "expected_q_missing": 2,
+  "expected_q_missing_physical": 2,
+  "expected_q_valid": 658,
+  "expected_q_valid_physical": 658,
+  "expected_imputed_rows": 2,
+  "expected_calibration_domain_counts": {
+    "commoncrawl": 164,
+    "wikipedia": 160,
+    "github": 160
+  },
+  "missing_cases": [
+    {
+      "file_id": "A1",
+      "domain": "commoncrawl",
+      "feature": "modernbert_professionalism",
+      "list_field": "modernbert_professionalism",
+      "role_hint": "non_calibration"
+    },
+    {
+      "file_id": "A3_github",
+      "domain": "github",
+      "feature": "modernbert_professionalism",
+      "list_field": "modernbert_professionalism",
+      "role_hint": "extension_new"
+    }
+  ],
+  "input_sha256": {
+    "f1_a1.jsonl": "7703a40fc17f06b0a77915e9761d9a335de6b853e3269789df67db85721ff2d7",
+    "f2_arxiv.jsonl": "103560b966b2c1daa89342344fa6827a114b040ab62fbd43df3584f3af1addd9",
+    "f3_github.jsonl": "0511327f42b52caa13e9565b26d9135785461b2603eada51e3717bf67232cea9"
+  },
+  "generator": "solution/tests/q01c_r1_fixture.py"
+}

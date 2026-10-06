@@ -1,0 +1,38 @@
+{
+  "run_id": "synthetic_run",
+  "mode": "fixture",
+  "output_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225311+08\\interruption_run\\synthetic_run",
+  "stages": [
+    "s00_preflight",
+    "s01_synthetic_tests",
+    "s10_scan_a1",
+    "s11_scan_a2",
+    "s12_scan_a3",
+    "s20_score_primary",
+    "s30_sensitivity",
+    "s40_summarize",
+    "s50_verify",
+    "s60_finalize"
+  ],
+  "seed": 20260924,
+  "protocol_version": 2,
+  "fixture_manifest": "q01c_r1_fixture_v1",
+  "split_rule": "int(sha256(str(20260924)+key_json)[:16],16)%5; 0 -> A1_holdout",
+  "primary_q_rule": "strict complete cases over the 11 main-Q features",
+  "group_rule": "equal weights within and across the three groups; no reallocation",
+  "sensitivity_rule": "A1_calibration per-domain median over normalized values, missing features only",
+  "sensitivity_gates": {
+    "n_valid_min": 100,
+    "coverage_min": 0.95,
+    "n_unique_finite_min": 2
+  },
+  "fallback_policy": "none: gate failure stops the run",
+  "resume_policy": "reuse only when input/config/code/payload hashes and markers validate",
+  "prohibitions": [
+    "no record deletion",
+    "no zero filling",
+    "no strategy change",
+    "no holdout/extension parameter estimation",
+    "no old-output overwrite"
+  ]
+}

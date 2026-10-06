@@ -1,0 +1,6 @@
+﻿max_position_embeddings,model_count,T07_audited_candidate
+2048,18,1
+4096,8,1
+8192,7,1
+32768,11,1
+131072,1,1

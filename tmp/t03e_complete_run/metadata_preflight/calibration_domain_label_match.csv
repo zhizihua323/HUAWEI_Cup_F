@@ -1,0 +1,5 @@
+﻿design_label,present_in_calibration,exact_match,status,calibration_valid_n
+book,True,True,EXACT_MATCH,0
+c4,True,True,EXACT_MATCH,3
+commoncrawl,False,False,DESIGN_LABEL_ABSENT,0
+wikipedia,True,True,EXACT_MATCH,4000

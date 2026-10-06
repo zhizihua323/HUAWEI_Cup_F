@@ -1,0 +1,2 @@
+{"ts": "2026-09-25T00:42:22+08:00", "phase": "protected_snapshot", "event": "start", "pid": 22436}
+{"ts": "2026-09-25T00:42:22+08:00", "phase": "protected_snapshot", "event": "complete", "pid": 22436, "n_entries": 476}

@@ -1,0 +1,12 @@
+{
+  "asset": "table07_q3_budget_optima",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-T07/20260925T113744+08/budget_scenario_optima.csv",
+      "fields": "budget_flops; N_B; D_B; predicted_loss; active_constraints; support_status; Q_status; p_status",
+      "unit": "FLOPs; billion parameters; billion tokens; Loss",
+      "denominator": "scenario S00_NULL_M0_B1 and H=2048"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "BLOCKED": 0,
+  "HOLD": 0,
+  "占位": 0,
+  "待补": 0,
+  "问题三问题四尚未冻结": 0,
+  "TODO": 0,
+  "TBD": 0,
+  "RESERVED": 0,
+  "图X": 0,
+  "表X": 0,
+  "CONDITIONAL_ASSOCIATION_ONLY": 0,
+  "NOT_IDENTIFIABLE_PROGRESS": 0,
+  "CONSTANT": 0,
+  "SCENARIO_ONLY": 0
+}

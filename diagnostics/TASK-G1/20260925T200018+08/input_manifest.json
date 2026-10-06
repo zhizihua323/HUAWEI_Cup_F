@@ -1,0 +1,129 @@
+{
+  "run_id": "20260925T200018+08",
+  "generated_local": "2026-09-25T20:04:16+08:00",
+  "project_root": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+  "inputs": [
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/quality_features_scores.parquet",
+      "bytes": 75668880,
+      "mtime": 1790258300.2572556,
+      "sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+      "role": "Q01C primary scored parquet",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/domain_summary.csv",
+      "bytes": 15340,
+      "mtime": 1790258304.5362096,
+      "sha256": "788911134f007a6b86448878fbb26ae449525aa9820d7d4be3e2040b822dc8d7",
+      "role": "Q01C domain summary",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/summary_denominators.csv",
+      "bytes": 71201,
+      "mtime": 1790258304.5402088,
+      "sha256": "f8f913f40b0c00668215964e2e3a3c8f880791a48f5aecb81811f6b368abc163",
+      "role": "Q01C denominator summary",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/run_config.json",
+      "bytes": 1487,
+      "mtime": 1790258240.2400684,
+      "sha256": "8914d234731cb19a002e3f8e88b2efa53af694f6602d472bcddc5aa9df869203",
+      "role": "Q01C config",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/input_manifest.json",
+      "bytes": 12997,
+      "mtime": 1790258239.625689,
+      "sha256": "9bbec78050f0f532e62266fc8f10032d9b7bda004f088e6eff551f88956c647b",
+      "role": "Q01C input manifest",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/output_manifest.json",
+      "bytes": 9506,
+      "mtime": 1790258311.7919998,
+      "sha256": "8286c1bc1a887b5fa24b617c9f8e854bb8515f87cdcd51afb9165352693dde66",
+      "role": "Q01C output manifest",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/code_snapshot/quality_q01c.py",
+      "bytes": 96262,
+      "mtime": 1790258233.3992548,
+      "sha256": "e4024c32315d42c235e2086267062703b0b89489788dd504295c39b97548ffad",
+      "role": "Q01C frozen code",
+      "scope": "definition authority"
+    },
+    {
+      "path": "diagnostics/TASK-T03E/20260925T020032+08/run_config.json",
+      "bytes": 5022,
+      "mtime": 1790272833.654188,
+      "sha256": "6ec3fff8d9643abe1b73bc449024d51a2f9e26dae507fe2f115c9707c58fd912",
+      "role": "T03E config and active-domain freeze",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/extension_overlap_validation.csv",
+      "bytes": 1321906,
+      "mtime": 1790272841.2789607,
+      "sha256": "fd1c07164125acb22b3506801018cecc936fb69f5f636d8e107b9a936e0074b4",
+      "role": "T03E overlap evidence",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/extension_new_validation.csv",
+      "bytes": 459,
+      "mtime": 1790272841.5656426,
+      "sha256": "d7456d91c2b90e60e96ab4646f3f00c4ef21cd02a9fa1eb5e854dce9e753a299",
+      "role": "T03E extension evidence",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "diagnostics/TASK-T03E/20260925T020032+08/phase_b_frozen_validation/actual_domain_labels_all_roles.csv",
+      "bytes": 766,
+      "mtime": 1790272841.779086,
+      "sha256": "2b12ce6ce10113f079fcfa18fc712af006dbea0047c3e0cab35fcb7b0c588fd9",
+      "role": "T03E domain labels",
+      "scope": "official frozen input"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+      "bytes": 103349792,
+      "mtime": 1788132500.0,
+      "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+      "role": "Q01C A1 raw source",
+      "scope": "direct text source"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz",
+      "bytes": 3652724,
+      "mtime": 1788132500.0,
+      "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+      "role": "Q01C A2 raw source",
+      "scope": "text-join audit candidate"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz",
+      "bytes": 37618172,
+      "mtime": 1788132500.0,
+      "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+      "role": "Q01C A3 raw source",
+      "scope": "text-join audit candidate"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/regmix_domain_sample.jsonl.xz",
+      "bytes": 165293312,
+      "mtime": 1788132500.0,
+      "sha256": "4fa8eea3d39c7f789abd62a456c88c9d4e032c58a0fff4c27853b9f50e5d7b04",
+      "role": "A18 optional text sample",
+      "scope": "text-join audit candidate"
+    }
+  ],
+  "hash_algorithm": "sha256",
+  "read_only": true
+}

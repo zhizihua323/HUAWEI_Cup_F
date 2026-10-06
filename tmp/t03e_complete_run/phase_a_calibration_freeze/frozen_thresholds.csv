@@ -1,0 +1,3 @@
+﻿domain,indicator,a_q95,b_q99,lo_q005,hi_q995,n_valid_source,source_scope
+c4,top_2gram,1.0,2.0,0.5,2.5,4000,x
+c4,top_3gram,3.0,4.0,2.5,4.5,4000,x

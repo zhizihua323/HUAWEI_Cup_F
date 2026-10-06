@@ -1,0 +1,8 @@
+﻿figure_id,title,figure_path,source_files,treatment,qualification
+图1,四问建模主线与证据分层,paper/showcase/showcase_figures/fig1_modeling_framework.png,paper/FINAL_RESULT_INDEX.md；T06/T07/T05/T08冻结接口,结构图为作者绘制，不含新数值,CURRENT_FREEZE
+图2,问题一质量评价与冲突分析,paper/showcase/showcase_figures/fig2_q1_quality_conflict.png,solution/outputs/quality_q01c/20260924T215718+08/domain_summary.csv,由冻结汇总数值重绘,CURRENT_FREEZE
+图3,RegMix同尺度检验与跨尺度运输,paper/showcase/showcase_figures/fig3_regmix_validation.png,diagnostics/TASK-T06E-P/20260925T075729+08/mixture_audit/regmix_fixed_model_validation.csv；solution/outputs/mixture/linear_test_1m_predictions.csv,1M为检验；60M/1B仅运输；10B/70B未作图,1M_SUPPORTED_TRANSPORT_ONLY
+图4,B1经典Scaling Law预测—实测,paper/showcase/showcase_figures/fig4_b1_scaling_fit.png,diagnostics/TASK-T06E-B/20260925T100306+08/fit/full_fit_predictions.csv,仅绘制M0_B1来源内样本,B1_SOURCE_CONDITIONAL
+图5,三档预算条件最优N_B—D_B配置,paper/showcase/showcase_figures/fig5_budget_optima.png,diagnostics/TASK-T07/20260925T113744+08/budget_scenario_optima.csv,固定H=2048、Q与p不优化,CURRENT_FREEZE
+图6,上下文敏感性与结构变化,paper/showcase/showcase_figures/fig6_h_sensitivity.png,diagnostics/TASK-T07/20260925T113744+08/context_sensitivity.csv,H为外生变量；结构变化限于活跃约束集合,CURRENT_FREEZE
+图7,六任务条件基线与条件区间,paper/showcase/showcase_figures/fig7_q4_task_baseline_interval.png,diagnostics/TASK-T08/20260925T142203+0800/taskwise_progress.csv,常数模型条件输出；不含未来点预测,PROVISIONAL_Q4_CURRENT_FREEZE

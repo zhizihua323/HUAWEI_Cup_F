@@ -1,0 +1,14 @@
+[r2-verify] R01_distinct_processes: PASS
+[r2-verify] R02_p1_external_termination: PASS
+[r2-verify] R03_zero_recomputation_midstage: PASS
+[r2-verify] R04_checkpoint_hash_invariant: PASS
+[r2-verify] R05_unified_validation_entry: PASS
+[r2-verify] R06_three_rejection_paths: PASS
+[r2-verify] R07_marker_chain_and_stage_scope: PASS
+[r2-verify] R08_immutable_input_bindings: PASS
+[r2-verify] R09_s60_closure: PASS
+[r2-verify] R10_manifest_closure: PASS
+[r2-verify] R11_regression_protection: PASS
+[r2-verify] R12_code_snapshot_consistency: PASS
+[r2-verify] R13_no_real_input_access: PASS
+[r2-verify] summary: {"n_checks": 13, "n_pass": 13, "n_fail": 0, "n_not_checked": 0, "n_not_verifiable": 0}

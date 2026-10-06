@@ -1,0 +1,37 @@
+{
+  "status": "NOT_IDENTIFIABLE",
+  "symbolic_identity": "theta^T p + gamma Q_mix = (theta + gamma q)^T p for fixed q",
+  "design_matrix": "512 normalized A4 training recipes x 17 RegMix domains; no intercept",
+  "design_rank": 17,
+  "design_shape": [
+    512,
+    17
+  ],
+  "qix_indicator_role": "ALGEBRAIC_SUPPORT_INDICATOR_ONLY_NOT_A_DOMAIN_QUALITY_VECTOR",
+  "mapped_domain_count": 6,
+  "unmapped_domain_count": 11,
+  "Q_mix_support_indicator_relative_projection_residual": 9.368877196481023e-16,
+  "Q_mix_support_indicator_absolute_projection_residual": 1.340996908966817e-14,
+  "design_rank_after_adding_Q_mix_column": 17,
+  "rank_increase_from_Q_mix": 0,
+  "gamma_separately_identifiable_from_theta": false,
+  "null_direction": "Any supported vector added through Q_mix is absorbed by the p coefficients for the mapped columns.",
+  "full_17_domain_Q_mix_available": false,
+  "missing_domains_fill": "UNMAPPED_NOT_FILLED",
+  "six_mapped_domains_renormalized_to_total_quality": false,
+  "change_classes": [
+    {
+      "class": "p_direct_mixture_effect",
+      "support": "DIRECTLY_SUPPORTED_BY_FROZEN_REGMIX_LINEAR_MODEL_WITHIN_SCALE"
+    },
+    {
+      "class": "fixed_p_quality_change",
+      "support": "NO_QUALITY_INTERVENTION_DATA"
+    },
+    {
+      "class": "p_mechanical_Q_mix_change",
+      "support": "DETERMINISTIC_ONLY_WITH_COMPLETE_Q; UNAVAILABLE_FOR_11_UNMAPPED_DOMAINS"
+    }
+  ],
+  "T07_rule": "If Q and p are both present, mark REQUIRES_FIXED_P_QUALITY_INTERVENTION; never expose them as two independently tunable coordinates without feasibility evidence."
+}

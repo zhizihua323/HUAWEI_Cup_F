@@ -1,0 +1,172 @@
+{
+  "run_id": "20260924T225155+08",
+  "generated_local": "2026-09-24T22:52:06+08:00",
+  "fixture": {
+    "dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\synthetic_fixture",
+    "manifest_sha256": "f74479b32f74341c02d21cc1b9fd5d410da31aea4209b12fda4ace6f2aecc58e",
+    "fixture_id": "q01c_r1_fixture_v1",
+    "expected_rows": {
+      "A1": 600,
+      "A2_arxiv": 30,
+      "A3_github": 30
+    },
+    "input_sha256": {
+      "f1_a1.jsonl": "7703a40fc17f06b0a77915e9761d9a335de6b853e3269789df67db85721ff2d7",
+      "f2_arxiv.jsonl": "103560b966b2c1daa89342344fa6827a114b040ab62fbd43df3584f3af1addd9",
+      "f3_github.jsonl": "0511327f42b52caa13e9565b26d9135785461b2603eada51e3717bf67232cea9"
+    }
+  },
+  "processes": {
+    "p1": {
+      "pid": 32344,
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "synthetic_run",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\interruption_run",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\synthetic_fixture",
+        "--hold-after-stage",
+        "s10_scan_a1"
+      ],
+      "started_local": "2026-09-24T22:51:56+08:00",
+      "terminated_local": "2026-09-24T22:51:58+08:00",
+      "exit_code": 1,
+      "hold_hook_seen": true
+    },
+    "p2": {
+      "pid": 38516,
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "synthetic_run",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\interruption_run",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\synthetic_fixture",
+        "--resume"
+      ],
+      "started_local": "2026-09-24T22:51:59+08:00",
+      "finished_local": "2026-09-24T22:52:02+08:00",
+      "exit_code": 0
+    },
+    "probe": {
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "synthetic_run",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\interruption_run",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\synthetic_fixture",
+        "--probe-resume"
+      ],
+      "exit_code": 0,
+      "reused_stages": [
+        "s00_preflight",
+        "s01_synthetic_tests",
+        "s10_scan_a1"
+      ]
+    },
+    "same_run_dir": true,
+    "distinct_pids": true
+  },
+  "checkpoints": {
+    "stage": "s10_scan_a1",
+    "hash_before_p2": {
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "4932f4f5bcc52362c4f8be74a392962e597b43f6faeffe015b943eecaa47e230",
+      "checkpoint_marker": "a7090069e39e4e1ea2a11103b5a06ce43af30526d9d367ae77813afa776d0b5f",
+      "stage_marker": "a3b627615769899b09fa0fe9c17d3368633b2b6b5c08873d037c487a36556d93"
+    },
+    "hash_after_p2": {
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "4932f4f5bcc52362c4f8be74a392962e597b43f6faeffe015b943eecaa47e230",
+      "checkpoint_marker": "a7090069e39e4e1ea2a11103b5a06ce43af30526d9d367ae77813afa776d0b5f",
+      "stage_marker": "a3b627615769899b09fa0fe9c17d3368633b2b6b5c08873d037c487a36556d93"
+    },
+    "hash_invariant": true
+  },
+  "scan_counters": {
+    "before_p2": {
+      "protocol_version": 2,
+      "files": {
+        "A1": {
+          "passes": 1,
+          "last_scan_pid": 32344,
+          "last_scan_started": "2026-09-24T22:51:58+08:00",
+          "last_scan_finished": "2026-09-24T22:51:58+08:00"
+        }
+      },
+      "reuse_events": [],
+      "total_passes": 1
+    },
+    "after_p2": {
+      "protocol_version": 2,
+      "files": {
+        "A1": {
+          "passes": 1,
+          "last_scan_pid": 32344,
+          "last_scan_started": "2026-09-24T22:51:58+08:00",
+          "last_scan_finished": "2026-09-24T22:51:58+08:00"
+        },
+        "A2_arxiv": {
+          "passes": 1,
+          "last_scan_pid": 38516,
+          "last_scan_started": "2026-09-24T22:52:00+08:00",
+          "last_scan_finished": "2026-09-24T22:52:00+08:00"
+        },
+        "A3_github": {
+          "passes": 1,
+          "last_scan_pid": 38516,
+          "last_scan_started": "2026-09-24T22:52:00+08:00",
+          "last_scan_finished": "2026-09-24T22:52:00+08:00"
+        }
+      },
+      "reuse_events": [],
+      "total_passes": 3
+    },
+    "new_passes_in_p2": {
+      "A1": 0,
+      "A2_arxiv": 1,
+      "A3_github": 1
+    },
+    "new_passes_in_p2_total": 2,
+    "reuse_events": []
+  },
+  "run_summary": {
+    "status": "COMPLETE_PENDING_REVIEW",
+    "executed_stages": [
+      "s11_scan_a2",
+      "s12_scan_a3",
+      "s20_score_primary",
+      "s30_sensitivity",
+      "s40_summarize",
+      "s50_verify"
+    ],
+    "reused_stages": {
+      "s00_preflight": "valid",
+      "s01_synthetic_tests": "valid",
+      "s10_scan_a1": "valid"
+    },
+    "output_manifest_present": true
+  },
+  "synthetic_run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225155+08\\interruption_run\\synthetic_run",
+  "a1_a3_access": {
+    "opened": 0,
+    "hashed": 0,
+    "decompressed": 0,
+    "stat_calls": 0,
+    "note": "the harness and pipeline only ever reference the synthetic fixture directory in this test"
+  }
+}

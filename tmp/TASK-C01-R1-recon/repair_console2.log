@@ -1,0 +1,48 @@
+====================================================================================================
+TASK-C01-R1  C8 aggregation and checker repair (post-processing only)
+run_id        : 20260924T225116+08
+output dir    : C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-C01-R1\20260924T225116+08
+source dir    : C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-C01\20260924T175553+08
+started (UTC+8): 2026-09-24T22:51:17.665403+08:00
+python        : 3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]
+platform      : Windows-11-10.0.26200-SP0
+numpy/pandas  : 2.3.5 / 2.3.3
+====================================================================================================
+[guard] frozen C01 directory snapshot: 47 files
+[load] frozen TASK-C01 artifacts (read-only, guarded)
+       data_inventory.csv                         (16, 9)
+       field_audit.csv                            (164, 18)
+       missingness.csv                            (164, 9)
+       duplicate_audit.csv                        (65, 9)
+       model_identity_audit.csv                   (10, 21)
+       date_audit.csv                             (9, 19)
+       unit_audit.csv                             (54, 18)
+       c5_c6_comparability_audit.csv              (4, 27)
+       c8_parse_log.csv                           (1958, 30)
+       c8_corrupt_files.csv                       (4, 31)
+       c8_directory_file_counts.csv               (1863, 2)
+       c8_task_inventory.csv                      (45, 14)
+       c8_group_scores_all_runs.csv               (11724, 12)
+       c8_model_task_aggregate.csv                (11160, 20)
+       c8_model_wide_canonical.csv                (1860, 16)
+       join_coverage.csv                          (29, 10)
+       c8_leaf_metrics.csv.gz                     (293201, 18)
+       run_summary.json                           json
+       checks.json                                json
+       output_manifest.json                       json
+       handoff.md                                 text (9298 chars)
+       audit_c01.py                               text (109863 chars)
+[1/6] corrected C8 directory coverage
+       directories=1863 files_total=1958 success=1954 failed=4 results_valid=11699 results_missing=25
+[2/6] corrected model x task table
+       rows=11160 valid_rows=11135 zero_rows=25 sum=11699
+[3/6] corrected model wide table
+       rows=1860 complete=1854 partial=6 complete_mean_finite=1854 partial_mean_finite=6
+[4/6] input manifest + protected original run check
+       inputs=22 mismatching_frozen_manifest=1 c01_unchanged=True
+[5/6] repaired checker
+       checks=88 {'PASS': 79, 'WARN': 0, 'FAIL': 0, 'NOT_CHECKED': 5, 'NOT_VERIFIABLE': 4}
+       key C8 checks=44 {'PASS': 44, 'WARN': 0, 'FAIL': 0, 'NOT_CHECKED': 0, 'NOT_VERIFIABLE': 0}
+[6/6] writing ledger, schema, summary, handoff, code snapshot
+[code] staged scripts copied to the run directory and to code_snapshot/
+[done] repair phase finished 2026-09-24T22:51:21.180734+08:00 duration=3.5s

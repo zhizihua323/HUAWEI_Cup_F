@@ -1,0 +1,8 @@
+{"ts": "2026-09-25T00:38:37+08:00", "phase": "harness", "event": "start", "pid": 17936, "note": "R2 mid-stage cross-process supervisor"}
+{"ts": "2026-09-25T00:38:37+08:00", "phase": "fixture_build", "event": "start", "pid": 17936}
+{"ts": "2026-09-25T00:38:37+08:00", "phase": "fixture_build", "event": "complete", "pid": 17936, "fixture_id": "q01c_r1_fixture_v1", "rows": 660}
+{"ts": "2026-09-25T00:38:38+08:00", "phase": "p1", "event": "start", "pid": 17936, "hold_after_stage": "s30_sensitivity"}
+{"ts": "2026-09-25T00:38:39+08:00", "phase": "p1", "event": "terminated", "pid": 13192, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-25T00:38:39+08:00", "phase": "probe", "event": "start", "pid": 17936}
+{"ts": "2026-09-25T00:38:40+08:00", "phase": "probe", "event": "complete", "pid": 17936, "exit_code": 2}
+{"ts": "2026-09-25T00:38:40+08:00", "phase": "p2", "event": "start", "pid": 17936}

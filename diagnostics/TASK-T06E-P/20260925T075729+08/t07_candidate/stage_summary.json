@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scenario_count": 21,
+  "scenario_ids_exact": true,
+  "quality_enabled_scenarios": 14,
+  "numeric_prediction_filled_in_P": 0,
+  "joint_Q_p_independent_optimizable_scenarios": 0,
+  "B_side_values_filled_in_P": false,
+  "T07_started": false,
+  "integration_started": false
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "stage",
+  "stage": "s50_verify",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:52:02+08:00",
+  "outputs": {
+    "checks.json": "693c35584bdbccdf9eabb4324c892211b3dedc85142be7a3602f55b743977e2c",
+    "verification.json": "68856e05a8742092e781cb37b84403b0aef015feb0808b8e064992098d8b8afc",
+    "verify_console.log": "1dc1cbae96358471b6e3395d0d580592253bf012919b08cb8d33f456b432947a"
+  }
+}

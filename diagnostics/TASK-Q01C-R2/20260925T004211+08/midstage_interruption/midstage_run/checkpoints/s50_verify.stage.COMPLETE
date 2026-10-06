@@ -1,0 +1,13 @@
+{
+  "kind": "stage",
+  "stage": "s50_verify",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:42:16+08:00",
+  "checkpoint_identity": null,
+  "outputs": {
+    "checks.json": "74de92954086989d0f3c2911348ed012134d3fcf6e5353fc3b1b6be0a6fbc63a",
+    "verification.json": "8a03aada71baacb80a94d369543ab13d4a4fbb09eb560256c5c29072390c0a27",
+    "verify_console.log": "1dc1cbae96358471b6e3395d0d580592253bf012919b08cb8d33f456b432947a"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

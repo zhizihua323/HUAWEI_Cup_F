@@ -1,0 +1,1 @@
+{"pid": 16996, "finalized": false, "reusable_stages": ["s00_preflight", "s01_synthetic_tests", "s10_scan_a1"], "not_reusable_stages": ["s11_scan_a2", "s12_scan_a3", "s20_score_primary", "s30_sensitivity", "s40_summarize", "s50_verify", "s60_finalize"]}

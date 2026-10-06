@@ -1,0 +1,65 @@
+{
+  "docx_opened": true,
+  "pdf_opened": true,
+  "pdf_pages": 25,
+  "docx_tables": 10,
+  "docx_inline_figures": 7,
+  "figure_files": 7,
+  "table_files": 10,
+  "references": 17,
+  "forbidden_counts": {
+    "BLOCKED": 0,
+    "HOLD": 0,
+    "占位": 0,
+    "待补": 0,
+    "问题三问题四尚未冻结": 0,
+    "TODO": 0,
+    "TBD": 0,
+    "RESERVED": 0,
+    "图X": 0,
+    "表X": 0,
+    "CONDITIONAL_ASSOCIATION_ONLY": 0,
+    "NOT_IDENTIFIABLE_PROGRESS": 0,
+    "CONSTANT": 0,
+    "SCENARIO_ONLY": 0
+  },
+  "figure_dpi": {
+    "fig1_modeling_framework.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig2_q1_quality_conflict.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig3_regmix_validation.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig4_b1_scaling_fit.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig5_budget_optima.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig6_h_sensitivity.png": [
+      599.9988,
+      599.9988
+    ],
+    "fig7_q4_task_baseline_interval.png": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "sha256": {
+    "SHOWCASE_MANUSCRIPT_V0_9.docx": "d7a2486b68ed6db8bbd842fbff308fa4543ac9faea15633e0b92ecaff1a6257b",
+    "SHOWCASE_MANUSCRIPT_V0_9.pdf": "36c3e13cc801f44a99fe68132e5d396775449324dbe117914c208872f0336448"
+  },
+  "file_sizes": {
+    "SHOWCASE_MANUSCRIPT_V0_9.docx": 3320015,
+    "SHOWCASE_MANUSCRIPT_V0_9.pdf": 1491168
+  },
+  "qualification": "PDF可解析；DOCX可打开；核心图表、目录、页码、参考文献和禁词扫描均已完成。"
+}

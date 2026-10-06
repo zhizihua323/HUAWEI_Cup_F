@@ -1,0 +1,423 @@
+{
+  "run_id": "20260924T150854+08",
+  "task": "TASK-Q01A-R1",
+  "status": "COMPLETED_WITH_NOT_VERIFIABLE_ITEMS",
+  "summary": {
+    "n_checks": 22,
+    "n_pass": 21,
+    "n_fail": 0,
+    "n_not_verifiable": 1
+  },
+  "checks": [
+    {
+      "check_id": "V01_pandas_group_statistics_rule",
+      "description": "synthetic 0/1/2/3 usable-group matrix: range and ddof=0 std are defined with >=1 usable group",
+      "status": "PASS",
+      "actual": {
+        "valid_groups_per_row": [
+          3,
+          2,
+          1,
+          0,
+          3,
+          2
+        ],
+        "pandas_range_defined": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "rule_range_defined": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "pandas_std0_defined": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "rule_std0_defined": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "pandas_mean_defined": [
+          true,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "rule_mean_defined": [
+          true,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "range_nan_rows": 1,
+        "range_nan_rows_from_rule": 1,
+        "gt05_fraction_denominator": 6,
+        "gt05_nan_to_false_rows": 1,
+        "std0_single_group_value": 0.0,
+        "std1_two_groups_defined": true,
+        "std1_single_group_is_nan": true
+      },
+      "expected": "pandas definedness equals the documented >=1-usable-group rule",
+      "evidence": "pandas 2.3.3 synthetic matrix",
+      "note": "rule applied here, not imported from the repair script"
+    },
+    {
+      "check_id": "V02_six_element_nan_list_rule",
+      "description": "six-element list containing NaN invalidates the whole field (current get_features semantics)",
+      "status": "PASS",
+      "actual": {
+        "list_repr": [
+          "1.0",
+          "nan",
+          "3.0",
+          "4.0",
+          "5.0",
+          "6.0"
+        ],
+        "whole_list_invalid": true
+      },
+      "expected": "True",
+      "evidence": "rule re-implemented in this verifier",
+      "note": "real-data counterpart checked in V11"
+    },
+    {
+      "check_id": "V03_denominator_tables_match_independent_pandas",
+      "description": "rater_disagreement mean/std effective n, false-comparison count and Q_mean n recomputed with pandas",
+      "status": "PASS",
+      "actual": {
+        "n_rows_checked": 650,
+        "n_mismatch": 0,
+        "examples": []
+      },
+      "expected": "0 mismatches",
+      "evidence": "summary_denominators_corrected.csv vs pandas recomputation from row_masks.csv.gz",
+      "note": ""
+    },
+    {
+      "check_id": "V04_repair_changed_exactly_the_affected_denominator_rows",
+      "description": "only the reported range/std/false-comparison rows changed (40 + 20 per the review)",
+      "status": "PASS",
+      "actual": {
+        "rows_changed": 60,
+        "expected": 60
+      },
+      "expected": "60",
+      "evidence": "summary_denominators.csv vs summary_denominators_corrected.csv",
+      "note": ""
+    },
+    {
+      "check_id": "V05_all_unique_anchor",
+      "description": "all_unique: range/std n = 261086, false-from-missing-range = 0, Q_mean n = 261067",
+      "status": "PASS",
+      "actual": {
+        "n_total": 261086,
+        "n_range_defined": 261086,
+        "n_std0_defined": 261086,
+        "n_false_from_missing_range": 0,
+        "n_q_nonmissing": 261067,
+        "usable_group_histogram": {
+          "2": 19,
+          "3": 261067
+        }
+      },
+      "expected": "n_range_defined=261086, n_std0_defined=261086, false=0, Q n=261067",
+      "evidence": "row_masks.csv.gz recomputed with pandas",
+      "note": ""
+    },
+    {
+      "check_id": "V06_q_std_variance_divisor",
+      "description": "Q_std effective n and ddof=1 variance divisor are separate columns",
+      "status": "PASS",
+      "actual": {
+        "n_effective": "261067",
+        "variance_divisor": "261066",
+        "status": "DEFINED"
+      },
+      "expected": "n_effective=261067, variance_divisor=261066, DEFINED",
+      "evidence": "summary_denominators_corrected.csv",
+      "note": ""
+    },
+    {
+      "check_id": "V07_missing_concentration_has_numerators_and_denominators",
+      "description": "every concentration row carries explicit numerator/denominator or an undefined reason",
+      "status": "PASS",
+      "actual": {
+        "rows": 254
+      },
+      "expected": "all rows explicit",
+      "evidence": "missing_concentration.csv",
+      "note": ""
+    },
+    {
+      "check_id": "V08_corrected_raw_mask_matches_events",
+      "description": "every corrected raw_invalid mask equals the union of saved raw events for that physical row",
+      "status": "PASS",
+      "actual": {
+        "rows_with_events": 19,
+        "rows_with_corrected_mask": 19,
+        "n_mismatch": 0,
+        "examples": []
+      },
+      "expected": "rows_with_events == rows_with_corrected_mask == 19, 0 mismatches",
+      "evidence": "row_masks_corrected.csv.gz vs invalid_values.csv.gz (independent re-derivation)",
+      "note": ""
+    },
+    {
+      "check_id": "V09_raw_anomaly_anchors",
+      "description": "raw anomaly records: A1 professionalism 5, A1 reasoning 13, A3 professionalism 1; union 19; intersection 0",
+      "status": "PASS",
+      "actual": {
+        "by_file_field": {
+          "A1|modernbert_professionalism": 5,
+          "A1|modernbert_reasoning": 13,
+          "A3_github|modernbert_professionalism": 1
+        },
+        "union": 19,
+        "intersection": 0
+      },
+      "expected": "5/13/1, union 19, intersection 0",
+      "evidence": "invalid_values.csv.gz (independent re-derivation)",
+      "note": ""
+    },
+    {
+      "check_id": "V10_only_permitted_columns_changed",
+      "description": "row_masks_corrected.gz differs from R only in raw_invalid_bits / raw_invalid_count",
+      "status": "PASS",
+      "actual": {
+        "column_diffs": {
+          "raw_invalid_bits": 19,
+          "raw_invalid_count": 19
+        },
+        "rows_changed": 19,
+        "forbidden_diffs": {}
+      },
+      "expected": "only the two permitted columns, exactly the 19 event rows",
+      "evidence": "row-by-row comparison of R/row_masks.csv.gz and the corrected copy",
+      "note": ""
+    },
+    {
+      "check_id": "V11_raw_events_map_to_the_same_extract_nan_rows",
+      "description": "each raw NaN-element record also carries the corresponding extraction-layer NaN bit",
+      "status": "PASS",
+      "actual": {
+        "n_checked": 19,
+        "n_mismatch": 0,
+        "examples": []
+      },
+      "expected": "0 mismatches",
+      "evidence": "invalid_values.csv.gz vs row_masks_corrected.csv.gz extract_nan_bits",
+      "note": ""
+    },
+    {
+      "check_id": "V12_corrected_raw_patterns_and_pairwise_recomputed_independently",
+      "description": "raw-layer patterns and pairwise counts rebuilt from patterns (not from the repair code) match the CSV",
+      "status": "PASS",
+      "actual": {
+        "pattern_rows_checked": 79,
+        "pairwise_rows_checked": 12650,
+        "pattern_mismatches": 0,
+        "pairwise_mismatches": 0,
+        "examples": []
+      },
+      "expected": "0 mismatches",
+      "evidence": "missing_patterns_corrected.csv / missing_pairwise_corrected.csv vs recomputation",
+      "note": ""
+    },
+    {
+      "check_id": "V13_non_raw_layers_unchanged",
+      "description": "extract/norm mask layers of the corrected tables equal R exactly",
+      "status": "PASS",
+      "actual": {
+        "patterns": {
+          "keys_match": true,
+          "n_rows": 316,
+          "n_value_diffs": 0
+        },
+        "pairwise": {
+          "keys_match": true,
+          "n_rows": 39100,
+          "n_value_diffs": 0
+        }
+      },
+      "expected": "no key or value differences",
+      "evidence": "corrected tables vs R tables (raw rows excluded)",
+      "note": ""
+    },
+    {
+      "check_id": "V14_row_identity_uniqueness_and_line_coverage",
+      "description": "per file: source_line unique and exactly 1..recorded physical line count; total 272505 with 272505 distinct identities",
+      "status": "PASS",
+      "actual": {
+        "per_file": {
+          "A1": {
+            "n_rows": 51230,
+            "n_unique_lines": 51230,
+            "expected_decompressed_lines": 51230,
+            "min_line": 1,
+            "max_line": 51230,
+            "covers_1_to_n": true
+          },
+          "A2_arxiv": {
+            "n_rows": 17523,
+            "n_unique_lines": 17523,
+            "expected_decompressed_lines": 17523,
+            "min_line": 1,
+            "max_line": 17523,
+            "covers_1_to_n": true
+          },
+          "A3_github": {
+            "n_rows": 203752,
+            "n_unique_lines": 203752,
+            "expected_decompressed_lines": 203752,
+            "min_line": 1,
+            "max_line": 203752,
+            "covers_1_to_n": true
+          }
+        },
+        "reaggregation_rows": 272505,
+        "n_row_keys": 272505,
+        "distinct_identity_count_from_per_file": 272505
+      },
+      "expected": "unique + full coverage per file; totals 272505",
+      "evidence": "R/row_masks.csv.gz vs R/run_summary.json read_counts and R/checks.json counters",
+      "note": ""
+    },
+    {
+      "check_id": "V15_read_only_inputs_unchanged",
+      "description": "every read-only input hashed at repair start still has the same SHA256; compressed inputs unchanged by stat",
+      "status": "PASS",
+      "actual": {
+        "n_inputs_hash_checked": 42,
+        "sha_changed": [],
+        "compressed_stat_changed": []
+      },
+      "expected": "no change",
+      "evidence": "R1 input_manifest.json vs current files",
+      "note": ""
+    },
+    {
+      "check_id": "V16_r_artifacts_unchanged_for_the_111_protected_files",
+      "description": "the 111 protected files recorded by R keep their pre-run SHA256 after R1",
+      "status": "PASS",
+      "actual": {
+        "n_files": 111,
+        "changed": []
+      },
+      "expected": "no change",
+      "evidence": "R/input_manifest.json secondary_inputs",
+      "note": ""
+    },
+    {
+      "check_id": "V17_static_no_compressed_content_access",
+      "description": "no R1 code line opens/reads/hashes a .jsonl.xz path (static scan)",
+      "status": "PASS",
+      "actual": {
+        "offending_lines": []
+      },
+      "expected": "none",
+      "evidence": "static scan of repair_from_artifacts.py and verify_repairs.py",
+      "note": ""
+    },
+    {
+      "check_id": "V18_no_numeric_q_and_strict_json",
+      "description": "no new CSV exposes numeric Q/group scores and every new JSON is strict",
+      "status": "PASS",
+      "actual": {
+        "csv_with_q_columns": [],
+        "json_with_nonstrict_literals": []
+      },
+      "expected": "none",
+      "evidence": "header scan of new CSVs and token scan of new JSONs",
+      "note": ""
+    },
+    {
+      "check_id": "V19_raw_tree_path_size_registered",
+      "description": "all 2012 registered raw files exist with registered size (stat only)",
+      "status": "PASS",
+      "actual": {
+        "files_on_disk": 2012,
+        "files_registered": 2012,
+        "size_mismatch": [],
+        "unregistered": [],
+        "missing": [],
+        "ok": true
+      },
+      "expected": "2012 files with registered sizes",
+      "evidence": "raw_source_manifest.csv vs filesystem stat (no content read)",
+      "note": ""
+    },
+    {
+      "check_id": "V20_c12_overlap_role_totals",
+      "description": "extension overlap rows are A2=1419, A3=10000 without double counting",
+      "status": "PASS",
+      "actual": {
+        "overlap_rows_ALL": {
+          "A2_arxiv": 1419,
+          "A3_github": 10000
+        },
+        "detail_sum_equals_ALL": true,
+        "n_a2": 1419,
+        "n_a3": 10000,
+        "ok": true
+      },
+      "expected": "ALL-row values 1419/10000 equal the sum of domain rows",
+      "evidence": "R/physical_rows_by_file_role.csv",
+      "note": ""
+    },
+    {
+      "check_id": "V21_first_failure_statement_from_log",
+      "description": "aborted attempt: hashing precondition completed, then build_input_manifest failed on RUN_ID",
+      "status": "PASS",
+      "actual": {
+        "hash_stage_completed_before_abort": true,
+        "aborted_in_build_input_manifest": true,
+        "corrected_statement": "the aborted attempt completed the compressed-byte hashing precondition (stage=precondition hashed_inputs=3) and then failed inside build_input_manifest because RUN_ID was undefined, i.e. before any decompression scan; it contributes no diagnostic rows",
+        "evidence": "diagnostics/TASK-Q01A/20260924T141414+08/run.log"
+      },
+      "expected": "statement matches the saved log",
+      "evidence": "diagnostics/TASK-Q01A/20260924T141414+08/run.log",
+      "note": ""
+    },
+    {
+      "check_id": "V22_c08c_historical_full_tree_mtime",
+      "description": "historical full-directory mtime unchanged (original C08 proposition, mtime part)",
+      "status": "NOT_VERIFIABLE",
+      "actual": {
+        "pre_run_full_tree_mtime_snapshot_available": false,
+        "in_run_scope": "the original run recorded size/mtime only while it ran, so no pre-run snapshot of all 2012 files exists",
+        "r1_action": "no retrospective snapshot was manufactured; the substitute evidence is the path/size registry comparison (V19) and the three XZ hashes (C08b)"
+      },
+      "expected": "unchanged mtimes for every file under F题/real_attachments",
+      "evidence": "R/checks.json C08 evidence and R/run_summary.json; no pre-run snapshot",
+      "note": "kept out of PASS on purpose: the available evidence cannot prove the historical mtime claim"
+    }
+  ],
+  "synthetic_pandas_reference": "synthetic_semantics_check",
+  "boundary": {
+    "compressed_inputs_opened": 0,
+    "compressed_inputs_hashed": 0,
+    "numeric_q_computed": false,
+    "strategy_selected": false
+  }
+}

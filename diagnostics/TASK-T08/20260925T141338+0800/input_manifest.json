@@ -1,0 +1,237 @@
+{
+  "task_id": "TASK-T08",
+  "run_id": "20260925T141338+0800",
+  "generated_at_utc": "2026-09-25T06:18:51.012962+00:00",
+  "workspace": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+  "inputs": [
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/t08_bridge_contract.json",
+      "bytes": 9304,
+      "sha256": "c3b14ccddb4d2c6e4214902672e61a83c7af8b478a3c6a7b3963e2c5ebb82535"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/bridge_analysis_dataset.parquet",
+      "bytes": 31452,
+      "sha256": "6011cdafca9eb08e7052739d5cddac4cc76bb54d97e747b9b2a0a75b7b5a7671"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/prediction_table.parquet",
+      "bytes": 44886,
+      "sha256": "65f70d6c41054935236a5a5ca2c142bc6e7429c844a0204d637f31f95639c2c7"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/residual_audit.csv",
+      "bytes": 239615,
+      "sha256": "29ecc08c435ef14540fb3a2a6b84ef842857268dd2ce9ab62cfa97ad1897ece7"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/split_registry.csv",
+      "bytes": 54012,
+      "sha256": "93c23d17373b106d009a48f6314f8798886154c23f3534cd2b8f6156665551f0"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/model_identity_crosswalk.csv",
+      "bytes": 5736012,
+      "sha256": "d3f5a47882b39919dc26b60bf94136d70c622741cc4d337ff17323d82521fbf1"
+    },
+    {
+      "role": "TASK-T05",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/identifiability_decision.json",
+      "bytes": 4452,
+      "sha256": "03b383e8aa22afdc690635ae249e74dd714fb01104d97825d60c80cafca2a022"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/t08_or_paper_interface.json",
+      "bytes": 1845,
+      "sha256": "1dbfea15e551deb8361961477f3eb930c3ed915ac113b49dd7d3719ae90f4d28"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/budget_scenario_optima.csv",
+      "bytes": 76348,
+      "sha256": "4bcfab4aa8460c63a6049b7ef93431b83ee092af70506601d070ae6afaf92772"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/uncertainty_summary.csv",
+      "bytes": 20353,
+      "sha256": "8bad49e5ceff38cf56c4f43f66770fa381749cf8f50eb2a2cdbf121ffb09b054"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/support_bounds.csv",
+      "bytes": 470,
+      "sha256": "0b6c82e63c1c6fa036416d762b792950324a4125695dfbaf7e2ada6407b8e3ef"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/unit_conversion_audit.csv",
+      "bytes": 423,
+      "sha256": "00e4f3e677b82a85eed92ef6ba0ff50fa9e7b7b8da91717a573f9b3bff088f8f"
+    },
+    {
+      "role": "TASK-T07",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/parameter_draw_optima.parquet",
+      "bytes": 110878,
+      "sha256": "087556abb597937798fe7a039a609f5100c2781724553c24988f293be89de7ef"
+    },
+    {
+      "role": "TASK-T06E-INTEGRATE",
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_model_contract.json",
+      "bytes": 6458,
+      "sha256": "925ffeaec52dd3d72751e5e6d5e99c9cb077ee5106e554fb858530f6b0b8160e"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/c8_model_wide_corrected.csv",
+      "bytes": 966210,
+      "sha256": "6d78edf205cd4cdb082a2f98eb0d26a7b0bcc028e45bca9ce9e23723c9214ff5"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/c8_model_task_aggregate_corrected.csv",
+      "bytes": 6331059,
+      "sha256": "4b36dd039ecb89d6d1c84912718f61d1555b6f62b7d64d796a29b16bc87f790f"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_corrupt_files.csv",
+      "bytes": 3082,
+      "sha256": "7ed2b6d7de145dfb0c84d119e37525b178eb36bb554ece8c2b13ef918ab1dcf5"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/model_identity_audit.csv",
+      "bytes": 3073,
+      "sha256": "94e9d0cbe02ca6c16eb652cfd8b96f2e9a00db8eee272f1592589a2084a6a9cf"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/date_audit.csv",
+      "bytes": 1995,
+      "sha256": "fcbe960e4252b930204fbdff522b6e57ac9b05da5ea5143fb9bf34ae19f938e6"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/missingness.csv",
+      "bytes": 7612,
+      "sha256": "2b26aba55fca5c22e22a1a913ca5252304ff329f9d615776a8ffd26727d60586"
+    },
+    {
+      "role": "TASK-C01/C01-R1",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_parse_log.csv",
+      "bytes": 1379498,
+      "sha256": "68d1f602c7a38e3b4059c8b26623a8aa0af00f4cae8e442ee21f55e70a53ab1b"
+    },
+    {
+      "role": "readonly_metadata",
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv",
+      "bytes": 1011558,
+      "sha256": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846"
+    },
+    {
+      "role": "readonly_metadata",
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_enhanced.csv",
+      "bytes": 1036749,
+      "sha256": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799"
+    },
+    {
+      "role": "readonly_metadata",
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv",
+      "bytes": 826723,
+      "sha256": "ab2b5715b2945ebdeeabfb18e8d040f7c68d8c76bd02c01e446959218bfcd184"
+    },
+    {
+      "role": "readonly_metadata",
+      "path": "F题/real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv",
+      "bytes": 6671403,
+      "sha256": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1"
+    },
+    {
+      "role": "protected_manifest",
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/output_manifest.json",
+      "bytes": 5982,
+      "sha256": "5385e9a8b3d60251ce43e23e176cdeed8aa117750ef572625d66d5f9f46b381f"
+    },
+    {
+      "role": "protected_manifest",
+      "path": "diagnostics/TASK-T07/20260925T113744+08/output_manifest.json",
+      "bytes": 6596,
+      "sha256": "c169cbdc6909e1a6acb15192e02cbfc0397c30eb96d285cf6274ff8dfcf51443"
+    },
+    {
+      "role": "protected_manifest",
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/output_manifest.json",
+      "bytes": 3904,
+      "sha256": "dcca6ff9c65464ec8b28447312e6ac57b34ebc76e930ee7855a1f7f7b60b31a3"
+    },
+    {
+      "role": "protected_manifest",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/output_manifest.json",
+      "bytes": 10820,
+      "sha256": "3596610cc4aae2034dac91347d0132fb90a910920b6ad45f285bede32242b970"
+    },
+    {
+      "role": "protected_manifest",
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/output_manifest.json",
+      "bytes": 3631,
+      "sha256": "b9fc644d80fb6fad8e011b586b7042a474760999d31266bc4b3abe421e1f096a"
+    }
+  ],
+  "protected_manifest_checks": {
+    "TASK-T05": {
+      "manifest": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T05\\20260925T113355+0800\\output_manifest.json",
+      "entries": 34,
+      "checked": 34,
+      "missing": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "TASK-T07": {
+      "manifest": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T07\\20260925T113744+08\\output_manifest.json",
+      "entries": 39,
+      "checked": 39,
+      "missing": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "TASK-T06E-INTEGRATE": {
+      "manifest": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T06E-INTEGRATE\\20260925T110904+08\\output_manifest.json",
+      "entries": 23,
+      "checked": 23,
+      "missing": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "TASK-C01": {
+      "manifest": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\output_manifest.json",
+      "entries": 0,
+      "checked": 0,
+      "missing": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "TASK-C01-R1": {
+      "manifest": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01-R1\\20260924T225308+08\\output_manifest.json",
+      "entries": 0,
+      "checked": 0,
+      "missing": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "status": "PASS"
+    }
+  },
+  "no_t05_t07_refit": true,
+  "no_c8_json_reparse": true
+}

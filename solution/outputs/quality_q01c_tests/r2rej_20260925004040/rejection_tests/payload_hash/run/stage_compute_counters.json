@@ -1,0 +1,180 @@
+{
+  "protocol_version": 3,
+  "stages": {
+    "s00_preflight": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s01_synthetic_tests": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s10_scan_a1": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "checkpoint and stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s11_scan_a2": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "checkpoint and stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s12_scan_a3": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "checkpoint and stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s20_score_primary": {
+      "computations": 1,
+      "reuses": 1,
+      "last_verdict": "REUSABLE",
+      "last_reason": "checkpoint and stage marker validated",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00",
+      "last_reuse_pid": 13116,
+      "last_reuse_local": "2026-09-25T00:40:42+08:00"
+    },
+    "s30_sensitivity": {
+      "computations": 1,
+      "reuses": 0,
+      "last_verdict": "NOT_STARTED",
+      "last_reason": "stage not started in this run directory",
+      "last_compute_pid": 31236,
+      "last_compute_finished": "2026-09-25T00:40:41+08:00"
+    }
+  },
+  "validation_schema_version": 3,
+  "stage_decisions": [
+    {
+      "stage": "s00_preflight",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s10_scan_a1",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s11_scan_a2",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s12_scan_a3",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s20_score_primary",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s30_sensitivity",
+      "action": "computed",
+      "reason": "stage not started in this run directory",
+      "verdict": "NOT_STARTED",
+      "pid": 31236,
+      "decided_local": "2026-09-25T00:40:41+08:00"
+    },
+    {
+      "stage": "s00_preflight",
+      "action": "reused",
+      "reason": "stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "action": "reused",
+      "reason": "stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    },
+    {
+      "stage": "s10_scan_a1",
+      "action": "reused",
+      "reason": "checkpoint and stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    },
+    {
+      "stage": "s11_scan_a2",
+      "action": "reused",
+      "reason": "checkpoint and stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    },
+    {
+      "stage": "s12_scan_a3",
+      "action": "reused",
+      "reason": "checkpoint and stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    },
+    {
+      "stage": "s20_score_primary",
+      "action": "reused",
+      "reason": "checkpoint and stage marker validated",
+      "verdict": "REUSABLE",
+      "pid": 13116,
+      "decided_local": "2026-09-25T00:40:42+08:00"
+    }
+  ]
+}

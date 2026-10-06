@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-26",
+  "scope": "Final manuscript citation closure only; no scientific results or frozen project artifacts modified.",
+  "counts": {
+    "used_references": 23,
+    "unused_verified_candidates": 5,
+    "unresolved_items": 1,
+    "citation_map_rows": 15,
+    "project_evidence_rows_replacing_placeholders": 3
+  },
+  "placeholder_closure": {
+    "PLACE-001": "PRJ-FINAL-Q1",
+    "PLACE-002": "PRJ-FINAL-Q2",
+    "PLACE-003": "PRJ-FINAL-Q4"
+  },
+  "artifacts": [
+    {
+      "path": "paper/final_references/citation_map_final.csv",
+      "bytes": 6422,
+      "sha256": "27fbd1bda45f2ba0c0c708795994908ce28759227d9e1169b2df6fa59c20653a",
+      "purpose": "Final claim-to-reference and project-evidence map"
+    },
+    {
+      "path": "paper/final_references/REFERENCE_AUDIT.md",
+      "bytes": 7109,
+      "sha256": "3b575e8db548500cbd82695ed2b89c4f0246064ac31e8a83d68e7340e2fccfe6",
+      "purpose": "Human-readable citation closure audit"
+    },
+    {
+      "path": "paper/final_references/reference_verification_final.csv",
+      "bytes": 14979,
+      "sha256": "871c5cd7fcdca7129bba4c4b751e571078a921e110c48a90a5e484d4daee4138",
+      "purpose": "Field-level verification ledger for used and unused candidates"
+    },
+    {
+      "path": "paper/final_references/references_final.bib",
+      "bytes": 12380,
+      "sha256": "34adcc3c265ba09807513ec121c2bd6978efbe53437b6bce1caebe2935e1b96f",
+      "purpose": "Final BibTeX library containing only used references"
+    },
+    {
+      "path": "paper/final_references/references_word_numbered.docx",
+      "bytes": 40066,
+      "sha256": "7eb0d6db1845201a718f0c00e85178bceac10bfebfaefc4a3bd0889c96cd25f3",
+      "purpose": "Paste-ready numbered Word reference list"
+    },
+    {
+      "path": "paper/final_references/unresolved_citations.csv",
+      "bytes": 805,
+      "sha256": "f543eaf11f953531c0417429a12d7d5ffae6c97b539ae023c2d9534557b2b8b3",
+      "purpose": "Explicit unresolved-field ledger"
+    }
+  ],
+  "manifest_self": {
+    "path": "paper/final_references/output_manifest.json",
+    "sha256": null,
+    "note": "Self-hash intentionally omitted to avoid recursive content mutation."
+  }
+}

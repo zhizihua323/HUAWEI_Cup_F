@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T094853+08",
+  "created_at": "2026-09-25T07:57:43+08:00",
+  "input_boundary": {
+    "forbidden_reads_not_performed": [
+      "TASK-T06E-P new runs",
+      "A-side T03E interface",
+      "A1-A17",
+      "RegMix artifacts"
+    ]
+  },
+  "inputs": [
+    {
+      "role": "t06e",
+      "path": "tasks/TASK-T06E_来源内缩放律与质量条件关系验证_尺度桥接情景及T07接口.md",
+      "bytes": 39389,
+      "sha256": "a081f0ec0911e35619d738041ee8753aeb2601f2c56570198a24034b1a321dac"
+    },
+    {
+      "role": "t06_method",
+      "path": "tasks/TASK-T06_尺度桥接识别性与广义缩放律方法裁决.md",
+      "bytes": 27668,
+      "sha256": "5b27a8585fef4ca87061c628c7a6e54361651febd6b76b2ae315e1982cb64d8c"
+    },
+    {
+      "role": "brief",
+      "path": "00_PROJECT_BRIEF.md",
+      "bytes": 4614,
+      "sha256": "6d64957a41b33035eb1eb3b0550f4fb48fcb129662b48e5159bea804b4b18058"
+    },
+    {
+      "role": "status",
+      "path": "01_PROJECT_STATUS.md",
+      "bytes": 9393,
+      "sha256": "a005d65e7de22d32cb35c62203541967fbc6e992f6aba6cab4bfa654b1c4b439"
+    },
+    {
+      "role": "decisions",
+      "path": "02_DECISIONS.md",
+      "bytes": 9053,
+      "sha256": "06ce48f37f998e203dfc112e167db417ecef5533e8c37650c3bb6ccb6e6105da"
+    },
+    {
+      "role": "catalog",
+      "path": "03_DATA_CATALOG.md",
+      "bytes": 17325,
+      "sha256": "b96086078bac090cdd72576c4f203e56cc158b91485dd269716d7c093519d1c8"
+    },
+    {
+      "role": "queue",
+      "path": "04_TASK_QUEUE.md",
+      "bytes": 6059,
+      "sha256": "679aef17e99971e76a8517d1499ff289837c8ac62a3affb2a75463221ee6e8b3"
+    },
+    {
+      "role": "review",
+      "path": "05_REVIEW_LOG.md",
+      "bytes": 18076,
+      "sha256": "0308c3c4361d8a3c5ede94738225c96ed118610623c7ad3c757f30e812ffb854"
+    },
+    {
+      "role": "data_notes",
+      "path": "tmp/environment_review/数据说明.txt",
+      "bytes": 25671,
+      "sha256": "7121728be75ee9ee6408819c92395e35fe043d693c740a9f51f54dd3973f1df3"
+    },
+    {
+      "role": "b1",
+      "path": "F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "bytes": 111459,
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    {
+      "role": "b6",
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "bytes": 13670,
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    },
+    {
+      "role": "b7",
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "bytes": 17154,
+      "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a"
+    },
+    {
+      "role": "b8",
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+      "bytes": 81268,
+      "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe"
+    },
+    {
+      "role": "scaling_params",
+      "path": "solution/outputs/scaling/scaling_params.json",
+      "bytes": 2969,
+      "sha256": "7806ffeed8c7acc96864387dfadefa77d3ec293798dd8c353bab543e99520505"
+    },
+    {
+      "role": "model_comparison",
+      "path": "solution/outputs/scaling/model_comparison.csv",
+      "bytes": 1827,
+      "sha256": "ce708a343172beac290caa8227baa9aae972acf6c347657fcf2a3e2223c4ff08"
+    },
+    {
+      "role": "quality_audit",
+      "path": "solution/outputs/scaling/quality_audit.json",
+      "bytes": 8129,
+      "sha256": "d869edc46264488af7137a56126e6f9b4da14777c0df9a7a1fecf529f6ca1313"
+    },
+    {
+      "role": "quality_B6_validation",
+      "path": "solution/outputs/scaling/quality_B6_validation.csv",
+      "bytes": 1336,
+      "sha256": "fa14eea64a6127aad2c6611108f3a5813619f5ed9edc5cb8ebf7a23560f8caf7"
+    },
+    {
+      "role": "quality_within_ND_slopes",
+      "path": "solution/outputs/scaling/quality_within_ND_slopes.csv",
+      "bytes": 16802,
+      "sha256": "5530b9d11a8a24e813649f26b50bde9d993c745995ac87225c3da9e9db106db1"
+    },
+    {
+      "role": "quality_scenario_predictions",
+      "path": "solution/outputs/scaling/quality_scenario_predictions.csv",
+      "bytes": 223898,
+      "sha256": "40ebea245e2ad2b9a9cf2c57d1d8babfbf0e0e0d5a00dabfa2b0893f35fc6496"
+    },
+    {
+      "role": "external_validation",
+      "path": "solution/outputs/scaling/external_validation.csv",
+      "bytes": 36470,
+      "sha256": "fb6f0c87dedd54639f952630d6a6614b43d0d53facd8eb92d65e6f717ec29b2d"
+    },
+    {
+      "role": "validation_by_model",
+      "path": "solution/outputs/scaling/validation_by_model.csv",
+      "bytes": 10399,
+      "sha256": "4dbb4e408d256a85c3cab31befc8be41d0f18225c9874c99ec3dedec9178a998"
+    },
+    {
+      "role": "bootstrap_existing",
+      "path": "solution/outputs/scaling/cluster_bootstrap_parameters.csv",
+      "bytes": 8572,
+      "sha256": "6786fd60f2c0e4767e99ca96e397415586cae8c96995985e4f597eb9443d7f18"
+    },
+    {
+      "role": "scaling_report",
+      "path": "solution/reports/scaling_baseline.md",
+      "bytes": 8092,
+      "sha256": "b9d59cd8d44c63aef77e4508af8bb024d68b284259944bbedf465a15f23782a6"
+    }
+  ],
+  "old_scaling_protection": [
+    {
+      "path": "solution/outputs/scaling/all_fits.json",
+      "bytes": 3400,
+      "sha256": "c97f8704ba97e6f3d362220535310cdacb33652847a43b4cff72fd56e3c044d3"
+    },
+    {
+      "path": "solution/outputs/scaling/B10_predictions.csv",
+      "bytes": 10017,
+      "sha256": "66802050f6a78653d552b792c0cee2c735124747f9f989c2ac0922b83b3f0287"
+    },
+    {
+      "path": "solution/outputs/scaling/B1_all_predictions.csv",
+      "bytes": 1767794,
+      "sha256": "e3fd862aae9ba064185711522bcecbb8db6fe70e1b93204a87144c7e956357d8"
+    },
+    {
+      "path": "solution/outputs/scaling/B1_compute_audit.csv",
+      "bytes": 203422,
+      "sha256": "df664a78679115db7a767e6038f9f057ed7a17229a7c83651e56e9b09d2665d6"
+    },
+    {
+      "path": "solution/outputs/scaling/B1_precision_residual_audit.json",
+      "bytes": 1010,
+      "sha256": "3b7069233c3e1fc1feaeb340618b5f209fcb92d71e63452060ca0ba85ad2b919"
+    },
+    {
+      "path": "solution/outputs/scaling/B2_compute_audit.csv",
+      "bytes": 163330,
+      "sha256": "f8d6b6fa1463852c5b799ca3da0cedae04d846f47a628d25a62a0c3fcc6f3899"
+    },
+    {
+      "path": "solution/outputs/scaling/B2_predictions.csv",
+      "bytes": 128455,
+      "sha256": "0135ab830079843aa9b54d6efd0f8c36559f7475c9942d846e75e48974b6e389"
+    },
+    {
+      "path": "solution/outputs/scaling/B3_predictions.csv",
+      "bytes": 402061,
+      "sha256": "b30ae6fd929d2739c7de0ae6113e8c6031e169aa14166badacf9d99ea45926ce"
+    },
+    {
+      "path": "solution/outputs/scaling/B4_predictions.csv",
+      "bytes": 3699,
+      "sha256": "9cc9416572be3c8dc3d902d710f51b7aacf5b8644f9f10675ec89bf94726853e"
+    },
+    {
+      "path": "solution/outputs/scaling/B5_predictions.csv",
+      "bytes": 3756,
+      "sha256": "08e44185a3adf3f16e5778d14a75a95537232c70afd6ebd9e4db07086b06381a"
+    },
+    {
+      "path": "solution/outputs/scaling/B7_novel_grid_predicted_from_B6.csv",
+      "bytes": 7115,
+      "sha256": "a23e04c4de775aac386c5ae2f0fc62a2bbf2d4c3e00c9194b64b96558721173d"
+    },
+    {
+      "path": "solution/outputs/scaling/B9_compute_audit.csv",
+      "bytes": 17992,
+      "sha256": "781bb7c18755244060c2773ffd054858f1d86bb866905f2e8a0af4b5304e8d30"
+    },
+    {
+      "path": "solution/outputs/scaling/cluster_bootstrap_parameters.csv",
+      "bytes": 8572,
+      "sha256": "6786fd60f2c0e4767e99ca96e397415586cae8c96995985e4f597eb9443d7f18"
+    },
+    {
+      "path": "solution/outputs/scaling/external_validation.csv",
+      "bytes": 36470,
+      "sha256": "fb6f0c87dedd54639f952630d6a6614b43d0d53facd8eb92d65e6f717ec29b2d"
+    },
+    {
+      "path": "solution/outputs/scaling/model_comparison.csv",
+      "bytes": 1827,
+      "sha256": "ce708a343172beac290caa8227baa9aae972acf6c347657fcf2a3e2223c4ff08"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_audit.json",
+      "bytes": 8129,
+      "sha256": "d869edc46264488af7137a56126e6f9b4da14777c0df9a7a1fecf529f6ca1313"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_B6_validation.csv",
+      "bytes": 1336,
+      "sha256": "fa14eea64a6127aad2c6611108f3a5813619f5ed9edc5cb8ebf7a23560f8caf7"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_direction_audit.pdf",
+      "bytes": 20243,
+      "sha256": "6b23eb4bbbd9a7abcca831027cab4e22731f6d67ca3ec2c2489c9b8c8a0ff820"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_direction_audit.png",
+      "bytes": 84771,
+      "sha256": "f91c9e1f7a3ce1b368cc078121a17f39ee2591d4667a8980930ce4d082d2e196"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_scenario_predictions.csv",
+      "bytes": 223898,
+      "sha256": "40ebea245e2ad2b9a9cf2c57d1d8babfbf0e0e0d5a00dabfa2b0893f35fc6496"
+    },
+    {
+      "path": "solution/outputs/scaling/quality_within_ND_slopes.csv",
+      "bytes": 16802,
+      "sha256": "5530b9d11a8a24e813649f26b50bde9d993c745995ac87225c3da9e9db106db1"
+    },
+    {
+      "path": "solution/outputs/scaling/residual_diagnostics.csv",
+      "bytes": 1418,
+      "sha256": "ccf8393a01d96b4803689fae24ec6014033cf84cb50d3e8e32ea0d368a1cd48c"
+    },
+    {
+      "path": "solution/outputs/scaling/scaling_fit_residuals.pdf",
+      "bytes": 43893,
+      "sha256": "af2fa0b1bee2891b8f1fc1473925a393261c0da1e368ba08100b761a56ed2d9b"
+    },
+    {
+      "path": "solution/outputs/scaling/scaling_fit_residuals.png",
+      "bytes": 388627,
+      "sha256": "6c428ecfa7e171756a99ad11b080e9707a1a65b7d950218d3c325b592919edee"
+    },
+    {
+      "path": "solution/outputs/scaling/scaling_params.json",
+      "bytes": 2969,
+      "sha256": "7806ffeed8c7acc96864387dfadefa77d3ec293798dd8c353bab543e99520505"
+    },
+    {
+      "path": "solution/outputs/scaling/table_audit.json",
+      "bytes": 32808,
+      "sha256": "72869414135c6235deb9d283823187d9e830bf68608bf0b33c57f4ca3b1fc892"
+    },
+    {
+      "path": "solution/outputs/scaling/table_audit_summary.csv",
+      "bytes": 2168,
+      "sha256": "978dcaa988c21aee087df37a2f4d46158ed8f184f70e730141819d981930ba54"
+    },
+    {
+      "path": "solution/outputs/scaling/validation_by_model.csv",
+      "bytes": 10399,
+      "sha256": "4dbb4e408d256a85c3cab31befc8be41d0f18225c9874c99ec3dedec9178a998"
+    }
+  ]
+}

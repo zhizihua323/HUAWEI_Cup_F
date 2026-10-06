@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T195336+08",
+  "created_at": "2026-09-25T20:01:57+08:00",
+  "verifier": "independent_verify_g2.py",
+  "imports_executor": false,
+  "seed": 20260925,
+  "bootstrap_replicates": 2000,
+  "summary": {
+    "total": 55,
+    "pass": 55,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "checks": [
+    {
+      "check": "frozen_param_E",
+      "pass": true,
+      "detail": "1.6897975629820348"
+    },
+    {
+      "check": "frozen_param_A",
+      "pass": true,
+      "detail": "0.3539803206065571"
+    },
+    {
+      "check": "frozen_param_B",
+      "pass": true,
+      "detail": "1.2403055835426349"
+    },
+    {
+      "check": "frozen_param_alpha",
+      "pass": true,
+      "detail": "0.339976581941082"
+    },
+    {
+      "check": "frozen_param_beta",
+      "pass": true,
+      "detail": "0.2798781285468448"
+    },
+    {
+      "check": "k_add_frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "q_anchor_frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_row_count",
+      "pass": true,
+      "detail": "5390"
+    },
+    {
+      "check": "prediction_row_keys_unique",
+      "pass": true,
+      "detail": "source_id+row_id"
+    },
+    {
+      "check": "prediction_keys_match_raw",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "roundtrip_N_B",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "roundtrip_D_B",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "roundtrip_actual_loss",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "roundtrip_reference_estimated_loss",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "prediction_recompute",
+      "pass": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "support_status_recompute",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_support_clipping",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "observed_error_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "relative_error_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "B10_not_truth",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "B9_no_invented_loss",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "metrics_and_cluster_bootstrap_match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "support_oos_counts_match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "large_model_audit_counts_match",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "B9_no_truth_upgrade",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "B10_no_truth_upgrade",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "above_10B_not_supported",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generalized_law_base_frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generalized_law_k_add_frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generalized_law_c_frozen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generalized_law_p0_simplex",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Q_p_not_independent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_L0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_dLdN",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_dLdD",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_dLdQ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_hold_N",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_hold_D",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_feasible_direction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_directional_derivative_tau05",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_directional_derivative_tau10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "worked_directional_derivative_tau_minus10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qualification_labels_match_gates",
+      "pass": true,
+      "detail": "{\"B2\": \"VALIDATION_FAILED\", \"B3\": \"VALIDATION_SUPPORTED\", \"B4\": \"VALIDATION_FAILED\", \"B5\": \"VALIDATION_FAILED\", \"B9\": \"OOS_STRESS_ONLY\", \"B10\": \"ESTIMATED_SCENARIO_ONLY\"}"
+    },
+    {
+      "check": "at_least_one_comparable_B2_or_B3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "T07_impact_exact_NO",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "T07_contract_hash_matches",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "T07_freeze_hash_matches",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "T07_not_started",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "protected_T06_T07_hashes_unchanged",
+      "pass": true,
+      "detail": "before/after full file hash trees"
+    },
+    {
+      "check": "no_fit_token_scipy.optimize",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fit_token_curve_fit_",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fit_token_least_squares_",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fit_token_.fit_",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fit_token_minimize_",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_executor_import",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "scope": {
+    "predictions_recomputed": 5390,
+    "raw_sources": [
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B9",
+      "B10"
+    ],
+    "metrics_recomputed": "validation_metrics_by_source.csv including cluster bootstrap",
+    "generalized_law": "worked analytic quantities and frozen coefficient vector recomputed",
+    "protected_hashes": "full before/after hash trees for T06E, T06 freeze, T07 run and T07 freeze",
+    "not_checked_by_verifier": [
+      "candidate paper text",
+      "final output_manifest.json"
+    ]
+  }
+}

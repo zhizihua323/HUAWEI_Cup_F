@@ -1,0 +1,17 @@
+[2026-09-25T00:39:41.090+08:00] TASK-Q01C start run_id=midstage_run mode=fixture resume=False stage=all pid=9972
+[2026-09-25T00:39:41.226+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-25T00:39:41.228+08:00] stage=s00_preflight done elapsed_s=0.132
+[2026-09-25T00:39:41.335+08:00] stage=s01_synthetic_tests complete tests=10
+[2026-09-25T00:39:41.335+08:00] stage=s01_synthetic_tests done elapsed_s=0.104
+[2026-09-25T00:39:41.463+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.1
+[2026-09-25T00:39:41.464+08:00] stage=s10_scan_a1 done elapsed_s=0.128
+[2026-09-25T00:39:41.513+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.0
+[2026-09-25T00:39:41.514+08:00] stage=s11_scan_a2 done elapsed_s=0.048
+[2026-09-25T00:39:41.547+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-25T00:39:41.549+08:00] stage=s12_scan_a3 done elapsed_s=0.033
+[2026-09-25T00:39:41.600+08:00] stage=s20_score_primary normalization fitted on 484 calibration rows
+[2026-09-25T00:39:41.645+08:00] stage=s20_score_primary complete rows=660 Q_valid=658 Q_missing=2
+[2026-09-25T00:39:41.645+08:00] stage=s20_score_primary done elapsed_s=0.095
+[2026-09-25T00:39:41.684+08:00] stage=s30_sensitivity complete; imputed records=2
+[2026-09-25T00:39:41.684+08:00] stage=s30_sensitivity done elapsed_s=0.037
+[2026-09-25T00:39:41.684+08:00] HOOK hold-after-stage=s30_sensitivity: waiting for external interruption pid=9972

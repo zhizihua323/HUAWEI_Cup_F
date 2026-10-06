@@ -1,0 +1,15 @@
+{
+  "kind": "stage",
+  "stage": "s00_preflight",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:38:38+08:00",
+  "checkpoint_identity": null,
+  "outputs": {
+    "input_manifest.json": "07e4c7814e3a9d77ade74c55d36e276da5b3d2ab902e13eb5454ed398d8956a6",
+    "environment.json": "b60f65dcd7ad55bd99889bcf633adb4325ab205bfdebe7c758946f6f9d721721",
+    "old_artifacts_before.json": "eb00919e513c3bdf6fb913d355b54681be47303571356e1663f575c23e41ad22",
+    "changes.csv": "870c5ae5be0184dd88193a80ebf2295beefa816bcd641ed8bf90a05dde18e8f1",
+    "code_snapshot/code_snapshot_manifest.json": "b944407942c15eb6a19cb0e9e6127f68a04f4272184500d98f01d9d087a50106"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "primary_model": "M0_B1",
+  "quality_enabled": false,
+  "mixture_transport_enabled": false,
+  "models": {
+    "M0_B1": {
+      "formula": "E+A*N^(-alpha)+B*D^(-beta)",
+      "source": "B1",
+      "parameters": [
+        "E",
+        "A",
+        "B",
+        "alpha",
+        "beta"
+      ],
+      "role": "primary_source_baseline"
+    },
+    "M0_6": {
+      "formula": "E+A*N^(-alpha)+B*D^(-beta)",
+      "source": "B6",
+      "parameters": [
+        "E",
+        "A",
+        "B",
+        "alpha",
+        "beta"
+      ],
+      "role": "same-fold_null"
+    },
+    "MQ-add": {
+      "formula": "E+A*N^(-alpha)+B*D^(-beta)-k_add*(Q-0.6)",
+      "source": "B6",
+      "parameters": [
+        "E",
+        "A",
+        "B",
+        "alpha",
+        "beta",
+        "k_add"
+      ],
+      "constraint": "k_add>=0",
+      "role": "main_quality_candidate"
+    },
+    "MQ-eff": {
+      "formula": "E+A*N^(-alpha)+B*D^(-beta)*exp(-eta*(Q-0.6))",
+      "source": "B6",
+      "parameters": [
+        "E",
+        "A",
+        "B",
+        "alpha",
+        "beta",
+        "eta"
+      ],
+      "constraint": "eta>=0",
+      "role": "sensitivity_only",
+      "derived": "k_eff=eta/beta"
+    }
+  },
+  "forbidden": [
+    "MQ-eff as replacement main candidate",
+    "joint B6-B8 fit",
+    "old k=-20 propagation",
+    "Q>0.6/B7/B8 model selection",
+    "B7 repeats in denominators",
+    "cross-source A/B mapping estimation"
+  ]
+}

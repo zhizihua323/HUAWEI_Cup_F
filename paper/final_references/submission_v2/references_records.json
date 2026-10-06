@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-26",
+  "purpose": "Key-based, paste-ready Word plain-text reference records selected for the reconstructed manuscript.",
+  "numbering_policy": "Do not preserve the previous 1-23 numbers. Assign bracketed numbers only after the final body is fixed, in order of first citation.",
+  "science_boundary": "Reference selection only. No model, formula, dataset result, threshold, qualification or conclusion is changed.",
+  "ai_tool_policy": "OpenAI Codex, GPT-5.6 Sol and GPT-6 Astra are disclosure items, not substitutes for scientific references or model evidence.",
+  "source_files": [
+    "paper/final_work/FINAL_MANUSCRIPT_SOURCE.md",
+    "paper/final_work/SUBMISSION_STYLE_ALIGNMENT.md",
+    "paper/final_references/reference_verification_final.csv",
+    "paper/final_references/references_word_numbered.docx"
+  ],
+  "selected_count": 21,
+  "excluded_count": 3,
+  "controller_instruction": {
+    "final_first_citation_count": 18,
+    "required_keys_added_after_reconstruction": [
+      "warner2025modernbert",
+      "koenker1978regression"
+    ],
+    "note": "The controller will make the final 18-entry first-citation selection. This file preserves the two mandatory inclusion overrides without guessing which other advisory records the controller will omit."
+  },
+  "selected_records": [
+    {
+      "reference_key": "kaplan2020scaling",
+      "body_anchor": "第1章引言；第5章B1来源内标度模型",
+      "role": "经典语言模型标度律背景",
+      "word_plain_text": "Kaplan J, McCandlish S, Henighan T, et al. Scaling Laws for Neural Language Models[EB/OL]. arXiv:2001.08361, 2020. https://arxiv.org/abs/2001.08361 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "bahri2024explaining",
+      "body_anchor": "第1章引言；第5章标度律解释背景",
+      "role": "神经标度律理论背景",
+      "word_plain_text": "Bahri Y, Dyer E, Kaplan J, Lee J, Sharma U. Explaining neural scaling laws[J]. Proceedings of the National Academy of Sciences, 2024, 121(27): e2311878121. https://doi.org/10.1073/pnas.2311878121."
+    },
+    {
+      "reference_key": "hoffmann2022training",
+      "body_anchor": "第1章引言；第6章算力预算下的参数—数据配置",
+      "role": "计算最优训练背景",
+      "word_plain_text": "Hoffmann J, Borgeaud S, Mensch A, et al. Training Compute-Optimal Large Language Models[EB/OL]. arXiv:2203.15556, 2022. https://arxiv.org/abs/2203.15556 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "zhuang2025metarater",
+      "body_anchor": "第4章质量代理构造",
+      "role": "多维预训练数据质量信号与Meta-rater来源",
+      "word_plain_text": "Zhuang X, Peng J, Ma R, et al. Meta-rater: A Multi-dimensional Data Selection Method for Pre-training Language Models[C]//Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics. Vienna: Association for Computational Linguistics, 2025: 10856-10896. https://doi.org/10.18653/v1/2025.acl-long.533."
+    },
+    {
+      "reference_key": "penedo2024fineweb",
+      "body_anchor": "第4章质量代理构造",
+      "role": "FineWeb-Edu质量信号与大规模数据筛选背景",
+      "word_plain_text": "Penedo G, Kydlíček H, Ben Allal L, et al. The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale[C]//Advances in Neural Information Processing Systems. 2024, 37: 30811-30849. https://doi.org/10.52202/079017-0970."
+    },
+    {
+      "reference_key": "biderman2023pythia",
+      "body_anchor": "第5章B3同源Pythia插值验证",
+      "role": "Pythia模型族与训练轨迹来源",
+      "word_plain_text": "Biderman S, Schoelkopf H, Anthony Q G, et al. Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling[C]//Proceedings of the 40th International Conference on Machine Learning. PMLR, 2023, 202: 2397-2430. https://proceedings.mlr.press/v202/biderman23a.html (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "warner2025modernbert",
+      "body_anchor": "重构正文的数据质量特征说明：ModernBERT类别信号",
+      "role": "ModernBERT类别信号的方法与架构来源；不为项目质量分提供人工真值",
+      "word_plain_text": "Warner B, Chaffin A, Clavié B, et al. Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference[C]//Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics. Vienna: Association for Computational Linguistics, 2025: 2526-2547. https://doi.org/10.18653/v1/2025.acl-long.127."
+    },
+    {
+      "reference_key": "liu2025regmix",
+      "body_anchor": "第4.4节领域配比模型；第5.3节配比分层表达",
+      "role": "RegMix数据配比回归方法",
+      "word_plain_text": "Liu Q, Zheng X, Muennighoff N, et al. RegMix: Data Mixture as Regression for Language Model Pre-training[C]//International Conference on Learning Representations. 2025. https://openreview.net/forum?id=5BjQOUXq7i (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "scheffe1958mixtures",
+      "body_anchor": "第4.4节17维领域配比模型",
+      "role": "混合试验回归方法背景",
+      "word_plain_text": "Scheffé H. Experiments with Mixtures[J]. Journal of the Royal Statistical Society: Series B (Methodological), 1958, 20(2): 344-360. https://doi.org/10.1111/j.2517-6161.1958.tb00299.x."
+    },
+    {
+      "reference_key": "aitchison1982compositional",
+      "body_anchor": "第4.4节单纯形约束与组成数据解释边界",
+      "role": "组成数据与单纯形方法背景",
+      "word_plain_text": "Aitchison J. The Statistical Analysis of Compositional Data[J]. Journal of the Royal Statistical Society: Series B (Methodological), 1982, 44(2): 139-160. https://doi.org/10.1111/j.2517-6161.1982.tb01195.x."
+    },
+    {
+      "reference_key": "spearman1904general",
+      "body_anchor": "第4.3节作者盲审的秩相关分析",
+      "role": "Spearman秩相关方法来源",
+      "word_plain_text": "Spearman C. ‘General Intelligence,’ Objectively Determined and Measured[J]. The American Journal of Psychology, 1904, 15(2): 201-292. https://doi.org/10.2307/1412107."
+    },
+    {
+      "reference_key": "efron1979bootstrap",
+      "body_anchor": "第4.3节作者盲审的bootstrap区间",
+      "role": "Bootstrap方法来源",
+      "word_plain_text": "Efron B. Bootstrap Methods: Another Look at the Jackknife[J]. The Annals of Statistics, 1979, 7(1): 1-26. https://doi.org/10.1214/aos/1176344552."
+    },
+    {
+      "reference_key": "koenker1978regression",
+      "body_anchor": "G4的q=0.90分位数回归",
+      "role": "分位数回归方法来源；不支撑项目具体系数或情景数值",
+      "word_plain_text": "Koenker R, Bassett G. Regression Quantiles[J]. Econometrica, 1978, 46(1): 33-50. https://doi.org/10.2307/1913643."
+    },
+    {
+      "reference_key": "zhou2023ifeval",
+      "body_anchor": "第7章IFEval任务定义",
+      "role": "IFEval Benchmark来源",
+      "word_plain_text": "Zhou J, Lu T, Mishra S, et al. Instruction-Following Evaluation for Large Language Models[EB/OL]. arXiv:2311.07911, 2023. https://arxiv.org/abs/2311.07911 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "suzgun2023bbh",
+      "body_anchor": "第7章BBH任务定义",
+      "role": "BIG-Bench Hard Benchmark来源",
+      "word_plain_text": "Suzgun M, Scales N, Schärli N, et al. Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them[C]//Findings of the Association for Computational Linguistics: ACL 2023. Toronto: Association for Computational Linguistics, 2023: 13003-13051. https://doi.org/10.18653/v1/2023.findings-acl.824."
+    },
+    {
+      "reference_key": "hendrycks2021math",
+      "body_anchor": "第7章MATH Level 5任务定义",
+      "role": "MATH Benchmark来源",
+      "word_plain_text": "Hendrycks D, Burns C, Kadavath S, et al. Measuring Mathematical Problem Solving With the MATH Dataset[C]//Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks. 2021, 1. https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "rein2023gpqa",
+      "body_anchor": "第7章GPQA任务定义",
+      "role": "GPQA Benchmark来源",
+      "word_plain_text": "Rein D, Hou B L, Stickland A C, et al. GPQA: A Graduate-Level Google-Proof Q&A Benchmark[C]//First Conference on Language Modeling. 2024. https://openreview.net/forum?id=Ti67584b98 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "sprague2023musr",
+      "body_anchor": "第7章MuSR任务定义",
+      "role": "MuSR Benchmark来源",
+      "word_plain_text": "Sprague Z R, Ye X, Bostrom K, Chaudhuri S, Durrett G. MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning[C]//The Twelfth International Conference on Learning Representations. 2024. https://openreview.net/forum?id=jenyYQzue1 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "wang2024mmlupro",
+      "body_anchor": "第7章MMLU-PRO任务定义",
+      "role": "MMLU-Pro Benchmark来源",
+      "word_plain_text": "Wang Y, Ma X, Zhang G, et al. MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark[C]//Advances in Neural Information Processing Systems. 2024, 37: 95266-95290. https://doi.org/10.52202/079017-3018."
+    },
+    {
+      "reference_key": "openllmleaderboard2025results",
+      "body_anchor": "第7章直接Benchmark观测数据来源",
+      "role": "Open LLM Leaderboard冻结结果快照；引用元数据已核验，快照复用许可仍按既有审计保留未解决状态",
+      "word_plain_text": "Open LLM Leaderboard maintainers. Open LLM Leaderboard Detailed Evaluation Results[DB/OL]. Hugging Face dataset snapshot, commit aa81ecc38fdc5708254b833923368970efdf5ef5, 2025. https://huggingface.co/datasets/open-llm-leaderboard/results/tree/aa81ecc38fdc5708254b833923368970efdf5ef5 (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "epochai2026models",
+      "body_anchor": "第7章模型历史元数据与compute字段来源",
+      "role": "Epoch AI模型历史数据来源",
+      "word_plain_text": "Epoch AI. Data on AI Models[DB/OL]. 2026. https://epoch.ai/data/ai-models (accessed 2026-09-26)."
+    }
+  ],
+  "excluded_records": [
+    {
+      "reference_key": "asai2026openscholar",
+      "selection_status": "NOT_SELECTED_FOR_RECONSTRUCTED_BODY",
+      "reason": "当前重构正文没有采用检索增强科学文献综合方法，也没有以OpenScholar结果支撑项目模型、数据或结论。",
+      "word_plain_text": "Asai A, He J, Shao R, et al. Synthesizing scientific literature with retrieval-augmented language models[J]. Nature, 2026, 650(8103): 857-863. https://doi.org/10.1038/s41586-025-10072-4."
+    },
+    {
+      "reference_key": "scipy2026slsqp",
+      "selection_status": "NOT_SELECTED_FOR_RECONSTRUCTED_BODY",
+      "reason": "当前重构正文只写约束优化、数值解和KKT复核，没有出现SLSQP实现。若正文不恢复多起点SLSQP算法说明，则不应保留孤立的软件文档条目。",
+      "word_plain_text": "SciPy Developers. SciPy Documentation: minimize(method='SLSQP')[EB/OL]. 2026. https://docs.scipy.org/doc/scipy/reference/optimize.minimize-slsqp.html (accessed 2026-09-26)."
+    },
+    {
+      "reference_key": "schaeffer2023emergent",
+      "selection_status": "NOT_SELECTED_FOR_RECONSTRUCTED_BODY",
+      "reason": "当前重构正文已经删除表观涌现的外部论断，项目的M0/M1/M2资格和未来情景边界由冻结验证直接支持，无需用该文献替代项目证据。",
+      "word_plain_text": "Schaeffer R, Miranda B, Koyejo S. Are Emergent Abilities of Large Language Models a Mirage?[C]//Advances in Neural Information Processing Systems. 2023, 36: 55565-55581. https://doi.org/10.52202/075280-2425."
+    }
+  ]
+}

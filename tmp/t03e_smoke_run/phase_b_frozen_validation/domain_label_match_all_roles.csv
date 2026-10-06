@@ -1,0 +1,5 @@
+﻿design_label,present_in_any_role,exact_match_any_role,first_role_observed,roles_present_in_read_order,calibration_status,calibration_valid_n,status
+book,True,True,A1_calibration,A1_calibration,INSUFFICIENT_CALIBRATION,137,EXACT_MATCH
+c4,True,True,A1_calibration,A1_calibration|A1_holdout|extension_overlap_A1|extension_new_records,ACTIVE,4000,EXACT_MATCH
+commoncrawl,False,False,,,DESIGN_LABEL_ABSENT,0,DESIGN_LABEL_ABSENT
+wikipedia,False,False,,,ACTIVE,4000,DESIGN_LABEL_ABSENT

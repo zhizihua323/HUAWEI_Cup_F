@@ -1,0 +1,66 @@
+{
+  "equations": 27,
+  "references": 18,
+  "citation_order": [
+    "kaplan2020scaling",
+    "hoffmann2022training",
+    "penedo2024fineweb",
+    "warner2025modernbert",
+    "xie2023dsir",
+    "spearman1904general",
+    "efron1979bootstrap",
+    "openai_tools",
+    "liu2025regmix",
+    "scheffe1958mixtures",
+    "biderman2023pythia",
+    "zhou2023ifeval",
+    "suzgun2023bbh",
+    "hendrycks2021math",
+    "rein2023gpqa",
+    "sprague2023musr",
+    "wang2024mmlupro",
+    "koenker1978regression"
+  ],
+  "figures": [
+    {
+      "caption": "图1 四问的建模链与证据边界",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v2\\fig01_submission_framework.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 8.25635103926097
+    },
+    {
+      "caption": "图2 质量评分的覆盖与验证边界",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v2\\fig02_submission_q1_quality_validation.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 14.607390300230946
+    },
+    {
+      "caption": "图3 配比模型的同尺度测试与跨尺度运输（n为配方数；散点为配方×域；图内RMSE合并所有域计算，ρ为逐域等权平均）",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v2\\fig03_submission_regmix_transport.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 15.623556581986143
+    },
+    {
+      "caption": "图4 基础标度模型的拟合与分来源检验",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v2\\fig04_submission_q2_validation.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 17.528868360277137
+    },
+    {
+      "caption": "图5 六任务的12个月和24个月未验证情景",
+      "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\final_figures\\submission_v2\\fig06_submission_q4_scenarios.png",
+      "insert_width_cm": 16.5,
+      "height_cm": 14.226327944572748
+    }
+  ],
+  "source_chars": 23674,
+  "heading_count": 41,
+  "science_executed": false,
+  "template": "official_template_converted.docx",
+  "intentional_deviations": [
+    "Anonymous submission copy begins at abstract page 1",
+    "Remove identity cover and template artwork",
+    "Official all-other-Chinese 12pt SimSun overrides V1 smaller captions/tables and Hei H2",
+    "Two-level static TOC regenerated against final PDF pages"
+  ]
+}

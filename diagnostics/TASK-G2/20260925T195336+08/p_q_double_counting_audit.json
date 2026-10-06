@@ -1,0 +1,13 @@
+{
+  "status": "NOT_IDENTIFIABLE",
+  "independent_joint_estimation_or_optimization_allowed": false,
+  "fixed_q_identity": "Q_mix=p^T q is in the column space of p",
+  "design_rank": 17,
+  "augmented_rank": 17,
+  "relative_projection_residual": 9.368877196481023e-16,
+  "mapped_quality_domains": 6,
+  "unmapped_quality_domains": 11,
+  "required_rule": "When Q_mix=p^Tq is used, do not also expose all p effects as independent marginal effects; fix p or Q scenario, or report only a joint feasible direction.",
+  "forbidden": "17 independent p marginal effects and Q/p double counting",
+  "source": "TASK-T06E-P frozen audit; no refit or new algebra fit"
+}

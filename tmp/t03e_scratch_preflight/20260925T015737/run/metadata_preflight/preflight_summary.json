@@ -1,0 +1,153 @@
+{
+  "input_check": {
+    "note": "calibration-preflight",
+    "path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+    "bytes": 75668880,
+    "sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+    "manifest_bytes": 75668880,
+    "manifest_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+    "matches_manifest": true,
+    "checked_local": "2026-09-25T01:57:37+08:00",
+    "pid": 11032
+  },
+  "labels": [
+    "arxiv",
+    "book",
+    "c4",
+    "commoncrawl",
+    "github",
+    "stackexchange",
+    "wikipedia"
+  ],
+  "design_match": [
+    {
+      "design_label": "book",
+      "present_in_calibration": true,
+      "exact_match": true,
+      "status": "EXACT_MATCH",
+      "calibration_valid_n": 137
+    },
+    {
+      "design_label": "c4",
+      "present_in_calibration": true,
+      "exact_match": true,
+      "status": "EXACT_MATCH",
+      "calibration_valid_n": 8041
+    },
+    {
+      "design_label": "commoncrawl",
+      "present_in_calibration": true,
+      "exact_match": true,
+      "status": "EXACT_MATCH",
+      "calibration_valid_n": 7688
+    },
+    {
+      "design_label": "wikipedia",
+      "present_in_calibration": true,
+      "exact_match": true,
+      "status": "EXACT_MATCH",
+      "calibration_valid_n": 8013
+    }
+  ],
+  "commitment": {
+    "calibration_physical_rows": 40943,
+    "calibration_unique_first_rows": 40943,
+    "calibration_keyset_sha256": "f9e3a22e3ce7ffc39b3025cb05c021d10f7874edc199dbe397a4c589e3a6f3f9",
+    "calibration_keyset_size": 40943,
+    "key_definition": "key_sha256 = sha256(json([str(id), str(sub_path)])) from Q01C",
+    "generated_local": "2026-09-25T01:57:37+08:00",
+    "pid": 11032
+  },
+  "design_spec": {
+    "features_25": [
+      "rps_doc_frac_no_alph_words",
+      "rps_doc_mean_word_length",
+      "rps_doc_frac_unique_words",
+      "rps_doc_unigram_entropy",
+      "rps_doc_word_count",
+      "rps_lines_ending_with_terminal_punctution_mark",
+      "rps_lines_numerical_chars_fraction",
+      "rps_lines_uppercase_letter_fraction",
+      "rps_doc_num_sentences",
+      "rps_doc_frac_chars_top_2gram",
+      "rps_doc_frac_chars_top_3gram",
+      "dsir_books",
+      "dsir_wiki",
+      "dsir_math",
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater_writing_style",
+      "qurater_required_expertise",
+      "qurater_facts_trivia",
+      "qurater_educational_value",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ],
+    "fields_22": [
+      "rps_doc_frac_no_alph_words",
+      "rps_doc_mean_word_length",
+      "rps_doc_frac_unique_words",
+      "rps_doc_unigram_entropy",
+      "rps_doc_word_count",
+      "rps_lines_ending_with_terminal_punctution_mark",
+      "rps_lines_numerical_chars_fraction",
+      "rps_lines_uppercase_letter_fraction",
+      "rps_doc_num_sentences",
+      "rps_doc_frac_chars_top_2gram",
+      "rps_doc_frac_chars_top_3gram",
+      "dsir_books",
+      "dsir_wiki",
+      "dsir_math",
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ],
+    "main_q_11": [
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater_writing_style",
+      "qurater_required_expertise",
+      "qurater_facts_trivia",
+      "qurater_educational_value",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ],
+    "groups": {
+      "usability": [
+        "ad_en",
+        "fluency_en",
+        "modernbert_readability",
+        "modernbert_cleanliness",
+        "qurater_writing_style"
+      ],
+      "knowledge": [
+        "modernbert_professionalism",
+        "qurater_required_expertise",
+        "qurater_facts_trivia"
+      ],
+      "education_reasoning": [
+        "modernbert_reasoning",
+        "fineweb_edu",
+        "qurater_educational_value"
+      ]
+    },
+    "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08\\diagnostic_spec.json",
+    "source_sha256": "ee34520aeebce1ffb965f1ebba9ec3cc2074a7306bb3ebe973fc11730d238127"
+  },
+  "analysis_layer_roles_visible": [
+    "A1_calibration"
+  ],
+  "holdout_or_extension_read": false,
+  "generated_local": "2026-09-25T01:57:37+08:00"
+}

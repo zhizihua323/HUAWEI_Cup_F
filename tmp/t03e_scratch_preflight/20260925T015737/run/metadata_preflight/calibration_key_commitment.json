@@ -1,0 +1,9 @@
+{
+  "calibration_physical_rows": 40943,
+  "calibration_unique_first_rows": 40943,
+  "calibration_keyset_sha256": "f9e3a22e3ce7ffc39b3025cb05c021d10f7874edc199dbe397a4c589e3a6f3f9",
+  "calibration_keyset_size": 40943,
+  "key_definition": "key_sha256 = sha256(json([str(id), str(sub_path)])) from Q01C",
+  "generated_local": "2026-09-25T01:57:37+08:00",
+  "pid": 11032
+}

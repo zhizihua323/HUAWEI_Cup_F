@@ -1,0 +1,4 @@
+﻿尺度,混合配比 n,全域 RMSE,全域 MAE,等权域 Spearman,冻结角色,论文资格
+1M,256,0.522948,0.385806,0.625074,independent_1m_test,SAME_SCALE_TEST
+60M,256,1.618576,1.511015,0.55915,zero_shot_cross_scale,TRANSPORT_ONLY
+1B,64,3.25224,3.185432,0.372299,zero_shot_cross_scale,TRANSPORT_ONLY

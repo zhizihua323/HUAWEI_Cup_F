@@ -1,0 +1,1159 @@
+{
+  "notes": [
+    {
+      "content": {
+        "venue": {
+          "value": "ICLR 2025 Spotlight"
+        },
+        "TLDR": {
+          "value": "We introduce RegMix, an automated data mixture method that formulates data mixture as a regression problem. RegMix achieves a 6.3% improvement over human selection on the HellaSwag benchmark, with only a 2% extra training FLOPs."
+        },
+        "code_of_ethics": {
+          "value": "I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics."
+        },
+        "keywords": {
+          "value": [
+            "language model pre-training",
+            "data mixture",
+            "regression"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/977302e354f03fd926f21dcc735e4733ebc1ce5c.zip"
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "submission_guidelines": {
+          "value": "I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide."
+        },
+        "abstract": {
+          "value": "The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000× larger and 25× longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\nliu2025regmix,\ntitle={RegMix: Data Mixture as Regression for Language Model Pre-training},\nauthor={Qian Liu and Xiaosen Zheng and Niklas Muennighoff and Guangtao Zeng and Longxu Dou and Tianyu Pang and Jing Jiang and Min Lin},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=5BjQOUXq7i}\n}"
+        },
+        "title": {
+          "value": "RegMix: Data Mixture as Regression for Language Model Pre-training"
+        },
+        "pdf": {
+          "value": "/pdf/d0d62a2b2d872b279bdb0902d8ca7331d0b16f59.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2025/Conference"
+        },
+        "paperhash": {
+          "value": "liu|regmix_data_mixture_as_regression_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Qian_Liu2",
+            "~Xiaosen_Zheng1",
+            "~Niklas_Muennighoff1",
+            "~Guangtao_Zeng1",
+            "~Longxu_Dou1",
+            "~Tianyu_Pang1",
+            "~Jing_Jiang1",
+            "~Min_Lin1"
+          ]
+        },
+        "anonymous_url": {
+          "value": "I certify that there is no URL (e.g., github page) that could be used to find authors’ identity."
+        },
+        "no_acknowledgement_section": {
+          "value": "I certify that there is no acknowledgement section in this submission for double blind review."
+        },
+        "authors": {
+          "value": [
+            "Qian Liu",
+            "Xiaosen Zheng",
+            "Niklas Muennighoff",
+            "Guangtao Zeng",
+            "Longxu Dou",
+            "Tianyu Pang",
+            "Jing Jiang",
+            "Min Lin"
+          ]
+        }
+      },
+      "tmdate": 1740831132923,
+      "pdate": 1737562478618,
+      "tcdate": 1727349772042,
+      "writers": [
+        "ICLR.cc/2025/Conference",
+        "ICLR.cc/2025/Conference/Submission6642/Authors"
+      ],
+      "signatures": [
+        "ICLR.cc/2025/Conference/Submission6642/Authors"
+      ],
+      "forum": "5BjQOUXq7i",
+      "license": "CC BY 4.0",
+      "number": 6642,
+      "cdate": 1727349772042,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2025/Conference/-/Submission",
+        "ICLR.cc/2025/Conference/-/Post_Submission",
+        "ICLR.cc/2025/Conference/Submission6642/-/Full_Submission",
+        "ICLR.cc/2025/Conference/Submission6642/-/Rebuttal_Revision",
+        "ICLR.cc/2025/Conference/-/Edit",
+        "ICLR.cc/2025/Conference/Submission6642/-/Camera_Ready_Revision"
+      ],
+      "mdate": 1740831132923,
+      "odate": 1728008565725,
+      "domain": "ICLR.cc/2025/Conference",
+      "id": "5BjQOUXq7i",
+      "version": 2
+    },
+    {
+      "content": {
+        "venue": {
+          "value": "CoRR 2024"
+        },
+        "pdf": {
+          "value": "http://arxiv.org/pdf/2407.01492v1"
+        },
+        "venueid": {
+          "value": "dblp.org/journals/CORR/2024"
+        },
+        "paperhash": {
+          "value": "liu|regmix_data_mixture_as_regression_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "https://dblp.org/search/pid/api?q=author:Qian_Liu:",
+            "",
+            "https://dblp.org/search/pid/api?q=author:Niklas_Muennighoff:",
+            "https://dblp.org/search/pid/api?q=author:Guangtao_Zeng:",
+            "https://dblp.org/search/pid/api?q=author:Longxu_Dou:",
+            "https://dblp.org/search/pid/api?q=author:Tianyu_Pang:",
+            "https://dblp.org/search/pid/api?q=author:Jing_Jiang_0001:",
+            "https://dblp.org/search/pid/api?q=author:Min_Lin:"
+          ]
+        },
+        "html": {
+          "value": "https://doi.org/10.48550/arXiv.2407.01492"
+        },
+        "_bibtex": {
+          "value": "@article{DBLP:journals/corr/abs-2407-01492,\n  publtype={informal},\n  author={Qian Liu and Xiaosen Zheng and Niklas Muennighoff and Guangtao Zeng and Longxu Dou and Tianyu Pang and Jing Jiang and Min Lin},\n  title={RegMix: Data Mixture as Regression for Language Model Pre-training},\n  year={2024},\n  cdate={1704067200000},\n  journal={CoRR},\n  volume={abs/2407.01492},\n  url={https://doi.org/10.48550/arXiv.2407.01492}\n}\n"
+        },
+        "abstract": {
+          "value": "The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix involves training a set of small models with diverse data mixtures and fitting a regression model to predict their performance given their respective mixtures. With the fitted regression model, we simulate the top-ranked mixture and use it to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens of different mixtures to fit the regression model and find the optimal mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000x larger and 25x longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Further, our method demonstrates superior performance compared to human selection and achieves results that match or surpass DoReMi, while utilizing only 10% of the compute budget. Our experiments also show that (1) Data mixtures significantly impact performance with single-task performance variations of up to 14.6%; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws, and our approach captures the complexity by considering all domains together. Our code is available at https://github.com/sail-sg/regmix."
+        },
+        "title": {
+          "value": "RegMix: Data Mixture as Regression for Language Model Pre-training"
+        },
+        "authors": {
+          "value": [
+            "Qian Liu",
+            "Xiaosen Zheng",
+            "Niklas Muennighoff",
+            "Guangtao Zeng",
+            "Longxu Dou",
+            "Tianyu Pang",
+            "Jing Jiang",
+            "Min Lin"
+          ]
+        }
+      },
+      "tmdate": 1757923134353,
+      "pdate": 1704067200000,
+      "tcdate": 1723531006284,
+      "writers": [
+        "~"
+      ],
+      "signatures": [
+        "~Xiaosen_Zheng1"
+      ],
+      "forum": "vHtVROxwza",
+      "license": "CC BY-SA 4.0",
+      "number": 66337,
+      "cdate": 1704067200000,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "DBLP.org/-/Record",
+        "DBLP.org/-/Edit",
+        "DBLP.org/-/Author_Coreference"
+      ],
+      "mdate": 1757923134353,
+      "domain": "DBLP.org",
+      "id": "vHtVROxwza",
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "The paper proposes a method called REGMIX for automatically selecting an effective data mixture to optimize the pre-training of large language models. REGMIX formulates the data mixture selection as a regression task, training a set of small models with diverse data mixtures and fitting a regression model to predict their performance. The fitted regression model is then used to simulate and identify the top-performing data mixture, which is subsequently used to train a large-scale model. The empirical results demonstrate that REGMIX can improve downstream task performance and achieves results comparable to or surpassing the DoReMi method while using only 10% of the compute budget."
+        },
+        "soundness": {
+          "value": 2
+        },
+        "confidence": {
+          "value": 3
+        },
+        "questions": {
+          "value": "- Can the authors provide more theoretical or empirical evidence to support the rank invariance assumption? How does this assumption hold up with significant changes in model scale and data distribution?\n- How does REGMIX perform with proxy models larger than 1B parameters? Can the authors provide any preliminary results or insights on this? Or could the obtained data mixtures guide us to train a better model using much more tokens, e.g., 100B?\n- Can the authors provide a detailed comparison of the computational resources required by REGMIX and other methods? This would help in understanding the practical feasibility of the method."
+        },
+        "rating": {
+          "value": 6
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 3
+        },
+        "contribution": {
+          "value": 2
+        },
+        "strengths": {
+          "value": "- The paper presents a novel method, REGMIX, which formulates the data mixture selection problem as a regression task. This is a creative approach that leverages small-scale proxy models to predict optimal data mixtures for large-scale models.\n- The authors conducted extensive experiments, training 512 models with 1M parameters on 1B tokens to fit the regression model. They then validated this model by training a 1B parameter model on 25B tokens, showing superior performance compared to human selection and the DoReMi method.\n- The method allows for parallel training of small proxy models, making it more scalable than previous approaches that require training a single model for a long time.\n- The paper provides several interesting findings, such as the significant impact of data mixtures on performance, the strong positive correlation of web corpora with downstream performance, and the complex interactions between domains."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "- The key assumption of rank invariance of data mixtures across different model sizes and token counts is not thoroughly validated. This assumption might not hold in all cases, especially with significant changes in model scale and data distribution.\n- The paper claims stability across different proxy model sizes, but the experiments are limited to models with up to 1B parameters. It remains unclear if the method would be equally effective for much larger models commonly used in practice (e.g., 7B or 70B parameters). If so, the additional computation cost could not be ignored. \n- The authors only trained 25B tokens using the obtained data mixtures. This raises the question of whether the data scale could be enlarged to 50 times or even 100 times. And can LLM sitll benefit from the obtained data mixture?\n- Although the method is more efficient than some previous approaches, training 512 small models still requires substantial computational resources. This could be a limitation for teams with limited access to such resources. The trade-off between performance gains and additional costs may not always hold when the model scales up."
+        }
+      },
+      "nonreaders": [],
+      "tmdate": 1732516426257,
+      "tcdate": 1730569680280,
+      "writers": [
+        "ICLR.cc/2025/Conference",
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_FGaq"
+      ],
+      "signatures": [
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_FGaq"
+      ],
+      "forum": "5BjQOUXq7i",
+      "number": 3,
+      "license": "CC BY 4.0",
+      "cdate": 1730569680280,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2025/Conference/Submission6642/-/Official_Review",
+        "ICLR.cc/2025/Conference/-/Edit"
+      ],
+      "mdate": 1732516426257,
+      "domain": "ICLR.cc/2025/Conference",
+      "replyto": "5BjQOUXq7i",
+      "id": "0Tp44MacnB",
+      "forumContent": {
+        "venue": {
+          "value": "ICLR 2025 Spotlight"
+        },
+        "TLDR": {
+          "value": "We introduce RegMix, an automated data mixture method that formulates data mixture as a regression problem. RegMix achieves a 6.3% improvement over human selection on the HellaSwag benchmark, with only a 2% extra training FLOPs."
+        },
+        "code_of_ethics": {
+          "value": "I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics."
+        },
+        "keywords": {
+          "value": [
+            "language model pre-training",
+            "data mixture",
+            "regression"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/977302e354f03fd926f21dcc735e4733ebc1ce5c.zip"
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "submission_guidelines": {
+          "value": "I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide."
+        },
+        "abstract": {
+          "value": "The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000× larger and 25× longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\nliu2025regmix,\ntitle={RegMix: Data Mixture as Regression for Language Model Pre-training},\nauthor={Qian Liu and Xiaosen Zheng and Niklas Muennighoff and Guangtao Zeng and Longxu Dou and Tianyu Pang and Jing Jiang and Min Lin},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=5BjQOUXq7i}\n}"
+        },
+        "title": {
+          "value": "RegMix: Data Mixture as Regression for Language Model Pre-training"
+        },
+        "pdf": {
+          "value": "/pdf/d0d62a2b2d872b279bdb0902d8ca7331d0b16f59.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2025/Conference"
+        },
+        "paperhash": {
+          "value": "liu|regmix_data_mixture_as_regression_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Qian_Liu2",
+            "~Xiaosen_Zheng1",
+            "~Niklas_Muennighoff1",
+            "~Guangtao_Zeng1",
+            "~Longxu_Dou1",
+            "~Tianyu_Pang1",
+            "~Jing_Jiang1",
+            "~Min_Lin1"
+          ]
+        },
+        "anonymous_url": {
+          "value": "I certify that there is no URL (e.g., github page) that could be used to find authors’ identity."
+        },
+        "no_acknowledgement_section": {
+          "value": "I certify that there is no acknowledgement section in this submission for double blind review."
+        },
+        "authors": {
+          "value": [
+            "Qian Liu",
+            "Xiaosen Zheng",
+            "Niklas Muennighoff",
+            "Guangtao Zeng",
+            "Longxu Dou",
+            "Tianyu Pang",
+            "Jing Jiang",
+            "Min Lin"
+          ]
+        }
+      },
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "The paper presents RegMix, a new method for optimizing data mixtures in pre-training large language models (LLMs). Recognizing the importance of data composition, the authors frame mixture selection as a regression task. RegMix uses small proxy models trained on various data mixtures to build a predictive model that identifies the optimal mixture for larger models.\n\nThe authors conduct extensive experiments to validate the approach, showing that models trained with RegMix-selected data mixtures outperform those trained with mixtures chosen by other methods, including human selection and DoReMi, while utilizing only 10% of the compute budget.\n\nThe authors provide insights into the effects of data mixtures, offering empirical evidence that data mixtures can significantly impact performance, with single-task performance variations reaching up to 14.6%. They also emphasize the complex interactions that occur between different data domains."
+        },
+        "soundness": {
+          "value": 3
+        },
+        "confidence": {
+          "value": 3
+        },
+        "questions": {
+          "value": "How do we decide the size for proxy model and training tokens.?"
+        },
+        "rating": {
+          "value": 8
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 4
+        },
+        "contribution": {
+          "value": 4
+        },
+        "strengths": {
+          "value": "1. RegMix introduces a fresh approach by framing data mixture selection as a regression problem rather than relying on complex optimizations or heuristics, making the process scalable and computationally efficient.\n\n2. The paper’s experimental setup is robust, with 512 small proxy models across diverse data mixtures, creating a solid regression model for data selection.\n\n3. The paper is well-organized, clearly explaining the methodology and experiments. It introduces the hypothesis of rank invariance in data mixtures, supported by visual aids, making the regression model’s role easy to understand."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "The paper conducts a set of small-proxy models trained with small-scale tokens.\n\nThe paper only experiments with 1M models with 1B tokens. \nIt is unclear how to decide the size of the proxy model parameter and training token."
+        }
+      },
+      "nonreaders": [],
+      "tmdate": 1731428709957,
+      "tcdate": 1730687538471,
+      "writers": [
+        "ICLR.cc/2025/Conference",
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_MoX3"
+      ],
+      "signatures": [
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_MoX3"
+      ],
+      "forum": "5BjQOUXq7i",
+      "number": 4,
+      "license": "CC BY 4.0",
+      "cdate": 1730687538471,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2025/Conference/Submission6642/-/Official_Review",
+        "ICLR.cc/2025/Conference/-/Edit"
+      ],
+      "mdate": 1731428709957,
+      "domain": "ICLR.cc/2025/Conference",
+      "replyto": "5BjQOUXq7i",
+      "id": "jbludrE3hB",
+      "forumContent": {
+        "venue": {
+          "value": "ICLR 2025 Spotlight"
+        },
+        "TLDR": {
+          "value": "We introduce RegMix, an automated data mixture method that formulates data mixture as a regression problem. RegMix achieves a 6.3% improvement over human selection on the HellaSwag benchmark, with only a 2% extra training FLOPs."
+        },
+        "code_of_ethics": {
+          "value": "I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics."
+        },
+        "keywords": {
+          "value": [
+            "language model pre-training",
+            "data mixture",
+            "regression"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/977302e354f03fd926f21dcc735e4733ebc1ce5c.zip"
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "submission_guidelines": {
+          "value": "I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide."
+        },
+        "abstract": {
+          "value": "The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000× larger and 25× longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\nliu2025regmix,\ntitle={RegMix: Data Mixture as Regression for Language Model Pre-training},\nauthor={Qian Liu and Xiaosen Zheng and Niklas Muennighoff and Guangtao Zeng and Longxu Dou and Tianyu Pang and Jing Jiang and Min Lin},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=5BjQOUXq7i}\n}"
+        },
+        "title": {
+          "value": "RegMix: Data Mixture as Regression for Language Model Pre-training"
+        },
+        "pdf": {
+          "value": "/pdf/d0d62a2b2d872b279bdb0902d8ca7331d0b16f59.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2025/Conference"
+        },
+        "paperhash": {
+          "value": "liu|regmix_data_mixture_as_regression_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Qian_Liu2",
+            "~Xiaosen_Zheng1",
+            "~Niklas_Muennighoff1",
+            "~Guangtao_Zeng1",
+            "~Longxu_Dou1",
+            "~Tianyu_Pang1",
+            "~Jing_Jiang1",
+            "~Min_Lin1"
+          ]
+        },
+        "anonymous_url": {
+          "value": "I certify that there is no URL (e.g., github page) that could be used to find authors’ identity."
+        },
+        "no_acknowledgement_section": {
+          "value": "I certify that there is no acknowledgement section in this submission for double blind review."
+        },
+        "authors": {
+          "value": [
+            "Qian Liu",
+            "Xiaosen Zheng",
+            "Niklas Muennighoff",
+            "Guangtao Zeng",
+            "Longxu Dou",
+            "Tianyu Pang",
+            "Jing Jiang",
+            "Min Lin"
+          ]
+        }
+      },
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "The paper tackles the problem of data mixture optimization for LLM pre-training and SFT. Existing strong methods such as RegMix and CLIMB find good mixtures but do so by training many proxy models, which makes them expensive and slow to iterate on.  The paper proposes FASTMIX, which makes mixture search differentiable by (i) reformulating mixture selection as a weighted bilevel optimization problem and (ii) showing that sampling from a mixture is equivalent in expectation to doing uniform source sampling but applying per-source loss weights. This reparameterization allows the authors to update both model weights and mixture weights in the same training loop with a lightweight hyper-gradient.\n\nThe paper claims:\n\t1.\tOn pre-training over Pile-style subsets, FASTMIX achieves the best average score (48.2) at ~1.3 GPU-hours of search, which the authors say is 55× faster than CLIMB and 550× faster than RegMix while still slightly better in accuracy. \n\t2.\tOn post-training/SFT (math-anchored, tested on coding & STEM QA), FASTMIX reaches 65.4, about +5.5 over the next best method, in 2.2 GPU-hours. \n\nSo the core contribution is a practical, differentiable, single-proxy recipe for data-mixture search that aims to match proxy-based methods in quality but at 1–2 GPU-hours instead of 100+."
+        },
+        "soundness": {
+          "value": 3
+        },
+        "confidence": {
+          "value": 2
+        },
+        "questions": {
+          "value": "Can the method enforce per-source lower/upper bounds (e.g. “at least 10% safety-filtered”, “at most 5% web-crawl”)? If yes, how does that change the hyper-gradient update?"
+        },
+        "rating": {
+          "value": 6
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 2
+        },
+        "contribution": {
+          "value": 3
+        },
+        "strengths": {
+          "value": "1. The key equivalence of “sampling by α” ≡ “uniform source sampling + per-source loss weights α” is written down cleanly and plugged straight into a bilevel objective. This makes the method implementable in an existing LLM training codebase with only per-batch source tags and a vector of α.\n2. Compute saving is compelling. The claim “1.3 GPU-hours vs 55–550× more for baselines” is helpful, because current RegMix-style methods really do train large banks of proxies. The authors also highlight that they train only one proxy model."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "No uncertainty / significance reporting. Gains like “+0.7 to +1.0” in pre-training are plausible but small. Without multiple seeds or CIs, especially on the final model, it’s hard to tell whether the improvement is robust or just a friendly seed. This matters because RegMix/CLIMB papers do report variability."
+        }
+      },
+      "parentInvitations": "ICLR.cc/2026/Conference/-/Official_Review",
+      "nonreaders": [],
+      "tmdate": 1762915651424,
+      "tcdate": 1762056486536,
+      "writers": [
+        "ICLR.cc/2026/Conference",
+        "ICLR.cc/2026/Conference/Submission977/Reviewer_Tw57"
+      ],
+      "signatures": [
+        "ICLR.cc/2026/Conference/Submission977/Reviewer_Tw57"
+      ],
+      "forum": "5gFKVyohGd",
+      "number": 3,
+      "license": "CC BY 4.0",
+      "cdate": 1762056486536,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2026/Conference/Submission977/-/Official_Review",
+        "ICLR.cc/2026/Conference/-/Edit"
+      ],
+      "mdate": 1762915651424,
+      "domain": "ICLR.cc/2026/Conference",
+      "replyto": "5gFKVyohGd",
+      "id": "YnVkWU36Hl",
+      "forumContent": {
+        "venue": {
+          "value": "ICLR 2026 Poster"
+        },
+        "keywords": {
+          "value": [
+            "Large models",
+            "Data-centric AI",
+            "AutoML"
+          ]
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "abstract": {
+          "value": "While large and diverse datasets have driven recent advances in large models, identifying the optimal data mixture for pre-training and post-training remains a significant open problem. We address this challenge with FastMix, a novel framework that automates data mixture discovery while training only a single proxy model. Instead of relying on predefined heuristics or resource-intensive simulations, FastMix jointly optimizes mixture coefficients and model parameters, substantially improving efficiency and scalability over prior approaches. At the core of FastMix is a reformulation of mixture selection as a bilevel optimization problem.\nUnder this reformulation, we show that optimizing mixture ratios is mathematically equivalent to assigning per-source loss weights under uniform source sampling. This embeds the mixture coefficients directly into the differentiable iterative optimization objective, enabling efficient, gradient-based optimization of both mixture and model. To solve the optimization problem, FastMix implements an approximate iterative optimization procedure, alternating between (i) updating model parameters on data sampled according to current mixture ratios (inner loop) and (ii) updating mixture ratios based on validation feedback (outer loop). Across pre- and post-training, FastMix outperforms baselines while drastically reducing search cost: in pre-training, it attains an average score of 48.2 with 1.3 GPU-hours ($\\times 550$ vs. RegMix; $\\times 55$ vs. CLIMB), and in post-training (SFT) it leads with 65.4 with a $+5.5$ gain over the next best, completing search in 2.2 GPU-hours compared to the 115 GPU-hours required by CLIMB/RegMix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\ntan2026fast,\ntitle={Fast Data Mixture Optimization via Gradient Descent},\nauthor={Haoru Tan and Sitong Wu and Yanfeng Chen and Jun Xia and Ruobing Xie and Bin Xia and Xingwu Sun and Xiaojuan Qi},\nbooktitle={The Fourteenth International Conference on Learning Representations},\nyear={2026},\nurl={https://openreview.net/forum?id=5gFKVyohGd}\n}"
+        },
+        "title": {
+          "value": "Fast Data Mixture Optimization via Gradient Descent"
+        },
+        "pdf": {
+          "value": "/pdf/35b8c789dde54b02269a31b1061db1ac96123259.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2026/Conference"
+        },
+        "paperhash": {
+          "value": "tan|fast_data_mixture_optimization_via_gradient_descent"
+        },
+        "authorids": {
+          "value": [
+            "~Haoru_Tan1",
+            "~Sitong_Wu1",
+            "~Yanfeng_Chen1",
+            "~Jun_Xia7",
+            "~Ruobing_Xie2",
+            "~Bin_Xia2",
+            "~Xingwu_Sun2",
+            "~Xiaojuan_Qi4"
+          ]
+        },
+        "authors": {
+          "value": [
+            "Haoru Tan",
+            "Sitong Wu",
+            "Yanfeng Chen",
+            "Jun Xia",
+            "Ruobing Xie",
+            "Bin Xia",
+            "Xingwu Sun",
+            "Xiaojuan Qi"
+          ]
+        }
+      },
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "This paper introduces BIMIX, a data mixing law for better understanding and optimizing data mixtures across different domains.\nThe key contributions of the paper are:\n1. They provides a scalable framework to model the relationship between domain proportions and training data quantity.\n2. Through experiments on two large-scale datasets, Pile and SlimPajama, BIMIX predicts model loss with a mean relative error below 0.2%.\n3. The authors introduce entropy-based measures as efficient and computationally lightweight proxies for data mixing, offering a practical alternative to resource-intensive optimization methods."
+        },
+        "soundness": {
+          "value": 3
+        },
+        "confidence": {
+          "value": 3
+        },
+        "questions": {
+          "value": "I have a little bit confused about the part 5.4 **ENTROPY MEASURES AS EFFICIENT MIXING PROXIES**, it seems that the autor trained\nmodels on a series of entropy-driven data mixtures in order to collect the observational data points necessary for fitting the coefficients of BIMIX. After fitting the BIMIX, we can final get the final mixture for better pretraining. However, at the end of part 5.4, the author seems to show that entropy measures mixing proxy is already enough and do not talk much about the BIMIX."
+        },
+        "rating": {
+          "value": 5
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 3
+        },
+        "contribution": {
+          "value": 3
+        },
+        "strengths": {
+          "value": "1. BIMIX is a novel methods, proposing a bivariate data mixing law with models domain proportions and training data quantity together. They also incorporates entropy-based measures as efficient proxies to fastly optimizate the training.\n2. By validating BIMIX with validation error, the paper demonstrates robustness, presenting a comprehensive evaluation for practical effectiveness and applicability.\n3. The paper is well-organized, effectively explaining complex ideas with clear definitions."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "1. The downstream evaluation includes only PPL. This limits the understanding of how BIMIX-optimized mixtures perform on other important tasks, such as ARC, hellaswag, pica, openbookqa, boolq and so on.\n2. While the authors aim to reduce computational costs, the paper lacks a detailed comparison of its efficiency. For example, how much GPU hours do we need in order to get the good mixture.\n3.  The paper primarily contrasts BIMIX with DoReMi and baseline mixtures, without comparisons to other recent advancements, such as REGMIX[1] or Online Data Mixing[2].\n\n1. RegMix: Data Mixture as Regression for Language Model Pre-training\n2. Efficient Online Data Mixing For Language Model Pre-Training"
+        }
+      },
+      "nonreaders": [],
+      "tmdate": 1731428730462,
+      "tcdate": 1730574140218,
+      "writers": [
+        "ICLR.cc/2025/Conference",
+        "ICLR.cc/2025/Conference/Submission6713/Reviewer_VKW2"
+      ],
+      "signatures": [
+        "ICLR.cc/2025/Conference/Submission6713/Reviewer_VKW2"
+      ],
+      "forum": "JsM46OZix7",
+      "number": 2,
+      "license": "CC BY 4.0",
+      "cdate": 1730574140218,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2025/Conference/Submission6713/-/Official_Review",
+        "ICLR.cc/2025/Conference/-/Edit"
+      ],
+      "mdate": 1731428730462,
+      "domain": "ICLR.cc/2025/Conference",
+      "replyto": "JsM46OZix7",
+      "id": "IGrjcgVhGS",
+      "forumContent": {
+        "venue": {
+          "value": "Submitted to ICLR 2025"
+        },
+        "TLDR": {
+          "value": "We introduce a novel bivariate data mixing law that models the joint scaling behavior of domain proportions and data volume in LLM pretraining."
+        },
+        "code_of_ethics": {
+          "value": "I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics."
+        },
+        "keywords": {
+          "value": [
+            "Data Mixture",
+            "Large Language Models",
+            "Scaling Law"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/264e3d90daa0e0405a565bdfccc5234f39db9ff9.zip"
+        },
+        "primary_area": {
+          "value": "interpretability and explainable AI"
+        },
+        "submission_guidelines": {
+          "value": "I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide."
+        },
+        "abstract": {
+          "value": "Large language models have demonstrated remarkable capabilities across various tasks, primarily attributed to the utilization of diversely sourced data. However, the impact of pretraining data composition on model performance remains poorly understood. This paper introduces BiMix, a novel bivariate data mixing law that models the joint scaling behavior of domain proportions and data volume in LLM pretraining. BiMix provides a systematic framework for understanding and optimizing data mixtures across diverse domains. Through extensive experiments on two large-scale datasets, we demonstrate BiMix's high accuracy in loss extrapolation (mean relative error $< 0.2\\%$) and its generalization to unseen mixtures (R$^{2} > 0.97$). Optimization of domain proportions yields superior model performance compared to existing methods. Furthermore, we establish entropy-based measures as efficient proxies for data mixing, offering a computationally lightweight strategy. Our work contributes both theoretical insights into data mixing dynamics and practical tools for enhancing LLM training efficiency, paving the way for more effective scaling strategies in language model development."
+        },
+        "_bibtex": {
+          "value": "@misc{\nge2025bimix,\ntitle={BiMix: Bivariate Data Mixing Law for Language Model Pretraining},\nauthor={Ce Ge and Zhijian Ma and Daoyuan Chen and Yaliang Li and Bolin Ding},\nyear={2025},\nurl={https://openreview.net/forum?id=JsM46OZix7}\n}"
+        },
+        "title": {
+          "value": "BiMix: Bivariate Data Mixing Law for Language Model Pretraining"
+        },
+        "pdf": {
+          "value": "/pdf/7f5f1afacb98b59bd297cca179bd0fa2b12345b4.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2025/Conference/Rejected_Submission"
+        },
+        "paperhash": {
+          "value": "ge|bimix_bivariate_data_mixing_law_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Ce_Ge1",
+            "~Zhijian_Ma1",
+            "~Daoyuan_Chen1",
+            "~Yaliang_Li1",
+            "~Bolin_Ding3"
+          ]
+        },
+        "anonymous_url": {
+          "value": "I certify that there is no URL (e.g., github page) that could be used to find authors’ identity."
+        },
+        "no_acknowledgement_section": {
+          "value": "I certify that there is no acknowledgement section in this submission for double blind review."
+        },
+        "authors": {
+          "value": [
+            "Ce Ge",
+            "Zhijian Ma",
+            "Daoyuan Chen",
+            "Yaliang Li",
+            "Bolin Ding"
+          ]
+        }
+      },
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "The paper “Fast Data Mixture Optimization via Gradient Descent (FastMix)” proposes a scalable, differentiable framework for optimizing data mixtures for large-scale model training. The authors address how to efficiently determine the optimal proportions of multiple data sources to maximize performance on a target validation objective, both for pre-training and post-training (SFT) stages.\n\nFastMix reformulates data mixture optimization as a differentiable bilevel optimization problem. Instead of non-differentiable data sampling (drawing examples according to mixture ratios), the authors show that mixture selection can be equivalently represented as per-source loss weighting under uniform sampling. This reparameterization embeds mixture coefficients directly into the training loss, making them continuous and differentiable parameters.\n\nThis leads to significant performance gains over the baselines, while comparatively the time taken is less due to the use of a single proxy model."
+        },
+        "soundness": {
+          "value": 2
+        },
+        "confidence": {
+          "value": 4
+        },
+        "questions": {
+          "value": "1. The proposed method assumes that validation loss varies smoothly with mixture weights. How robust is FastMix when this assumption fails, e.g., for highly compositional or discontinuous domains? You could try evaluating on benchmarks such as GSM8K [see Zhang et al, 2024 for an analysis], MATH or HumanEval [see Bradbury et al, 2024 for an analysis] (even one would do for the purpose of the rebuttal).\n\n2. How well do mixture weights learned on smaller proxies transfer to larger models? Ther should be an ablation using multiple proxy sizes (e.g., 0.5B, 1B, 3B).\n\n3. A simple extension towards dynamic mixture optimization could be the following: every K steps, compute $\\alpha_{t+1, \\text{EMA}}$ as a moving average of the current $\\alpha_t$ and the newly computed $\\alpha_{t+1}$, and then resume training the model with the new $\\alpha_{t+1, \\text{EMA}}$. The authors could experiment with this on the Pile itself (Books, Arxiv, Wikipedia etc) which has heterogenous domains where early training may benefit from broad text but later training may become more code/math/etc focused.\n\n4. Can the method generalize to other modalities or multi-domain mixtures? For example, you could try applying FastMix to the MUGEN dataset (which has three modalities, which you can count as data mixture sources) and then optimize mixture weights for downstream video prediction or other multimodal generation task. Another possible experiment is using image-text pretraining corpora such as CC3M, CC12M, LAION-400, and subsequently, FastMix could discover mixture ratios for downstream tasks on validation benchmarks, instead of how the mixtures may have to be manually tuned for CLIP [Gadre et al, 2024][Nguyen et al, 2023].\n\n5. I noticed the mixture visualization in Appendix A and was wondering if it is fair to compare FastMix to RegMix and CLIMB if they don’t incorporate similar regularization to prevent mixture collapse. Can you update your analysis with RegMix and CLIMB variants that prevent this collapse, or can you explain why it is not possible to incorporate such regularization in their frameworks?\n\n6. The approach relies on differentiable validation losses wrt mixture weights. How would it adapt to discrete or non-differentiable metrics such as BLEU, EM, or ROUGE?\n\n7. How sensitive is FASTMIX to the choice of regularization hyperparameters (\\alpha, \\beta) in promoting sparse or diverse mixtures? There should be a regularization ablation showing mixture entropy vs. downstream accuracy, and this would help clarify whether performance depends on sparse or more diffuse mixtures.\n\n8. The method optimizes mixtures based on a single validation dataset. How sensitive are the learned mixtures to the choice of validation task? Does the mixture learned on a particular validation task/dataset generalize to other validation tasks/datasets? Roughly speaking, is there task transfer robustness?"
+        },
+        "rating": {
+          "value": 4
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 3
+        },
+        "contribution": {
+          "value": 3
+        },
+        "strengths": {
+          "value": "FastMix presents an interesting advance in data mixture optimization by reframing the problem as a differentiable bilevel optimization, enabling end-to-end gradient-based updates of both model and mixture parameters within a single proxy run. This eliminates the need for computationally intensive multi-proxy searches used in prior works such as RegMix and CLIMB, while delivering superior accuracy and generalization across both pre-training and post-training stages. Its simplicity, efficiency, and demonstrated scalability (spanning 1B to 7B models) make it a practical and elegant solution.\n\nThe method, while seemingly simple, is a novel contribution to the data mixture problem. While this kind of continuous and differentiable transformation is seen in other works, it has not been attempted in mixture optimization for data mixtures before. The bilevel optimization reformulation and its implementation with a single proxy model is also novel. This kind of technique is clearly inspired by advances in hyperparameter optimization. Noteworthy is the direct application to large scale models, opening avenues for e.g. in LLM pre-training. Finally, while other papers usually limit themselves to evaluation on one of pre-training or post-training, this paper does both.\n\nTo summarize,\n1. The authors demonstrate significant performance gains and time savings: up to 550× faster mixture search compared to RegMix and 55× faster than CLIMB, and gains in  pre-training (48.2 avg score) and post-training (65.4 avg score), with top ranks on multiple benchmarks.\n2. The practicality and simplicity of their method, barring the fact that it is not a dynamic method, is a plus point.\n3. The use of a single proxy model as against hundreds is appreciable and makes training with this method more accessible."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "FastMix represents a conceptually clean and computationally efficient approach to data mixture optimization. However, its limitations arise from the simplifying assumptions underlying its differentiable reparameterization.\n\nFor one, the method assumes smooth, stationary relationships between mixture weights and validation loss. This assumption can break down in real, non-linear training regimes. Further,  the paper’s experimental evaluation, though broad, is limited in terms of cross-scale validation, dynamic adaptation, and proxy–target transferability. The use of a static mixture throughout training restricts its ability to handle evolving data distributions (the authors mention this). Additionally, the efficiency comparisons rely on downscaled baselines, and the generality of results across diverse domains (e.g., multimodal or highly imbalanced datasets) remains untested. Overall, the work is methodologically elegant but still somewhat idealized in scope and validation. Further experimentation is necessary.\n\n1. The authors explicitly note that FastMix optimizes a fixed mixture that remains constant throughout training. The mixture distribution may change over time depending on the scenario. For example, it is possible in non-stationary training regimes that early exposure to simpler data is more beneficial and with time, fine grained data becomes more important.\n\n2. One major issue is that the method assumes the validation loss is a smooth, differentiable function of the mixture weights. This means that it is expected that small changes in \\alpha lead to predictable changes in validation performance. In realistic settings, the loss formulation may exhibit non-smooth regions (although this depends on the parameterization of the network). FastMix’s gradient updates may lead to suboptimal mixtures in this case.\n\n3. Yet another issue is that their method leaves open a proxy-target gap: the experiments rely on 1B param models to optimize mixtures for 7B param target models. There is an implicit scale transfer assumption, that the mixtures should be optimal across sizes. While the paper exhibits strong results, it does not quantify the correlation between proxy and target performance. It is then unclear how well the proxy captures data utility for much larger models.\n\n4. While a relatively minor issue, in the post-training experiments, both RegiMix and CLIMB are limited to 64 proxy models. While this is necessary for ease of computation, the baselines’ potential is undervalued. The efficiency gains of FastMix remain valid but somewhat exaggerated in absolute terms.\n\n5. FastMix optimizes a single scalar validation objective, in which case there is a single downstream goal. It lacks demonstration on multi-domain training and instruction tuning, where mixtures may become biased towards domains that correlate strongly with validation data. The evaluation needs to be more robust and demonstrate realistic tradeoffs in such use cases.\n\n6. All experiments are seemingly conducted on text benchmarks. Experiments on multi-modal mixtures (for e.g. text and image) or even long-tail domains are missing. Thus the claim of scalability remains largely within text.\n\n7. The issue of requiring surrogate validation losses in the case of non-smoothness has been handled cursorily. The authors mostly experiment on the cross-entropy validation loss, and there ought to be a longer discussion about other metrics (e.g. BLEU, Exact Match, etc)."
+        }
+      },
+      "parentInvitations": "ICLR.cc/2026/Conference/-/Official_Review",
+      "nonreaders": [],
+      "tmdate": 1762915651697,
+      "tcdate": 1761946083810,
+      "writers": [
+        "ICLR.cc/2026/Conference",
+        "ICLR.cc/2026/Conference/Submission977/Reviewer_Kg4B"
+      ],
+      "signatures": [
+        "ICLR.cc/2026/Conference/Submission977/Reviewer_Kg4B"
+      ],
+      "forum": "5gFKVyohGd",
+      "number": 1,
+      "license": "CC BY 4.0",
+      "cdate": 1761946083810,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2026/Conference/Submission977/-/Official_Review",
+        "ICLR.cc/2026/Conference/-/Edit"
+      ],
+      "mdate": 1762915651697,
+      "domain": "ICLR.cc/2026/Conference",
+      "replyto": "5gFKVyohGd",
+      "id": "3VTXAG5v55",
+      "forumContent": {
+        "venue": {
+          "value": "ICLR 2026 Poster"
+        },
+        "keywords": {
+          "value": [
+            "Large models",
+            "Data-centric AI",
+            "AutoML"
+          ]
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "abstract": {
+          "value": "While large and diverse datasets have driven recent advances in large models, identifying the optimal data mixture for pre-training and post-training remains a significant open problem. We address this challenge with FastMix, a novel framework that automates data mixture discovery while training only a single proxy model. Instead of relying on predefined heuristics or resource-intensive simulations, FastMix jointly optimizes mixture coefficients and model parameters, substantially improving efficiency and scalability over prior approaches. At the core of FastMix is a reformulation of mixture selection as a bilevel optimization problem.\nUnder this reformulation, we show that optimizing mixture ratios is mathematically equivalent to assigning per-source loss weights under uniform source sampling. This embeds the mixture coefficients directly into the differentiable iterative optimization objective, enabling efficient, gradient-based optimization of both mixture and model. To solve the optimization problem, FastMix implements an approximate iterative optimization procedure, alternating between (i) updating model parameters on data sampled according to current mixture ratios (inner loop) and (ii) updating mixture ratios based on validation feedback (outer loop). Across pre- and post-training, FastMix outperforms baselines while drastically reducing search cost: in pre-training, it attains an average score of 48.2 with 1.3 GPU-hours ($\\times 550$ vs. RegMix; $\\times 55$ vs. CLIMB), and in post-training (SFT) it leads with 65.4 with a $+5.5$ gain over the next best, completing search in 2.2 GPU-hours compared to the 115 GPU-hours required by CLIMB/RegMix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\ntan2026fast,\ntitle={Fast Data Mixture Optimization via Gradient Descent},\nauthor={Haoru Tan and Sitong Wu and Yanfeng Chen and Jun Xia and Ruobing Xie and Bin Xia and Xingwu Sun and Xiaojuan Qi},\nbooktitle={The Fourteenth International Conference on Learning Representations},\nyear={2026},\nurl={https://openreview.net/forum?id=5gFKVyohGd}\n}"
+        },
+        "title": {
+          "value": "Fast Data Mixture Optimization via Gradient Descent"
+        },
+        "pdf": {
+          "value": "/pdf/35b8c789dde54b02269a31b1061db1ac96123259.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2026/Conference"
+        },
+        "paperhash": {
+          "value": "tan|fast_data_mixture_optimization_via_gradient_descent"
+        },
+        "authorids": {
+          "value": [
+            "~Haoru_Tan1",
+            "~Sitong_Wu1",
+            "~Yanfeng_Chen1",
+            "~Jun_Xia7",
+            "~Ruobing_Xie2",
+            "~Bin_Xia2",
+            "~Xingwu_Sun2",
+            "~Xiaojuan_Qi4"
+          ]
+        },
+        "authors": {
+          "value": [
+            "Haoru Tan",
+            "Sitong Wu",
+            "Yanfeng Chen",
+            "Jun Xia",
+            "Ruobing Xie",
+            "Bin Xia",
+            "Xingwu Sun",
+            "Xiaojuan Qi"
+          ]
+        }
+      },
+      "version": 2
+    },
+    {
+      "content": {
+        "venue": {
+          "value": "CoRR 2025"
+        },
+        "pdf": {
+          "value": "https://arxiv.org/pdf/2508.17677v1"
+        },
+        "venueid": {
+          "value": "dblp.org/journals/CORR/2025"
+        },
+        "paperhash": {
+          "value": "wang|tikmix_take_data_influence_into_dynamic_mixture_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "",
+            "~Binbin_Liu2",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "html": {
+          "value": "https://doi.org/10.48550/arXiv.2508.17677"
+        },
+        "_bibtex": {
+          "value": "@article{DBLP:journals/corr/abs-2508-17677,\n  publtype={informal},\n  author={Yifan Wang and Binbin Liu and Fengze Liu and Yuanfan Guo and Jiyao Deng and Xuecheng Wu and Weidong Zhou and Xiaohuan Zhou and Taifeng Wang},\n  title={TiKMiX: Take Data Influence into Dynamic Mixture for Language Model Pre-training},\n  year={2025},\n  month={August},\n  cdate={1754006400000},\n  journal={CoRR},\n  volume={abs/2508.17677},\n  url={https://doi.org/10.48550/arXiv.2508.17677}\n}\n"
+        },
+        "abstract": {
+          "value": "The data mixture used in the pre-training of a language model is a cornerstone of its final performance. However, a static mixing strategy is suboptimal, as the model's learning preferences for various data domains shift dynamically throughout training. Crucially, observing these evolving preferences in a computationally efficient manner remains a significant challenge. To address this, we propose TiKMiX, a method that dynamically adjusts the data mixture according to the model's evolving preferences. TiKMiX introduces Group Influence, an efficient metric for evaluating the impact of data domains on the model. This metric enables the formulation of the data mixing problem as a search for an optimal, influence-maximizing distribution. We solve this via two approaches: TiKMiX-D for direct optimization, and TiKMiX-M, which uses a regression model to predict a superior mixture. We trained models with different numbers of parameters, on up to 1 trillion tokens. TiKMiX-D exceeds the performance of state-of-the-art methods like REGMIX while using just 20% of the computational resources. TiKMiX-M leads to an average performance gain of 2% across 9 downstream benchmarks. Our experiments reveal that a model's data preferences evolve with training progress and scale, and we demonstrate that dynamically adjusting the data mixture based on Group Influence, a direct measure of these preferences, significantly improves performance by mitigating the underdigestion of data seen with static ratios."
+        },
+        "title": {
+          "value": "TiKMiX: Take Data Influence into Dynamic Mixture for Language Model Pre-training"
+        },
+        "authors": {
+          "value": [
+            "Yifan Wang",
+            "Binbin Liu",
+            "Fengze Liu",
+            "Yuanfan Guo",
+            "Jiyao Deng",
+            "Xuecheng Wu",
+            "Weidong Zhou",
+            "Xiaohuan Zhou",
+            "Taifeng Wang"
+          ]
+        }
+      },
+      "tmdate": 1774924998923,
+      "pdate": 1767139200000,
+      "externalIds": [
+        "dblp:journals/corr/abs-2508-17677"
+      ],
+      "tcdate": 1774924988355,
+      "writers": [
+        "~"
+      ],
+      "signatures": [
+        "~BINBINLIU1"
+      ],
+      "forum": "WsDNEfPiBt",
+      "license": "CC BY-SA 4.0",
+      "number": 861420,
+      "cdate": 1754006400000,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "DBLP.org/-/Record",
+        "DBLP.org/-/Edit"
+      ],
+      "mdate": 1774924998923,
+      "domain": "DBLP.org",
+      "id": "WsDNEfPiBt",
+      "version": 2
+    },
+    {
+      "content": {
+        "venue": {
+          "value": "ICLR 2026 Conference Withdrawn Submission"
+        },
+        "keywords": {
+          "value": [
+            "Data mix ;  Language Model Pre-training"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/df1ccd3cd89c9809b9b3525b33f2f45b99c692bf.zip"
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "abstract": {
+          "value": "The data mixture used in the pre-training of a language model is a cornerstone of its final performance. However, a static mixing strategy is suboptimal, as the model's learning preferences for various data domains shift dynamically throughout training. Crucially, observing these evolving preferences in a computationally efficient manner remains a significant challenge. To address this, we propose TiKMiX, a method that dynamically adjusts the data mixture according to the model's evolving preferences. TiKMiX introduces Group Influence, an efficient metric for evaluating the impact of data domains on the model. This metric enables the formulation of the data mixing problem as a search for an optimal, influence-maximizing distribution. We solve this via two approaches: TiKMiX-D for direct optimization, and TiKMiX-M, which uses a regression model to predict a superior mixture. We trained models with different numbers of parameters, on up to 1 trillion tokens. TiKMiX-D exceeds the performance of state-of-the-art methods like REGMIX while using just 20% of the computational resources. TiKMiX-M leads to an average performance gain of 2% across 9 downstream benchmarks. Our experiments reveal that a model's data preferences evolve with training progress and scale, and we demonstrate that dynamically adjusting the data mixture based on Group Influence, a direct measure of these preferences, significantly improves performance by mitigating the \"under digestion\" of data seen with static ratios."
+        },
+        "_bibtex": {
+          "value": "@misc{\nwang2026tikmix,\ntitle={Ti{KM}iX: Take Data Influence into Dynamic Mixture for Language Model Pre-training},\nauthor={Yifan Wang and BINBINLIU and Fengze Liu and Yuanfan Guo and Jiyao Deng and Xuecheng Wu and Weidong Zhou and Xiaohuan Zhou and Taifeng Wang},\nyear={2026},\nurl={https://openreview.net/forum?id=H8JAWv0HNr}\n}"
+        },
+        "title": {
+          "value": "TiKMiX: Take Data Influence into Dynamic Mixture for Language Model Pre-training"
+        },
+        "pdf": {
+          "value": "/pdf/547845d250a831de03b4c794412ca5d10168f080.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2026/Conference/Withdrawn_Submission"
+        },
+        "paperhash": {
+          "value": "wang|tikmix_take_data_influence_into_dynamic_mixture_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Yifan_Wang24",
+            "~BINBINLIU1",
+            "~Fengze_Liu1",
+            "~Yuanfan_Guo1",
+            "~Jiyao_Deng1",
+            "~Xuecheng_Wu1",
+            "~Weidong_Zhou2",
+            "~Xiaohuan_Zhou1",
+            "~Taifeng_Wang2"
+          ]
+        },
+        "authors": {
+          "value": [
+            "Yifan Wang",
+            "BINBINLIU",
+            "Fengze Liu",
+            "Yuanfan Guo",
+            "Jiyao Deng",
+            "Xuecheng Wu",
+            "Weidong Zhou",
+            "Xiaohuan Zhou",
+            "Taifeng Wang"
+          ]
+        }
+      },
+      "tmdate": 1767682002240,
+      "tcdate": 1757951813569,
+      "writers": [
+        "ICLR.cc/2026/Conference",
+        "ICLR.cc/2026/Conference/Submission6058/Authors"
+      ],
+      "signatures": [
+        "ICLR.cc/2026/Conference/Submission6058/Authors"
+      ],
+      "forum": "H8JAWv0HNr",
+      "license": "CC BY 4.0",
+      "number": 6058,
+      "cdate": 1757951813569,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2026/Conference/-/Submission",
+        "ICLR.cc/2026/Conference/-/Post_Submission",
+        "ICLR.cc/2026/Conference/Submission6058/-/Full_Submission",
+        "ICLR.cc/2026/Conference/-/Withdrawn_Submission"
+      ],
+      "mdate": 1767682002240,
+      "odate": 1759896705795,
+      "domain": "ICLR.cc/2026/Conference",
+      "id": "H8JAWv0HNr",
+      "version": 2
+    },
+    {
+      "content": {
+        "summary": {
+          "value": "The work introduces REGMIX, a method for optimizing data mixtures to enhance language model training efficiency. REGMIX treats data mixture selection as a regression task, using small proxy models to predict the performance of different mixtures and identify the best one, enabling larger models to be trained with significantly less compute. Key findings include:\n- REGMIX’s mixtures perform as well as or better than those selected by human experts and prior methods like DoReMi, with only a fraction of the compute cost.\n- Data mixture has a substantial impact on downstream performance, with single-task performance differences reaching up to 14.6%.\n- General web corpora (such as CommonCrawl) outperform traditionally high-quality data like Wikipedia in driving downstream performance.\n- Domain interactions are complex and often counterintuitive, highlighting the value of automated approaches like REGMIX.\n- Data mixture effects go beyond scaling laws, with REGMIX capturing the complexity by jointly optimizing across all domains."
+        },
+        "soundness": {
+          "value": 4
+        },
+        "confidence": {
+          "value": 4
+        },
+        "questions": {
+          "value": "1) Can you further explain why the choice of multiplying the e token distribution by a value from 0.1 to 5.0? Is this a standard practice? Were other ranges tested, and if so, what were the results? \n     - Also, could you discuss the rationale behind this range and whether you conducted any sensitivity analyses to determine its impact on the results?\n\n2) Given sufficient computation available, would segmenting domains further (into finer-grained topic-based segments) likely improve model performance or lead to more effective mixture predictions? Do you think that finer segmentation would affect the rank invariance assumption? I suggest the authors to discuss the potential impacts and challenges of a finer-grained domain segmentation in their future work section. This would help address the broader implications and limitations of their approach."
+        },
+        "rating": {
+          "value": 8
+        },
+        "code_of_conduct": {
+          "value": "Yes"
+        },
+        "presentation": {
+          "value": 4
+        },
+        "contribution": {
+          "value": 4
+        },
+        "strengths": {
+          "value": "- The paper introduces a novel, regression-based approach for selecting data mixtures that reduces computational costs in language model training. The approach offers an efficient alternative to traditional dynamic or heuristic data allocation methods, making a valuable contribution to the field.\n\n- The paper is technically robust and well-structured, with extensive validation across diverse data scenarios. It empirically supports the rank invariance hypothesis and uses clear, well-structured figures to illustrate the method and results, enhancing reader understanding. REGMIX’s ability to match or outperform other DoReMi and other methods with significantly less compute is a compelling outcome for LLM pre-training efficiency.\n\n- The paper tackles a pertinent problem in LLM pre-training. Given the increasing size of training data and models, this approach could have a significant impact on the field, especially in reducing computational costs and environmental impact."
+        },
+        "flag_for_ethics_review": {
+          "value": [
+            "No ethics review needed."
+          ]
+        },
+        "weaknesses": {
+          "value": "- To maximize impact, the authors could highlight specific scenarios where the approach enables previously infeasible experiments due to resource constraints. Also, adding a broader discussion on trade-offs of the method (e.g., scenarios where the rank invariance assumption might not hold) would help readers assess its practical relevance and future applicability.\n\n- The work could have used standardized computation metrics, such as FLOPs or GPU hours, to allow clearer comparison of the method efficiency gains relative to baselines."
+        }
+      },
+      "nonreaders": [],
+      "tmdate": 1731428709840,
+      "tcdate": 1730761461464,
+      "writers": [
+        "ICLR.cc/2025/Conference",
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_YiAH"
+      ],
+      "signatures": [
+        "ICLR.cc/2025/Conference/Submission6642/Reviewer_YiAH"
+      ],
+      "forum": "5BjQOUXq7i",
+      "number": 5,
+      "license": "CC BY 4.0",
+      "cdate": 1730761461464,
+      "readers": [
+        "everyone"
+      ],
+      "invitations": [
+        "ICLR.cc/2025/Conference/Submission6642/-/Official_Review",
+        "ICLR.cc/2025/Conference/-/Edit"
+      ],
+      "mdate": 1731428709840,
+      "domain": "ICLR.cc/2025/Conference",
+      "replyto": "5BjQOUXq7i",
+      "id": "zpE2b0tFPF",
+      "forumContent": {
+        "venue": {
+          "value": "ICLR 2025 Spotlight"
+        },
+        "TLDR": {
+          "value": "We introduce RegMix, an automated data mixture method that formulates data mixture as a regression problem. RegMix achieves a 6.3% improvement over human selection on the HellaSwag benchmark, with only a 2% extra training FLOPs."
+        },
+        "code_of_ethics": {
+          "value": "I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics."
+        },
+        "keywords": {
+          "value": [
+            "language model pre-training",
+            "data mixture",
+            "regression"
+          ]
+        },
+        "supplementary_material": {
+          "value": "/attachment/977302e354f03fd926f21dcc735e4733ebc1ce5c.zip"
+        },
+        "primary_area": {
+          "value": "foundation or frontier models, including LLMs"
+        },
+        "submission_guidelines": {
+          "value": "I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide."
+        },
+        "abstract": {
+          "value": "The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000× larger and 25× longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix."
+        },
+        "_bibtex": {
+          "value": "@inproceedings{\nliu2025regmix,\ntitle={RegMix: Data Mixture as Regression for Language Model Pre-training},\nauthor={Qian Liu and Xiaosen Zheng and Niklas Muennighoff and Guangtao Zeng and Longxu Dou and Tianyu Pang and Jing Jiang and Min Lin},\nbooktitle={The Thirteenth International Conference on Learning Representations},\nyear={2025},\nurl={https://openreview.net/forum?id=5BjQOUXq7i}\n}"
+        },
+        "title": {
+          "value": "RegMix: Data Mixture as Regression for Language Model Pre-training"
+        },
+        "pdf": {
+          "value": "/pdf/d0d62a2b2d872b279bdb0902d8ca7331d0b16f59.pdf"
+        },
+        "venueid": {
+          "value": "ICLR.cc/2025/Conference"
+        },
+        "paperhash": {
+          "value": "liu|regmix_data_mixture_as_regression_for_language_model_pretraining"
+        },
+        "authorids": {
+          "value": [
+            "~Qian_Liu2",
+            "~Xiaosen_Zheng1",
+            "~Niklas_Muennighoff1",
+            "~Guangtao_Zeng1",
+            "~Longxu_Dou1",
+            "~Tianyu_Pang1",
+            "~Jing_Jiang1",
+            "~Min_Lin1"
+          ]
+        },
+        "anonymous_url": {
+          "value": "I certify that there is no URL (e.g., github page) that could be used to find authors’ identity."
+        },
+        "no_acknowledgement_section": {
+          "value": "I certify that there is no acknowledgement section in this submission for double blind review."
+        },
+        "authors": {
+          "value": [
+            "Qian Liu",
+            "Xiaosen Zheng",
+            "Niklas Muennighoff",
+            "Guangtao Zeng",
+            "Longxu Dou",
+            "Tianyu Pang",
+            "Jing Jiang",
+            "Min Lin"
+          ]
+        }
+      },
+      "version": 2
+    }
+  ],
+  "count": 10000
+}

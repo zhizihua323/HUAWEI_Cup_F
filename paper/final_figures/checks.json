@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "science_closed": true,
+  "checks": [
+    {
+      "check_id": "asset_count",
+      "status": "PASS",
+      "evidence": {
+        "figures": 7,
+        "tables": 9
+      }
+    },
+    {
+      "check_id": "figure_bundle_complete",
+      "status": "PASS",
+      "evidence": "7 x PNG/SVG/PDF/caption/source_map present"
+    },
+    {
+      "check_id": "table_bundle_complete",
+      "status": "PASS",
+      "evidence": "9 x CSV/DOCX/caption/source_map present"
+    },
+    {
+      "check_id": "png_600_dpi",
+      "status": "PASS",
+      "evidence": {
+        "fig01_framework": [
+          599.9988,
+          599.9988
+        ],
+        "fig02_q1_quality_validation": [
+          599.9988,
+          599.9988
+        ],
+        "fig03_q1_regmix_transport": [
+          599.9988,
+          599.9988
+        ],
+        "fig04_q2_fit_validation": [
+          599.9988,
+          599.9988
+        ],
+        "fig05_q3_budget_optima": [
+          599.9988,
+          599.9988
+        ],
+        "fig06_q4_scenarios": [
+          599.9988,
+          599.9988
+        ],
+        "fig07_qualification_map": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    {
+      "check_id": "svg_editable_text",
+      "status": "PASS",
+      "evidence": {
+        "fig01_framework": true,
+        "fig02_q1_quality_validation": true,
+        "fig03_q1_regmix_transport": true,
+        "fig04_q2_fit_validation": true,
+        "fig05_q3_budget_optima": true,
+        "fig06_q4_scenarios": true,
+        "fig07_qualification_map": true
+      }
+    },
+    {
+      "check_id": "q4_negative_values_preserved",
+      "status": "PASS",
+      "evidence": [
+        -3.971071948299685,
+        -1.933709305769927,
+        -0.4881775063174451
+      ]
+    },
+    {
+      "check_id": "q4_all_unvalidated",
+      "status": "PASS",
+      "evidence": [
+        "SCENARIO_ONLY_UNVALIDATED"
+      ]
+    },
+    {
+      "check_id": "q3_upper_boundary_retained",
+      "status": "PASS",
+      "evidence": 299.89299999999986
+    },
+    {
+      "check_id": "q2_source_qualifications",
+      "status": "PASS",
+      "evidence": {
+        "B2": "VALIDATION_FAILED",
+        "B3": "VALIDATION_SUPPORTED",
+        "B4": "VALIDATION_FAILED",
+        "B5": "VALIDATION_FAILED",
+        "B9": "OOS_STRESS_ONLY",
+        "B10": "ESTIMATED_SCENARIO_ONLY"
+      }
+    },
+    {
+      "check_id": "q1_manual_denominators",
+      "status": "PASS",
+      "evidence": [
+        "47",
+        "47",
+        "47",
+        "46"
+      ]
+    },
+    {
+      "check_id": "docx_visual_qa",
+      "status": "PASS",
+      "evidence": "9 DOCX exported with Microsoft Word to one-page PDFs and inspected; no clipping, overlap, missing glyphs, or page split"
+    },
+    {
+      "check_id": "black_white_redundancy",
+      "status": "PASS",
+      "evidence": "hatches, marker shapes, line styles and direct labels supplement color"
+    },
+    {
+      "check_id": "figure_validator",
+      "status": "PASS",
+      "evidence": "nature-figure validator: 12 PASS, 2 reviewed WARN, 0 FAIL; TIFF not requested; log axes use strictly positive frozen N_B/D_B"
+    }
+  ]
+}

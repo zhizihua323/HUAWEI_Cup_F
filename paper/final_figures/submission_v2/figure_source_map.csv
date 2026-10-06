@@ -1,0 +1,10 @@
+﻿asset_id,output_stem,source_file,fields,display_transformation
+FIG-01,fig01_submission_framework,paper/final_figures/fig01_framework_source.json,nodes; edges,结构重排；删除内部工程语言
+FIG-02,fig02_submission_q1_quality_validation,paper/final_figures/fig02_q1_quality_validation_source.csv,section; item; value; ci_low; ci_high; n,只改排版和中文资格标签
+FIG-03,fig03_submission_regmix_transport,paper/final_figures/fig03_q1_regmix_transport_source.csv,scale; observed_loss; predicted_loss,全部点；无抽样
+FIG-04,fig04_submission_q2_validation,paper/final_figures/fig04_q2_fit_validation_source_b1.csv,val_loss; prediction,全部 B1 行
+FIG-04,fig04_submission_q2_validation,paper/final_figures/fig04_q2_fit_validation_source_validation.csv,source_id; actual_loss; frozen_M0_B1_prediction; support_status,全部已交付验证行
+FIG-04,fig04_submission_q2_validation,paper/final_tables/table06_q2_validation.csv,原始记录; 支持内/OOS; 最终资格,仅用于资格与计数标签
+FIG-05,fig05_submission_q3_optima,paper/final_figures/fig05_q3_budget_optima_source.csv,budget_flops; N_B; D_B; predicted_loss,冻结三档预算
+FIG-06,fig06_submission_q4_scenarios,paper/final_figures/fig06_q4_scenarios_source.csv,task; scenario; horizon; prediction_points; eligibility,不截断；不画置信区间
+FIG-07,fig07_submission_qualification_map,paper/final_figures/fig07_qualification_map_source.csv,object; evidence_role; eligibility; boundary,中文化并保留必要资格

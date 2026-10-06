@@ -1,0 +1,156 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "20260924T215211+08",
+  "status": "COMPLETE_PENDING_REVIEW",
+  "started_local": "2026-09-24T21:52:11+08:00",
+  "finished_local": "2026-09-24T21:53:23+08:00",
+  "duration_s": 72.092,
+  "stage_exit_codes": {
+    "s00_preflight": 0,
+    "s01_synthetic_tests": 0,
+    "s10_scan_a1": 0,
+    "s11_scan_a2": 0,
+    "s12_scan_a3": 0,
+    "s20_score_primary": 0,
+    "s30_sensitivity": 0,
+    "s40_summarize": 0,
+    "s50_verify": 0,
+    "s60_finalize": 0
+  },
+  "stage_seconds": {
+    "s00_preflight": 0.773,
+    "s10_scan_a1": 15.659,
+    "s11_scan_a2": 3.165,
+    "s12_scan_a3": 34.819,
+    "s20_score_primary": 4.434,
+    "s30_sensitivity": 3.239,
+    "s40_summarize": 5.541,
+    "s50_verify": 3.657
+  },
+  "conditions": {
+    "synthetic_tests_passed": true,
+    "stages_completed": true,
+    "verification_no_fail": true,
+    "verification_no_critical_not_checked": true,
+    "sensitivity_gates_passed": true,
+    "fallback_used": false,
+    "protected_files_unchanged": true,
+    "row_count_272505": true,
+    "unique_q_valid_261067": true,
+    "unique_q_missing_19": true,
+    "physical_q_valid_272486": true
+  },
+  "audit_totals": {
+    "total_records": 272505,
+    "unique_id_sub_path_keys": 261086,
+    "duplicate_occurrences": 11419,
+    "quality_conflicts": 0,
+    "domain_collisions": 0
+  },
+  "q_valid_true": 272486,
+  "q_valid_false": 19,
+  "checks": {
+    "n_checks": 20,
+    "n_pass": 20,
+    "n_fail": 0,
+    "n_not_checked": 0
+  },
+  "sensitivity_imputation": {
+    "gates": {
+      "n_valid_min": 100,
+      "coverage_min": 0.95,
+      "n_unique_finite_min": 2
+    },
+    "all_gates_passed": true,
+    "imputed_records_total": 19,
+    "parameters": [
+      {
+        "domain": "commoncrawl",
+        "feature": "modernbert_professionalism",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "commoncrawl",
+        "candidate_rows": 7691,
+        "n_valid": 7688,
+        "coverage": 0.9996099336887271,
+        "n_unique_finite": 5,
+        "median": 0.4,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=commoncrawl); no holdout/extension/global fallback permitted"
+      },
+      {
+        "domain": "github",
+        "feature": "modernbert_professionalism",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "github",
+        "candidate_rows": 7963,
+        "n_valid": 7963,
+        "coverage": 1.0,
+        "n_unique_finite": 5,
+        "median": 0.8,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=github); no holdout/extension/global fallback permitted"
+      },
+      {
+        "domain": "wikipedia",
+        "feature": "modernbert_professionalism",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "wikipedia",
+        "candidate_rows": 8023,
+        "n_valid": 8023,
+        "coverage": 1.0,
+        "n_unique_finite": 5,
+        "median": 0.4,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=wikipedia); no holdout/extension/global fallback permitted"
+      },
+      {
+        "domain": "wikipedia",
+        "feature": "modernbert_reasoning",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "wikipedia",
+        "candidate_rows": 8023,
+        "n_valid": 8013,
+        "coverage": 0.9987535834475881,
+        "n_unique_finite": 6,
+        "median": 0.2,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=wikipedia); no holdout/extension/global fallback permitted"
+      }
+    ]
+  },
+  "peak_rss_mb": 755.9,
+  "resume_events": [
+    {
+      "stage": "s10_scan_a1",
+      "checkpoint_rows": 51230,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    },
+    {
+      "stage": "s11_scan_a2",
+      "checkpoint_rows": 17523,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    },
+    {
+      "stage": "s12_scan_a3",
+      "checkpoint_rows": 203752,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    }
+  ],
+  "protected_artifacts": {
+    "changed": [],
+    "removed": [],
+    "added": []
+  },
+  "content_read": false,
+  "fallback_used": false,
+  "old_quality_overwritten": false,
+  "strategy_changed": false,
+  "handoff_file": "handoff.md"
+}

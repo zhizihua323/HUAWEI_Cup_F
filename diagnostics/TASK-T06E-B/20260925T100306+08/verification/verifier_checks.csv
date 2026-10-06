@@ -1,0 +1,20 @@
+﻿check,status,detail
+raw_shapes,PASS,"(1176, 360, 450, 1704)"
+B6_support_partition,PASS,
+B7_360_repeat_90_new,PASS,
+B8_160_common,PASS,
+input_manifest_hashes,PASS,
+B1_formula_predictions,PASS,
+B6_formula_predictions,PASS,8.881784197001252e-16
+B6_fold_parameter_formula_predictions,PASS,8.881784197001252e-16
+G1_recomputed,PASS,43/45
+G2_recomputed,PASS,"[{""split"": ""leave_N"", ""improvement"": 0.3312516401201788, ""ratio_count"": 9, ""required"": 8}, {""split"": ""leave_D"", ""improvement"": 0.32412098609334333, ""ratio_count"": 5, ""required"": 4}]"
+G3_bootstrap,PASS,200/200/180
+bootstrap_seed_and_no_highQ,PASS,
+G4_jacobian_finite_difference,PASS,53.944075012371655 vs 53.94407500357512
+profile_grid_accounted_and_weakness_propagated,PASS,22
+B7_repeat_isolation,PASS,
+B7_new_formula,PASS,
+B8_partition,PASS,
+B8_no_old_k,PASS,
+checks_have_no_unresolved_critical,PASS,

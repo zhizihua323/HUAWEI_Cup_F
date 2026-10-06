@@ -1,0 +1,8 @@
+﻿scope_a,scope_b,n_a,n_b,ks_statistic,wasserstein_distance,interpretation_limit
+A1_sample,A2_extension,51212,17523,0.8807932747243846,0.3375156140249798,descriptive frozen-result distance only; p-values are not used for stability decisions
+A1_sample,A3_extension,51212,203751,0.20413993303771782,0.062395511374920005,descriptive frozen-result distance only; p-values are not used for stability decisions
+A1_sample,all_unique,51212,261067,0.11673012514784697,0.03067695609216444,descriptive frozen-result distance only; p-values are not used for stability decisions
+A2_extension,A3_extension,17523,203751,0.9576313396839099,0.39905630637331213,descriptive frozen-result distance only; p-values are not used for stability decisions
+A2_extension,all_unique,17523,261067,0.8813783173901653,0.36238343602613554,descriptive frozen-result distance only; p-values are not used for stability decisions
+A3_extension,all_unique,203751,261067,0.09230168183236187,0.03679525738411702,descriptive frozen-result distance only; p-values are not used for stability decisions
+extension_overlap,extension_new,11419,209855,0.04568254500740565,0.019361765564971052,descriptive frozen-result distance only; p-values are not used for stability decisions

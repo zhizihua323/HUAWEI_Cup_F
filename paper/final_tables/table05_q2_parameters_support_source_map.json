@@ -1,0 +1,18 @@
+{
+  "asset": "table05_q2_parameters_support",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_parameter_table.csv",
+      "fields": "M0_B1 parameter; value; p2_5; p97_5; qualification",
+      "unit": "Loss; billion parameters; billion tokens",
+      "denominator": "B1 source"
+    },
+    {
+      "file": "diagnostics/TASK-T07/20260925T113744+08/support_bounds.csv",
+      "fields": "N_B and D_B lower/upper",
+      "unit": "billion parameters; billion tokens",
+      "denominator": "B1 empirical support"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "task_id": "TASK-T08",
+  "run_id": "20260925T142203+0800",
+  "checks": [
+    {
+      "check_id": "input_manifests",
+      "claim": "T05/T07/T06/C01/C01-R1 frozen manifests match",
+      "actual": {
+        "TASK-T05": "PASS",
+        "TASK-T07": "PASS",
+        "TASK-T06E-INTEGRATE": "PASS",
+        "TASK-C01": "PASS",
+        "TASK-C01-R1": "PASS"
+      },
+      "expected": "all PASS",
+      "status": "PASS",
+      "evidence": "input_manifest.json",
+      "note": ""
+    },
+    {
+      "check_id": "bridge_counts",
+      "claim": "T05 main/conditional/total counts",
+      "actual": [
+        7,
+        38,
+        45
+      ],
+      "expected": [
+        7,
+        38,
+        45
+      ],
+      "status": "PASS",
+      "evidence": "T05 bridge_analysis_dataset.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "c8_counts",
+      "claim": "C8 complete/partial/corrupt counts",
+      "actual": [
+        1854,
+        6,
+        4
+      ],
+      "expected": [
+        1854,
+        6,
+        4
+      ],
+      "status": "PASS",
+      "evidence": "C01-R1 c8_model_wide_corrected.csv; C01 c8_corrupt_files.csv",
+      "note": ""
+    },
+    {
+      "check_id": "constant_candidates",
+      "claim": "all six tasks plus auxiliary mean frozen candidate=CONSTANT",
+      "actual": {
+        "IFEval_pct": "CONSTANT",
+        "BBH_pct": "CONSTANT",
+        "MATH Lvl 5_pct": "CONSTANT",
+        "GPQA_pct": "CONSTANT",
+        "MUSR_pct": "CONSTANT",
+        "MMLU-PRO_pct": "CONSTANT",
+        "benchmark_mean_aux": "CONSTANT"
+      },
+      "expected": {
+        "IFEval_pct": "CONSTANT",
+        "BBH_pct": "CONSTANT",
+        "MATH Lvl 5_pct": "CONSTANT",
+        "GPQA_pct": "CONSTANT",
+        "MUSR_pct": "CONSTANT",
+        "MMLU-PRO_pct": "CONSTANT",
+        "benchmark_mean_aux": "CONSTANT"
+      },
+      "status": "PASS",
+      "evidence": "T05 t08_bridge_contract.json",
+      "note": ""
+    },
+    {
+      "check_id": "scale_associated_zero",
+      "claim": "main layer scale-associated component is strictly zero",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS",
+      "evidence": "scale_non_scale_decomposition.csv",
+      "note": ""
+    },
+    {
+      "check_id": "observed_fitted_remainder",
+      "claim": "observed=fitted+conditional_remainder",
+      "actual": 0.0,
+      "expected": "<=1e-10",
+      "status": "PASS",
+      "evidence": "scale_non_scale_decomposition.csv",
+      "note": ""
+    },
+    {
+      "check_id": "time_trend_guard",
+      "claim": "validated_for_extrapolation=false propagated",
+      "actual": false,
+      "expected": false,
+      "status": "PASS",
+      "evidence": "forecast_seal.json; taskwise_progress.csv",
+      "note": ""
+    },
+    {
+      "check_id": "medium_D_not_imputed",
+      "claim": "conditional C6 Medium D remains missing and was not imputed",
+      "actual": 38,
+      "expected": 38,
+      "status": "PASS",
+      "evidence": "T05 bridge_analysis_dataset.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "partial_mean_guard",
+      "claim": "partial models are excluded from six-task mean",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS",
+      "evidence": "historical_strata_summary.csv; missingness_and_denominators.csv",
+      "note": ""
+    },
+    {
+      "check_id": "damaged_json_guard",
+      "claim": "damaged JSON rows receive no score",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "model_identity_usage.csv",
+      "note": ""
+    },
+    {
+      "check_id": "growth_support_gate",
+      "claim": "growth rate identifiable only with >=3 families and >=10 intervals",
+      "actual": [
+        1,
+        1,
+        false
+      ],
+      "expected": [
+        ">=3",
+        ">=10",
+        false
+      ],
+      "status": "PASS",
+      "evidence": "forecast_uncertainty.csv",
+      "note": ""
+    },
+    {
+      "check_id": "no_fake_growth",
+      "claim": "when growth support fails, no numeric growth is emitted",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv; loss_space_scale_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "loss_benchmark_separation",
+      "claim": "Loss-to-benchmark numeric conversion count",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "forecast_12m_24m_scenarios.csv; loss_space_scale_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "physical_compute_units",
+      "claim": "N and D converted from billion units before 6ND",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS",
+      "evidence": "support_oos_audit.csv",
+      "note": ""
+    },
+    {
+      "check_id": "b1_draw_rows",
+      "claim": "T07 B1 draw rows kept whole",
+      "actual": 80,
+      "expected": 80,
+      "status": "PASS",
+      "evidence": "parameter_draw_optima.parquet",
+      "note": ""
+    },
+    {
+      "check_id": "scenario_ids_frozen",
+      "claim": "scenario IDs unchanged after seal",
+      "actual": [
+        "SCALE_GROWTH_Q25_CONSERVATIVE",
+        "SCALE_GROWTH_Q50_BASE",
+        "SCALE_GROWTH_Q75_OPTIMISTIC"
+      ],
+      "expected": [
+        "SCALE_GROWTH_Q25_CONSERVATIVE",
+        "SCALE_GROWTH_Q50_BASE",
+        "SCALE_GROWTH_Q75_OPTIMISTIC"
+      ],
+      "status": "PASS",
+      "evidence": "forecast_seal.json; scenario_registry.csv; forecast_12m_24m_scenarios.csv",
+      "note": ""
+    },
+    {
+      "check_id": "six_task_vector",
+      "claim": "six task rows plus auxiliary mean are retained",
+      "actual": [
+        "BBH_pct",
+        "GPQA_pct",
+        "IFEval_pct",
+        "MATH Lvl 5_pct",
+        "MMLU-PRO_pct",
+        "MUSR_pct",
+        "benchmark_mean_aux"
+      ],
+      "expected": [
+        "BBH_pct",
+        "GPQA_pct",
+        "IFEval_pct",
+        "MATH Lvl 5_pct",
+        "MMLU-PRO_pct",
+        "MUSR_pct",
+        "benchmark_mean_aux"
+      ],
+      "status": "PASS",
+      "evidence": "taskwise_progress.csv",
+      "note": ""
+    },
+    {
+      "check_id": "manifest_last",
+      "claim": "output_manifest must be generated after all registered files",
+      "actual": "deferred",
+      "expected": "generated after checks/verification/handoff/code_snapshot",
+      "status": "PASS_AT_FINALIZATION",
+      "evidence": "output_manifest.json",
+      "note": ""
+    }
+  ],
+  "n_checks": 18,
+  "n_pass": 17,
+  "n_fail": 0,
+  "generated_at_utc": "2026-09-25T06:22:09.250051+00:00"
+}

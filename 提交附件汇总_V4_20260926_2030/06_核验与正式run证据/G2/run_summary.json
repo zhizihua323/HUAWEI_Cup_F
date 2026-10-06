@@ -1,0 +1,62 @@
+{
+  "task_id": "TASK-G2",
+  "run_id": "20260925T195336+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "execution_status": "COMPLETE",
+  "verification_status": "PASS",
+  "primary_model": "M0_B1",
+  "no_refit": true,
+  "no_model_reselection": true,
+  "source_rows": {
+    "B2": 1029,
+    "B3": 4000,
+    "B4": 57,
+    "B5": 44,
+    "B9": 132,
+    "B10": 128
+  },
+  "final_qualification": {
+    "B2": "VALIDATION_FAILED",
+    "B3": "VALIDATION_SUPPORTED",
+    "B4": "VALIDATION_FAILED",
+    "B5": "VALIDATION_FAILED",
+    "B9": "OOS_STRESS_ONLY",
+    "B10": "ESTIMATED_SCENARIO_ONLY"
+  },
+  "generalized_law_status": "LAYERED_ESTIMATION_JOINT_EXPRESSION_NOT_JOINTLY_IDENTIFIED",
+  "NEW_Q2_CHANGES_T07_NUMERIC_INPUTS": "NO",
+  "checks": {
+    "frozen_M0_B1_parameters_exact": true,
+    "no_new_model_fit_or_selection": true,
+    "support_evaluated_without_clipping": true,
+    "B2_and_B3_both_executed": true,
+    "B2_or_B3_nonempty_comparable_validation": true,
+    "B4_and_B5_kept_separate": true,
+    "B9_and_B10_gt10b_audited": true,
+    "B10_not_used_as_truth": true,
+    "no_global_cross_source_RMSE": true,
+    "Q_and_p_not_independent": true,
+    "T07_numeric_input_decision_is_NO": true,
+    "protected_T06_T07_hashes_unchanged": true,
+    "all_execution_outputs_present": true,
+    "independent_verifier_all_pass": true,
+    "code_snapshot_matches_code": true,
+    "candidate_freeze_generated_after_verification": true,
+    "T07_impact_is_NO": true,
+    "required_files_present_before_manifest": true
+  },
+  "next_action": "Controller review candidate freeze; no incremental T07 is authorized by this task.",
+  "verification_summary": {
+    "total": 55,
+    "pass": 55,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "checks_summary": {
+    "total": 18,
+    "pass": 18,
+    "fail": 0
+  },
+  "candidate_freeze": "paper/Q2_GAP_RESULT_FREEZE.md",
+  "t07_impact": "NO"
+}

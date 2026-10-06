@@ -1,0 +1,3 @@
+[2026-09-24T15:08:02.802+08:00] TASK-Q01A-R1 repair start local=2026-09-24T15:08:02+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150623+08
+[2026-09-24T15:08:02.802+08:00] boundary: no compressed input (A1-A3) is opened, decompressed or hashed in this script
+[2026-09-24T15:08:02.872+08:00] FATAL: 1 missing inputs

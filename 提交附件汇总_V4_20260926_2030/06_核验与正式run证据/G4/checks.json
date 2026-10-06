@@ -1,0 +1,143 @@
+{
+  "run_id": "20260925T195716+0800",
+  "checked_at_local": "2026-09-25T20:30:57.779715+08:00",
+  "input_manifest": {
+    "file_count": 35,
+    "missing_count": 0,
+    "pass": true
+  },
+  "c1_c2_equivalence": {
+    "c1_rows": 4576,
+    "c2_rows": 4576,
+    "common_rows": 4576,
+    "common_models": 4497,
+    "unique_models_match": true,
+    "c1_only_rows": 0,
+    "c2_only_rows": 0,
+    "numeric_tolerance": 1e-09,
+    "tolerant_value_mismatch_cells": 0,
+    "exact_string_mismatches": 0,
+    "max_abs_numeric_difference": 3.552713678800501e-15,
+    "pass": true
+  },
+  "c8_accounting": {
+    "directory_rows": 1863,
+    "files_total": 1958,
+    "parse_success": 1954,
+    "parse_failed": 4,
+    "complete_six_task": 1854,
+    "partial": 6
+  },
+  "seal": {
+    "forecast_origin": "2025-01-28",
+    "time_cutoff": "2024-06-19",
+    "scenario_registry_sha256": "d8a40915c0fe4ae4bea3b2862df0e0bf03f9b2f708991dab03ba78d197e2e645",
+    "scenario_hash_matches_seal": true,
+    "score_values_read_before_seal": false
+  },
+  "sample": {
+    "main_model_count": 25,
+    "main_model_count_source": "sealed pre-registration and preregister completion record",
+    "six_primary_tasks": [
+      "IFEval",
+      "BBH",
+      "MATH Lvl 5",
+      "GPQA",
+      "MUSR",
+      "MMLU-PRO"
+    ],
+    "auxiliary_target": "six_task_mean_complete_only"
+  },
+  "split_leakage": {
+    "max_group_overlap": 0,
+    "time_protocol_status": "EVALUABLE",
+    "pass": true
+  },
+  "model_selection": {
+    "selected": {
+      "IFEval": "M0_CONSTANT",
+      "BBH": "M1_SCALE",
+      "MATH Lvl 5": "M1_SCALE",
+      "GPQA": "M1_SCALE",
+      "MUSR": "M0_CONSTANT",
+      "MMLU-PRO": "M1_SCALE",
+      "six_task_mean_complete_only": "M1_SCALE"
+    },
+    "scenario": {
+      "IFEval": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "BBH": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "MATH Lvl 5": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "GPQA": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "MUSR": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "MMLU-PRO": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      },
+      "six_task_mean_complete_only": {
+        "model": "M2_SCALE_TIME",
+        "qualification": "SCENARIO_ONLY_UNVALIDATED"
+      }
+    },
+    "m2_all_failed_frozen_gate": true,
+    "loss_bridge_used": false
+  },
+  "contribution": {
+    "identity_max_abs_error": 0.0,
+    "identity_pass": true,
+    "main_windows_overlap_note": "the frozen +/-365-day endpoint windows overlap for every task; the primary signed contribution is therefore zero under the sealed definition"
+  },
+  "forecast": {
+    "taskwise_rows": 36,
+    "auxiliary_rows": 6,
+    "expected_taskwise_rows": 36,
+    "expected_auxiliary_rows": 6,
+    "all_taskwise_status_present": true,
+    "negative_or_over100_preserved": true,
+    "loss_bridge_used_in_forecast": false
+  },
+  "uncertainty": {
+    "components": [
+      "model_selection",
+      "parameter_resampling",
+      "scenario_structure",
+      "time_extrapolation"
+    ],
+    "combined_ci_created": false,
+    "pass": true
+  },
+  "loss_bridge": {
+    "qualification": "CONDITIONAL_ASSOCIATION_ONLY",
+    "loss_to_benchmark_conversion_count": 0,
+    "used_in_direct_model_selection": false,
+    "pass": true
+  },
+  "protected_runs": {
+    "t05_modified": false,
+    "t08_modified": false,
+    "t07_modified": false,
+    "c01_r1_modified": false
+  },
+  "overall": "PASS",
+  "independent_verification": {
+    "status": "PASS",
+    "checks_pass": 19,
+    "checks_total": 19,
+    "file": "verification.json",
+    "verifier_imported_execution_module": false
+  }
+}

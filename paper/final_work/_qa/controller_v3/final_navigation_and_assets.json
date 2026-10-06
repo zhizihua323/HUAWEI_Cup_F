@@ -1,0 +1,277 @@
+{
+  "docx_sha256": "9f74fa660d57f62e476731566e65867cb1a3c253abee4a5b81deda6eec3331a4",
+  "pdf_sha256": "49c1a99648190ad86c532aa177770bcf15128da1143808a5048fad242cc61054",
+  "toc_items": 41,
+  "toc_navigation": [
+    {
+      "entry": "1 问题重述与分析",
+      "printed_page": 4,
+      "target_page": 4,
+      "match": true
+    },
+    {
+      "entry": "参考文献",
+      "printed_page": 28,
+      "target_page": 28,
+      "match": true
+    },
+    {
+      "entry": "9.2 数据分析与源码说明",
+      "printed_page": 28,
+      "target_page": 28,
+      "match": true
+    },
+    {
+      "entry": "9.1 人工智能工具的使用范围",
+      "printed_page": 27,
+      "target_page": 27,
+      "match": true
+    },
+    {
+      "entry": "9 人工智能工具使用与复现说明",
+      "printed_page": 27,
+      "target_page": 27,
+      "match": true
+    },
+    {
+      "entry": "8 结论",
+      "printed_page": 27,
+      "target_page": 27,
+      "match": true
+    },
+    {
+      "entry": "7.3 方法优点与不足",
+      "printed_page": 26,
+      "target_page": 26,
+      "match": true
+    },
+    {
+      "entry": "7.2 敏感性结果应怎样理解",
+      "printed_page": 26,
+      "target_page": 26,
+      "match": true
+    },
+    {
+      "entry": "7.1 四问的证据如何衔接",
+      "printed_page": 26,
+      "target_page": 26,
+      "match": true
+    },
+    {
+      "entry": "7 模型检验与综合讨论",
+      "printed_page": 26,
+      "target_page": 26,
+      "match": true
+    },
+    {
+      "entry": "6.5 不确定性与应用边界",
+      "printed_page": 25,
+      "target_page": 25,
+      "match": true
+    },
+    {
+      "entry": "6.4 未来12个月与24个月情景",
+      "printed_page": 23,
+      "target_page": 23,
+      "match": true
+    },
+    {
+      "entry": "6.3 历史关联模型及分解",
+      "printed_page": 22,
+      "target_page": 22,
+      "match": true
+    },
+    {
+      "entry": "6.2 候选模型与升级规则",
+      "printed_page": 22,
+      "target_page": 22,
+      "match": true
+    },
+    {
+      "entry": "6.1 模型身份与任务口径",
+      "printed_page": 21,
+      "target_page": 21,
+      "match": true
+    },
+    {
+      "entry": "6 问题四 能力关联分解与未来情景",
+      "printed_page": 21,
+      "target_page": 21,
+      "match": true
+    },
+    {
+      "entry": "5.4 上下文结构变化与情景敏感性",
+      "printed_page": 21,
+      "target_page": 21,
+      "match": true
+    },
+    {
+      "entry": "5.3 数值求解与主配置",
+      "printed_page": 20,
+      "target_page": 20,
+      "match": true
+    },
+    {
+      "entry": "5.2 一维约化与最优性条件",
+      "printed_page": 19,
+      "target_page": 19,
+      "match": true
+    },
+    {
+      "entry": "5.1 成本约束与主优化问题",
+      "printed_page": 19,
+      "target_page": 19,
+      "match": true
+    },
+    {
+      "entry": "5 问题三 算力预算下的条件资源配置",
+      "printed_page": 19,
+      "target_page": 19,
+      "match": true
+    },
+    {
+      "entry": "4.5 分来源验证与结果解释",
+      "printed_page": 17,
+      "target_page": 17,
+      "match": true
+    },
+    {
+      "entry": "4.4 广义表达与边际效用",
+      "printed_page": 16,
+      "target_page": 16,
+      "match": true
+    },
+    {
+      "entry": "4.3 A侧质量桥接与配比共线性",
+      "printed_page": 15,
+      "target_page": 15,
+      "match": true
+    },
+    {
+      "entry": "4.2 来源内质量关系与冲突数据",
+      "printed_page": 14,
+      "target_page": 14,
+      "match": true
+    },
+    {
+      "entry": "4.1 基础规模模型及参数求解",
+      "printed_page": 13,
+      "target_page": 13,
+      "match": true
+    },
+    {
+      "entry": "4 问题二 来源分层的条件广义标度律",
+      "printed_page": 13,
+      "target_page": 13,
+      "match": true
+    },
+    {
+      "entry": "3.6 领域配比模型与跨尺度检验",
+      "printed_page": 12,
+      "target_page": 12,
+      "match": true
+    },
+    {
+      "entry": "3.5 质量结果及其边界",
+      "printed_page": 10,
+      "target_page": 10,
+      "match": true
+    },
+    {
+      "entry": "3.4 求解与验证流程",
+      "printed_page": 9,
+      "target_page": 9,
+      "match": true
+    },
+    {
+      "entry": "3.3 冲突诊断与规则敏感性",
+      "printed_page": 9,
+      "target_page": 9,
+      "match": true
+    },
+    {
+      "entry": "3.2 域平衡校准与综合评分",
+      "printed_page": 8,
+      "target_page": 8,
+      "match": true
+    },
+    {
+      "entry": "3.1 特征语义与标量化",
+      "printed_page": 7,
+      "target_page": 7,
+      "match": true
+    },
+    {
+      "entry": "3 问题一 数据质量评价与领域配比",
+      "printed_page": 7,
+      "target_page": 7,
+      "match": true
+    },
+    {
+      "entry": "2.3 主要符号",
+      "printed_page": 7,
+      "target_page": 7,
+      "match": true
+    },
+    {
+      "entry": "2.2 基本约定与适用前提",
+      "printed_page": 6,
+      "target_page": 6,
+      "match": true
+    },
+    {
+      "entry": "2.1 数据来源及评价单位",
+      "printed_page": 5,
+      "target_page": 5,
+      "match": true
+    },
+    {
+      "entry": "2 数据基础与建模约定",
+      "printed_page": 5,
+      "target_page": 5,
+      "match": true
+    },
+    {
+      "entry": "1.3 总体技术路线",
+      "printed_page": 4,
+      "target_page": 4,
+      "match": true
+    },
+    {
+      "entry": "1.2 四个问题的建模重点",
+      "printed_page": 4,
+      "target_page": 4,
+      "match": true
+    },
+    {
+      "entry": "1.1 研究背景与问题重述",
+      "printed_page": 4,
+      "target_page": 4,
+      "match": true
+    }
+  ],
+  "all_toc_pages_correct": true,
+  "figures": [
+    {
+      "file": "fig01_v3_framework.png",
+      "byte_exact_embedded": true
+    },
+    {
+      "file": "fig02_v3_q1_quality.png",
+      "byte_exact_embedded": true
+    },
+    {
+      "file": "fig03_v3_regmix_transport.png",
+      "byte_exact_embedded": true
+    },
+    {
+      "file": "fig04_v3_q2_validation.png",
+      "byte_exact_embedded": true
+    },
+    {
+      "file": "fig05_v3_q4_scenarios.png",
+      "byte_exact_embedded": true
+    }
+  ],
+  "all_final_figures_embedded": true
+}

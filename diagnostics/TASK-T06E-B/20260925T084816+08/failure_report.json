@@ -1,0 +1,7 @@
+{
+  "status": "SUPERSEDED_ENGINEERING_RUN",
+  "reason": "Thread-level parallel profile remained GIL-bound; no scientific or solver change",
+  "completed": "B1/B6 full and folds; B1 M0 E profile only",
+  "correction": "Restart with one independent process per fixed profile parameter, identical solver settings and 9 starts",
+  "scientific_result": "NOT_REACHED"
+}

@@ -1,0 +1,4 @@
+{"run_id": "20260925T200018+08", "stage": "s00_preflight", "status": "start", "timestamp": "2026-09-25T20:04:16+08:00"}
+{"inputs": 15, "protected_files": 236, "run_id": "20260925T200018+08", "stage": "s00_preflight", "status": "complete", "timestamp": "2026-09-25T20:04:17+08:00"}
+{"run_id": "20260925T200018+08", "stage": "s10_conflict_stability", "status": "start", "timestamp": "2026-09-25T20:04:17+08:00"}
+{"error": "TypeError(\"main.<locals>.stage() got multiple values for argument 'status'\")", "run_id": "20260925T200018+08", "stage": "ERROR", "status": "stopped_with_evidence", "timestamp": "2026-09-25T20:09:57+08:00"}

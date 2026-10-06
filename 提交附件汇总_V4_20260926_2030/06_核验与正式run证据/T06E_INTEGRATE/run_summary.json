@@ -1,0 +1,17 @@
+{
+  "run_id": "20260925T110904+08",
+  "status": "COMPLETE",
+  "B_R1_review": "PASS",
+  "MQ_add": "ACCEPT_B6_SOURCE_RELATION",
+  "MQ_add_qualification": "IDENTIFIED_SOURCE_CONDITIONAL_B6; CROSS_SOURCE_SCENARIO_ONLY",
+  "MQ_eff": "SENSITIVITY_ONLY; ETA_AT_LOWER_BOUND",
+  "A_B_bridge": "NOT_IDENTIFIABLE",
+  "RegMix_to_B1": "SCENARIO_ONLY",
+  "B8": "CONFLICT_EVIDENCE",
+  "primary_model": "M0_B1",
+  "quality_enabled": false,
+  "mixture_transport_enabled": false,
+  "scenario_count": 21,
+  "model_refit": false,
+  "optimization_started": false
+}

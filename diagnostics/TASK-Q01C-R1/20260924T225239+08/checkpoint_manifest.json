@@ -1,0 +1,183 @@
+{
+  "run_id": "20260924T225239+08",
+  "generated_local": "2026-09-24T22:52:50+08:00",
+  "synthetic_run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225239+08\\interruption_run\\synthetic_run",
+  "checkpoints": [
+    {
+      "path": "checkpoints/s00_preflight.stage.COMPLETE",
+      "bytes": 647,
+      "sha256": "e3407c625b5c80b892f3ae60c3f1d130af5b871c19832dfa6374dcc6118fb22e"
+    },
+    {
+      "path": "checkpoints/s01_synthetic_tests.stage.COMPLETE",
+      "bytes": 253,
+      "sha256": "02a0f62d433e3e4327a998ba6ab372f5222c915c033b4de9b8ce2ebf2b819d07"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.checkpoint.COMPLETE",
+      "bytes": 335,
+      "sha256": "40808f518dc788c3d9fae565f14d7ef00bc41c3dca870e6c71772d2cda8e7524"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.meta.json",
+      "bytes": 2615,
+      "sha256": "2001f2143b3c0a831f93d104a6f120da9077e3d21fd17e9d780d8558613f8739"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.payload.parquet",
+      "bytes": 64328,
+      "sha256": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "2f6d3c2ab83fad1bebb3c439df96e55a8698b134a0fb2534a06cd8ac1ba7c69b"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.checkpoint.COMPLETE",
+      "bytes": 334,
+      "sha256": "67dafd6d1cde7b773131e6a531f3cd7437d8500111374bff2e028bfb92d063b4"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.meta.json",
+      "bytes": 2608,
+      "sha256": "c0f30594aaca27b01a3f7e435e6397a73708ebd21252fb3271596a56006f1dc7"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.payload.parquet",
+      "bytes": 32703,
+      "sha256": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "2405768a97be574b0d03b102eb93d1db313730889081c3889ef2a1e27c89164e"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.checkpoint.COMPLETE",
+      "bytes": 334,
+      "sha256": "4ed9045a07e4d2c02308290ab70371e3e15dd4ba7afc2020fc48a83428fd5e6a"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.meta.json",
+      "bytes": 2655,
+      "sha256": "7768c82af7653f83fa7742e6490242434fe6cb8baf8ec323705da61a902a6949"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.payload.parquet",
+      "bytes": 33422,
+      "sha256": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "fbc15956275f29d46884512610c51fbbb9c95636f53dac638af6596a56b0246a"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.checkpoint.COMPLETE",
+      "bytes": 341,
+      "sha256": "5695941a0514ee1d2c01fee6c8592b420a81d9a909b964907016ab92f5f6a2ae"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.meta.json",
+      "bytes": 2820,
+      "sha256": "d9cf3d417573bf652861c7b6afc47dd4ea28fd96ce8573639a1ce41421408e4b"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.payload.parquet",
+      "bytes": 102422,
+      "sha256": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.stage.COMPLETE",
+      "bytes": 357,
+      "sha256": "dcd472b799a24ac3b7ddf5e3a463e6ec304899d78d47407593ea2ee550f62c28"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.checkpoint.COMPLETE",
+      "bytes": 339,
+      "sha256": "85ef86128358f031dd8997cfbe52641e0a6f24c74e6c005a7199c98ad1360788"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.meta.json",
+      "bytes": 2933,
+      "sha256": "95b3563a89a7c8c61fc57a7f34fcac7a47d97969344669dfe50f9b034fc0e7c5"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.payload.parquet",
+      "bytes": 113182,
+      "sha256": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.stage.COMPLETE",
+      "bytes": 375,
+      "sha256": "c028825fa9887354b736523be4f195b522bd51e1f2e8e57d3bbf09fce01b09c8"
+    },
+    {
+      "path": "checkpoints/s40_summarize.checkpoint.COMPLETE",
+      "bytes": 337,
+      "sha256": "174cd946e03e45fd8e47aa3e0610b7b8a9d38613c78d497bf0609824893cfc34"
+    },
+    {
+      "path": "checkpoints/s40_summarize.meta.json",
+      "bytes": 667,
+      "sha256": "f7f1d4162b5523d1d90f441136ffa2e26b38b5afccdd354cfda519243466fec5"
+    },
+    {
+      "path": "checkpoints/s40_summarize.payload.parquet",
+      "bytes": 24946,
+      "sha256": "b2ad7bc64aa0b5a3b87b2ebed918e1db36c374f0bc84dd0c87ec3c4185e2756a"
+    },
+    {
+      "path": "checkpoints/s40_summarize.stage.COMPLETE",
+      "bytes": 1357,
+      "sha256": "f6f9a7d448787a004e2e9cfd0039c9a8e1fe4c37f76f8c840196962b8b1aa4e4"
+    },
+    {
+      "path": "checkpoints/s50_verify.stage.COMPLETE",
+      "bytes": 424,
+      "sha256": "a8b2a4c3dc123b49b449d0bf3685514f57e1d2e6aa8c8eb1794c32700208bdf5"
+    }
+  ],
+  "hash_invariance": {
+    "stage": "s10_scan_a1",
+    "before": {
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "2001f2143b3c0a831f93d104a6f120da9077e3d21fd17e9d780d8558613f8739",
+      "checkpoint_marker": "40808f518dc788c3d9fae565f14d7ef00bc41c3dca870e6c71772d2cda8e7524",
+      "stage_marker": "2f6d3c2ab83fad1bebb3c439df96e55a8698b134a0fb2534a06cd8ac1ba7c69b"
+    },
+    "after": {
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "2001f2143b3c0a831f93d104a6f120da9077e3d21fd17e9d780d8558613f8739",
+      "checkpoint_marker": "40808f518dc788c3d9fae565f14d7ef00bc41c3dca870e6c71772d2cda8e7524",
+      "stage_marker": "2f6d3c2ab83fad1bebb3c439df96e55a8698b134a0fb2534a06cd8ac1ba7c69b"
+    },
+    "invariant": true
+  },
+  "scan_counters": {
+    "protocol_version": 2,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 39304,
+        "last_scan_started": "2026-09-24T22:52:41+08:00",
+        "last_scan_finished": "2026-09-24T22:52:41+08:00"
+      },
+      "A2_arxiv": {
+        "passes": 1,
+        "last_scan_pid": 23548,
+        "last_scan_started": "2026-09-24T22:52:43+08:00",
+        "last_scan_finished": "2026-09-24T22:52:43+08:00"
+      },
+      "A3_github": {
+        "passes": 1,
+        "last_scan_pid": 23548,
+        "last_scan_started": "2026-09-24T22:52:43+08:00",
+        "last_scan_finished": "2026-09-24T22:52:43+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 3
+  }
+}

@@ -1,0 +1,14 @@
+{"ts": "2026-09-25T01:57:57+08:00", "mode": "calibration-preflight", "stage": "calibration_preflight", "event": "start", "pid": 32912}
+{"ts": "2026-09-25T01:57:58+08:00", "mode": "calibration-preflight", "stage": "calibration_preflight", "event": "complete", "pid": 32912, "labels": ["arxiv", "book", "c4", "commoncrawl", "github", "stackexchange", "wikipedia"], "calibration_rows": 40943, "unique_first": 40943}
+{"ts": "2026-09-25T01:58:02+08:00", "mode": "calibration-freeze", "stage": "phase_a", "event": "start", "pid": 28944}
+{"ts": "2026-09-25T01:58:03+08:00", "mode": "calibration-freeze", "stage": "phase_a", "event": "complete", "pid": 28944, "status": "CALIBRATION_QUALIFIED_PENDING_VALIDATION", "active_domains": ["c4", "commoncrawl", "wikipedia"], "bootstrap_status": {"c4": "PASS", "commoncrawl": "PASS", "wikipedia": "PASS"}, "frozen_file_count": 28}
+{"ts": "2026-09-25T01:58:13+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "start", "pid": 8228}
+{"ts": "2026-09-25T01:58:13+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "first_holdout_read", "pid": 8228, "first_holdout_read_time": "2026-09-25T01:58:13.276+08:00", "rows": 10287}
+{"ts": "2026-09-25T01:58:13+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "holdout_frozen", "pid": 8228, "status": "ACCEPT_STABILITY"}
+{"ts": "2026-09-25T01:58:13+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "first_extension_read", "pid": 8228, "first_extension_read_time": "2026-09-25T01:58:13.467+08:00", "rows": 221275}
+{"ts": "2026-09-25T01:58:14+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "extension_done", "pid": 8228, "status": "NOT_TESTED_FOR_ACTIVE_CORRECTION"}
+{"ts": "2026-09-25T01:58:14+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "regmix_identifiability", "pid": 8228, "status": "NOT_IDENTIFIABLE", "reasons": 2}
+{"ts": "2026-09-25T01:58:16+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "assembly_complete", "pid": 8228, "rows": 272505, "confirmatory_rows": 51212}
+{"ts": "2026-09-25T01:58:18+08:00", "mode": "frozen-validation", "stage": "phase_b", "event": "complete", "pid": 8228, "task_status": "COMPLETE_PENDING_REVIEW", "holdout": "ACCEPT_STABILITY", "extension": "NOT_TESTED_FOR_ACTIVE_CORRECTION", "checks": {"PASS": 22, "NOT_CHECKED": 1}}
+{"ts": "2026-09-25T01:58:29+08:00", "mode": "finalize-manifest", "stage": "finalize", "event": "start", "pid": 1704, "previous_manifest": false}
+{"ts": "2026-09-25T01:59:59+08:00", "mode": "finalize-manifest", "stage": "finalize", "event": "start", "pid": 32244, "previous_manifest": true}

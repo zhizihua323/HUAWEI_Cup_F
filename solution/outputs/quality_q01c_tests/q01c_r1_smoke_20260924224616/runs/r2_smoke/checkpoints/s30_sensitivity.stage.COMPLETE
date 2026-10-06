@@ -1,0 +1,12 @@
+{
+  "kind": "stage",
+  "stage": "s30_sensitivity",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:37:39+08:00",
+  "checkpoint_identity": "1282a58a91e1f88874273dd26b80659f419ed92a674dac22d7ba789b6f3fabbd",
+  "outputs": {
+    "imputation_parameters_sensitivity.json": "47cb2ea34e4f0f319138becb278f4c214caf224e43c4b7f375c9eda311a75715",
+    "imputation_applied_counts.csv": "1b2bed6b3e63de528f37b57aca778327faf0d01755542ecc33c5fd02bf444914"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

@@ -1,0 +1,93 @@
+{
+  "task_id": "TASK-T06E-P",
+  "run_id": "20260925T075729+08",
+  "freeze_stage": "AFTER_SCENARIO_SEAL_AND_READONLY_DERIVATIONS_BEFORE_CHECKS",
+  "scenario_registry_sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522",
+  "scenario_registry_seal_sha256": "9f3474ef7803bc66decef2247530602ee82ec5451efb30ddb0dff42c04173d5b",
+  "input_manifest_sha256": "4e2794d979884c75b8c4018ead07b5ec06dc5ee2df1bb3045029989fad838472",
+  "source_snapshot_manifest_sha256": "8274d46becc34e9ea5dcc1196bccd2807fb1f368d4ce1081e18ee42029c2ddc1",
+  "source_code": [
+    {
+      "name": "01_seal_registry.py",
+      "sha256": "ed6d4c4100cb065de534cb1536554955de8db2cf2512988701395ea0bb8cd00f",
+      "bytes": 7771
+    },
+    {
+      "name": "02_quality_anchor_bridge.py",
+      "sha256": "ad14da0bba7e7ed7b41eda1c7de17af9b73f718973fe3a83850f7f394dbb4d94",
+      "bytes": 10945
+    },
+    {
+      "name": "03_regmix_readonly_audit.py",
+      "sha256": "0f1c9c765cba67efb0cd83086f8ba84995ecd6a9952e9186df47915905459330",
+      "bytes": 14902
+    },
+    {
+      "name": "04_scenario_interface.py",
+      "sha256": "751033dad7ae230ea1bcb98fe3d910a829d5c75b874bf411da369c1fd2daad57",
+      "bytes": 14914
+    },
+    {
+      "name": "05_prepare_manifests.py",
+      "sha256": "c9513dff3287872d19af1e2139b4768c9d0a1c0bb945676ea84a5badb2889b99",
+      "bytes": 7863
+    },
+    {
+      "name": "06_checks.py",
+      "sha256": "118c74937dc44c52e48434d7c8136dcd57606c89fe955df426bb0696679512da",
+      "bytes": 15516
+    },
+    {
+      "name": "07_independent_verifier.py",
+      "sha256": "88fc013f528f948b5b84ec98f4c4ce822f4cf8371891ad685cae058b1590deda",
+      "bytes": 9920
+    },
+    {
+      "name": "08_finalize.py",
+      "sha256": "227dab8701f016ca2f00b18b2764d35da4290f016d354860fa35ecb1d829ea43",
+      "bytes": 12351
+    }
+  ],
+  "frozen_decision_artifacts": [
+    {
+      "path": "quality_anchor/q_A_anchor.json",
+      "sha256": "6e08f7602e193d81929e87d903a4b63eea973bd3e4fc4d2f3c40d307ed044d1b"
+    },
+    {
+      "path": "bridge/quality_bridge_scenarios.json",
+      "sha256": "b19d99e999b7f47f66323715d1b2607199ffdd94768ab450cb59528ffe7f2afd"
+    },
+    {
+      "path": "mixture_audit/p_q_identifiability.json",
+      "sha256": "39a9cccdf0690f0c85b4e65594f725b8768ef2f998be62947ab3e3b8d6649206"
+    },
+    {
+      "path": "t07_candidate/t07_scenario_contract_candidate.json",
+      "sha256": "5376677172a0cb74a1e008d4052b0cd92c0d1c191ebab37e8a931b0b26a235af"
+    }
+  ],
+  "solver": "NONE",
+  "dimensionless_units": {
+    "p": "simplex",
+    "q_A": "score",
+    "Q_B": "score"
+  },
+  "normalization": {
+    "q_A": "equal-domain arithmetic mean",
+    "p": "row-sum normalization preserving zeros"
+  },
+  "constraints": {
+    "random_resampling_used": false,
+    "B_model_fitted": false,
+    "RegMix_refit": false,
+    "T07_started": false
+  },
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "frozen_local_time": "2026-09-25T08:07:17+08:00"
+}

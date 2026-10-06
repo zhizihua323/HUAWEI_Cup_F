@@ -1,0 +1,314 @@
+{
+  "run_id": "20260924T214129+08",
+  "generated_local": "2026-09-24T21:41:30+08:00",
+  "primary": {
+    "A1": {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+      "bytes": 103349792,
+      "mtime": 1788132500.0,
+      "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+      "verification_method": "read-only byte hash of the compressed file (not a decompression pass)"
+    },
+    "A2_arxiv": {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz",
+      "bytes": 3652724,
+      "mtime": 1788132500.0,
+      "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+      "verification_method": "read-only byte hash of the compressed file (not a decompression pass)"
+    },
+    "A3_github": {
+      "path": "F题/real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz",
+      "bytes": 37618172,
+      "mtime": 1788132500.0,
+      "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+      "verification_method": "read-only byte hash of the compressed file (not a decompression pass)"
+    }
+  },
+  "docs": {
+    "00_PROJECT_BRIEF.md": {
+      "path": "00_PROJECT_BRIEF.md",
+      "sha256": "6d64957a41b33035eb1eb3b0550f4fb48fcb129662b48e5159bea804b4b18058",
+      "bytes": 4614
+    },
+    "01_PROJECT_STATUS.md": {
+      "path": "01_PROJECT_STATUS.md",
+      "sha256": "b9a89d8e2b32cb76a78e5e48ef42438ec164814fdb5f10622f173d97e5b195f4",
+      "bytes": 5839
+    },
+    "02_DECISIONS.md": {
+      "path": "02_DECISIONS.md",
+      "sha256": "1ca261af54389d32ae2402cd5eaf7d8f413a4990911718bca28d8f88084ebe3c",
+      "bytes": 6527
+    },
+    "03_DATA_CATALOG.md": {
+      "path": "03_DATA_CATALOG.md",
+      "sha256": "c870e449a7e24cf6f92013aeeda5b0b58e1d931b596f2f2c2a581c233659d960",
+      "bytes": 11814
+    },
+    "04_TASK_QUEUE.md": {
+      "path": "04_TASK_QUEUE.md",
+      "sha256": "99e73c7e8bde8cccec31239ac4fd300499bd958daec91e49145da5682904106f",
+      "bytes": 4200
+    },
+    "05_REVIEW_LOG.md": {
+      "path": "05_REVIEW_LOG.md",
+      "sha256": "ddb31e6eca02b660c2292d3d8e143cfa6bb86f7bb596315ddf502c1917a40e72",
+      "bytes": 9536
+    },
+    "tasks/TASK-Q01A_质量缺失模式诊断.md": {
+      "path": "tasks/TASK-Q01A_质量缺失模式诊断.md",
+      "sha256": "c8b56e0cccf5295acce116b6234ea39de3b5a65e06770456d899945d71a1395f",
+      "bytes": 27484
+    },
+    "tasks/TASK-Q01A-R1_主控审查与精准小修要求.md": {
+      "path": "tasks/TASK-Q01A-R1_主控审查与精准小修要求.md",
+      "sha256": "1f7bd9c3116e661e8ba417769eed0cde962c9f23c0495da84ffe4dbd2fa074b2",
+      "bytes": 14916
+    },
+    "tasks/TASK-Q01B_质量缺失处理策略裁决.md": {
+      "path": "tasks/TASK-Q01B_质量缺失处理策略裁决.md",
+      "sha256": "49296b49956d87339f8fa893df61dedab339a1a609e3d7964421e019c8c9beb7",
+      "bytes": 4680
+    },
+    "tasks/TASK-Q01C_质量缺失策略实施与流水线恢复.md": {
+      "path": "tasks/TASK-Q01C_质量缺失策略实施与流水线恢复.md",
+      "sha256": "a6697d427e45b17f89f83bd4d3a0dde5f7fde1acbf5c03c2cc01908937d8a026",
+      "bytes": 22623
+    }
+  },
+  "source": {
+    "solution/src/common.py": {
+      "path": "solution/src/common.py",
+      "sha256": "fc5a7056de9fe6ceb80ec85071a3b3d026b37e5d841f86b7e93637c8fb7e088d",
+      "bytes": 1432,
+      "role": "frozen historical module"
+    },
+    "solution/src/evolution_audit.py": {
+      "path": "solution/src/evolution_audit.py",
+      "sha256": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+      "bytes": 39343,
+      "role": "frozen historical module"
+    },
+    "solution/src/mixture_baseline.py": {
+      "path": "solution/src/mixture_baseline.py",
+      "sha256": "25231143b96880a8aa7a9b710aecf57e972a752016452e9ae67f74171200c68a",
+      "bytes": 11200,
+      "role": "frozen historical module"
+    },
+    "solution/src/plot_baselines.py": {
+      "path": "solution/src/plot_baselines.py",
+      "sha256": "a44cd200f791f49e8f54e5e319cb18bcc3c1cd0b4b8b42a632e0211c0fa997e1",
+      "bytes": 3367,
+      "role": "frozen historical module"
+    },
+    "solution/src/project_audit.py": {
+      "path": "solution/src/project_audit.py",
+      "sha256": "39ca144bb844e6104507cfc4d14df8d51a28bab0bbbead5cc4fb0a8f65ae3eb7",
+      "bytes": 4557,
+      "role": "frozen historical module"
+    },
+    "solution/src/quality_audit.py": {
+      "path": "solution/src/quality_audit.py",
+      "sha256": "dbcf25ef8d69980409c4cb7d251ac84b6c58da95932b1483fe654e95610a11ae",
+      "bytes": 33716,
+      "role": "frozen historical module"
+    },
+    "solution/src/quality_q01c.py": {
+      "path": "solution/src/quality_q01c.py",
+      "sha256": "ce15962838b252e827ca25d8b6b1dd832d2515537eec116a1f4642ddb1e7e549",
+      "bytes": 90665,
+      "role": "Q01C new module"
+    },
+    "solution/src/quality_q01c_selftest.py": {
+      "path": "solution/src/quality_q01c_selftest.py",
+      "sha256": "b1c995f0048e193117a8a4e6e3bd1b17396cf8205df43e720649e063322c4b30",
+      "bytes": 11092,
+      "role": "Q01C new module"
+    },
+    "solution/src/quality_q01c_verify.py": {
+      "path": "solution/src/quality_q01c_verify.py",
+      "sha256": "fa07a1cb7336ddb7c40db5fcdef0129440382b6068afec04170a39a8ca13e460",
+      "bytes": 35232,
+      "role": "Q01C new module"
+    },
+    "solution/src/scaling_baseline.py": {
+      "path": "solution/src/scaling_baseline.py",
+      "sha256": "bad8e43735f9b9d209034533891fd1bb139309564a25aaa2d93188d4f9e2b1a2",
+      "bytes": 30611,
+      "role": "frozen historical module"
+    },
+    "solution/config.json": {
+      "path": "solution/config.json",
+      "sha256": "224c2ff638b5db2c447dd4aedc121a6b3b9e362d7affda64dabbc267cca498cf",
+      "bytes": 440
+    },
+    "solution/README.md": {
+      "path": "solution/README.md",
+      "sha256": "16a434edb5ab7499402f78dbe2318a07bb81f71138d0a56e16fb816b8e073b38",
+      "bytes": 1763
+    }
+  },
+  "old_quality": {
+    "solution/outputs/quality/audit.json": {
+      "bytes": 59991,
+      "mtime": 1790208644.3230317,
+      "sha256": "cf73bb6f7be3d4bfe5644cf81089cc70f7ed348ed71ab61f33725c3f5f59a0b1"
+    },
+    "solution/outputs/quality/domain_summary.csv": {
+      "bytes": 8406,
+      "mtime": 1790208646.6259973,
+      "sha256": "4204e4db49d6b43ba2de082201df9aa35e31cc1e00ea3647d6b402f62ebc2683"
+    },
+    "solution/outputs/quality/extension_shift.csv": {
+      "bytes": 2357,
+      "mtime": 1790208647.3755686,
+      "sha256": "ef9168f5ab9cafdc1f8fb899b3788289933286d9fa7db7cfa3f719b241a2a873"
+    },
+    "solution/outputs/quality/feature_summary.csv": {
+      "bytes": 17523,
+      "mtime": 1790208647.144757,
+      "sha256": "b376efdf4f39bbb2ac57ec7db4de18789197188bd3e61f91dc22905ab35503d8"
+    },
+    "solution/outputs/quality/normalization.json": {
+      "bytes": 3361,
+      "mtime": 1790208645.6903193,
+      "sha256": "22c827201ffebdd5a340f65606a8830f39913c1ebb66e511d00b9e03fc488ae8"
+    },
+    "solution/outputs/quality/semantic_sources/manifest.json": {
+      "bytes": 2826,
+      "mtime": 1790207749.4983215,
+      "sha256": "40a5837efc7cd0b37b10f749ac492f3ec68fb4511ea06e0576f18186589d05b0"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_feature_order.json": {
+      "bytes": 639,
+      "mtime": 1790207743.563595,
+      "sha256": "c20cb75705d05eb4936e41bd713723813bb39f769c2e1a2c8f8170ad4757980a"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_prompt_cleanliness.txt": {
+      "bytes": 2974,
+      "mtime": 1790207745.9957323,
+      "sha256": "fc50bcc888d7749393ce411b7f4b5b7b9257daf827bd4f510bfa1fb59b23a59d"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_prompt_professionalism.txt": {
+      "bytes": 3230,
+      "mtime": 1790207747.1987343,
+      "sha256": "0fcf91d3e4ad2a976df8aa7d6ef06f4e66ff5868a9b8e738f5e172d8cebff00b"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_prompt_readability.txt": {
+      "bytes": 2352,
+      "mtime": 1790207748.286949,
+      "sha256": "8001f4d206865b8ed51c4512a9589e21ae18bc5da42c981583c3b5d459aee240"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_prompt_reason.txt": {
+      "bytes": 3006,
+      "mtime": 1790207749.4962032,
+      "sha256": "f6d9febede62b7e222f785686dcc7fb5032d427a27335b96957f4b5bbda29fbe"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_step2_select_data.py": {
+      "bytes": 12465,
+      "mtime": 1790207742.4217584,
+      "sha256": "9165af732a55104acc81360c1920e886920d5aa9ea87031b9c32c5034ccbef52"
+    },
+    "solution/outputs/quality/semantic_sources/meta_rater_test_singletask.py": {
+      "bytes": 3981,
+      "mtime": 1790207744.7896745,
+      "sha256": "667c992cfb195e53dc158c9ecdb746898cde5c270c37daf2aa09cfc744b0570b"
+    },
+    "solution/outputs/quality/semantic_sources/slimpajama_meta_rater_README.md": {
+      "bytes": 11281,
+      "mtime": 1790207741.2770097,
+      "sha256": "9999c25261f7575309f3a6e4d1898c300d11ddea6c6e9f6a96f73420a68cd8ef"
+    }
+  },
+  "reports": {
+    "solution/reports/figure_contracts.md": {
+      "bytes": 1305,
+      "mtime": 1790208027.1974823,
+      "sha256": "8d3c49a9fee856e1179d8b4ee88dccc09a2acce4dda02abcf5b54e01db43e88f"
+    },
+    "solution/reports/mixture_baseline.md": {
+      "bytes": 1844,
+      "mtime": 1790207825.9630225,
+      "sha256": "bdb5b46ca432fd71fac4b5b3ad786c3208f10eea17eccf43d6e372ac403851f4"
+    },
+    "solution/reports/scaling_baseline.md": {
+      "bytes": 8092,
+      "mtime": 1790208148.6280222,
+      "sha256": "b9d59cd8d44c63aef77e4508af8bb024d68b284259944bbedf465a15f23782a6"
+    },
+    "solution/reports/论文结构与交付约定.md": {
+      "bytes": 2519,
+      "mtime": 1790207947.60317,
+      "sha256": "e04a782f23ca3d4f5bf5d71187a901895846001d518de45340f91755d036db4e"
+    }
+  },
+  "evidence": {
+    "diagnostics/TASK-Q01A/20260924T142229+08/run_summary.json": {
+      "bytes": 12878,
+      "mtime": 1790231516.46491,
+      "sha256": "05c3d50866420cf5d35c4182bc537b254a1a977cebf49d92fd4689da38e87cf3"
+    },
+    "diagnostics/TASK-Q01A/20260924T142229+08/checks.json": {
+      "bytes": 43129,
+      "mtime": 1790231516.4450088,
+      "sha256": "7db7d1d6bcb81fcfea282d0608db2f3a796b4df7d6287b46dd1b423f7bf158b0"
+    },
+    "diagnostics/TASK-Q01A/20260924T142229+08/output_manifest.json": {
+      "bytes": 7555,
+      "mtime": 1790231659.7717352,
+      "sha256": "b58398fc5d68191ea4a8a6a45e5ddc867463a3d38aee8d60f8b7c69fd9073954"
+    },
+    "diagnostics/TASK-Q01A/20260924T142229+08/invalid_values.csv.gz": {
+      "bytes": 681,
+      "mtime": 1790231479.3701525,
+      "sha256": "557a1f6ce5cc892f36e3aa43bcfb80105c17a361bb66bd442dfe842c010766ab"
+    },
+    "diagnostics/TASK-Q01A-R1/20260924T150854+08/run_summary.json": {
+      "bytes": 7102,
+      "mtime": 1790234327.2696042,
+      "sha256": "a6deefc4c8967ce59f4955bb80154a01df6989d80e7679a349a61871b77a3398"
+    },
+    "diagnostics/TASK-Q01A-R1/20260924T150854+08/repair_checks.json": {
+      "bytes": 14593,
+      "mtime": 1790234327.2696042,
+      "sha256": "c7367d219cd2b30a81912fe7c90ad635a5c186b8c5c478238eabb900cf7bdc52"
+    },
+    "diagnostics/TASK-Q01A-R1/20260924T150854+08/output_manifest.json": {
+      "bytes": 5504,
+      "mtime": 1790234327.3357959,
+      "sha256": "b8ccd70cdffc1b720c42b9e582269b02718f260c87eb518f7c9d47ea260968f5"
+    },
+    "diagnostics/TASK-Q01A-R1/20260924T150854+08/raw_field_counts_corrected.csv": {
+      "bytes": 106968,
+      "mtime": 1790233750.3165245,
+      "sha256": "b9743676d1f31fcf56f24c7c54729b4a0d5b0aa5b0c35c0faf6c2ccb3e1bb97a"
+    },
+    "diagnostics/TASK-Q01A-R1/20260924T150854+08/summary_denominators_corrected.csv": {
+      "bytes": 205680,
+      "mtime": 1790233750.6373327,
+      "sha256": "9b4f3a1e493446b7896fce3517f3893cc0de2e636349b8a1de91a541f576335d"
+    }
+  },
+  "version_checks": [
+    {
+      "file_id": "A1",
+      "matches_raw_source_manifest": true,
+      "matches_prior_audit_json": true,
+      "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579"
+    },
+    {
+      "file_id": "A2_arxiv",
+      "matches_raw_source_manifest": true,
+      "matches_prior_audit_json": true,
+      "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a"
+    },
+    {
+      "file_id": "A3_github",
+      "matches_raw_source_manifest": true,
+      "matches_prior_audit_json": true,
+      "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+    }
+  ],
+  "read_policy": "all inputs above are read-only; A1-A3 are the only raw inputs",
+  "content_policy": "no text/content field is read, stored or analysed"
+}

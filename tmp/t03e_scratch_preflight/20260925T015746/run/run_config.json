@@ -1,0 +1,159 @@
+{
+  "task": "TASK-T03E",
+  "scope": "preregistered rule-sensitivity stability and applicability validation",
+  "primary_result": "D = Q_baseline",
+  "confirmatory_candidate": "C = Q_baseline * (1 - 0.02 * P)",
+  "cluster_penalty": "P = (p_top2gram + p_top3gram) / 2",
+  "lambda_primary": 0.02,
+  "lambda_grid_report_only": [
+    0.0,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "design_domains_exact": [
+    "book",
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "active_min_calibration_valid_n": 1000,
+  "holdout_min_valid_n": 200,
+  "extension_min_valid_n": 200,
+  "roles": {
+    "confirmatory": [
+      "A1_calibration",
+      "A1_holdout"
+    ],
+    "extension": [
+      "extension_overlap_A1",
+      "extension_new_records"
+    ]
+  },
+  "master_seed": 20260925,
+  "bootstrap_replicates": 200,
+  "bootstrap_min_joint_pass": 190,
+  "bootstrap_gates": {
+    "penalty_mae_max": 0.1,
+    "rank_spearman_min": 0.98,
+    "top10_jaccard_min": 0.85
+  },
+  "holdout_gates": {
+    "spearman_min": 0.98,
+    "top10_jaccard_min": 0.85,
+    "penalty_mean_abs_tol": 0.05,
+    "out_of_support_max": 0.05
+  },
+  "extension_gates": {
+    "spearman_min": 0.98,
+    "top10_jaccard_min": 0.85,
+    "out_of_support_max": 0.05
+  },
+  "overlap_tolerance": 1e-12,
+  "row_selection_rule": "evaluation_role in roles & is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",
+  "joint_key": "key_sha256 = sha256(json([str(id), str(sub_path)])) from Q01C",
+  "input_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c\\20260924T215718+08\\quality_features_scores.parquet",
+  "q01a_spec": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08\\diagnostic_spec.json",
+  "output_root": "diagnostics/TASK-T03E/<run_id>/",
+  "time_budgets_seconds": {
+    "calibration-preflight": 900,
+    "calibration-freeze": 5400,
+    "frozen-validation": 2700,
+    "finalize": 600
+  },
+  "acceptance_payload": {
+    "candidate_version": "t03e_candidate_v1",
+    "primary_result": "D = Q_baseline",
+    "confirmatory_candidate": "C = Q_baseline * (1 - 0.02 * P), P = (p_top2gram + p_top3gram)/2",
+    "lambda_primary": 0.02,
+    "lambda_grid_report_only": [
+      0.0,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "design_domains_exact": [
+      "book",
+      "c4",
+      "commoncrawl",
+      "wikipedia"
+    ],
+    "domain_exact_matching": "character-exact string equality only; no fuzzy/alias/merge/fallback",
+    "active_domain_rules": {
+      "min_calibration_valid_n": 1000,
+      "quantile_requirement": "q0.99 > q0.95 for both indicators",
+      "statuses": [
+        "ACTIVE",
+        "DESIGN_LABEL_ABSENT",
+        "INSUFFICIENT_CALIBRATION",
+        "CALIBRATION_DEGENERATE"
+      ]
+    },
+    "bootstrap": {
+      "replicates": 200,
+      "master_seed": 20260925,
+      "sub_seed_rule": "int(sha256(\"20260925|<domain>|<replicate>\")[:16],16) -> PCG64",
+      "unit": "unique A1-calibration valid keys per domain, sampled with replacement",
+      "reference_rows": "same full-calibration valid rows for every replicate",
+      "requirements": {
+        "joInt_pass_min": 190,
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    "holdout_gates": {
+      "min_valid_n": 200,
+      "spearman_min": 0.98,
+      "top10_jaccard_min": 0.85,
+      "penalty_mean_abs_tol": 0.05,
+      "out_of_support_max": 0.05,
+      "status_priority": [
+        "FAIL",
+        "REJECT_KEEP_D",
+        "INSUFFICIENT_EVIDENCE_KEEP_D",
+        "ACCEPT_STABILITY"
+      ]
+    },
+    "extension_gates": {
+      "min_valid_n": 200,
+      "spearman_min": 0.98,
+      "top10_jaccard_min": 0.85,
+      "out_of_support_max": 0.05,
+      "statuses": [
+        "MIGRATION_FAILED_KEEP_D",
+        "INSUFFICIENT_EXTENSION_EVIDENCE",
+        "NOT_TESTED_FOR_ACTIVE_CORRECTION"
+      ]
+    },
+    "overlap_rule": "same key + same domain + identical Q_baseline/top2/top3 + same candidate version => abs(Q_C_left - Q_C_right) <= 1e-12",
+    "prohibited": [
+      "A/B candidates",
+      "PCA/entropy/CRITIC",
+      "lambda learning",
+      "bonus",
+      "clip",
+      "domain renaming/merging/fallback",
+      "using Q_baseline as a supervision target",
+      "fitting a new RegMix bridge model"
+    ]
+  },
+  "prohibitions": [
+    "A/B candidates",
+    "PCA/entropy/CRITIC",
+    "lambda learning",
+    "bonus",
+    "clip",
+    "domain renaming/merging/fallback",
+    "using Q_baseline as a supervision target",
+    "fitting a new RegMix bridge model"
+  ],
+  "no_scope_expansion": [
+    "no T06 calibration",
+    "no ratio/scaling/C-module work",
+    "no optimisation",
+    "no paper text"
+  ],
+  "generated_local": "2026-09-25T01:57:47+08:00",
+  "pid": 2024
+}

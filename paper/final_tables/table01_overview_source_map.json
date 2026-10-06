@@ -1,0 +1,18 @@
+{
+  "asset": "table01_overview",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "paper/FINAL_SCIENTIFIC_FREEZE.md",
+      "fields": "Q1-Q4 status and qualification",
+      "unit": "none",
+      "denominator": "not applicable"
+    },
+    {
+      "file": "paper/FINAL_RESULT_INDEX_V2.md",
+      "fields": "final main interfaces",
+      "unit": "none",
+      "denominator": "not applicable"
+    }
+  ]
+}

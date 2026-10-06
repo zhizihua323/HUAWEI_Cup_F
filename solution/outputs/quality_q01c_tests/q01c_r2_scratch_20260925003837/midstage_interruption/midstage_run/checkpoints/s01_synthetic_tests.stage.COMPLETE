@@ -1,0 +1,11 @@
+{
+  "kind": "stage",
+  "stage": "s01_synthetic_tests",
+  "protocol_version": 3,
+  "completed_local": "2026-09-25T00:38:39+08:00",
+  "checkpoint_identity": null,
+  "outputs": {
+    "synthetic_tests.json": "4fa6045eea157c1253157360c09cc5567b1f7d3bf21a5691366f8109e22d1130"
+  },
+  "responsibility": "stage state + stage-local immutable outputs only"
+}

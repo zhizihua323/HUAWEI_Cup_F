@@ -1,0 +1,18 @@
+{
+  "asset": "fig06_q4_scenarios",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/forecast_12m_24m_taskwise.csv",
+      "fields": "benchmark_task; target_role; scenario_id; scenario_order; horizon_months; forecast_origin; forecast_date; selected_contribution_model; scenario_model; forecast_eligibility; prediction_points; loss_bridge_used",
+      "unit": "Benchmark points; date",
+      "denominator": "6 primary tasks x 3 scenarios x 2 horizons"
+    },
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/forecast_auxiliary_composite.csv",
+      "fields": "benchmark_task; target_role; scenario_id; scenario_order; horizon_months; forecast_origin; forecast_date; selected_contribution_model; scenario_model; forecast_eligibility; prediction_points; loss_bridge_used",
+      "unit": "Benchmark points; date",
+      "denominator": "1 auxiliary composite x 3 scenarios x 2 horizons"
+    }
+  ]
+}

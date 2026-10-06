@@ -1,0 +1,46 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "rehearsal2_p1",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "s10_scan_a1 checkpoint not reusable: legacy: missing file(s)",
+  "exit_code": 2,
+  "stage_seconds": {
+    "s11_scan_a2": 0.113,
+    "s12_scan_a3": 0.046
+  },
+  "executed_stages": [
+    "s11_scan_a2",
+    "s12_scan_a3"
+  ],
+  "skipped_stages": {},
+  "reused_stages": {
+    "s00_preflight": "valid",
+    "s01_synthetic_tests": "valid",
+    "s10_scan_a1": "valid"
+  },
+  "stage_terminal_events": {
+    "s11_scan_a2": [
+      "complete"
+    ],
+    "s12_scan_a3": [
+      "complete"
+    ]
+  },
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "solution/src/quality_q01c.py",
+    "--run-id",
+    "rehearsal2_p1",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture",
+    "--resume"
+  ],
+  "process_pid": 12188,
+  "finished_local": "2026-09-24T22:48:42+08:00"
+}

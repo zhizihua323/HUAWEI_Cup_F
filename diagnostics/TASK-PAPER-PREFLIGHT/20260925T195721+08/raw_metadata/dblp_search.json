@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Training Compute-Optimal Large Language Models",
+    "result": null
+  },
+  {
+    "query": "Scaling Laws for Neural Language Models",
+    "result": null
+  },
+  {
+    "query": "RegMix Data Mixture as Regression for Language Model Pre-training",
+    "result": null
+  },
+  {
+    "query": "Pythia A Suite for Analyzing Large Language Models Across Training and Scaling",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Are Emergent Abilities of Large Language Models a Mirage",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "Instruction-Following Evaluation for Large Language Models",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "Measuring Mathematical Problem Solving With the MATH Dataset",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "GPQA A Graduate-Level Google-Proof Q&A Benchmark",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "MuSR Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "MMLU-Pro A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "error": "An error occurred while sending the request."
+  },
+  {
+    "query": "Open-LLM-Leaderboard From Multi-choice to Open-style Questions for LLMs Evaluation Benchmark and Arena",
+    "error": "An error occurred while sending the request."
+  }
+]

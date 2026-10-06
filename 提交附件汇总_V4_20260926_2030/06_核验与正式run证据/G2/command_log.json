@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "python diagnostics/TASK-G2/20260925T195336+08/code/run_g2.py",
+    "python diagnostics/TASK-G2/20260925T195336+08/code/verify_g2.py",
+    "python diagnostics/TASK-G2/20260925T195336+08/code/finalize_g2.py"
+  ],
+  "note": "No fitting, model selection, optimization, or network access is performed."
+}

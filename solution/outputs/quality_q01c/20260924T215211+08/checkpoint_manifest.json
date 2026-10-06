@@ -1,0 +1,132 @@
+{
+  "run_id": "20260924T215211+08",
+  "generated_local": "2026-09-24T21:53:23+08:00",
+  "checkpoints": [
+    {
+      "path": "checkpoints/s00_preflight.COMPLETE",
+      "bytes": 513,
+      "sha256": "52fc03af995d307a84b66fca7760f2a27f8ae43ad8cbd41c7bb5a0a81bf79bd8"
+    },
+    {
+      "path": "checkpoints/s01_synthetic_tests.COMPLETE",
+      "bytes": 207,
+      "sha256": "a573a5e74035c85d74cd3450f80d5373046482c2bca7a881a391daab6bdffb90"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.COMPLETE",
+      "bytes": 196,
+      "sha256": "de9f2a7368d304fb66bba1c86fef66c2b84ba7f16660ac2e6af0e552b63e976e"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.json",
+      "bytes": 2660,
+      "sha256": "073ccd54ced4b40c8380d8fdf0af930705b7dea8b897c8fec35429b498893359"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.parquet",
+      "bytes": 9865962,
+      "sha256": "935ee275158490d7e224c8e7b8ade7ef6f42dc5f6ff5c9424c6ce98239d82626"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.COMPLETE",
+      "bytes": 196,
+      "sha256": "7fd6401993ec8a92aa652ae0cbfe51972eeb60c6326c0a0f038845c86aca4d6b"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.json",
+      "bytes": 2589,
+      "sha256": "7b00c25ea85dd37d698587ad7333ab41c03b5db22d0c8ddeb5677be43a1a6638"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.parquet",
+      "bytes": 3794179,
+      "sha256": "b6f339a0e26d62bb80dd1d612f91b05d0fc8385082408b2e542da1c2adbcd2a0"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.COMPLETE",
+      "bytes": 197,
+      "sha256": "d53ab8e149bbc812324d7b210fa76a98aab51f466785a106aeae7f259172a474"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.json",
+      "bytes": 2647,
+      "sha256": "e9c95c850b0d90ff2baa7d079a6cd7649008bce71307c3b4a6cf942864050259"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.parquet",
+      "bytes": 34219402,
+      "sha256": "764b5ed69f4353e3a44c4f7f1eaf55f56371e0918bb7803284b3cb186d5a1e5f"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.COMPLETE",
+      "bytes": 311,
+      "sha256": "2a838811298a553c414089ca2417bf225f94d80e74c24a9cae24ec54ab1b1323"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.json",
+      "bytes": 2678,
+      "sha256": "a0f9edbb93eb861a71e7684d00ead7e254de71d174b8f95de7b1316fa5e3f3c9"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.parquet",
+      "bytes": 67949064,
+      "sha256": "1f19b90623b744a755f6ba2c5cebe43e016ba41d42d4586dfbb4cdd1629fed77"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.COMPLETE",
+      "bytes": 329,
+      "sha256": "5146d5071c070b3666926e5310948647555a3ee3232e1650dc6f4a82d3cbde86"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.json",
+      "bytes": 2788,
+      "sha256": "67feed798ce5824399298987735b631545a1d3849a1ada7e0e1ea12e803411f8"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.parquet",
+      "bytes": 75668880,
+      "sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a"
+    },
+    {
+      "path": "checkpoints/s40_summarize.COMPLETE",
+      "bytes": 1311,
+      "sha256": "9e0597eae4e6ca8b89e275ffd423f8a72599e2bebc99050a336495c3d92ca442"
+    },
+    {
+      "path": "checkpoints/s40_summarize.json",
+      "bytes": 521,
+      "sha256": "a5476352aa99572f2d5265eeb9e9ce2021c926100ec8a67f807d88a79443346b"
+    },
+    {
+      "path": "checkpoints/s40_summarize.parquet",
+      "bytes": 9322020,
+      "sha256": "af5fad3e843e0f27ec4e0dd42ffca7edbccb6af6d45feed474cbc0a95c0cdf70"
+    },
+    {
+      "path": "checkpoints/s50_verify.COMPLETE",
+      "bytes": 378,
+      "sha256": "27f2c11a6df5697f589334e0dfa5ab2c5d47d82139f624d01a3fc9de14f5ed8b"
+    }
+  ],
+  "resume_policy": "a COMPLETE checkpoint is reused only when input/config/code hashes match",
+  "resume_probes": [
+    {
+      "stage": "s10_scan_a1",
+      "checkpoint_rows": 51230,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    },
+    {
+      "stage": "s11_scan_a2",
+      "checkpoint_rows": 17523,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    },
+    {
+      "stage": "s12_scan_a3",
+      "checkpoint_rows": 203752,
+      "decompress_passes_during_probe": 0,
+      "reused": true
+    }
+  ]
+}

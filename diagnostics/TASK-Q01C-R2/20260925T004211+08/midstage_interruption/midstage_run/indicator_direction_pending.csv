@@ -1,0 +1,15 @@
+﻿feature,included_in_main_Q,candidate_treatment_not_yet_validated,reason,calibration_within_domain_rho_min,calibration_within_domain_rho_max,domain_mean_rho,pooled_rho,interpretation_limit
+rps_doc_frac_no_alph_words,False,domain_conditional_negative,noise in natural text; code/formula differ,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_doc_mean_word_length,False,moderate_or_domain_conditional,too short/long may be abnormal,-0.0753633632980844,0.032445448921704444,,-0.003955797638457756,correlation with the constructed Q is diagnostic only
+rps_doc_frac_unique_words,False,moderate_or_domain_conditional,low may repeat; extreme may fragment,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_doc_unigram_entropy,False,moderate_or_task_conditional,high entropy may be diversity or noise,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_doc_word_count,False,saturating_or_length_control,"length is a control variable, not quality",-0.058003409949193625,0.0232920521746246,,-0.030051893385795947,correlation with the constructed Q is diagnostic only
+rps_lines_ending_with_terminal_punctution_mark,False,domain_conditional_positive,not for code/formulas,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_lines_numerical_chars_fraction,False,task_conditional,density differs by domain,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_lines_uppercase_letter_fraction,False,moderate_or_domain_conditional,extreme values may be noise,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_doc_num_sentences,False,saturating_or_length_control,depends on splitting and length,-0.12619877769974155,-0.05943718094520768,,-0.10059161706218245,correlation with the constructed Q is diagnostic only
+rps_doc_frac_chars_top_2gram,False,domain_conditional_negative,repetition may be legitimate in code,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+rps_doc_frac_chars_top_3gram,False,domain_conditional_negative,needs domain/length control,-0.053147354552158584,-0.037838098113238586,,-0.024535629944345272,correlation with the constructed Q is diagnostic only
+dsir_books,False,target_domain_relevance,"target relevance, not universal quality",0.054495705345365866,0.1569521170978577,,0.0913696655999068,correlation with the constructed Q is diagnostic only
+dsir_wiki,False,target_domain_relevance,"target relevance, not universal quality",0.054495705345365866,0.1569521170978577,,0.0913696655999068,correlation with the constructed Q is diagnostic only
+dsir_math,False,target_domain_relevance,"target relevance, not universal quality",0.054495705345365866,0.1569521170978577,,0.0913696655999068,correlation with the constructed Q is diagnostic only

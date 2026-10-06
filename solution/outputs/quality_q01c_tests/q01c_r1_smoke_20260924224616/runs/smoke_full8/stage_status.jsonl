@@ -1,0 +1,34 @@
+{"argv":["solution/src/quality_q01c.py","--run-id","smoke_full8","--out-root","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\runs","--fixture-dir","C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r1_smoke_20260924224616\\fixture"],"event":"invocation","mode":"fixture","pid":42692,"resume":false,"run_id":"smoke_full8","stage":"s00_preflight","stage_selection":"all","ts":"2026-09-24T22:47:36.362+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s00_preflight","ts":"2026-09-24T22:47:36.362+08:00"}
+{"event":"start","mode":"fixture","pid":42692,"run_id":"smoke_full8","stage":"s00_preflight","ts":"2026-09-24T22:47:36.362+08:00"}
+{"elapsed_s":0.15,"event":"complete","mode":"fixture","pid":42692,"rss_mb":97.0,"run_id":"smoke_full8","stage":"s00_preflight","ts":"2026-09-24T22:47:36.526+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s01_synthetic_tests","ts":"2026-09-24T22:47:36.531+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s01_synthetic_tests","ts":"2026-09-24T22:47:36.531+08:00"}
+{"elapsed_s":0.213,"event":"complete","failed":0,"n_tests":9,"pid":42692,"run_id":"smoke_full8","stage":"s01_synthetic_tests","ts":"2026-09-24T22:47:36.744+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s10_scan_a1","ts":"2026-09-24T22:47:36.744+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:47:36+08:00","event":"checkpoint_decision","file_id":"A1","layout":null,"payload_sha256":null,"pid":42692,"process_pid":42692,"reason":"legacy: missing file(s)","rows":null,"run_id":"smoke_full8","stage":"s10_scan_a1","ts":"2026-09-24T22:47:36.745+08:00"}
+{"decompress_passes":1,"event":"start","file":"A1","pid":42692,"run_id":"smoke_full8","stage":"s10_scan_a1","ts":"2026-09-24T22:47:36.746+08:00"}
+{"decompress_passes":1,"elapsed_s":0.19,"event":"complete","line_count":600,"payload_sha256":"df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9","pid":42692,"rows":600,"rss_mb":106.7,"run_id":"smoke_full8","stage":"s10_scan_a1","ts":"2026-09-24T22:47:36.937+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s11_scan_a2","ts":"2026-09-24T22:47:36.939+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:47:36+08:00","event":"checkpoint_decision","file_id":"A2_arxiv","layout":null,"payload_sha256":null,"pid":42692,"process_pid":42692,"reason":"legacy: missing file(s)","rows":null,"run_id":"smoke_full8","stage":"s11_scan_a2","ts":"2026-09-24T22:47:36.939+08:00"}
+{"decompress_passes":1,"event":"start","file":"A2_arxiv","pid":42692,"run_id":"smoke_full8","stage":"s11_scan_a2","ts":"2026-09-24T22:47:36.941+08:00"}
+{"decompress_passes":1,"elapsed_s":0.053,"event":"complete","line_count":30,"payload_sha256":"1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47","pid":42692,"rows":30,"rss_mb":111.6,"run_id":"smoke_full8","stage":"s11_scan_a2","ts":"2026-09-24T22:47:36.994+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s12_scan_a3","ts":"2026-09-24T22:47:36.997+08:00"}
+{"action":"rescan","checks":["input_sha256","config_sha256","code_fingerprint","payload_sha256","marker_binding","stage_marker"],"decided_local":"2026-09-24T22:47:36+08:00","event":"checkpoint_decision","file_id":"A3_github","layout":null,"payload_sha256":null,"pid":42692,"process_pid":42692,"reason":"legacy: missing file(s)","rows":null,"run_id":"smoke_full8","stage":"s12_scan_a3","ts":"2026-09-24T22:47:36.997+08:00"}
+{"decompress_passes":1,"event":"start","file":"A3_github","pid":42692,"run_id":"smoke_full8","stage":"s12_scan_a3","ts":"2026-09-24T22:47:37.000+08:00"}
+{"decompress_passes":1,"elapsed_s":0.037,"event":"complete","line_count":30,"payload_sha256":"e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b","pid":42692,"rows":30,"rss_mb":111.9,"run_id":"smoke_full8","stage":"s12_scan_a3","ts":"2026-09-24T22:47:37.037+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s20_score_primary","ts":"2026-09-24T22:47:37.040+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s20_score_primary","ts":"2026-09-24T22:47:37.040+08:00"}
+{"elapsed_s":0.089,"event":"complete","pid":42692,"q_valid_false":2,"q_valid_true":658,"rows":660,"rss_mb":115.8,"run_id":"smoke_full8","stage":"s20_score_primary","ts":"2026-09-24T22:47:37.222+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s30_sensitivity","ts":"2026-09-24T22:47:37.224+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s30_sensitivity","ts":"2026-09-24T22:47:37.224+08:00"}
+{"elapsed_s":0.073,"event":"complete","imputed_records":2,"pid":42692,"run_id":"smoke_full8","stage":"s30_sensitivity","ts":"2026-09-24T22:47:37.297+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s40_summarize","ts":"2026-09-24T22:47:37.297+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s40_summarize","ts":"2026-09-24T22:47:37.297+08:00"}
+{"domain_rows":20,"elapsed_s":-0.0,"event":"complete","pid":42692,"run_id":"smoke_full8","sensitivity_rows":20,"stage":"s40_summarize","ts":"2026-09-24T22:47:38.199+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s50_verify","ts":"2026-09-24T22:47:38.200+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s50_verify","ts":"2026-09-24T22:47:38.200+08:00"}
+{"elapsed_s":0.807,"event":"complete","n_fail":0,"n_not_checked":0,"n_pass":14,"pid":42692,"run_id":"smoke_full8","stage":"s50_verify","ts":"2026-09-24T22:47:39.007+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s60_finalize","ts":"2026-09-24T22:47:39.007+08:00"}
+{"event":"start","pid":42692,"run_id":"smoke_full8","stage":"s60_finalize","ts":"2026-09-24T22:47:39.007+08:00"}
+{"elapsed_s":0.06,"event":"complete","pid":42692,"run_id":"smoke_full8","stage":"s60_finalize","status":"COMPLETE_PENDING_REVIEW","ts":"2026-09-24T22:47:39.067+08:00"}

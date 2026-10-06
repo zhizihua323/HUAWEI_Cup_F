@@ -1,0 +1,57 @@
+{
+  "run_id": "midstage_run",
+  "generated_local": "2026-09-25T00:38:39+08:00",
+  "gates": {
+    "n_valid_min": 100,
+    "coverage_min": 0.95,
+    "n_unique_finite_min": 2
+  },
+  "source_scope": "A1_calibration & is_unique_first",
+  "a3_github_rule": "github parameter must come from A1_calibration/github; no fallback",
+  "parameters": [
+    {
+      "domain": "commoncrawl",
+      "feature": "modernbert_professionalism",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "commoncrawl",
+      "candidate_rows": 164,
+      "n_valid": 163,
+      "coverage": 0.9939024390243902,
+      "n_unique_finite": 6,
+      "median": 0.6,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=commoncrawl); no holdout/extension/global fallback permitted"
+    },
+    {
+      "domain": "github",
+      "feature": "modernbert_professionalism",
+      "source_scope": "A1_calibration & is_unique_first",
+      "source_domain": "github",
+      "candidate_rows": 160,
+      "n_valid": 160,
+      "coverage": 1.0,
+      "n_unique_finite": 6,
+      "median": 0.6,
+      "gate_ok": true,
+      "gate_failures": [],
+      "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=github); no holdout/extension/global fallback permitted"
+    }
+  ],
+  "all_gates_passed": true,
+  "applied_imputation_counts": {
+    "modernbert_professionalism": {
+      "imputed_records": 2,
+      "by_domain": {
+        "commoncrawl": 1,
+        "github": 1
+      },
+      "by_role": {
+        "A1_calibration": 1,
+        "extension_new_records": 1
+      }
+    }
+  },
+  "imputed_records_total": 2,
+  "imputed_records_with_any_fill": 2
+}

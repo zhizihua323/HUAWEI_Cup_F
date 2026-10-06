@@ -1,0 +1,8 @@
+benchmark_task,n_main_eligible,n_complete_six_task_models,n_partial_models,n_score_observed,n_compute_observed,n_N_observed,n_D_observed,n_model_families,unit,missing_rule
+IFEval,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+BBH,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+MATH Lvl 5,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+GPQA,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+MUSR,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+MMLU-PRO,25,25,0,25,23,25,18,10,score percentage points after C8 x100; scores read only after seal,no imputation; task-specific observed denominator
+six_task_mean_complete_only,25,25,0,25,23,25,18,10,score percentage points after C8 x100; auxiliary only,complete-six-task only; no imputation

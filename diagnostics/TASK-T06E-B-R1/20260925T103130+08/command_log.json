@@ -1,0 +1,38 @@
+[
+  {
+    "seq": 1,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/00_audit_r1.py",
+    "status": "PASS",
+    "purpose": "freeze R1 inputs and protect original run"
+  },
+  {
+    "seq": 2,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/01_run_r1.py",
+    "status": "PASS",
+    "purpose": "recompute 22 corrected profiles and MQ-add-only G4"
+  },
+  {
+    "seq": 3,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/03_make_final_artifacts.py",
+    "status": "PASS",
+    "purpose": "write reconciliation/handoff/checks/log"
+  },
+  {
+    "seq": 4,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/02_verifier_r1.py",
+    "status": "PASS",
+    "purpose": "independent verifier"
+  },
+  {
+    "seq": 5,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/04_finalize_r1.py",
+    "status": "PASS",
+    "purpose": "freeze source snapshot and write output manifest last"
+  },
+  {
+    "seq": 6,
+    "command": "python diagnostics/TASK-T06E-B-R1/20260925T103130+08/code/05_post_manifest_check.py",
+    "status": "PASS_READ_ONLY",
+    "purpose": "read-only manifest verification"
+  }
+]

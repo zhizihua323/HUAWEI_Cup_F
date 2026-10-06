@@ -1,0 +1,18 @@
+{
+  "asset": "table09_q4_scenarios",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/forecast_12m_24m_taskwise.csv",
+      "fields": "benchmark_task; horizons; scenario_id; prediction_points; eligibility",
+      "unit": "Benchmark points",
+      "denominator": "6 primary tasks x 3 scenarios x 2 horizons"
+    },
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/forecast_auxiliary_composite.csv",
+      "fields": "auxiliary composite scenarios",
+      "unit": "Benchmark points",
+      "denominator": "1 auxiliary composite x 3 scenarios x 2 horizons"
+    }
+  ]
+}

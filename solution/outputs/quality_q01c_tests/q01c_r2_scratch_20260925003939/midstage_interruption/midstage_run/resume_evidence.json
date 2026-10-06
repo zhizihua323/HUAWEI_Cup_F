@@ -1,0 +1,126 @@
+{
+  "run_id": "midstage_run",
+  "mode": "fixture",
+  "protocol_version": 3,
+  "generated_local": "2026-09-25T00:39:44+08:00",
+  "decisions": [
+    {
+      "stage": "s00_preflight",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s10_scan_a1",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s11_scan_a2",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s12_scan_a3",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s20_score_primary",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s30_sensitivity",
+      "action": "stage_reuse_validation",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s40_summarize",
+      "action": "stage_reuse_validation",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:43+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s50_verify",
+      "action": "stage_reuse_validation",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:44+08:00",
+      "process_pid": 34044
+    },
+    {
+      "stage": "s60_finalize",
+      "action": "stage_reuse_validation",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "failed_checks": [],
+      "decided_local": "2026-09-25T00:39:44+08:00",
+      "process_pid": 34044
+    }
+  ],
+  "scan_counters": {
+    "protocol_version": 3,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 9972,
+        "last_scan_started": "2026-09-25T00:39:41+08:00",
+        "last_scan_finished": "2026-09-25T00:39:41+08:00"
+      },
+      "A2_arxiv": {
+        "passes": 1,
+        "last_scan_pid": 9972,
+        "last_scan_started": "2026-09-25T00:39:41+08:00",
+        "last_scan_finished": "2026-09-25T00:39:41+08:00"
+      },
+      "A3_github": {
+        "passes": 1,
+        "last_scan_pid": 9972,
+        "last_scan_started": "2026-09-25T00:39:41+08:00",
+        "last_scan_finished": "2026-09-25T00:39:41+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 3
+  },
+  "scan_counters_path": "scan_counters.json",
+  "finalized_output_manifest_present": false,
+  "note": "checkpoint reuse decisions are recorded per stage/file with the validation items used; reused checkpoints never re-run their payload computation"
+}

@@ -1,0 +1,421 @@
+﻿split_family,split_id,model_id,run_group_id,role,reason
+internal_grouped,main_comparable,EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,fold_0,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-12b,EleutherAI/pythia-12b,fold_1,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-160m,EleutherAI/pythia-160m,fold_0,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-1b,EleutherAI/pythia-1b,fold_1,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,fold_0,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-410m,EleutherAI/pythia-410m,fold_1,model-ID grouped fold among 7 unique models
+internal_grouped,main_comparable,EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,fold_0,model-ID grouped fold among 7 unique models
+internal_grouped,conditional_full,01-ai/Yi-1.5-34B,01-ai/Yi-1.5-34B,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-1.5-34B-32K,01-ai/Yi-1.5-34B-32K,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-1.5-34B-Chat,01-ai/Yi-1.5-34B-Chat,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-1.5-34B-Chat-16K,01-ai/Yi-1.5-34B-Chat-16K,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-34B,01-ai/Yi-34B,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-34B-200K,01-ai/Yi-34B-200K,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-34B-Chat,01-ai/Yi-34B-Chat,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-6B,01-ai/Yi-6B,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-6B-200K,01-ai/Yi-6B-200K,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,01-ai/Yi-6B-Chat,01-ai/Yi-6B-Chat,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-12b,EleutherAI/pythia-12b,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-160m,EleutherAI/pythia-160m,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-1b,EleutherAI/pythia-1b,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-410m,EleutherAI/pythia-410m,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2-0.5B-Instruct,Qwen/Qwen2-0.5B-Instruct,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2-1.5B-Instruct,Qwen/Qwen2-1.5B-Instruct,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2-7B,Qwen/Qwen2-7B,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2-7B-Instruct,Qwen/Qwen2-7B-Instruct,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2.5-1.5B-Instruct,Qwen/Qwen2.5-1.5B-Instruct,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2.5-14B-Instruct,Qwen/Qwen2.5-14B-Instruct,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2.5-32B-Instruct,Qwen/Qwen2.5-32B-Instruct,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2.5-72B,Qwen/Qwen2.5-72B,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,Qwen/Qwen2.5-7B-Instruct,Qwen/Qwen2.5-7B-Instruct,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,deepseek-ai/deepseek-llm-7b-base,deepseek-ai/deepseek-llm-7b-base,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,facebook/opt-1.3b,facebook/opt-1.3b,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,google/gemma-1.1-2b-it,google/gemma-1.1-2b-it,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,google/gemma-2-27b-it,google/gemma-2-27b-it,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,google/gemma-2-2b,google/gemma-2-2b,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,google/gemma-2-2b-it,google/gemma-2-2b-it,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,google/gemma-2-2b-jpn-it,google/gemma-2-2b-jpn-it,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,meta-llama/Llama-2-13b-hf,meta-llama/Llama-2-13b-hf,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,meta-llama/Llama-2-70b-hf,meta-llama/Llama-2-70b-hf,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama/Meta-Llama-3-70B-Instruct,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama/Meta-Llama-3-8B-Instruct,fold_4,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,microsoft/Phi-3-medium-4k-instruct,microsoft/Phi-3-medium-4k-instruct,fold_0,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,microsoft/phi-1,microsoft/phi-1,fold_1,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,microsoft/phi-1_5,microsoft/phi-1_5,fold_2,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,mistralai/Mixtral-8x7B-v0.1,mistralai/Mixtral-8x7B-v0.1,fold_3,model-ID grouped fold among 45 unique models
+internal_grouped,conditional_full,tiiuae/falcon-40b,tiiuae/falcon-40b,fold_4,model-ID grouped fold among 45 unique models
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-34B,01-ai_Yi-34B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-34B,01-ai_Yi-34B,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-34B,01-ai_Yi-34B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-6B,01-ai_Yi-6B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-6B,01-ai_Yi-6B,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-6B,01-ai_Yi-6B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-1b,EleutherAI_pythia-1b,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_source,C5 High source anchor
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2-7B,Qwen_Qwen2-7B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,test,submission date on/after frozen cutoff
+scale_oos,holdout_ge20B,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,facebook/opt-1.3b,facebook_opt-1.3b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,facebook/opt-1.3b,facebook_opt-1.3b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,facebook/opt-1.3b,facebook_opt-1.3b,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,google/gemma-2-27b-it,google_gemma-2-27b-it,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,google/gemma-2-27b-it,google_gemma-2-27b-it,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,google/gemma-2-27b-it,google_gemma-2-27b-it,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,google/gemma-2-2b,google_gemma-2-2b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,google/gemma-2-2b,google_gemma-2-2b,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,google/gemma-2-2b,google_gemma-2-2b,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,google/gemma-2-2b-it,google_gemma-2-2b-it,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,google/gemma-2-2b-it,google_gemma-2-2b-it,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,google/gemma-2-2b-it,google_gemma-2-2b-it,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,unassigned,submission date missing or ambiguous by exact Model
+scale_oos,holdout_ge20B,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,unassigned,submission date missing or ambiguous by exact Model
+scale_oos,holdout_ge20B,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,microsoft/phi-1,microsoft_phi-1,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,microsoft/phi-1,microsoft_phi-1,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,microsoft/phi-1,microsoft_phi-1,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,microsoft/phi-1_5,microsoft_phi-1_5,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,microsoft/phi-1_5,microsoft_phi-1_5,train_nonlarge,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,microsoft/phi-1_5,microsoft_phi-1_5,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,unassigned,submission date missing or ambiguous by exact Model
+scale_oos,holdout_ge20B,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,test_source_transfer,"C6 Medium target source, not held out"
+time_oos,time_cutoff_2024-09-01,tiiuae/falcon-40b,tiiuae_falcon-40b,train,submission date before frozen cutoff
+scale_oos,holdout_ge20B,tiiuae/falcon-40b,tiiuae_falcon-40b,test_large,frozen parameter-size stratum
+source_transfer,C5_High_to_C6_Medium,tiiuae/falcon-40b,tiiuae_falcon-40b,test_source_transfer,"C6 Medium target source, not held out"
+leave_family,holdout::DeepSeek,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,insufficient_oos,family n=1 < 4
+leave_family,holdout::Falcon,tiiuae/falcon-40b,tiiuae_falcon-40b,insufficient_oos,family n=1 < 4
+leave_family,holdout::GPT-NeoX,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,insufficient_oos,family n=1 < 4
+leave_family,holdout::Gemma,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,test_family,complete model family held out
+leave_family,holdout::Gemma,google/gemma-2-27b-it,google_gemma-2-27b-it,test_family,complete model family held out
+leave_family,holdout::Gemma,google/gemma-2-2b,google_gemma-2-2b,test_family,complete model family held out
+leave_family,holdout::Gemma,google/gemma-2-2b-it,google_gemma-2-2b-it,test_family,complete model family held out
+leave_family,holdout::Gemma,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,test_family,complete model family held out
+leave_family,holdout::Gemma,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-34B,01-ai_Yi-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-6B,01-ai_Yi-6B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,facebook/opt-1.3b,facebook_opt-1.3b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,microsoft/phi-1,microsoft_phi-1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,microsoft/phi-1_5,microsoft_phi-1_5,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Gemma,tiiuae/falcon-40b,tiiuae_falcon-40b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,test_family,complete model family held out
+leave_family,holdout::Llama,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,test_family,complete model family held out
+leave_family,holdout::Llama,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,test_family,complete model family held out
+leave_family,holdout::Llama,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,test_family,complete model family held out
+leave_family,holdout::Llama,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,test_family,complete model family held out
+leave_family,holdout::Llama,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-34B,01-ai_Yi-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-6B,01-ai_Yi-6B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,facebook/opt-1.3b,facebook_opt-1.3b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,google/gemma-2-27b-it,google_gemma-2-27b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,google/gemma-2-2b,google_gemma-2-2b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,google/gemma-2-2b-it,google_gemma-2-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,microsoft/phi-1,microsoft_phi-1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,microsoft/phi-1_5,microsoft_phi-1_5,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Llama,tiiuae/falcon-40b,tiiuae_falcon-40b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Mistral,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,insufficient_oos,family n=1 < 4
+leave_family,holdout::OPT,facebook/opt-1.3b,facebook_opt-1.3b,insufficient_oos,family n=1 < 4
+leave_family,holdout::Phi,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,insufficient_oos,family n=3 < 4
+leave_family,holdout::Phi,microsoft/phi-1,microsoft_phi-1,insufficient_oos,family n=3 < 4
+leave_family,holdout::Phi,microsoft/phi-1_5,microsoft_phi-1_5,insufficient_oos,family n=3 < 4
+leave_family,holdout::Pythia,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-12b,EleutherAI_pythia-12b,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-160m,EleutherAI_pythia-160m,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-1b,EleutherAI_pythia-1b,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-410m,EleutherAI_pythia-410m,test_family,complete model family held out
+leave_family,holdout::Pythia,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,test_family,complete model family held out
+leave_family,holdout::Pythia,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-34B,01-ai_Yi-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-6B,01-ai_Yi-6B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,facebook/opt-1.3b,facebook_opt-1.3b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,google/gemma-2-27b-it,google_gemma-2-27b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,google/gemma-2-2b,google_gemma-2-2b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,google/gemma-2-2b-it,google_gemma-2-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,microsoft/phi-1,microsoft_phi-1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,microsoft/phi-1_5,microsoft_phi-1_5,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Pythia,tiiuae/falcon-40b,tiiuae_falcon-40b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2-7B,Qwen_Qwen2-7B,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,test_family,complete model family held out
+leave_family,holdout::Qwen,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,test_family,complete model family held out
+leave_family,holdout::Qwen,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-34B,01-ai_Yi-34B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-6B,01-ai_Yi-6B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,facebook/opt-1.3b,facebook_opt-1.3b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,google/gemma-2-27b-it,google_gemma-2-27b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,google/gemma-2-2b,google_gemma-2-2b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,google/gemma-2-2b-it,google_gemma-2-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,microsoft/phi-1,microsoft_phi-1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,microsoft/phi-1_5,microsoft_phi-1_5,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Qwen,tiiuae/falcon-40b,tiiuae_falcon-40b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,01-ai/Yi-1.5-34B,01-ai_Yi-1.5-34B,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-1.5-34B-32K,01-ai_Yi-1.5-34B-32K,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-1.5-34B-Chat,01-ai_Yi-1.5-34B-Chat,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-1.5-34B-Chat-16K,01-ai_Yi-1.5-34B-Chat-16K,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-34B,01-ai_Yi-34B,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-34B-200K,01-ai_Yi-34B-200K,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-34B-Chat,01-ai_Yi-34B-Chat,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-6B,01-ai_Yi-6B,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-6B-200K,01-ai_Yi-6B-200K,test_family,complete model family held out
+leave_family,holdout::Yi,01-ai/Yi-6B-Chat,01-ai_Yi-6B-Chat,test_family,complete model family held out
+leave_family,holdout::Yi,EleutherAI/gpt-neox-20b,EleutherAI_gpt-neox-20b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-1.4b,EleutherAI_pythia-1.4b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-12b,EleutherAI_pythia-12b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-160m,EleutherAI_pythia-160m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-1b,EleutherAI_pythia-1b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-2.8b,EleutherAI_pythia-2.8b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-410m,EleutherAI_pythia-410m,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,EleutherAI/pythia-6.9b,EleutherAI_pythia-6.9b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2-0.5B-Instruct,Qwen_Qwen2-0.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2-1.5B-Instruct,Qwen_Qwen2-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2-57B-A14B,Qwen_Qwen2-57B-A14B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2-7B,Qwen_Qwen2-7B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2-7B-Instruct,Qwen_Qwen2-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2.5-1.5B-Instruct,Qwen_Qwen2.5-1.5B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2.5-14B-Instruct,Qwen_Qwen2.5-14B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2.5-32B-Instruct,Qwen_Qwen2.5-32B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2.5-72B,Qwen_Qwen2.5-72B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,deepseek-ai/deepseek-llm-7b-base,deepseek-ai_deepseek-llm-7b-base,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,facebook/opt-1.3b,facebook_opt-1.3b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,google/gemma-1.1-2b-it,google_gemma-1.1-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,google/gemma-2-27b-it,google_gemma-2-27b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,google/gemma-2-2b,google_gemma-2-2b,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,google/gemma-2-2b-it,google_gemma-2-2b-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,google/gemma-2-2b-jpn-it,google_gemma-2-2b-jpn-it,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,meta-llama/Llama-2-13b-hf,meta-llama_Llama-2-13b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,meta-llama/Llama-2-70b-hf,meta-llama_Llama-2-70b-hf,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,meta-llama/Meta-Llama-3-70B,meta-llama_Meta-Llama-3-70B,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,meta-llama/Meta-Llama-3-70B-Instruct,meta-llama_Meta-Llama-3-70B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,meta-llama/Meta-Llama-3-8B-Instruct,meta-llama_Meta-Llama-3-8B-Instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,microsoft/Phi-3-medium-4k-instruct,microsoft_Phi-3-medium-4k-instruct,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,microsoft/phi-1,microsoft_phi-1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,microsoft/phi-1_5,microsoft_phi-1_5,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,mistralai/Mixtral-8x7B-v0.1,mistralai_Mixtral-8x7B-v0.1,train_other_family,training side of leave-family-out split
+leave_family,holdout::Yi,tiiuae/falcon-40b,tiiuae_falcon-40b,train_other_family,training side of leave-family-out split

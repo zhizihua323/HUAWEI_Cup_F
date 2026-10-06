@@ -1,0 +1,10 @@
+{
+  "kind": "stage",
+  "stage": "s20_score_primary",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:47:03+08:00",
+  "outputs": {
+    "quality_features_scores.parquet": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+    "normalization.json": "4e28754a1753d6a85a4f362fe853b1055fae4bf27a74d87f8fd2a3dd1ecbf67e"
+  }
+}

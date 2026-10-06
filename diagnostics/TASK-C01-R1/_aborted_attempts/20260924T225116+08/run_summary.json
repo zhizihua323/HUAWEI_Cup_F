@@ -1,0 +1,165 @@
+{
+  "task": "TASK-C01-R1",
+  "run_id": "20260924T225116+08",
+  "author": "Codex (OpenAI), AI-assisted, 2026-09-24",
+  "started_local": "2026-09-24T22:51:17.665403+08:00",
+  "finished_local": "2026-09-24T22:51:21.180734+08:00",
+  "duration_seconds": 3.515,
+  "source": {
+    "task": "TASK-C01",
+    "run_id": "20260924T175553+08",
+    "dir": "diagnostics/TASK-C01/20260924T175553+08"
+  },
+  "scope": {
+    "performed": [
+      "C8 directory coverage rebuild",
+      "model x task coverage propagation",
+      "complete vs partial mean separation",
+      "checker repair",
+      "independent verification by a separate script"
+    ],
+    "explicitly_not_performed": [
+      "re-parsing any C8 JSON",
+      "rescanning C1-C10",
+      "running audit_c01.py",
+      "modifying the frozen C01 directory",
+      "Loss-Benchmark modelling",
+      "12/24-month forecasting",
+      "problem-4 model selection",
+      "reading diagnostics/TASK-Q01C-R1"
+    ]
+  },
+  "input_manifest": {
+    "inputs": 22,
+    "mismatching_frozen_manifest": 1,
+    "file": "input_manifest.json"
+  },
+  "protected_original_run": {
+    "unchanged": true,
+    "hash_mismatches": [],
+    "missing_files": [],
+    "new_files": [],
+    "files_compared": 46
+  },
+  "raw_attachments_read": false,
+  "evolution_audit_sha256": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+  "c8_file_accounting": {
+    "n_files_total": 1958,
+    "parse_success": 1954,
+    "parse_failed": 4,
+    "n_directories": 1863
+  },
+  "c8_group_scores": {
+    "n_results_valid": 11699,
+    "n_results_missing": 25,
+    "n_task_slots": 11724
+  },
+  "c8_corrupt_directories": {
+    "DreadPoor_Winter_Dawn-8B-TIES": [
+      2,
+      1,
+      1,
+      true,
+      true,
+      true,
+      6,
+      0
+    ],
+    "FINGU-AI_Chocolatine-Fusion-14B": [
+      1,
+      0,
+      1,
+      true,
+      false,
+      true,
+      0,
+      0
+    ],
+    "Intel_neural-chat-7b-v3-3": [
+      1,
+      0,
+      1,
+      true,
+      false,
+      true,
+      0,
+      0
+    ],
+    "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": [
+      1,
+      0,
+      1,
+      true,
+      false,
+      true,
+      0,
+      0
+    ]
+  },
+  "c8_model_task": {
+    "rows": 11160,
+    "rows_with_valid": 11135,
+    "rows_with_zero": 25,
+    "n_valid_results_sum": 11699
+  },
+  "c8_model_wide": {
+    "rows": 1860,
+    "n_tasks_valid_distribution": {
+      "1": 3,
+      "2": 1,
+      "3": 2,
+      "6": 1854
+    },
+    "six_task_complete_true": 1854,
+    "six_task_complete_false": 6,
+    "six_task_mean_complete_only_finite": 1854,
+    "partial_task_mean_finite": 6,
+    "partial_models": [
+      "HuggingFaceH4_zephyr-7b-alpha",
+      "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+      "HuggingFaceTB_SmolLM2-135M",
+      "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+      "google_gemma-7b-it",
+      "mistralai_Mistral-7B-v0.3"
+    ]
+  },
+  "checks": {
+    "PASS": 79,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 5,
+    "NOT_VERIFIABLE": 4
+  },
+  "n_checks": 88,
+  "key_c8_counts": {
+    "PASS": 44,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 0,
+    "NOT_VERIFIABLE": 0
+  },
+  "outputs_written_to": "diagnostics/TASK-C01-R1/20260924T225116+08",
+  "verification": {
+    "status": "FAIL",
+    "file": "verification.json",
+    "checks": 39,
+    "PASS": 34,
+    "FAIL": 5,
+    "repaired_checks_counts": {
+      "PASS": 79,
+      "WARN": 0,
+      "FAIL": 0,
+      "NOT_CHECKED": 5,
+      "NOT_VERIFIABLE": 4
+    },
+    "repaired_checks_key_c8_counts": {
+      "PASS": 44,
+      "WARN": 0,
+      "FAIL": 0,
+      "NOT_CHECKED": 0,
+      "NOT_VERIFIABLE": 0
+    },
+    "verifier_is_independent": true,
+    "note": "the verifier recomputes expected values from the frozen C01 artifacts and never imports the repair module; the repair script's own exit code was passed by the launcher"
+  }
+}

@@ -1,0 +1,16 @@
+const fs=require('fs');
+const root='C:/Users/28762/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/';
+const {mathjax}=require(root+'mathjax-full/js/mathjax.js');
+const {TeX}=require(root+'mathjax-full/js/input/tex.js');
+const {AllPackages}=require(root+'mathjax-full/js/input/tex/AllPackages.js');
+const {liteAdaptor}=require(root+'mathjax-full/js/adaptors/liteAdaptor.js');
+const {RegisterHTMLHandler}=require(root+'mathjax-full/js/handlers/html.js');
+const {SerializedMmlVisitor}=require(root+'mathjax-full/js/core/MmlTree/SerializedMmlVisitor.js');
+RegisterHTMLHandler(liteAdaptor());
+const doc=mathjax.document('',{InputJax:new TeX({packages:AllPackages})});
+const visit=new SerializedMmlVisitor();
+const src=fs.readFileSync(process.argv[2],'utf8');
+let formulas=src.split(/\r?\n/).filter(l=>l.startsWith('@EQ ')).map(l=>l.slice(4));
+let out=formulas.map(tex=>{let m=new doc.options.MathItem(tex,doc.inputJax[0],true);m.compile(doc);return visit.visitTree(m.root);});
+fs.writeFileSync(process.argv[3],JSON.stringify(out,null,2));
+process.stdout.write('Converted '+out.length+' equations\n');

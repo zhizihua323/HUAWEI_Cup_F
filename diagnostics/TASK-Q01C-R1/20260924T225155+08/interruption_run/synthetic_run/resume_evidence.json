@@ -1,0 +1,95 @@
+{
+  "run_id": "synthetic_run",
+  "mode": "fixture",
+  "protocol_version": 2,
+  "generated_local": "2026-09-24T22:52:02+08:00",
+  "decisions": [
+    {
+      "stage": "s00_preflight",
+      "action": "stage_reused",
+      "reason": "valid",
+      "decided_local": "2026-09-24T22:52:00+08:00",
+      "process_pid": 38516
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "action": "stage_reused",
+      "reason": "valid",
+      "decided_local": "2026-09-24T22:52:00+08:00",
+      "process_pid": 38516
+    },
+    {
+      "stage": "s10_scan_a1",
+      "action": "stage_reused",
+      "reason": "valid",
+      "decided_local": "2026-09-24T22:52:00+08:00",
+      "process_pid": 38516
+    },
+    {
+      "stage": "s11_scan_a2",
+      "file_id": "A2_arxiv",
+      "action": "rescan",
+      "reason": "legacy: missing file(s)",
+      "layout": null,
+      "rows": null,
+      "payload_sha256": null,
+      "decided_local": "2026-09-24T22:52:00+08:00",
+      "process_pid": 38516,
+      "checks": [
+        "input_sha256",
+        "config_sha256",
+        "code_fingerprint",
+        "payload_sha256",
+        "marker_binding",
+        "stage_marker"
+      ]
+    },
+    {
+      "stage": "s12_scan_a3",
+      "file_id": "A3_github",
+      "action": "rescan",
+      "reason": "legacy: missing file(s)",
+      "layout": null,
+      "rows": null,
+      "payload_sha256": null,
+      "decided_local": "2026-09-24T22:52:00+08:00",
+      "process_pid": 38516,
+      "checks": [
+        "input_sha256",
+        "config_sha256",
+        "code_fingerprint",
+        "payload_sha256",
+        "marker_binding",
+        "stage_marker"
+      ]
+    }
+  ],
+  "scan_counters": {
+    "protocol_version": 2,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 32344,
+        "last_scan_started": "2026-09-24T22:51:58+08:00",
+        "last_scan_finished": "2026-09-24T22:51:58+08:00"
+      },
+      "A2_arxiv": {
+        "passes": 1,
+        "last_scan_pid": 38516,
+        "last_scan_started": "2026-09-24T22:52:00+08:00",
+        "last_scan_finished": "2026-09-24T22:52:00+08:00"
+      },
+      "A3_github": {
+        "passes": 1,
+        "last_scan_pid": 38516,
+        "last_scan_started": "2026-09-24T22:52:00+08:00",
+        "last_scan_finished": "2026-09-24T22:52:00+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 3
+  },
+  "scan_counters_path": "scan_counters.json",
+  "finalized_output_manifest_present": false,
+  "note": "checkpoint reuse decisions are recorded per stage/file with the validation items used; reused checkpoints never re-run their payload computation"
+}

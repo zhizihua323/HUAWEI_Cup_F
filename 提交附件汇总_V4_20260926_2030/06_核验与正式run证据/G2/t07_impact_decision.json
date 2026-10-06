@@ -1,0 +1,15 @@
+{
+  "NEW_Q2_CHANGES_T07_NUMERIC_INPUTS": "NO",
+  "decision": "NO",
+  "reason": "M0_B1 was not refit or reselected; all five parameters are exact frozen values. B2-B5 validation outcomes, the layered L_gen expression, analytic derivatives, and scenario qualifications do not modify T07's numeric contract.",
+  "t07_primary_model": "M0_B1",
+  "t07_quality_enabled": false,
+  "t07_mixture_transport_enabled": false,
+  "t07_contract_path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_model_contract.json",
+  "t07_contract_sha256": "925ffeaec52dd3d72751e5e6d5e99c9cb077ee5106e554fb858530f6b0b8160e",
+  "t07_freeze_path": "paper/T07_RESULT_FREEZE.md",
+  "t07_freeze_sha256": "c96b481932daedfac92ef0e45fd17f2938cec6f26cf7e7a991baa46ab4c8b86b",
+  "incremental_t07_started_or_authorized": false,
+  "numeric_parameters_modified": [],
+  "note": "This is an impact decision only; it does not start T07."
+}

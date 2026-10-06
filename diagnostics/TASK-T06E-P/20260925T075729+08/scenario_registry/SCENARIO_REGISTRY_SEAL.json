@@ -1,0 +1,50 @@
+{
+  "seal_status": "SEALED_BEFORE_TEST_METRIC_READ",
+  "task_id": "TASK-T06E-P",
+  "run_id": "20260925T075729+08",
+  "scenario_count": 21,
+  "scenario_ids_in_order": [
+    "S00_NULL_M0_B1",
+    "S01_QREF_QA_H2_B1_R06_ADD",
+    "S02_QC",
+    "S03_H1_IDENTITY",
+    "S04_H2_B05",
+    "S05_H2_B20",
+    "S06_H3_EQQUANTILE",
+    "S07_H4_DIRECTION_ONLY",
+    "S08_RB1_02",
+    "S09_RB1_09",
+    "S10_RHOQ_00",
+    "S11_RHOQ_05",
+    "S12_EFF_KEEP_ETA",
+    "S13_EFF_KEEP_K",
+    "S14_MIX_TAU05",
+    "S15_MIX_TAU10",
+    "S16_MIX_TAUM10_STRESS",
+    "S17_B8_REVERSE_COMMON_SUPPORT",
+    "X01_Q_HIGH",
+    "X02_Q_CONSERVATIVE",
+    "X03_H3_EFF"
+  ],
+  "registry_file": "scenario_registry/scenario_registry_preregistered.csv",
+  "registry_sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522",
+  "registry_bytes": 3896,
+  "frozen_scenario_tuple_sha256": "36a0785d9ab323aa02a3c81eca743d36e887a649fd7ec53078e7b193ac92e020",
+  "sealed_local_time": "2026-09-25T07:57:48+08:00",
+  "seed_audit_anchor": 20260927,
+  "solver": "NONE",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "constraints": [
+    "No scenario may be added, deleted, renamed, reordered, or semantically changed after this seal.",
+    "Only the 21 preregistered IDs are permitted.",
+    "No Cartesian-product scenarios are permitted.",
+    "No random sampling or random optimization is permitted.",
+    "S07 and S17 remain registered without numeric prediction."
+  ]
+}

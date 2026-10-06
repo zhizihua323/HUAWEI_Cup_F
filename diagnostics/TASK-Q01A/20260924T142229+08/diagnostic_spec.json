@@ -1,0 +1,747 @@
+{
+  "task": "TASK-Q01A",
+  "run_id": "20260924T142229+08",
+  "purpose": "quality missingness pattern diagnosis; no strategy selection, no Q recomputation",
+  "source_functions_replicated": {
+    "fields": "solution/src/quality_audit.py FIELDS/LIST_LENGTHS/RULES/DSIR",
+    "features": "solution/src/quality_audit.py MODEL/FEATURES/GROUPS",
+    "extraction": "solution/src/quality_audit.py get_features (whole-list invalidation, bool accepted)",
+    "fingerprint": "solution/src/quality_audit.py quality_fingerprint",
+    "raw_audit": "solution/src/quality_audit.py audit_value/clean_stats",
+    "key": "solution/src/quality_audit.py key=(str(id), str(sub_path)); key_json=json.dumps(key)",
+    "split": "split=int(sha256(str(SEED)+key_json)[:16],16)%5; A1 remainder 0 -> holdout",
+    "propagation": "solution/src/quality_audit.py score_quality (mean axis=1 skipna=False)",
+    "denominators": "solution/src/quality_audit.py summarize (pandas default skipna semantics)"
+  },
+  "raw_fields_22": [
+    {
+      "index": 0,
+      "field": "rps_doc_frac_no_alph_words",
+      "expected_list_length": null
+    },
+    {
+      "index": 1,
+      "field": "rps_doc_mean_word_length",
+      "expected_list_length": null
+    },
+    {
+      "index": 2,
+      "field": "rps_doc_frac_unique_words",
+      "expected_list_length": null
+    },
+    {
+      "index": 3,
+      "field": "rps_doc_unigram_entropy",
+      "expected_list_length": null
+    },
+    {
+      "index": 4,
+      "field": "rps_doc_word_count",
+      "expected_list_length": null
+    },
+    {
+      "index": 5,
+      "field": "rps_lines_ending_with_terminal_punctution_mark",
+      "expected_list_length": null
+    },
+    {
+      "index": 6,
+      "field": "rps_lines_numerical_chars_fraction",
+      "expected_list_length": null
+    },
+    {
+      "index": 7,
+      "field": "rps_lines_uppercase_letter_fraction",
+      "expected_list_length": null
+    },
+    {
+      "index": 8,
+      "field": "rps_doc_num_sentences",
+      "expected_list_length": null
+    },
+    {
+      "index": 9,
+      "field": "rps_doc_frac_chars_top_2gram",
+      "expected_list_length": null
+    },
+    {
+      "index": 10,
+      "field": "rps_doc_frac_chars_top_3gram",
+      "expected_list_length": null
+    },
+    {
+      "index": 11,
+      "field": "dsir_books",
+      "expected_list_length": null
+    },
+    {
+      "index": 12,
+      "field": "dsir_wiki",
+      "expected_list_length": null
+    },
+    {
+      "index": 13,
+      "field": "dsir_math",
+      "expected_list_length": null
+    },
+    {
+      "index": 14,
+      "field": "fineweb_edu",
+      "expected_list_length": 1
+    },
+    {
+      "index": 15,
+      "field": "ad_en",
+      "expected_list_length": 2
+    },
+    {
+      "index": 16,
+      "field": "fluency_en",
+      "expected_list_length": 2
+    },
+    {
+      "index": 17,
+      "field": "qurater",
+      "expected_list_length": 4
+    },
+    {
+      "index": 18,
+      "field": "modernbert_professionalism",
+      "expected_list_length": 6
+    },
+    {
+      "index": 19,
+      "field": "modernbert_readability",
+      "expected_list_length": 6
+    },
+    {
+      "index": 20,
+      "field": "modernbert_reasoning",
+      "expected_list_length": 6
+    },
+    {
+      "index": 21,
+      "field": "modernbert_cleanliness",
+      "expected_list_length": 6
+    }
+  ],
+  "expanded_features_25": [
+    {
+      "index": 0,
+      "feature": "rps_doc_frac_no_alph_words",
+      "source_field": "rps_doc_frac_no_alph_words",
+      "in_main_q": false
+    },
+    {
+      "index": 1,
+      "feature": "rps_doc_mean_word_length",
+      "source_field": "rps_doc_mean_word_length",
+      "in_main_q": false
+    },
+    {
+      "index": 2,
+      "feature": "rps_doc_frac_unique_words",
+      "source_field": "rps_doc_frac_unique_words",
+      "in_main_q": false
+    },
+    {
+      "index": 3,
+      "feature": "rps_doc_unigram_entropy",
+      "source_field": "rps_doc_unigram_entropy",
+      "in_main_q": false
+    },
+    {
+      "index": 4,
+      "feature": "rps_doc_word_count",
+      "source_field": "rps_doc_word_count",
+      "in_main_q": false
+    },
+    {
+      "index": 5,
+      "feature": "rps_lines_ending_with_terminal_punctution_mark",
+      "source_field": "rps_lines_ending_with_terminal_punctution_mark",
+      "in_main_q": false
+    },
+    {
+      "index": 6,
+      "feature": "rps_lines_numerical_chars_fraction",
+      "source_field": "rps_lines_numerical_chars_fraction",
+      "in_main_q": false
+    },
+    {
+      "index": 7,
+      "feature": "rps_lines_uppercase_letter_fraction",
+      "source_field": "rps_lines_uppercase_letter_fraction",
+      "in_main_q": false
+    },
+    {
+      "index": 8,
+      "feature": "rps_doc_num_sentences",
+      "source_field": "rps_doc_num_sentences",
+      "in_main_q": false
+    },
+    {
+      "index": 9,
+      "feature": "rps_doc_frac_chars_top_2gram",
+      "source_field": "rps_doc_frac_chars_top_2gram",
+      "in_main_q": false
+    },
+    {
+      "index": 10,
+      "feature": "rps_doc_frac_chars_top_3gram",
+      "source_field": "rps_doc_frac_chars_top_3gram",
+      "in_main_q": false
+    },
+    {
+      "index": 11,
+      "feature": "dsir_books",
+      "source_field": "dsir_books",
+      "in_main_q": false
+    },
+    {
+      "index": 12,
+      "feature": "dsir_wiki",
+      "source_field": "dsir_wiki",
+      "in_main_q": false
+    },
+    {
+      "index": 13,
+      "feature": "dsir_math",
+      "source_field": "dsir_math",
+      "in_main_q": false
+    },
+    {
+      "index": 14,
+      "feature": "fineweb_edu",
+      "source_field": "fineweb_edu",
+      "in_main_q": true
+    },
+    {
+      "index": 15,
+      "feature": "ad_en",
+      "source_field": "ad_en",
+      "in_main_q": true
+    },
+    {
+      "index": 16,
+      "feature": "fluency_en",
+      "source_field": "fluency_en",
+      "in_main_q": true
+    },
+    {
+      "index": 17,
+      "feature": "qurater_writing_style",
+      "source_field": "qurater",
+      "in_main_q": true
+    },
+    {
+      "index": 18,
+      "feature": "qurater_required_expertise",
+      "source_field": "qurater",
+      "in_main_q": true
+    },
+    {
+      "index": 19,
+      "feature": "qurater_facts_trivia",
+      "source_field": "qurater",
+      "in_main_q": true
+    },
+    {
+      "index": 20,
+      "feature": "qurater_educational_value",
+      "source_field": "qurater",
+      "in_main_q": true
+    },
+    {
+      "index": 21,
+      "feature": "modernbert_professionalism",
+      "source_field": "modernbert_professionalism",
+      "in_main_q": true
+    },
+    {
+      "index": 22,
+      "feature": "modernbert_readability",
+      "source_field": "modernbert_readability",
+      "in_main_q": true
+    },
+    {
+      "index": 23,
+      "feature": "modernbert_reasoning",
+      "source_field": "modernbert_reasoning",
+      "in_main_q": true
+    },
+    {
+      "index": 24,
+      "feature": "modernbert_cleanliness",
+      "source_field": "modernbert_cleanliness",
+      "in_main_q": true
+    }
+  ],
+  "main_q_features_11": [
+    {
+      "index": 0,
+      "feature": "fineweb_edu"
+    },
+    {
+      "index": 1,
+      "feature": "ad_en"
+    },
+    {
+      "index": 2,
+      "feature": "fluency_en"
+    },
+    {
+      "index": 3,
+      "feature": "qurater_writing_style"
+    },
+    {
+      "index": 4,
+      "feature": "qurater_required_expertise"
+    },
+    {
+      "index": 5,
+      "feature": "qurater_facts_trivia"
+    },
+    {
+      "index": 6,
+      "feature": "qurater_educational_value"
+    },
+    {
+      "index": 7,
+      "feature": "modernbert_professionalism"
+    },
+    {
+      "index": 8,
+      "feature": "modernbert_readability"
+    },
+    {
+      "index": 9,
+      "feature": "modernbert_reasoning"
+    },
+    {
+      "index": 10,
+      "feature": "modernbert_cleanliness"
+    }
+  ],
+  "groups": {
+    "usability": [
+      "ad_en",
+      "fluency_en",
+      "modernbert_readability",
+      "modernbert_cleanliness",
+      "qurater_writing_style"
+    ],
+    "knowledge": [
+      "modernbert_professionalism",
+      "qurater_required_expertise",
+      "qurater_facts_trivia"
+    ],
+    "education_reasoning": [
+      "modernbert_reasoning",
+      "fineweb_edu",
+      "qurater_educational_value"
+    ]
+  },
+  "scope_definitions": {
+    "A1_calibration": "evaluation_role==A1_calibration and is_unique_first",
+    "A1_holdout": "evaluation_role==A1_holdout and is_unique_first",
+    "A1_all_unique": "file_id==A1 and is_unique_first",
+    "extension_overlap_A1": "overlap_a1 (no is_unique filter, matches prior summarize)",
+    "extension_new_records": "evaluation_role==extension_new_records and is_unique_first",
+    "all_unique": "is_unique_first",
+    "file_unique_first_<file>": "comparison view for prior feature_summary (is_unique_first per file)"
+  },
+  "mask_kinds": [
+    {
+      "mask_kind": "raw_field_invalid",
+      "feature_universe": "FIELDS22",
+      "n_bits": 22,
+      "bit_order": "bit j corresponds to index j of the listed universe"
+    },
+    {
+      "mask_kind": "extract_nan",
+      "feature_universe": "FEATURES25",
+      "n_bits": 25,
+      "bit_order": "bit j corresponds to index j of the listed universe"
+    },
+    {
+      "mask_kind": "extract_nonfinite",
+      "feature_universe": "FEATURES25",
+      "n_bits": 25,
+      "bit_order": "bit j corresponds to index j of the listed universe"
+    },
+    {
+      "mask_kind": "norm_nan",
+      "feature_universe": "MODEL11",
+      "n_bits": 11,
+      "bit_order": "bit j corresponds to index j of the listed universe"
+    },
+    {
+      "mask_kind": "norm_nonfinite",
+      "feature_universe": "MODEL11",
+      "n_bits": 11,
+      "bit_order": "bit j corresponds to index j of the listed universe"
+    }
+  ],
+  "mask_universes": {
+    "FIELDS22": [
+      "rps_doc_frac_no_alph_words",
+      "rps_doc_mean_word_length",
+      "rps_doc_frac_unique_words",
+      "rps_doc_unigram_entropy",
+      "rps_doc_word_count",
+      "rps_lines_ending_with_terminal_punctution_mark",
+      "rps_lines_numerical_chars_fraction",
+      "rps_lines_uppercase_letter_fraction",
+      "rps_doc_num_sentences",
+      "rps_doc_frac_chars_top_2gram",
+      "rps_doc_frac_chars_top_3gram",
+      "dsir_books",
+      "dsir_wiki",
+      "dsir_math",
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ],
+    "FEATURES25": [
+      "rps_doc_frac_no_alph_words",
+      "rps_doc_mean_word_length",
+      "rps_doc_frac_unique_words",
+      "rps_doc_unigram_entropy",
+      "rps_doc_word_count",
+      "rps_lines_ending_with_terminal_punctution_mark",
+      "rps_lines_numerical_chars_fraction",
+      "rps_lines_uppercase_letter_fraction",
+      "rps_doc_num_sentences",
+      "rps_doc_frac_chars_top_2gram",
+      "rps_doc_frac_chars_top_3gram",
+      "dsir_books",
+      "dsir_wiki",
+      "dsir_math",
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater_writing_style",
+      "qurater_required_expertise",
+      "qurater_facts_trivia",
+      "qurater_educational_value",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ],
+    "MODEL11": [
+      "fineweb_edu",
+      "ad_en",
+      "fluency_en",
+      "qurater_writing_style",
+      "qurater_required_expertise",
+      "qurater_facts_trivia",
+      "qurater_educational_value",
+      "modernbert_professionalism",
+      "modernbert_readability",
+      "modernbert_reasoning",
+      "modernbert_cleanliness"
+    ]
+  },
+  "counting_conventions": {
+    "physical_rows": "every decompressed line, including unparsable lines (placeholder row)",
+    "extract_layer_additivity": "n_total = n_finite + n_nonfinite; n_nonfinite = n_nan + n_posinf + n_neginf",
+    "raw_layer": "raw reasons are non-exclusive; no union additivity claimed",
+    "ratios": "every ratio row carries its numerator and denominator columns",
+    "denominator_rules": "pandas 2.3.3 skipna semantics reproduced from summarize()"
+  },
+  "seed": 20260924,
+  "split_rule": "int(sha256(\"20260924\"+key_json)[:16],16) % 5; remainder 0 => A1_holdout",
+  "source_report": {
+    "source": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_audit.py",
+    "checks": {
+      "RULES": true,
+      "DSIR": true,
+      "PRRC": true,
+      "QURATER": true,
+      "MODEL": true,
+      "FEATURES": true,
+      "GROUPS": true,
+      "LIST_LENGTHS": true,
+      "counts": true,
+      "groups_union_model": true,
+      "seed": true
+    },
+    "literal_values": {
+      "RULES": [
+        "rps_doc_frac_no_alph_words",
+        "rps_doc_mean_word_length",
+        "rps_doc_frac_unique_words",
+        "rps_doc_unigram_entropy",
+        "rps_doc_word_count",
+        "rps_lines_ending_with_terminal_punctution_mark",
+        "rps_lines_numerical_chars_fraction",
+        "rps_lines_uppercase_letter_fraction",
+        "rps_doc_num_sentences",
+        "rps_doc_frac_chars_top_2gram",
+        "rps_doc_frac_chars_top_3gram"
+      ],
+      "DSIR": [
+        "dsir_books",
+        "dsir_wiki",
+        "dsir_math"
+      ],
+      "PRRC": [
+        "modernbert_professionalism",
+        "modernbert_readability",
+        "modernbert_reasoning",
+        "modernbert_cleanliness"
+      ],
+      "QURATER": [
+        "qurater_writing_style",
+        "qurater_required_expertise",
+        "qurater_facts_trivia",
+        "qurater_educational_value"
+      ],
+      "MODEL": [
+        "fineweb_edu",
+        "ad_en",
+        "fluency_en",
+        "qurater_writing_style",
+        "qurater_required_expertise",
+        "qurater_facts_trivia",
+        "qurater_educational_value",
+        "modernbert_professionalism",
+        "modernbert_readability",
+        "modernbert_reasoning",
+        "modernbert_cleanliness"
+      ],
+      "FEATURES": [
+        "rps_doc_frac_no_alph_words",
+        "rps_doc_mean_word_length",
+        "rps_doc_frac_unique_words",
+        "rps_doc_unigram_entropy",
+        "rps_doc_word_count",
+        "rps_lines_ending_with_terminal_punctution_mark",
+        "rps_lines_numerical_chars_fraction",
+        "rps_lines_uppercase_letter_fraction",
+        "rps_doc_num_sentences",
+        "rps_doc_frac_chars_top_2gram",
+        "rps_doc_frac_chars_top_3gram",
+        "dsir_books",
+        "dsir_wiki",
+        "dsir_math",
+        "fineweb_edu",
+        "ad_en",
+        "fluency_en",
+        "qurater_writing_style",
+        "qurater_required_expertise",
+        "qurater_facts_trivia",
+        "qurater_educational_value",
+        "modernbert_professionalism",
+        "modernbert_readability",
+        "modernbert_reasoning",
+        "modernbert_cleanliness"
+      ],
+      "GROUPS": {
+        "usability": [
+          "ad_en",
+          "fluency_en",
+          "modernbert_readability",
+          "modernbert_cleanliness",
+          "qurater_writing_style"
+        ],
+        "knowledge": [
+          "modernbert_professionalism",
+          "qurater_required_expertise",
+          "qurater_facts_trivia"
+        ],
+        "education_reasoning": [
+          "modernbert_reasoning",
+          "fineweb_edu",
+          "qurater_educational_value"
+        ]
+      }
+    },
+    "list_lengths_explicit": {
+      "fineweb_edu": 1,
+      "ad_en": 2,
+      "fluency_en": 2,
+      "qurater": 4
+    },
+    "list_lengths_unpack": "{p: 6 for p in PRRC}"
+  },
+  "normalization_report": {
+    "checks": {
+      "groups_match": true,
+      "transforms_match_model": true,
+      "excluded_match": true,
+      "bounds_valid": true,
+      "fixed_ranges_match": true
+    },
+    "transforms": {
+      "fineweb_edu": {
+        "low": 0.08386536827983196,
+        "high": 3.3196254506652165,
+        "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+        "direction": "higher"
+      },
+      "ad_en": {
+        "low": 0.0,
+        "high": 1.0,
+        "method": "official_binary_class_index",
+        "direction": "higher"
+      },
+      "fluency_en": {
+        "low": 0.0,
+        "high": 1.0,
+        "method": "official_binary_class_index",
+        "direction": "higher"
+      },
+      "qurater_writing_style": {
+        "low": -5.1484375,
+        "high": 6.222949155515907,
+        "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+        "direction": "higher"
+      },
+      "qurater_required_expertise": {
+        "low": -4.94140625,
+        "high": 9.5,
+        "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+        "direction": "higher"
+      },
+      "qurater_facts_trivia": {
+        "low": -4.21484375,
+        "high": 4.992075598388387,
+        "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+        "direction": "higher"
+      },
+      "qurater_educational_value": {
+        "low": -4.41015625,
+        "high": 8.765625,
+        "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+        "direction": "higher"
+      },
+      "modernbert_professionalism": {
+        "low": 0.0,
+        "high": 5.0,
+        "method": "official_ordinal_range",
+        "direction": "higher"
+      },
+      "modernbert_readability": {
+        "low": 0.0,
+        "high": 5.0,
+        "method": "official_ordinal_range",
+        "direction": "higher"
+      },
+      "modernbert_reasoning": {
+        "low": 0.0,
+        "high": 5.0,
+        "method": "official_ordinal_range",
+        "direction": "higher"
+      },
+      "modernbert_cleanliness": {
+        "low": 0.0,
+        "high": 5.0,
+        "method": "official_ordinal_range",
+        "direction": "higher"
+      }
+    }
+  },
+  "normalization_parameters_used": {
+    "fineweb_edu": {
+      "low": 0.08386536827983196,
+      "high": 3.3196254506652165,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "ad_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "fluency_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "qurater_writing_style": {
+      "low": -5.1484375,
+      "high": 6.222949155515907,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_required_expertise": {
+      "low": -4.94140625,
+      "high": 9.5,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_facts_trivia": {
+      "low": -4.21484375,
+      "high": 4.992075598388387,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_educational_value": {
+      "low": -4.41015625,
+      "high": 8.765625,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "modernbert_professionalism": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_readability": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_reasoning": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_cleanliness": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    }
+  },
+  "normalization_refit": false,
+  "content_fields_not_read": true,
+  "final_strategy_selected": false,
+  "final_Q_recomputed": false,
+  "scope_views": [
+    "A1_calibration",
+    "A1_holdout",
+    "A1_all_unique",
+    "extension_overlap_A1",
+    "extension_new_records",
+    "all_unique",
+    "file_unique_first_A1",
+    "file_unique_first_A2_arxiv",
+    "file_unique_first_A3_github"
+  ],
+  "table_files": [
+    "complete_case_count_only",
+    "feature_missing_counts",
+    "group_mask_intersections",
+    "group_validity_distribution",
+    "missing_pairwise",
+    "missing_patterns",
+    "physical_rows_by_file_role",
+    "raw_field_counts",
+    "summary_denominators",
+    "validity_counts"
+  ]
+}

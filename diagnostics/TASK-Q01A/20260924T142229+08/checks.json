@@ -1,0 +1,911 @@
+{
+  "run_id": "20260924T142229+08",
+  "task": "TASK-Q01A",
+  "status": "PARTIAL",
+  "exit_code": 2,
+  "summary": {
+    "n_checks": 40,
+    "n_pass": 33,
+    "n_fail": 7,
+    "n_not_checked": 0
+  },
+  "checks": [
+    {
+      "check_id": "C01_required_inputs_present",
+      "description": "all permitted inputs exist",
+      "status": "PASS",
+      "actual": {
+        "missing": []
+      },
+      "expected": "no missing input",
+      "tolerance": "exact",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "C02_row_artifact_absent",
+      "description": "no new row-level quality artifact at run start",
+      "status": "PASS",
+      "actual": {
+        "quality_features_scores_parquet_present": false
+      },
+      "expected": "absent (recovery-time state)",
+      "tolerance": "exact",
+      "evidence": "run.log"
+    },
+    {
+      "check_id": "C03_xz_sha256_matches_registered",
+      "description": "compressed inputs match raw_source_manifest.csv and prior audit.json",
+      "status": "PASS",
+      "actual": {
+        "A1": {
+          "sha256": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+          "matches_manifest": true,
+          "matches_audit_json": true,
+          "bytes_match_manifest": true
+        },
+        "A2_arxiv": {
+          "sha256": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+          "matches_manifest": true,
+          "matches_audit_json": true,
+          "bytes_match_manifest": true
+        },
+        "A3_github": {
+          "sha256": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+          "matches_manifest": true,
+          "matches_audit_json": true,
+          "bytes_match_manifest": true
+        }
+      },
+      "expected": "all three files match",
+      "tolerance": "sha256 exact",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "C04_source_constants_match_pinned_spec",
+      "description": "AST-extracted FIELDS/FEATURES/GROUPS/LIST_LENGTHS/SEED equal the pinned specification",
+      "status": "PASS",
+      "actual": {
+        "RULES": true,
+        "DSIR": true,
+        "PRRC": true,
+        "QURATER": true,
+        "MODEL": true,
+        "FEATURES": true,
+        "GROUPS": true,
+        "LIST_LENGTHS": true,
+        "counts": true,
+        "groups_union_model": true,
+        "seed": true
+      },
+      "expected": "all True",
+      "tolerance": "exact",
+      "evidence": "diagnostic_spec.json"
+    },
+    {
+      "check_id": "C05_normalization_matches_source_groups",
+      "description": "normalization.json groups/transforms/bounds equal current source definitions (no refit)",
+      "status": "PASS",
+      "actual": {
+        "groups_match": true,
+        "transforms_match_model": true,
+        "excluded_match": true,
+        "bounds_valid": true,
+        "fixed_ranges_match": true
+      },
+      "expected": "all True",
+      "tolerance": "exact",
+      "evidence": "diagnostic_spec.json"
+    },
+    {
+      "check_id": "C06_synthetic_selftest",
+      "description": "synthetic tests of extraction/mask/pandas/aggregation logic",
+      "status": "PASS",
+      "actual": {
+        "n_cases": 28,
+        "n_failed": 0
+      },
+      "expected": "n_failed = 0",
+      "tolerance": "exact",
+      "evidence": "checks.json#synthetic_selftest"
+    },
+    {
+      "check_id": "C07_protected_files_unchanged",
+      "description": "source/config/quality outputs/recovery/task/00-05 unchanged",
+      "status": "FAIL",
+      "actual": {},
+      "expected": "no added/removed/changed file",
+      "tolerance": "exact",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "C08_raw_tree_bytes_mtime_unchanged",
+      "description": "all files under F题/real_attachments keep size and mtime",
+      "status": "FAIL",
+      "actual": {},
+      "expected": "no added/removed/changed file",
+      "tolerance": "exact",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "C09_xz_post_hash_equal_pre",
+      "description": "compressed bytes re-read after the scan and hashed again",
+      "status": "PASS",
+      "actual": {
+        "A1": {
+          "pre": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579",
+          "post": "14a4eeec4c7d98efd78942ddd9c1329640527f2108e73227be449bc1a8dbe579"
+        },
+        "A2_arxiv": {
+          "pre": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a",
+          "post": "ae1e3399f84f605d994fc60b46984d742e14abb3355d8e7a91822eae1b99e16a"
+        },
+        "A3_github": {
+          "pre": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382",
+          "post": "7af069c71c6027a10f2013cc14dd9d5d17855c264734f69c955544ff6cff7382"
+        }
+      },
+      "expected": "identical sha256",
+      "tolerance": "sha256 exact",
+      "evidence": "input_manifest.json"
+    },
+    {
+      "check_id": "C10_parse_failures_recorded",
+      "description": "every unparsable line keeps a placeholder row and an event",
+      "status": "PASS",
+      "actual": {
+        "parse_failure_rows": 0,
+        "identity_events": 0,
+        "per_file": {
+          "A1": {
+            "invalid_json": 0,
+            "decode_errors": 0,
+            "json_structure_errors": 0,
+            "line_count": 51230,
+            "rows": 51230
+          },
+          "A2_arxiv": {
+            "invalid_json": 0,
+            "decode_errors": 0,
+            "json_structure_errors": 0,
+            "line_count": 17523,
+            "rows": 17523
+          },
+          "A3_github": {
+            "invalid_json": 0,
+            "decode_errors": 0,
+            "json_structure_errors": 0,
+            "line_count": 203752,
+            "rows": 203752
+          }
+        }
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "invalid_values.csv.gz / row_masks.csv.gz"
+    },
+    {
+      "check_id": "C11_totals_match_prior_audit",
+      "description": "rows / unique keys / duplicates equal prior audit.json",
+      "status": "FAIL",
+      "actual": {
+        "actual": {
+          "total_records": 272505,
+          "unique_keys": 261086,
+          "duplicate_rows": 11419
+        },
+        "expected": {
+          "total_records": null,
+          "unique_keys": null,
+          "duplicate_rows": null
+        }
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C12_file_level_counts_match_prior",
+      "description": "per-file rows/unique/duplicate/overlap equal prior audit",
+      "status": "FAIL",
+      "actual": {
+        "actual": {
+          "A1": {
+            "rows": 51230,
+            "unique": 51230,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 0
+          },
+          "A2_arxiv": {
+            "rows": 17523,
+            "unique": 17523,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 1419
+          },
+          "A3_github": {
+            "rows": 203752,
+            "unique": 203752,
+            "within_file_duplicates": 0,
+            "overlapping_a1_rows": 10000
+          }
+        },
+        "expected": {}
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C13_pairwise_key_intersections_match_prior",
+      "description": "file-pair key-set intersections equal prior audit",
+      "status": "FAIL",
+      "actual": {
+        "actual": {
+          "A1__A2_arxiv": 1419,
+          "A1__A3_github": 10000,
+          "A2_arxiv__A3_github": 0
+        },
+        "expected": {}
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C14_conflicts_match_prior",
+      "description": "quality fingerprint conflicts / domain collisions equal prior audit",
+      "status": "PASS",
+      "actual": {
+        "actual": {
+          "quality_conflicts": 0,
+          "domain_collisions": 0
+        },
+        "expected": {
+          "quality_conflicts": 0,
+          "domain_collisions": 0
+        }
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C15_row_masks_covers_all_physical_lines",
+      "description": "every decompressed line kept in row_masks",
+      "status": "FAIL",
+      "actual": {
+        "row_masks_rows": null,
+        "physical_lines": 272505
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "row_masks.csv.gz"
+    },
+    {
+      "check_id": "C16_extract_layer_additivity",
+      "description": "n_total = n_finite + n_nonfinite for every feature row",
+      "status": "PASS",
+      "actual": {
+        "violations": 0,
+        "rows": 1250
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "feature_missing_counts.csv"
+    },
+    {
+      "check_id": "C17_nonfinite_partition",
+      "description": "n_nonfinite = n_nan + n_posinf + n_neginf for every feature row",
+      "status": "PASS",
+      "actual": {
+        "violations": 0
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "feature_missing_counts.csv"
+    },
+    {
+      "check_id": "C18_pattern_counts_sum_to_scope_n",
+      "description": "sum of pattern counts equals scope x domain n",
+      "status": "PASS",
+      "actual": {
+        "violations": [],
+        "n_violations": 0,
+        "n_groups": 250
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "missing_patterns.csv"
+    },
+    {
+      "check_id": "C19_pairwise_diagonal_equals_marginal",
+      "description": "pairwise diagonal equals single-feature count",
+      "status": "PASS",
+      "actual": {
+        "n_violations": 0,
+        "examples": []
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "missing_pairwise.csv"
+    },
+    {
+      "check_id": "C20_pairwise_inclusion_exclusion",
+      "description": "|A union B| = |A| + |B| - |A intersect B|",
+      "status": "PASS",
+      "actual": {
+        "n_violations": 0,
+        "examples": []
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "missing_pairwise.csv"
+    },
+    {
+      "check_id": "C21_mainQ_complete_equals_failure_complement",
+      "description": "11-feature complete count equals complement of the propagation mask",
+      "status": "PASS",
+      "actual": {
+        "n_violations": 0,
+        "n_rows": 50
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "validity_counts.csv"
+    },
+    {
+      "check_id": "C22_group_and_Q_mask_logic",
+      "description": "row-level group/Q masks reproduce constituent NaN propagation",
+      "status": "PASS",
+      "actual": {
+        "group_mask_mismatch": null,
+        "q_nan_mask_mismatch": null,
+        "extract_vs_norm_nan_mismatch": 19,
+        "norm_nonfinite_non_nan": null
+      },
+      "expected": "all zero",
+      "tolerance": "exact",
+      "evidence": "row_masks.csv.gz"
+    },
+    {
+      "check_id": "C23_norm_layer_equals_extract_layer",
+      "description": "normalized NaN masks equal extraction NaN masks for the 11 main-Q features; no non-NaN non-finite",
+      "status": "FAIL",
+      "actual": {
+        "extract_vs_norm_nan_mismatch": 19,
+        "norm_nonfinite_non_nan": null
+      },
+      "expected": "all zero",
+      "tolerance": "exact",
+      "evidence": "row_masks.csv.gz"
+    },
+    {
+      "check_id": "C24_summary_denominator_algebra",
+      "description": "denominators consistent with propagation and scope masks",
+      "status": "PASS",
+      "actual": {
+        "n_violations": 0,
+        "examples": []
+      },
+      "expected": "0 violations",
+      "tolerance": "exact",
+      "evidence": "summary_denominators.csv"
+    },
+    {
+      "check_id": "C25_raw_field_prior_semantics_match",
+      "description": "replicated raw-field statistics equal prior audit.json",
+      "status": "PASS",
+      "actual": {
+        "n_mismatch": 0,
+        "n_comparisons": 1478
+      },
+      "expected": "n_mismatch = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C26_feature_summary_counts_match",
+      "description": "prior feature_summary non-missing counts reproduced",
+      "status": "PASS",
+      "actual": {
+        "n_comparisons": 225,
+        "n_mismatch": 0
+      },
+      "expected": "n_mismatch = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C27_domain_summary_n_match",
+      "description": "prior domain_summary scope x domain n reproduced",
+      "status": "PASS",
+      "actual": {
+        "n_comparisons": 32,
+        "n_mismatch": 0
+      },
+      "expected": "n_mismatch = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C28_extension_shift_counts_match",
+      "description": "prior extension_shift a1_n/extension_new_n reproduced",
+      "status": "PASS",
+      "actual": {
+        "n_comparisons": 44,
+        "n_mismatch": 0
+      },
+      "expected": "n_mismatch = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C29_recovery_deficit_counts_match",
+      "description": "recovery deficit counts reconciled with current masks",
+      "status": "PASS",
+      "actual": {
+        "n_comparisons": 4,
+        "n_mismatch": 0
+      },
+      "expected": "n_mismatch = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C30_no_unresolved_prior_mismatch",
+      "description": "all prior mismatches explained and resolved",
+      "status": "PASS",
+      "actual": {
+        "n_unresolved": 0,
+        "examples": []
+      },
+      "expected": "n_unresolved = 0",
+      "tolerance": "exact",
+      "evidence": "comparison_with_prior.csv"
+    },
+    {
+      "check_id": "C31_independent_reaggregation_from_row_masks",
+      "description": "CSV tables recomputed from row_masks.csv.gz alone match exactly",
+      "status": "PASS",
+      "actual": {
+        "tables": 8,
+        "tables_with_differences": {}
+      },
+      "expected": "no differences",
+      "tolerance": "exact",
+      "evidence": "checks.json#verification"
+    },
+    {
+      "check_id": "C32_invalid_events_reconcile_with_masks",
+      "description": "extract-layer NaN events match all_unique marginal NaN counts; all event rows exist in row_masks",
+      "status": "PASS",
+      "actual": {
+        "event_nan_total": 19,
+        "marginal_nan_total": 19,
+        "unknown_row_identity": null,
+        "mismatch_features": []
+      },
+      "expected": "equal totals",
+      "tolerance": "exact",
+      "evidence": "invalid_values.csv.gz"
+    },
+    {
+      "check_id": "C33_no_numeric_Q_output",
+      "description": "no numeric Q / group-score columns produced by this run",
+      "status": "PASS",
+      "actual": {
+        "files_with_forbidden_columns": [],
+        "final_Q_recomputed": false,
+        "final_strategy_selected": false
+      },
+      "expected": "none",
+      "tolerance": "exact",
+      "evidence": "output_manifest.json"
+    },
+    {
+      "check_id": "C34_json_strict_no_nan_infinity",
+      "description": "all JSON artifacts are strict (null + status fields)",
+      "status": "PASS",
+      "actual": {
+        "files_with_nan_or_infinity_tokens": []
+      },
+      "expected": "none",
+      "tolerance": "exact",
+      "evidence": "checks.json"
+    },
+    {
+      "check_id": "C35_six_official_scopes_present",
+      "description": "all six summarize scopes present with ALL totals",
+      "status": "PASS",
+      "actual": {
+        "A1_calibration": 40943,
+        "A1_holdout": 10287,
+        "A1_all_unique": 51230,
+        "extension_overlap_A1": 11419,
+        "extension_new_records": 209856,
+        "all_unique": 261086
+      },
+      "expected": "all six present",
+      "tolerance": "exact",
+      "evidence": "validity_counts.csv"
+    },
+    {
+      "check_id": "C36_resource_limits_respected",
+      "description": "wall-clock and memory stay within the unit limits",
+      "status": "PASS",
+      "actual": {
+        "elapsed_s": 562.9,
+        "wall_limit_s": 1200.0,
+        "peak_rss_bytes": 392937472,
+        "mem_limit_bytes": 2147483648
+      },
+      "expected": "elapsed <= limit and peak <= limit",
+      "tolerance": "exact",
+      "evidence": "environment.json"
+    },
+    {
+      "check_id": "C37_duplicate_mask_conflicts_reported",
+      "description": "duplicate keys whose anomaly masks differ are reported, not hidden",
+      "status": "PASS",
+      "actual": {
+        "duplicate_rows_with_differing_masks": 0,
+        "events_written": 0
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "invalid_values.csv.gz"
+    },
+    {
+      "check_id": "C38_audit_and_fingerprint_errors_recorded",
+      "description": "any extraction/fingerprint exception is recorded",
+      "status": "PASS",
+      "actual": {
+        "counters": {
+          "audit_errors": 0,
+          "fingerprint_errors": 0
+        },
+        "events": 0
+      },
+      "expected": "equal counts",
+      "tolerance": "exact",
+      "evidence": "invalid_values.csv.gz"
+    },
+    {
+      "check_id": "C39_single_decompression_pass_no_retry",
+      "description": "each file decompressed once, no retries, rows + unparsable lines equal decompressed lines",
+      "status": "PASS",
+      "actual": {
+        "A1": {
+          "decompress_passes": 1,
+          "retries": 0,
+          "line_count": 51230,
+          "rows": 51230
+        },
+        "A2_arxiv": {
+          "decompress_passes": 1,
+          "retries": 0,
+          "line_count": 17523,
+          "rows": 17523
+        },
+        "A3_github": {
+          "decompress_passes": 1,
+          "retries": 0,
+          "line_count": 203752,
+          "rows": 203752
+        }
+      },
+      "expected": "one pass per file",
+      "tolerance": "exact",
+      "evidence": "run.log"
+    },
+    {
+      "check_id": "C40_writes_confined_to_run_dir",
+      "description": "every produced file lives inside the run directory",
+      "status": "PASS",
+      "actual": {
+        "n_files": 21,
+        "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01A\\20260924T142229+08"
+      },
+      "expected": "all inside run dir",
+      "tolerance": "exact",
+      "evidence": "output_manifest.json"
+    }
+  ],
+  "synthetic_selftest": {
+    "cases": [
+      {
+        "name": "get_features:prrc_valid",
+        "status": "PASS",
+        "detail": "valid list -> argmax; value=5.0"
+      },
+      {
+        "name": "get_features:prrc_tie_first",
+        "status": "PASS",
+        "detail": "np.argmax returns first max; value=0.0"
+      },
+      {
+        "name": "get_features:prrc_wrong_length",
+        "status": "PASS",
+        "detail": "wrong length -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:prrc_nan_element",
+        "status": "PASS",
+        "detail": "NaN element -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:prrc_inf_element",
+        "status": "PASS",
+        "detail": "inf element -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:qurater_non_numeric",
+        "status": "PASS",
+        "detail": "non numeric element invalidates all four; value=nan"
+      },
+      {
+        "name": "get_features:qurater_valid",
+        "status": "PASS",
+        "detail": "valid list -> element copy; value=4.0"
+      },
+      {
+        "name": "get_features:ad_en_bool_element",
+        "status": "PASS",
+        "detail": "bool element accepted by source; value=0.0"
+      },
+      {
+        "name": "get_features:ad_en_valid",
+        "status": "PASS",
+        "detail": "argmax; value=1.0"
+      },
+      {
+        "name": "get_features:fineweb_valid",
+        "status": "PASS",
+        "detail": "element 0; value=2.5"
+      },
+      {
+        "name": "get_features:fineweb_wrong_length",
+        "status": "PASS",
+        "detail": "wrong length -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:scalar_bool",
+        "status": "PASS",
+        "detail": "source accepts bool scalar; value=1.0"
+      },
+      {
+        "name": "get_features:scalar_inf",
+        "status": "PASS",
+        "detail": "inf passes float(); value=inf"
+      },
+      {
+        "name": "get_features:scalar_string",
+        "status": "PASS",
+        "detail": "string -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:missing_field",
+        "status": "PASS",
+        "detail": "absent -> NaN; value=nan"
+      },
+      {
+        "name": "get_features:null_field",
+        "status": "PASS",
+        "detail": "null -> NaN; value=nan"
+      },
+      {
+        "name": "clip_equivalence:qurater_writing_style",
+        "status": "PASS",
+        "detail": "expected=[nan, 1.0, 0.0, 1.0, 0.0, 0.4791357171341221, 0.0, 1.0, 0.45275371034038786, 0.45275371034038786]; got=[nan, 1.0, 0.0, 1.0, 0.0, 0.4791357171341221, 0.0, 1.0, 0.45275371034038786, 0.45275371034038786]"
+      },
+      {
+        "name": "clip_equivalence:ad_en",
+        "status": "PASS",
+        "detail": "expected=[nan, 1.0, 0.0, 1.0, 0.0, 0.3, 0.0, 1.0, 0.0, 0.0]; got=[nan, 1.0, 0.0, 1.0, 0.0, 0.3, 0.0, 1.0, 0.0, 0.0]"
+      },
+      {
+        "name": "clip_equivalence:modernbert_reasoning",
+        "status": "PASS",
+        "detail": "expected=[nan, 1.0, 0.0, 1.0, 0.0, 0.06, 0.0, 1.0, 0.0, 0.0]; got=[nan, 1.0, 0.0, 1.0, 0.0, 0.06, 0.0, 1.0, 0.0, 0.0]"
+      },
+      {
+        "name": "clip_equivalence:fineweb_edu",
+        "status": "PASS",
+        "detail": "expected=[nan, 1.0, 0.0, 1.0, 0.0, 0.06679562953284063, 0.0, 1.0, 0.0, 0.0]; got=[nan, 1.0, 0.0, 1.0, 0.0, 0.06679562953284063, 0.0, 1.0, 0.0, 0.0]"
+      },
+      {
+        "name": "pandas_group_nan_propagation",
+        "status": "PASS",
+        "detail": "group mean NaN iff any constituent NaN"
+      },
+      {
+        "name": "pandas_q_nan_propagation",
+        "status": "PASS",
+        "detail": "Q NaN iff any group NaN"
+      },
+      {
+        "name": "pandas_range_std_masks",
+        "status": "PASS",
+        "detail": "range/std skipna rules with no inf values"
+      },
+      {
+        "name": "pandas_gt05_denominator",
+        "status": "PASS",
+        "detail": "NaN range contributes False; mean divides by all rows"
+      },
+      {
+        "name": "documented_inf_edge_case",
+        "status": "PASS",
+        "detail": "inf-inf -> NaN even without NaN groups; real normalized values are clipped to [0,1]"
+      },
+      {
+        "name": "split_deterministic",
+        "status": "PASS",
+        "detail": "split=0"
+      },
+      {
+        "name": "key_json_compact",
+        "status": "PASS",
+        "detail": "[\"abc\",\"a/b/c\"]"
+      },
+      {
+        "name": "mini_aggregation",
+        "status": "PASS",
+        "detail": "{\"checks\":[{\"detail\":\"{'scope': 'A1_calibration', 'domain': 'ALL', 'feature': 'modernbert_professionalism', 'n_total': 2, 'n_nan': 1, 'n_posinf': 0, 'n_neginf': 0, 'n_nonfinite': 1, 'n_finite': 1, 'rate_nan': 0.5, 'rate_nonfinite': 0.5, 'layer': 'extraction_scalar'}\",\"name\":\"mini_extract_marginal\",\"status\":\"PASS\"},{\"detail\":\"{'scope': 'A1_calibration', 'domain': 'ALL', 'feature': 'qurater_writing_style', 'n_total': 2, 'n_nan': 0, 'n_posinf': 0, 'n_neginf': 0, 'n_nonfinite': 0, 'n_finite': 2, 'rate_nan': 0.0, 'rate_nonfinite': 0.0, 'layer': 'extraction_scalar'}\",\"name\":\"mini_extract_marginal_2\",\"status\":\"PASS\"},{\"detail\":\"{'scope': 'A1_calibration', 'domain': 'ALL', 'n_total': 2, 'n_complete_25_notnan': 1, 'n_complete_25_finite': 1, 'n_complete_11_notnan': 1, 'n_complete_11_finite': 1, 'n_group_usability_valid_notnan': 2, 'n_group_knowledge_valid_notnan': 1, 'n_group_education_reasoning_valid_notnan': 2, 'n_group_usability_valid_finite': 2, 'n_group_knowledge_valid_finite': 1, 'n_group_education_reasoning_valid_finite': 2, 'n_would_Q_nan': 1, 'n_valid_mainQ_11': 1, 'rate_complete_11': 0.5, 'rate_complete_25': 0.5, 'rate_valid_mainQ_11': 0.5}\",\"name\":\"mini_validity\",\"status\":\"PASS\"},{\"detail\":\"{'scope': 'all_unique', 'domain': 'ALL', 'n_total': 5, 'n_complete_25_notnan': 2, 'n_complete_25_finite': 2, 'n_complete_11_notnan': 2, 'n_complete_11_finite': 2, 'n_group_usability_valid_notnan': 4, 'n_group_knowledge_valid_notnan': 3, 'n_group_education_reasoning_valid_notnan': 4, 'n_group_usability_valid_finite': 4, 'n_group_knowledge_valid_finite': 3, 'n_group_education_reasoning_valid_finite': 4, 'n_would_Q_nan': 3, 'n_valid_mainQ_11': 2, 'rate_complete_11': 0.4, 'rate_complete_25': 0.4, 'rate_valid_mainQ_11': 0.4}\",\"name\":\"mini_all_unique\",\"status\":\"PASS\"},{\"detail\":\"{\\\"A1_all_unique|ALL|extract_nan\\\":3,\\\"A1_all_unique|ALL|extract_nonfinite\\\":3,\\\"A1_all_unique|ALL|norm_nan\\\":3,\\\"A1_all_unique|ALL|norm_nonfinite\\\":3,\\\"A1_all_unique|ALL|raw_field_invalid\\\":3,\\\"A1_all_unique|commoncrawl|extract_nan\\\":2,\\\"A1_all_unique|commoncrawl|extract_nonfinite\\\":2,\\\"A1_all_unique|commoncrawl|norm_nan\\\":2,\\\"A1_all_unique|commoncrawl|norm_nonfinite\\\":2,\\\"A1_all_unique|commoncrawl|raw_field_invalid\\\":2,\\\"A1_all_unique|wikipedia|extract_nan\\\":1,\\\"A1_all_unique|wikipedia|extract_nonfinite\\\":1,\\\"A1_all_unique|wikipedia|norm_nan\\\":1,\\\"A1_all_unique|wikipedia|norm_nonfinite\\\":1,\\\"A1_all_unique|wikipedia|raw_field_invalid\\\":1,\\\"A1_calibration|ALL|extract_nan\\\":2,\\\"A1_calibration|ALL|extract_nonfinite\\\":2,\\\"A1_calibration|ALL|norm_nan\\\":2,\\\"A1_calibration|ALL|norm_nonfinite\\\":2,\\\"A1_calibration|ALL|raw_field_invalid\\\":2,\\\"A1_calibration|commoncrawl|extract_nan\\\":2,\\\"A1_calibration|commoncrawl|extract_nonfinite\\\":2,\\\"A1_calibration|commoncrawl|norm_nan\\\":2,\\\"A1_calibration|commoncrawl|norm_nonfinite\\\":2,\\\"A1_calibration|commoncrawl|raw_field_invalid\\\":2,\\\"A1_holdout|ALL|extract_nan\\\":1,\\\"A1_holdout|ALL|extract_nonfinite\\\":1,\\\"A1_holdout|ALL|norm_nan\\\":1,\\\"A1_holdout|ALL|norm_nonfinite\\\":1,\\\"A1_holdout|ALL|raw_field_invalid\\\":1,\\\"A1_holdout|wikipedia|extract_nan\\\":1,\\\"A1_holdout|wikipedia|extract_nonfinite\\\":1,\\\"A1_holdout|wikipedia|norm_nan\\\":1,\\\"A1_holdout|wikipedia|norm_nonfinite\\\":1,\\\"A1_holdout|wikipedia|raw_field_invalid\\\":1,\\\"all_unique|ALL|extract_nan\\\":5,\\\"all_unique|ALL|extract_nonfinite\\\":5,\\\"all_unique|ALL|norm_nan\\\":5,\\\"all_unique|ALL|norm_nonfinite\\\":5,\\\"all_unique|ALL|raw_field_invalid\\\":5,\\\"all_unique|commoncrawl|extract_nan\\\":3,\\\"all_unique|commoncrawl|extract_nonfinite\\\":3,\\\"all_unique|commoncrawl|norm_nan\\\":3,\\\"all_unique|commoncrawl|norm_nonfinite\\\":3,\\\"all_unique|commoncrawl|raw_field_invalid\\\":3,\\\"all_unique|github|extract_nan\\\":1,\\\"all_unique|github|extract_nonfinite\\\":1,\\\"all_unique|github|norm_nan\\\":1,\\\"all_unique|github|norm_nonfinite\\\":1,\\\"all_unique|github|raw_field_invalid\\\":1,\\\"all_unique|wikipedia|extract_nan\\\":1,\\\"all_unique|wikipedia|extract_nonfinite\\\":1,\\\"all_unique|wikipedia|norm_nan\\\":1,\\\"all_unique|wikipedia|norm_nonfinite\\\":1,\\\"all_unique|wikipedia|raw_field_invalid\\\":1,\\\"extension_new_records|ALL|extract_nan\\\":2,\\\"extension_new_records|ALL|extract_nonfinite\\\":2,\\\"extension_new_records|ALL|norm_nan\\\":2,\\\"extension_new_records|ALL|norm_nonfinite\\\":2,\\\"extension_new_records|ALL|raw_field_invalid\\\":2,\\\"extension_new_records|commoncrawl|extract_nan\\\":1,\\\"extension_new_records|commoncrawl|extract_nonfinite\\\":1,\\\"extension_new_records|commoncrawl|norm_nan\\\":1,\\\"extension_new_records|commoncrawl|norm_nonfinite\\\":1,\\\"extension_new_records|commoncrawl|raw_field_invalid\\\":1,\\\"extension_new_records|github|extract_nan\\\":1,\\\"extension_new_records|github|extract_nonfinite\\\":1,\\\"extension_new_records|github|norm_nan\\\":1,\\\"extension_new_records|github|norm_nonfinite\\\":1,\\\"extension_new_records|github|raw_field_invalid\\\":1,\\\"extension_overlap_A1|ALL|extract_nan\\\":1,\\\"extension_overlap_A1|ALL|extract_nonfinite\\\":1,\\\"extension_overlap_A1|ALL|norm_nan\\\":1,\\\"extension_overlap_A1|ALL|norm_nonfinite\\\":1,\\\"extension_overlap_A1|ALL|raw_field_invalid\\\":1,\\\"extension_overlap_A1|github|extract_nan\\\":1,\\\"extension_overlap_A1|github|extract_nonfinite\\\":1,\\\"extension_overlap_A1|github|norm_nan\\\":1,\\\"extension_overlap_A1|github|norm_nonfinite\\\":1,\\\"extension_overlap_A1|github|raw_field_invalid\\\":1,\\\"file_unique_first_A1|ALL|extract_nan\\\":3,\\\"file_unique_first_A1|ALL|extract_nonfinite\\\":3,\\\"file_unique_first_A1|ALL|norm_nan\\\":3,\\\"file_unique_first_A1|ALL|norm_nonfinite\\\":3,\\\"file_unique_first_A1|ALL|raw_field_invalid\\\":3,\\\"file_unique_first_A1|commoncrawl|extract_nan\\\":2,\\\"file_unique_first_A1|commoncrawl|extract_nonfinite\\\":2,\\\"file_unique_first_A1|commoncrawl|norm_nan\\\":2,\\\"file_unique_first_A1|commoncrawl|norm_nonfinite\\\":2,\\\"file_unique_first_A1|commoncrawl|raw_field_invalid\\\":2,\\\"file_unique_first_A1|wikipedia|extract_nan\\\":1,\\\"file_unique_first_A1|wikipedia|extract_nonfinite\\\":1,\\\"file_unique_first_A1|wikipedia|norm_nan\\\":1,\\\"file_unique_first_A1|wikipedia|norm_nonfinite\\\":1,\\\"file_unique_first_A1|wikipedia|raw_field_invalid\\\":1,\\\"file_unique_first_A2_arxiv|ALL|extract_nan\\\":1,\\\"file_unique_first_A2_arxiv|ALL|extract_nonfinite\\\":1,\\\"file_unique_first_A2_arxiv|ALL|norm_nan\\\":1,\\\"file_unique_first_A2_arxiv|ALL|norm_nonfinite\\\":1,\\\"file_unique_first_A2_arxiv|ALL|raw_field_invalid\\\":1,\\\"file_unique_first_A2_arxiv|commoncrawl|extract_nan\\\":1,\\\"file_unique_first_A2_arxiv|commoncrawl|extract_nonfinite\\\":1,\\\"file_unique_first_A2_arxiv|commoncrawl|norm_nan\\\":1,\\\"file_unique_first_A2_arxiv|commoncrawl|norm_nonfinite\\\":1,\\\"file_unique_first_A2_arxiv|commoncrawl|raw_field_invalid\\\":1,\\\"file_unique_first_A3_github|ALL|extract_nan\\\":1,\\\"file_unique_first_A3_github|ALL|extract_nonfinite\\\":1,\\\"file_unique_first_A3_github|ALL|norm_nan\\\":1,\\\"file_unique_first_A3_github|ALL|norm_nonfinite\\\":1,\\\"file_unique_first_A3_github|ALL|raw_field_invalid\\\":1,\\\"file_unique_first_A3_github|github|extract_nan\\\":1,\\\"file_unique_first_A3_github|github|extract_nonfinite\\\":1,\\\"file_unique_first_A3_github|github|norm_nan\\\":1,\\\"file_unique_first_A3_github|github|norm_nonfinite\\\":1,\\\"file_unique_first_A3_github|github|raw_field_invalid\\\":1}\",\"name\":\"mini_pattern_sums\",\"status\":\"PASS\"},{\"detail\":\"all rows checked\",\"name\":\"mini_pairwise_inclusion_exclusion\",\"status\":\"PASS\"},{\"detail\":\"{'scope': 'A1_holdout', 'domain': 'ALL', 'feature_set': 'mainQ11', 'n_total': 1, 'n_complete': 0, 'n_not_covered': 1, 'fraction_not_covered': 1.0, 'diagnostic_only': 'true'}\",\"name\":\"mini_complete_case\",\"status\":\"PASS\"}],\"n_checks\":7,\"n_failed\":0,\"status\":\"PASS\"}"
+      }
+    ],
+    "status": "PASS",
+    "mini_aggregation": {
+      "checks": [
+        {
+          "name": "mini_extract_marginal",
+          "status": "PASS",
+          "detail": "{'scope': 'A1_calibration', 'domain': 'ALL', 'feature': 'modernbert_professionalism', 'n_total': 2, 'n_nan': 1, 'n_posinf': 0, 'n_neginf': 0, 'n_nonfinite': 1, 'n_finite': 1, 'rate_nan': 0.5, 'rate_nonfinite': 0.5, 'layer': 'extraction_scalar'}"
+        },
+        {
+          "name": "mini_extract_marginal_2",
+          "status": "PASS",
+          "detail": "{'scope': 'A1_calibration', 'domain': 'ALL', 'feature': 'qurater_writing_style', 'n_total': 2, 'n_nan': 0, 'n_posinf': 0, 'n_neginf': 0, 'n_nonfinite': 0, 'n_finite': 2, 'rate_nan': 0.0, 'rate_nonfinite': 0.0, 'layer': 'extraction_scalar'}"
+        },
+        {
+          "name": "mini_validity",
+          "status": "PASS",
+          "detail": "{'scope': 'A1_calibration', 'domain': 'ALL', 'n_total': 2, 'n_complete_25_notnan': 1, 'n_complete_25_finite': 1, 'n_complete_11_notnan': 1, 'n_complete_11_finite': 1, 'n_group_usability_valid_notnan': 2, 'n_group_knowledge_valid_notnan': 1, 'n_group_education_reasoning_valid_notnan': 2, 'n_group_usability_valid_finite': 2, 'n_group_knowledge_valid_finite': 1, 'n_group_education_reasoning_valid_finite': 2, 'n_would_Q_nan': 1, 'n_valid_mainQ_11': 1, 'rate_complete_11': 0.5, 'rate_complete_25': 0.5, 'rate_valid_mainQ_11': 0.5}"
+        },
+        {
+          "name": "mini_all_unique",
+          "status": "PASS",
+          "detail": "{'scope': 'all_unique', 'domain': 'ALL', 'n_total': 5, 'n_complete_25_notnan': 2, 'n_complete_25_finite': 2, 'n_complete_11_notnan': 2, 'n_complete_11_finite': 2, 'n_group_usability_valid_notnan': 4, 'n_group_knowledge_valid_notnan': 3, 'n_group_education_reasoning_valid_notnan': 4, 'n_group_usability_valid_finite': 4, 'n_group_knowledge_valid_finite': 3, 'n_group_education_reasoning_valid_finite': 4, 'n_would_Q_nan': 3, 'n_valid_mainQ_11': 2, 'rate_complete_11': 0.4, 'rate_complete_25': 0.4, 'rate_valid_mainQ_11': 0.4}"
+        },
+        {
+          "name": "mini_pattern_sums",
+          "status": "PASS",
+          "detail": "{\"A1_all_unique|ALL|extract_nan\":3,\"A1_all_unique|ALL|extract_nonfinite\":3,\"A1_all_unique|ALL|norm_nan\":3,\"A1_all_unique|ALL|norm_nonfinite\":3,\"A1_all_unique|ALL|raw_field_invalid\":3,\"A1_all_unique|commoncrawl|extract_nan\":2,\"A1_all_unique|commoncrawl|extract_nonfinite\":2,\"A1_all_unique|commoncrawl|norm_nan\":2,\"A1_all_unique|commoncrawl|norm_nonfinite\":2,\"A1_all_unique|commoncrawl|raw_field_invalid\":2,\"A1_all_unique|wikipedia|extract_nan\":1,\"A1_all_unique|wikipedia|extract_nonfinite\":1,\"A1_all_unique|wikipedia|norm_nan\":1,\"A1_all_unique|wikipedia|norm_nonfinite\":1,\"A1_all_unique|wikipedia|raw_field_invalid\":1,\"A1_calibration|ALL|extract_nan\":2,\"A1_calibration|ALL|extract_nonfinite\":2,\"A1_calibration|ALL|norm_nan\":2,\"A1_calibration|ALL|norm_nonfinite\":2,\"A1_calibration|ALL|raw_field_invalid\":2,\"A1_calibration|commoncrawl|extract_nan\":2,\"A1_calibration|commoncrawl|extract_nonfinite\":2,\"A1_calibration|commoncrawl|norm_nan\":2,\"A1_calibration|commoncrawl|norm_nonfinite\":2,\"A1_calibration|commoncrawl|raw_field_invalid\":2,\"A1_holdout|ALL|extract_nan\":1,\"A1_holdout|ALL|extract_nonfinite\":1,\"A1_holdout|ALL|norm_nan\":1,\"A1_holdout|ALL|norm_nonfinite\":1,\"A1_holdout|ALL|raw_field_invalid\":1,\"A1_holdout|wikipedia|extract_nan\":1,\"A1_holdout|wikipedia|extract_nonfinite\":1,\"A1_holdout|wikipedia|norm_nan\":1,\"A1_holdout|wikipedia|norm_nonfinite\":1,\"A1_holdout|wikipedia|raw_field_invalid\":1,\"all_unique|ALL|extract_nan\":5,\"all_unique|ALL|extract_nonfinite\":5,\"all_unique|ALL|norm_nan\":5,\"all_unique|ALL|norm_nonfinite\":5,\"all_unique|ALL|raw_field_invalid\":5,\"all_unique|commoncrawl|extract_nan\":3,\"all_unique|commoncrawl|extract_nonfinite\":3,\"all_unique|commoncrawl|norm_nan\":3,\"all_unique|commoncrawl|norm_nonfinite\":3,\"all_unique|commoncrawl|raw_field_invalid\":3,\"all_unique|github|extract_nan\":1,\"all_unique|github|extract_nonfinite\":1,\"all_unique|github|norm_nan\":1,\"all_unique|github|norm_nonfinite\":1,\"all_unique|github|raw_field_invalid\":1,\"all_unique|wikipedia|extract_nan\":1,\"all_unique|wikipedia|extract_nonfinite\":1,\"all_unique|wikipedia|norm_nan\":1,\"all_unique|wikipedia|norm_nonfinite\":1,\"all_unique|wikipedia|raw_field_invalid\":1,\"extension_new_records|ALL|extract_nan\":2,\"extension_new_records|ALL|extract_nonfinite\":2,\"extension_new_records|ALL|norm_nan\":2,\"extension_new_records|ALL|norm_nonfinite\":2,\"extension_new_records|ALL|raw_field_invalid\":2,\"extension_new_records|commoncrawl|extract_nan\":1,\"extension_new_records|commoncrawl|extract_nonfinite\":1,\"extension_new_records|commoncrawl|norm_nan\":1,\"extension_new_records|commoncrawl|norm_nonfinite\":1,\"extension_new_records|commoncrawl|raw_field_invalid\":1,\"extension_new_records|github|extract_nan\":1,\"extension_new_records|github|extract_nonfinite\":1,\"extension_new_records|github|norm_nan\":1,\"extension_new_records|github|norm_nonfinite\":1,\"extension_new_records|github|raw_field_invalid\":1,\"extension_overlap_A1|ALL|extract_nan\":1,\"extension_overlap_A1|ALL|extract_nonfinite\":1,\"extension_overlap_A1|ALL|norm_nan\":1,\"extension_overlap_A1|ALL|norm_nonfinite\":1,\"extension_overlap_A1|ALL|raw_field_invalid\":1,\"extension_overlap_A1|github|extract_nan\":1,\"extension_overlap_A1|github|extract_nonfinite\":1,\"extension_overlap_A1|github|norm_nan\":1,\"extension_overlap_A1|github|norm_nonfinite\":1,\"extension_overlap_A1|github|raw_field_invalid\":1,\"file_unique_first_A1|ALL|extract_nan\":3,\"file_unique_first_A1|ALL|extract_nonfinite\":3,\"file_unique_first_A1|ALL|norm_nan\":3,\"file_unique_first_A1|ALL|norm_nonfinite\":3,\"file_unique_first_A1|ALL|raw_field_invalid\":3,\"file_unique_first_A1|commoncrawl|extract_nan\":2,\"file_unique_first_A1|commoncrawl|extract_nonfinite\":2,\"file_unique_first_A1|commoncrawl|norm_nan\":2,\"file_unique_first_A1|commoncrawl|norm_nonfinite\":2,\"file_unique_first_A1|commoncrawl|raw_field_invalid\":2,\"file_unique_first_A1|wikipedia|extract_nan\":1,\"file_unique_first_A1|wikipedia|extract_nonfinite\":1,\"file_unique_first_A1|wikipedia|norm_nan\":1,\"file_unique_first_A1|wikipedia|norm_nonfinite\":1,\"file_unique_first_A1|wikipedia|raw_field_invalid\":1,\"file_unique_first_A2_arxiv|ALL|extract_nan\":1,\"file_unique_first_A2_arxiv|ALL|extract_nonfinite\":1,\"file_unique_first_A2_arxiv|ALL|norm_nan\":1,\"file_unique_first_A2_arxiv|ALL|norm_nonfinite\":1,\"file_unique_first_A2_arxiv|ALL|raw_field_invalid\":1,\"file_unique_first_A2_arxiv|commoncrawl|extract_nan\":1,\"file_unique_first_A2_arxiv|commoncrawl|extract_nonfinite\":1,\"file_unique_first_A2_arxiv|commoncrawl|norm_nan\":1,\"file_unique_first_A2_arxiv|commoncrawl|norm_nonfinite\":1,\"file_unique_first_A2_arxiv|commoncrawl|raw_field_invalid\":1,\"file_unique_first_A3_github|ALL|extract_nan\":1,\"file_unique_first_A3_github|ALL|extract_nonfinite\":1,\"file_unique_first_A3_github|ALL|norm_nan\":1,\"file_unique_first_A3_github|ALL|norm_nonfinite\":1,\"file_unique_first_A3_github|ALL|raw_field_invalid\":1,\"file_unique_first_A3_github|github|extract_nan\":1,\"file_unique_first_A3_github|github|extract_nonfinite\":1,\"file_unique_first_A3_github|github|norm_nan\":1,\"file_unique_first_A3_github|github|norm_nonfinite\":1,\"file_unique_first_A3_github|github|raw_field_invalid\":1}"
+        },
+        {
+          "name": "mini_pairwise_inclusion_exclusion",
+          "status": "PASS",
+          "detail": "all rows checked"
+        },
+        {
+          "name": "mini_complete_case",
+          "status": "PASS",
+          "detail": "{'scope': 'A1_holdout', 'domain': 'ALL', 'feature_set': 'mainQ11', 'n_total': 1, 'n_complete': 0, 'n_not_covered': 1, 'fraction_not_covered': 1.0, 'diagnostic_only': 'true'}"
+        }
+      ],
+      "n_checks": 7,
+      "n_failed": 0,
+      "status": "PASS"
+    },
+    "n_cases": 28,
+    "n_failed": 0
+  },
+  "verification_from_row_masks": {
+    "feature_missing_counts": {
+      "n_written": 1250,
+      "n_recomputed": 1250,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "missing_patterns": {
+      "n_written": 366,
+      "n_recomputed": 366,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "missing_pairwise": {
+      "n_written": 51750,
+      "n_recomputed": 51750,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "validity_counts": {
+      "n_written": 50,
+      "n_recomputed": 50,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "summary_denominators": {
+      "n_written": 650,
+      "n_recomputed": 650,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "complete_case_count_only": {
+      "n_written": 150,
+      "n_recomputed": 150,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "group_validity_distribution": {
+      "n_written": 50,
+      "n_recomputed": 50,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    },
+    "group_mask_intersections": {
+      "n_written": 300,
+      "n_recomputed": 300,
+      "n_missing_in_recompute": 0,
+      "n_extra_in_recompute": 0,
+      "n_value_mismatches": 0,
+      "missing_examples": [],
+      "extra_examples": [],
+      "mismatch_examples": []
+    }
+  },
+  "invalid_values_reconciliation": {
+    "stats": {
+      "events": 133,
+      "layer_raw": 114,
+      "reason_nan_element": 114,
+      "layer_extract": 19,
+      "reason_nan": 19
+    },
+    "extract_events": {
+      "modernbert_professionalism|nan": 6,
+      "modernbert_reasoning|nan": 13
+    },
+    "raw_element_events": {
+      "modernbert_professionalism|nan_element": 36,
+      "modernbert_reasoning|nan_element": 78
+    },
+    "n_row_keys": 272505
+  },
+  "reaggregation_counters": {
+    "rows": 272505,
+    "parsed_rows": 272505,
+    "extract_vs_norm_nan_mismatch": 19
+  },
+  "errors": [
+    "7 acceptance checks FAILED"
+  ],
+  "unfinished": []
+}

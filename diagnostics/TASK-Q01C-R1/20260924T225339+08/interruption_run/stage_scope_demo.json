@@ -1,0 +1,158 @@
+{
+  "missing_prerequisite_run": {
+    "command": [
+      "D:\\anaconda\\python.exe",
+      "-X",
+      "utf8",
+      "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+      "--run-id",
+      "missing_prereq",
+      "--out-root",
+      "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\stage_demo_missing_prereq",
+      "--fixture-dir",
+      "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+      "--stage",
+      "s20_score_primary"
+    ],
+    "exit_code": 6,
+    "missing_prerequisites": [
+      {
+        "stage": "s10_scan_a1",
+        "reason": "stage marker missing"
+      },
+      {
+        "stage": "s11_scan_a2",
+        "reason": "stage marker missing"
+      },
+      {
+        "stage": "s12_scan_a3",
+        "reason": "stage marker missing"
+      }
+    ],
+    "status": "FAILED"
+  },
+  "single_stage_runs": [
+    {
+      "stage": "s00_preflight",
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "single_stage",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\stage_demo_single_stage",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+        "--stage",
+        "s00_preflight"
+      ],
+      "exit_code": 0,
+      "run_summary_copy": "run_summary_s00_preflight.json",
+      "executed_stages": [
+        "s00_preflight"
+      ],
+      "reused_stages": {},
+      "skipped_stages": {
+        "s01_synthetic_tests": "not executed (stage plan: s00_preflight)",
+        "s10_scan_a1": "not executed (stage plan: s00_preflight)",
+        "s11_scan_a2": "not executed (stage plan: s00_preflight)",
+        "s12_scan_a3": "not executed (stage plan: s00_preflight)",
+        "s20_score_primary": "not executed (stage plan: s00_preflight)",
+        "s30_sensitivity": "not executed (stage plan: s00_preflight)",
+        "s40_summarize": "not executed (stage plan: s00_preflight)",
+        "s50_verify": "not executed (stage plan: s00_preflight)",
+        "s60_finalize": "not executed (stage plan: s00_preflight)"
+      }
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "single_stage",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\stage_demo_single_stage",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+        "--stage",
+        "s01_synthetic_tests",
+        "--resume"
+      ],
+      "exit_code": 0,
+      "run_summary_copy": "run_summary_s01_synthetic_tests.json",
+      "executed_stages": [
+        "s01_synthetic_tests"
+      ],
+      "reused_stages": {},
+      "skipped_stages": {
+        "s00_preflight": "not executed (stage plan: s01_synthetic_tests)",
+        "s10_scan_a1": "not executed (stage plan: s01_synthetic_tests)",
+        "s11_scan_a2": "not executed (stage plan: s01_synthetic_tests)",
+        "s12_scan_a3": "not executed (stage plan: s01_synthetic_tests)",
+        "s20_score_primary": "not executed (stage plan: s01_synthetic_tests)",
+        "s30_sensitivity": "not executed (stage plan: s01_synthetic_tests)",
+        "s40_summarize": "not executed (stage plan: s01_synthetic_tests)",
+        "s50_verify": "not executed (stage plan: s01_synthetic_tests)",
+        "s60_finalize": "not executed (stage plan: s01_synthetic_tests)"
+      }
+    },
+    {
+      "stage": "s10_scan_a1",
+      "command": [
+        "D:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+        "--run-id",
+        "single_stage",
+        "--out-root",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\stage_demo_single_stage",
+        "--fixture-dir",
+        "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+        "--stage",
+        "s10_scan_a1",
+        "--resume"
+      ],
+      "exit_code": 0,
+      "run_summary_copy": "run_summary_s10_scan_a1.json",
+      "executed_stages": [
+        "s10_scan_a1"
+      ],
+      "reused_stages": {},
+      "skipped_stages": {
+        "s00_preflight": "not executed (stage plan: s10_scan_a1)",
+        "s01_synthetic_tests": "not executed (stage plan: s10_scan_a1)",
+        "s11_scan_a2": "not executed (stage plan: s10_scan_a1)",
+        "s12_scan_a3": "not executed (stage plan: s10_scan_a1)",
+        "s20_score_primary": "not executed (stage plan: s10_scan_a1)",
+        "s30_sensitivity": "not executed (stage plan: s10_scan_a1)",
+        "s40_summarize": "not executed (stage plan: s10_scan_a1)",
+        "s50_verify": "not executed (stage plan: s10_scan_a1)",
+        "s60_finalize": "not executed (stage plan: s10_scan_a1)"
+      }
+    }
+  ],
+  "single_stage_run_summary": {
+    "executed_stages": [
+      "s10_scan_a1"
+    ],
+    "skipped_stages": {
+      "s00_preflight": "not executed (stage plan: s10_scan_a1)",
+      "s01_synthetic_tests": "not executed (stage plan: s10_scan_a1)",
+      "s11_scan_a2": "not executed (stage plan: s10_scan_a1)",
+      "s12_scan_a3": "not executed (stage plan: s10_scan_a1)",
+      "s20_score_primary": "not executed (stage plan: s10_scan_a1)",
+      "s30_sensitivity": "not executed (stage plan: s10_scan_a1)",
+      "s40_summarize": "not executed (stage plan: s10_scan_a1)",
+      "s50_verify": "not executed (stage plan: s10_scan_a1)",
+      "s60_finalize": "not executed (stage plan: s10_scan_a1)"
+    },
+    "status": "PARTIAL"
+  },
+  "note": "--stage really controls the executed scope and refuses to run without prerequisites"
+}

@@ -1,0 +1,3 @@
+{"time": "2026-09-25T10:32:53.716677+08:00", "stage": "profiles_recompute", "status": "START", "detail": "22 corrected physical-fixed profile tasks; no full/fold/bootstrap/B7/B8 refit"}
+{"time": "2026-09-25T10:57:48.177475+08:00", "stage": "profiles_recompute", "status": "PASS", "detail": "22/22 full-point production passes"}
+{"time": "2026-09-25T10:57:48.196249+08:00", "stage": "G4_reconciliation", "status": "PASS", "detail": "ACCEPT_B6_SOURCE_RELATION"}

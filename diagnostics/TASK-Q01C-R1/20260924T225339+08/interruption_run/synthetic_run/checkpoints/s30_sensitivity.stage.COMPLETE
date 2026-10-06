@@ -1,0 +1,10 @@
+{
+  "kind": "stage",
+  "stage": "s30_sensitivity",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:53:45+08:00",
+  "outputs": {
+    "quality_features_scores.parquet": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f",
+    "imputation_parameters_sensitivity.json": "da86d6df9a02dd826d9cfd0130d27a62350ceff17c1c94733612248104f84605"
+  }
+}

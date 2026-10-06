@@ -1,0 +1,844 @@
+{
+  "task": "TASK-C01-R1",
+  "run_id": "20260924T225116+08",
+  "verified_at": "2026-09-24T22:51:29.808142+08:00",
+  "started_at": "2026-09-24T22:51:27.531314+08:00",
+  "verifier": "verify_c01_repairs.py (independent: does not import the repair module)",
+  "environment": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3"
+  },
+  "counts": {
+    "checks": 39,
+    "PASS": 34,
+    "FAIL": 5
+  },
+  "overall_status": "FAIL",
+  "repaired_checks_status_counts": {
+    "PASS": 79,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 5,
+    "NOT_VERIFIABLE": 4
+  },
+  "repaired_checks_key_c8_counts": {
+    "PASS": 44,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 0,
+    "NOT_VERIFIABLE": 0
+  },
+  "results": [
+    {
+      "verification_id": "V-C8-01",
+      "claim": "1958 files = 1954 parseable + 4 failed",
+      "status": "PASS",
+      "actual": [
+        1958,
+        1954,
+        4
+      ],
+      "expected": [
+        1958,
+        1954,
+        4
+      ],
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "recount rows and parse_status classes from the frozen parse log",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-C8-02",
+      "claim": "1863 directories; 1768 with one JSON and 95 with two",
+      "status": "PASS",
+      "actual": [
+        1863,
+        1768,
+        95
+      ],
+      "expected": [
+        1863,
+        1768,
+        95
+      ],
+      "evidence": "c8_parse_log.csv + c8_directory_file_counts.csv",
+      "verification_method": "group the parse log by directory and compare with the frozen counts artifact; the two artifacts must agree on the same directory set",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-C8-03",
+      "claim": "directory set identical between the two frozen artifacts",
+      "status": "PASS",
+      "actual": {
+        "parse_log_dirs": 1863,
+        "counts_dirs": 1863
+      },
+      "expected": {
+        "parse_log_dirs": 1863,
+        "counts_dirs": 1863
+      },
+      "evidence": "c8_parse_log.csv vs c8_directory_file_counts.csv",
+      "verification_method": "set equality",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-C8-04",
+      "claim": "4 damaged directories; 3 of them have no parseable file",
+      "status": "FAIL",
+      "actual": {
+        "corrupt_dirs": [
+          "DreadPoor_Winter_Dawn-8B-TIES",
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ],
+        "pure": [
+          "DreadPoor_Winter_Dawn-8B-TIES",
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ]
+      },
+      "expected": {
+        "corrupt_dirs": 4,
+        "pure": 3
+      },
+      "evidence": "c8_parse_log.csv + c8_corrupt_files.csv",
+      "verification_method": "derive the damaged directory set without using the frozen corrupt list, then check that the two artifacts describe the same four files",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-C8-05",
+      "claim": "11724 task slots, 11699 finite, 25 missing",
+      "status": "PASS",
+      "actual": [
+        11724,
+        11699,
+        25
+      ],
+      "expected": [
+        11724,
+        11699,
+        25
+      ],
+      "evidence": "c8_group_scores_all_runs.csv + c8_parse_log.csv",
+      "verification_method": "count rows and non-null scores directly in the group detail",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-C8-06",
+      "claim": "DreadPoor contributes 6 finite scores; the other three damaged directories contribute 0",
+      "status": "PASS",
+      "actual": {
+        "DreadPoor_Winter_Dawn-8B-TIES": 6,
+        "FINGU-AI_Chocolatine-Fusion-14B": 0,
+        "Intel_neural-chat-7b-v3-3": 0,
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": 0
+      },
+      "expected": {
+        "DreadPoor_Winter_Dawn-8B-TIES": 6,
+        "the other three": 0
+      },
+      "evidence": "c8_group_scores_all_runs.csv",
+      "verification_method": "per-directory recount of finite scores",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-01",
+      "claim": "corrected directory table covers exactly the frozen directory set",
+      "status": "PASS",
+      "actual": {
+        "rows": 1863,
+        "set_equal": true
+      },
+      "expected": {
+        "rows": 1863,
+        "set_equal": true
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv vs c8_parse_log.csv",
+      "verification_method": "row-count and set comparison",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-02",
+      "claim": "per-directory file identity total == success + failed",
+      "status": "PASS",
+      "actual": {
+        "violations": 0
+      },
+      "expected": {
+        "violations": 0
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv",
+      "verification_method": "row-wise arithmetic test",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-03",
+      "claim": "sum of n_results_valid equals the independent finite recount",
+      "status": "PASS",
+      "actual": {
+        "corrected_sum": 11699,
+        "independent_recount": 11699
+      },
+      "expected": {
+        "both": 11699
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv vs c8_group_scores_all_runs.csv",
+      "verification_method": "sum the corrected column and compare with a recount of the group detail",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-04",
+      "claim": "n_results_missing equals parseable slots minus valid results",
+      "status": "PASS",
+      "actual": {
+        "violations": 0
+      },
+      "expected": {
+        "violations": 0
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv",
+      "verification_method": "recompute the expected column from two other columns of the same table AND from the parse log success counts",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-05",
+      "claim": "all four corrupt files are propagated into coverage",
+      "status": "PASS",
+      "actual": {
+        "DreadPoor_Winter_Dawn-8B-TIES": {
+          "row_present": true,
+          "parse_failed_count": 1,
+          "has_parse_failure": true,
+          "failed_file_named": true
+        },
+        "FINGU-AI_Chocolatine-Fusion-14B": {
+          "row_present": true,
+          "parse_failed_count": 1,
+          "has_parse_failure": true,
+          "failed_file_named": true
+        },
+        "Intel_neural-chat-7b-v3-3": {
+          "row_present": true,
+          "parse_failed_count": 1,
+          "has_parse_failure": true,
+          "failed_file_named": true
+        },
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": {
+          "row_present": true,
+          "parse_failed_count": 1,
+          "has_parse_failure": true,
+          "failed_file_named": true
+        }
+      },
+      "expected": {
+        "per_directory": "row present, has_parse_failure true, failed file named"
+      },
+      "evidence": "c8_corrupt_files.csv vs c8_directory_aggregate_corrected.csv",
+      "verification_method": "join each corrupt file onto the corrected directory row",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-CDT-06",
+      "claim": "the three pure-corrupt directories stay visible with zero coverage",
+      "status": "FAIL",
+      "actual": {
+        "DreadPoor_Winter_Dawn-8B-TIES": [
+          1,
+          6
+        ],
+        "FINGU-AI_Chocolatine-Fusion-14B": [
+          0,
+          0
+        ],
+        "Intel_neural-chat-7b-v3-3": [
+          0,
+          0
+        ],
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": [
+          0,
+          0
+        ]
+      },
+      "expected": {
+        "each": [
+          0,
+          0
+        ]
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv",
+      "verification_method": "presence and zero-coverage test",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-01",
+      "claim": "corrected model x task table keeps the frozen key set",
+      "status": "PASS",
+      "actual": {
+        "rows": 11160,
+        "keys_equal": true,
+        "only_corrected": 0,
+        "only_frozen": 0
+      },
+      "expected": {
+        "rows": 11160,
+        "keys_equal": true,
+        "only_corrected": 0,
+        "only_frozen": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_model_task_aggregate.csv",
+      "verification_method": "row count and key-set comparison",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-02",
+      "claim": "corrected n_valid_results equals an independent per-key recount",
+      "status": "PASS",
+      "actual": {
+        "mismatches": 0,
+        "examples": {},
+        "sum": 11699
+      },
+      "expected": {
+        "mismatches": 0,
+        "sum": 11699
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_group_scores_all_runs.csv",
+      "verification_method": "this file rebuilds the per-(model,task) dictionary straight from the group detail instead of calling any repair function",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-03",
+      "claim": "corrected n_missing_results uses the parseable-file denominator",
+      "status": "PASS",
+      "actual": {
+        "violations": 0,
+        "negative_values": 0
+      },
+      "expected": {
+        "violations": 0,
+        "negative_values": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv + c8_parse_log.csv",
+      "verification_method": "recompute the expected denominator from the frozen parse log success counts",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-04",
+      "claim": "coverage fields of every model x task row trace back to the corrected directory table",
+      "status": "PASS",
+      "actual": {
+        "mismatching_rows": 0
+      },
+      "expected": {
+        "mismatching_rows": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_directory_aggregate_corrected.csv",
+      "verification_method": "key-wise reconciliation of four coverage fields",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-05",
+      "claim": "the damaged directory that still has data flags all six of its rows",
+      "status": "PASS",
+      "actual": {
+        "rows": 6,
+        "flagged": 6,
+        "other_flagged": 0
+      },
+      "expected": {
+        "rows": 6,
+        "flagged": 6,
+        "other_flagged": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv",
+      "verification_method": "per-key flag audit",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MT-06",
+      "claim": "the multi-run source columns are preserved, not re-decided",
+      "status": "PASS",
+      "actual": {
+        "missing_columns": [],
+        "canonical_identical": true
+      },
+      "expected": {
+        "missing_columns": [],
+        "canonical_identical": true
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_model_task_aggregate.csv",
+      "verification_method": "column presence and exact value equality for the two pre-existing selection rules",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-01",
+      "claim": "the wide table rebuilds the six task scores from the frozen model x task table",
+      "status": "PASS",
+      "actual": {
+        "rows": 1860,
+        "models_compared": 1860
+      },
+      "expected": {
+        "rows": 1860,
+        "models_compared": 1860
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_task_aggregate.csv",
+      "verification_method": "this file pivots the frozen model x task table itself and compares cell by cell",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-02",
+      "claim": "n_tasks_valid, complete flag, complete mean and partial mean all reproduce independently",
+      "status": "PASS",
+      "actual": {
+        "n_tasks_valid_equal": true,
+        "complete_mean_equal": true,
+        "partial_mean_equal": true
+      },
+      "expected": {
+        "n_tasks_valid_equal": true,
+        "complete_mean_equal": true,
+        "partial_mean_equal": true
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_task_aggregate.csv",
+      "verification_method": "independent pivot + independent mean computation",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-03",
+      "claim": "n_tasks_valid distribution is 1:3, 2:1, 3:2, 6:1854",
+      "status": "PASS",
+      "actual": {
+        "1": 3,
+        "2": 1,
+        "3": 2,
+        "6": 1854
+      },
+      "expected": {
+        "1": 3,
+        "2": 1,
+        "3": 2,
+        "6": 1854
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "value_counts of the recomputed column",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-04",
+      "claim": "1854 complete models and 6 partial models",
+      "status": "PASS",
+      "actual": {
+        "complete": 1854,
+        "partial": 6
+      },
+      "expected": {
+        "complete": 1854,
+        "partial": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "flag counts",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-05",
+      "claim": "no partial model carries a six-task mean",
+      "status": "PASS",
+      "actual": {
+        "partial_with_complete_mean": 0,
+        "complete_mean_finite": 1854
+      },
+      "expected": {
+        "partial_with_complete_mean": 0,
+        "complete_mean_finite": 1854
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "null test on every row flagged partial; this is the core defect the repair removes",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-06",
+      "claim": "partial_task_mean is populated exactly on the six partial models",
+      "status": "PASS",
+      "actual": {
+        "finite": 6
+      },
+      "expected": {
+        "finite": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "presence/absence test per row class",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-07",
+      "claim": "the legacy skipna column is preserved and still carries the old partial values",
+      "status": "PASS",
+      "actual": {
+        "legacy_matches_frozen": true,
+        "partial_rows_with_legacy_value": 6
+      },
+      "expected": {
+        "legacy_matches_frozen": true,
+        "partial_rows_with_legacy_value": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_wide_canonical.csv",
+      "verification_method": "value equality with the frozen skipna column",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-WIDE-08",
+      "claim": "no model identity was invented for a pure-corrupt directory",
+      "status": "FAIL",
+      "actual": {
+        "key_set_equal": true,
+        "pure_corrupt_in_wide": [
+          "DreadPoor_Winter_Dawn-8B-TIES"
+        ]
+      },
+      "expected": {
+        "key_set_equal": true,
+        "pure_corrupt_in_wide": []
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_task_aggregate.csv vs c8_parse_log.csv",
+      "verification_method": "set comparison; the pure-corrupt directories must not appear as models",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-NN-01",
+      "claim": "non-numeric metric count reconciles across two frozen artifacts",
+      "status": "PASS",
+      "actual": {
+        "inventory": 7806,
+        "leaf_recount": 7806
+      },
+      "expected": {
+        "inventory": 7806,
+        "leaf_recount": 7806
+      },
+      "evidence": "c8_task_inventory.csv vs c8_leaf_metrics.csv.gz",
+      "verification_method": "this file recounts the leaf table row by row with its own filter (metric != 'alias' and nonnumeric == 1)",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-01",
+      "claim": "neither R1 script contains a constant-PASS pattern",
+      "status": "FAIL",
+      "actual": {
+        "PASS if True": {
+          "repair": 1,
+          "verify": 1
+        },
+        "if True:": {
+          "repair": 0,
+          "verify": 1
+        },
+        "status = \"PASS\"": {
+          "repair": 0,
+          "verify": 0
+        },
+        "raw_untouched=True": {
+          "repair": 0,
+          "verify": 1
+        },
+        "raw_untouched = True": {
+          "repair": 0,
+          "verify": 1
+        }
+      },
+      "expected": {
+        "all_zero": true
+      },
+      "evidence": "repair_c01_from_artifacts.py + verify_c01_repairs.py",
+      "verification_method": "static text scan for the forbidden constant-status idioms",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-02",
+      "claim": "the verifier does not import the production repair module",
+      "status": "FAIL",
+      "actual": {
+        "import_detected": true
+      },
+      "expected": {
+        "import_detected": false
+      },
+      "evidence": "verify_c01_repairs.py",
+      "verification_method": "static import scan of the verifier source",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-03",
+      "claim": "no PASS in the repaired checker is missing its actual/expected pair",
+      "status": "PASS",
+      "actual": {
+        "passes_without_values": []
+      },
+      "expected": {
+        "passes_without_values": []
+      },
+      "evidence": "repaired_checks.json",
+      "verification_method": "every PASS must carry a non-null actual and expected value",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-04",
+      "claim": "the repaired checker uses only the allowed status vocabulary",
+      "status": "PASS",
+      "actual": {
+        "unexpected_statuses": []
+      },
+      "expected": {
+        "unexpected_statuses": []
+      },
+      "evidence": "repaired_checks.json",
+      "verification_method": "status vocabulary scan",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-05",
+      "claim": "no key C8 item is FAIL, NOT_CHECKED or NOT_VERIFIABLE",
+      "status": "PASS",
+      "actual": {
+        "key_items": 44,
+        "counts": {
+          "PASS": 44,
+          "WARN": 0,
+          "FAIL": 0,
+          "NOT_CHECKED": 0,
+          "NOT_VERIFIABLE": 0
+        }
+      },
+      "expected": {
+        "counts": {
+          "FAIL": 0,
+          "NOT_CHECKED": 0,
+          "NOT_VERIFIABLE": 0
+        }
+      },
+      "evidence": "repaired_checks.json",
+      "verification_method": "status audit restricted to the key C8 items",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-SUM-01",
+      "claim": "run_summary.json declares the same file accounting as the independent recount",
+      "status": "PASS",
+      "actual": {
+        "n_files_total": 1958,
+        "parse_success": 1954,
+        "parse_failed": 4,
+        "n_directories": 1863
+      },
+      "expected": {
+        "files_total": 1958,
+        "files_ok": 1954,
+        "files_failed": 4,
+        "dirs": 1863,
+        "dirs_one_file": 1768,
+        "dirs_two_files": 95,
+        "corrupt_dirs": [
+          "DreadPoor_Winter_Dawn-8B-TIES",
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ],
+        "pure_corrupt_dirs": [
+          "DreadPoor_Winter_Dawn-8B-TIES",
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ],
+        "group_rows": 11724,
+        "group_finite": 11699,
+        "group_missing": 25,
+        "dir_valid_sum": 11699,
+        "mt_rows": 11160,
+        "mt_valid_rows": 11135,
+        "mt_zero_rows": 25,
+        "mt_valid_sum": 11699,
+        "wide_rows": 1860,
+        "nonnumeric_inventory": 7806,
+        "nonnumeric_leaf": 7806
+      },
+      "evidence": "run_summary.json vs frozen C01 artifacts",
+      "verification_method": "compare the declared numbers with this file's own recount",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-SUM-02",
+      "claim": "run_summary.json declares the same wide-table numbers as the corrected table",
+      "status": "PASS",
+      "actual": {
+        "rows": 1860,
+        "n_tasks_valid_distribution": {
+          "1": 3,
+          "2": 1,
+          "3": 2,
+          "6": 1854
+        },
+        "six_task_complete_true": 1854,
+        "six_task_complete_false": 6,
+        "six_task_mean_complete_only_finite": 1854,
+        "partial_task_mean_finite": 6,
+        "partial_models": [
+          "HuggingFaceH4_zephyr-7b-alpha",
+          "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+          "HuggingFaceTB_SmolLM2-135M",
+          "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+          "google_gemma-7b-it",
+          "mistralai_Mistral-7B-v0.3"
+        ]
+      },
+      "expected": {
+        "rows": 1860
+      },
+      "evidence": "run_summary.json vs c8_model_wide_corrected.csv",
+      "verification_method": "declared vs recomputed comparison",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-SUM-03",
+      "claim": "the repair declares that it never read a raw attachment",
+      "status": "PASS",
+      "actual": {
+        "raw_attachments_read": false
+      },
+      "expected": {
+        "raw_attachments_read": false
+      },
+      "evidence": "run_summary.json",
+      "verification_method": "declared value; the independent evidence is the input manifest, which this file re-checks path by path",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IN-01",
+      "claim": "every declared input is inside the frozen C01 directory; every input except the manifest itself matches the hash archived in that manifest",
+      "status": "PASS",
+      "actual": {
+        "inputs": 22,
+        "raw_paths": [],
+        "outside_source_dir": [],
+        "hash_mismatches": [],
+        "inputs_without_a_frozen_manifest_entry": [
+          "output_manifest.json"
+        ]
+      },
+      "expected": {
+        "raw_paths": [],
+        "outside_source_dir": [],
+        "hash_mismatches": [],
+        "inputs_without_a_frozen_manifest_entry": [
+          "output_manifest.json"
+        ]
+      },
+      "evidence": "input_manifest.json vs output_manifest.json + live hashes",
+      "verification_method": "re-hash every declared input and compare with the archived manifest; the manifest cannot contain a hash of itself, so that single input is handled explicitly instead of being counted as a mismatch",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-IND-06",
+      "claim": "the key C8 item set is non-empty and covers the file, corruption, coverage and completeness families",
+      "status": "PASS",
+      "actual": {
+        "key_items": 44,
+        "ids": [
+          "R1-C8-FILE-TOTAL",
+          "R1-C8-FILE-OK",
+          "R1-C8-FILE-FAIL",
+          "R1-C8-FILE-IDENTITY",
+          "R1-C8-DIR-COUNT",
+          "R1-C8-DIR-FILESET-EQUAL",
+          "R1-C8-DIR-FILE-COUNT-MATCH",
+          "R1-C8-DIR-ONE-FILE",
+          "R1-C8-DIR-TWO-FILE",
+          "R1-C8-CORRUPT-SET",
+          "R1-C8-CORRUPT-SHA",
+          "R1-C8-CORRUPT-DIRS",
+          "R1-C8-PURE-CORRUPT",
+          "R1-C8-PROPAGATION",
+          "R1-C8-PURE-CORRUPT-ROW",
+          "R1-C8-DIR-ID",
+          "R1-C8-SLOTS",
+          "R1-C8-FINITE",
+          "R1-C8-MISSING-SLOTS",
+          "R1-C8-DIRVALID-SUM",
+          "R1-C8-CORRUPTDIR-SCORES",
+          "R1-C8-GROUP-GRIDSET",
+          "R1-C8-MT-ROWS",
+          "R1-C8-MT-VALID-ROWS",
+          "R1-C8-MT-ZERO-ROWS",
+          "R1-C8-MT-SUM",
+          "R1-C8-MT-RECOMPUTE",
+          "R1-C8-MT-COVERAGE",
+          "R1-C8-MT-INCOMPLETE-PROP",
+          "R1-C8-WIDE-ROWS",
+          "R1-C8-WIDE-ROWS-CORRECTED",
+          "R1-C8-WIDE-DIST",
+          "R1-C8-WIDE-DIST-CROSS",
+          "R1-C8-WIDE-COMPLETE",
+          "R1-C8-WIDE-COMPLETE-MEAN",
+          "R1-C8-WIDE-PARTIAL-MEAN",
+          "R1-C8-WIDE-PARTIAL-NAN",
+          "R1-C8-WIDE-PARTIAL-LIST",
+          "R1-C8-WIDE-CONSISTENT",
+          "R1-C8-WIDE-LEGACY-CONTRAST",
+          "R1-C8-X-DIRMODEL",
+          "R1-C8-X-MTWIDE",
+          "R1-C8-NONNUMERIC",
+          "R1-C8-GROUP-KEY-MISSING"
+        ]
+      },
+      "expected": {
+        "key_items": ">= 40 covering identity, propagation and partial-mean"
+      },
+      "evidence": "repaired_checks.json",
+      "verification_method": "inventory of the key C8 items",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MAP-01",
+      "claim": "every original check id has a documented repair disposition",
+      "status": "PASS",
+      "actual": {
+        "original_checks": 39,
+        "unmapped": [],
+        "repair_map_entries": 41,
+        "map_keys_without_original_id": []
+      },
+      "expected": {
+        "unmapped": []
+      },
+      "evidence": "checks.json (frozen) vs repaired_checks.json (this run)",
+      "verification_method": "set comparison of the original check ids against the repair ledger keys",
+      "limitations": "none"
+    },
+    {
+      "verification_id": "V-MAP-02",
+      "claim": "every constant or single-source original check was either repaired or explicitly downgraded",
+      "status": "PASS",
+      "actual": {
+        "downgraded": {
+          "ID-04b": "DOWNGRADED_NOT_VERIFIABLE",
+          "DATE-03b": "DOWNGRADED_NOT_VERIFIABLE",
+          "JOIN-02": "DOWNGRADED_NOT_CHECKED",
+          "SCOPE-04": "DOWNGRADED_NOT_VERIFIABLE"
+        }
+      },
+      "expected": {
+        "at least": 4
+      },
+      "evidence": "repaired_checks.json",
+      "verification_method": "count of explicit downgrades in the repair ledger",
+      "limitations": "none"
+    }
+  ],
+  "notes": [
+    "Expected values used by this verifier are recomputed with this file's own code from the frozen TASK-C01 artifacts; no repair function is called and no repaired value is trusted.",
+    "This verifier writes output_manifest.json as its final action, so the manifest hash of every artifact (including this verifier's own log) is stable. output_manifest.json itself is the only file it cannot contain."
+  ]
+}

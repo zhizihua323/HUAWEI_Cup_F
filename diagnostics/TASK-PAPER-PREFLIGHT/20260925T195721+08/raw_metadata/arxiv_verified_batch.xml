@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/yCgPSeWJZTHa/ek65sMvGbpt80E</id>
+  <title>arXiv Query: search_query=&amp;id_list=2203.15556,2001.08361,2407.01492,2304.01373,2304.15004,2311.07911,2210.09261,2103.03874,2311.12022,2310.16049,2406.01574,2406.17557,2412.13663,2302.03169,2406.07545&amp;start=0&amp;max_results=30</title>
+  <updated>2026-09-25T12:00:11Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=30&amp;id_list=2203.15556,2001.08361,2407.01492,2304.01373,2304.15004,2311.07911,2210.09261,2103.03874,2311.12022,2310.16049,2406.01574,2406.17557,2412.13663,2302.03169,2406.07545" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2304.01373v2</id>
+    <title>Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling</title>
+    <updated>2023-05-31T17:54:07Z</updated>
+    <link href="https://arxiv.org/abs/2304.01373v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.01373v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce \textit{Pythia}, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend \textit{Pythia} to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at \url{https://github.com/EleutherAI/pythia}.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-03T20:58:15Z</published>
+    <arxiv:comment>Code at https://github.com/EleutherAI/pythia</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Stella Biderman</name>
+    </author>
+    <author>
+      <name>Hailey Schoelkopf</name>
+    </author>
+    <author>
+      <name>Quentin Anthony</name>
+    </author>
+    <author>
+      <name>Herbie Bradley</name>
+    </author>
+    <author>
+      <name>Kyle O'Brien</name>
+    </author>
+    <author>
+      <name>Eric Hallahan</name>
+    </author>
+    <author>
+      <name>Mohammad Aflah Khan</name>
+    </author>
+    <author>
+      <name>Shivanshu Purohit</name>
+    </author>
+    <author>
+      <name>USVSN Sai Prashanth</name>
+    </author>
+    <author>
+      <name>Edward Raff</name>
+    </author>
+    <author>
+      <name>Aviya Skowron</name>
+    </author>
+    <author>
+      <name>Lintang Sutawika</name>
+    </author>
+    <author>
+      <name>Oskar van der Wal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.07911v1</id>
+    <title>Instruction-Following Evaluation for Large Language Models</title>
+    <updated>2023-11-14T05:13:55Z</updated>
+    <link href="https://arxiv.org/abs/2311.07911v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.07911v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One core capability of Large Language Models (LLMs) is to follow natural language instructions. However, the evaluation of such abilities is not standardized: Human evaluations are expensive, slow, and not objectively reproducible, while LLM-based auto-evaluation is potentially biased or limited by the ability of the evaluator LLM. To overcome these issues, we introduce Instruction-Following Eval (IFEval) for large language models. IFEval is a straightforward and easy-to-reproduce evaluation benchmark. It focuses on a set of "verifiable instructions" such as "write in more than 400 words" and "mention the keyword of AI at least 3 times". We identified 25 types of those verifiable instructions and constructed around 500 prompts, with each prompt containing one or more verifiable instructions. We show evaluation results of two widely available LLMs on the market. Our code and data can be found at https://github.com/google-research/google-research/tree/master/instruction_following_eval</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-14T05:13:55Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jeffrey Zhou</name>
+    </author>
+    <author>
+      <name>Tianjian Lu</name>
+    </author>
+    <author>
+      <name>Swaroop Mishra</name>
+    </author>
+    <author>
+      <name>Siddhartha Brahma</name>
+    </author>
+    <author>
+      <name>Sujoy Basu</name>
+    </author>
+    <author>
+      <name>Yi Luan</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Le Hou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.16049v2</id>
+    <title>MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning</title>
+    <updated>2024-03-23T21:21:44Z</updated>
+    <link href="https://arxiv.org/abs/2310.16049v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.16049v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) equipped with techniques like chain-of-thought prompting have demonstrated impressive capabilities, they still fall short in their ability to reason robustly in complex settings. However, evaluating LLM reasoning is challenging because system capabilities continue to grow while benchmark datasets for tasks like logical deduction have remained static. We introduce MuSR, a dataset for evaluating language models on multistep soft reasoning tasks specified in a natural language narrative. This dataset has two crucial features. First, it is created through a novel neurosymbolic synthetic-to-natural generation algorithm, enabling the construction of complex reasoning instances that challenge GPT-4 (e.g., murder mysteries roughly 1000 words in length) and which can be scaled further as more capable LLMs are released. Second, our dataset instances are free text narratives corresponding to real-world domains of reasoning; this makes it simultaneously much more challenging than other synthetically-crafted benchmarks while remaining realistic and tractable for human annotators to solve with high accuracy. We evaluate a range of LLMs and prompting techniques on this dataset and characterize the gaps that remain for techniques like chain-of-thought to perform robust reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-24T17:59:20Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>ICLR 2024 (Spotlight)</arxiv:journal_ref>
+    <author>
+      <name>Zayne Sprague</name>
+    </author>
+    <author>
+      <name>Xi Ye</name>
+    </author>
+    <author>
+      <name>Kaj Bostrom</name>
+    </author>
+    <author>
+      <name>Swarat Chaudhuri</name>
+    </author>
+    <author>
+      <name>Greg Durrett</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.03169v3</id>
+    <title>Data Selection for Language Models via Importance Resampling</title>
+    <updated>2023-11-18T21:33:01Z</updated>
+    <link href="https://arxiv.org/abs/2302.03169v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.03169v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Selecting a suitable pretraining dataset is crucial for both general-domain (e.g., GPT-3) and domain-specific (e.g., Codex) language models (LMs). We formalize this problem as selecting a subset of a large raw unlabeled dataset to match a desired target distribution given unlabeled target samples. Due to the scale and dimensionality of the raw text data, existing methods use simple heuristics or require human experts to manually curate data. Instead, we extend the classic importance resampling approach used in low-dimensions for LM data selection. We propose Data Selection with Importance Resampling (DSIR), an efficient and scalable framework that estimates importance weights in a reduced feature space for tractability and selects data with importance resampling according to these weights. We instantiate the DSIR framework with hashed n-gram features for efficiency, enabling the selection of 100M documents from the full Pile dataset in 4.5 hours. To measure whether hashed n-gram features preserve the aspects of the data that are relevant to the target, we define KL reduction, a data metric that measures the proximity between the selected pretraining data and the target on some feature space. Across 8 data selection methods (including expert selection), KL reduction on hashed n-gram features highly correlates with average downstream accuracy (r=0.82). When selecting data for continued pretraining on a specific domain, DSIR performs comparably to expert curation across 8 target distributions. When pretraining general-domain models (target is Wikipedia and books), DSIR improves over random selection and heuristic filtering baselines by 2-2.5% on the GLUE benchmark. Code is available at https://github.com/p-lambda/dsir.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-06T23:57:56Z</published>
+    <arxiv:comment>NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sang Michael Xie</name>
+    </author>
+    <author>
+      <name>Shibani Santurkar</name>
+    </author>
+    <author>
+      <name>Tengyu Ma</name>
+    </author>
+    <author>
+      <name>Percy Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.07545v1</id>
+    <title>Open-LLM-Leaderboard: From Multi-choice to Open-style Questions for LLMs Evaluation, Benchmark, and Arena</title>
+    <updated>2024-06-11T17:59:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.07545v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.07545v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multiple-choice questions (MCQ) are frequently used to assess large language models (LLMs). Typically, an LLM is given a question and selects the answer deemed most probable after adjustments for factors like length. Unfortunately, LLMs may inherently favor certain answer choice IDs, such as A/B/C/D, due to inherent biases of priori unbalanced probabilities, influencing the prediction of answers based on these IDs. Previous research has introduced methods to reduce this ''selection bias'' by simply permutating options on a few test samples and applying to new ones. Another problem of MCQ is the lottery ticket choice by ''random guessing''. The LLM does not learn particular knowledge, but the option is guessed correctly. This situation is especially serious for those small-scale LLMs. To address them, a more thorough approach involves shifting from MCQ to open-style questions, which can fundamentally eliminate selection bias and random guessing issues. However, transitioning causes its own set of challenges in (1) identifying suitable open-style questions and (2) validating the correctness of LLM open-style responses against human-annotated ground-truths. This work aims to tackle these significant difficulties, and establish a new LLM evaluation benchmark through entirely open-style questions. Consequently, we introduce the Open-LLM-Leaderboard to track various LLMs' performance and reflect true capability of them, such as GPT-4o/4/3.5, Claude 3, Gemini, etc. Our code and dataset are available at https://github.com/VILA-Lab/Open-LLM-Leaderboard.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-11T17:59:47Z</published>
+    <arxiv:comment>Code and dataset are available at https://github.com/VILA-Lab/Open-LLM-Leaderboard</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aidar Myrzakhan</name>
+    </author>
+    <author>
+      <name>Sondos Mahmoud Bsharat</name>
+    </author>
+    <author>
+      <name>Zhiqiang Shen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2001.08361v1</id>
+    <title>Scaling Laws for Neural Language Models</title>
+    <updated>2020-01-23T03:59:20Z</updated>
+    <link href="https://arxiv.org/abs/2001.08361v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2001.08361v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study empirical scaling laws for language model performance on the cross-entropy loss. The loss scales as a power-law with model size, dataset size, and the amount of compute used for training, with some trends spanning more than seven orders of magnitude. Other architectural details such as network width or depth have minimal effects within a wide range. Simple equations govern the dependence of overfitting on model/dataset size and the dependence of training speed on model size. These relationships allow us to determine the optimal allocation of a fixed compute budget. Larger models are significantly more sample-efficient, such that optimally compute-efficient training involves training very large models on a relatively modest amount of data and stopping significantly before convergence.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-01-23T03:59:20Z</published>
+    <arxiv:comment>19 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Sam McCandlish</name>
+    </author>
+    <author>
+      <name>Tom Henighan</name>
+    </author>
+    <author>
+      <name>Tom B. Brown</name>
+    </author>
+    <author>
+      <name>Benjamin Chess</name>
+    </author>
+    <author>
+      <name>Rewon Child</name>
+    </author>
+    <author>
+      <name>Scott Gray</name>
+    </author>
+    <author>
+      <name>Alec Radford</name>
+    </author>
+    <author>
+      <name>Jeffrey Wu</name>
+    </author>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.15556v1</id>
+    <title>Training Compute-Optimal Large Language Models</title>
+    <updated>2022-03-29T13:38:03Z</updated>
+    <link href="https://arxiv.org/abs/2203.15556v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.15556v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the optimal model size and number of tokens for training a transformer language model under a given compute budget. We find that current large language models are significantly undertrained, a consequence of the recent focus on scaling language models whilst keeping the amount of training data constant. By training over 400 language models ranging from 70 million to over 16 billion parameters on 5 to 500 billion tokens, we find that for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled. We test this hypothesis by training a predicted compute-optimal model, Chinchilla, that uses the same compute budget as Gopher but with 70B parameters and 4$\times$ more more data. Chinchilla uniformly and significantly outperforms Gopher (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing NLG (530B) on a large range of downstream evaluation tasks. This also means that Chinchilla uses substantially less compute for fine-tuning and inference, greatly facilitating downstream usage. As a highlight, Chinchilla reaches a state-of-the-art average accuracy of 67.5% on the MMLU benchmark, greater than a 7% improvement over Gopher.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-29T13:38:03Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jordan Hoffmann</name>
+    </author>
+    <author>
+      <name>Sebastian Borgeaud</name>
+    </author>
+    <author>
+      <name>Arthur Mensch</name>
+    </author>
+    <author>
+      <name>Elena Buchatskaya</name>
+    </author>
+    <author>
+      <name>Trevor Cai</name>
+    </author>
+    <author>
+      <name>Eliza Rutherford</name>
+    </author>
+    <author>
+      <name>Diego de Las Casas</name>
+    </author>
+    <author>
+      <name>Lisa Anne Hendricks</name>
+    </author>
+    <author>
+      <name>Johannes Welbl</name>
+    </author>
+    <author>
+      <name>Aidan Clark</name>
+    </author>
+    <author>
+      <name>Tom Hennigan</name>
+    </author>
+    <author>
+      <name>Eric Noland</name>
+    </author>
+    <author>
+      <name>Katie Millican</name>
+    </author>
+    <author>
+      <name>George van den Driessche</name>
+    </author>
+    <author>
+      <name>Bogdan Damoc</name>
+    </author>
+    <author>
+      <name>Aurelia Guy</name>
+    </author>
+    <author>
+      <name>Simon Osindero</name>
+    </author>
+    <author>
+      <name>Karen Simonyan</name>
+    </author>
+    <author>
+      <name>Erich Elsen</name>
+    </author>
+    <author>
+      <name>Jack W. Rae</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Laurent Sifre</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.09261v1</id>
+    <title>Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them</title>
+    <updated>2022-10-17T17:08:26Z</updated>
+    <link href="https://arxiv.org/abs/2210.09261v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.09261v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>BIG-Bench (Srivastava et al., 2022) is a diverse evaluation suite that focuses on tasks believed to be beyond the capabilities of current language models. Language models have already made good progress on this benchmark, with the best model in the BIG-Bench paper outperforming average reported human-rater results on 65% of the BIG-Bench tasks via few-shot prompting. But on what tasks do language models fall short of average human-rater performance, and are those tasks actually unsolvable by current language models?
+  In this work, we focus on a suite of 23 challenging BIG-Bench tasks which we call BIG-Bench Hard (BBH). These are the task for which prior language model evaluations did not outperform the average human-rater. We find that applying chain-of-thought (CoT) prompting to BBH tasks enables PaLM to surpass the average human-rater performance on 10 of the 23 tasks, and Codex (code-davinci-002) to surpass the average human-rater performance on 17 of the 23 tasks. Since many tasks in BBH require multi-step reasoning, few-shot prompting without CoT, as done in the BIG-Bench evaluations (Srivastava et al., 2022), substantially underestimates the best performance and capabilities of language models, which is better captured via CoT prompting. As further analysis, we explore the interaction between CoT and model scale on BBH, finding that CoT enables emergent task performance on several BBH tasks with otherwise flat scaling curves.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-17T17:08:26Z</published>
+    <arxiv:comment>GitHub repository: https://github.com/suzgunmirac/BIG-Bench-Hard</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mirac Suzgun</name>
+    </author>
+    <author>
+      <name>Nathan Scales</name>
+    </author>
+    <author>
+      <name>Nathanael Schärli</name>
+    </author>
+    <author>
+      <name>Sebastian Gehrmann</name>
+    </author>
+    <author>
+      <name>Yi Tay</name>
+    </author>
+    <author>
+      <name>Hyung Won Chung</name>
+    </author>
+    <author>
+      <name>Aakanksha Chowdhery</name>
+    </author>
+    <author>
+      <name>Quoc V. Le</name>
+    </author>
+    <author>
+      <name>Ed H. Chi</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.01492v2</id>
+    <title>RegMix: Data Mixture as Regression for Language Model Pre-training</title>
+    <updated>2025-01-23T17:35:43Z</updated>
+    <link href="https://arxiv.org/abs/2407.01492v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.01492v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The data mixture for large language model pre-training significantly impacts performance, yet how to determine an effective mixture remains unclear. We propose RegMix to automatically identify a high-performing data mixture by formulating it as a regression task. RegMix trains many small models on diverse data mixtures, uses regression to predict performance of unseen mixtures, and applies the best predicted mixture to train a large-scale model with orders of magnitude more compute. To empirically validate RegMix, we train 512 models with 1M parameters for 1B tokens to fit the regression model and predict the best data mixture. Using this mixture we train a 1B parameter model for 25B tokens (i.e. 1000x larger and 25x longer) which we find performs best among 64 candidate 1B parameter models with other mixtures. Furthermore, RegMix consistently outperforms human selection in experiments involving models up to 7B models trained on 100B tokens, while matching or exceeding DoReMi using just 10% of the computational resources. Our experiments also show that (1) Data mixtures significantly impact performance; (2) Web corpora rather than data perceived as high-quality like Wikipedia have the strongest positive correlation with downstream performance; (3) Domains interact in complex ways often contradicting common sense, thus automatic approaches like RegMix are needed; (4) Data mixture effects transcend scaling laws. Our code is available at https://github.com/sail-sg/regmix.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-01T17:31:03Z</published>
+    <arxiv:comment>ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qian Liu</name>
+    </author>
+    <author>
+      <name>Xiaosen Zheng</name>
+    </author>
+    <author>
+      <name>Niklas Muennighoff</name>
+    </author>
+    <author>
+      <name>Guangtao Zeng</name>
+    </author>
+    <author>
+      <name>Longxu Dou</name>
+    </author>
+    <author>
+      <name>Tianyu Pang</name>
+    </author>
+    <author>
+      <name>Jing Jiang</name>
+    </author>
+    <author>
+      <name>Min Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.17557v2</id>
+    <title>The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale</title>
+    <updated>2024-10-31T11:37:49Z</updated>
+    <link href="https://arxiv.org/abs/2406.17557v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.17557v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of a large language model (LLM) depends heavily on the quality and size of its pretraining dataset. However, the pretraining datasets for state-of-the-art open LLMs like Llama 3 and Mixtral are not publicly available and very little is known about how they were created. In this work, we introduce FineWeb, a 15-trillion token dataset derived from 96 Common Crawl snapshots that produces better-performing LLMs than other open pretraining datasets. To advance the understanding of how best to curate high-quality pretraining datasets, we carefully document and ablate all of the design choices used in FineWeb, including in-depth investigations of deduplication and filtering strategies. In addition, we introduce FineWeb-Edu, a 1.3-trillion token collection of educational text filtered from FineWeb. LLMs pretrained on FineWeb-Edu exhibit dramatically better performance on knowledge- and reasoning-intensive benchmarks like MMLU and ARC. Along with our datasets, we publicly release our data curation codebase and all of the models trained during our ablation experiments.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-25T13:50:56Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Guilherme Penedo</name>
+    </author>
+    <author>
+      <name>Hynek Kydlíček</name>
+    </author>
+    <author>
+      <name>Loubna Ben allal</name>
+    </author>
+    <author>
+      <name>Anton Lozhkov</name>
+    </author>
+    <author>
+      <name>Margaret Mitchell</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+    <author>
+      <name>Leandro Von Werra</name>
+    </author>
+    <author>
+      <name>Thomas Wolf</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.01574v6</id>
+    <title>MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark</title>
+    <updated>2024-11-06T02:54:00Z</updated>
+    <link href="https://arxiv.org/abs/2406.01574v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.01574v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the age of large-scale language models, benchmarks like the Massive Multitask Language Understanding (MMLU) have been pivotal in pushing the boundaries of what AI can achieve in language comprehension and reasoning across diverse domains. However, as models continue to improve, their performance on these benchmarks has begun to plateau, making it increasingly difficult to discern differences in model capabilities. This paper introduces MMLU-Pro, an enhanced dataset designed to extend the mostly knowledge-driven MMLU benchmark by integrating more challenging, reasoning-focused questions and expanding the choice set from four to ten options. Additionally, MMLU-Pro eliminates the trivial and noisy questions in MMLU. Our experimental results show that MMLU-Pro not only raises the challenge, causing a significant drop in accuracy by 16% to 33% compared to MMLU but also demonstrates greater stability under varying prompts. With 24 different prompt styles tested, the sensitivity of model scores to prompt variations decreased from 4-5% in MMLU to just 2% in MMLU-Pro. Additionally, we found that models utilizing Chain of Thought (CoT) reasoning achieved better performance on MMLU-Pro compared to direct answering, which is in stark contrast to the findings on the original MMLU, indicating that MMLU-Pro includes more complex reasoning questions. Our assessments confirm that MMLU-Pro is a more discriminative benchmark to better track progress in the field.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-03T17:53:00Z</published>
+    <arxiv:comment>This version has been accepted and published at NeurIPS 2024 Track Datasets and Benchmarks (Spotlight)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yubo Wang</name>
+    </author>
+    <author>
+      <name>Xueguang Ma</name>
+    </author>
+    <author>
+      <name>Ge Zhang</name>
+    </author>
+    <author>
+      <name>Yuansheng Ni</name>
+    </author>
+    <author>
+      <name>Abhranil Chandra</name>
+    </author>
+    <author>
+      <name>Shiguang Guo</name>
+    </author>
+    <author>
+      <name>Weiming Ren</name>
+    </author>
+    <author>
+      <name>Aaran Arulraj</name>
+    </author>
+    <author>
+      <name>Xuan He</name>
+    </author>
+    <author>
+      <name>Ziyan Jiang</name>
+    </author>
+    <author>
+      <name>Tianle Li</name>
+    </author>
+    <author>
+      <name>Max Ku</name>
+    </author>
+    <author>
+      <name>Kai Wang</name>
+    </author>
+    <author>
+      <name>Alex Zhuang</name>
+    </author>
+    <author>
+      <name>Rongqi Fan</name>
+    </author>
+    <author>
+      <name>Xiang Yue</name>
+    </author>
+    <author>
+      <name>Wenhu Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.12022v1</id>
+    <title>GPQA: A Graduate-Level Google-Proof Q&amp;A Benchmark</title>
+    <updated>2023-11-20T18:57:34Z</updated>
+    <link href="https://arxiv.org/abs/2311.12022v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.12022v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present GPQA, a challenging dataset of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry. We ensure that the questions are high-quality and extremely difficult: experts who have or are pursuing PhDs in the corresponding domains reach 65% accuracy (74% when discounting clear mistakes the experts identified in retrospect), while highly skilled non-expert validators only reach 34% accuracy, despite spending on average over 30 minutes with unrestricted access to the web (i.e., the questions are "Google-proof"). The questions are also difficult for state-of-the-art AI systems, with our strongest GPT-4 based baseline achieving 39% accuracy. If we are to use future AI systems to help us answer very hard questions, for example, when developing new scientific knowledge, we need to develop scalable oversight methods that enable humans to supervise their outputs, which may be difficult even if the supervisors are themselves skilled and knowledgeable. The difficulty of GPQA both for skilled non-experts and frontier AI systems should enable realistic scalable oversight experiments, which we hope can help devise ways for human experts to reliably get truthful information from AI systems that surpass human capabilities.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-20T18:57:34Z</published>
+    <arxiv:comment>28 pages, 5 figures, 7 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>David Rein</name>
+    </author>
+    <author>
+      <name>Betty Li Hou</name>
+    </author>
+    <author>
+      <name>Asa Cooper Stickland</name>
+    </author>
+    <author>
+      <name>Jackson Petty</name>
+    </author>
+    <author>
+      <name>Richard Yuanzhe Pang</name>
+    </author>
+    <author>
+      <name>Julien Dirani</name>
+    </author>
+    <author>
+      <name>Julian Michael</name>
+    </author>
+    <author>
+      <name>Samuel R. Bowman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.03874v2</id>
+    <title>Measuring Mathematical Problem Solving With the MATH Dataset</title>
+    <updated>2021-11-08T21:30:18Z</updated>
+    <link href="https://arxiv.org/abs/2103.03874v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.03874v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Many intellectual endeavors require mathematical problem solving, but this skill remains beyond the capabilities of computers. To measure this ability in machine learning models, we introduce MATH, a new dataset of 12,500 challenging competition mathematics problems. Each problem in MATH has a full step-by-step solution which can be used to teach models to generate answer derivations and explanations. To facilitate future research and increase accuracy on MATH, we also contribute a large auxiliary pretraining dataset which helps teach models the fundamentals of mathematics. Even though we are able to increase accuracy on MATH, our results show that accuracy remains relatively low, even with enormous Transformer models. Moreover, we find that simply increasing budgets and model parameter counts will be impractical for achieving strong mathematical reasoning if scaling trends continue. While scaling Transformers is automatically solving most other text-based tasks, scaling is not currently solving MATH. To have more traction on mathematical problem solving we will likely need new algorithmic advancements from the broader research community.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-05T18:59:39Z</published>
+    <arxiv:comment>NeurIPS 2021. Code and the MATH dataset is available at https://github.com/hendrycks/math/</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <author>
+      <name>Collin Burns</name>
+    </author>
+    <author>
+      <name>Saurav Kadavath</name>
+    </author>
+    <author>
+      <name>Akul Arora</name>
+    </author>
+    <author>
+      <name>Steven Basart</name>
+    </author>
+    <author>
+      <name>Eric Tang</name>
+    </author>
+    <author>
+      <name>Dawn Song</name>
+    </author>
+    <author>
+      <name>Jacob Steinhardt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.15004v2</id>
+    <title>Are Emergent Abilities of Large Language Models a Mirage?</title>
+    <updated>2023-05-22T15:56:25Z</updated>
+    <link href="https://arxiv.org/abs/2304.15004v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.15004v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work claims that large language models display emergent abilities, abilities not present in smaller-scale models that are present in larger-scale models. What makes emergent abilities intriguing is two-fold: their sharpness, transitioning seemingly instantaneously from not present to present, and their unpredictability, appearing at seemingly unforeseeable model scales. Here, we present an alternative explanation for emergent abilities: that for a particular task and model family, when analyzing fixed model outputs, emergent abilities appear due to the researcher's choice of metric rather than due to fundamental changes in model behavior with scale. Specifically, nonlinear or discontinuous metrics produce apparent emergent abilities, whereas linear or continuous metrics produce smooth, continuous predictable changes in model performance. We present our alternative explanation in a simple mathematical model, then test it in three complementary ways: we (1) make, test and confirm three predictions on the effect of metric choice using the InstructGPT/GPT-3 family on tasks with claimed emergent abilities; (2) make, test and confirm two predictions about metric choices in a meta-analysis of emergent abilities on BIG-Bench; and (3) show to choose metrics to produce never-before-seen seemingly emergent abilities in multiple vision tasks across diverse deep networks. Via all three analyses, we provide evidence that alleged emergent abilities evaporate with different metrics or with better statistics, and may not be a fundamental property of scaling AI models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-28T17:52:11Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Rylan Schaeffer</name>
+    </author>
+    <author>
+      <name>Brando Miranda</name>
+    </author>
+    <author>
+      <name>Sanmi Koyejo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.13663v2</id>
+    <title>Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference</title>
+    <updated>2024-12-19T06:32:26Z</updated>
+    <link href="https://arxiv.org/abs/2412.13663v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.13663v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only models and representing a major Pareto improvement over older encoders. Trained on 2 trillion tokens with a native 8192 sequence length, ModernBERT models exhibit state-of-the-art results on a large pool of evaluations encompassing diverse classification tasks and both single and multi-vector retrieval on different domains (including code). In addition to strong downstream performance, ModernBERT is also the most speed and memory efficient encoder and is designed for inference on common GPUs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-18T09:39:44Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Benjamin Warner</name>
+    </author>
+    <author>
+      <name>Antoine Chaffin</name>
+    </author>
+    <author>
+      <name>Benjamin Clavié</name>
+    </author>
+    <author>
+      <name>Orion Weller</name>
+    </author>
+    <author>
+      <name>Oskar Hallström</name>
+    </author>
+    <author>
+      <name>Said Taghadouini</name>
+    </author>
+    <author>
+      <name>Alexis Gallagher</name>
+    </author>
+    <author>
+      <name>Raja Biswas</name>
+    </author>
+    <author>
+      <name>Faisal Ladhak</name>
+    </author>
+    <author>
+      <name>Tom Aarsen</name>
+    </author>
+    <author>
+      <name>Nathan Cooper</name>
+    </author>
+    <author>
+      <name>Griffin Adams</name>
+    </author>
+    <author>
+      <name>Jeremy Howard</name>
+    </author>
+    <author>
+      <name>Iacopo Poli</name>
+    </author>
+  </entry>
+</feed>
+

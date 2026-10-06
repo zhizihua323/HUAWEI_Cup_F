@@ -1,0 +1,20 @@
+{
+  "command": [
+    "D:\\anaconda\\python.exe",
+    "-X",
+    "utf8",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "midstage_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\midstage_interruption",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\synthetic_fixture",
+    "--resume"
+  ],
+  "exit_code": 0,
+  "started_local": "2026-09-25T00:42:14+08:00",
+  "finished_local": "2026-09-25T00:42:17+08:00",
+  "stdout": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\midstage_interruption\\process_2\\stdout.log",
+  "pid": 15776
+}

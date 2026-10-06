@@ -1,0 +1,28 @@
+{
+  "task": "TASK-G1-POST-AUTHOR",
+  "run_id": "20260925T223500+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "source_run": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T204300+08",
+  "finished_local": "2026-09-25T22:30:03+08:00",
+  "duration_s": 1.831,
+  "recovery_finalize_used": true,
+  "scientific_outputs_reused": true,
+  "joined_rows": 60,
+  "statistics_rows": 11,
+  "case_rows": 6,
+  "paper_candidate": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\paper\\Q1_GAP_RESULT_FREEZE.md",
+  "paper_candidate_status": "CANDIDATE_PENDING_CONTROLLER_REVIEW",
+  "checks": {
+    "total": 8,
+    "pass": 8,
+    "fail": 0
+  },
+  "verification": {
+    "total": 11,
+    "pass": 11,
+    "fail": 0
+  },
+  "no_imputation": true,
+  "no_resampling": true,
+  "manual_scores_author_only": true
+}

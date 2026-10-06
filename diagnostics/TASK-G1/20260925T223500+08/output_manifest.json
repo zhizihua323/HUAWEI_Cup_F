@@ -1,0 +1,129 @@
+{
+  "run_id": "20260925T223500+08",
+  "task": "TASK-G1-POST-AUTHOR",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "generated_local": "2026-09-25T22:30:03+08:00",
+  "manifest_is_last_registered_artifact": true,
+  "registered_file_count": 21,
+  "registered_files": [
+    {
+      "path": "checks.json",
+      "bytes": 1345,
+      "sha256": "206d43184a64ebc1b15ade0ed10c3e313844b271c4fa057d934453de982e032f"
+    },
+    {
+      "path": "code/finalize_post_author.py",
+      "bytes": 7468,
+      "sha256": "664c2d0654302db7b4a2d15a6b06d41db16142fb0be9718b2361e6863a79b1af"
+    },
+    {
+      "path": "code/post_author_analysis.py",
+      "bytes": 32298,
+      "sha256": "701b666a0dd8866e6f43976d6697267ade47560ee12699ffd43c8fa602df74e7"
+    },
+    {
+      "path": "code/verify_post_author.py",
+      "bytes": 10220,
+      "sha256": "bd9842af6a92b47314a80a58daccbbde85fc58a6792689eb30a5d0e667fe6ae9"
+    },
+    {
+      "path": "code_snapshot/finalize_post_author.py",
+      "bytes": 7468,
+      "sha256": "664c2d0654302db7b4a2d15a6b06d41db16142fb0be9718b2361e6863a79b1af"
+    },
+    {
+      "path": "code_snapshot/post_author_analysis.py",
+      "bytes": 32298,
+      "sha256": "701b666a0dd8866e6f43976d6697267ade47560ee12699ffd43c8fa602df74e7"
+    },
+    {
+      "path": "code_snapshot/verify_post_author.py",
+      "bytes": 10220,
+      "sha256": "bd9842af6a92b47314a80a58daccbbde85fc58a6792689eb30a5d0e667fe6ae9"
+    },
+    {
+      "path": "command_log.json",
+      "bytes": 1319,
+      "sha256": "9f6468632dc6525b7ad2c2e8e6d54351fbbf8ab902d93129b72f93985824f744"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 372,
+      "sha256": "eb97417959b72befa04fae10c20b09578629ca9ffb5f52e78498750c896174dd"
+    },
+    {
+      "path": "handoff.md",
+      "bytes": 639,
+      "sha256": "ce75d17f1ea0901bdbe0a6d95b3dfd9caa1a128a1e1f6cb2f6855511e1948742"
+    },
+    {
+      "path": "input_author_manual_text_review_completed.csv",
+      "bytes": 4591368,
+      "sha256": "06438b52ea0156cb736b2278f783ff8ac6a737e8f21841b5d2a3864f80a38f47"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 2749,
+      "sha256": "c65e243fc9181122c6ab261992a588e55f81182c65f396234646e51cb3aa3aa1"
+    },
+    {
+      "path": "manual_case_registry.csv",
+      "bytes": 2180,
+      "sha256": "f7f7b580d86ed692d9b380fe0b75ebfa154bc96168e3fb193512dd1aa8b8a224"
+    },
+    {
+      "path": "manual_review_parse_audit.csv",
+      "bytes": 4168,
+      "sha256": "5353eb607d8066ac5f65066acac24b7b1638ca73d6b10dc480301f6c9ea5aebc"
+    },
+    {
+      "path": "manual_text_review_joined.csv",
+      "bytes": 10393,
+      "sha256": "d0765df54567fbc1aaa0b1b95be1c2c718e47495e827738ffdb5233585623374"
+    },
+    {
+      "path": "manual_validation_statistics.csv",
+      "bytes": 3354,
+      "sha256": "0e080dfe9610a116cd6765f329f990e3201b2378ff7c51df4f46d71001fc38a1"
+    },
+    {
+      "path": "paper_manuscript_before.json",
+      "bytes": 2200,
+      "sha256": "9040067971c52178dcb7821c9272dceb25188c156b70190b586e68133710a27c"
+    },
+    {
+      "path": "run_summary.json",
+      "bytes": 980,
+      "sha256": "fbeb55e519cb30cbdd8adfb4c80ba4529481e0ae0c039744229f74b44ac58e21"
+    },
+    {
+      "path": "source_manifest_before.json",
+      "bytes": 3606,
+      "sha256": "082ee39c2d8ea759d33382e7a67f6622891a08cb19a56e36a5724c0bb8415cf2"
+    },
+    {
+      "path": "stage_status.jsonl",
+      "bytes": 2201,
+      "sha256": "bd18a41c2fbd8fffe090dcb5e5fcf1c85b27b763a205ff26a5d90c9e192ef72f"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 7326,
+      "sha256": "301de56404e903dd869ab80ca3a6730978f389bbf93a24a11c7d2cb569b72e39"
+    }
+  ],
+  "external_artifacts": [
+    {
+      "path": "paper/Q1_GAP_RESULT_FREEZE.md",
+      "bytes": 4769,
+      "sha256": "e78ae4b24e67dad9d496d2c4e797defb71d20b1580d8dd25c95282a0ef90c4a9",
+      "status": "CANDIDATE_PENDING_CONTROLLER_REVIEW"
+    }
+  ],
+  "verification_status": "PASS",
+  "recovery_finalize_used": true,
+  "scientific_outputs_reused": true,
+  "no_imputation": true,
+  "no_resampling": true,
+  "manual_scores_author_only": true
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "task": "TASK-T07",
+  "run_id": "20260925T113744+08",
+  "status": "PASS",
+  "verifier_imports_execution_module": false,
+  "independently_recomputed": [
+    "predicted_loss",
+    "three_cost_terms",
+    "budget_feasibility",
+    "support_status",
+    "p_simplex",
+    "S00_analytic_first_order",
+    "three_g_functions",
+    "H_critical",
+    "whole_row_parameter_draws"
+  ],
+  "checks": [
+    {
+      "check": "frozen_contract_primary_model",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "parameter_table_primary_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "scenario_registry_exact_21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "scenario_predictions_exact_21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "H_values_exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "H_values_and_Hcrit",
+      "status": "PASS",
+      "detail": "Hcrit=30000.0"
+    },
+    {
+      "check": "original_cost_formula_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "input_manifest_hashes_current",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "required_outputs_present",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "all_21_scenarios_executed_or_statused",
+      "status": "PASS",
+      "detail": "21"
+    },
+    {
+      "check": "S17_no_numeric_optimum",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "S07_no_numeric_optimum",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "legacy_numeric_marker_absent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "quality_and_mixture_scenario_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "budget_feasibility_independent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "three_cost_terms_independent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "predicted_loss_independent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "support_independent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "p_simplex_independent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "S00_analytic_first_order",
+      "status": "PASS",
+      "detail": "n=15,max_rel=3.291490668878006e-07"
+    },
+    {
+      "check": "KKT_residuals_small",
+      "status": "PASS",
+      "detail": "max=2.7932317030401693e-08"
+    },
+    {
+      "check": "KKT_at_least_three_budgets",
+      "status": "PASS",
+      "detail": "[1e+18, 1e+20, 1e+22]"
+    },
+    {
+      "check": "multistart_rows_present",
+      "status": "PASS",
+      "detail": "2019"
+    },
+    {
+      "check": "three_g_functions_exercised",
+      "status": "PASS",
+      "detail": "{'G_EXP': 798380334.050845, 'G_POWER': 1419912049.9999998, 'G_LOG': 4232511029.605105}"
+    },
+    {
+      "check": "H_crossing_marked",
+      "status": "PASS",
+      "detail": "['BELOW_H_CRIT_COMPUTE_DOMINANT' 'ABOVE_H_CRIT_ATTENTION_DOMINANT']"
+    },
+    {
+      "check": "draws_are_saved_whole_rows",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "quality_200_conditional_draws",
+      "status": "PASS",
+      "detail": "{(1e+18, 'G_EXP'): 200, (1e+18, 'G_LOG'): 200, (1e+18, 'G_POWER'): 200, (1e+20, 'G_EXP'): 200, (1e+20, 'G_LOG'): 200, (1e+20, 'G_POWER'): 200, (1e+22, 'G_EXP'): 200, (1e+22, 'G_LOG'): 200, (1e+22, 'G_POWER'): 200}"
+    },
+    {
+      "check": "null_80_row_draws",
+      "status": "PASS",
+      "detail": "{1e+18: 80, 1e+20: 80, 1e+22: 80}"
+    },
+    {
+      "check": "uncertainty_failures_zero",
+      "status": "PASS",
+      "detail": "max_failure=0.0"
+    },
+    {
+      "check": "uncertainty_summary_has_percentiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Q_p_not_jointly_free",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "null_Q_p_not_arbitrarily_optimized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "structural_diagnostics_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "context_sensitivity_has_all_H",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "quality_cost_sensitivity_has_three_g",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "transport_failure_stress_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "t08_interface_not_started",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "execution_checks_pass",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "output_manifest_current",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

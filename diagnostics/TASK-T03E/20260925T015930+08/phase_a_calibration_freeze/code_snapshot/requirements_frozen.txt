@@ -1,0 +1,7 @@
+# frozen runtime dependencies recorded at PHASE A seal time (TASK-T03E)
+python==3.13.9
+numpy==2.3.5
+pandas==2.3.3
+pyarrow==21.0.0
+scipy==1.16.3
+quantile_implementation=numpy.quantile(method="linear")

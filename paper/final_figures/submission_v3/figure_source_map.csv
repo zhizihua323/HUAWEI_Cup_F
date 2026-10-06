@@ -1,0 +1,8 @@
+﻿asset_id,output_stem,frozen_source,fields,display_transform
+FIG-V3-01,fig01_v3_framework,fig01_framework_source.json,nodes; edges,结构重排与中文读者化；无数值变更
+FIG-V3-02,fig02_v3_q1_quality,fig02_q1_quality_validation_source.csv,section; item; value; ci_low; ci_high; n,全部已交付汇总项
+FIG-V3-03,fig03_v3_regmix_transport,fig03_q1_regmix_transport_source.csv,scale; index; domain; observed_loss; predicted_loss,全部散点；无抽样
+FIG-V3-03,fig03_v3_regmix_transport,frozen V2 metric labels,recipe_n; domain_n; point_n; rmse_all_domains; rho_equal_domain_mean,仅澄清统计口径，不重算模型
+FIG-V3-04,fig04_v3_q2_validation,fig04_q2_fit_validation_source_b1.csv,val_loss; prediction,全部 B1 来源内拟合点
+FIG-V3-04,fig04_v3_q2_validation,table06_q2_validation.csv,来源; 原始记录; 支持内/OOS; RMSE; 最终资格; 误差口径,支持占比、资格和分来源 RMSE
+FIG-V3-05,fig05_v3_q4_scenarios,fig06_q4_scenarios_source.csv,task; role; scenario; horizon; origin; date; eligibility; prediction_points,全部任务与情景；不截断；不连接无序任务

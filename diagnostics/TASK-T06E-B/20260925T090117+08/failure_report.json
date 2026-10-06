@@ -1,0 +1,7 @@
+{
+  "failed_stage": "PROFILE_CHILD",
+  "exception": "KeyError: 'M0_B1' in child model offset lookup",
+  "correction": "Map M0_B1 and M0_6 both to frozen offset 0 exactly as parent script; restart new run",
+  "scientific_result": "NOT_REACHED",
+  "status": "FAILED_ENGINEERING_RUN"
+}

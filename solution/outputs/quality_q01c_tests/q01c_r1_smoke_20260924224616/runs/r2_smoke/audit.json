@@ -1,0 +1,59 @@
+{
+  "total_records": 660,
+  "unique_id_sub_path_keys": 660,
+  "duplicate_occurrences": 0,
+  "pairwise_key_intersections": {
+    "A1__A2_arxiv": 0,
+    "A1__A3_github": 0,
+    "A2_arxiv__A3_github": 0
+  },
+  "per_file": {
+    "A1": {
+      "rows": 600,
+      "unique_keys_in_file": 600,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 0,
+      "domains": {
+        "commoncrawl": 200,
+        "wikipedia": 200,
+        "github": 200
+      },
+      "content_read": false
+    },
+    "A2_arxiv": {
+      "rows": 30,
+      "unique_keys_in_file": 30,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 0,
+      "domains": {
+        "arxiv": 30
+      },
+      "content_read": false
+    },
+    "A3_github": {
+      "rows": 30,
+      "unique_keys_in_file": 30,
+      "within_file_duplicates": 0,
+      "overlapping_a1_rows": 0,
+      "domains": {
+        "github": 30
+      },
+      "content_read": false
+    }
+  },
+  "quality_conflicts": 0,
+  "domain_collisions": 0,
+  "raw_quality_fields": 22,
+  "expanded_scalar_features": 25,
+  "main_q_features": 11,
+  "joint_key": [
+    "id",
+    "sub_path"
+  ],
+  "content_read": false,
+  "q_valid_true": 658,
+  "q_valid_false": 2,
+  "extract_missing_union_records": 2,
+  "generated_local": "2026-09-25T00:37:39+08:00",
+  "run_id": "r2_smoke"
+}

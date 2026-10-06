@@ -1,0 +1,10 @@
+{
+  "kind": "stage",
+  "stage": "s10_scan_a1",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:50:56+08:00",
+  "outputs": {
+    "checkpoints/s10_scan_a1.payload.parquet": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+    "checkpoints/s10_scan_a1.meta.json": "89b3e7bb405b4a1e00578c850ae0709e2449cb4720738cb4e5b0a1fb68ea4d0d"
+  }
+}

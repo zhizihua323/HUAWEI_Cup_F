@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "bib_count",
+      "status": "PASS",
+      "detail": 20
+    },
+    {
+      "name": "bib_order",
+      "status": "PASS",
+      "detail": [
+        "kaplan2020scaling",
+        "hoffmann2022training",
+        "penedo2024fineweb",
+        "warner2025modernbert",
+        "xie2023dsir",
+        "spearman1904general",
+        "efron1979bootstrap",
+        "openai_tools",
+        "liu2025regmix",
+        "scheffe1958mixtures",
+        "biderman2023pythia",
+        "zhou2023ifeval",
+        "suzgun2023bbh",
+        "hendrycks2021math",
+        "rein2023gpqa",
+        "sprague2023musr",
+        "wang2024mmlupro",
+        "openllmleaderboard2025results",
+        "epochai2026models",
+        "koenker1978regression"
+      ]
+    },
+    {
+      "name": "reference_verification_matches",
+      "status": "PASS",
+      "detail": 20
+    },
+    {
+      "name": "citation_map_covers_all_references",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "docx_no_unresolved_citation_tokens",
+      "status": "PASS",
+      "detail": "no unresolved tokens"
+    },
+    {
+      "name": "docx_reference_sequence",
+      "status": "PASS",
+      "detail": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "name": "docx_toc_field_present",
+      "status": "PASS",
+      "detail": 1
+    },
+    {
+      "name": "docx_toc_hyperlinks_present",
+      "status": "PASS",
+      "detail": 41
+    },
+    {
+      "name": "docx_toc_is_dynamic_field",
+      "status": "PASS",
+      "detail": "dynamic field structure"
+    },
+    {
+      "name": "docx_heading_styles_present",
+      "status": "PASS",
+      "detail": "heading styles found"
+    },
+    {
+      "name": "docx_relationships_present",
+      "status": "PASS",
+      "detail": "document relationships loaded"
+    },
+    {
+      "name": "pdf_page_count",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "name": "pdf_contains_core_q1_result",
+      "status": "PASS",
+      "detail": "Q1 anchors"
+    },
+    {
+      "name": "pdf_contains_core_q3_result",
+      "status": "PASS",
+      "detail": "Q3 anchors"
+    },
+    {
+      "name": "pdf_contains_q4_qualification",
+      "status": "PASS",
+      "detail": "Q4 qualification"
+    },
+    {
+      "name": "pdf_contains_20_references",
+      "status": "PASS",
+      "detail": "[1]-[20]"
+    },
+    {
+      "name": "all_pdf_pages_rendered",
+      "status": "PASS",
+      "detail": {
+        "count": 30,
+        "empty": []
+      }
+    },
+    {
+      "name": "q3_figure_assets_complete",
+      "status": "PASS",
+      "detail": [
+        "fig05_v4_q3_budget_context.svg",
+        "fig05_v4_q3_budget_context.pdf",
+        "fig05_v4_q3_budget_context.png"
+      ]
+    },
+    {
+      "name": "q3_figure_script_and_data",
+      "status": "PASS",
+      "detail": "script and source data"
+    },
+    {
+      "name": "source_has_10_tables_6_figures",
+      "status": "PASS",
+      "detail": {
+        "tables": 10,
+        "figures": 6
+      }
+    },
+    {
+      "name": "q1_domain_table_uses_not_covered",
+      "status": "PASS",
+      "detail": "domain table present"
+    },
+    {
+      "name": "q3_active_constraints_present",
+      "status": "PASS",
+      "detail": "table 8 active constraints"
+    },
+    {
+      "name": "q4_ratio_not_misreported",
+      "status": "PASS",
+      "detail": "0/0 explicitly distinguished from zero contribution"
+    },
+    {
+      "name": "science_closed_no_new_analysis",
+      "status": "PASS",
+      "detail": false
+    },
+    {
+      "name": "license_limitation_present",
+      "status": "PASS",
+      "detail": "license uncertainty retained"
+    },
+    {
+      "name": "exact_snapshot_commit_present",
+      "status": "PASS",
+      "detail": "exact commit present"
+    }
+  ],
+  "docx_sha256": "8de5a249f96a82a1a7c29777017ed98fdd6c9cb6e7c158bd900796fab2c62ef1",
+  "pdf_sha256": "a2435aee777fef70562f533b7633e91c44a2f82c251819b8ce665da418d72f7a",
+  "reference_count": 20,
+  "pdf_pages": 30,
+  "tables": 10,
+  "figures": 6
+}

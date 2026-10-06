@@ -1,0 +1,12 @@
+{
+  "protocol_version": 2,
+  "files": {
+    "A1": {
+      "passes": 1,
+      "last_scan_pid": 39340,
+      "last_scan_started": "2026-09-24T22:46:31+08:00"
+    }
+  },
+  "reuse_events": [],
+  "total_passes": 1
+}

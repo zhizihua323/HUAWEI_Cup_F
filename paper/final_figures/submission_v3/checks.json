@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "figure_count": 5,
+  "science_changed": false,
+  "source_scope": "previously delivered frozen figure/table sources only",
+  "no_refit": true,
+  "no_threshold_change": true,
+  "no_clipping": true,
+  "no_sampling": true,
+  "no_large_hatch": true,
+  "font_contract": {
+    "Chinese": "SimSun",
+    "Latin": "Times New Roman",
+    "minimum_final_size_pt": 12
+  },
+  "figures": {
+    "fig01_v3_framework": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599,
+      "height_mm": 83.82016764033528,
+      "minimum_font_pt": 12.0,
+      "text_bbox_violations": [],
+      "pass": true,
+      "container_bbox_violations": []
+    },
+    "fig02_v3_q1_quality": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599,
+      "height_mm": 186.69037338074676,
+      "minimum_font_pt": 12.0,
+      "text_bbox_violations": [],
+      "pass": true,
+      "container_bbox_violations": []
+    },
+    "fig03_v3_regmix_transport": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599,
+      "height_mm": 129.54025908051815,
+      "minimum_font_pt": 12.0,
+      "text_bbox_violations": [],
+      "pass": true,
+      "container_bbox_violations": []
+    },
+    "fig04_v3_q2_validation": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599,
+      "height_mm": 181.61036322072644,
+      "minimum_font_pt": 12.0,
+      "text_bbox_violations": [],
+      "pass": true,
+      "container_bbox_violations": []
+    },
+    "fig05_v3_q4_scenarios": {
+      "png": true,
+      "pdf": true,
+      "svg": true,
+      "svg_has_editable_text": true,
+      "caption": true,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "width_mm": 164.9733299466599,
+      "height_mm": 161.29032258064518,
+      "minimum_font_pt": 12.0,
+      "text_bbox_violations": [],
+      "pass": true,
+      "container_bbox_violations": []
+    }
+  },
+  "source_rows": {
+    "fig02_q1_rows": 10,
+    "fig03_point_rows": 7488,
+    "fig04_b1_rows": 10336,
+    "fig04_summary_rows": 6,
+    "fig05_scenario_rows": 42
+  },
+  "q4_negative_values": [
+    -3.971071948299685,
+    -1.933709305769927,
+    -0.4881775063174451
+  ],
+  "q4_negative_values_retained": true,
+  "q4_qualification": [
+    "SCENARIO_ONLY_UNVALIDATED"
+  ]
+}

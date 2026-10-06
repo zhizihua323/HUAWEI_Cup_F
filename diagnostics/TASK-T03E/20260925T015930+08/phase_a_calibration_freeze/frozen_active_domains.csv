@@ -1,0 +1,5 @@
+﻿design_label,exact_match,n_valid,status,reason
+book,True,137,INSUFFICIENT_CALIBRATION,"calibration valid n 137 < 1000; excluded from the active set, no other domain, global parameter or live fallback is used"
+c4,True,8041,ACTIVE,qualified active domain
+commoncrawl,True,7688,ACTIVE,qualified active domain
+wikipedia,True,8013,ACTIVE,qualified active domain

@@ -1,0 +1,4 @@
+﻿budget_id,budget_flops,mandatory,main_display,feasibility_tolerance
+B1,1e+18,True,True,1e-09
+B2,1e+20,True,True,1e-09
+B3,1e+22,True,True,1e-09

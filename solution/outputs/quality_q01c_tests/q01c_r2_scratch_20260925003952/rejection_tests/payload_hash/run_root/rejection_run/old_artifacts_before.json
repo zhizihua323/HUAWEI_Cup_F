@@ -1,0 +1,27 @@
+{
+  "generated_local": "2026-09-25T00:40:29+08:00",
+  "scope": "fixture_only",
+  "entries": {
+    "solution/outputs/quality_q01c_tests/q01c_r2_scratch_20260925003952/synthetic_fixture/fixture_manifest.json": {
+      "bytes": 1921,
+      "mtime": 1790267992.7514603,
+      "sha256": "f185fa529567570d7ffb59a1f2b293a2f89223f993c2aee077db62eb869137d0"
+    },
+    "solution/outputs/quality_q01c_tests/q01c_r2_scratch_20260925003952/synthetic_fixture/inputs/f1_a1.jsonl": {
+      "bytes": 620394,
+      "mtime": 1790267992.7452335,
+      "sha256": "7703a40fc17f06b0a77915e9761d9a335de6b853e3269789df67db85721ff2d7"
+    },
+    "solution/outputs/quality_q01c_tests/q01c_r2_scratch_20260925003952/synthetic_fixture/inputs/f2_arxiv.jsonl": {
+      "bytes": 29879,
+      "mtime": 1790267992.7467606,
+      "sha256": "103560b966b2c1daa89342344fa6827a114b040ab62fbd43df3584f3af1addd9"
+    },
+    "solution/outputs/quality_q01c_tests/q01c_r2_scratch_20260925003952/synthetic_fixture/inputs/f3_github.jsonl": {
+      "bytes": 30063,
+      "mtime": 1790267992.7487674,
+      "sha256": "0511327f42b52caa13e9565b26d9135785461b2603eada51e3717bf67232cea9"
+    }
+  },
+  "note": "fixture-scoped snapshot; the real protected artifacts are checked by the R1 harness, not by this synthetic run"
+}

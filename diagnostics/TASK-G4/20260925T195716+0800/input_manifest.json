@@ -1,0 +1,185 @@
+{
+  "run_id": "20260925T195716+0800",
+  "created_local": "2026-09-25T20:00:45.093791+08:00",
+  "root": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+  "file_count": 35,
+  "missing_count": 0,
+  "missing": [],
+  "files": [
+    {
+      "path": "tasks/TASK-G4_Q4技术演进与前沿预测闭合.md",
+      "bytes": 11329,
+      "sha256": "a422b6a6d25cefca5c1d8a8482985de05389f19aba5140c11c9f3ba603603cc4"
+    },
+    {
+      "path": "audit/FINAL_PROJECT_STATE.md",
+      "bytes": 5759,
+      "sha256": "1ab95bb6225baafcfe21d2da8d7ee6a1595889c1405ac06bb9f762b13f86ebee"
+    },
+    {
+      "path": "audit/QUESTION_REQUIREMENT_COVERAGE.md",
+      "bytes": 11962,
+      "sha256": "dc8d0017624a77154960ebf4a6b41ab96041cf8192b12eda8a4f695d6e90844b"
+    },
+    {
+      "path": "audit/FINAL_RESULT_SOURCE_OF_TRUTH.md",
+      "bytes": 5438,
+      "sha256": "586fcfefff8bcd59bf25670b6cdb70cf57e4ee5c2edcbfd7bba97a4c7f92cd96"
+    },
+    {
+      "path": "paper/T05_RESULT_FREEZE.md",
+      "bytes": 2415,
+      "sha256": "984b4e771d1d193eaf8f87c83f6d5784b634ef7960d4763a428bfd6fd45bb0ed"
+    },
+    {
+      "path": "paper/T08_RESULT_FREEZE.md",
+      "bytes": 4404,
+      "sha256": "67d7ae79ea25df01c76c809bc0874a52485b954d406d607b7c33e219ee28b08d"
+    },
+    {
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv",
+      "bytes": 1011558,
+      "sha256": "199891128629f24f83ed2f51211eee65a82a13f45275e79a8227d5dacc7c2846"
+    },
+    {
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_enhanced.csv",
+      "bytes": 1036749,
+      "sha256": "d8ae5b1e00f36bf17adb0c3fbf88c60edd54298625d2db1aa744b2b001202799"
+    },
+    {
+      "path": "F题/real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv",
+      "bytes": 826723,
+      "sha256": "ab2b5715b2945ebdeeabfb18e8d040f7c68d8c76bd02c01e446959218bfcd184"
+    },
+    {
+      "path": "F题/real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv",
+      "bytes": 6671403,
+      "sha256": "0b98a01bcb8d96958745b6fbe505416c38f719948d9029b38ff6233425c0e1c1"
+    },
+    {
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/c8_model_task_aggregate_corrected.csv",
+      "bytes": 6331059,
+      "sha256": "4b36dd039ecb89d6d1c84912718f61d1555b6f62b7d64d796a29b16bc87f790f"
+    },
+    {
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/c8_model_wide_corrected.csv",
+      "bytes": 966210,
+      "sha256": "6d78edf205cd4cdb082a2f98eb0d26a7b0bcc028e45bca9ce9e23723c9214ff5"
+    },
+    {
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/c8_directory_aggregate_corrected.csv",
+      "bytes": 291117,
+      "sha256": "1bfab2f7e1078a43bbe9a14a30237640e192c0ec54776144eed3eb66d6af1218"
+    },
+    {
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/run_summary.json",
+      "bytes": 3962,
+      "sha256": "4727bce1e2a0f7914bd660663bbbf6e606fe856c8b1148894b3a97d5b1396076"
+    },
+    {
+      "path": "diagnostics/TASK-C01-R1/20260924T225308+08/verification.json",
+      "bytes": 27727,
+      "sha256": "c3fa7822a80241cda902dcd9c820138b5bc1bab14b4daa49b3fa3fcaea9ce25e"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/model_identity_crosswalk.csv",
+      "bytes": 5736012,
+      "sha256": "d3f5a47882b39919dc26b60bf94136d70c622741cc4d337ff17323d82521fbf1"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/duplicate_run_resolution.csv",
+      "bytes": 46842,
+      "sha256": "a4ab03879dd34963945187654b92b9525ad6d1540447a4ffcdef1922b4c31f35"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/corrupt_and_partial_coverage.csv",
+      "bytes": 2819,
+      "sha256": "02c3b5b599d80977564d87fad3252cb3d7b9926d771a0b51eac0fec4bf486372"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/taskwise_bridge_results.csv",
+      "bytes": 223498,
+      "sha256": "3258cc181d78a7a36175659b5aaed6d2d783eacaeaf152f3ba7d34a8620ed408"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/validation_by_family.csv",
+      "bytes": 17204,
+      "sha256": "d4b5eacb162485d0878f815f7d8e2a44af94b1434eba83fd3dd9067896c569a0"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/validation_by_scale.csv",
+      "bytes": 4650,
+      "sha256": "2bb62ee8e403953302f75ac63e306a2776511e9bd9c2c10bf689f201813bb7f6"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/validation_by_split.csv",
+      "bytes": 43346,
+      "sha256": "15e1ba2595691573ae3edf1ac22d66f6f6822a6dfb333166c3d3fd5aefcb8a91"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/validation_by_time.csv",
+      "bytes": 6004,
+      "sha256": "dbbe29d9394b55737a26ef79e43670328e6a04633f19e14a2784bedba31e6684"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/execution_seal.json",
+      "bytes": 3697,
+      "sha256": "7f6805e168f793040f9faa7889dd4eecba7964be19fef34247d470ed4e051e68"
+    },
+    {
+      "path": "diagnostics/TASK-T05/20260925T113355+0800/t08_bridge_contract.json",
+      "bytes": 9304,
+      "sha256": "c3b14ccddb4d2c6e4214902672e61a83c7af8b478a3c6a7b3963e2c5ebb82535"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/historical_strata_summary.csv",
+      "bytes": 298155,
+      "sha256": "d1dd2de6815158822d91d9a4bda4b8db9ca7b4f25ed325d72b5ad3cc272422b6"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/forecast_seal.json",
+      "bytes": 2877,
+      "sha256": "f77fc9d4c34be0211cca36e990253364d7f607b88d9cf470930bce739c8a3577"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/scenario_registry.csv",
+      "bytes": 2416,
+      "sha256": "eb89244cb362eb6853c55b726851132542bf4e76fa7c5f6aa9ae222c254f6405"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/loss_space_scale_scenarios.csv",
+      "bytes": 1581,
+      "sha256": "8891c1229f7fa4cf6e6a0ad1fbbf95a27ec14f55e8398a8690d9962ea7e2bd6f"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/forecast_12m_24m_scenarios.csv",
+      "bytes": 12364,
+      "sha256": "a58d2212157d7e0cdf36cc5664b337ace2d4eefb035c40d52ac9943f615ebb1c"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/taskwise_progress.csv",
+      "bytes": 2673,
+      "sha256": "ca96eb2ccbc0a9ad97837e277d6387e4146136f8b51732902a54db70d449be4a"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/forecast_uncertainty.csv",
+      "bytes": 13070,
+      "sha256": "0745508abb7f82b2f1739ac48f1f1ef875a68e412ab08aef01f726b8f6598b47"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/scale_non_scale_decomposition.csv",
+      "bytes": 19074,
+      "sha256": "9713a8539d1924541545e28e4443bd34e27b5f44339dec486a386c4d8127f7e2"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/support_oos_audit.csv",
+      "bytes": 6967,
+      "sha256": "a4d4776b85182b14388e4ec41a0e9117fac1d757c27939ec3be5fbe30d538a71"
+    },
+    {
+      "path": "diagnostics/TASK-T08/20260925T142203+0800/t08_paper_interface.json",
+      "bytes": 5076,
+      "sha256": "0cbccd8e194937e0ce00e59171de393a4eef6e9c1d25637a85b2101883fb1d48"
+    }
+  ]
+}

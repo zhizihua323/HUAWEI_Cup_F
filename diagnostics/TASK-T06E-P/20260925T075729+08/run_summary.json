@@ -1,0 +1,62 @@
+{
+  "task_id": "TASK-T06E-P",
+  "run_id": "20260925T075729+08",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "scientific_upgrade_decision": "PENDING_CONTROLLER",
+  "scenario_registry": {
+    "count": 21,
+    "sha256": "4f39f532e356b2c706d8c8beec21f99d0e59a8cf81025b30560378238b992522",
+    "sealed_before_metric_read": true
+  },
+  "quality_anchor": {
+    "selected_rows": 40930,
+    "q_A_star": 0.5695341857475174,
+    "q_C_star_sensitivity": 0.5694585639959848,
+    "A_B_mapping": "NOT_IDENTIFIABLE"
+  },
+  "H3": {
+    "q_A_star_mapped_Q_B": 0.6,
+    "q_A_star_support": "IN_SUPPORT",
+    "Q_C_uses_same_F_A": true
+  },
+  "regmix": {
+    "selected_by_training_only": "linear",
+    "test_1m_mse_improvement": 0.5502593290109576,
+    "test_1m_spearman": 0.6250743877317463,
+    "test_1m_both_criteria_pass": true,
+    "60m_1B_role": "cross_scale_transport_report_only",
+    "10B_70B_role": "estimated_not_truth"
+  },
+  "p_Q_double_counting": {
+    "status": "NOT_IDENTIFIABLE",
+    "design_rank": 17,
+    "augmented_rank": 17,
+    "relative_projection_residual": 9.368877196481023e-16
+  },
+  "scenario_interface": {
+    "rows": 21,
+    "numeric_loss_values_filled": 0,
+    "joint_Q_p_independent_optimizable": 0
+  },
+  "checks_summary": {
+    "total": 32,
+    "pass": 32,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "verification_summary": {
+    "total": 12,
+    "pass": 12,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "boundaries": {
+    "real_A1_A3_read": false,
+    "TASK_T06E_B_run_read": false,
+    "B_model_fitted": false,
+    "RegMix_refit": false,
+    "T07_started": false,
+    "integration_started": false
+  },
+  "next_action": "Controller must independently review B and P branches before any integration; this run does not declare a scientific acceptance."
+}

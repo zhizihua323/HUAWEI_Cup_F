@@ -1,0 +1,26 @@
+{
+  "val_loss_csv_decimal_places": 4,
+  "loss_rounding_half_unit": 5e-05,
+  "D_tokens_B_csv_decimal_places": 3,
+  "D_rounding_half_unit_B": 0.0005,
+  "residual_quantiles": {
+    "0.0": -0.0006482317450933195,
+    "0.01": -0.00042460541821776054,
+    "0.05": -0.00021246316652923092,
+    "0.5": -1.2061021770204405e-06,
+    "0.95": 0.0002275245853022856,
+    "0.99": 0.00037960231990874505,
+    "1.0": 0.0009203780942526052
+  },
+  "abs_residual_quantiles": {
+    "0.0": 1.0979249420728365e-07,
+    "0.5": 7.72019367429877e-05,
+    "0.9": 0.00022217935630841623,
+    "0.95": 0.0002856259534461669,
+    "0.99": 0.000508265087395543,
+    "1.0": 0.0009203780942526052
+  },
+  "fraction_abs_residual_le_loss_half_rounding_unit": 0.3333333333333333,
+  "rmse_in_loss_rounding_half_units": 2.929921798517764,
+  "interpretation": "Near-deterministic scaling signature. Source and any transformations require verification; tiny errors do not establish an independently discovered empirical law."
+}

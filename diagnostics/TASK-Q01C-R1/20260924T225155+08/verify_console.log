@@ -1,0 +1,17 @@
+[r1-verify] R01_distinct_processes: PASS
+[r1-verify] R02_p1_external_termination: PASS
+[r1-verify] R03_no_rescan_of_completed_stage: FAIL
+[r1-verify] R04_checkpoint_hash_invariant: PASS
+[r1-verify] R05_checkpoint_protocol: PASS
+[r1-verify] R06_stage_event_completeness: PASS
+[r1-verify] R07_stage_seconds_and_skips: FAIL
+[r1-verify] R08_command_log: PASS
+[r1-verify] R09_no_real_input_access: PASS
+[r1-verify] R10_fixture_run_checks: PASS
+[r1-verify] R11_synthetic_manifest: PASS
+[r1-verify] R12_extension_isolation: PASS
+[r1-verify] R13_stage_scope_behaviour: FAIL
+[r1-verify] R14_probe_behaviour: PASS
+[r1-verify] R15_formal_run_manifest: PASS
+[r1-verify] R16_protected_runs_unchanged: PASS
+[r1-verify] summary: {"n_checks": 16, "n_pass": 13, "n_fail": 3, "n_not_checked": 0, "n_not_verifiable": 0}

@@ -1,0 +1,5 @@
+﻿file_id,domain,feature,unique_group_rows,nonmissing_count,missing_count
+A1,commoncrawl,modernbert_professionalism,9640,9636,4
+A1,wikipedia,modernbert_professionalism,10000,9999,1
+A1,wikipedia,modernbert_reasoning,10000,9987,13
+A3_github,github,modernbert_professionalism,193752,193751,1

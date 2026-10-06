@@ -1,0 +1,8 @@
+{
+  "correction": "Add the already-frozen unconstrained group slope diagnostic function and restart new run",
+  "scientific_result": "NOT_REACHED",
+  "exception": "NameError group_slopes missing in tail script helper prelude",
+  "completed": "B7/B8 partition recomputed correctly before failure",
+  "status": "FAILED_ENGINEERING_RUN",
+  "failed_stage": "BOOTSTRAP"
+}

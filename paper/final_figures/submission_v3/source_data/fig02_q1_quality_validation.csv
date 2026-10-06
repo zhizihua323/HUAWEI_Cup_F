@@ -1,0 +1,11 @@
+﻿section,item,value,ci_low,ci_high,n,unit
+denominator,physical_rows,272505.0,,,272505,count
+denominator,unique_keys,261086.0,,,261086,count
+denominator,Q_valid,261067.0,,,261086,count
+denominator,Q_missing,19.0,,,261086,count
+extension,A2_passed_criteria,1.0,,,4,criteria
+extension,A3_passed_criteria,3.0,,,4,criteria
+manual_validation,总体质量,0.0326960633029442,-0.2533840851904994,0.3159568348318037,47,spearman_rho
+manual_validation,可读性,-0.2935510605741909,-0.5681446343881288,0.0003251938183059,47,spearman_rho
+manual_validation,完整性,0.0551035040795858,-0.290692719771684,0.3629654966138102,47,spearman_rho
+manual_validation,污染度,0.0588782599785511,-0.252438977762018,0.3712485715733397,46,spearman_rho

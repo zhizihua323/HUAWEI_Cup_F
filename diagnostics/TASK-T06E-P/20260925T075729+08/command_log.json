@@ -1,0 +1,92 @@
+{
+  "run_id": "20260925T075729+08",
+  "command_environment": "PowerShell, non-login",
+  "commands": [
+    {
+      "sequence": 1,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/01_seal_registry.py",
+      "attempt": 1,
+      "status": "FAILED_BEFORE_SEAL_DUE_INTERNAL_INDEX_ERROR",
+      "test_or_migration_metric_read": false
+    },
+    {
+      "sequence": 2,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/01_seal_registry.py",
+      "attempt": 2,
+      "status": "SUCCESS_REGISTRY_SEALED",
+      "test_or_migration_metric_read": false,
+      "seal_time": "2026-09-25T07:57:48+08:00"
+    },
+    {
+      "sequence": 3,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/02_quality_anchor_bridge.py",
+      "attempt": 1,
+      "status": "FAILED_AT_CDF_ENDPOINT_ASSERTION_BEFORE_OUTPUT_FREEZE",
+      "test_or_migration_metric_read": false
+    },
+    {
+      "sequence": 4,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/02_quality_anchor_bridge.py",
+      "attempt": 2,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": false
+    },
+    {
+      "sequence": 5,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/03_regmix_readonly_audit.py",
+      "attempt": 1,
+      "status": "FAILED_AT_MAPPING_DOMAIN_NAME_ASSERTION",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 6,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/03_regmix_readonly_audit.py",
+      "attempt": 2,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 7,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/04_scenario_interface.py",
+      "attempt": 1,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 8,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/05_prepare_manifests.py",
+      "attempt": 1,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 9,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/06_checks.py",
+      "attempt": 1,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 10,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/07_independent_verifier.py",
+      "attempt": 1,
+      "status": "SUCCESS",
+      "test_or_migration_metric_read": true
+    },
+    {
+      "sequence": 11,
+      "command": "python -X utf8 diagnostics/TASK-T06E-P/20260925T075729+08/code/08_finalize.py",
+      "attempt": 1,
+      "status": "RUNNING_THEN_LAST_WRITE_OUTPUT_MANIFEST",
+      "test_or_migration_metric_read": true
+    }
+  ],
+  "failed_attempts_preserved": true,
+  "scenario_seal_before_test_metric_read": true,
+  "random_sampling_used": false,
+  "B_branch_run_read": false,
+  "real_A1_A3_read": false,
+  "RegMix_refit": false,
+  "T07_started": false,
+  "integration_started": false
+}

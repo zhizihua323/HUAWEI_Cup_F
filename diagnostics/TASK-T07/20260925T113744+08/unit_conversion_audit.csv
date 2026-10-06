@@ -1,0 +1,5 @@
+﻿check,N_B,D_B,N_physical,D_physical,formula,computed,wrong_if_billions_used,status,H,eta
+training_compute_physical,1.0,1.0,1000000000.0,1000000000.0,6*N_physical*D_physical,6e+18,6.0,PASS,,
+attention_compute_physical,1.0,1.0,,,eta*N_physical*D_physical*H,4.096e+17,,PASS,2048.0,
+quality_cost_physical_D,1.0,1.0,,1000000000.0,"D_physical*max(g(Q)-g(Q0),0)",,,PASS,,
+H_critical,,,,,H_crit=6/eta,30000.0,,PASS,,0.0002

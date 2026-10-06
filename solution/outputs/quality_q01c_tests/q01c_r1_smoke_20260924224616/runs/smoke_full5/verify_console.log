@@ -1,0 +1,19 @@
+[verify] F01_fixture_rows: PASS
+[verify] F02_q_valid_equivalence: PASS
+[verify] F03_group_and_q_recomputation: PASS
+[verify] F04_coverage_fields: PASS
+[verify] F05_denominators: PASS
+[verify] F06_missing_marking: PASS
+[verify] F07_sensitivity_parameters: PASS
+[verify] F08_sensitivity_separation: PASS
+[verify] F09_checkpoint_marker_chain: PASS
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 855, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 99, in main
+    return verify_fixture_mode(Path(args.run_dir), Path(args.fixture_manifest))
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py", line 782, in verify_fixture_mode
+    expected_stages = [s for s in STAGES if s != 's60_finalize']
+                                  ^^^^^^
+NameError: name 'STAGES' is not defined

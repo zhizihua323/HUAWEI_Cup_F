@@ -1,0 +1,89 @@
+{
+  "run_id": "20260924T215718+08",
+  "generated_local": "2026-09-24T21:58:14+08:00",
+  "source_scope": "A1_calibration & is_unique_first",
+  "calibration_rows": 40943,
+  "calibration_domain_counts": {
+    "c4": 8041,
+    "wikipedia": 8023,
+    "stackexchange": 7966,
+    "github": 7963,
+    "commoncrawl": 7691,
+    "arxiv": 1122,
+    "book": 137
+  },
+  "domain_weight_rule": "each calibration domain carries 1/(n_domains) total weight",
+  "continuous_quantiles": [
+    0.01,
+    0.99
+  ],
+  "transforms": {
+    "fineweb_edu": {
+      "low": 0.08386536827983196,
+      "high": 3.3196254506652165,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "ad_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "fluency_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "qurater_writing_style": {
+      "low": -5.1484375,
+      "high": 6.222949155515907,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_required_expertise": {
+      "low": -4.94140625,
+      "high": 9.5,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_facts_trivia": {
+      "low": -4.21484375,
+      "high": 4.992075598388387,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_educational_value": {
+      "low": -4.41015625,
+      "high": 8.765625,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "modernbert_professionalism": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_readability": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_reasoning": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_cleanliness": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    }
+  },
+  "refit": false
+}

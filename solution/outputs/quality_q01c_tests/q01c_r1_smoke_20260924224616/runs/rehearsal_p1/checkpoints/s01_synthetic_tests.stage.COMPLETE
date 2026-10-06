@@ -1,0 +1,9 @@
+{
+  "kind": "stage",
+  "stage": "s01_synthetic_tests",
+  "protocol_version": 2,
+  "completed_local": "2026-09-24T22:48:00+08:00",
+  "outputs": {
+    "synthetic_tests.json": "648d4efacd70eec3cbc4e1741b324f3521260e3b4d20f326e4bc6973dd12c026"
+  }
+}

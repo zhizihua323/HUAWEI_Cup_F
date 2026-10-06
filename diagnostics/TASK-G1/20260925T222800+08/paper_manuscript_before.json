@@ -1,0 +1,58 @@
+{
+  "paper/manuscript/figure_table_placeholders_q1_q2.md": {
+    "bytes": 5078,
+    "sha256": "bb512afa0d591f98e814569d48e275872f547d7f90f373ccc09ac51f539c57b2"
+  },
+  "paper/manuscript/figure_table_placeholders_q3.md": {
+    "bytes": 3560,
+    "sha256": "b38b635094feeff79c419eb217e8471b8b0f88aa80dd31cd0abd3f993a50b49e"
+  },
+  "paper/manuscript/figure_table_placeholders_q4.md": {
+    "bytes": 3789,
+    "sha256": "c8e4ba929669f52ea1c333474c946acfe26aa9f4afde718792450a928ea978c2"
+  },
+  "paper/manuscript/FINAL_CLAIM_EVIDENCE_AUDIT.md": {
+    "bytes": 7164,
+    "sha256": "a98ab45e06f48fbc176d83d1f60660867b4374d911aedc7e6d6e268a5cf5fca4"
+  },
+  "paper/manuscript/FINAL_FIGURE_TABLE_PLAN.md": {
+    "bytes": 4469,
+    "sha256": "9738c2484116ee892b3650815060849e5b7ff678e03831a7fcdc9b09e1b3de43"
+  },
+  "paper/manuscript/FULL_MANUSCRIPT_V1.md": {
+    "bytes": 72340,
+    "sha256": "3e649ea11c5d1d3feffd42a6c5aec0c270dc911f4819f0edfed5701a91405876"
+  },
+  "paper/manuscript/FULL_MANUSCRIPT_V1_HANDOFF.md": {
+    "bytes": 2802,
+    "sha256": "974d2561efbc08f1213cd7dee3d401f43f8004254f59349528b22e02494a7ca1"
+  },
+  "paper/manuscript/HANDOFF.md": {
+    "bytes": 4719,
+    "sha256": "f3800914cb739105855998ebcd9b867b36ab5675bdd09baf04391fcfdee909ec"
+  },
+  "paper/manuscript/Q1_Q2_STABLE_BODY.md": {
+    "bytes": 39886,
+    "sha256": "700349f5dd20e93fcc0e14f61b07ab7be4b0dd60a81a417294ac592e4b6204ad"
+  },
+  "paper/manuscript/Q3_STABLE_BODY.md": {
+    "bytes": 17266,
+    "sha256": "3bc4c413552a71dfcd3c857836c2904468238c587d406ca7e27d44dfe176098b"
+  },
+  "paper/manuscript/Q4_STABLE_BODY.md": {
+    "bytes": 9420,
+    "sha256": "b751ad95b7ffc67c585cc0431e3cacd2eb00d6b0bf4aca7d53d9ab2217e67099"
+  },
+  "paper/manuscript/source_map_q1_q2.md": {
+    "bytes": 9371,
+    "sha256": "8d8e3bc828086271417c1eb5f50d5c7d7522c002824770169fb1921547b961a4"
+  },
+  "paper/manuscript/source_map_q3.md": {
+    "bytes": 6907,
+    "sha256": "865f2f618e693751fc1220490f50d1beec57f59ea64fb8f36c3d25c392e41601"
+  },
+  "paper/manuscript/source_map_q4.md": {
+    "bytes": 5361,
+    "sha256": "d63076e6111d9b0493591e7b06e8ef1e6757a6b8ce0ee620ee062856b79c76c5"
+  }
+}

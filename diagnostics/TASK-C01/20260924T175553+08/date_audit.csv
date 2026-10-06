@@ -1,0 +1,10 @@
+﻿dataset,field,rows,nonnull,parsed_ok,parse_fail,parse_rate_of_nonnull,granularity_present_in_data,granularity_assumed_for_use,min,max,distinct_dates,duplicate_date_rows,span_days,span_years,note,rows_before_2000,publication_after_submission_rows,publication_after_submission_over_7d
+C3,Year,4599,4599,4599,0,1.0,year,year,2019,2025,7,4592.0,,6.0,"raw integer calendar year; it is NOT converted to a timestamp, so no spurious sub-second value is introduced",,,
+C1,Submission Date,4576,4564,4564,0,1.0,day,day,2024-06-08 00:00:00,2025-03-13 00:00:00,262,4302.0,278.0,,,,,
+C2,Submission Date,4576,4564,4564,0,1.0,day,day,2024-06-08 00:00:00,2025-03-13 00:00:00,262,4302.0,278.0,,,,,
+C2,Epoch_AI_Publication_Date,4576,447,447,0,1.0,day,day,2020-10-20 00:00:00,2025-09-09 00:00:00,69,378.0,1785.0,,,,,
+C4,Publication date,3523,3500,3500,0,1.0,day,day,1950-07-02 00:00:00,2026-04-24 00:00:00,1695,1805.0,27690.0,,"publication dates before 2000-01-01: 112 rows; earliest row model = 3499 / Theseus; Epoch is a living database, so a few reported dates are not model-generation dates",112.0,,
+C4,Last modified,3523,3523,3523,0,1.0,timestamp_with_offset,day,2025-11-28 11:51:46+00:00,2026-05-08 13:50:49+00:00,250,3273.0,161.0,,,,,
+C8,"date (unix seconds, top level)",1954,1954,1954,0,1.0,second,second,2024-06-13 15:02:57.932000,2025-03-13 18:16:04.922000,1864,90.0,273.0,,unix seconds with sub-second fraction; displayed truncated to milliseconds. start_time/end_time strings are kept verbatim in c8_parse_log.csv,,,
+C1/C2,Epoch_AI_Publication_Date - Submission Date,4576,446,446,4130,0.097465,day difference,sign check only,-1436.0,440.0,200,,,,sign convention check only; a positive value means the matched publication date is later than the leaderboard submission date,,21.0,12.0
+C4,Last modified - Publication date,3523,3500,3500,23,0.993471,day difference,sign check only,0.0,27543.0,1776,,,,"C4 is a living database snapshot; Last modified is a record-edit time, not a model fact",,,

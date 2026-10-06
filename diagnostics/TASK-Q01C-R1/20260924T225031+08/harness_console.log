@@ -1,0 +1,18 @@
+{"ts": "2026-09-24T22:50:32+08:00", "phase": "fixture_build", "event": "start", "pid": 38008}
+{"ts": "2026-09-24T22:50:32+08:00", "phase": "fixture_build", "event": "complete", "pid": 38008, "fixture_id": "q01c_r1_fixture_v1", "rows": 660, "manifest_sha256": "f74479b32f74341c02d21cc1b9fd5d410da31aea4209b12fda4ace6f2aecc58e"}
+{"ts": "2026-09-24T22:50:32+08:00", "phase": "p1", "event": "start", "pid": 38008, "hold_after_stage": "s10_scan_a1"}
+{"ts": "2026-09-24T22:50:34+08:00", "phase": "p1", "event": "terminated", "pid": 3812, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-24T22:50:34+08:00", "phase": "probe", "event": "start", "pid": 38008}
+{"ts": "2026-09-24T22:50:35+08:00", "phase": "probe", "event": "complete", "pid": 38008, "exit_code": 0, "reusable": [{"stage": "s00_preflight", "reason": "valid", "layout": null}, {"stage": "s01_synthetic_tests", "reason": "valid", "layout": null}, {"stage": "s10_scan_a1", "reason": "valid", "layout": "v2"}]}
+{"ts": "2026-09-24T22:50:35+08:00", "phase": "p2", "event": "start", "pid": 38008}
+{"ts": "2026-09-24T22:50:38+08:00", "phase": "p2", "event": "complete", "pid": 38008, "exit_code": 2, "reused": ["s00_preflight", "s01_synthetic_tests", "s10_scan_a1"]}
+{"ts": "2026-09-24T22:50:38+08:00", "phase": "stage_demo", "event": "start", "pid": 38008}
+{"ts": "2026-09-24T22:50:42+08:00", "phase": "stage_demo", "event": "complete", "pid": 38008, "missing_prereq_exit": 6, "single_stage_exits": [0, 3, 3]}
+Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\tests\q01c_r1_two_process.py", line 335, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\tests\q01c_r1_two_process.py", line 302, in main
+    checkpoint_files = sorted(run_dir / 'checkpoints'.glob('*'))
+                                        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'glob'

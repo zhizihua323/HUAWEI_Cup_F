@@ -1,0 +1,25 @@
+{
+  "generated_local": "2026-09-25T01:58:03+08:00",
+  "files": [
+    {
+      "file": "t03e_preregistered_rule_sensitivity.py",
+      "sha256": "67bc2cde77eae57f1bfef75f76c38ab20a9b3b7239b934ab6071215df1e15936",
+      "bytes": 129767
+    },
+    {
+      "file": "t03e_verify.py",
+      "sha256": "d3a44b9390240b2ebcc1333152092496b598c561843e0d63b715bc195b4b468b",
+      "bytes": 72327
+    },
+    {
+      "file": "t03e_selftest.py",
+      "sha256": "bc9bd0772af7b56819cbc842d09469fd79794ec3b8dd7d4584566d0422e3ffb3",
+      "bytes": 9072
+    },
+    {
+      "file": "requirements_frozen.txt",
+      "sha256": "25297de048f1456f9c530c3d2849f111d405d3f933ea92975c4d7fdafecd43df",
+      "bytes": 207
+    }
+  ]
+}

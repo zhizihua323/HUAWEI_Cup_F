@@ -1,0 +1,46 @@
+{
+  "run_id": "20260925T195716+0800",
+  "sealed_origin": "2025-01-28",
+  "selected_contribution_models": {
+    "IFEval": "M0_CONSTANT",
+    "BBH": "M1_SCALE",
+    "MATH Lvl 5": "M1_SCALE",
+    "GPQA": "M1_SCALE",
+    "MUSR": "M0_CONSTANT",
+    "MMLU-PRO": "M1_SCALE",
+    "six_task_mean_complete_only": "M1_SCALE"
+  },
+  "scenario_models": {
+    "IFEval": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "BBH": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MATH Lvl 5": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "GPQA": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MUSR": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "MMLU-PRO": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    },
+    "six_task_mean_complete_only": {
+      "model": "M2_SCALE_TIME",
+      "qualification": "SCENARIO_ONLY_UNVALIDATED"
+    }
+  },
+  "seal_sha256": "2bcaeedb2506031260d9cf6a3fe3d212de435d69d7110222e77cbdf6b610e6ab",
+  "scenario_registry_sha256": "d8a40915c0fe4ae4bea3b2862df0e0bf03f9b2f708991dab03ba78d197e2e645",
+  "loss_bridge_used_for_selection": false
+}

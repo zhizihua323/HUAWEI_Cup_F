@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "name": "01_seal_registry.py",
+      "sha256": "ed6d4c4100cb065de534cb1536554955de8db2cf2512988701395ea0bb8cd00f",
+      "bytes": 7771
+    },
+    {
+      "name": "02_quality_anchor_bridge.py",
+      "sha256": "ad14da0bba7e7ed7b41eda1c7de17af9b73f718973fe3a83850f7f394dbb4d94",
+      "bytes": 10945
+    },
+    {
+      "name": "03_regmix_readonly_audit.py",
+      "sha256": "0f1c9c765cba67efb0cd83086f8ba84995ecd6a9952e9186df47915905459330",
+      "bytes": 14902
+    },
+    {
+      "name": "04_scenario_interface.py",
+      "sha256": "751033dad7ae230ea1bcb98fe3d910a829d5c75b874bf411da369c1fd2daad57",
+      "bytes": 14914
+    },
+    {
+      "name": "05_prepare_manifests.py",
+      "sha256": "c9513dff3287872d19af1e2139b4768c9d0a1c0bb945676ea84a5badb2889b99",
+      "bytes": 7863
+    },
+    {
+      "name": "06_checks.py",
+      "sha256": "118c74937dc44c52e48434d7c8136dcd57606c89fe955df426bb0696679512da",
+      "bytes": 15516
+    },
+    {
+      "name": "07_independent_verifier.py",
+      "sha256": "88fc013f528f948b5b84ec98f4c4ce822f4cf8371891ad685cae058b1590deda",
+      "bytes": 9920
+    },
+    {
+      "name": "08_finalize.py",
+      "sha256": "227dab8701f016ca2f00b18b2764d35da4290f016d354860fa35ecb1d829ea43",
+      "bytes": 12351
+    }
+  ],
+  "count": 8,
+  "copied_before_checks": true
+}

@@ -1,0 +1,151 @@
+protocol,benchmark_task,model_id,model_key,model_family,score_date,cutoff,split,status
+TIME_OUT_80_20,IFEval,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,IFEval,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,IFEval,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,BBH,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,BBH,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MATH Lvl 5,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,GPQA,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,GPQA,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MUSR,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MUSR,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::01-ai/Yi-1.5-9B,01-ai/Yi-1.5-9B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::01-ai/Yi-34B,01-ai/Yi-34B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::01-ai/Yi-6B,01-ai/Yi-6B,Yi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/gpt-j-6b,EleutherAI/gpt-j-6b,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/gpt-neo-1.3B,EleutherAI/gpt-neo-1.3B,EleutherAI,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/gpt-neo-125m,EleutherAI/gpt-neo-125m,EleutherAI,2024-08-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/gpt-neo-2.7B,EleutherAI/gpt-neo-2.7B,EleutherAI,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/gpt-neox-20b,EleutherAI/gpt-neox-20b,GPT-NeoX,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-1.4b,EleutherAI/pythia-1.4b,Pythia,2025-01-28,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-12b,EleutherAI/pythia-12b,Pythia,2024-06-18,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-160m,EleutherAI/pythia-160m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-1b,EleutherAI/pythia-1b,Pythia,2025-01-27,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-2.8b,EleutherAI/pythia-2.8b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-410m,EleutherAI/pythia-410m,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::EleutherAI/pythia-6.9b,EleutherAI/pythia-6.9b,Pythia,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::HuggingFaceTB/SmolLM-1.7B,HuggingFaceTB/SmolLM-1.7B,SmolLM2,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::Qwen/Qwen2-57B-A14B,Qwen/Qwen2-57B-A14B,Qwen,2024-07-01,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::Qwen/Qwen2-7B,Qwen/Qwen2-7B,Qwen,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::google/gemma-2-2b,google/gemma-2-2b,Gemma,2024-07-29,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::meta-llama/Llama-3.1-70B,meta-llama/Llama-3.1-70B,Llama,2024-07-18,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::meta-llama/Llama-3.2-1B,meta-llama/Llama-3.2-1B,Llama,2024-09-23,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::meta-llama/Meta-Llama-3-70B,meta-llama/Meta-Llama-3-70B,Llama,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::microsoft/phi-1,microsoft/phi-1,Phi,2024-06-21,2024-06-19,TEST,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::microsoft/phi-1_5,microsoft/phi-1_5,Phi,2024-06-17,2024-06-19,TRAIN,EVALUABLE
+TIME_OUT_80_20,MMLU-PRO,model::tiiuae/falcon-40b,tiiuae/falcon-40b,Falcon,2024-06-19,2024-06-19,TEST,EVALUABLE

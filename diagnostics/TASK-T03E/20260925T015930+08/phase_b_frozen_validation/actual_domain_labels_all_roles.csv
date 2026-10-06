@@ -1,0 +1,8 @@
+﻿domain_label,exact_string_length,n_roles_present,roles_present_in_read_order,first_role_observed,first_read_time
+arxiv,5,4,A1_calibration|A1_holdout|extension_overlap_A1|extension_new_records,A1_calibration,2026-09-25T01:59:30+08:00
+book,4,2,A1_calibration|A1_holdout,A1_calibration,2026-09-25T01:59:30+08:00
+c4,2,2,A1_calibration|A1_holdout,A1_calibration,2026-09-25T01:59:30+08:00
+commoncrawl,11,2,A1_calibration|A1_holdout,A1_calibration,2026-09-25T01:59:30+08:00
+github,6,4,A1_calibration|A1_holdout|extension_overlap_A1|extension_new_records,A1_calibration,2026-09-25T01:59:30+08:00
+stackexchange,13,2,A1_calibration|A1_holdout,A1_calibration,2026-09-25T01:59:30+08:00
+wikipedia,9,2,A1_calibration|A1_holdout,A1_calibration,2026-09-25T01:59:30+08:00

@@ -1,0 +1,1398 @@
+[
+  {
+    "id": "B1",
+    "file": "B_scaling_laws\\pythia_training_log_existing.csv",
+    "provenance": "标注为真实轨迹：说明文件口径，来源及变换待核验",
+    "rows": 1176,
+    "columns": [
+      "run_id",
+      "N_params_B",
+      "D_tokens_B",
+      "C_FLOPs_1e21",
+      "steps",
+      "batch_tokens_M",
+      "lr",
+      "wd",
+      "precision",
+      "gpu_days",
+      "step_time_ms",
+      "train_loss",
+      "val_loss",
+      "ppl",
+      "grad_norm_avg"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "run_id": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "C_FLOPs_1e21": 0,
+      "steps": 0,
+      "batch_tokens_M": 0,
+      "lr": 0,
+      "wd": 0,
+      "precision": 0,
+      "gpu_days": 0,
+      "step_time_ms": 0,
+      "train_loss": 0,
+      "val_loss": 0,
+      "ppl": 0,
+      "grad_norm_avg": 0
+    },
+    "numeric_ranges": {
+      "run_id": {
+        "min": 8,
+        "max": 1232,
+        "nonfinite_nonmissing": 0
+      },
+      "N_params_B": {
+        "min": 0.070542,
+        "max": 11.965825,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "C_FLOPs_1e21": {
+        "min": 0.0001,
+        "max": 21.5308,
+        "nonfinite_nonmissing": 0
+      },
+      "steps": {
+        "min": 64,
+        "max": 143000,
+        "nonfinite_nonmissing": 0
+      },
+      "batch_tokens_M": {
+        "min": 2.09,
+        "max": 2.1,
+        "nonfinite_nonmissing": 0
+      },
+      "lr": {
+        "min": 0.00019,
+        "max": 0.000318,
+        "nonfinite_nonmissing": 0
+      },
+      "wd": {
+        "min": 0.01,
+        "max": 0.1,
+        "nonfinite_nonmissing": 0
+      },
+      "gpu_days": {
+        "min": 0.0,
+        "max": 798.7,
+        "nonfinite_nonmissing": 0
+      },
+      "step_time_ms": {
+        "min": 100.4,
+        "max": 1307.4,
+        "nonfinite_nonmissing": 0
+      },
+      "train_loss": {
+        "min": 1.943,
+        "max": 4.4729,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.0933,
+        "max": 4.7388,
+        "nonfinite_nonmissing": 0
+      },
+      "ppl": {
+        "min": 8.11,
+        "max": 114.3,
+        "nonfinite_nonmissing": 0
+      },
+      "grad_norm_avg": {
+        "min": 0.392,
+        "max": 25.788,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "C_FLOPs_1e21": "1e21 FLOPs",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "compute_ratio_to_6ND": {
+      "n": 1176,
+      "quantiles": {
+        "0.0": 0.7658514790353519,
+        "0.05": 0.9994353224750928,
+        "0.5": 0.9999995935179582,
+        "0.95": 1.0004776700177345,
+        "1.0": 1.7631780989018788
+      },
+      "relative_difference_above_5pct": 8,
+      "within_rounding_fraction": 1.0
+    }
+  },
+  {
+    "id": "B2",
+    "file": "B_scaling_laws\\cerebras_training_log.csv",
+    "provenance": "半合成：模型族外情景验证",
+    "rows": 1029,
+    "columns": [
+      "run_id",
+      "N_params_B",
+      "D_tokens_B",
+      "C_FLOPs_1e21",
+      "steps",
+      "batch_tokens_M",
+      "lr",
+      "wd",
+      "precision",
+      "gpu_days",
+      "step_time_ms",
+      "train_loss",
+      "val_loss",
+      "ppl",
+      "grad_norm_avg"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "run_id": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "C_FLOPs_1e21": 0,
+      "steps": 0,
+      "batch_tokens_M": 0,
+      "lr": 0,
+      "wd": 0,
+      "precision": 0,
+      "gpu_days": 1029,
+      "step_time_ms": 1029,
+      "train_loss": 0,
+      "val_loss": 0,
+      "ppl": 0,
+      "grad_norm_avg": 1029
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.111,
+        "max": 13.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 14.0,
+        "max": 2050.0,
+        "nonfinite_nonmissing": 0
+      },
+      "C_FLOPs_1e21": {
+        "min": 0.009548,
+        "max": 159.9,
+        "nonfinite_nonmissing": 0
+      },
+      "steps": {
+        "min": 1000,
+        "max": 147000,
+        "nonfinite_nonmissing": 0
+      },
+      "batch_tokens_M": {
+        "min": 14.3,
+        "max": 14.3,
+        "nonfinite_nonmissing": 0
+      },
+      "lr": {
+        "min": 0.0006,
+        "max": 0.0006,
+        "nonfinite_nonmissing": 0
+      },
+      "wd": {
+        "min": 0.1,
+        "max": 0.1,
+        "nonfinite_nonmissing": 0
+      },
+      "gpu_days": {
+        "min": null,
+        "max": null,
+        "nonfinite_nonmissing": 0
+      },
+      "step_time_ms": {
+        "min": null,
+        "max": null,
+        "nonfinite_nonmissing": 0
+      },
+      "train_loss": {
+        "min": 2.8505,
+        "max": 6.504,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.8354,
+        "max": 6.4979,
+        "nonfinite_nonmissing": 0
+      },
+      "ppl": {
+        "min": 17.04,
+        "max": 663.77,
+        "nonfinite_nonmissing": 0
+      },
+      "grad_norm_avg": {
+        "min": null,
+        "max": null,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "C_FLOPs_1e21": "1e21 FLOPs",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 28,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "compute_ratio_to_6ND": {
+      "n": 1029,
+      "quantiles": {
+        "0.0": 0.9886610748679714,
+        "0.05": 0.9991523545442949,
+        "0.5": 1.0,
+        "0.95": 1.0012210429334807,
+        "1.0": 1.024024024024024
+      },
+      "relative_difference_above_5pct": 0,
+      "within_rounding_fraction": 0.06511175898931001
+    }
+  },
+  {
+    "id": "B4",
+    "file": "B_scaling_laws\\scaling_baseline.csv",
+    "provenance": "真实：公开跨族收敛点，绝对损失口径不保证一致",
+    "rows": 57,
+    "columns": [
+      "family",
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "is_converged"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "family": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "is_converged": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.07,
+        "max": 72.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 6,
+        "max": 33739,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 1.71,
+        "max": 4.3629,
+        "nonfinite_nonmissing": 0
+      },
+      "is_converged": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "family_counts": {
+      "Pythia": 8,
+      "Qwen2": 7,
+      "OPT": 7,
+      "Cerebras-GPT": 7,
+      "Phi": 6,
+      "LLaMA": 6,
+      "GPT2": 4,
+      "BLOOM": 4,
+      "Gemma": 3,
+      "Falcon": 2,
+      "Yi": 2,
+      "Mistral": 1
+    }
+  },
+  {
+    "id": "B5",
+    "file": "B_scaling_laws\\published_scaling_data.csv",
+    "provenance": "真实：文献整理，绝对损失口径不保证一致",
+    "rows": 44,
+    "columns": [
+      "family",
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "source",
+      "is_converged"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "family": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "source": 0,
+      "is_converged": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.125,
+        "max": 540.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 5,
+        "max": 2000,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 1.473,
+        "max": 3.015,
+        "nonfinite_nonmissing": 0
+      },
+      "is_converged": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "family_counts": {
+      "Chinchilla": 9,
+      "GPT-3": 8,
+      "Gopher": 7,
+      "OPT": 5,
+      "LLaMA": 4,
+      "BLOOM": 4,
+      "LLaMA-2": 3,
+      "PaLM": 3,
+      "GPT-2": 1
+    }
+  },
+  {
+    "id": "B6",
+    "file": "B_scaling_laws\\supplementary_NQ_experiment.csv",
+    "provenance": "半合成：质量情景",
+    "rows": 360,
+    "columns": [
+      "experiment_id",
+      "N_params_B",
+      "D_tokens_B",
+      "Q_score",
+      "val_loss"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "experiment_id": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0,
+      "val_loss": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.07,
+        "max": 11.97,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 10,
+        "max": 600,
+        "nonfinite_nonmissing": 0
+      },
+      "Q_score": {
+        "min": 0.1,
+        "max": 1.0,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.0161,
+        "max": 3.7216,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent",
+      "Q_score": "provided dimensionless score; not calibrated to A quality"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0
+    }
+  },
+  {
+    "id": "B7",
+    "file": "B_scaling_laws\\supplementary_NQ_experiment_expanded.csv",
+    "provenance": "半合成：含B6重复点",
+    "rows": 450,
+    "columns": [
+      "experiment_id",
+      "N_params_B",
+      "D_tokens_B",
+      "Q_score",
+      "val_loss"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "experiment_id": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0,
+      "val_loss": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.07,
+        "max": 11.97,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 10.0,
+        "max": 600.0,
+        "nonfinite_nonmissing": 0
+      },
+      "Q_score": {
+        "min": 0.1,
+        "max": 1.0,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.0161,
+        "max": 3.7216,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent",
+      "Q_score": "provided dimensionless score; not calibrated to A quality"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0
+    }
+  },
+  {
+    "id": "B8",
+    "file": "B_scaling_laws\\supplementary_NQ_experiment_large.csv",
+    "provenance": "半合成：含calibrated/extrapolated标记",
+    "rows": 1704,
+    "columns": [
+      "experiment_id",
+      "N_params_B",
+      "D_tokens_B",
+      "Q_score",
+      "val_loss",
+      "data_type"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "experiment_id": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0,
+      "val_loss": 0,
+      "data_type": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.07,
+        "max": 700.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 5,
+        "max": 2000,
+        "nonfinite_nonmissing": 0
+      },
+      "Q_score": {
+        "min": 0.05,
+        "max": 1.0,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 0.5,
+        "max": 3.3659,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent",
+      "Q_score": "provided dimensionless score; not calibrated to A quality"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "Q_score": 0
+    },
+    "data_type_counts": {
+      "calibrated": 984,
+      "extrapolated": 720
+    }
+  },
+  {
+    "id": "B9",
+    "file": "B_scaling_laws\\supplementary_large_models.csv",
+    "provenance": "真实公开元数据：含缺失及计算口径差异",
+    "rows": 132,
+    "columns": [
+      "model_name",
+      "N_params_B",
+      "D_tokens_B",
+      "FLOPs",
+      "publication_date",
+      "organization",
+      "accessibility",
+      "country"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "model_name": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "FLOPs": 11,
+      "publication_date": 0,
+      "organization": 1,
+      "accessibility": 2,
+      "country": 1
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 100.0,
+        "max": 10000.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.0,
+        "max": 36000.0,
+        "nonfinite_nonmissing": 0
+      },
+      "FLOPs": {
+        "min": 1.449e+18,
+        "max": 4.9999999999999994e+26,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "FLOPs": "FLOPs"
+    },
+    "duplicate_NDQ_keys": 9,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 4
+    },
+    "compute_ratio_to_6ND": {
+      "n": 119,
+      "quantiles": {
+        "0.0": 4.472222222222222e-07,
+        "0.05": 0.03191666666666667,
+        "0.5": 0.9999787238569392,
+        "0.95": 7.073331156085908,
+        "1.0": 600.664767331434
+      },
+      "relative_difference_above_5pct": 71
+    }
+  },
+  {
+    "id": "B10",
+    "file": "B_scaling_laws\\supplementary_large_baseline.csv",
+    "provenance": "估算：非独立观测",
+    "rows": 128,
+    "columns": [
+      "family",
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "is_converged"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "family": 0,
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "is_converged": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 100.0,
+        "max": 10000.0,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.1,
+        "max": 36000.0,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 1.7838,
+        "max": 4.0812,
+        "nonfinite_nonmissing": 0
+      },
+      "is_converged": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 9,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "family_counts": {
+      "Ling-flash-base-2.0-20T": 1,
+      "FaXin": 1,
+      "PaLM (540B)": 1,
+      "Minerva (540B)": 1,
+      "Flan-PaLM 540B": 1,
+      "U-PaLM (540B)": 1,
+      "Megatron-Turing NLG 530B": 1,
+      "MegaScale (Production)": 1,
+      "MegaScale (530B)": 1,
+      "Microsoft MAI-1 (2024 unreleased)": 1,
+      "Doubao-pro": 1,
+      "Arctic": 1,
+      "Qwen3-Coder-480B-A35B": 1,
+      "MiniMax-Text-01": 1,
+      "MiniMax-M1-40k": 1,
+      "MiniMax-M1-80k": 1,
+      "Llama 3.1-405B": 1,
+      "Hermes 3 405B": 1,
+      "Llama 4 Maverick": 1,
+      "Arcee Trinity Large": 1,
+      "Hunyuan-Large": 1,
+      "GLM-4.7": 1,
+      "GLM-4.6": 1,
+      "GLM-4.5": 1,
+      "PaLM 2": 1,
+      "Nemotron-4 340B": 1,
+      "AMIE (Articulate Medical Intelligence Explorer)": 1,
+      "Grok-1": 1,
+      "MiMo-V2-Flash": 1,
+      "SB-LM": 1,
+      "EXAONE 1.0": 1,
+      "LongCat-Flash": 1,
+      "Hunyuan-TurboS": 1,
+      "SenseChat 5.0": 1,
+      "M6-T": 1,
+      "DLRM-2022": 1,
+      "Grok 3": 1,
+      "Grok 4": 1,
+      "Llama 4 Behemoth (preview)": 1,
+      "GPT-4 (Jun 2023)": 1,
+      "GPT-4 (Mar 2023)": 1,
+      "Wu Dao 2.0": 1,
+      "Switch": 1,
+      "QMoE: compressed SwitchTransformer": 1,
+      "GLaM": 1,
+      "MoE-1.1T": 1,
+      "PanGu-Σ": 1,
+      "Kimi K2.5": 1,
+      "DLRM-2021": 1,
+      "GShard (600B)": 1,
+      "Kimi K2": 1,
+      "Qwen3-Max": 1,
+      "Ling-1T": 1,
+      "Kimi K2 Thinking": 1,
+      "GLM-5": 1,
+      "Pangu Ultra MoE": 1,
+      "DeepSeek-V3": 1,
+      "DeepSeek-R1": 1,
+      "DeepSeek-V3 (Mar 2025)": 1,
+      "DeepSeek-R1 (May 2025)": 1,
+      "DeepSeek-V3.1": 1,
+      "DeepSeek-V3.1-Terminus": 1,
+      "DeepSeek-V3.2-Exp": 1,
+      "ERNIE-4.5-300B-A47B": 1,
+      "Ling-Plus (\"Bailing\")": 1,
+      "Gopher (280B)": 1,
+      "Llama 4 Scout": 1,
+      "BIG-G 137B": 1,
+      "MEB": 1,
+      "Pangu Ultra": 1,
+      "DBRX": 1,
+      "GLM-130B": 1,
+      "BlueLM 130B": 1,
+      "Step-Omni": 1,
+      "Step-1": 1,
+      "Step-Audio-Chat 130B": 1,
+      "Mistral Large 2": 1,
+      "Galactica": 1,
+      "gpt-oss-120b": 1,
+      "Telechat2-115B": 1,
+      "GLM-4.5V": 1,
+      "FLAN 137B": 1,
+      "GLM-4.5-Air": 1,
+      "Ring-flash-linear-2.0": 1,
+      "InternLM": 1,
+      "Yuan 2.0": 1,
+      "Odyssey 102B": 1,
+      "Solar Open 100B\n": 1,
+      "FLM-101B": 1,
+      "YaLM": 1,
+      "xTrimoPGLM -100B": 1,
+      "Luca 2.0": 1,
+      "Hunyuan": 1,
+      "Yi-Large": 1,
+      "PLaMo-100B": 1,
+      "LaMDA": 1,
+      "Mixtral 8x22B": 1,
+      "ST-MoE": 1,
+      "Amazon Titan": 1,
+      "ERNIE 3.0 Titan": 1,
+      "Llama Nemotron Ultra 253B": 1,
+      "Aramco Metabrain AI": 1,
+      "Yuan 1.0": 1,
+      "DeepSeek-V2 (MoE-236B)": 1,
+      "DeepSeek-Coder-V2 236B": 1,
+      "DeepSeek-V2.5": 1,
+      "K-EXAONE": 1,
+      "Qwen3-235B-A22B": 1,
+      "Qwen3-235B-A22B (Jul 2025)": 1,
+      "Qwen3-235B-A22B-Thinking (Jul 2025)": 1,
+      "PanGu-α": 1,
+      "HyperCLOVA 204B": 1,
+      "Mi:dm 200B": 1,
+      "dots.llm1": 1,
+      "SenseChat": 1,
+      "Falcon-180B": 1,
+      "Jurassic-1-Jumbo": 1,
+      "BLOOM-176B": 1,
+      "XuanYuan 2.0": 1,
+      "BLOOMZ-176B": 1,
+      "BLUUMI": 1,
+      "OPT-175B": 1,
+      "BlenderBot 3": 1,
+      "OPT-IML (175B)": 1,
+      "BlueLM 175B": 1,
+      "MegaScale (175B)": 1,
+      "GPT-3 175B (davinci)": 1,
+      "M6-10T": 1
+    }
+  },
+  {
+    "id": "B11",
+    "file": "B_scaling_laws\\open_model_family_metadata.csv",
+    "provenance": "真实元数据：辅助",
+    "rows": 18,
+    "columns": [
+      "family",
+      "model_repo",
+      "config_bytes",
+      "readme_bytes",
+      "weight_file_count",
+      "weight_total_bytes",
+      "source_url",
+      "error"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "family": 0,
+      "model_repo": 0,
+      "config_bytes": 0,
+      "readme_bytes": 0,
+      "weight_file_count": 0,
+      "weight_total_bytes": 0,
+      "source_url": 0,
+      "error": 18
+    },
+    "numeric_ranges": {
+      "config_bytes": {
+        "min": 359,
+        "max": 1322,
+        "nonfinite_nonmissing": 0
+      },
+      "readme_bytes": {
+        "min": 10560,
+        "max": 17697,
+        "nonfinite_nonmissing": 0
+      },
+      "weight_file_count": {
+        "min": 1,
+        "max": 6,
+        "nonfinite_nonmissing": 0
+      },
+      "weight_total_bytes": {
+        "min": 56303938,
+        "max": 55104826062,
+        "nonfinite_nonmissing": 0
+      },
+      "error": {
+        "min": null,
+        "max": null,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {},
+    "family_counts": {
+      "pythia": 9,
+      "cerebras_gpt": 7,
+      "olmo": 2
+    }
+  },
+  {
+    "id": "B12",
+    "file": "B_scaling_laws\\pythia_checkpoint_index.csv",
+    "provenance": "真实索引：辅助",
+    "rows": 1386,
+    "columns": [
+      "model_repo",
+      "model_size",
+      "step",
+      "branch",
+      "commit"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "model_repo": 0,
+      "model_size": 0,
+      "step": 0,
+      "branch": 0,
+      "commit": 0
+    },
+    "numeric_ranges": {
+      "step": {
+        "min": 0,
+        "max": 143000,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {}
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_0.070542B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.070542,
+        "max": 0.070542,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.8127,
+        "max": 4.7385,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_0.162405B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.162405,
+        "max": 0.162405,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.5959,
+        "max": 4.5229,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_0.409009B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 0.409009,
+        "max": 0.409009,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.4196,
+        "max": 4.3484,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_1.040867B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 1.040867,
+        "max": 1.040867,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.2923,
+        "max": 4.2162,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_1.416184B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 1.416184,
+        "max": 1.416184,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.2523,
+        "max": 4.1845,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_11.965825B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 11.965825,
+        "max": 11.965825,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.0936,
+        "max": 4.0229,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_2.782831B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 2.782831,
+        "max": 2.782831,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.1897,
+        "max": 4.1185,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  },
+  {
+    "id": "B3",
+    "file": "B_scaling_laws\\training_trajectories\\pythia_6.86104B_trajectory.csv",
+    "provenance": "插值：源于B1检查点，非独立验证",
+    "rows": 500,
+    "columns": [
+      "N_params_B",
+      "D_tokens_B",
+      "val_loss",
+      "step",
+      "interpolated"
+    ],
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "N_params_B": 0,
+      "D_tokens_B": 0,
+      "val_loss": 0,
+      "step": 0,
+      "interpolated": 0
+    },
+    "numeric_ranges": {
+      "N_params_B": {
+        "min": 6.86104,
+        "max": 6.86104,
+        "nonfinite_nonmissing": 0
+      },
+      "D_tokens_B": {
+        "min": 0.134,
+        "max": 299.893,
+        "nonfinite_nonmissing": 0
+      },
+      "val_loss": {
+        "min": 2.1224,
+        "max": 4.0498,
+        "nonfinite_nonmissing": 0
+      },
+      "step": {
+        "min": 0,
+        "max": 143,
+        "nonfinite_nonmissing": 0
+      },
+      "interpolated": {
+        "min": 1,
+        "max": 1,
+        "nonfinite_nonmissing": 0
+      }
+    },
+    "units": {
+      "N_params_B": "1e9 parameters",
+      "D_tokens_B": "1e9 tokens",
+      "val_loss": "cross-entropy; source-dependent"
+    },
+    "duplicate_NDQ_keys": 0,
+    "nonpositive_input_count": {
+      "N_params_B": 0,
+      "D_tokens_B": 0
+    },
+    "interpolated_counts": {
+      "1": 500
+    }
+  }
+]

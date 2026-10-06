@@ -1,0 +1,8 @@
+{
+  "stage": "s20_score_primary",
+  "completed_local": "2026-09-24T21:53:10+08:00",
+  "outputs": {
+    "quality_features_scores.parquet": "1f19b90623b744a755f6ba2c5cebe43e016ba41d42d4586dfbb4cdd1629fed77",
+    "normalization.json": "fddc2eea32141971425c6b0b1ef371ae751077bf7ff7cbaab3ef236e4fb05b5f"
+  }
+}

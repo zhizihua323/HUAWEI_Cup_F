@@ -1,0 +1,30 @@
+{
+  "asset": "fig04_q2_fit_validation",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "solution/outputs/scaling/B1_all_predictions.csv",
+      "fields": "val_loss; prediction; N_params_B; D_tokens_B",
+      "unit": "Loss; billion parameters; billion tokens",
+      "denominator": "all B1 rows"
+    },
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/validation_predictions.parquet",
+      "fields": "source_id; actual_loss; frozen_M0_B1_prediction; in_B1_box; oos_flag",
+      "unit": "Loss",
+      "denominator": "all prediction_valid rows with observed loss for B2-B5"
+    },
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/validation_metrics_by_source.csv",
+      "fields": "IN_SUPPORT n; rmse; final_qualification",
+      "unit": "Loss",
+      "denominator": "source-specific support-in rows"
+    },
+    {
+      "file": "diagnostics/TASK-G2/20260925T195336+08/large_model_gt10b_audit.csv",
+      "fields": "finite_frozen_prediction_records; inside_B1_box_records; final_qualification",
+      "unit": "count",
+      "denominator": "B9/B10 records"
+    }
+  ]
+}

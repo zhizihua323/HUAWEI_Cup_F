@@ -1,0 +1,165 @@
+﻿dataset,field,rows,missing_nan,missing_nan_pct,blank_string_among_nonnull,numeric_minus1_sentinel,effective_usable,all_missing
+C1,Model,4576,0,0.0,0,0,4576,False
+C1,#Params (B),4576,3,0.065559,0,0,4573,False
+C1,Submission Date,4576,12,0.262238,0,0,4564,False
+C1,Hub License,4576,1753,38.308566,0,0,2823,False
+C1,Type,4576,0,0.0,0,0,4576,False
+C1,Average ⬆️,4576,0,0.0,0,0,4576,False
+C1,IFEval,4576,0,0.0,0,0,4576,False
+C1,BBH,4576,0,0.0,0,0,4576,False
+C1,MATH Lvl 5,4576,0,0.0,0,0,4576,False
+C1,GPQA,4576,0,0.0,0,0,4576,False
+C1,MUSR,4576,0,0.0,0,0,4576,False
+C1,MMLU-PRO,4576,0,0.0,0,0,4576,False
+C2,Model,4576,0,0.0,0,0,4576,False
+C2,#Params (B),4576,3,0.065559,0,0,4573,False
+C2,Submission Date,4576,12,0.262238,0,0,4564,False
+C2,Hub License,4576,1753,38.308566,0,0,2823,False
+C2,Type,4576,0,0.0,0,0,4576,False
+C2,Average ⬆️,4576,0,0.0,0,0,4576,False
+C2,IFEval,4576,0,0.0,0,0,4576,False
+C2,BBH,4576,0,0.0,0,0,4576,False
+C2,MATH Lvl 5,4576,0,0.0,0,0,4576,False
+C2,GPQA,4576,0,0.0,0,0,4576,False
+C2,MUSR,4576,0,0.0,0,0,4576,False
+C2,MMLU-PRO,4576,0,0.0,0,0,4576,False
+C2,Epoch_AI_Publication_Date,4576,4129,90.231643,0,0,447,False
+C2,Epoch_AI_Organization,4576,4133,90.319056,0,0,443,False
+C2,Epoch_AI_Open_Weights,4576,4133,90.319056,0,0,443,False
+C3,Model,4599,0,0.0,0,0,4599,False
+C3,Year,4599,0,0.0,0,0,4599,False
+C3,Params_B,4599,0,0.0,0,0,4599,False
+C3,Average,4599,0,0.0,0,0,4599,False
+C3,IFEval,4599,0,0.0,0,0,4599,False
+C3,BBH,4599,0,0.0,0,0,4599,False
+C3,MATH_Lvl5,4599,0,0.0,0,0,4599,False
+C3,GPQA,4599,0,0.0,0,0,4599,False
+C3,MUSR,4599,0,0.0,0,0,4599,False
+C3,MMLU_PRO,4599,0,0.0,0,0,4599,False
+C3,Source,4599,0,0.0,0,0,4599,False
+C4,Model,3523,0,0.0,0,0,3523,False
+C4,Domain,3523,92,2.611411,0,0,3431,False
+C4,Task,3523,122,3.462958,0,0,3401,False
+C4,Organization,3523,88,2.497871,0,0,3435,False
+C4,Authors,3523,842,23.900085,0,0,2681,False
+C4,Publication date,3523,23,0.652853,0,0,3500,False
+C4,Reference,3523,174,4.938972,0,0,3349,False
+C4,Link,3523,44,1.248936,0,0,3479,False
+C4,Citations,3523,2060,58.472892,0,0,1463,False
+C4,Notability criteria,3523,2481,70.422935,0,0,1042,False
+C4,Notability criteria notes,3523,2682,76.1283,1,0,840,False
+C4,Parameters,3523,1226,34.799886,0,0,2297,False
+C4,Parameters notes,3523,1662,47.175703,0,0,1861,False
+C4,Training compute (FLOP),3523,2133,60.54499,0,0,1390,False
+C4,Training compute notes,3523,1886,53.53392,14,0,1623,False
+C4,Training dataset size (total),3523,2099,59.579903,0,0,1424,False
+C4,Dataset size notes,3523,1804,51.206358,3,0,1716,False
+C4,Training time (hours),3523,2973,84.388305,0,0,550,False
+C4,Training time notes,3523,2918,82.827136,1,0,604,False
+C4,Training hardware,3523,2343,66.505819,0,0,1180,False
+C4,Approach,3523,3211,91.143911,0,0,312,False
+C4,Confidence,3523,197,5.591825,0,0,3326,False
+C4,Abstract,3523,540,15.327846,0,0,2983,False
+C4,Epochs,3523,2720,77.206926,0,0,803,False
+C4,WikiText and Penn Treebank data,3523,3118,88.504116,0,0,405,False
+C4,Model accessibility,3523,870,24.694862,0,0,2653,False
+C4,Country (of organization),3523,95,2.696565,0,0,3428,False
+C4,Base model,3523,2839,80.584729,0,0,684,False
+C4,Finetune compute (FLOP),3523,3263,92.619926,0,0,260,False
+C4,Finetune compute notes,3523,3218,91.342606,2,0,303,False
+C4,Hardware quantity,3523,2680,76.07153,0,0,843,False
+C4,Hardware utilization (MFU),3523,3462,98.268521,0,0,61,False
+C4,Last modified,3523,0,0.0,0,0,3523,False
+C4,Training cloud compute vendor,3523,3470,98.4956,0,0,53,False
+C4,Training data center,3523,3457,98.126597,0,0,66,False
+C4,Archived links,3523,3498,99.290378,0,0,25,False
+C4,Batch size,3523,3272,92.87539,0,0,251,False
+C4,Batch size notes,3523,3326,94.408175,0,0,197,False
+C4,Organization categorization,3523,107,3.037184,0,0,3416,False
+C4,Foundation model,3523,3445,97.785978,0,0,78,False
+C4,Training compute lower bound,3523,3497,99.261993,0,0,26,False
+C4,Training compute upper bound,3523,3482,98.836219,0,0,41,False
+C4,Training chip-hours,3523,3308,93.897247,0,0,215,False
+C4,Training code accessibility,3523,1120,31.791087,0,0,2403,False
+C4,Accessibility notes,3523,1773,50.326426,0,0,1750,False
+C4,Possibly over 1e23 FLOP,3523,3002,85.211467,0,0,521,False
+C4,Training compute cost (2023 USD),3523,3299,93.641783,0,0,224,False
+C4,Utilization notes,3523,3435,97.502129,0,0,88,False
+C4,Numerical format,3523,3161,89.724666,0,0,362,False
+C4,Frontier model,3523,3386,96.111269,0,0,137,False
+C4,Training power draw (W),3523,2752,78.115243,0,0,771,False
+C4,Training compute estimation method,3523,2083,59.125745,0,0,1440,False
+C4,Hugging Face developer id,3523,2888,81.975589,0,0,635,False
+C4,Post-training compute (FLOP),3523,3522,99.971615,0,0,1,False
+C4,Post-training compute notes,3523,3522,99.971615,0,0,1,False
+C4,Hardware utilization (HFU),3523,3498,99.290378,0,0,25,False
+C4,Open model weights?,3523,870,24.694862,0,0,2653,False
+C5,Model,43,0,0.0,0,0,43,False
+C5,N_params_B,43,0,0.0,0,0,43,False
+C5,D_tokens_B,43,36,83.72093,0,0,7,False
+C5,Val_Loss,43,0,0.0,0,0,43,False
+C5,LB_Average,43,0,0.0,0,0,43,False
+C5,LB_IFEval,43,0,0.0,0,0,43,False
+C5,LB_BBH,43,0,0.0,0,0,43,False
+C5,LB_MATH,43,0,0.0,0,0,43,False
+C5,LB_GPQA,43,0,0.0,0,0,43,False
+C5,LB_MUSR,43,0,0.0,0,0,43,False
+C5,LB_MMLU_PRO,43,0,0.0,0,0,43,False
+C5,Loss_Source,43,0,0.0,0,0,43,False
+C5,Loss_Comparability,43,0,0.0,0,0,43,False
+C6,Model,75,0,0.0,0,0,75,False
+C6,N_params_B,75,0,0.0,0,0,75,False
+C6,D_tokens_B,75,68,90.666667,0,0,7,False
+C6,Val_Loss,75,0,0.0,0,0,75,False
+C6,LB_Average,75,0,0.0,0,0,75,False
+C6,LB_IFEval,75,0,0.0,0,0,75,False
+C6,LB_BBH,75,0,0.0,0,0,75,False
+C6,LB_MATH,75,0,0.0,0,0,75,False
+C6,LB_GPQA,75,0,0.0,0,0,75,False
+C6,LB_MUSR,75,0,0.0,0,0,75,False
+C6,LB_MMLU_PRO,75,0,0.0,0,0,75,False
+C6,Loss_Source,75,0,0.0,0,0,75,False
+C6,Loss_Comparability,75,0,0.0,0,0,75,False
+C7,model_name,45,0,0.0,0,0,45,False
+C7,n_layers,45,0,0.0,0,0,45,False
+C7,n_heads,45,0,0.0,0,0,45,False
+C7,d_model,45,0,0.0,0,0,45,False
+C7,vocab_size,45,0,0.0,0,0,45,False
+C7,max_position_embeddings,45,0,0.0,0,0,45,False
+C7,training_data_TB,45,0,0.0,0,0,45,False
+C9,eval_name,4576,0,0.0,0,0,4576,False
+C9,Precision,4576,0,0.0,0,0,4576,False
+C9,Type,4576,0,0.0,0,0,4576,False
+C9,T,4576,0,0.0,0,0,4576,False
+C9,Weight type,4576,0,0.0,0,0,4576,False
+C9,Architecture,4576,0,0.0,6,0,4570,False
+C9,Model,4576,0,0.0,0,0,4576,False
+C9,fullname,4576,0,0.0,0,0,4576,False
+C9,Model sha,4576,0,0.0,16,0,4560,False
+C9,Average ⬆️,4576,0,0.0,0,0,4576,False
+C9,Hub License,4576,0,0.0,1753,0,2823,False
+C9,Hub ❤️,4576,0,0.0,0,0,4576,False
+C9,#Params (B),4576,0,0.0,0,3,4576,False
+C9,Available on the hub,4576,0,0.0,0,0,4576,False
+C9,MoE,4576,0,0.0,0,0,4576,False
+C9,Flagged,4576,0,0.0,0,0,4576,False
+C9,Chat Template,4576,0,0.0,0,0,4576,False
+C9,CO₂ cost (kg),4576,0,0.0,0,0,4576,False
+C9,IFEval Raw,4576,0,0.0,0,0,4576,False
+C9,IFEval,4576,0,0.0,0,0,4576,False
+C9,BBH Raw,4576,0,0.0,0,0,4576,False
+C9,BBH,4576,0,0.0,0,0,4576,False
+C9,MATH Lvl 5 Raw,4576,0,0.0,0,0,4576,False
+C9,MATH Lvl 5,4576,0,0.0,0,0,4576,False
+C9,GPQA Raw,4576,0,0.0,0,0,4576,False
+C9,GPQA,4576,0,0.0,0,0,4576,False
+C9,MUSR Raw,4576,0,0.0,0,0,4576,False
+C9,MUSR,4576,0,0.0,0,0,4576,False
+C9,MMLU-PRO Raw,4576,0,0.0,0,0,4576,False
+C9,MMLU-PRO,4576,0,0.0,0,0,4576,False
+C9,Merged,4576,0,0.0,0,0,4576,False
+C9,Official Providers,4576,0,0.0,0,0,4576,False
+C9,Upload To Hub Date,4576,0,0.0,530,0,4046,False
+C9,Submission Date,4576,0,0.0,12,0,4564,False
+C9,Generation,4576,0,0.0,0,0,4576,False
+C9,Base Model,4576,0,0.0,0,0,4576,False

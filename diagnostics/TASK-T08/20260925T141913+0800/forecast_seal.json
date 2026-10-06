@@ -1,0 +1,104 @@
+{
+  "seal_version": "T08-v1",
+  "task_id": "TASK-T08",
+  "run_id": "20260925T141913+0800",
+  "sealed_at_local": "2026-09-25T14:19:25.807521+08:00",
+  "sealed_at_utc": "2026-09-25T06:19:25.807529+00:00",
+  "forecast_origin_date": "2025-03-13",
+  "forecast_origin_rule": "maximum day-granularity observation date among C01-audited, identity-unique, non-ambiguous C1/C2/C8 records; C8 eval timestamps verified for the same date",
+  "origin_submission_max": "2025-03-13",
+  "origin_c8_eval_max": "2025-03-13T18:16:04.922327280+00:00",
+  "horizon_dates": {
+    "12": "2026-03-13",
+    "24": "2027-03-13"
+  },
+  "scenario_ids": [
+    "SCALE_GROWTH_Q25_CONSERVATIVE",
+    "SCALE_GROWTH_Q50_BASE",
+    "SCALE_GROWTH_Q75_OPTIMISTIC"
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "SCALE_GROWTH_Q25_CONSERVATIVE",
+      "definition_quantile": 0.25,
+      "horizons_months": [
+        12,
+        24
+      ],
+      "growth_rate_status": "TO_BE_EVALUATED_AFTER_SEAL"
+    },
+    {
+      "scenario_id": "SCALE_GROWTH_Q50_BASE",
+      "definition_quantile": 0.5,
+      "horizons_months": [
+        12,
+        24
+      ],
+      "growth_rate_status": "TO_BE_EVALUATED_AFTER_SEAL"
+    },
+    {
+      "scenario_id": "SCALE_GROWTH_Q75_OPTIMISTIC",
+      "definition_quantile": 0.75,
+      "horizons_months": [
+        12,
+        24
+      ],
+      "growth_rate_status": "TO_BE_EVALUATED_AFTER_SEAL"
+    }
+  ],
+  "frozen_model": "T05 CONSTANT for all six tasks and auxiliary mean",
+  "frozen_eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+  "time_trend_validated_for_extrapolation": false,
+  "main_scale_reference": {
+    "definition": "constant-model reference point; m_t(x) ignores x",
+    "params_B": 1.416184,
+    "D_tokens_B": 299.893,
+    "N_physical": 1416184000.0,
+    "D_physical": 299893000000.0,
+    "in_support": true
+  },
+  "loss_benchmark_separation": true,
+  "loss_to_benchmark_conversion_allowed": false,
+  "growth_rate_rule": {
+    "same_model_family": true,
+    "sortable_dates": true,
+    "interval_days": [
+      90,
+      730
+    ],
+    "N_observed": true,
+    "D_observed": true,
+    "D_imputation_allowed": false,
+    "compute_formula": "6*N_physical*D_physical",
+    "family_period_aggregation": "median within model family and period, then independent family distribution",
+    "min_independent_families": 3,
+    "min_family_level_intervals": 10
+  },
+  "manifest_guards": {
+    "TASK-T05": {
+      "status": "PASS",
+      "entries": 34,
+      "mismatch_count": 0
+    },
+    "TASK-T07": {
+      "status": "PASS",
+      "entries": 39,
+      "mismatch_count": 0
+    },
+    "TASK-T06E-INTEGRATE": {
+      "status": "PASS",
+      "entries": 23,
+      "mismatch_count": 0
+    },
+    "TASK-C01": {
+      "status": "PASS",
+      "entries": 0,
+      "mismatch_count": 0
+    },
+    "TASK-C01-R1": {
+      "status": "PASS",
+      "entries": 0,
+      "mismatch_count": 0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+component,status,evidence_source,numeric_use_allowed_in_P,constraint
+q_A_star,DESCRIPTIVE_RECOMPUTED_SOURCE_STATISTIC,A1_calibration_only,True,Seven-domain equal-weight mean; not a fitted parameter.
+F_A_equal_domain_CDF,EMPIRICAL_REFERENCE_DETERMINISTIC,A1_calibration_only,True,Seven domain ECDFs each weighted 1/7.
+F_B_unique_Q_CDF,EMPIRICAL_DESIGN_CDF_DETERMINISTIC,B6_design_levels_only,True,Eight unique Q levels each weighted 1/8.
+H0,IDENTIFIED_NULL_BASELINE,no_map,False,k=0 baseline; no quality effect.
+H1,SCENARIO_ONLY,identity_assumption,False,Identity is not identified across A and B.
+H2,SCENARIO_ONLY,fixed_b,False,"b is fixed at 0.5, 1, or 2 by preregistration."
+H3,SCENARIO_ONLY,equal_domain_ECDF_quantile_map,False,Empirical quantile coupling does not identify A-to-B correspondence.
+H4,DIRECTION_ONLY_NOT_OPTIMIZABLE,B6_direction_only,False,No A-side numeric Loss benefit.
+A_B_mapping,NOT_IDENTIFIABLE,no_join_key_and_no_fixed_p_quality_variation,False,No estimated map is produced.
+r_B1,FIXED_SCENARIO,registry,False,"Values 0.2, 0.6, 0.9 are scenarios, not estimates."
+rho_Q,FIXED_SCENARIO,registry,False,"Values 0, 0.5, 1 are scenarios, not estimates."
+tau_p,FIXED_SCENARIO,registry,False,"Values -1, 0, 0.5, 1 are scenarios; -1 is stress only."
+k_add_B6,PARAMETER_SLOT_PENDING_CONTROLLER,branch_B_candidate_not_read_by_P,False,P registers a slot and does not fill a B-side value.
+eta_B6,PARAMETER_SLOT_PENDING_CONTROLLER,branch_B_candidate_not_read_by_P,False,Effective-data transport must be filled later by the controller.
+RegMix_linear_coefficients,FROZEN_EXISTING_MODEL_SOURCE_CONDITIONAL,solution/outputs/mixture/model.json,True,Reused without refitting or model-family reselection.
+RegMix_1M_mixture_effects,IDENTIFIED_WITHIN_SOURCE_1M,A6/A7_frozen_linear_predictions,True,Only same-scale RegMix mixture effect is supported.
+RegMix_cross_scale_mixture_effects,SCENARIO_ONLY,A8-A11_reporting,False,"60M/1B are cross-scale transport diagnostics, not recalibration."
+Q_mix_gamma,NOT_IDENTIFIABLE,p_Q_double_counting,False,Q_mix lies in the p column space for fixed q.
+B8_reverse_direction,DIRECTION_ONLY_NOT_OPTIMIZABLE,common_support_slot_pending,False,No legacy boundary k=-20 and no out-of-support numeric generation.
+10B_70B_estimates,ESTIMATED_SCENARIO_NOT_TRUTH,A12-A15,False,They are not validation truths or pass counts.

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T113744+08",
+  "formal_input_contract": "TASK-T06E-INTEGRATE/20260925T110904+08",
+  "inputs": [
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_model_contract.json",
+      "role": "formal_frozen_T07_contract",
+      "bytes": 6458,
+      "sha256": "925ffeaec52dd3d72751e5e6d5e99c9cb077ee5106e554fb858530f6b0b8160e"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_parameter_table.csv",
+      "role": "formal_frozen_T07_parameter_table",
+      "bytes": 4285,
+      "sha256": "fc3649a1b076c69ae0e0d907618719211e3100b1d7d763da2a2f554c129d20cc"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/scenario_registry_filled.csv",
+      "role": "formal_frozen_scenario_registry",
+      "bytes": 11153,
+      "sha256": "af8673afda6f1057fc104e0e257ef183d9811a5835db9a080596425800126237"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/scenario_predictions.parquet",
+      "role": "formal_scenario_interface",
+      "bytes": 32198,
+      "sha256": "137f42d595a4fbfff81ea43aa8f3208345a9fe9db0920eed995e4bb6ea5384c8"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/uncertainty_components.json",
+      "role": "formal_uncertainty_interface",
+      "bytes": 4597,
+      "sha256": "381be6b37b5ed3c3b84842bf698c6a672221f26a07bb0a623c75a38a9aacce1f"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-B/20260925T100306+08/bootstrap/parameter_draws.parquet",
+      "role": "formal_joint_row_draws",
+      "bytes": 63475,
+      "sha256": "15e3ad89c622f72f3425b3f24d6d2c498de5fd2fbeb25915d6d38af3a9d03422"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-P/20260925T075729+08/mixture_audit/reference_p_reconciliation.csv",
+      "role": "formal_p0_reconciliation",
+      "bytes": 1968,
+      "sha256": "c5c322685a12f49573e229dcbd5a44e40876520ff72c89533408dbaae2564d2c"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+      "role": "readonly_A4_training_recipes",
+      "bytes": 46412,
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8"
+    },
+    {
+      "path": "solution/outputs/mixture/model.json",
+      "role": "readonly_frozen_RegMix_linear_coefficients",
+      "bytes": 77379,
+      "sha256": "3ddd88c26476b5965d507c9b242f7e16ea2fd4e9f33bf81a0e0815b86fda3fed"
+    },
+    {
+      "path": "F题/real_attachments/C_efficiency_evolution/model_architecture_metadata.csv",
+      "role": "readonly_C7_context_audit",
+      "bytes": 2357,
+      "sha256": "ee24622cb3a6334f08d72c9ea373be26d5e5585bb266367c5f66d77499112ffc"
+    },
+    {
+      "path": "recovery/2026-09-24/problem_text_from_docx.txt",
+      "role": "readonly_problem_cost_formula",
+      "bytes": 14864,
+      "sha256": "fe2f0bd602a9f117b0efc6e8f3ef416822f1f03227f6a5f321c8a1a8b16fef28"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-P/20260925T075729+08/bridge/H3_mapping_steps.csv",
+      "role": "ancillary_frozen_H3_cdf_mapping_referenced_by_contract",
+      "bytes": 6928850,
+      "sha256": "7c27bb480ed9dedf602f330728eb6a5cfdb933288c6edeb2c4d93c920befb0d8"
+    }
+  ],
+  "protected_manifest_checks": {
+    "integrate": {
+      "manifest": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/output_manifest.json",
+      "entries": 23,
+      "mismatch_count": 0,
+      "status": "PASS",
+      "mismatches": []
+    },
+    "B": {
+      "manifest": "diagnostics/TASK-T06E-B/20260925T100306+08/output_manifest.json",
+      "entries": 104,
+      "mismatch_count": 0,
+      "status": "PASS",
+      "mismatches": []
+    },
+    "P": {
+      "manifest": "diagnostics/TASK-T06E-P/20260925T075729+08/output_manifest.json",
+      "entries": 49,
+      "mismatch_count": 0,
+      "status": "PASS",
+      "mismatches": []
+    }
+  },
+  "no_model_refit": true
+}

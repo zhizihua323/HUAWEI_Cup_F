@@ -1,0 +1,85 @@
+benchmark_task,horizon_months,scenario_id,component_id,selected_or_scenario_model,n,value,low,high,status,source_reference,combined_ci_created
+IFEval,12,SLOW,parameter_resampling,M2_SCALE_TIME,496,27.00279943692046,-5.14166173352876,28.591119675493694,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,12,BASELINE,parameter_resampling,M2_SCALE_TIME,496,27.647842689025897,-4.5253708107948984,29.315444552896015,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,28.105508159804774,-4.088105438155827,29.829361232019735,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,24,SLOW,parameter_resampling,M2_SCALE_TIME,496,26.67600620704507,-37.79821540385011,30.938111343999886,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,24,BASELINE,parameter_resampling,M2_SCALE_TIME,496,27.96609271125596,-36.56563354653763,32.4973813102869,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,28.8814236528137,-35.69110280125951,33.6037011969292,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,12,SLOW,parameter_resampling,M2_SCALE_TIME,497,34.10738789244019,4.264960895863719,37.30762172406684,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,12,BASELINE,parameter_resampling,M2_SCALE_TIME,497,35.4517887733316,5.755539224505377,38.87002469359597,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,497,36.4056563784269,6.813121379320431,39.97856724211796,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,24,SLOW,parameter_resampling,M2_SCALE_TIME,497,23.12299529795453,-34.70071220575706,31.721601468693287,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,24,BASELINE,parameter_resampling,M2_SCALE_TIME,497,25.81179705973736,-31.719555548473693,34.778016171373565,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+BBH,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,497,27.719532269927953,-29.604391238843636,36.99510126841749,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,12,SLOW,parameter_resampling,M2_SCALE_TIME,498,3.8946732406273608,-31.638406974692035,6.047986428774938,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,12,BASELINE,parameter_resampling,M2_SCALE_TIME,498,4.913354561892225,-30.875861870224266,7.251471485249544,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,498,5.63612046161848,-30.33482750843961,8.067465314234248,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,24,SLOW,parameter_resampling,M2_SCALE_TIME,498,-3.9710719482996844,-72.30809434848577,3.118283917118966,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,24,BASELINE,parameter_resampling,M2_SCALE_TIME,498,-1.933709305769927,-70.7830041395502,4.705063063417268,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MATH Lvl 5,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,498,-0.48817750631744516,-69.70093541598091,5.838230397810355,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,12,SLOW,parameter_resampling,M2_SCALE_TIME,496,27.12432590543409,-11.435224758477398,28.488060007057488,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,12,BASELINE,parameter_resampling,M2_SCALE_TIME,496,27.668664283711095,-10.773985815933797,29.129184637601433,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,28.054878509414564,-10.30482931991781,29.584069802135904,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,24,SLOW,parameter_resampling,M2_SCALE_TIME,496,22.07617019449202,-55.754892360384694,25.60173418847329,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,24,BASELINE,parameter_resampling,M2_SCALE_TIME,496,23.164846951046027,-54.43241447529748,26.883983673338367,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+GPQA,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,23.937275402452965,-53.49410148326551,27.793754008761855,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,12,SLOW,parameter_resampling,M2_SCALE_TIME,496,32.87630386677161,31.629237477989236,48.96626297841809,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,12,BASELINE,parameter_resampling,M2_SCALE_TIME,496,33.10523683649461,31.73712523617946,49.413119644026374,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,33.26766736347571,31.813672818814023,49.79054132294615,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,24,SLOW,parameter_resampling,M2_SCALE_TIME,496,22.58009522060613,19.739782892813807,56.934026704743744,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,24,BASELINE,parameter_resampling,M2_SCALE_TIME,496,23.037961160052152,20.135240740611195,58.03469608601472,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MUSR,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,496,23.36282221401434,20.41582255203013,58.81563344752706,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,12,SLOW,parameter_resampling,M2_SCALE_TIME,499,17.35353747053294,-54.71307887447016,20.843210856145852,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,12,BASELINE,parameter_resampling,M2_SCALE_TIME,499,19.145089515121057,-53.01102852060498,22.8292166349389,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,499,20.416215919800138,-51.803404576088866,24.36224334868506,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,24,SLOW,parameter_resampling,M2_SCALE_TIME,499,4.422898083005062,-139.50681221211997,13.859018867644345,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,24,BASELINE,parameter_resampling,M2_SCALE_TIME,499,8.00600217218135,-136.10271154883776,17.831030467883824,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+MMLU-PRO,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,499,10.548254981539483,-133.68746369134212,20.649217553261455,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,12,SLOW,parameter_resampling,M2_SCALE_TIME,499,23.51116281339588,-20.679570855060575,25.88991525288505,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,12,BASELINE,parameter_resampling,M2_SCALE_TIME,499,24.414167925312693,-19.806883402605422,26.997433506139267,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,12,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,499,25.054860248365753,-19.187701801267757,27.783230212200994,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,24,SLOW,parameter_resampling,M2_SCALE_TIME,499,16.214986498086482,-71.87580776111197,21.69661115434712,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,24,BASELINE,parameter_resampling,M2_SCALE_TIME,499,18.020996721920106,-70.13043285620165,23.800306161336238,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+six_task_mean_complete_only,24,UPPER_SENSITIVITY,parameter_resampling,M2_SCALE_TIME,499,19.30238136802621,-68.89206874838088,25.371899597049016,EVALUABLE,500 canonical-model grouped bootstrap of q90 model,False
+IFEval,12,BASELINE,model_selection,M2_SCALE_TIME,3,27.647842689025897,27.514115471352696,30.45751893746223,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+IFEval,12,ALL,scenario_structure,M2_SCALE_TIME,3,27.647842689025897,27.00279943692046,28.105508159804774,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+IFEval,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-0.32679322987538756,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+IFEval,24,BASELINE,model_selection,M2_SCALE_TIME,3,27.96609271125596,27.96609271125596,30.45751893746223,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+IFEval,24,ALL,scenario_structure,M2_SCALE_TIME,3,27.96609271125596,26.67600620704507,28.8814236528137,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+IFEval,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-0.6535864597507751,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+BBH,12,BASELINE,model_selection,M2_SCALE_TIME,3,35.4517887733316,35.4517887733316,55.89307367463209,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+BBH,12,ALL,scenario_structure,M2_SCALE_TIME,3,35.4517887733316,34.10738789244019,36.4056563784269,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+BBH,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-10.984392594485655,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+BBH,24,BASELINE,model_selection,M2_SCALE_TIME,3,25.81179705973736,25.81179705973736,55.89307367463209,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+BBH,24,ALL,scenario_structure,M2_SCALE_TIME,3,25.81179705973736,23.12299529795453,27.719532269927953,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+BBH,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-21.96878518897131,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MATH Lvl 5,12,BASELINE,model_selection,M2_SCALE_TIME,3,4.913354561892225,4.913354561892225,16.69184245585766,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MATH Lvl 5,12,ALL,scenario_structure,M2_SCALE_TIME,3,4.913354561892225,3.8946732406273608,5.63612046161848,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MATH Lvl 5,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-7.865745188927045,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MATH Lvl 5,24,BASELINE,model_selection,M2_SCALE_TIME,3,-1.933709305769927,-1.933709305769927,16.69184245585766,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MATH Lvl 5,24,ALL,scenario_structure,M2_SCALE_TIME,3,-1.933709305769927,-3.9710719482996844,-0.48817750631744516,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MATH Lvl 5,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-15.73149037785409,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+GPQA,12,BASELINE,model_selection,M2_SCALE_TIME,3,27.668664283711095,27.668664283711095,37.91946264280385,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+GPQA,12,ALL,scenario_structure,M2_SCALE_TIME,3,27.668664283711095,27.12432590543409,28.054878509414564,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+GPQA,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-5.048155710942071,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+GPQA,24,BASELINE,model_selection,M2_SCALE_TIME,3,23.164846951046027,23.164846951046027,37.91946264280385,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+GPQA,24,ALL,scenario_structure,M2_SCALE_TIME,3,23.164846951046027,22.07617019449202,23.937275402452965,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+GPQA,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-10.096311421884142,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MUSR,12,BASELINE,model_selection,M2_SCALE_TIME,3,33.10523683649461,33.10523683649461,44.312168867724864,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MUSR,12,ALL,scenario_structure,M2_SCALE_TIME,3,33.10523683649461,32.87630386677161,33.26766736347571,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MUSR,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-10.29620864616548,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MUSR,24,BASELINE,model_selection,M2_SCALE_TIME,3,23.037961160052152,23.037961160052152,44.312168867724864,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MUSR,24,ALL,scenario_structure,M2_SCALE_TIME,3,23.037961160052152,22.58009522060613,23.36282221401434,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MUSR,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-20.59241729233096,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MMLU-PRO,12,BASELINE,model_selection,M2_SCALE_TIME,3,19.145089515121057,19.145089515121057,46.54255274704492,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MMLU-PRO,12,ALL,scenario_structure,M2_SCALE_TIME,3,19.145089515121057,17.35353747053294,20.416215919800138,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MMLU-PRO,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-12.930639387527878,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+MMLU-PRO,24,BASELINE,model_selection,M2_SCALE_TIME,3,8.00600217218135,8.00600217218135,46.54255274704492,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+MMLU-PRO,24,ALL,scenario_structure,M2_SCALE_TIME,3,8.00600217218135,4.422898083005062,10.548254981539483,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+MMLU-PRO,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-25.861278775055755,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+six_task_mean_complete_only,12,BASELINE,model_selection,M2_SCALE_TIME,3,24.414167925312693,24.414167925312693,37.85394496023882,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+six_task_mean_complete_only,12,ALL,scenario_structure,M2_SCALE_TIME,3,24.414167925312693,23.51116281339588,25.054860248365753,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+six_task_mean_complete_only,12,ALL,time_extrapolation,M2_SCALE_TIME,23,-7.296176315309399,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False
+six_task_mean_complete_only,24,BASELINE,model_selection,M2_SCALE_TIME,3,18.020996721920106,18.020996721920106,37.85394496023882,RANGE_ONLY_NOT_CI,M0/M1/M2 pre-registered candidate range,False
+six_task_mean_complete_only,24,ALL,scenario_structure,M2_SCALE_TIME,3,18.020996721920106,16.214986498086482,19.30238136802621,RANGE_ONLY_NOT_CI,frozen 1.0/1.5/2.0 or historical quantile grid,False
+six_task_mean_complete_only,24,ALL,time_extrapolation,M2_SCALE_TIME,23,-14.592352630618798,,,OUT_OF_SUPPORT,q90 time coefficient times horizon; not added to other components,False

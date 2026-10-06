@@ -1,0 +1,533 @@
+﻿scope,domain,statistic,n_total,n_effective,ddof,variance_divisor,denominator_rule,missing_comparison_rows,applicability_note
+A1_calibration,arxiv,Q_mean,1122,1122,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,arxiv,Q_std,1122,1122,1,1121,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,arxiv,Q_p10,1122,1122,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,arxiv,Q_median,1122,1122,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,arxiv,Q_p90,1122,1122,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,arxiv,coverage,1122,1122,,,n_Q_valid / n_total,0,explicit coverage field
+A1_calibration,arxiv,rater_disagreement_mean,1122,1122,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,arxiv,rater_disagreement_std,1122,1122,0,1122,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,arxiv,rater_disagreement_gt_0_5_fraction,1122,1122,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,arxiv,equal_indicator_Q_mean,1122,1122,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,arxiv,without_knowledge_Q_mean,1122,1122,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,arxiv,group_usability_mean,1122,1122,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,arxiv,group_knowledge_mean,1122,1122,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,arxiv,group_education_reasoning_mean,1122,1122,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,book,Q_mean,137,137,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,book,Q_std,137,137,1,136,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,book,Q_p10,137,137,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,book,Q_median,137,137,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,book,Q_p90,137,137,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,book,coverage,137,137,,,n_Q_valid / n_total,0,explicit coverage field
+A1_calibration,book,rater_disagreement_mean,137,137,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,book,rater_disagreement_std,137,137,0,137,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,book,rater_disagreement_gt_0_5_fraction,137,137,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,book,equal_indicator_Q_mean,137,137,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,book,without_knowledge_Q_mean,137,137,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,book,group_usability_mean,137,137,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,book,group_knowledge_mean,137,137,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,book,group_education_reasoning_mean,137,137,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,c4,Q_mean,8041,8041,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,c4,Q_std,8041,8041,1,8040,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,c4,Q_p10,8041,8041,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,c4,Q_median,8041,8041,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,c4,Q_p90,8041,8041,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,c4,coverage,8041,8041,,,n_Q_valid / n_total,0,explicit coverage field
+A1_calibration,c4,rater_disagreement_mean,8041,8041,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,c4,rater_disagreement_std,8041,8041,0,8041,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,c4,rater_disagreement_gt_0_5_fraction,8041,8041,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,c4,equal_indicator_Q_mean,8041,8041,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,c4,without_knowledge_Q_mean,8041,8041,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,c4,group_usability_mean,8041,8041,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,c4,group_knowledge_mean,8041,8041,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,c4,group_education_reasoning_mean,8041,8041,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,commoncrawl,Q_mean,7691,7688,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,commoncrawl,Q_std,7691,7688,1,7687,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,commoncrawl,Q_p10,7691,7688,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,commoncrawl,Q_median,7691,7688,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,commoncrawl,Q_p90,7691,7688,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,commoncrawl,coverage,7691,7688,,,n_Q_valid / n_total,3,explicit coverage field
+A1_calibration,commoncrawl,rater_disagreement_mean,7691,7691,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,commoncrawl,rater_disagreement_std,7691,7691,0,7691,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,commoncrawl,rater_disagreement_gt_0_5_fraction,7691,7691,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,commoncrawl,equal_indicator_Q_mean,7691,7688,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,commoncrawl,without_knowledge_Q_mean,7691,7691,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,commoncrawl,group_usability_mean,7691,7691,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,commoncrawl,group_knowledge_mean,7691,7688,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,commoncrawl,group_education_reasoning_mean,7691,7691,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,github,Q_mean,7963,7963,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,github,Q_std,7963,7963,1,7962,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,github,Q_p10,7963,7963,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,github,Q_median,7963,7963,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,github,Q_p90,7963,7963,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,github,coverage,7963,7963,,,n_Q_valid / n_total,0,explicit coverage field
+A1_calibration,github,rater_disagreement_mean,7963,7963,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,github,rater_disagreement_std,7963,7963,0,7963,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,github,rater_disagreement_gt_0_5_fraction,7963,7963,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,github,equal_indicator_Q_mean,7963,7963,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,github,without_knowledge_Q_mean,7963,7963,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,github,group_usability_mean,7963,7963,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,github,group_knowledge_mean,7963,7963,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,github,group_education_reasoning_mean,7963,7963,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,stackexchange,Q_mean,7966,7966,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,stackexchange,Q_std,7966,7966,1,7965,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,stackexchange,Q_p10,7966,7966,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,stackexchange,Q_median,7966,7966,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,stackexchange,Q_p90,7966,7966,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,stackexchange,coverage,7966,7966,,,n_Q_valid / n_total,0,explicit coverage field
+A1_calibration,stackexchange,rater_disagreement_mean,7966,7966,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,stackexchange,rater_disagreement_std,7966,7966,0,7966,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,stackexchange,rater_disagreement_gt_0_5_fraction,7966,7966,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,stackexchange,equal_indicator_Q_mean,7966,7966,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,stackexchange,without_knowledge_Q_mean,7966,7966,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,stackexchange,group_usability_mean,7966,7966,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,stackexchange,group_knowledge_mean,7966,7966,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,stackexchange,group_education_reasoning_mean,7966,7966,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,wikipedia,Q_mean,8023,8013,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,wikipedia,Q_std,8023,8013,1,8012,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,wikipedia,Q_p10,8023,8013,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,wikipedia,Q_median,8023,8013,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,wikipedia,Q_p90,8023,8013,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,wikipedia,coverage,8023,8013,,,n_Q_valid / n_total,10,explicit coverage field
+A1_calibration,wikipedia,rater_disagreement_mean,8023,8023,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,wikipedia,rater_disagreement_std,8023,8023,0,8023,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,wikipedia,rater_disagreement_gt_0_5_fraction,8023,8023,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,wikipedia,equal_indicator_Q_mean,8023,8013,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,wikipedia,without_knowledge_Q_mean,8023,8013,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,wikipedia,group_usability_mean,8023,8023,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,wikipedia,group_knowledge_mean,8023,8023,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,wikipedia,group_education_reasoning_mean,8023,8013,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,ALL,Q_mean,40943,40930,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_calibration,ALL,Q_std,40943,40930,1,40929,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_calibration,ALL,Q_p10,40943,40930,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,ALL,Q_median,40943,40930,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,ALL,Q_p90,40943,40930,,,linear quantile over finite main Q,0,quantile effective n
+A1_calibration,ALL,coverage,40943,40930,,,n_Q_valid / n_total,13,explicit coverage field
+A1_calibration,ALL,rater_disagreement_mean,40943,40943,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_calibration,ALL,rater_disagreement_std,40943,40943,0,40943,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_calibration,ALL,rater_disagreement_gt_0_5_fraction,40943,40943,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_calibration,ALL,equal_indicator_Q_mean,40943,40930,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_calibration,ALL,without_knowledge_Q_mean,40943,40933,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_calibration,ALL,group_usability_mean,40943,40943,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,ALL,group_knowledge_mean,40943,40940,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_calibration,ALL,group_education_reasoning_mean,40943,40933,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,arxiv,Q_mean,297,297,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,arxiv,Q_std,297,297,1,296,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,arxiv,Q_p10,297,297,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,arxiv,Q_median,297,297,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,arxiv,Q_p90,297,297,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,arxiv,coverage,297,297,,,n_Q_valid / n_total,0,explicit coverage field
+A1_holdout,arxiv,rater_disagreement_mean,297,297,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,arxiv,rater_disagreement_std,297,297,0,297,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,arxiv,rater_disagreement_gt_0_5_fraction,297,297,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,arxiv,equal_indicator_Q_mean,297,297,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,arxiv,without_knowledge_Q_mean,297,297,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,arxiv,group_usability_mean,297,297,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,arxiv,group_knowledge_mean,297,297,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,arxiv,group_education_reasoning_mean,297,297,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,book,Q_mean,34,34,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,book,Q_std,34,34,1,33,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,book,Q_p10,34,34,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,book,Q_median,34,34,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,book,Q_p90,34,34,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,book,coverage,34,34,,,n_Q_valid / n_total,0,explicit coverage field
+A1_holdout,book,rater_disagreement_mean,34,34,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,book,rater_disagreement_std,34,34,0,34,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,book,rater_disagreement_gt_0_5_fraction,34,34,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,book,equal_indicator_Q_mean,34,34,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,book,without_knowledge_Q_mean,34,34,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,book,group_usability_mean,34,34,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,book,group_knowledge_mean,34,34,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,book,group_education_reasoning_mean,34,34,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,c4,Q_mean,1959,1959,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,c4,Q_std,1959,1959,1,1958,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,c4,Q_p10,1959,1959,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,c4,Q_median,1959,1959,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,c4,Q_p90,1959,1959,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,c4,coverage,1959,1959,,,n_Q_valid / n_total,0,explicit coverage field
+A1_holdout,c4,rater_disagreement_mean,1959,1959,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,c4,rater_disagreement_std,1959,1959,0,1959,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,c4,rater_disagreement_gt_0_5_fraction,1959,1959,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,c4,equal_indicator_Q_mean,1959,1959,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,c4,without_knowledge_Q_mean,1959,1959,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,c4,group_usability_mean,1959,1959,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,c4,group_knowledge_mean,1959,1959,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,c4,group_education_reasoning_mean,1959,1959,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,commoncrawl,Q_mean,1949,1948,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,commoncrawl,Q_std,1949,1948,1,1947,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,commoncrawl,Q_p10,1949,1948,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,commoncrawl,Q_median,1949,1948,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,commoncrawl,Q_p90,1949,1948,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,commoncrawl,coverage,1949,1948,,,n_Q_valid / n_total,1,explicit coverage field
+A1_holdout,commoncrawl,rater_disagreement_mean,1949,1949,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,commoncrawl,rater_disagreement_std,1949,1949,0,1949,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,commoncrawl,rater_disagreement_gt_0_5_fraction,1949,1949,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,commoncrawl,equal_indicator_Q_mean,1949,1948,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,commoncrawl,without_knowledge_Q_mean,1949,1949,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,commoncrawl,group_usability_mean,1949,1949,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,commoncrawl,group_knowledge_mean,1949,1948,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,commoncrawl,group_education_reasoning_mean,1949,1949,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,github,Q_mean,2037,2037,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,github,Q_std,2037,2037,1,2036,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,github,Q_p10,2037,2037,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,github,Q_median,2037,2037,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,github,Q_p90,2037,2037,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,github,coverage,2037,2037,,,n_Q_valid / n_total,0,explicit coverage field
+A1_holdout,github,rater_disagreement_mean,2037,2037,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,github,rater_disagreement_std,2037,2037,0,2037,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,github,rater_disagreement_gt_0_5_fraction,2037,2037,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,github,equal_indicator_Q_mean,2037,2037,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,github,without_knowledge_Q_mean,2037,2037,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,github,group_usability_mean,2037,2037,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,github,group_knowledge_mean,2037,2037,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,github,group_education_reasoning_mean,2037,2037,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,stackexchange,Q_mean,2034,2034,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,stackexchange,Q_std,2034,2034,1,2033,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,stackexchange,Q_p10,2034,2034,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,stackexchange,Q_median,2034,2034,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,stackexchange,Q_p90,2034,2034,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,stackexchange,coverage,2034,2034,,,n_Q_valid / n_total,0,explicit coverage field
+A1_holdout,stackexchange,rater_disagreement_mean,2034,2034,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,stackexchange,rater_disagreement_std,2034,2034,0,2034,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,stackexchange,rater_disagreement_gt_0_5_fraction,2034,2034,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,stackexchange,equal_indicator_Q_mean,2034,2034,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,stackexchange,without_knowledge_Q_mean,2034,2034,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,stackexchange,group_usability_mean,2034,2034,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,stackexchange,group_knowledge_mean,2034,2034,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,stackexchange,group_education_reasoning_mean,2034,2034,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,wikipedia,Q_mean,1977,1973,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,wikipedia,Q_std,1977,1973,1,1972,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,wikipedia,Q_p10,1977,1973,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,wikipedia,Q_median,1977,1973,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,wikipedia,Q_p90,1977,1973,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,wikipedia,coverage,1977,1973,,,n_Q_valid / n_total,4,explicit coverage field
+A1_holdout,wikipedia,rater_disagreement_mean,1977,1977,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,wikipedia,rater_disagreement_std,1977,1977,0,1977,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,wikipedia,rater_disagreement_gt_0_5_fraction,1977,1977,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,wikipedia,equal_indicator_Q_mean,1977,1973,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,wikipedia,without_knowledge_Q_mean,1977,1974,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,wikipedia,group_usability_mean,1977,1977,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,wikipedia,group_knowledge_mean,1977,1976,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,wikipedia,group_education_reasoning_mean,1977,1974,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,ALL,Q_mean,10287,10282,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_holdout,ALL,Q_std,10287,10282,1,10281,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_holdout,ALL,Q_p10,10287,10282,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,ALL,Q_median,10287,10282,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,ALL,Q_p90,10287,10282,,,linear quantile over finite main Q,0,quantile effective n
+A1_holdout,ALL,coverage,10287,10282,,,n_Q_valid / n_total,5,explicit coverage field
+A1_holdout,ALL,rater_disagreement_mean,10287,10287,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_holdout,ALL,rater_disagreement_std,10287,10287,0,10287,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_holdout,ALL,rater_disagreement_gt_0_5_fraction,10287,10287,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_holdout,ALL,equal_indicator_Q_mean,10287,10282,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_holdout,ALL,without_knowledge_Q_mean,10287,10284,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_holdout,ALL,group_usability_mean,10287,10287,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,ALL,group_knowledge_mean,10287,10285,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_holdout,ALL,group_education_reasoning_mean,10287,10284,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,arxiv,Q_mean,1419,1419,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,arxiv,Q_std,1419,1419,1,1418,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,arxiv,Q_p10,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,arxiv,Q_median,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,arxiv,Q_p90,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,arxiv,coverage,1419,1419,,,n_Q_valid / n_total,0,explicit coverage field
+A1_all_unique,arxiv,rater_disagreement_mean,1419,1419,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,arxiv,rater_disagreement_std,1419,1419,0,1419,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,arxiv,rater_disagreement_gt_0_5_fraction,1419,1419,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,arxiv,equal_indicator_Q_mean,1419,1419,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,arxiv,without_knowledge_Q_mean,1419,1419,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,arxiv,group_usability_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,arxiv,group_knowledge_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,arxiv,group_education_reasoning_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,book,Q_mean,171,171,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,book,Q_std,171,171,1,170,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,book,Q_p10,171,171,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,book,Q_median,171,171,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,book,Q_p90,171,171,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,book,coverage,171,171,,,n_Q_valid / n_total,0,explicit coverage field
+A1_all_unique,book,rater_disagreement_mean,171,171,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,book,rater_disagreement_std,171,171,0,171,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,book,rater_disagreement_gt_0_5_fraction,171,171,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,book,equal_indicator_Q_mean,171,171,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,book,without_knowledge_Q_mean,171,171,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,book,group_usability_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,book,group_knowledge_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,book,group_education_reasoning_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,c4,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,c4,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,c4,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,c4,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,c4,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,c4,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+A1_all_unique,c4,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,c4,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,c4,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,c4,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,c4,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,c4,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,c4,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,c4,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,commoncrawl,Q_mean,9640,9636,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,commoncrawl,Q_std,9640,9636,1,9635,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,commoncrawl,Q_p10,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,commoncrawl,Q_median,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,commoncrawl,Q_p90,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,commoncrawl,coverage,9640,9636,,,n_Q_valid / n_total,4,explicit coverage field
+A1_all_unique,commoncrawl,rater_disagreement_mean,9640,9640,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,commoncrawl,rater_disagreement_std,9640,9640,0,9640,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,commoncrawl,rater_disagreement_gt_0_5_fraction,9640,9640,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,commoncrawl,equal_indicator_Q_mean,9640,9636,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,commoncrawl,without_knowledge_Q_mean,9640,9640,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,commoncrawl,group_usability_mean,9640,9640,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,commoncrawl,group_knowledge_mean,9640,9636,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,commoncrawl,group_education_reasoning_mean,9640,9640,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,github,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,github,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,github,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,github,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,github,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,github,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+A1_all_unique,github,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,github,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,github,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,github,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,github,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,github,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,github,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,github,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,stackexchange,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,stackexchange,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,stackexchange,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,stackexchange,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,stackexchange,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,stackexchange,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+A1_all_unique,stackexchange,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,stackexchange,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,stackexchange,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,stackexchange,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,stackexchange,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,stackexchange,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,stackexchange,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,stackexchange,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,wikipedia,Q_mean,10000,9986,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,wikipedia,Q_std,10000,9986,1,9985,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,wikipedia,Q_p10,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,wikipedia,Q_median,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,wikipedia,Q_p90,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,wikipedia,coverage,10000,9986,,,n_Q_valid / n_total,14,explicit coverage field
+A1_all_unique,wikipedia,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,wikipedia,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,wikipedia,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,wikipedia,equal_indicator_Q_mean,10000,9986,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,wikipedia,without_knowledge_Q_mean,10000,9987,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,wikipedia,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,wikipedia,group_knowledge_mean,10000,9999,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,wikipedia,group_education_reasoning_mean,10000,9987,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,ALL,Q_mean,51230,51212,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+A1_all_unique,ALL,Q_std,51230,51212,1,51211,pandas std(ddof=1) over finite main Q,0,DEFINED
+A1_all_unique,ALL,Q_p10,51230,51212,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,ALL,Q_median,51230,51212,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,ALL,Q_p90,51230,51212,,,linear quantile over finite main Q,0,quantile effective n
+A1_all_unique,ALL,coverage,51230,51212,,,n_Q_valid / n_total,18,explicit coverage field
+A1_all_unique,ALL,rater_disagreement_mean,51230,51230,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+A1_all_unique,ALL,rater_disagreement_std,51230,51230,0,51230,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+A1_all_unique,ALL,rater_disagreement_gt_0_5_fraction,51230,51230,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+A1_all_unique,ALL,equal_indicator_Q_mean,51230,51212,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+A1_all_unique,ALL,without_knowledge_Q_mean,51230,51217,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+A1_all_unique,ALL,group_usability_mean,51230,51230,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,ALL,group_knowledge_mean,51230,51225,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+A1_all_unique,ALL,group_education_reasoning_mean,51230,51217,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,arxiv,Q_mean,1419,1419,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_overlap_A1,arxiv,Q_std,1419,1419,1,1418,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_overlap_A1,arxiv,Q_p10,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,arxiv,Q_median,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,arxiv,Q_p90,1419,1419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,arxiv,coverage,1419,1419,,,n_Q_valid / n_total,0,explicit coverage field
+extension_overlap_A1,arxiv,rater_disagreement_mean,1419,1419,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_overlap_A1,arxiv,rater_disagreement_std,1419,1419,0,1419,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_overlap_A1,arxiv,rater_disagreement_gt_0_5_fraction,1419,1419,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_overlap_A1,arxiv,equal_indicator_Q_mean,1419,1419,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_overlap_A1,arxiv,without_knowledge_Q_mean,1419,1419,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_overlap_A1,arxiv,group_usability_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,arxiv,group_knowledge_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,arxiv,group_education_reasoning_mean,1419,1419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,github,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_overlap_A1,github,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_overlap_A1,github,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,github,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,github,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,github,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+extension_overlap_A1,github,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_overlap_A1,github,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_overlap_A1,github,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_overlap_A1,github,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_overlap_A1,github,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_overlap_A1,github,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,github,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,github,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,ALL,Q_mean,11419,11419,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_overlap_A1,ALL,Q_std,11419,11419,1,11418,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_overlap_A1,ALL,Q_p10,11419,11419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,ALL,Q_median,11419,11419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,ALL,Q_p90,11419,11419,,,linear quantile over finite main Q,0,quantile effective n
+extension_overlap_A1,ALL,coverage,11419,11419,,,n_Q_valid / n_total,0,explicit coverage field
+extension_overlap_A1,ALL,rater_disagreement_mean,11419,11419,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_overlap_A1,ALL,rater_disagreement_std,11419,11419,0,11419,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_overlap_A1,ALL,rater_disagreement_gt_0_5_fraction,11419,11419,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_overlap_A1,ALL,equal_indicator_Q_mean,11419,11419,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_overlap_A1,ALL,without_knowledge_Q_mean,11419,11419,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_overlap_A1,ALL,group_usability_mean,11419,11419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,ALL,group_knowledge_mean,11419,11419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_overlap_A1,ALL,group_education_reasoning_mean,11419,11419,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,arxiv,Q_mean,16104,16104,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_new_records,arxiv,Q_std,16104,16104,1,16103,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_new_records,arxiv,Q_p10,16104,16104,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,arxiv,Q_median,16104,16104,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,arxiv,Q_p90,16104,16104,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,arxiv,coverage,16104,16104,,,n_Q_valid / n_total,0,explicit coverage field
+extension_new_records,arxiv,rater_disagreement_mean,16104,16104,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_new_records,arxiv,rater_disagreement_std,16104,16104,0,16104,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_new_records,arxiv,rater_disagreement_gt_0_5_fraction,16104,16104,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_new_records,arxiv,equal_indicator_Q_mean,16104,16104,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_new_records,arxiv,without_knowledge_Q_mean,16104,16104,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_new_records,arxiv,group_usability_mean,16104,16104,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,arxiv,group_knowledge_mean,16104,16104,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,arxiv,group_education_reasoning_mean,16104,16104,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,github,Q_mean,193752,193751,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_new_records,github,Q_std,193752,193751,1,193750,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_new_records,github,Q_p10,193752,193751,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,github,Q_median,193752,193751,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,github,Q_p90,193752,193751,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,github,coverage,193752,193751,,,n_Q_valid / n_total,1,explicit coverage field
+extension_new_records,github,rater_disagreement_mean,193752,193752,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_new_records,github,rater_disagreement_std,193752,193752,0,193752,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_new_records,github,rater_disagreement_gt_0_5_fraction,193752,193752,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_new_records,github,equal_indicator_Q_mean,193752,193751,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_new_records,github,without_knowledge_Q_mean,193752,193752,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_new_records,github,group_usability_mean,193752,193752,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,github,group_knowledge_mean,193752,193751,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,github,group_education_reasoning_mean,193752,193752,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,ALL,Q_mean,209856,209855,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+extension_new_records,ALL,Q_std,209856,209855,1,209854,pandas std(ddof=1) over finite main Q,0,DEFINED
+extension_new_records,ALL,Q_p10,209856,209855,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,ALL,Q_median,209856,209855,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,ALL,Q_p90,209856,209855,,,linear quantile over finite main Q,0,quantile effective n
+extension_new_records,ALL,coverage,209856,209855,,,n_Q_valid / n_total,1,explicit coverage field
+extension_new_records,ALL,rater_disagreement_mean,209856,209856,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+extension_new_records,ALL,rater_disagreement_std,209856,209856,0,209856,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+extension_new_records,ALL,rater_disagreement_gt_0_5_fraction,209856,209856,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+extension_new_records,ALL,equal_indicator_Q_mean,209856,209855,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+extension_new_records,ALL,without_knowledge_Q_mean,209856,209856,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+extension_new_records,ALL,group_usability_mean,209856,209856,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,ALL,group_knowledge_mean,209856,209855,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+extension_new_records,ALL,group_education_reasoning_mean,209856,209856,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,arxiv,Q_mean,17523,17523,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,arxiv,Q_std,17523,17523,1,17522,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,arxiv,Q_p10,17523,17523,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,arxiv,Q_median,17523,17523,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,arxiv,Q_p90,17523,17523,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,arxiv,coverage,17523,17523,,,n_Q_valid / n_total,0,explicit coverage field
+all_unique,arxiv,rater_disagreement_mean,17523,17523,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,arxiv,rater_disagreement_std,17523,17523,0,17523,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,arxiv,rater_disagreement_gt_0_5_fraction,17523,17523,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,arxiv,equal_indicator_Q_mean,17523,17523,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,arxiv,without_knowledge_Q_mean,17523,17523,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,arxiv,group_usability_mean,17523,17523,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,arxiv,group_knowledge_mean,17523,17523,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,arxiv,group_education_reasoning_mean,17523,17523,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,book,Q_mean,171,171,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,book,Q_std,171,171,1,170,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,book,Q_p10,171,171,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,book,Q_median,171,171,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,book,Q_p90,171,171,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,book,coverage,171,171,,,n_Q_valid / n_total,0,explicit coverage field
+all_unique,book,rater_disagreement_mean,171,171,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,book,rater_disagreement_std,171,171,0,171,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,book,rater_disagreement_gt_0_5_fraction,171,171,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,book,equal_indicator_Q_mean,171,171,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,book,without_knowledge_Q_mean,171,171,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,book,group_usability_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,book,group_knowledge_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,book,group_education_reasoning_mean,171,171,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,c4,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,c4,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,c4,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,c4,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,c4,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,c4,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+all_unique,c4,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,c4,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,c4,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,c4,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,c4,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,c4,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,c4,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,c4,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,commoncrawl,Q_mean,9640,9636,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,commoncrawl,Q_std,9640,9636,1,9635,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,commoncrawl,Q_p10,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,commoncrawl,Q_median,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,commoncrawl,Q_p90,9640,9636,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,commoncrawl,coverage,9640,9636,,,n_Q_valid / n_total,4,explicit coverage field
+all_unique,commoncrawl,rater_disagreement_mean,9640,9640,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,commoncrawl,rater_disagreement_std,9640,9640,0,9640,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,commoncrawl,rater_disagreement_gt_0_5_fraction,9640,9640,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,commoncrawl,equal_indicator_Q_mean,9640,9636,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,commoncrawl,without_knowledge_Q_mean,9640,9640,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,commoncrawl,group_usability_mean,9640,9640,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,commoncrawl,group_knowledge_mean,9640,9636,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,commoncrawl,group_education_reasoning_mean,9640,9640,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,github,Q_mean,203752,203751,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,github,Q_std,203752,203751,1,203750,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,github,Q_p10,203752,203751,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,github,Q_median,203752,203751,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,github,Q_p90,203752,203751,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,github,coverage,203752,203751,,,n_Q_valid / n_total,1,explicit coverage field
+all_unique,github,rater_disagreement_mean,203752,203752,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,github,rater_disagreement_std,203752,203752,0,203752,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,github,rater_disagreement_gt_0_5_fraction,203752,203752,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,github,equal_indicator_Q_mean,203752,203751,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,github,without_knowledge_Q_mean,203752,203752,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,github,group_usability_mean,203752,203752,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,github,group_knowledge_mean,203752,203751,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,github,group_education_reasoning_mean,203752,203752,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,stackexchange,Q_mean,10000,10000,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,stackexchange,Q_std,10000,10000,1,9999,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,stackexchange,Q_p10,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,stackexchange,Q_median,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,stackexchange,Q_p90,10000,10000,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,stackexchange,coverage,10000,10000,,,n_Q_valid / n_total,0,explicit coverage field
+all_unique,stackexchange,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,stackexchange,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,stackexchange,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,stackexchange,equal_indicator_Q_mean,10000,10000,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,stackexchange,without_knowledge_Q_mean,10000,10000,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,stackexchange,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,stackexchange,group_knowledge_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,stackexchange,group_education_reasoning_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,wikipedia,Q_mean,10000,9986,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,wikipedia,Q_std,10000,9986,1,9985,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,wikipedia,Q_p10,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,wikipedia,Q_median,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,wikipedia,Q_p90,10000,9986,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,wikipedia,coverage,10000,9986,,,n_Q_valid / n_total,14,explicit coverage field
+all_unique,wikipedia,rater_disagreement_mean,10000,10000,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,wikipedia,rater_disagreement_std,10000,10000,0,10000,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,wikipedia,rater_disagreement_gt_0_5_fraction,10000,10000,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,wikipedia,equal_indicator_Q_mean,10000,9986,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,wikipedia,without_knowledge_Q_mean,10000,9987,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,wikipedia,group_usability_mean,10000,10000,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,wikipedia,group_knowledge_mean,10000,9999,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,wikipedia,group_education_reasoning_mean,10000,9987,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,ALL,Q_mean,261086,261067,,,rows with finite main Q (Q_valid=True),0,Q_baseline is NaN for the incomplete-case rows
+all_unique,ALL,Q_std,261086,261067,1,261066,pandas std(ddof=1) over finite main Q,0,DEFINED
+all_unique,ALL,Q_p10,261086,261067,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,ALL,Q_median,261086,261067,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,ALL,Q_p90,261086,261067,,,linear quantile over finite main Q,0,quantile effective n
+all_unique,ALL,coverage,261086,261067,,,n_Q_valid / n_total,19,explicit coverage field
+all_unique,ALL,rater_disagreement_mean,261086,261086,,,rows with a defined group range (>=1 usable group),0,skipna semantics
+all_unique,ALL,rater_disagreement_std,261086,261086,0,261086,"DataFrame.std(axis=1, ddof=0) then mean over defined rows",0,skipna semantics
+all_unique,ALL,rater_disagreement_gt_0_5_fraction,261086,261086,,,Boolean comparisons restricted to rows with a defined range,0,rows without a defined range are excluded instead of being compared as False
+all_unique,ALL,equal_indicator_Q_mean,261086,261067,,,rows where all 11 normalized features are finite,0,11-indicator sensitivity anchor
+all_unique,ALL,without_knowledge_Q_mean,261086,261073,,,rows where usability and education_reasoning groups are both finite,0,two-group sensitivity anchor
+all_unique,ALL,group_usability_mean,261086,261086,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,ALL,group_knowledge_mean,261086,261080,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation
+all_unique,ALL,group_education_reasoning_mean,261086,261073,,,rows where every constituent feature of the group is finite,0,no within-group weight reallocation

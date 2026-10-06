@@ -1,0 +1,125 @@
+{
+  "run_id": "20260925T204300+08",
+  "argv": [
+    "diagnostics/TASK-G1/20260925T204300+08/code/g1_gap_closure.py",
+    "--run-dir",
+    "diagnostics/TASK-G1/20260925T204300+08"
+  ],
+  "cwd": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace",
+  "python": "D:\\anaconda\\python.exe",
+  "started_local": "2026-09-25T20:19:52+08:00",
+  "finished_local": "2026-09-25T20:23:19+08:00",
+  "stages": [
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:19:52+08:00",
+      "stage": "s00_preflight",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:19:53+08:00",
+      "stage": "s00_preflight",
+      "status": "complete",
+      "inputs": 15,
+      "protected_files": 253
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:19:53+08:00",
+      "stage": "s10_conflict_stability",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:22:35+08:00",
+      "stage": "s10_conflict_stability",
+      "status": "PARTIALLY_STABLE",
+      "scopes": 6,
+      "bootstrap_replicates": 2000
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:22:35+08:00",
+      "stage": "s20_text_join_audit",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:01+08:00",
+      "stage": "s20_text_join_audit",
+      "status": "complete",
+      "candidates": 4,
+      "selected_source": "Q01C_A1_raw_source"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:01+08:00",
+      "stage": "s30_sampling_seal",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:09+08:00",
+      "stage": "s30_sampling_seal",
+      "status": "complete",
+      "n": 60,
+      "domains": 7
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:09+08:00",
+      "stage": "s40_blind_package",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:09+08:00",
+      "stage": "s40_blind_package",
+      "status": "complete",
+      "rows": 60,
+      "columns": [
+        "review_id",
+        "text_redacted",
+        "readability_1to5",
+        "completeness_1to5",
+        "contamination_0to2",
+        "overall_quality_1to5",
+        "review_notes_optional"
+      ],
+      "no_ratings": true
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:09+08:00",
+      "stage": "s50_checks_preverify",
+      "status": "start"
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:19+08:00",
+      "stage": "s50_checks_preverify",
+      "status": "complete",
+      "checks": {
+        "total": 14,
+        "pass": 14,
+        "fail": 0,
+        "not_checked": 0
+      }
+    },
+    {
+      "run_id": "20260925T204300+08",
+      "timestamp": "2026-09-25T20:23:19+08:00",
+      "stage": "s60_author_wait",
+      "status": "start"
+    }
+  ],
+  "verifier_command": [
+    "D:\\anaconda\\python.exe",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T204300+08\\code\\verify_g1.py",
+    "--run-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-G1\\20260925T204300+08"
+  ],
+  "verifier_stdout": "{\"status\": \"PASS\", \"checks\": {\"total\": 18, \"pass\": 18, \"fail\": 0}}\n",
+  "verifier_stderr": ""
+}

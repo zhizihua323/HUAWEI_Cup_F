@@ -1,0 +1,43 @@
+{
+  "pid": 24848,
+  "command": [
+    "D:\\anaconda\\python.exe",
+    "-X",
+    "utf8",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "synthetic_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\synthetic_fixture",
+    "--hold-after-stage",
+    "s10_scan_a1"
+  ],
+  "started_local": "2026-09-24T22:53:41+08:00",
+  "terminated_local": "2026-09-24T22:53:43+08:00",
+  "exit_code": 1,
+  "termination_mechanism": "supervisor SIGTERM after the checkpoint marker appeared",
+  "hold_hook_seen": true,
+  "last_valid_checkpoint": {
+    "stage": "s10_scan_a1",
+    "payload_sha256": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+    "meta_sha256": "abe5f97cb9bd6268a7df6ce80dabc996d297533b8e4b4145588fd22681ee9e09",
+    "checkpoint_marker_sha256": "d88193172ee34e49c4847fd683eb095b7bbecb6115c93a2bba2f239a64a88e99",
+    "stage_marker_sha256": "cc1242b64888125fb007e1ecaf8952a1854f12091b47ec835f9d100b59167a60"
+  },
+  "scan_counters_at_termination": {
+    "protocol_version": 2,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 24848,
+        "last_scan_started": "2026-09-24T22:53:42+08:00",
+        "last_scan_finished": "2026-09-24T22:53:42+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 1
+  },
+  "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225339+08\\interruption_run\\synthetic_run"
+}

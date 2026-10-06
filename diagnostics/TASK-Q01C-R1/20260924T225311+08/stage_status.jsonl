@@ -1,0 +1,11 @@
+{"ts": "2026-09-24T22:53:12+08:00", "phase": "fixture_build", "event": "start", "pid": 18600}
+{"ts": "2026-09-24T22:53:12+08:00", "phase": "fixture_build", "event": "complete", "pid": 18600, "fixture_id": "q01c_r1_fixture_v1", "rows": 660, "manifest_sha256": "f74479b32f74341c02d21cc1b9fd5d410da31aea4209b12fda4ace6f2aecc58e"}
+{"ts": "2026-09-24T22:53:13+08:00", "phase": "p1", "event": "start", "pid": 18600, "hold_after_stage": "s10_scan_a1"}
+{"ts": "2026-09-24T22:53:15+08:00", "phase": "p1", "event": "terminated", "pid": 28584, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-24T22:53:15+08:00", "phase": "probe", "event": "start", "pid": 18600}
+{"ts": "2026-09-24T22:53:16+08:00", "phase": "probe", "event": "complete", "pid": 18600, "exit_code": 0, "reusable": [{"stage": "s00_preflight", "reason": "valid", "layout": null}, {"stage": "s01_synthetic_tests", "reason": "valid", "layout": null}, {"stage": "s10_scan_a1", "reason": "valid", "layout": "v2"}]}
+{"ts": "2026-09-24T22:53:16+08:00", "phase": "p2", "event": "start", "pid": 18600}
+{"ts": "2026-09-24T22:53:19+08:00", "phase": "p2", "event": "complete", "pid": 18600, "exit_code": 0, "reused": ["s00_preflight", "s01_synthetic_tests", "s10_scan_a1"]}
+{"ts": "2026-09-24T22:53:19+08:00", "phase": "stage_demo", "event": "start", "pid": 18600}
+{"ts": "2026-09-24T22:53:23+08:00", "phase": "stage_demo", "event": "complete", "pid": 18600, "missing_prereq_exit": 6, "single_stage_exits": [0, 0, 0]}
+{"ts": "2026-09-24T22:53:23+08:00", "phase": "harness", "event": "complete", "pid": 18600, "new_passes_in_p2": 2, "checkpoint_invariant": true}

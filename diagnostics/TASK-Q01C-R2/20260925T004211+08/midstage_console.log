@@ -1,0 +1,12 @@
+{"ts": "2026-09-25T00:42:12+08:00", "phase": "harness", "event": "start", "pid": 18492, "note": "R2 mid-stage cross-process supervisor"}
+{"ts": "2026-09-25T00:42:12+08:00", "phase": "fixture_build", "event": "start", "pid": 18492}
+{"fixture_id": "q01c_r1_fixture_v1", "rows": {"A1": 600, "A2_arxiv": 30, "A3_github": 30}, "expected_q_valid": 658, "expected_q_missing": 2}
+{"ts": "2026-09-25T00:42:12+08:00", "phase": "fixture_build", "event": "complete", "pid": 18492, "fixture_id": "q01c_r1_fixture_v1", "rows": 660}
+{"ts": "2026-09-25T00:42:12+08:00", "phase": "p1", "event": "start", "pid": 18492, "hold_after_stage": "s30_sensitivity"}
+{"ts": "2026-09-25T00:42:14+08:00", "phase": "p1", "event": "terminated", "pid": 14452, "exit_code": 1, "hold_seen": true}
+{"ts": "2026-09-25T00:42:14+08:00", "phase": "probe", "event": "start", "pid": 18492}
+{"ts": "2026-09-25T00:42:14+08:00", "phase": "probe", "event": "complete", "pid": 18492, "exit_code": 0}
+{"ts": "2026-09-25T00:42:14+08:00", "phase": "p2", "event": "start", "pid": 18492}
+{"ts": "2026-09-25T00:42:17+08:00", "phase": "p2", "event": "complete", "pid": 18492, "exit_code": 0, "new_computations": {"s10_scan_a1": 0, "s11_scan_a2": 0, "s12_scan_a3": 0, "s20_score_primary": 0, "s30_sensitivity": 0}, "status": "COMPLETE_PENDING_REVIEW"}
+{"ts": "2026-09-25T00:42:17+08:00", "phase": "harness", "event": "complete", "pid": 18492, "new_computations_total": 0, "checkpoint_invariant": true}
+{"r2_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08", "run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R2\\20260925T004211+08\\midstage_interruption\\midstage_run", "p1_pid": 14452, "p2_pid": 15776, "p1_exit": 1, "p2_exit": 0, "new_computations": {"s10_scan_a1": 0, "s11_scan_a2": 0, "s12_scan_a3": 0, "s20_score_primary": 0, "s30_sensitivity": 0}, "hash_invariant": true, "run_status": "COMPLETE_PENDING_REVIEW"}

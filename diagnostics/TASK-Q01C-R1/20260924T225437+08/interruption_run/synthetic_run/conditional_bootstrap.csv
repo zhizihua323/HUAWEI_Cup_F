@@ -1,0 +1,4 @@
+﻿domain,n_effective,Q_mean,conditional_iid_bootstrap_low,conditional_iid_bootstrap_high,replicates,normalization_refitted,sampling_limit
+commoncrawl,199,0.5641432523572035,0.5475778468614257,0.5780184672578208,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+github,200,0.5636224105461394,0.5483645433145009,0.5778388739799121,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+wikipedia,200,0.5636224105461394,0.5472623477715003,0.578111053829253,500,False,conditional on the fixed pipeline; the source shards are not a random sample

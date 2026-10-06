@@ -1,0 +1,6 @@
+bridge,eligibility,estimated_or_calibrated,numeric_loss_available_in_P,reason
+H0,IDENTIFIED_NULL_BASELINE,False,False,Defines k=0 without invoking a cross-source map.
+H1,SCENARIO_ONLY,False,False,Identity is an assumption; no observed A-to-B correspondence identifies it.
+H2,SCENARIO_ONLY,False,False,"b in {0.5,1,2} is fixed by scenario registry and is not fit."
+H3,SCENARIO_ONLY,False,False,"F_A and F_B are empirical CDFs, but cross-source correspondence is not identified."
+H4,DIRECTION_ONLY_NOT_OPTIMIZABLE,False,False,Retains B6 direction only and produces no A-side numeric benefit.

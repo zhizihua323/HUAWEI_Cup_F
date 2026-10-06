@@ -1,0 +1,44 @@
+====================================================================================================
+TASK-C01  C1-C10 data audit and C8 basic aggregation
+run_id        : 20260924T175553+08
+author        : Codex (OpenAI), AI-assisted, 2026-09-24
+started (UTC+8): 2026-09-24T18:08:44.844880+08:00
+workspace     : C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace
+python        : 3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]
+platform      : Windows-11-10.0.26200-SP0
+numpy/pandas  : 2.3.5 / 2.3.3
+long-path mode: \\?\ extended prefix
+====================================================================================================
+[guard] solution/src/evolution_audit.py sha256 BEFORE = 8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453
+[read] C1..C7 csv
+        C1 leaderboard_cleaned.csv                       rows=  4576 cols=12
+        C2 leaderboard_enhanced.csv                      rows=  4576 cols=15
+        C3 leaderboard_extended_timeseries.csv           rows=  4599 cols=11
+        C4 epoch_all_ai_models.csv                       rows=  3523 cols=57
+        C5 loss_benchmark_bridge.csv                     rows=    43 cols=13
+        C6 loss_benchmark_bridge_expanded.csv            rows=    75 cols=13
+        C7 model_architecture_metadata.csv               rows=    45 cols=7
+[read] C9 parquet
+       C9  train-00000-of-00001.parquet               rows=  4576 cols=36
+[scan] C8 detailed_results (recursive, extended path)
+       json files=1958  directories with json=1863  bytes=228862701
+[1/9] data inventory
+[2/9] field audit
+[3/9] missingness
+[4/9] duplicate / key audit
+[5/9] C8 parse of every JSON (no silent skip)
+       parse ok=1954  failed=4  records=1954
+       FAIL DreadPoor_Winter_Dawn-8B-TIES/results_2025-02-13T18-27-04.338360.json: json_decode_error | Unterminated string starting at: line 1453 column 22 (char 65388)
+       FAIL FINGU-AI_Chocolatine-Fusion-14B/results_2025-02-13T18-27-04.338360.json: json_decode_error | Unterminated string starting at: line 1162 column 22 (char 48159)
+       FAIL Intel_neural-chat-7b-v3-3/results_2025-02-13T18-27-04.338360.json: json_decode_error | Unterminated string starting at: line 1194 column 11 (char 49140)
+       FAIL L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1/results_2025-02-13T18-27-04.338360.json: json_decode_error | Expecting property name enclosed in double quotes: line 1090 column 4 (char 45805)
+[6/9] C8 task inventory and model-task aggregate
+       task keys=45  aggregate rows=11160  models=1860
+       directories with >1 json: 95
+[7/9] identity / date / unit audit
+[8/9] join coverage
+[9/9] checks and artifacts
+[guard] solution/src/evolution_audit.py sha256 AFTER  = 8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453  identical=True
+[checks] PASS=33 WARN=6 FAIL=0
+[write] 18 data artifacts
+[done] finished 2026-09-24T18:09:44.359627+08:00  duration=59.5s

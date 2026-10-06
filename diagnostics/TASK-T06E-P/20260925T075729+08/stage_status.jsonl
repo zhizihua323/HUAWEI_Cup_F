@@ -1,0 +1,7 @@
+{"stage": "scenario_registry_sealed", "status": "PASS", "time": "2026-09-25T07:57:48+08:00", "test_or_migration_metric_read": false}
+{"stage": "quality_anchor_and_H3_bridge", "status": "PASS", "time": "2026-09-25T08:06:03+08:00", "test_or_migration_metric_read": false}
+{"stage": "regmix_test_and_transport_audit", "status": "PASS", "time": "2026-09-25T08:01:13+08:00", "test_or_migration_metric_read": true, "seal_preceded_this_stage": true}
+{"stage": "scenario_interface", "status": "PASS", "time": "2026-09-25T08:06:55+08:00", "test_or_migration_metric_read": true}
+{"stage": "checks", "status": "PASS", "time": "2026-09-25T08:07:18+08:00", "test_or_migration_metric_read": true}
+{"stage": "independent_verification", "status": "PASS", "time": "2026-09-25T08:07:20+08:00", "test_or_migration_metric_read": true}
+{"stage": "finalization", "status": "PASS", "time": "2026-09-25T08:07:26+08:00", "test_or_migration_metric_read": true}

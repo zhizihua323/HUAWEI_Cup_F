@@ -1,0 +1,36 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "run",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "stage s30_sensitivity reuse validation returned INVALID: validation failed: code_fingerprint (failed checks: ['code_fingerprint']); hard stop - no recomputation, downgrade or marker rewrite",
+  "exit_code": 2,
+  "stage_seconds": {},
+  "executed_stages": [],
+  "skipped_stages": {},
+  "reused_stages": {
+    "s00_preflight": "stage marker validated",
+    "s01_synthetic_tests": "stage marker validated",
+    "s10_scan_a1": "checkpoint and stage marker validated",
+    "s11_scan_a2": "checkpoint and stage marker validated",
+    "s12_scan_a3": "checkpoint and stage marker validated",
+    "s20_score_primary": "checkpoint and stage marker validated"
+  },
+  "stage_terminal_events": {},
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\code_fingerprint",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\synthetic_fixture",
+    "--resume"
+  ],
+  "process_pid": 28740,
+  "finished_local": "2026-09-25T00:40:45+08:00"
+}

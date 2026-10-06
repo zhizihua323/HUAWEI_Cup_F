@@ -1,0 +1,71 @@
+{
+  "test": "extension_role_isolation",
+  "status": "PASS",
+  "generated_local": "2026-09-24T22:54:50+08:00",
+  "source": "synthetic rows only (quality_q01c_selftest.multi_role_frame); no real parquet read",
+  "domain": "github",
+  "feature": "modernbert_professionalism",
+  "role_row_counts": {
+    "A1_calibration": 200,
+    "A1_holdout": 30,
+    "extension_overlap_A1": 20,
+    "extension_new_records": 20
+  },
+  "baseline_parameters": {
+    "candidate_rows": 200,
+    "n_valid": 199,
+    "coverage": 0.995,
+    "n_unique_finite": 5,
+    "median": 0.4,
+    "gate_ok": true,
+    "source_scope": "A1_calibration & is_unique_first"
+  },
+  "after_extreme_mutation": {
+    "A1_holdout": {
+      "candidate_rows": 200,
+      "n_valid": 199,
+      "coverage": 0.995,
+      "n_unique_finite": 5,
+      "median": 0.4,
+      "gate_ok": true,
+      "source_scope": "A1_calibration & is_unique_first"
+    },
+    "extension_overlap_A1": {
+      "candidate_rows": 200,
+      "n_valid": 199,
+      "coverage": 0.995,
+      "n_unique_finite": 5,
+      "median": 0.4,
+      "gate_ok": true,
+      "source_scope": "A1_calibration & is_unique_first"
+    },
+    "extension_new_records": {
+      "candidate_rows": 200,
+      "n_valid": 199,
+      "coverage": 0.995,
+      "n_unique_finite": 5,
+      "median": 0.4,
+      "gate_ok": true,
+      "source_scope": "A1_calibration & is_unique_first"
+    }
+  },
+  "calibration_parameters_identical_after_every_mutation": true,
+  "parameters_sourced_from_calibration_only": true,
+  "gate_failure_hard_stop": true,
+  "small_sample_gate": {
+    "domain": "github",
+    "feature": "modernbert_professionalism",
+    "source_scope": "A1_calibration & is_unique_first",
+    "source_domain": "github",
+    "candidate_rows": 50,
+    "n_valid": 49,
+    "coverage": 0.98,
+    "n_unique_finite": 5,
+    "median": 0.4,
+    "gate_ok": false,
+    "gate_failures": [
+      "n_valid<100"
+    ],
+    "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=github); no holdout/extension/global fallback permitted"
+  }
+}

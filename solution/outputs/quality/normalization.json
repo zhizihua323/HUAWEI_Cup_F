@@ -1,0 +1,122 @@
+{
+  "calibration_rows": 40943,
+  "calibration_domain_counts": {
+    "c4": 8041,
+    "wikipedia": 8023,
+    "stackexchange": 7966,
+    "github": 7963,
+    "commoncrawl": 7691,
+    "arxiv": 1122,
+    "book": 137
+  },
+  "domain_weight": "Each domain has 1/7 total calibration weight",
+  "groups": {
+    "usability": [
+      "ad_en",
+      "fluency_en",
+      "modernbert_readability",
+      "modernbert_cleanliness",
+      "qurater_writing_style"
+    ],
+    "knowledge": [
+      "modernbert_professionalism",
+      "qurater_required_expertise",
+      "qurater_facts_trivia"
+    ],
+    "education_reasoning": [
+      "modernbert_reasoning",
+      "fineweb_edu",
+      "qurater_educational_value"
+    ]
+  },
+  "group_weight": 0.3333333333333333,
+  "excluded_primary_score_features": [
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_mean_word_length",
+    "rps_doc_frac_unique_words",
+    "rps_doc_unigram_entropy",
+    "rps_doc_word_count",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_lines_uppercase_letter_fraction",
+    "rps_doc_num_sentences",
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "dsir_books",
+    "dsir_wiki",
+    "dsir_math"
+  ],
+  "reason_for_exclusion": "No universal monotonic quality direction or target-domain utility has been established.",
+  "continuous_quantiles": [
+    0.01,
+    0.99
+  ],
+  "transforms": {
+    "fineweb_edu": {
+      "low": 0.08386536827983196,
+      "high": 3.3196254506652165,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "ad_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "fluency_en": {
+      "low": 0.0,
+      "high": 1.0,
+      "method": "official_binary_class_index",
+      "direction": "higher"
+    },
+    "qurater_writing_style": {
+      "low": -5.1484375,
+      "high": 6.222949155515907,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_required_expertise": {
+      "low": -4.94140625,
+      "high": 9.5,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_facts_trivia": {
+      "low": -4.21484375,
+      "high": 4.992075598388387,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "qurater_educational_value": {
+      "low": -4.41015625,
+      "high": 8.765625,
+      "method": "A1_calibration_equal_domain_weight_1_99_percentile",
+      "direction": "higher"
+    },
+    "modernbert_professionalism": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_readability": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_reasoning": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    },
+    "modernbert_cleanliness": {
+      "low": 0.0,
+      "high": 5.0,
+      "method": "official_ordinal_range",
+      "direction": "higher"
+    }
+  }
+}

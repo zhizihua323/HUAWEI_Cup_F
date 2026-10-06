@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T103130+08",
+  "purpose": "TASK-T06E-B-R1 precise correction",
+  "read_only_sources": {
+    "t06": {
+      "path": "tasks/TASK-T06_尺度桥接识别性与广义缩放律方法裁决.md",
+      "bytes": 27668,
+      "sha256": "5b27a8585fef4ca87061c628c7a6e54361651febd6b76b2ae315e1982cb64d8c"
+    },
+    "t06e": {
+      "path": "tasks/TASK-T06E_来源内缩放律与质量条件关系验证_尺度桥接情景及T07接口.md",
+      "bytes": 39389,
+      "sha256": "a081f0ec0911e35619d738041ee8753aeb2601f2c56570198a24034b1a321dac"
+    },
+    "r1": {
+      "path": "tasks/TASK-T06E-B-R1_profile坐标与G4门槛精准小修.md",
+      "bytes": 9061,
+      "sha256": "309cbdf1cea60d1c3ae94e96d75641f68dfac05c515dd1a137fd30fc50dade33"
+    },
+    "b1": {
+      "path": "F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "bytes": 111459,
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    "b6": {
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "bytes": 13670,
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f"
+    }
+  },
+  "original_run": {
+    "path": "diagnostics/TASK-T06E-B/20260925T100306+08",
+    "files": {
+      "fit/scaling_parameters_by_source.csv": {
+        "sha256": "b16cee5e572c1345cbf4592d7725babcc7834c421307c4dc24be132581e2b6e8",
+        "bytes": 164156
+      },
+      "fit/full_fit_predictions.parquet": {
+        "sha256": "0c855389038d0dabcbb2eff21957c7a4cea27a9757ba069adc0d9d9db6653692",
+        "bytes": 61740
+      },
+      "validation/candidate_comparison.csv": {
+        "sha256": "e21765c06120941f1acff16891a2dad70f0403e0641be4d91b4d02510ef0d094",
+        "bytes": 459
+      },
+      "validation/validation_splits.csv": {
+        "sha256": "d219e31fdf7a760b8148975700d548535c60b8f392067420e8ee1d53986be690",
+        "bytes": 5948
+      },
+      "bootstrap/bootstrap_summary.csv": {
+        "sha256": "0fd2e6f9d07d9b933aa117d0efd24e53b04f824ed8e848ce1339e5dacab0115c",
+        "bytes": 1728
+      },
+      "profiles/profile_inputs.json": {
+        "sha256": "470cbbaf3b93f1f69a92a129395b8c4ae4d30bac480df679d9457286184b0aad",
+        "bytes": 1744
+      },
+      "profiles/jacobian_diagnostics.csv": {
+        "sha256": "8e286453da8e2a19644ecd9c02d09a2f0958a1be3bff9ca144896aa524bd3611",
+        "bytes": 1149
+      },
+      "config/solver_config.json": {
+        "sha256": "bfb83304bf5bed402f3ef6a63c8d5f57afb6f08a6b3a1b8fa8e6c018ac7b1bec",
+        "bytes": 2275
+      },
+      "run_summary.json": {
+        "sha256": "47a596dc6d0a5eebdd50cd5b3a9a85b5bf899563028a8ef03819f66522eb70dd",
+        "bytes": 3327
+      },
+      "checks.json": {
+        "sha256": "3324bcb5c1134817aae27fa9bbd45f9f42a8628a60644c790603a9044d8079e8",
+        "bytes": 885
+      },
+      "verification.json": {
+        "sha256": "baa730d062b676cc13caf5f838e9cb8456e20a5bf40587631d523de1d19ec7e7",
+        "bytes": 2443
+      },
+      "output_manifest.json": {
+        "sha256": "8312ba3b4ceb4edd4a9e322d1b7f5cb3f4f0b8f005bc294a29158321bd24d188",
+        "bytes": 18233
+      }
+    },
+    "manifest_file_count": 104,
+    "manifest_hash": "8312ba3b4ceb4edd4a9e322d1b7f5cb3f4f0b8f005bc294a29158321bd24d188"
+  },
+  "forbidden_reads_not_performed": [
+    "TASK-T06E-P",
+    "A-side T03E interface",
+    "A1-A17",
+    "Q>0.6/B7/B8 profile data",
+    "T07/T05 inputs"
+  ]
+}

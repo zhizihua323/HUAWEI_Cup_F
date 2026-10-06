@@ -1,0 +1,10 @@
+# Local/generated environment dependencies and caches
+tmp/environment_review/deps/
+paper/final_work/_qa/lo_profile_*/
+**/__pycache__/
+*.pyc
+
+# Editor/system noise
+.DS_Store
+Thumbs.db
+

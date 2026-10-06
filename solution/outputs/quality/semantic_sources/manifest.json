@@ -1,0 +1,58 @@
+[
+  {
+    "file": "slimpajama_meta_rater_README.md",
+    "url": "https://huggingface.co/datasets/opendatalab/SlimPajama-Meta-rater/raw/main/README.md",
+    "retrieved_utc": "2026-09-23T23:55:41.277551+00:00",
+    "sha256": "9999c25261f7575309f3a6e4d1898c300d11ddea6c6e9f6a96f73420a68cd8ef",
+    "bytes": 11281
+  },
+  {
+    "file": "meta_rater_step2_select_data.py",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/pipeline/step2_select_data.py",
+    "retrieved_utc": "2026-09-23T23:55:42.422210+00:00",
+    "sha256": "9165af732a55104acc81360c1920e886920d5aa9ea87031b9c32c5034ccbef52",
+    "bytes": 12465
+  },
+  {
+    "file": "meta_rater_feature_order.json",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/pipeline/feature_order.json",
+    "retrieved_utc": "2026-09-23T23:55:43.563850+00:00",
+    "sha256": "c20cb75705d05eb4936e41bd713723813bb39f769c2e1a2c8f8170ad4757980a",
+    "bytes": 639
+  },
+  {
+    "file": "meta_rater_test_singletask.py",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/src/test_singletask.py",
+    "retrieved_utc": "2026-09-23T23:55:44.790545+00:00",
+    "sha256": "667c992cfb195e53dc158c9ecdb746898cde5c270c37daf2aa09cfc744b0570b",
+    "bytes": 3981
+  },
+  {
+    "file": "meta_rater_prompt_cleanliness.txt",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/prompts/cleanliness.txt",
+    "retrieved_utc": "2026-09-23T23:55:45.996052+00:00",
+    "sha256": "fc50bcc888d7749393ce411b7f4b5b7b9257daf827bd4f510bfa1fb59b23a59d",
+    "bytes": 2974
+  },
+  {
+    "file": "meta_rater_prompt_professionalism.txt",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/prompts/professionalism.txt",
+    "retrieved_utc": "2026-09-23T23:55:47.199315+00:00",
+    "sha256": "0fcf91d3e4ad2a976df8aa7d6ef06f4e66ff5868a9b8e738f5e172d8cebff00b",
+    "bytes": 3230
+  },
+  {
+    "file": "meta_rater_prompt_readability.txt",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/prompts/readability.txt",
+    "retrieved_utc": "2026-09-23T23:55:48.287298+00:00",
+    "sha256": "8001f4d206865b8ed51c4512a9589e21ae18bc5da42c981583c3b5d459aee240",
+    "bytes": 2352
+  },
+  {
+    "file": "meta_rater_prompt_reason.txt",
+    "url": "https://raw.githubusercontent.com/opendatalab/Meta-rater/633d1fc308f423c11f0c975c1869c16cbf302c44/prompts/reason.txt",
+    "retrieved_utc": "2026-09-23T23:55:49.496892+00:00",
+    "sha256": "f6d9febede62b7e222f785686dcc7fb5032d427a27335b96957f4b5bbda29fbe",
+    "bytes": 3006
+  }
+]

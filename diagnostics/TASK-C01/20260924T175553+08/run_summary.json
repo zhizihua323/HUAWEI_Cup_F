@@ -1,0 +1,205 @@
+{
+  "task": "TASK-C01",
+  "run_id": "20260924T175553+08",
+  "author": "Codex (OpenAI), AI-assisted, 2026-09-24",
+  "c8_corrupt_batch": {
+    "filename": "results_2025-02-13T18-27-04.338360.json",
+    "files_in_batch": 490,
+    "failures_in_batch": 4,
+    "distinct_corrupt_filenames": [
+      "results_2025-02-13T18-27-04.338360.json"
+    ]
+  },
+  "started_local": "2026-09-24T18:08:44.844880+08:00",
+  "finished_local": "2026-09-24T18:09:44.310296+08:00",
+  "duration_seconds": 59.465,
+  "environment": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "os_name": "nt"
+  },
+  "scope": {
+    "performed": [
+      "C1-C10 structural audit",
+      "identifier / date / unit audit",
+      "C5-C6 comparability stratification (descriptive)",
+      "C8 parse log",
+      "C8 task inventory",
+      "C8 per-model per-task aggregate",
+      "join coverage measurement"
+    ],
+    "explicitly_not_performed": [
+      "future 12/24-month forecasting",
+      "final Loss-Benchmark bridging model",
+      "choice of the final problem-4 statistical model",
+      "reading or writing of the parallel quality (Q) task results",
+      "any modification of solution/src/evolution_audit.py",
+      "any modification of raw attachments"
+    ]
+  },
+  "dataset_rows": {
+    "C1": 4576,
+    "C2": 4576,
+    "C3": 4599,
+    "C4": 3523,
+    "C5": 43,
+    "C6": 75,
+    "C7": 45,
+    "C9": 4576
+  },
+  "c8": {
+    "json_files": 1958,
+    "directories_with_json": 1863,
+    "parse_ok": 1954,
+    "parse_failed": 4,
+    "failure_breakdown": {
+      "json_decode_error": 4
+    },
+    "likely_truncated": 4,
+    "distinct_result_task_keys": 45,
+    "distinct_resolved_model_names": 1861,
+    "directories_with_over_one_json": 95,
+    "documents_missing_some_of_the_six_groups": 4,
+    "aggregate_rows_model_x_task": 11160,
+    "aggregate_valid_result_rows": 11135,
+    "models_in_wide_table": 1860,
+    "leaf_metric_rows": 293201,
+    "group_score_rows": 11724
+  },
+  "c8_group_score_ranges": {
+    "IFEval": {
+      "n": 1950,
+      "min": 0.0,
+      "max": 0.8662360315075112,
+      "p01": 0.05691490799966312,
+      "p50": 0.45887301249573353,
+      "p99": 0.8224851394300456,
+      "n_zero": 4,
+      "n_out_of_range": 0,
+      "metric": "mean_of prompt_level_strict_acc,none and inst_level_strict_acc,none"
+    },
+    "BBH": {
+      "n": 1952,
+      "min": 0.2570734247526471,
+      "max": 0.7576809581669849,
+      "p01": 0.28354625932997746,
+      "p50": 0.4954001041485853,
+      "p99": 0.7009980906092692,
+      "n_zero": 0,
+      "n_out_of_range": 0,
+      "metric": "acc_norm,none"
+    },
+    "MATH Lvl 5": {
+      "n": 1951,
+      "min": 0.0,
+      "max": 0.5891238670694864,
+      "p01": 0.0,
+      "p50": 0.0755287009063444,
+      "p99": 0.4871601208459214,
+      "n_zero": 156,
+      "n_out_of_range": 0,
+      "metric": "exact_match,none"
+    },
+    "GPQA": {
+      "n": 1948,
+      "min": 0.22818791946308725,
+      "max": 0.44546979865771813,
+      "p01": 0.23909395973154363,
+      "p50": 0.29194630872483224,
+      "p99": 0.39932885906040266,
+      "n_zero": 0,
+      "n_out_of_range": 0,
+      "metric": "acc_norm,none"
+    },
+    "MUSR": {
+      "n": 1948,
+      "min": 0.30158730158730157,
+      "max": 0.6005291005291006,
+      "p01": 0.31613756613756616,
+      "p50": 0.40343915343915343,
+      "p99": 0.5033465608465608,
+      "n_zero": 0,
+      "n_out_of_range": 0,
+      "metric": "acc_norm,none"
+    },
+    "MMLU-PRO": {
+      "n": 1950,
+      "min": 0.10255984042553191,
+      "max": 0.7303025265957447,
+      "p01": 0.10995511968085107,
+      "p50": 0.3472406914893617,
+      "p99": 0.5681582446808511,
+      "n_zero": 0,
+      "n_out_of_range": 0,
+      "metric": "acc,none"
+    }
+  },
+  "c5_c6": {
+    "n_merged_on_model": 43,
+    "per_column_equal_value_counts": {
+      "N_params_B": 43,
+      "D_tokens_B": 43,
+      "Val_Loss": 43,
+      "LB_Average": 43,
+      "LB_IFEval": 43,
+      "LB_BBH": 43,
+      "LB_MATH": 43,
+      "LB_GPQA": 43,
+      "LB_MUSR": 43,
+      "LB_MMLU_PRO": 43,
+      "Loss_Source": 43,
+      "Loss_Comparability": 43
+    },
+    "fitted_model": null,
+    "note": "descriptive stratification only; no bridge/calibration/forecast"
+  },
+  "join_coverage_headline": {
+    "C9_vs_C1_set_equality": true,
+    "C9_vs_C1_position_equality": true,
+    "C1_vs_C2_DataFrame_equals": false,
+    "C1_vs_C2_differing_numeric_cells": 515,
+    "C1_vs_C2_max_abs_difference": 3.552713678800501e-15,
+    "C4_exact_normalised_name_match_rate_to_C1": 0.02952,
+    "C8_exact_name_match_rate_to_C1": 0.998976,
+    "C3_model_match_rate_to_C1": 0.994347,
+    "C2_publication_after_submission_rows": {
+      "rows_with_both_dates": 446,
+      "after": 21,
+      "after_over_7d": 12
+    }
+  },
+  "source_code_guard": {
+    "file": "solution/src/evolution_audit.py",
+    "sha256_before": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+    "sha256_after": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+    "unchanged": true,
+    "executed": false,
+    "imported": false,
+    "static_review_only": true
+  },
+  "checks": {
+    "PASS": 33,
+    "WARN": 6,
+    "FAIL": 0
+  },
+  "data_nature_labels": {
+    "catalog_label_source": "03_DATA_CATALOG.md (documented label, quoted for traceability)",
+    "by_dataset": {
+      "C1": "observed",
+      "C2": "observed_plus_metadata_matching",
+      "C3": "mixed",
+      "C4": "reported_metadata",
+      "C5": "mixed_comparability",
+      "C6": "mixed_comparability",
+      "C7": "metadata",
+      "C8": "observed_evaluation",
+      "C9": "observed_evaluation",
+      "C10": "documentation_only"
+    },
+    "warning": "the catalog label is a description of provenance supplied with the data; it is not an independent authenticity certification, and this run did not relabel any dataset as directly observed"
+  },
+  "raw_data_modified": false,
+  "outputs_written_to": "diagnostics/TASK-C01/20260924T175553+08"
+}

@@ -1,0 +1,2232 @@
+{
+  "task": "TASK-C01-R1",
+  "run_id": "20260924T225308+08",
+  "purpose": "repair of the TASK-C01 checker and C8 aggregation semantics",
+  "source_task": "TASK-C01",
+  "source_run_id": "20260924T175553+08",
+  "source_checks_summary": {
+    "PASS": 33,
+    "WARN": 6,
+    "FAIL": 0,
+    "note": "as recorded in the frozen checks.json; several PASS values were constants"
+  },
+  "repair_map": {
+    "INV-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-FILE-TOTAL",
+        "R1-C8-DIR-COUNT"
+      ],
+      "explanation": "the constant set-membership test is replaced by an explicit count comparison against the frozen parse log"
+    },
+    "INV-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-FILE-TOTAL",
+        "R1-C8-DIR-COUNT"
+      ],
+      "explanation": "1958 is now recomputed from the parse log; the work order anchor is the expected side"
+    },
+    "INV-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-FILE-STATUS"
+      ],
+      "explanation": "emptiness of the status column is now tested instead of implied by row count"
+    },
+    "INV-04": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-CORRUPT-SET",
+        "R1-C8-PROPAGATION"
+      ],
+      "explanation": "the failure set is now cross-checked against the corrupt-file list and traced into the corrected table"
+    },
+    "ID-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C1-DUP"
+      ],
+      "explanation": "two artifacts must agree on the repeated-model count"
+    },
+    "ID-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C9-KEY"
+      ],
+      "explanation": "three artifacts must agree that eval_name is unique and complete"
+    },
+    "ID-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C1-DUP"
+      ],
+      "explanation": "folded into the cross-artifact duplicate identity check"
+    },
+    "ID-04": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-MISSINGNESS"
+      ],
+      "explanation": "the hard-coded PASS is replaced by a cross-artifact recomputation of the same counters"
+    },
+    "ID-04b": {
+      "disposition": "DOWNGRADED_NOT_VERIFIABLE",
+      "reimbursed_by": [
+        "R1-ID-NO-IMPUTE-STATEMENT"
+      ],
+      "explanation": "the 'no imputation' half of ID-04 has no machine evidence and is now NOT_VERIFIABLE"
+    },
+    "ID-05": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C8-FIELDS"
+      ],
+      "explanation": "the constant False in the producer context is replaced by a schema scan of two C8 artifacts"
+    },
+    "ID-06": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C3-FIELDS"
+      ],
+      "explanation": "field list recomputed from two artifacts"
+    },
+    "ID-07": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-ID-C7-FIELDS"
+      ],
+      "explanation": "field list recomputed from two artifacts"
+    },
+    "DATE-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-DATE-C1-COVERAGE"
+      ],
+      "explanation": "coverage reconciled across three artifacts"
+    },
+    "DATE-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-DATE-C3-GRANULARITY"
+      ],
+      "explanation": "granularity and dtype cross-checked across two artifacts"
+    },
+    "DATE-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-DATE-C4-COUNTS"
+      ],
+      "explanation": "the always-true 'parse_fail >= 0' condition is replaced by four-way arithmetic reconciliation"
+    },
+    "DATE-03b": {
+      "disposition": "DOWNGRADED_NOT_VERIFIABLE",
+      "reimbursed_by": [
+        "R1-DATE-NO-IMPUTE"
+      ],
+      "explanation": "the 'not imputed' half is not provable from summary tables"
+    },
+    "DATE-04": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-DATE-C8-COVERAGE"
+      ],
+      "explanation": "timestamp coverage agreed across two artifacts"
+    },
+    "DATE-05": {
+      "disposition": "PARTIALLY_REPAIRED",
+      "reimbursed_by": [
+        "R1-DATE-C2-COVERAGE"
+      ],
+      "explanation": "the denominator is cross-checked; the count of publication-after-submission rows stays single-source"
+    },
+    "UNIT-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-UNIT-BENCH-RANGE"
+      ],
+      "explanation": "ranges recomputed from two artifacts"
+    },
+    "UNIT-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-UNIT-C8-RANGE"
+      ],
+      "explanation": "range recomputed from the row-level group detail"
+    },
+    "UNIT-03": {
+      "disposition": "SPLIT",
+      "reimbursed_by": [
+        "R1-UNIT-LABELS-PRESENT",
+        "R1-UNIT-LABEL-CORRECTNESS"
+      ],
+      "explanation": "the hard-coded WARN is split into a verifiable presence test and a NOT_VERIFIABLE correctness statement"
+    },
+    "UNIT-04": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-UNIT-LOSS"
+      ],
+      "explanation": "positivity and counts recomputed from two artifacts"
+    },
+    "UNIT-05": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-UNIT-C9-SENTINEL"
+      ],
+      "explanation": "sentinel count corroborated by three artifacts"
+    },
+    "CMP-01": {
+      "disposition": "SPLIT",
+      "reimbursed_by": [
+        "R1-CMP-C5-C6-OVERLAP",
+        "R1-CMP-IDENTICAL-VALUES"
+      ],
+      "explanation": "cardinality containment is verified; the value-identity claim is single-source and downgraded"
+    },
+    "CMP-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-CMP-STRATA"
+      ],
+      "explanation": "stratum size corroborated by a second artifact"
+    },
+    "CMP-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-CMP-NO-BRIDGE-ARTIFACTS",
+        "R1-CMP-NO-BRIDGE-CODE"
+      ],
+      "explanation": "the hard-coded PASS is replaced by an artifact-name/schema scan and a static source scan"
+    },
+    "C8-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-TASKKEYS"
+      ],
+      "explanation": "the weak non-empty test is replaced by a set equality test"
+    },
+    "C8-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-GROUP-GRIDSET"
+      ],
+      "explanation": "grid equality between two artifacts"
+    },
+    "C8-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-MT-ROWS",
+        "R1-C8-MT-VALID-ROWS",
+        "R1-C8-MT-ZERO-ROWS",
+        "R1-C8-MT-SUM",
+        "R1-C8-MT-RECOMPUTE"
+      ],
+      "explanation": "all counts compared against the work-order anchors and re-derived per key"
+    },
+    "C8-04": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-DIR-ONE-FILE",
+        "R1-C8-DIR-TWO-FILE"
+      ],
+      "explanation": "the multi-file count is now cross-checked against the directory counts artifact"
+    },
+    "C8-05": {
+      "disposition": "REPAIRED_AND_VERIFIED_AND_CORRECTED",
+      "reimbursed_by": [
+        "R1-C8-GROUP-KEY-MISSING"
+      ],
+      "explanation": "the missing-group count is cross-checked against the zero-result rows; the cross-check showed the two are NOT equal (19 missing keys vs 25 zero-result rows), so the repaired check reconciles them as a superset relation and records the extra 6 rows as present keys without a usable metric, instead of repeating the original single-signal claim"
+    },
+    "C8-06": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-C8-NONNUMERIC"
+      ],
+      "explanation": "the 'PASS if True' constant is replaced by a two-artifact reconciliation of the non-numeric counter"
+    },
+    "JOIN-01": {
+      "disposition": "SPLIT",
+      "reimbursed_by": [
+        "R1-JOIN-C9C1-MODELS",
+        "R1-JOIN-C9C1-ROWORDER"
+      ],
+      "explanation": "cardinality is corroborated by two artifacts; row-order and cell equality are single-source"
+    },
+    "JOIN-02": {
+      "disposition": "DOWNGRADED_NOT_CHECKED",
+      "reimbursed_by": [
+        "R1-JOIN-C1C2-FLOAT",
+        "R1-JOIN-C1C2-ROWS"
+      ],
+      "explanation": "row counts are cross-checked, but the float-equality quantities cannot be rebuilt without the raw CSVs"
+    },
+    "JOIN-03": {
+      "disposition": "SPLIT",
+      "reimbursed_by": [
+        "R1-JOIN-C4-ROWS",
+        "R1-JOIN-C4-RATE"
+      ],
+      "explanation": "row count is cross-checked; the match rate is single-source"
+    },
+    "JOIN-04": {
+      "disposition": "SPLIT",
+      "reimbursed_by": [
+        "R1-C8-X-DIRMODEL",
+        "R1-JOIN-C8C1-RATE"
+      ],
+      "explanation": "coverage set identity is verified inside R1; the C8-to-C1 rate is single-source"
+    },
+    "JOIN-05": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-JOIN-C3-SHAPE"
+      ],
+      "explanation": "shape, source vocabulary and field list recomputed from three artifacts"
+    },
+    "SCOPE-01": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-SCOPE-NO-FORECAST-ARTIFACT"
+      ],
+      "explanation": "the constant PASS is replaced by a scan of the complete frozen artifact list"
+    },
+    "SCOPE-02": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-SCOPE-NO-PROBLEM4-ARTIFACT"
+      ],
+      "explanation": "the constant PASS is replaced by an artifact-name scan plus the frozen scope declaration"
+    },
+    "SCOPE-03": {
+      "disposition": "REPAIRED_AND_VERIFIED",
+      "reimbursed_by": [
+        "R1-SCOPE-EVOLUTION-SHA"
+      ],
+      "explanation": "the source hash is re-checked against two frozen registrations"
+    },
+    "SCOPE-04": {
+      "disposition": "DOWNGRADED_NOT_VERIFIABLE",
+      "reimbursed_by": [
+        "R1-SCOPE-RAW-HISTORICAL",
+        "R1-SCOPE-R1-NO-RAW"
+      ],
+      "explanation": "the historical raw-untouched claim becomes NOT_VERIFIABLE; R1's own read-only behaviour is checked separately"
+    }
+  },
+  "status_vocabulary": [
+    "PASS",
+    "WARN",
+    "FAIL",
+    "NOT_CHECKED",
+    "NOT_VERIFIABLE"
+  ],
+  "rule": "NOT_CHECKED and NOT_VERIFIABLE are never counted as PASS. Every PASS is a computed comparison: for a mapping, each key listed in expected must exist in actual with an equal value (expected is a required subset of the observation); scalars and lists must match exactly, numbers within rtol=1e-9 / atol=1e-12.",
+  "counts": {
+    "PASS": 79,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 5,
+    "NOT_VERIFIABLE": 4
+  },
+  "key_c8_counts": {
+    "PASS": 44,
+    "WARN": 0,
+    "FAIL": 0,
+    "NOT_CHECKED": 0,
+    "NOT_VERIFIABLE": 0
+  },
+  "n_checks": 88,
+  "checks": [
+    {
+      "check_id": "R1-C8-FILE-TOTAL",
+      "status": "PASS",
+      "claim": "C8 JSON files registered in the frozen parse log",
+      "key_c8_item": true,
+      "actual": 1958,
+      "expected": 1958,
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "count rows of the frozen parse log",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-FILE-OK",
+      "status": "PASS",
+      "claim": "C8 JSON files with parse_status == ok",
+      "key_c8_item": true,
+      "actual": 1954,
+      "expected": 1954,
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "value_counts of parse_status",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-FILE-FAIL",
+      "status": "PASS",
+      "claim": "C8 JSON files with parse_status != ok",
+      "key_c8_item": true,
+      "actual": 4,
+      "expected": 4,
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "value_counts of parse_status",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-FILE-IDENTITY",
+      "status": "PASS",
+      "claim": "file accounting identity 1958 = 1954 + 4",
+      "key_c8_item": true,
+      "actual": 1958,
+      "expected": 1958,
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "success + failure == total on the row-level classification",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-COUNT",
+      "status": "PASS",
+      "claim": "directories owning at least one C8 JSON",
+      "key_c8_item": true,
+      "actual": 1863,
+      "expected": 1863,
+      "evidence": "c8_parse_log.csv + c8_directory_file_counts.csv",
+      "verification_method": "distinct directory in the parse log vs row count of the directory counts file",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-FILESET-EQUAL",
+      "status": "PASS",
+      "claim": "directory sets of the two frozen artifacts are identical",
+      "key_c8_item": true,
+      "actual": {
+        "parse_log_set_equals_counts_set": true,
+        "parse_log_dirs": 1863,
+        "counts_dirs": 1863
+      },
+      "expected": {
+        "parse_log_set_equals_counts_set": true,
+        "parse_log_dirs": 1863,
+        "counts_dirs": 1863
+      },
+      "evidence": "c8_parse_log.csv vs c8_directory_file_counts.csv",
+      "verification_method": "set equality of directory labels",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-FILE-COUNT-MATCH",
+      "status": "PASS",
+      "claim": "per-directory JSON counts agree between the two artifacts",
+      "key_c8_item": true,
+      "actual": {
+        "dirs_compared": 1863,
+        "mismatched_dirs": 0,
+        "sum_of_counts_file": 1958,
+        "sum_of_parse_log": 1958
+      },
+      "expected": {
+        "dirs_compared": 1863,
+        "mismatched_dirs": 0,
+        "sum_of_counts_file": 1958,
+        "sum_of_parse_log": 1958
+      },
+      "evidence": "c8_parse_log.csv vs c8_directory_file_counts.csv",
+      "verification_method": "element-wise comparison per directory",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-ONE-FILE",
+      "status": "PASS",
+      "claim": "directories holding exactly one C8 JSON",
+      "key_c8_item": true,
+      "actual": 1768,
+      "expected": 1768,
+      "evidence": "c8_parse_log.csv + c8_directory_file_counts.csv",
+      "verification_method": "distribution of per-directory file counts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-TWO-FILE",
+      "status": "PASS",
+      "claim": "directories holding exactly two C8 JSONs",
+      "key_c8_item": true,
+      "actual": 95,
+      "expected": 95,
+      "evidence": "c8_parse_log.csv + c8_directory_file_counts.csv",
+      "verification_method": "distribution of per-directory file counts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-CORRUPT-SET",
+      "status": "PASS",
+      "claim": "the corrupt-file list and the parse-log failure set are the same set",
+      "key_c8_item": true,
+      "actual": {
+        "corrupt_rows": 4,
+        "parse_log_failures": 4,
+        "sets_equal": true,
+        "only_in_corrupt": [],
+        "only_in_parse_log": []
+      },
+      "expected": {
+        "corrupt_rows": 4,
+        "parse_log_failures": 4,
+        "sets_equal": true,
+        "only_in_corrupt": [],
+        "only_in_parse_log": []
+      },
+      "evidence": "c8_corrupt_files.csv vs c8_parse_log.csv",
+      "verification_method": "bidirectional set difference on (directory, file)",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-CORRUPT-SHA",
+      "status": "PASS",
+      "claim": "corrupt-file SHA256 agrees with the parse-log row for the same file",
+      "key_c8_item": true,
+      "actual": {
+        "rows_checked": 4,
+        "all_match": true
+      },
+      "expected": {
+        "rows_checked": 4,
+        "all_match": true
+      },
+      "evidence": "c8_corrupt_files.csv vs c8_parse_log.csv",
+      "verification_method": "string equality of sha256 per (directory, file) across two artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-CORRUPT-DIRS",
+      "status": "PASS",
+      "claim": "file accounting of each damaged directory",
+      "key_c8_item": true,
+      "actual": {
+        "DreadPoor_Winter_Dawn-8B-TIES": [
+          2,
+          1,
+          1
+        ],
+        "FINGU-AI_Chocolatine-Fusion-14B": [
+          1,
+          0,
+          1
+        ],
+        "Intel_neural-chat-7b-v3-3": [
+          1,
+          0,
+          1
+        ],
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": [
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": {
+        "DreadPoor_Winter_Dawn-8B-TIES": [
+          2,
+          1,
+          1
+        ],
+        "FINGU-AI_Chocolatine-Fusion-14B": [
+          1,
+          0,
+          1
+        ],
+        "Intel_neural-chat-7b-v3-3": [
+          1,
+          0,
+          1
+        ],
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": [
+          1,
+          0,
+          1
+        ]
+      },
+      "evidence": "c8_parse_log.csv + c8_corrupt_files.csv",
+      "verification_method": "[total, parse_success, parse_failed] per damaged directory",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-PURE-CORRUPT",
+      "status": "PASS",
+      "claim": "damaged directories with no parseable file at all",
+      "key_c8_item": true,
+      "actual": {
+        "n_pure_corrupt": 3,
+        "directories": [
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ]
+      },
+      "expected": {
+        "n_pure_corrupt": 3,
+        "directories": [
+          "FINGU-AI_Chocolatine-Fusion-14B",
+          "Intel_neural-chat-7b-v3-3",
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1"
+        ]
+      },
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "damaged directories with zero parse_status == ok rows",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-PROPAGATION",
+      "status": "PASS",
+      "claim": "every corrupt file is propagated into the corrected directory table",
+      "key_c8_item": true,
+      "actual": {
+        "per_file": {
+          "DreadPoor_Winter_Dawn-8B-TIES": {
+            "row_present": true,
+            "has_parse_failure": true,
+            "n_files_parse_failed": 1,
+            "failed_file_listed": true
+          },
+          "FINGU-AI_Chocolatine-Fusion-14B": {
+            "row_present": true,
+            "has_parse_failure": true,
+            "n_files_parse_failed": 1,
+            "failed_file_listed": true
+          },
+          "Intel_neural-chat-7b-v3-3": {
+            "row_present": true,
+            "has_parse_failure": true,
+            "n_files_parse_failed": 1,
+            "failed_file_listed": true
+          },
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": {
+            "row_present": true,
+            "has_parse_failure": true,
+            "n_files_parse_failed": 1,
+            "failed_file_listed": true
+          }
+        },
+        "n_files_propagated": 4
+      },
+      "expected": {
+        "n_files_propagated": 4
+      },
+      "evidence": "c8_corrupt_files.csv vs c8_directory_aggregate_corrected.csv",
+      "verification_method": "join of corrupt files onto the corrected directory table",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-PURE-CORRUPT-ROW",
+      "status": "PASS",
+      "claim": "pure-corrupt directories survive with zero results",
+      "key_c8_item": true,
+      "actual": {
+        "rows": {
+          "FINGU-AI_Chocolatine-Fusion-14B": [
+            0,
+            0
+          ],
+          "Intel_neural-chat-7b-v3-3": [
+            0,
+            0
+          ],
+          "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": [
+            0,
+            0
+          ]
+        },
+        "all_zero_success_and_results": true
+      },
+      "expected": {
+        "all_zero_success_and_results": true
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv",
+      "verification_method": "presence and zero-coverage test for the three pure-corrupt directories",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIR-ID",
+      "status": "PASS",
+      "claim": "per-directory identity n_files_total == success + failed",
+      "key_c8_item": true,
+      "actual": {
+        "directories_checked": 1863,
+        "violations": 0
+      },
+      "expected": {
+        "directories_checked": 1863,
+        "violations": 0
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv",
+      "verification_method": "row-wise identity test over all directories",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-SLOTS",
+      "status": "PASS",
+      "claim": "task slots produced by parseable files (parseable files x six tasks)",
+      "key_c8_item": true,
+      "actual": {
+        "group_rows": 11724,
+        "parse_ok_files_times_six": 11724
+      },
+      "expected": {
+        "group_rows": 11724,
+        "parse_ok_files_times_six": 11724
+      },
+      "evidence": "c8_group_scores_all_runs.csv vs c8_parse_log.csv",
+      "verification_method": "row count vs success count x 6 tasks",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-FINITE",
+      "status": "PASS",
+      "claim": "finite group scores over the six prescribed tasks",
+      "key_c8_item": true,
+      "actual": 11699,
+      "expected": 11699,
+      "evidence": "c8_group_scores_all_runs.csv",
+      "verification_method": "count of non-null score values",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MISSING-SLOTS",
+      "status": "PASS",
+      "claim": "missing group-score slots",
+      "key_c8_item": true,
+      "actual": 25,
+      "expected": 25,
+      "evidence": "c8_group_scores_all_runs.csv",
+      "verification_method": "count of null score values",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-DIRVALID-SUM",
+      "status": "PASS",
+      "claim": "sum of n_results_valid over the corrected directory table",
+      "key_c8_item": true,
+      "actual": 11699,
+      "expected": 11699,
+      "evidence": "c8_directory_aggregate_corrected.csv vs c8_group_scores_all_runs.csv",
+      "verification_method": "directory-level finite counts summed and compared with the group-table recount",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-CORRUPTDIR-SCORES",
+      "status": "PASS",
+      "claim": "finite group scores contributed by each damaged directory",
+      "key_c8_item": true,
+      "actual": {
+        "DreadPoor_Winter_Dawn-8B-TIES": 6,
+        "FINGU-AI_Chocolatine-Fusion-14B": 0,
+        "Intel_neural-chat-7b-v3-3": 0,
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": 0
+      },
+      "expected": {
+        "DreadPoor_Winter_Dawn-8B-TIES": 6,
+        "FINGU-AI_Chocolatine-Fusion-14B": 0,
+        "Intel_neural-chat-7b-v3-3": 0,
+        "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1": 0
+      },
+      "evidence": "c8_group_scores_all_runs.csv",
+      "verification_method": "per-directory non-null score count",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-GROUP-GRIDSET",
+      "status": "PASS",
+      "claim": "group-score grid equals the parseable-file set",
+      "key_c8_item": true,
+      "actual": {
+        "gs_grid": 1954,
+        "parse_ok_grid": 1954,
+        "sets_equal": true,
+        "only_in_gs": [],
+        "only_in_parse_ok": []
+      },
+      "expected": {
+        "gs_grid": 1954,
+        "parse_ok_grid": 1954,
+        "sets_equal": true,
+        "only_in_gs": [],
+        "only_in_parse_ok": []
+      },
+      "evidence": "c8_group_scores_all_runs.csv vs c8_parse_log.csv",
+      "verification_method": "set equality on (directory, file)",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-ROWS",
+      "status": "PASS",
+      "claim": "model x task aggregate rows",
+      "key_c8_item": true,
+      "actual": 11160,
+      "expected": 11160,
+      "evidence": "c8_model_task_aggregate.csv",
+      "verification_method": "row count",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-VALID-ROWS",
+      "status": "PASS",
+      "claim": "model x task rows with at least one valid result",
+      "key_c8_item": true,
+      "actual": 11135,
+      "expected": 11135,
+      "evidence": "c8_model_task_aggregate.csv",
+      "verification_method": "count of n_valid_results > 0",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-ZERO-ROWS",
+      "status": "PASS",
+      "claim": "model x task rows with zero valid results",
+      "key_c8_item": true,
+      "actual": 25,
+      "expected": 25,
+      "evidence": "c8_model_task_aggregate.csv",
+      "verification_method": "count of n_valid_results == 0",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-SUM",
+      "status": "PASS",
+      "claim": "sum of n_valid_results over the model x task table",
+      "key_c8_item": true,
+      "actual": 11699,
+      "expected": 11699,
+      "evidence": "c8_model_task_aggregate.csv vs c8_group_scores_all_runs.csv",
+      "verification_method": "sum of the frozen column vs the total finite scores in the group detail",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-RECOMPUTE",
+      "status": "PASS",
+      "claim": "corrected n_valid_results reproduces the frozen model x task values",
+      "key_c8_item": true,
+      "actual": {
+        "pairs_compared": 11160,
+        "pairs_differing": 0,
+        "differences": {}
+      },
+      "expected": {
+        "pairs_compared": 11160,
+        "pairs_differing": 0,
+        "differences": {}
+      },
+      "evidence": "c8_model_task_aggregate.csv vs c8_model_task_aggregate_corrected.csv",
+      "verification_method": "per-key comparison of the frozen column against the corrected column",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-COVERAGE",
+      "status": "PASS",
+      "claim": "coverage fields of the corrected model x task table come from the corrected directory table",
+      "key_c8_item": true,
+      "actual": {
+        "relationships_checked": 11160,
+        "mismatches": 0,
+        "examples": {}
+      },
+      "expected": {
+        "relationships_checked": 11160,
+        "mismatches": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_directory_aggregate_corrected.csv",
+      "verification_method": "key-wise comparison of four coverage fields against the directory table",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-MT-INCOMPLETE-PROP",
+      "status": "PASS",
+      "claim": "source_parse_incomplete is set on the six rows of the damaged directory that still has data",
+      "key_c8_item": true,
+      "actual": {
+        "DreadPoor_rows": 6,
+        "DreadPoor_rows_flagged": 6,
+        "other_rows_flagged": 0
+      },
+      "expected": {
+        "DreadPoor_rows": 6,
+        "DreadPoor_rows_flagged": 6,
+        "other_rows_flagged": 0
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv",
+      "verification_method": "count of flagged rows per model_key",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-ROWS",
+      "status": "PASS",
+      "claim": "model wide table rows in the frozen artifact",
+      "key_c8_item": true,
+      "actual": 1860,
+      "expected": 1860,
+      "evidence": "c8_model_wide_canonical.csv",
+      "verification_method": "row count",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-ROWS-CORRECTED",
+      "status": "PASS",
+      "claim": "corrected wide table rows equal the frozen wide table rows",
+      "key_c8_item": true,
+      "actual": 1860,
+      "expected": 1860,
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_wide_canonical.csv",
+      "verification_method": "row counts of the two tables",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-DIST",
+      "status": "PASS",
+      "claim": "distribution of n_tasks_valid in the corrected wide table",
+      "key_c8_item": true,
+      "actual": {
+        "1": 3,
+        "2": 1,
+        "3": 2,
+        "6": 1854
+      },
+      "expected": {
+        "1": 3,
+        "2": 1,
+        "3": 2,
+        "6": 1854
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "value_counts of the recomputed n_tasks_valid",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-DIST-CROSS",
+      "status": "PASS",
+      "claim": "recomputed n_tasks_valid equals the frozen n_tasks_with_result column",
+      "key_c8_item": true,
+      "actual": {
+        "rows_compared": 1860,
+        "mismatches": 0
+      },
+      "expected": {
+        "rows_compared": 1860,
+        "mismatches": 0
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_wide_canonical.csv",
+      "verification_method": "row-wise comparison of two independently stored task-count columns",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-COMPLETE",
+      "status": "PASS",
+      "claim": "six_task_complete flag counts",
+      "key_c8_item": true,
+      "actual": {
+        "True": 1854,
+        "False": 6
+      },
+      "expected": {
+        "True": 1854,
+        "False": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "count of the boolean recomputed from n_tasks_valid == 6",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-COMPLETE-MEAN",
+      "status": "PASS",
+      "claim": "finite values of six_task_mean_complete_only",
+      "key_c8_item": true,
+      "actual": 1854,
+      "expected": 1854,
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "count of non-null complete-only means",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-PARTIAL-MEAN",
+      "status": "PASS",
+      "claim": "finite values of partial_task_mean",
+      "key_c8_item": true,
+      "actual": 6,
+      "expected": 6,
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "count of non-null partial means",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-PARTIAL-NAN",
+      "status": "PASS",
+      "claim": "every partial model has an empty six_task_mean_complete_only",
+      "key_c8_item": true,
+      "actual": {
+        "partial_models": 6,
+        "partial_with_complete_mean": 0,
+        "partial_with_partial_mean": 6
+      },
+      "expected": {
+        "partial_models": 6,
+        "partial_with_complete_mean": 0,
+        "partial_with_partial_mean": 6
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "null test on the partial rows",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-PARTIAL-LIST",
+      "status": "PASS",
+      "claim": "the repaired partial-model set equals the set implied by the frozen table",
+      "key_c8_item": true,
+      "actual": {
+        "corrected": [
+          "HuggingFaceH4_zephyr-7b-alpha",
+          "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+          "HuggingFaceTB_SmolLM2-135M",
+          "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+          "google_gemma-7b-it",
+          "mistralai_Mistral-7B-v0.3"
+        ],
+        "from_frozen": [
+          "HuggingFaceH4_zephyr-7b-alpha",
+          "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+          "HuggingFaceTB_SmolLM2-135M",
+          "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+          "google_gemma-7b-it",
+          "mistralai_Mistral-7B-v0.3"
+        ],
+        "equal": true
+      },
+      "expected": {
+        "corrected": [
+          "HuggingFaceH4_zephyr-7b-alpha",
+          "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+          "HuggingFaceTB_SmolLM2-135M",
+          "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+          "google_gemma-7b-it",
+          "mistralai_Mistral-7B-v0.3"
+        ],
+        "from_frozen": [
+          "HuggingFaceH4_zephyr-7b-alpha",
+          "HuggingFaceH4_zephyr-7b-gemma-v0.1",
+          "HuggingFaceTB_SmolLM2-135M",
+          "Lil-R_2_PRYMMAL-ECE-7B-SLERP",
+          "google_gemma-7b-it",
+          "mistralai_Mistral-7B-v0.3"
+        ],
+        "equal": true
+      },
+      "evidence": "c8_model_wide_corrected.csv vs c8_model_wide_canonical.csv",
+      "verification_method": "set comparison of model_key below six tasks",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-CONSISTENT",
+      "status": "PASS",
+      "claim": "complete flag, complete-only mean and partial mean are internally consistent",
+      "key_c8_item": true,
+      "actual": {
+        "flag_matches_n_tasks_valid": true,
+        "complete_mean_matches_row_mean_on_complete_rows": true,
+        "partial_mean_present_iff_partial": true,
+        "complete_only_mean_present_iff_complete": true
+      },
+      "expected": {
+        "flag_matches_n_tasks_valid": true,
+        "complete_mean_matches_row_mean_on_complete_rows": true,
+        "partial_mean_present_iff_partial": true,
+        "complete_only_mean_present_iff_complete": true
+      },
+      "evidence": "c8_model_wide_corrected.csv",
+      "verification_method": "recomputation of all three relationships from the six task columns",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-WIDE-LEGACY-CONTRAST",
+      "status": "PASS",
+      "claim": "the frozen skipna row mean still carries a value on the partial models (the defect that motivated the repair)",
+      "key_c8_item": true,
+      "actual": {
+        "legacy_values_on_partial_rows": 6,
+        "legacy_matches_frozen_column": true
+      },
+      "expected": {
+        "legacy_values_on_partial_rows": 6,
+        "legacy_matches_frozen_column": true
+      },
+      "evidence": "c8_model_wide_canonical.csv vs c8_model_wide_corrected.csv",
+      "verification_method": "comparison of the renamed legacy column with the frozen six_task_mean_c8_raw column",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-X-DIRMODEL",
+      "status": "PASS",
+      "claim": "corrected directory table covers the model keys plus the pure-corrupt directories",
+      "key_c8_item": true,
+      "actual": {
+        "dirs": 1863,
+        "model_keys": 1860,
+        "union_expected": 1863,
+        "dir_set_equals_union": true
+      },
+      "expected": {
+        "dirs": 1863,
+        "model_keys": 1860,
+        "union_expected": 1863,
+        "dir_set_equals_union": true
+      },
+      "evidence": "c8_directory_aggregate_corrected.csv vs c8_model_task_aggregate.csv",
+      "verification_method": "set identity: directory set == model keys union pure-corrupt directories",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-X-MTWIDE",
+      "status": "PASS",
+      "claim": "model x task table and the wide table cover the same models",
+      "key_c8_item": true,
+      "actual": {
+        "model_task_keys": 1860,
+        "wide_keys": 1860,
+        "sets_equal": true
+      },
+      "expected": {
+        "model_task_keys": 1860,
+        "wide_keys": 1860,
+        "sets_equal": true
+      },
+      "evidence": "c8_model_task_aggregate_corrected.csv vs c8_model_wide_corrected.csv",
+      "verification_method": "set equality of model keys",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-NONNUMERIC",
+      "status": "PASS",
+      "claim": "non-numeric metric-value count reconcilable from two independent artifacts",
+      "key_c8_item": true,
+      "actual": {
+        "task_inventory_sum": 7806,
+        "leaf_table_recount": 7806,
+        "agree": true,
+        "inventory_slots": 207216,
+        "leaf_slots": 207216,
+        "slots_agree": true
+      },
+      "expected": {
+        "task_inventory_sum": 7806,
+        "leaf_table_recount": 7806,
+        "agree": true,
+        "slots_agree": true
+      },
+      "evidence": "c8_task_inventory.csv vs c8_leaf_metrics.csv.gz",
+      "verification_method": "sum of the frozen per-task counter vs a row-level recount over the leaf table (metric != 'alias' and nonnumeric == 1)",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-C4-COUNTS",
+      "status": "PASS",
+      "claim": "C4 row count and Publication-date completeness agree across four frozen artifacts; a blank CSV field counts as MISSING and is not conflated with a parse failure",
+      "key_c8_item": false,
+      "actual": {
+        "date_audit": [
+          3523,
+          3500,
+          3500,
+          0
+        ],
+        "missingness": [
+          3523,
+          23
+        ],
+        "field_audit": [
+          3523,
+          3500,
+          23
+        ],
+        "data_inventory_rows": 3523,
+        "rows_agree": true,
+        "nonnull_agree": true,
+        "missing_equals_rows_minus_nonnull": true,
+        "parse_fail_equals_nonnull_minus_parsed": true,
+        "nonnull_plus_missing_equals_rows": true
+      },
+      "expected": {
+        "rows_agree": true,
+        "nonnull_agree": true,
+        "missing_equals_rows_minus_nonnull": true,
+        "parse_fail_equals_nonnull_minus_parsed": true,
+        "nonnull_plus_missing_equals_rows": true
+      },
+      "evidence": "date_audit.csv + missingness.csv + field_audit.csv + data_inventory.csv",
+      "verification_method": "cross-artifact arithmetic reconciliation of the same quantities",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-NO-IMPUTE",
+      "status": "NOT_VERIFIABLE",
+      "claim": "C4 publication dates were not imputed during the original run",
+      "key_c8_item": false,
+      "actual": {
+        "observable": "counts and a written statement only",
+        "nonnull": 3500,
+        "missing": 0
+      },
+      "expected": "a machine-readable no-imputation certificate for the original run",
+      "evidence": "date_audit.csv + missingness.csv + field_audit.csv + handoff.md",
+      "verification_method": "absence of an action cannot be proven from summary tables; proving it would require re-reading the raw C4 CSV, which is forbidden here",
+      "limitations": "kept as a recorded statement, never counted as PASS",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-CMP-ROWS",
+      "status": "PASS",
+      "claim": "C5/C6 row counts and their merge size agree across artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "c5_rows_across_artifacts": [
+          43,
+          43,
+          43
+        ],
+        "c6_rows_across_artifacts": [
+          75,
+          75,
+          75
+        ],
+        "c5_consistent": true,
+        "c6_consistent": true,
+        "merged_rows": 43
+      },
+      "expected": {
+        "c5_consistent": true,
+        "c6_consistent": true,
+        "c5_rows_across_artifacts": [
+          43,
+          43,
+          43
+        ],
+        "c6_rows_across_artifacts": [
+          75,
+          75,
+          75
+        ],
+        "merged_rows": 43
+      },
+      "evidence": "data_inventory.csv + field_audit.csv + model_identity_audit.csv + c5_c6_comparability_audit.csv",
+      "verification_method": "three artifacts must agree on each row count; merge size from the strata table",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-CMP-STRATA",
+      "status": "PASS",
+      "claim": "C6 High stratum size corroborated by a second artifact",
+      "key_c8_item": false,
+      "actual": {
+        "strata_table_high_n": 7,
+        "join_coverage_C6_D_tokens_nonnull": 7,
+        "agree": true,
+        "medium_n": 68
+      },
+      "expected": {
+        "strata_table_high_n": 7,
+        "join_coverage_C6_D_tokens_nonnull": 7,
+        "agree": true,
+        "medium_n": 68
+      },
+      "evidence": "c5_c6_comparability_audit.csv vs join_coverage.csv",
+      "verification_method": "the High stratum is the block that carries D_tokens_B; two artifacts agree on 7",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-CMP-NO-BRIDGE-ARTIFACTS",
+      "status": "PASS",
+      "claim": "the frozen C01 artifact set contains no bridging / prediction artifact",
+      "key_c8_item": false,
+      "actual": {
+        "artifacts_scanned": 46,
+        "name_matches": [],
+        "c5_c6_schema_columns": [
+          "D_tokens_B",
+          "LB_Average",
+          "LB_BBH",
+          "LB_GPQA",
+          "LB_IFEval",
+          "LB_MATH",
+          "LB_MMLU_PRO",
+          "LB_MUSR",
+          "Loss_Comparability",
+          "Loss_Source",
+          "Model",
+          "N_params_B",
+          "Val_Loss"
+        ],
+        "schema_matches": []
+      },
+      "expected": {
+        "artifacts_scanned": 46,
+        "name_matches": [],
+        "c5_c6_schema_columns": [
+          "D_tokens_B",
+          "LB_Average",
+          "LB_BBH",
+          "LB_GPQA",
+          "LB_IFEval",
+          "LB_MATH",
+          "LB_MMLU_PRO",
+          "LB_MUSR",
+          "Loss_Comparability",
+          "Loss_Source",
+          "Model",
+          "N_params_B",
+          "Val_Loss"
+        ],
+        "schema_matches": []
+      },
+      "evidence": "output_manifest.json + field_audit.csv",
+      "verification_method": "regex scan of every manifest file name and of the C5/C6 column list",
+      "limitations": "negative evidence over the archived artifact set; it cannot exclude a computation whose result was never written to disk",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-CMP-NO-BRIDGE-CODE",
+      "status": "PASS",
+      "claim": "the archived producer source contains no bridging or forecasting code path",
+      "key_c8_item": false,
+      "actual": {
+        "forbidden_library_tokens_found": [],
+        "fit_calls": 0,
+        "source_chars": 109863
+      },
+      "expected": {
+        "forbidden_library_tokens_found": [],
+        "fit_calls": 0,
+        "source_chars": 109863
+      },
+      "evidence": "audit_c01.py (static text scan, not executed) + run_summary.json",
+      "verification_method": "static scan for regression/statistics imports and estimator fit calls; the frozen run_summary.json independently records c5_c6.fitted_model = null",
+      "limitations": "static source evidence plus a self-reported summary field",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-JOIN-C1C2-ROWS",
+      "status": "PASS",
+      "claim": "C1 and C2 row counts agree across the frozen artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "c1_distinct_values": [
+          4576
+        ],
+        "c1_consistent": true,
+        "c2_distinct_values": [
+          4576
+        ],
+        "c2_consistent": true
+      },
+      "expected": {
+        "c1_consistent": true,
+        "c2_consistent": true,
+        "c1_distinct_values": [
+          4576
+        ],
+        "c2_distinct_values": [
+          4576
+        ]
+      },
+      "evidence": "data_inventory.csv + model_identity_audit.csv + field_audit.csv",
+      "verification_method": "row counts of the same dataset across independent summary artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-JOIN-C1C2-FLOAT",
+      "status": "NOT_CHECKED",
+      "claim": "C1 vs C2 strict DataFrame equality is False with 515 differing numeric cells and a maximum absolute difference of 3.552713678800501e-15",
+      "key_c8_item": false,
+      "actual": {
+        "reported_differing_cells": 515,
+        "reported_max_abs_diff": 3.552713678800501e-15,
+        "reported_cells_match_anchor": true,
+        "reported_max_abs_matches_anchor": true
+      },
+      "expected": "an independent recomputation from the raw C1/C2 tables",
+      "evidence": "join_coverage.csv + checks.json",
+      "verification_method": "join_coverage.csv is the only frozen artifact carrying this quantity; recomputation requires re-reading the raw CSVs, which is forbidden here",
+      "limitations": "echoed as single-source evidence, never counted as PASS",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-JOIN-C9C1-MODELS",
+      "status": "PASS",
+      "claim": "C1 and C9 report the same number of distinct model identities",
+      "key_c8_item": false,
+      "actual": {
+        "c1_model_identity_audit": 4497,
+        "c9_model_identity_audit": 4497,
+        "c1_duplicate_audit": 4497,
+        "c9_fullname_duplicate_audit": 4497,
+        "agree": true
+      },
+      "expected": {
+        "agree": true
+      },
+      "evidence": "model_identity_audit.csv + duplicate_audit.csv",
+      "verification_method": "two artifacts independently report the distinct identity count for both tables",
+      "limitations": "corroborates cardinality only; it does not by itself prove row-order equality",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-JOIN-C9C1-ROWORDER",
+      "status": "NOT_CHECKED",
+      "claim": "C9 and C1 have identical row order and identical task-score cells",
+      "key_c8_item": false,
+      "actual": {
+        "frozen_join_coverage_rows": 29
+      },
+      "expected": "an independent rebuild of the row-order and cell comparison",
+      "evidence": "join_coverage.csv",
+      "verification_method": "recomputation requires re-reading the C9 parquet and the C1 CSV, which is forbidden here",
+      "limitations": "duplicate_audit.csv corroborates cardinality only",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-JOIN-C4-ROWS",
+      "status": "PASS",
+      "claim": "C4 row count agrees across three frozen artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "values": [
+          3523
+        ],
+        "consistent": true
+      },
+      "expected": {
+        "consistent": true,
+        "values": [
+          3523
+        ]
+      },
+      "evidence": "data_inventory.csv + model_identity_audit.csv + field_audit.csv",
+      "verification_method": "row-count agreement",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-JOIN-C4-RATE",
+      "status": "NOT_CHECKED",
+      "claim": "C4 links to C1 at an exact-normalised-name match rate of 2.952%",
+      "key_c8_item": false,
+      "actual": {
+        "reported_match_rate_rows": 0.02952
+      },
+      "expected": "an independent recomputation of the name-matching rate",
+      "evidence": "join_coverage.csv",
+      "verification_method": "only join_coverage.csv carries the rate; recomputation needs both raw tables",
+      "limitations": "recorded as a single-source quantity, never counted as PASS",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-JOIN-C8C1-RATE",
+      "status": "NOT_CHECKED",
+      "claim": "C8 links to C1 at an exact-name match rate of 99.8976%",
+      "key_c8_item": false,
+      "actual": {
+        "reported_match_rate_rows": 0.998976
+      },
+      "expected": "an independent recomputation of the name-matching rate",
+      "evidence": "join_coverage.csv",
+      "verification_method": "only join_coverage.csv carries the rate; C1's raw name list would have to be re-read",
+      "limitations": "recorded as a single-source quantity, never counted as PASS",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-JOIN-C3-SHAPE",
+      "status": "PASS",
+      "claim": "C3 is a different-shaped table, not a row-for-row clone of C1",
+      "key_c8_item": false,
+      "actual": {
+        "c3_row_counts": [
+          4599
+        ],
+        "c3_consistent": true,
+        "c3_distinct_source_values": 2,
+        "c3_rows_minus_c1_rows": 23,
+        "c3_has_no_type_column": true
+      },
+      "expected": {
+        "c3_consistent": true,
+        "c3_distinct_source_values": 2,
+        "c3_rows_minus_c1_rows": 23,
+        "c3_has_no_type_column": true
+      },
+      "evidence": "data_inventory.csv + model_identity_audit.csv + field_audit.csv",
+      "verification_method": "row counts, the two-valued Source column and the field list are each carried by >= 2 artifacts",
+      "limitations": "equivalence is neither asserted nor denied; this check only rejects treating C3 as a clone of C1",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-NO-FORECAST-ARTIFACT",
+      "status": "PASS",
+      "claim": "no forecast / extrapolation artifact exists in the frozen C01 output set",
+      "key_c8_item": false,
+      "actual": {
+        "manifest_entries": 46,
+        "matches": []
+      },
+      "expected": {
+        "manifest_entries": 46,
+        "matches": []
+      },
+      "evidence": "output_manifest.json",
+      "verification_method": "regex scan of the complete frozen artifact list",
+      "limitations": "negative evidence; an in-memory computation that wrote nothing would not be detected",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-NO-PROBLEM4-ARTIFACT",
+      "status": "PASS",
+      "claim": "no problem-4 model-selection artifact exists in the frozen C01 output set",
+      "key_c8_item": false,
+      "actual": {
+        "matches": []
+      },
+      "expected": {
+        "matches": []
+      },
+      "evidence": "output_manifest.json + run_summary.json",
+      "verification_method": "artifact-name scan plus the frozen scope.explicitly_not_performed list",
+      "limitations": "negative evidence over the archived artifact set",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-EVOLUTION-SHA",
+      "status": "PASS",
+      "claim": "solution/src/evolution_audit.py is byte-identical to the value registered by the frozen run",
+      "key_c8_item": false,
+      "actual": {
+        "current_sha256": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+        "registered_sha256_before": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+        "registered_sha256_after": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+        "handoff_first_sha256": "8204d5b140c8fd70a2b40bb6611eb5a977e8d8dfce639b26e99baf213b2d6453",
+        "all_equal": true
+      },
+      "expected": {
+        "all_equal": true
+      },
+      "evidence": "run_summary.json.source_code_guard + handoff.md + live hash of the file",
+      "verification_method": "re-hash the current file and compare against two frozen registrations",
+      "limitations": "hash equality proves the file is unchanged since the frozen run; it does not prove the frozen run never executed it",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-R1-NO-RAW",
+      "status": "PASS",
+      "claim": "this repair did not read any C1-C10 raw attachment",
+      "key_c8_item": false,
+      "actual": {
+        "guarded_reads": 24,
+        "raw_paths_in_access_log": [],
+        "raw_paths_in_input_manifest": [],
+        "raw_attachments_read": false
+      },
+      "expected": {
+        "raw_paths_in_access_log": [],
+        "raw_paths_in_input_manifest": [],
+        "raw_attachments_read": false
+      },
+      "evidence": "input_manifest.json + the access log kept by guard_read()",
+      "verification_method": "every read passed through guard_read(), which raises on a raw-attachment path and records the path",
+      "limitations": "the guard is enforced by the repair code itself; the independent checker re-tests the input manifest",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-R1-INPUTS-IN-C01",
+      "status": "PASS",
+      "claim": "every R1 input lives inside the frozen TASK-C01 run directory",
+      "key_c8_item": false,
+      "actual": {
+        "inputs": 22,
+        "outside_source_dir": []
+      },
+      "expected": {
+        "outside_source_dir": []
+      },
+      "evidence": "input_manifest.json",
+      "verification_method": "prefix test of every resolved input path against SOURCE_DIR",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-R1-C01-UNCHANGED",
+      "status": "PASS",
+      "claim": "the frozen TASK-C01 run directory is unchanged by R1",
+      "key_c8_item": false,
+      "actual": {
+        "files_compared": 46,
+        "hash_mismatches": [],
+        "missing_files": [],
+        "new_files": [],
+        "unchanged": true
+      },
+      "expected": {
+        "hash_mismatches": [],
+        "missing_files": [],
+        "new_files": [],
+        "unchanged": true
+      },
+      "evidence": "protected_original_run_check.json",
+      "verification_method": "hash every frozen artifact before and after the repair and compare with the frozen manifest",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-SCOPE-RAW-HISTORICAL",
+      "status": "NOT_VERIFIABLE",
+      "claim": "the original TASK-C01 run did not modify the raw attachments",
+      "key_c8_item": false,
+      "actual": {
+        "no_before_after_raw_snapshot_in_frozen_evidence": true,
+        "frozen_written_claim": "the original handoff stated that raw attachments were untouched"
+      },
+      "expected": "a before/after hash snapshot of the raw attachment tree captured around the original run",
+      "evidence": "output_manifest.json + handoff.md",
+      "verification_method": "the frozen C01 artifact set contains no raw-tree hash snapshot taken inside that run",
+      "limitations": "the frozen checks.json SCOPE-04 was a hard-coded True; R1 records the historical claim as NOT_VERIFIABLE instead of manufacturing a PASS. R1's own read-only behaviour is covered separately by R1-SCOPE-R1-NO-RAW",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-C8-FILE-STATUS",
+      "status": "PASS",
+      "claim": "every C8 parse-log row carries a non-empty parse status",
+      "key_c8_item": false,
+      "actual": {
+        "rows": 1958,
+        "rows_with_empty_status": 0
+      },
+      "expected": {
+        "rows": 1958,
+        "rows_with_empty_status": 0
+      },
+      "evidence": "c8_parse_log.csv",
+      "verification_method": "null / empty-string test on the status column",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-C1-DUP",
+      "status": "PASS",
+      "claim": "the repeated-model count of C1 agrees across two artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "duplicate_audit_dup_count": 79,
+        "model_identity_audit_name_repeated_rows": 79,
+        "rows": 4576,
+        "agree": true
+      },
+      "expected": {
+        "agree": true
+      },
+      "evidence": "duplicate_audit.csv + model_identity_audit.csv",
+      "verification_method": "two artifacts independently count duplicated Model values in C1",
+      "limitations": "the count is corroborated; the decision about which duplicate row to keep is out of scope (OOS-02 style)",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-C9-KEY",
+      "status": "PASS",
+      "claim": "C9 has a usable unique key and a matching row count",
+      "key_c8_item": false,
+      "actual": {
+        "rows_inventory": 4576,
+        "rows_field_audit": 4576,
+        "unique_eval_name_field_audit": 4576,
+        "dup_count_duplicate_audit": 0,
+        "all_agree": true
+      },
+      "expected": {
+        "all_agree": true
+      },
+      "evidence": "data_inventory.csv + field_audit.csv + duplicate_audit.csv",
+      "verification_method": "three artifacts must agree that eval_name is unique and complete",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-MISSINGNESS",
+      "status": "PASS",
+      "claim": "parameter and licence missingness is recorded consistently and never imputed",
+      "key_c8_item": false,
+      "actual": {
+        "C1_params_missing_values": [
+          3,
+          3,
+          3
+        ],
+        "C1_params_agree": true,
+        "C1_licence_missing_values": [
+          1753,
+          1753
+        ],
+        "C1_licence_agree": true,
+        "C9_licence_missing_values": [
+          1753,
+          1753
+        ],
+        "C9_licence_agree": true
+      },
+      "expected": {
+        "C1_params_agree": true,
+        "C1_licence_agree": true,
+        "C9_licence_agree": true
+      },
+      "evidence": "missingness.csv + field_audit.csv + model_identity_audit.csv",
+      "verification_method": "the same missingness quantity is recomputed from two or three independent artifacts",
+      "limitations": "agreement of the missingness counters; the absence of a later imputation step is not claimed here",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-NO-IMPUTE-STATEMENT",
+      "status": "NOT_VERIFIABLE",
+      "claim": "the frozen run recorded missingness as measured and did not impute parameters or licences",
+      "key_c8_item": false,
+      "actual": {
+        "observable": "counters only"
+      },
+      "expected": "a machine-readable no-imputation certificate",
+      "evidence": "missingness.csv + field_audit.csv + handoff.md",
+      "verification_method": "absence-of-action claims cannot be proven from summary tables after the fact",
+      "limitations": "replaces the hard-coded PASS of the original ID-04 second half; never counted as PASS",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-ID-C8-FIELDS",
+      "status": "PASS",
+      "claim": "the C8 artifacts expose no licence field and no model-Type field",
+      "key_c8_item": false,
+      "actual": {
+        "parse_log_columns": 30,
+        "parse_log_licence_hits": [],
+        "parse_log_type_hits": [],
+        "task_inventory_columns": 14,
+        "task_inventory_licence_hits": [],
+        "task_inventory_type_hits": [],
+        "c8_rows_in_field_audit": 0
+      },
+      "expected": {
+        "parse_log_licence_hits": [],
+        "parse_log_type_hits": [],
+        "task_inventory_licence_hits": [],
+        "task_inventory_type_hits": [],
+        "c8_rows_in_field_audit": 0
+      },
+      "evidence": "c8_parse_log.csv + c8_task_inventory.csv column headers",
+      "verification_method": "regex scan of the column headers of the two C8 artifacts",
+      "limitations": "the original ID-05 was satisfied with a constant; header scanning is real evidence about the archived schema but cannot prove a licence string never appeared in a JSON body",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-C3-FIELDS",
+      "status": "PASS",
+      "claim": "C3 exposes only a calendar-year time field and no licence/type column",
+      "key_c8_item": false,
+      "actual": {
+        "c3_field_count": 11,
+        "c3_time_like_fields": [
+          "Year"
+        ],
+        "c3_extra_time_fields": [],
+        "c3_licence_fields": [],
+        "c3_type_fields": [],
+        "rows_inventory": 4599,
+        "cols_inventory": 11,
+        "field_audit_field_count_matches_inventory": true
+      },
+      "expected": {
+        "c3_extra_time_fields": [],
+        "c3_licence_fields": [],
+        "c3_type_fields": [],
+        "field_audit_field_count_matches_inventory": true
+      },
+      "evidence": "field_audit.csv + data_inventory.csv",
+      "verification_method": "field list per dataset recomputed from two artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-ID-C7-FIELDS",
+      "status": "PASS",
+      "claim": "C7 exposes neither a date field nor a licence field",
+      "key_c8_item": false,
+      "actual": {
+        "c7_field_count": 7,
+        "c7_fields": [
+          "d_model",
+          "max_position_embeddings",
+          "model_name",
+          "n_heads",
+          "n_layers",
+          "training_data_TB",
+          "vocab_size"
+        ],
+        "c7_date_fields": [],
+        "c7_licence_fields": [],
+        "cols_inventory": 7,
+        "field_audit_field_count_matches_inventory": true
+      },
+      "expected": {
+        "c7_date_fields": [],
+        "c7_licence_fields": [],
+        "field_audit_field_count_matches_inventory": true
+      },
+      "evidence": "field_audit.csv + data_inventory.csv",
+      "verification_method": "field list per dataset recomputed from two artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-C1-COVERAGE",
+      "status": "PASS",
+      "claim": "C1 submission-date coverage agrees across three artifacts; missing fields are separated from parse failures",
+      "key_c8_item": false,
+      "actual": {
+        "date_audit": [
+          4576,
+          4564,
+          4564,
+          0
+        ],
+        "missingness_missing": 12,
+        "field_audit": [
+          4576,
+          4564,
+          12
+        ],
+        "rows_agree": true,
+        "nonnull_agree": true,
+        "missing_matches_rows_minus_nonnull": true,
+        "parse_fail_is_zero": true,
+        "nonnull_plus_missing_equals_rows": true,
+        "parse_rate_is_one": true
+      },
+      "expected": {
+        "rows_agree": true,
+        "nonnull_agree": true,
+        "missing_matches_rows_minus_nonnull": true,
+        "parse_fail_is_zero": true,
+        "nonnull_plus_missing_equals_rows": true,
+        "parse_rate_is_one": true
+      },
+      "evidence": "date_audit.csv + missingness.csv + field_audit.csv",
+      "verification_method": "arithmetic reconciliation of the same coverage quantities across three artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-C3-GRANULARITY",
+      "status": "PASS",
+      "claim": "C3 keeps the raw calendar year without introducing a timestamp",
+      "key_c8_item": false,
+      "actual": {
+        "declared_granularity": "year",
+        "min": "2019",
+        "max": "2025",
+        "distinct": 7,
+        "pandas_dtype": "int64",
+        "numeric_min": 2019.0,
+        "numeric_max": 2025.0,
+        "field_audit_unique": 7,
+        "no_sub_annual_precision": true
+      },
+      "expected": {
+        "declared_granularity": "year",
+        "no_sub_annual_precision": true,
+        "pandas_dtype": "int64"
+      },
+      "evidence": "date_audit.csv + field_audit.csv",
+      "verification_method": "the year range in date_audit.csv must be four-digit integers and field_audit.csv must record an integer dtype",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-C8-COVERAGE",
+      "status": "PASS",
+      "claim": "every parseable C8 document carries a usable evaluation timestamp",
+      "key_c8_item": false,
+      "actual": {
+        "date_audit_parsed_ok": 1954,
+        "date_audit_parse_fail": 0,
+        "parse_ok_rows": 1954,
+        "eval_unix_date_nonnull": 1954,
+        "agree": true
+      },
+      "expected": {
+        "date_audit_parse_fail": 0,
+        "agree": true
+      },
+      "evidence": "date_audit.csv + c8_parse_log.csv",
+      "verification_method": "two artifacts must agree that the timestamp is present for all parseable documents",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-DATE-C2-COVERAGE",
+      "status": "PASS",
+      "claim": "C2 matched-publication-date coverage is consistently recorded",
+      "key_c8_item": false,
+      "actual": {
+        "date_audit_nonnull": 447,
+        "date_audit_declared": 447,
+        "missingness_missing": 4129,
+        "rows_minus_missing": 447,
+        "consistent": true
+      },
+      "expected": {
+        "consistent": true,
+        "date_audit_nonnull": 447,
+        "rows_minus_missing": 447
+      },
+      "evidence": "date_audit.csv + missingness.csv + data_inventory.csv",
+      "verification_method": "the non-null count and the missing count must be complementary",
+      "limitations": "the count of rows whose matched publication date falls AFTER the submission date is single-source in date_audit.csv; it is echoed, not independently re-derived",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-BENCH-RANGE",
+      "status": "PASS",
+      "claim": "leaderboard-style benchmark values are inside 0-100 and agree across two artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "pairs_checked": 14,
+        "all_min_max_agree": true,
+        "all_in_0_100": true,
+        "out_of_range_pairs": [],
+        "max_abs_disagreement": 0.0
+      },
+      "expected": {
+        "all_min_max_agree": true,
+        "all_in_0_100": true,
+        "out_of_range_pairs": []
+      },
+      "evidence": "unit_audit.csv + field_audit.csv",
+      "verification_method": "the same min/max are recomputed from two independent summary artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-C8-RANGE",
+      "status": "PASS",
+      "claim": "C8 raw group scores are inside 0-1 and agree with the group detail",
+      "key_c8_item": false,
+      "actual": {
+        "unit_audit_rows": 6,
+        "unit_audit_global_min": 0.0,
+        "unit_audit_global_max": 0.8662360315075112,
+        "group_detail_min": 0.0,
+        "group_detail_max": 0.8662360315075112,
+        "unit_audit_out_of_range_total": 0,
+        "group_detail_out_of_range": 0
+      },
+      "expected": {
+        "unit_audit_out_of_range_total": 0,
+        "group_detail_out_of_range": 0
+      },
+      "evidence": "unit_audit.csv + c8_group_scores_all_runs.csv",
+      "verification_method": "range recomputed from the raw group rows and compared with the summarised ranges",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-LOSS",
+      "status": "PASS",
+      "claim": "C5/C6 loss values are strictly positive and agree across two artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "pairs": [
+          {
+            "dataset": "C5",
+            "unit_audit_min": 1.65,
+            "field_audit_min": 1.65,
+            "n": 43,
+            "field_audit_nonnull": 43,
+            "positive": true,
+            "agree": true
+          },
+          {
+            "dataset": "C6",
+            "unit_audit_min": 1.65,
+            "field_audit_min": 1.65,
+            "n": 75,
+            "field_audit_nonnull": 75,
+            "positive": true,
+            "agree": true
+          }
+        ],
+        "all_positive": true,
+        "all_agree": true
+      },
+      "expected": {
+        "all_positive": true,
+        "all_agree": true
+      },
+      "evidence": "unit_audit.csv + field_audit.csv",
+      "verification_method": "min and count recomputed from two artifacts",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-C9-SENTINEL",
+      "status": "PASS",
+      "claim": "the C9 parameter column uses -1 as a missing sentinel, corroborated by three artifacts",
+      "key_c8_item": false,
+      "actual": {
+        "missingness_sentinel": 3,
+        "model_identity_sentinel": 3,
+        "join_coverage_note_negatives": 3,
+        "all_agree": true
+      },
+      "expected": {
+        "all_agree": true
+      },
+      "evidence": "missingness.csv + model_identity_audit.csv + join_coverage.csv",
+      "verification_method": "the same sentinel count is recomputed from two count columns and read back from a note field",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-LABELS-PRESENT",
+      "status": "PASS",
+      "claim": "the unit-audit table states an explicit unit string for every audited parameter/data-volume field",
+      "key_c8_item": false,
+      "actual": {
+        "rows": 54,
+        "rows_with_empty_unit": 0,
+        "scale_classes": [
+          "absolute",
+          "absolute_scale_stated_in_name",
+          "leaderboard_normalised",
+          "loss_nats_variance_referenced",
+          "raw_proportion",
+          "unit_ambiguous",
+          "unit_not_encoded"
+        ]
+      },
+      "expected": {
+        "rows_with_empty_unit": 0
+      },
+      "evidence": "unit_audit.csv",
+      "verification_method": "null / empty-string test on the unit column",
+      "limitations": "presence of a label is not evidence that the label is correct",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-UNIT-LABEL-CORRECTNESS",
+      "status": "NOT_VERIFIABLE",
+      "claim": "the unit labels recorded in unit_audit.csv are the true physical units of every field",
+      "key_c8_item": false,
+      "actual": {
+        "labels_cannot_be_re_derived_from_summary_tables": true,
+        "example_unresolved": "C7 training_data_TB is not defined inside C7"
+      },
+      "expected": "the source documentation of each table's units",
+      "evidence": "unit_audit.csv + data_inventory.csv",
+      "verification_method": "the frozen run inferred the units from column names and value magnitudes; the underlying documentation was not part of the frozen evidence, and re-reading the raw tables is forbidden here",
+      "limitations": "replaces the hard-coded WARN of the original UNIT-03 for the label-correctness part; the numeric range part is covered by the PASS checks above",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-C8-TASKKEYS",
+      "status": "PASS",
+      "claim": "the task-key inventory covers exactly the keys seen in the leaf metric detail",
+      "key_c8_item": false,
+      "actual": {
+        "inventory_keys": 45,
+        "leaf_keys": 45,
+        "sets_equal": true,
+        "only_inventory": [],
+        "only_leaf": []
+      },
+      "expected": {
+        "sets_equal": true,
+        "only_inventory": [],
+        "only_leaf": []
+      },
+      "evidence": "c8_task_inventory.csv vs c8_leaf_metrics.csv.gz",
+      "verification_method": "set equality of the task key vocabulary between the summary table and the row-level detail",
+      "limitations": "the original C8-01 only asserted that the inventory was non-empty",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-C8-GROUP-KEY-MISSING",
+      "status": "PASS",
+      "claim": "missing group keys and zero-result rows are reconciled: a zero-result row is either a missing group key or a present key whose metric is absent or non-numeric",
+      "key_c8_item": true,
+      "actual": {
+        "group_rows_missing_source_key": 19,
+        "model_task_zero_rows": 25,
+        "missing_by_task": {
+          "GPQA": 4,
+          "IFEval": 4,
+          "MATH Lvl 5": 3,
+          "MMLU-PRO": 4,
+          "MUSR": 4
+        },
+        "zero_rows_by_task": {
+          "BBH": 2,
+          "GPQA": 6,
+          "IFEval": 4,
+          "MATH Lvl 5": 3,
+          "MMLU-PRO": 4,
+          "MUSR": 6
+        },
+        "zero_rows_ge_missing_keys_per_task": {
+          "BBH": true,
+          "GPQA": true,
+          "IFEval": true,
+          "MATH Lvl 5": true,
+          "MMLU-PRO": true,
+          "MUSR": true
+        },
+        "zero_rows_minus_missing_keys": 6,
+        "zero_rows_total_matches_anchor": true
+      },
+      "expected": {
+        "model_task_zero_rows": 25,
+        "zero_rows_ge_missing_keys_per_task": {
+          "BBH": true,
+          "GPQA": true,
+          "IFEval": true,
+          "MATH Lvl 5": true,
+          "MMLU-PRO": true,
+          "MUSR": true
+        },
+        "zero_rows_total_matches_anchor": true
+      },
+      "evidence": "c8_group_scores_all_runs.csv (group_key_present) vs c8_model_task_aggregate.csv (n_valid_results)",
+      "verification_method": "per-task comparison of the two independent zero-coverage signals; the total is compared with the work-order anchor 25 = 11160 - 11135",
+      "limitations": "the two signals are NOT equal: some documents carry the group key but not the specific metric, so a zero-result row can occur with the key present. The original C8-05 attributed every missing task score to a missing group key, which this cross-check shows is incomplete.",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-CMP-C5-C6-OVERLAP",
+      "status": "PASS",
+      "claim": "C5 is contained in C6 at the required cardinality",
+      "key_c8_item": false,
+      "actual": {
+        "c5_rows": 43,
+        "c6_rows": 75,
+        "c5_lt_c6": true,
+        "reported_merged_rows": 43,
+        "reported_merged_equals_c5_rows": true
+      },
+      "expected": {
+        "c5_lt_c6": true,
+        "reported_merged_equals_c5_rows": true
+      },
+      "evidence": "data_inventory.csv + c5_c6_comparability_audit.csv",
+      "verification_method": "row counts from one artifact bound by the merge size reported in another",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-CMP-IDENTICAL-VALUES",
+      "status": "NOT_CHECKED",
+      "claim": "the 43 overlapping C5/C6 rows carry identical loss and benchmark values",
+      "key_c8_item": false,
+      "actual": {
+        "reported": "the strata table records 43/43 identical for each of the 12 compared columns"
+      },
+      "expected": "an independent value comparison on the two bridge tables",
+      "evidence": "c5_c6_comparability_audit.csv",
+      "verification_method": "the equality counts are embedded in a free-text note field of a single artifact and the underlying C5/C6 tables may not be re-read",
+      "limitations": "the original CMP-01 asserted the equality as a PASS; R1 records it as single-source",
+      "tolerance": "n/a"
+    },
+    {
+      "check_id": "R1-IN-MANIFEST",
+      "status": "PASS",
+      "claim": "every R1 input still hashes to its value in the frozen TASK-C01 output manifest",
+      "key_c8_item": false,
+      "actual": {
+        "inputs": 22,
+        "not_matching": [],
+        "not_in_frozen_manifest": [],
+        "self_referential_inputs": [
+          "output_manifest.json"
+        ]
+      },
+      "expected": {
+        "not_matching": [],
+        "not_in_frozen_manifest": [],
+        "self_referential_inputs": [
+          "output_manifest.json"
+        ]
+      },
+      "evidence": "input_manifest.json vs the frozen output_manifest.json",
+      "verification_method": "re-hash each input now and compare with the archived manifest entry",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    },
+    {
+      "check_id": "R1-IN-MANIFEST-COMPLETE",
+      "status": "PASS",
+      "claim": "every allowed input that exists in the frozen manifest was actually inventoried",
+      "key_c8_item": false,
+      "actual": {
+        "allowed_inputs": 22,
+        "inventoried": 21,
+        "allowed_missing_from_inventory": []
+      },
+      "expected": {
+        "allowed_missing_from_inventory": []
+      },
+      "evidence": "input_manifest.json + output_manifest.json",
+      "verification_method": "set comparison between the permitted input list and the inventoried inputs",
+      "limitations": "none identified for this scope",
+      "tolerance": "exact (numeric rtol=1e-9, atol=1e-12)"
+    }
+  ]
+}

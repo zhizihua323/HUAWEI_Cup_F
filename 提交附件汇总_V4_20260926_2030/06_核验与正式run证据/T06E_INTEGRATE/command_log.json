@@ -1,0 +1,11 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/code/integrate.py"
+      ],
+      "purpose": "controller integration without fitting"
+    }
+  ]
+}

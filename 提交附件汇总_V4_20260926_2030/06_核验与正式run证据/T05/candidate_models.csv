@@ -1,0 +1,24 @@
+﻿candidate_id,layer,complexity,formula,required_inputs,selection_is_metric_driven,cohort,target,selection_reason,best_internal_rmse
+CONSTANT,L0,0,target ~ 1,,False,,,,
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,,,,
+LOSS_MONOTONE,L1,2,target ~ isotonic(loss),loss,False,,,,
+LOSS_SIZE_LINEAR,L1,2,target ~ loss + log(N),loss|logN,False,,,,
+LOSS_SIZE_FAMILY,L2,3,target ~ loss + log(N) + family,loss|logN|family,False,,,,
+LOSS_SIZE_TIME,L2,3,target ~ loss + log(N) + submission time,loss|logN|time,False,,,,
+LOSS_SIZE_FAMILY_TIME,L2,4,target ~ loss + log(N) + family + submission time,loss|logN|family|time,False,,,,
+LOSS_SIZE_LOG_D,L2,4,target ~ loss + log(N) + log(D),loss|logN|logD,False,,,,
+LOSS_SIZE_FAMILY_TIME_SPLINE_DF4,L3,5,"target ~ loss + spline(logN, df=4) + family + submission time",loss|logN|family|time|spline,False,,,,
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,IFEval_pct,one-SE simplest within best+1SE,2.228113998553129
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,BBH_pct,one-SE simplest within best+1SE,1.2437374577482034
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,MATH Lvl 5_pct,one-SE simplest within best+1SE,0.4585353767992179
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,GPQA_pct,one-SE simplest within best+1SE,0.5236692879319471
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,MUSR_pct,one-SE simplest within best+1SE,2.3630383444538414
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,MMLU-PRO_pct,one-SE simplest within best+1SE,0.13415567179902171
+CONSTANT,L0,0,target ~ 1,,False,main_comparable,benchmark_mean_aux,one-SE simplest within best+1SE,0.32317203076163
+CONSTANT,L0,0,target ~ 1,,False,conditional_full,IFEval_pct,one-SE simplest within best+1SE,19.95567455033045
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,conditional_full,BBH_pct,one-SE simplest within best+1SE,7.545852172089024
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,conditional_full,MATH Lvl 5_pct,one-SE simplest within best+1SE,7.114539230442131
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,conditional_full,GPQA_pct,one-SE simplest within best+1SE,3.3317768191550083
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,conditional_full,MUSR_pct,one-SE simplest within best+1SE,3.303381578363242
+LOSS_SIZE_FAMILY,L2,3,target ~ loss + log(N) + family,loss|logN|family,False,conditional_full,MMLU-PRO_pct,one-SE simplest within best+1SE,8.045590295230932
+SIZE_LOG_LINEAR,L1,1,target ~ log(N),logN,False,conditional_full,benchmark_mean_aux,one-SE simplest within best+1SE,6.198113741823463

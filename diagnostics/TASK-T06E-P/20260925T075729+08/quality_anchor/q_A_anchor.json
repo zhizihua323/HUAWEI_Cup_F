@@ -1,0 +1,22 @@
+{
+  "run_id": "20260925T075729+08",
+  "q_A_star": 0.5695341857475174,
+  "q_C_star_sensitivity": 0.5694585639959848,
+  "seven_domain_equal_weight": 0.14285714285714285,
+  "domains_in_frozen_order": [
+    "arxiv",
+    "book",
+    "c4",
+    "commoncrawl",
+    "github",
+    "stackexchange",
+    "wikipedia"
+  ],
+  "selected_total": 40930,
+  "expected_selected_total": 40930,
+  "domain_sample_weighted_global_mean_for_comparison_only": 0.5207311300303592,
+  "domain_weighting_used": "EQUAL_DOMAIN",
+  "document_weighting_used": false,
+  "Q_C_role": "SENSITIVITY_ONLY_USES_SAME_SELECTION",
+  "status": "PASS"
+}

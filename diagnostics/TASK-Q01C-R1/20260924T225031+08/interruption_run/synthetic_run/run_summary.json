@@ -1,0 +1,66 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "synthetic_run",
+  "status": "FAILED",
+  "mode": "fixture",
+  "stage": "all",
+  "missing_prerequisites": [],
+  "reason": "AttributeError: 'NoneType' object has no attribute 'get'",
+  "exit_code": 2,
+  "stage_seconds": {
+    "s11_scan_a2": 0.114,
+    "s12_scan_a3": 0.049,
+    "s20_score_primary": 0.124,
+    "s30_sensitivity": 0.069,
+    "s40_summarize": 1.154,
+    "s50_verify": 0.83
+  },
+  "executed_stages": [
+    "s11_scan_a2",
+    "s12_scan_a3",
+    "s20_score_primary",
+    "s30_sensitivity",
+    "s40_summarize",
+    "s50_verify"
+  ],
+  "skipped_stages": {},
+  "reused_stages": {
+    "s00_preflight": "valid",
+    "s01_synthetic_tests": "valid",
+    "s10_scan_a1": "valid"
+  },
+  "stage_terminal_events": {
+    "s11_scan_a2": [
+      "complete"
+    ],
+    "s12_scan_a3": [
+      "complete"
+    ],
+    "s20_score_primary": [
+      "complete"
+    ],
+    "s30_sensitivity": [
+      "complete"
+    ],
+    "s40_summarize": [
+      "complete"
+    ],
+    "s50_verify": [
+      "complete"
+    ]
+  },
+  "fallback_used": false,
+  "content_read": false,
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "synthetic_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225031+08\\interruption_run",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225031+08\\synthetic_fixture",
+    "--resume"
+  ],
+  "process_pid": 19340,
+  "finished_local": "2026-09-24T22:50:38+08:00"
+}

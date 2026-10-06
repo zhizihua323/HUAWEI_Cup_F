@@ -1,0 +1,7 @@
+stage,n_models,n_rows,rule
+C2_READ,4497,4576,C2 primary leaderboard table; C1 not counted as independent observations
+C8_IDENTITY_MATCHED,1858,1858,exact C8 corrected Model identity
+C3_YEAR_UNIQUE,1857,1857,unique C3 Year
+C4_IDENTITY_UNIQUE,44,44,"exact/unique normalized C4 match, no shared or ambiguous identity"
+OPEN_WEIGHT_PRETRAINED,25,25,main eligibility before score-value reading
+OTHER_OPEN_SENSITIVITY,8,8,chat/fine-tuned open models held separately

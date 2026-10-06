@@ -1,0 +1,102 @@
+{
+  "candidate_version": "t03e_candidate_v1",
+  "primary_result": "D = Q_baseline",
+  "candidate_formula": "C = Q_baseline * (1 - lambda * P)",
+  "lambda_primary": 0.02,
+  "lambda_grid_report_only": [
+    0.0,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "cluster_definition": "fixed top-2gram/top-3gram redundancy cluster, P = (p2 + p3)/2",
+  "design_domains": [
+    "book",
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "active_domains": [
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "inactive_domains": {
+    "book": "INSUFFICIENT_CALIBRATION"
+  },
+  "support_ranges": {
+    "c4": {
+      "lo2": 0.0,
+      "hi2": 20.920010222335815,
+      "lo3": 0.0,
+      "hi3": 24.635815775809203
+    },
+    "commoncrawl": {
+      "lo2": 0.3948158072041508,
+      "hi2": 12.849200304645828,
+      "lo3": 0.0,
+      "hi3": 12.759083312427727
+    },
+    "wikipedia": {
+      "lo2": 0.0,
+      "hi2": 32.692207792207554,
+      "lo3": 0.0,
+      "hi3": 32.0
+    }
+  },
+  "status_enum": [
+    "SUPPORTED",
+    "OUT_OF_SUPPORT",
+    "RULE_NOT_APPLICABLE",
+    "INSUFFICIENT_CALIBRATION",
+    "DESIGN_LABEL_ABSENT",
+    "Q_INVALID_PRESERVED"
+  ],
+  "row_selection": "evaluation_role == A1_calibration & is_unique_first == True & Q_valid == True & finite(Q_baseline) & finite(top2gram) & finite(top3gram)",
+  "joint_key": "key_sha256 (sha256 of the frozen JSON [str(id), str(sub_path)])",
+  "bootstrap_summary": [
+    {
+      "domain": "c4",
+      "n": 8041,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "commoncrawl",
+      "n": 7688,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "wikipedia",
+      "n": 8013,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    }
+  ],
+  "bootstrap_failures": [],
+  "degenerate_large_domains": [],
+  "phase_a_conclusion": "CALIBRATION_QUALIFIED_PENDING_VALIDATION",
+  "generated_local": "2026-09-25T01:59:33+08:00"
+}

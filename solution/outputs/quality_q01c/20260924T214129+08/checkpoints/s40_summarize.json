@@ -1,0 +1,14 @@
+{
+  "source": "summaries written from the scored parquet",
+  "rows": 272505,
+  "stage": "s40_summarize",
+  "columns": [
+    "key_sha256",
+    "Q_valid"
+  ],
+  "parquet": "s40_summarize.parquet",
+  "parquet_sha256": "af5fad3e843e0f27ec4e0dd42ffca7edbccb6af6d45feed474cbc0a95c0cdf70",
+  "code_fingerprint": "1441ab4dddd7131be108f2f68e9996ba68d82f863933ac95e76edd5111493d08",
+  "config_sha256": "810c97769d743610c8d629c95a8888d28920b1231ba7726b89c9cdf8d4f6a6ca",
+  "written_local": "2026-09-24T21:44:47+08:00"
+}

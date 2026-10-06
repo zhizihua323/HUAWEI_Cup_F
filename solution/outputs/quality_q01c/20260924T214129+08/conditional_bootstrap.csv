@@ -1,0 +1,8 @@
+﻿domain,n_effective,Q_mean,conditional_iid_bootstrap_low,conditional_iid_bootstrap_high,replicates,normalization_refitted,sampling_limit
+arxiv,1419,0.8597741201057382,0.856270301922946,0.8630980029627728,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+book,171,0.5682671447738308,0.547656469948989,0.5851437698126192,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+c4,10000,0.4826732091903461,0.4796019906170965,0.48565609064390086,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+commoncrawl,9636,0.5526938216380821,0.5500668169894206,0.5556308489194913,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+github,10000,0.4594864291196765,0.4571729378721945,0.4615603121401147,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+stackexchange,10000,0.5835642925211182,0.5815776824055625,0.5854564443220212,500,False,conditional on the fixed pipeline; the source shards are not a random sample
+wikipedia,9986,0.47794704901249035,0.4757222664139465,0.48025155631138516,500,False,conditional on the fixed pipeline; the source shards are not a random sample

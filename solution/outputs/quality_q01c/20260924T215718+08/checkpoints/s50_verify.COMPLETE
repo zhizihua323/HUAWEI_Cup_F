@@ -1,0 +1,9 @@
+{
+  "stage": "s50_verify",
+  "completed_local": "2026-09-24T21:58:30+08:00",
+  "outputs": {
+    "checks.json": "4f6f8fa8c5d5334a1edafb3c0541e3ac80601bb79d2d64fb57b4db9a97b3c5b3",
+    "verification.json": "df2a59b37bce04d799de6c1f1406ce3287ebb7c31749dd878b14f562663c8050",
+    "verify_console.log": "e05d62fc1cdebee6b3434ac735540fafcef61162c5bd164c441f91625e13d889"
+  }
+}

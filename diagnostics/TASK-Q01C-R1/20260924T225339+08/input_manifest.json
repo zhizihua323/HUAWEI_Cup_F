@@ -1,0 +1,72 @@
+{
+  "run_id": "20260924T225339+08",
+  "task": "TASK-Q01C-R1",
+  "generated_local": "2026-09-24T22:53:53+08:00",
+  "inputs": [
+    {
+      "path": "tasks/TASK-Q01C_质量缺失策略实施与流水线恢复.md",
+      "exists": true,
+      "bytes": 22623,
+      "sha256": "a6697d427e45b17f89f83bd4d3a0dde5f7fde1acbf5c03c2cc01908937d8a026"
+    },
+    {
+      "path": "tasks/TASK-Q01C-R1_恢复机制与日志精准小修.md",
+      "exists": true,
+      "bytes": 15453,
+      "sha256": "338756aa974efdf97d67c1688b27330fcb3222d240f7472d1c67561ec84674f7"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/run_summary.json",
+      "exists": true,
+      "bytes": 4754,
+      "sha256": "37027c58f47b676a6e09d479bc76fe0b44679be6b8eb85ba3a9952cff03da304"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/checks.json",
+      "exists": true,
+      "bytes": 12718,
+      "sha256": "4f6f8fa8c5d5334a1edafb3c0541e3ac80601bb79d2d64fb57b4db9a97b3c5b3"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/verification.json",
+      "exists": true,
+      "bytes": 13071,
+      "sha256": "df2a59b37bce04d799de6c1f1406ce3287ebb7c31749dd878b14f562663c8050"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/checkpoint_manifest.json",
+      "exists": true,
+      "bytes": 4312,
+      "sha256": "a69d1faddd46d577e3d2dd65adc2595501e6572d291157ed7e5326c30570d266"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/stage_status.jsonl",
+      "exists": true,
+      "bytes": 3721,
+      "sha256": "ef133289fa4361b4d45be1ab20169a0333f9b1edd84ec175edf73504e37dd1a8"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/environment.json",
+      "exists": true,
+      "bytes": 589,
+      "sha256": "575eb6ef3024119da4db9a6d38a760cb6ad7276963e214fe729d25e2c1189a0d"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/run_config.json",
+      "exists": true,
+      "bytes": 1487,
+      "sha256": "8914d234731cb19a002e3f8e88b2efa53af694f6602d472bcddc5aa9df869203"
+    },
+    {
+      "path": "solution/outputs/quality_q01c/20260924T215718+08/output_manifest.json",
+      "exists": true,
+      "bytes": 9506,
+      "sha256": "8286c1bc1a887b5fa24b617c9f8e854bb8515f87cdcd51afb9165352693dde66"
+    }
+  ],
+  "a1_a3_policy": "the three real attachment files were never opened, hashed, decompressed or stat-ed by any R1 process; the recovery proof uses a synthetic fixture only",
+  "excluded_by_work_order": [
+    "diagnostics/TASK-C01",
+    "diagnostics/TASK-C01-R1"
+  ]
+}

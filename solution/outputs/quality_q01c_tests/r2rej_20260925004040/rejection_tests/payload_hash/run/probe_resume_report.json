@@ -1,0 +1,1074 @@
+{
+  "run_id": "run",
+  "mode": "fixture",
+  "generated_local": "2026-09-25T00:40:43+08:00",
+  "process_pid": 29436,
+  "finalized_run": false,
+  "validation_schema_version": 3,
+  "resumable": false,
+  "read_only_probe": true,
+  "writes": [
+    "probe_resume_report.json"
+  ],
+  "scan_counters": {
+    "protocol_version": 3,
+    "files": {
+      "A1": {
+        "passes": 1,
+        "last_scan_pid": 31236,
+        "last_scan_started": "2026-09-25T00:40:41+08:00",
+        "last_scan_finished": "2026-09-25T00:40:41+08:00"
+      },
+      "A2_arxiv": {
+        "passes": 1,
+        "last_scan_pid": 31236,
+        "last_scan_started": "2026-09-25T00:40:41+08:00",
+        "last_scan_finished": "2026-09-25T00:40:41+08:00"
+      },
+      "A3_github": {
+        "passes": 1,
+        "last_scan_pid": 31236,
+        "last_scan_started": "2026-09-25T00:40:41+08:00",
+        "last_scan_finished": "2026-09-25T00:40:41+08:00"
+      }
+    },
+    "reuse_events": [],
+    "total_passes": 3
+  },
+  "stage_counters": {
+    "protocol_version": 3,
+    "stages": {
+      "s00_preflight": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s01_synthetic_tests": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s10_scan_a1": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "checkpoint and stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s11_scan_a2": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "checkpoint and stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s12_scan_a3": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "checkpoint and stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s20_score_primary": {
+        "computations": 1,
+        "reuses": 1,
+        "last_verdict": "REUSABLE",
+        "last_reason": "checkpoint and stage marker validated",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00",
+        "last_reuse_pid": 13116,
+        "last_reuse_local": "2026-09-25T00:40:42+08:00"
+      },
+      "s30_sensitivity": {
+        "computations": 1,
+        "reuses": 0,
+        "last_verdict": "NOT_STARTED",
+        "last_reason": "stage not started in this run directory",
+        "last_compute_pid": 31236,
+        "last_compute_finished": "2026-09-25T00:40:41+08:00"
+      }
+    },
+    "validation_schema_version": 3,
+    "stage_decisions": [
+      {
+        "stage": "s00_preflight",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s01_synthetic_tests",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s10_scan_a1",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s11_scan_a2",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s12_scan_a3",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s20_score_primary",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s30_sensitivity",
+        "action": "computed",
+        "reason": "stage not started in this run directory",
+        "verdict": "NOT_STARTED",
+        "pid": 31236,
+        "decided_local": "2026-09-25T00:40:41+08:00"
+      },
+      {
+        "stage": "s00_preflight",
+        "action": "reused",
+        "reason": "stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      },
+      {
+        "stage": "s01_synthetic_tests",
+        "action": "reused",
+        "reason": "stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      },
+      {
+        "stage": "s10_scan_a1",
+        "action": "reused",
+        "reason": "checkpoint and stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      },
+      {
+        "stage": "s11_scan_a2",
+        "action": "reused",
+        "reason": "checkpoint and stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      },
+      {
+        "stage": "s12_scan_a3",
+        "action": "reused",
+        "reason": "checkpoint and stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      },
+      {
+        "stage": "s20_score_primary",
+        "action": "reused",
+        "reason": "checkpoint and stage marker validated",
+        "verdict": "REUSABLE",
+        "pid": 13116,
+        "decided_local": "2026-09-25T00:40:42+08:00"
+      }
+    ]
+  },
+  "scan_passes_during_probe": 0,
+  "stage_computations_during_probe": 0,
+  "verdict_counts": {
+    "REUSABLE": 6,
+    "NOT_STARTED": 3,
+    "INVALID": 1
+  },
+  "checked_stages": [
+    {
+      "stage": "s00_preflight",
+      "verdict": "REUSABLE",
+      "reason": "stage marker validated",
+      "checkpoint": null,
+      "stage_marker": {
+        "stage": "s00_preflight",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s00_preflight.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "input_manifest.json": "67b25926db1cb4b3062fbaa1a05ba154d8b6aab8eb77fdcd272fca2424f92bd1",
+          "environment.json": "6d83afc4afff3b71643e7f6862f47cd485115911895ff18a9cdaec54a29a5c84",
+          "old_artifacts_before.json": "00cb6cf37539c80792dc15dffe72262f6deeb58efc684b0ffa725f36a9fad694",
+          "changes.csv": "2c63f947aa2b6af07ea8117412d45447fe21764e489ef93d289fcb3da22176c3",
+          "code_snapshot/code_snapshot_manifest.json": "01ec587e9c641ab7e052649b2cbcca651ab5815fc352b3e58a200e06334b2b62"
+        },
+        "checkpoint_identity": null,
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s01_synthetic_tests",
+      "verdict": "REUSABLE",
+      "reason": "stage marker validated",
+      "checkpoint": null,
+      "stage_marker": {
+        "stage": "s01_synthetic_tests",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s01_synthetic_tests.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "synthetic_tests.json": "ce871ecfa144d30c04a5572a8e4b94be0af5098a776875684a4d6ea59943c8f3"
+        },
+        "checkpoint_identity": null,
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s10_scan_a1",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "checkpoint": {
+        "layout": "v2",
+        "checkpoint_valid": true,
+        "checks": [
+          {
+            "check": "layout_is_v2",
+            "ok": true,
+            "detail": "layout=v2"
+          },
+          {
+            "check": "payload_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s10_scan_a1.payload.parquet"
+          },
+          {
+            "check": "metadata_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s10_scan_a1.meta.json"
+          },
+          {
+            "check": "checkpoint_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s10_scan_a1.checkpoint.COMPLETE"
+          },
+          {
+            "check": "metadata_schema",
+            "ok": true,
+            "detail": "missing=[]"
+          },
+          {
+            "check": "stage_name",
+            "ok": true,
+            "detail": "s10_scan_a1"
+          },
+          {
+            "check": "checkpoint_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_rows",
+            "ok": true,
+            "detail": "600"
+          },
+          {
+            "check": "input_binding",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "config_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "code_fingerprint",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_binds_metadata",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_rows",
+            "ok": true,
+            "detail": ""
+          }
+        ],
+        "rows": 600,
+        "payload_sha256": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+        "meta_sha256": "7ebab63d11ba55279fdc7462af67fe0451e8e169541c7d75d23dba7baaeac212",
+        "failed_checks": [],
+        "reason": "all checkpoint checks passed"
+      },
+      "stage_marker": {
+        "stage": "s10_scan_a1",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s10_scan_a1.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "checkpoints/s10_scan_a1.payload.parquet": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+          "checkpoints/s10_scan_a1.meta.json": "7ebab63d11ba55279fdc7462af67fe0451e8e169541c7d75d23dba7baaeac212"
+        },
+        "checkpoint_identity": "d1a97aeac5a06e5a55ed55329b706954513b878a05a157f8f335168b956a04c1",
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s11_scan_a2",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "checkpoint": {
+        "layout": "v2",
+        "checkpoint_valid": true,
+        "checks": [
+          {
+            "check": "layout_is_v2",
+            "ok": true,
+            "detail": "layout=v2"
+          },
+          {
+            "check": "payload_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s11_scan_a2.payload.parquet"
+          },
+          {
+            "check": "metadata_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s11_scan_a2.meta.json"
+          },
+          {
+            "check": "checkpoint_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s11_scan_a2.checkpoint.COMPLETE"
+          },
+          {
+            "check": "metadata_schema",
+            "ok": true,
+            "detail": "missing=[]"
+          },
+          {
+            "check": "stage_name",
+            "ok": true,
+            "detail": "s11_scan_a2"
+          },
+          {
+            "check": "checkpoint_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_rows",
+            "ok": true,
+            "detail": "30"
+          },
+          {
+            "check": "input_binding",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "config_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "code_fingerprint",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_binds_metadata",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_rows",
+            "ok": true,
+            "detail": ""
+          }
+        ],
+        "rows": 30,
+        "payload_sha256": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+        "meta_sha256": "6f6e9ad5491f94711716675f9a1d5a5c0471354927fa361492f7b5186b08cd71",
+        "failed_checks": [],
+        "reason": "all checkpoint checks passed"
+      },
+      "stage_marker": {
+        "stage": "s11_scan_a2",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s11_scan_a2.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "checkpoints/s11_scan_a2.payload.parquet": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+          "checkpoints/s11_scan_a2.meta.json": "6f6e9ad5491f94711716675f9a1d5a5c0471354927fa361492f7b5186b08cd71"
+        },
+        "checkpoint_identity": "ac4b7ebfe2a9dbe82226416dfbcd409f55760eccfad72fc1d127b19240105b56",
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s12_scan_a3",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "checkpoint": {
+        "layout": "v2",
+        "checkpoint_valid": true,
+        "checks": [
+          {
+            "check": "layout_is_v2",
+            "ok": true,
+            "detail": "layout=v2"
+          },
+          {
+            "check": "payload_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s12_scan_a3.payload.parquet"
+          },
+          {
+            "check": "metadata_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s12_scan_a3.meta.json"
+          },
+          {
+            "check": "checkpoint_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s12_scan_a3.checkpoint.COMPLETE"
+          },
+          {
+            "check": "metadata_schema",
+            "ok": true,
+            "detail": "missing=[]"
+          },
+          {
+            "check": "stage_name",
+            "ok": true,
+            "detail": "s12_scan_a3"
+          },
+          {
+            "check": "checkpoint_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_rows",
+            "ok": true,
+            "detail": "30"
+          },
+          {
+            "check": "input_binding",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "config_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "code_fingerprint",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_binds_metadata",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_rows",
+            "ok": true,
+            "detail": ""
+          }
+        ],
+        "rows": 30,
+        "payload_sha256": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+        "meta_sha256": "48430ff0c2fae60d0814f6244727b039ff76bec5081bbbe4f668b4eb85cf62a6",
+        "failed_checks": [],
+        "reason": "all checkpoint checks passed"
+      },
+      "stage_marker": {
+        "stage": "s12_scan_a3",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s12_scan_a3.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "checkpoints/s12_scan_a3.payload.parquet": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+          "checkpoints/s12_scan_a3.meta.json": "48430ff0c2fae60d0814f6244727b039ff76bec5081bbbe4f668b4eb85cf62a6"
+        },
+        "checkpoint_identity": "efee4db62af58bf6f723cd8a07f761d512e7313878f9416ad87afd0ac32ed908",
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s20_score_primary",
+      "verdict": "REUSABLE",
+      "reason": "checkpoint and stage marker validated",
+      "checkpoint": {
+        "layout": "v2",
+        "checkpoint_valid": true,
+        "checks": [
+          {
+            "check": "layout_is_v2",
+            "ok": true,
+            "detail": "layout=v2"
+          },
+          {
+            "check": "payload_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s20_score_primary.payload.parquet"
+          },
+          {
+            "check": "metadata_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s20_score_primary.meta.json"
+          },
+          {
+            "check": "checkpoint_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s20_score_primary.checkpoint.COMPLETE"
+          },
+          {
+            "check": "metadata_schema",
+            "ok": true,
+            "detail": "missing=[]"
+          },
+          {
+            "check": "stage_name",
+            "ok": true,
+            "detail": "s20_score_primary"
+          },
+          {
+            "check": "checkpoint_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_rows",
+            "ok": true,
+            "detail": "660"
+          },
+          {
+            "check": "input_binding",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "config_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "code_fingerprint",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_binds_metadata",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_rows",
+            "ok": true,
+            "detail": ""
+          }
+        ],
+        "rows": 660,
+        "payload_sha256": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+        "meta_sha256": "d8079bf91705b0abe6070ff832985954bdec088d437dd823bb76ae3d584a7d19",
+        "failed_checks": [],
+        "reason": "all checkpoint checks passed"
+      },
+      "stage_marker": {
+        "stage": "s20_score_primary",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s20_score_primary.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "normalization.json": "0a68768167a64849b344925e4ce5e22be9ccac7f458abd377a134fb83aac12e6"
+        },
+        "checkpoint_identity": "c69d60b38052dec1d4901d85c560c120b3731c130aef4f86f42cf5b9d095b14f",
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s30_sensitivity",
+      "verdict": "INVALID",
+      "reason": "validation failed: payload_sha256",
+      "checkpoint": {
+        "layout": "v2",
+        "checkpoint_valid": false,
+        "checks": [
+          {
+            "check": "layout_is_v2",
+            "ok": true,
+            "detail": "layout=v2"
+          },
+          {
+            "check": "payload_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s30_sensitivity.payload.parquet"
+          },
+          {
+            "check": "metadata_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s30_sensitivity.meta.json"
+          },
+          {
+            "check": "checkpoint_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s30_sensitivity.checkpoint.COMPLETE"
+          },
+          {
+            "check": "metadata_schema",
+            "ok": true,
+            "detail": "missing=[]"
+          },
+          {
+            "check": "stage_name",
+            "ok": true,
+            "detail": "s30_sensitivity"
+          },
+          {
+            "check": "checkpoint_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "payload_sha256",
+            "ok": false,
+            "detail": ""
+          },
+          {
+            "check": "payload_rows",
+            "ok": true,
+            "detail": "660"
+          },
+          {
+            "check": "input_binding",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "config_sha256",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "code_fingerprint",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_binds_metadata",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "checkpoint_marker_rows",
+            "ok": true,
+            "detail": ""
+          }
+        ],
+        "rows": 660,
+        "payload_sha256": "7c7a622a6e3d5b47708b0a6497bd29ac0c8a9d1553b446d9cb1f9630deeb74ab",
+        "meta_sha256": "703d3b4a38bcb70a66781ced5d94c47b558f0501c8af947370c860b96bcba1b3",
+        "failed_checks": [
+          "payload_sha256"
+        ],
+        "reason": "failed checks: ['payload_sha256']"
+      },
+      "stage_marker": {
+        "stage": "s30_sensitivity",
+        "exists": true,
+        "checks": [
+          {
+            "check": "stage_marker_exists",
+            "ok": true,
+            "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash\\run\\checkpoints\\s30_sensitivity.stage.COMPLETE"
+          },
+          {
+            "check": "stage_marker_kind",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_stage",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_protocol",
+            "ok": true,
+            "detail": ""
+          },
+          {
+            "check": "stage_marker_outputs",
+            "ok": true,
+            "detail": "changed/missing=[]"
+          },
+          {
+            "check": "stage_marker_binds_no_mutable_global",
+            "ok": true,
+            "detail": "stage marker must not bind the materialized global parquet"
+          }
+        ],
+        "failed_checks": [],
+        "outputs": {
+          "imputation_parameters_sensitivity.json": "7ed50c373e01557bbd7ef533f9802be24bb25753e7d433cd0d370331024df3a3",
+          "imputation_applied_counts.csv": "1b2bed6b3e63de528f37b57aca778327faf0d01755542ecc33c5fd02bf444914"
+        },
+        "checkpoint_identity": "cf5438fb295cb389ca847b76229fefc8a4955e9f3953d9e2023b27f992d6d6c3",
+        "reason": "stage marker valid"
+      }
+    },
+    {
+      "stage": "s40_summarize",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "checkpoint": null,
+      "stage_marker": null
+    },
+    {
+      "stage": "s50_verify",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "checkpoint": null,
+      "stage_marker": null
+    },
+    {
+      "stage": "s60_finalize",
+      "verdict": "NOT_STARTED",
+      "reason": "no stage marker and no checkpoint evidence",
+      "checkpoint": null,
+      "stage_marker": null
+    }
+  ],
+  "reusable_stages": [
+    "s00_preflight",
+    "s01_synthetic_tests",
+    "s10_scan_a1",
+    "s11_scan_a2",
+    "s12_scan_a3",
+    "s20_score_primary"
+  ],
+  "not_started_stages": [
+    "s40_summarize",
+    "s50_verify",
+    "s60_finalize"
+  ],
+  "invalid_stages": [
+    {
+      "stage": "s30_sensitivity",
+      "reason": "validation failed: payload_sha256"
+    }
+  ],
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\rejection_tests\\payload_hash",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\r2rej_20260925004040\\synthetic_fixture",
+    "--probe-resume"
+  ],
+  "note": "read-only eligibility check through the single stage reuse validation entry; no stage was executed and no computation or scan was performed"
+}

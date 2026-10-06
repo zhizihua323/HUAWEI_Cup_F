@@ -1,0 +1,169 @@
+﻿dataset,file,field,pandas_dtype,rows,nonnull,missing,missing_pct,unique_nonnull,numeric_parseable,numeric_parse_pct,numeric_min,numeric_max,numeric_mean,n_zero,n_negative,role,example
+C1,leaderboard_cleaned.csv,Model,object,4576,4576,0,0.0,4497,0,0.0,,,,0,0,other,0-hero/Matter-0.2-7B-DPO
+C1,leaderboard_cleaned.csv,#Params (B),float64,4576,4573,3,0.065559,482,4573,100.0,0.0,140.63,11.24512858080035,7,0,architecture_or_parameters,7.242
+C1,leaderboard_cleaned.csv,Submission Date,object,4576,4564,12,0.262238,262,0,0.0,,,,0,0,date_or_time,2024-08-05
+C1,leaderboard_cleaned.csv,Hub License,object,4576,2823,1753,38.308566,26,0,0.0,,,,0,0,other,apache-2.0
+C1,leaderboard_cleaned.csv,Type,object,4576,4576,0,0.0,7,0,0.0,,,,0,0,other,"💬 chat models (RLHF, DPO, IFT, ...)"
+C1,leaderboard_cleaned.csv,Average ⬆️,float64,4576,4576,0,0.0,4522,4576,100.0,0.7378506308720487,52.08138397879168,21.814863006261174,0,0,benchmark,8.90636130175029
+C1,leaderboard_cleaned.csv,IFEval,float64,4576,4576,0,0.0,3769,4576,100.0,0.0,89.97581971391463,45.58448623430687,7,0,benchmark,33.02792147058693
+C1,leaderboard_cleaned.csv,BBH,float64,4576,4576,0,0.0,4477,4576,100.0,0.2515270350564467,76.69996850001888,27.647478672721277,0,0,benchmark,10.055525080241036
+C1,leaderboard_cleaned.csv,MATH Lvl 5,float64,4576,4576,0,0.0,734,4576,100.0,0.0,71.45015105740181,15.550498709880689,134,0,benchmark,1.4350453172205435
+C1,leaderboard_cleaned.csv,GPQA,float64,4576,4576,0,0.0,227,4576,100.0,0.0,29.418344519015665,6.717595091336702,241,0,benchmark,1.230425055928408
+C1,leaderboard_cleaned.csv,MUSR,float64,4576,4576,0,0.0,3304,4576,100.0,0.0,38.688020833333326,9.983966733136656,1,0,benchmark,5.871874999999999
+C1,leaderboard_cleaned.csv,MMLU-PRO,float64,4576,4576,0,0.0,2697,4576,100.0,0.0,70.03361406619385,25.40515259618484,1,0,benchmark,1.8173758865248215
+C2,leaderboard_enhanced.csv,Model,object,4576,4576,0,0.0,4497,0,0.0,,,,0,0,other,0-hero/Matter-0.2-7B-DPO
+C2,leaderboard_enhanced.csv,#Params (B),float64,4576,4573,3,0.065559,482,4573,100.0,0.0,140.63,11.24512858080035,7,0,architecture_or_parameters,7.242
+C2,leaderboard_enhanced.csv,Submission Date,object,4576,4564,12,0.262238,262,0,0.0,,,,0,0,date_or_time,2024-08-05
+C2,leaderboard_enhanced.csv,Hub License,object,4576,2823,1753,38.308566,26,0,0.0,,,,0,0,other,apache-2.0
+C2,leaderboard_enhanced.csv,Type,object,4576,4576,0,0.0,7,0,0.0,,,,0,0,other,"💬 chat models (RLHF, DPO, IFT, ...)"
+C2,leaderboard_enhanced.csv,Average ⬆️,float64,4576,4576,0,0.0,4522,4576,100.0,0.7378506308720487,52.08138397879168,21.814863006261174,0,0,benchmark,8.90636130175029
+C2,leaderboard_enhanced.csv,IFEval,float64,4576,4576,0,0.0,3769,4576,100.0,0.0,89.97581971391463,45.58448623430687,7,0,benchmark,33.02792147058693
+C2,leaderboard_enhanced.csv,BBH,float64,4576,4576,0,0.0,4477,4576,100.0,0.2515270350564467,76.69996850001888,27.647478672721277,0,0,benchmark,10.055525080241036
+C2,leaderboard_enhanced.csv,MATH Lvl 5,float64,4576,4576,0,0.0,734,4576,100.0,0.0,71.45015105740181,15.550498709880689,134,0,benchmark,1.4350453172205435
+C2,leaderboard_enhanced.csv,GPQA,float64,4576,4576,0,0.0,227,4576,100.0,0.0,29.418344519015665,6.717595091336702,241,0,benchmark,1.230425055928408
+C2,leaderboard_enhanced.csv,MUSR,float64,4576,4576,0,0.0,3304,4576,100.0,0.0,38.688020833333326,9.983966733136656,1,0,benchmark,5.871874999999999
+C2,leaderboard_enhanced.csv,MMLU-PRO,float64,4576,4576,0,0.0,2697,4576,100.0,0.0,70.03361406619385,25.40515259618484,1,0,benchmark,1.8173758865248213
+C2,leaderboard_enhanced.csv,Epoch_AI_Publication_Date,object,4576,447,4129,90.231643,69,0,0.0,,,,0,0,date_or_time,2024-05-13
+C2,leaderboard_enhanced.csv,Epoch_AI_Organization,object,4576,443,4133,90.319056,45,0,0.0,,,,0,0,other,01.AI
+C2,leaderboard_enhanced.csv,Epoch_AI_Open_Weights,object,4576,443,4133,90.319056,2,0,0.0,,,,0,0,other,Yes
+C3,leaderboard_extended_timeseries.csv,Model,object,4599,4599,0,0.0,4520,0,0.0,,,,0,0,other,GPT-2 (1.5B)
+C3,leaderboard_extended_timeseries.csv,Year,int64,4599,4599,0,0.0,7,4599,100.0,2019.0,2025.0,2024.4044357469015,0,0,date_or_time,2019
+C3,leaderboard_extended_timeseries.csv,Params_B,float64,4599,4599,0,0.0,488,4599,100.0,0.0,176.0,11.385708414872798,7,0,architecture_or_parameters,1.5
+C3,leaderboard_extended_timeseries.csv,Average,float64,4599,4599,0,0.0,2640,4599,100.0,0.74,52.08,21.7724744509676,0,0,benchmark,5.0
+C3,leaderboard_extended_timeseries.csv,IFEval,float64,4599,4599,0,0.0,3791,4599,100.0,0.0,89.97581971391463,45.405885403338104,7,0,benchmark,24.6
+C3,leaderboard_extended_timeseries.csv,BBH,float64,4599,4599,0,0.0,4484,4599,100.0,0.0,76.69996850001888,27.537038128521285,17,0,benchmark,0.0
+C3,leaderboard_extended_timeseries.csv,MATH_Lvl5,float64,4599,4599,0,0.0,741,4599,100.0,0.0,71.45015105740181,15.474857186156353,152,0,benchmark,0.0
+C3,leaderboard_extended_timeseries.csv,GPQA,float64,4599,4599,0,0.0,229,4599,100.0,0.0,29.418344519015665,6.680797822825343,264,0,benchmark,0.0
+C3,leaderboard_extended_timeseries.csv,MUSR,float64,4599,4599,0,0.0,3309,4599,100.0,0.0,38.688020833333326,9.936868465517865,19,0,benchmark,0.0
+C3,leaderboard_extended_timeseries.csv,MMLU_PRO,float64,4599,4599,0,0.0,2701,4599,100.0,0.0,70.03361406619385,25.29275898065002,21,0,benchmark,0.0
+C3,leaderboard_extended_timeseries.csv,Source,object,4599,4599,0,0.0,2,0,0.0,,,,0,0,other,Historical (papers/reports)
+C4,epoch_all_ai_models.csv,Model,object,3523,3523,0,0.0,3518,1,0.028385,inf,inf,inf,0,0,other,DeepSeek-V4-Pro
+C4,epoch_all_ai_models.csv,Domain,object,3523,3431,92,2.611411,173,0,0.0,,,,0,0,other,Language
+C4,epoch_all_ai_models.csv,Task,object,3523,3401,122,3.462958,922,0,0.0,,,,0,0,other,"Language modeling/generation,Question answering"
+C4,epoch_all_ai_models.csv,Organization,object,3523,3435,88,2.497871,1313,0,0.0,,,,0,0,other,DeepSeek
+C4,epoch_all_ai_models.csv,Authors,object,3523,2681,842,23.900085,2086,0,0.0,,,,0,0,other,"Bo Ai, Ali Amin, Raichelle Aniceto, Ashwin Balakrishna, Greg Balke, Kevin Black, George Bokinsky, Shihao Cao, Thomas Cha"
+C4,epoch_all_ai_models.csv,Publication date,object,3523,3500,23,0.652853,1695,0,0.0,,,,0,0,date_or_time,2026-04-24
+C4,epoch_all_ai_models.csv,Reference,object,3523,3349,174,4.938972,2657,0,0.0,,,,0,0,other,DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence
+C4,epoch_all_ai_models.csv,Link,object,3523,3479,44,1.248936,2850,0,0.0,,,,0,0,other,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf
+C4,epoch_all_ai_models.csv,Citations,float64,3523,1463,2060,58.472892,806,1463,100.0,0.0,215518.0,4319.682159945318,40,0,other,241.0
+C4,epoch_all_ai_models.csv,Notability criteria,object,3523,1042,2481,70.422935,39,0,0.0,,,,0,0,other,Discretionary
+C4,epoch_all_ai_models.csv,Notability criteria notes,object,3523,841,2682,76.1283,782,0,0.0,,,,0,0,other,OpenAI's most powerful public model at release
+C4,epoch_all_ai_models.csv,Parameters,float64,3523,2297,1226,34.799886,939,2297,100.0,10.0,173900000000000.0,176164873969.8707,0,0,architecture_or_parameters,1600000000.0
+C4,epoch_all_ai_models.csv,Parameters notes,object,3523,1861,1662,47.175703,1454,0,0.0,,,,0,0,other,"1.6T total, 49B active"
+C4,epoch_all_ai_models.csv,Training compute (FLOP),float64,3523,1390,2133,60.54499,1253,1390,100.0,40.0,5.0000000000001e+26,1.6482867362918384e+24,0,0,other,9.702e+24
+C4,epoch_all_ai_models.csv,Training compute notes,object,3523,1637,1886,53.53392,1575,0,0.0,,,,0,0,other,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training
+C4,epoch_all_ai_models.csv,Training dataset size (total),object,3523,1424,2099,59.579903,832,1400,98.314607,0.0,798720000000000.0,2464349823275.227,4,0,data_volume,19700000000000
+C4,epoch_all_ai_models.csv,Dataset size notes,object,3523,1719,1804,51.206358,1548,0,0.0,,,,0,0,other,11T tokens
+C4,epoch_all_ai_models.csv,Training time (hours),float64,3523,550,2973,84.388305,231,550,100.0,0.1,9022.8,457.9297851366491,0,0,other,1572.0
+C4,epoch_all_ai_models.csv,Training time notes,object,3523,605,2918,82.827136,564,3,0.495868,10.0,150000.0,50011.333333333336,0,0,other,"""Approx. 65.5 days (Net training time excluding downtime)"" per email
+"
+C4,epoch_all_ai_models.csv,Training hardware,object,3523,1180,2343,66.505819,143,0,0.0,,,,0,0,other,"NVIDIA GB200,NVIDIA GB300 (Blackwell Ultra)"
+C4,epoch_all_ai_models.csv,Approach,object,3523,312,3211,91.143911,7,0,0.0,,,,0,0,other,Reinforcement learning
+C4,epoch_all_ai_models.csv,Confidence,object,3523,3326,197,5.591825,4,0,0.0,,,,0,0,other,Speculative
+C4,epoch_all_ai_models.csv,Abstract,object,3523,2983,540,15.327846,2466,0,0.0,,,,0,0,other,"We present a preview version of DeepSeek-V4 series, including two strong Mixture-ofExperts (MoE) language models — DeepS"
+C4,epoch_all_ai_models.csv,Epochs,float64,3523,803,2720,77.206926,196,803,100.0,0.0,191400.0,564.743860334395,3,0,other,1.0
+C4,epoch_all_ai_models.csv,WikiText and Penn Treebank data,object,3523,405,3118,88.504116,403,0,0.0,,,,0,0,other,LLaMA-7B (LoRA finetuned)
+C4,epoch_all_ai_models.csv,Model accessibility,object,3523,2653,870,24.694862,6,0,0.0,,,,0,0,other,Open weights (unrestricted)
+C4,epoch_all_ai_models.csv,Country (of organization),object,3523,3428,95,2.696565,381,0,0.0,,,,0,0,other,China
+C4,epoch_all_ai_models.csv,Base model,object,3523,684,2839,80.584729,343,0,0.0,,,,0,0,other,Kimi K2.5
+C4,epoch_all_ai_models.csv,Finetune compute (FLOP),float64,3523,260,3263,92.619926,248,260,100.0,0.0,2.78256e+24,8.10985134199565e+22,2,0,other,2.78256e+24
+C4,epoch_all_ai_models.csv,Finetune compute notes,object,3523,305,3218,91.342606,294,3,0.983607,1.44e+21,1.92e+22,8.439999999999999e+21,0,0,other,"
+"
+C4,epoch_all_ai_models.csv,Hardware quantity,float64,3523,843,2680,76.07153,75,843,100.0,1.0,200000.0,974.3724792408067,0,0,other,2000.0
+C4,epoch_all_ai_models.csv,Hardware utilization (MFU),float64,3523,61,3462,98.268521,54,61,100.0,0.171,0.56,0.37153649184066134,0,0,other,0.283
+C4,epoch_all_ai_models.csv,Last modified,object,3523,3523,0,0.0,250,0,0.0,,,,0,0,date_or_time,2026-05-05 15:39:17+00:00
+C4,epoch_all_ai_models.csv,Training cloud compute vendor,object,3523,53,3470,98.4956,12,0,0.0,,,,0,0,other,IBM
+C4,epoch_all_ai_models.csv,Training data center,object,3523,66,3457,98.126597,34,0,0.0,,,,0,0,other,"""We train granite-docling-258m using IBM's super computing cluster, Blue Vela, which is outfitted with NVIDIA H100 GPUs."
+C4,epoch_all_ai_models.csv,Archived links,object,3523,25,3498,99.290378,24,0,0.0,,,,0,0,other,Yi-34B
+C4,epoch_all_ai_models.csv,Batch size,float64,3523,251,3272,92.87539,95,251,100.0,1.0,128000000.0,5640820.70711201,0,0,other,8000.0
+C4,epoch_all_ai_models.csv,Batch size notes,object,3523,197,3326,94.408175,153,1,0.507614,128000000.0,128000000.0,128000000.0,0,0,other,"Multi-stage training strategy:
+    Pre-training Stage 1 (Main): 8000
+    Pre-training Stages 2-3 / Post Training (Anneal"
+C4,epoch_all_ai_models.csv,Organization categorization,object,3523,3416,107,3.037184,126,0,0.0,,,,0,0,other,Industry
+C4,epoch_all_ai_models.csv,Foundation model,object,3523,78,3445,97.785978,1,78,100.0,1.0,1.0,1.0,0,0,other,True
+C4,epoch_all_ai_models.csv,Training compute lower bound,float64,3523,26,3497,99.261993,25,26,100.0,5.423,2.1e+26,9.904002519479077e+24,0,0,other,1.152e+24
+C4,epoch_all_ai_models.csv,Training compute upper bound,float64,3523,41,3482,98.836219,34,41,100.0,1.35e+18,1.1300000000000001e+27,5.654276455846366e+25,0,0,other,7.5928392e+24
+C4,epoch_all_ai_models.csv,Training chip-hours,float64,3523,215,3308,93.897247,183,215,100.0,1.0,132000000.0,1681980.6704186045,0,0,other,50000.0
+C4,epoch_all_ai_models.csv,Training code accessibility,object,3523,2403,1120,31.791087,4,0,0.0,,,,0,0,other,Unreleased
+C4,epoch_all_ai_models.csv,Accessibility notes,object,3523,1750,1773,50.326426,1548,0,0.0,,,,0,0,other,Accessible through Devin & Windsurf but not directly through an API. Devin does have an API.
+C4,epoch_all_ai_models.csv,Possibly over 1e23 FLOP,object,3523,521,3002,85.211467,1,521,100.0,1.0,1.0,1.0,0,0,other,True
+C4,epoch_all_ai_models.csv,Training compute cost (2023 USD),float64,3523,224,3299,93.641783,221,224,100.0,3.9045853984413377,387842678.0863615,6015289.65007544,0,0,other,9642947.0
+C4,epoch_all_ai_models.csv,Utilization notes,object,3523,88,3435,97.502129,84,0,0.0,,,,0,0,other,"Abstract says: ""We achieve 47% Model FLOPs Utilization (MFU) during the pre-training of our largest ERNIE 4.5 language m"
+C4,epoch_all_ai_models.csv,Numerical format,object,3523,362,3161,89.724666,7,0,0.0,,,,0,0,other,NVFP4
+C4,epoch_all_ai_models.csv,Frontier model,object,3523,137,3386,96.111269,1,137,100.0,1.0,1.0,1.0,0,0,other,True
+C4,epoch_all_ai_models.csv,Training power draw (W),float64,3523,771,2752,78.115243,667,771,100.0,75.82593457631364,109948656.20196916,777471.9116591237,0,0,other,4672690.306975335
+C4,epoch_all_ai_models.csv,Training compute estimation method,object,3523,1440,2083,59.125745,38,0,0.0,,,,0,0,other,Comparison with other models
+C4,epoch_all_ai_models.csv,Hugging Face developer id,object,3523,635,2888,81.975589,193,0,0.0,,,,0,0,other,Qwen
+C4,epoch_all_ai_models.csv,Post-training compute (FLOP),float64,3523,1,3522,99.971615,1,1,100.0,9.4e+22,9.4e+22,9.4e+22,0,0,other,9.4e+22
+C4,epoch_all_ai_models.csv,Post-training compute notes,object,3523,1,3522,99.971615,1,0,0.0,,,,0,0,other,"Section 4 gives detail about the post-training process. They do 6 rounds of post-training, using the model from the prev"
+C4,epoch_all_ai_models.csv,Hardware utilization (HFU),float64,3523,25,3498,99.290378,22,25,100.0,0.2359,0.927,0.490875640668,0,0,other,0.927
+C4,epoch_all_ai_models.csv,Open model weights?,object,3523,2653,870,24.694862,2,0,0.0,,,,0,0,other,Yes
+C5,loss_benchmark_bridge.csv,Model,object,43,43,0,0.0,43,0,0.0,,,,0,0,other,EleutherAI/pythia-160m
+C5,loss_benchmark_bridge.csv,N_params_B,float64,43,43,0,0.0,38,43,100.0,0.162405,72.706,14.921701418604655,0,0,architecture_or_parameters,0.162405
+C5,loss_benchmark_bridge.csv,D_tokens_B,float64,43,7,36,83.72093,1,7,100.0,299.893,299.893,299.893,0,0,data_volume,299.893
+C5,loss_benchmark_bridge.csv,Val_Loss,float64,43,43,0,0.0,30,43,100.0,1.65,2.84,2.1575418604651166,0,0,loss,2.5978
+C5,loss_benchmark_bridge.csv,LB_Average,float64,43,43,0,0.0,43,43,100.0,5.07026822083096,38.441143572535815,15.936398151104994,0,0,benchmark,5.730394616916023
+C5,loss_benchmark_bridge.csv,LB_IFEval,float64,43,43,0,0.0,43,43,100.0,12.459828809780271,64.96651107949131,28.500525891456377,0,0,benchmark,18.15516163778773
+C5,loss_benchmark_bridge.csv,LB_BBH,float64,43,43,0,0.0,43,43,100.0,2.198832279508135,54.61505780163693,22.236780641079804,0,0,benchmark,2.198832279508135
+C5,loss_benchmark_bridge.csv,LB_MATH,float64,43,43,0,0.0,35,43,100.0,0.906344410876133,39.12386706948641,8.606465684462625,0,0,benchmark,0.906344410876133
+C5,loss_benchmark_bridge.csv,LB_GPQA,float64,43,43,0,0.0,37,43,100.0,0.0,21.588366890380318,6.139118672285522,5,0,benchmark,1.1185682326621946
+C5,loss_benchmark_bridge.csv,LB_MUSR,float64,43,43,0,0.0,41,43,100.0,2.024479166666666,22.69583333333333,8.854735949612403,0,0,benchmark,10.675520833333332
+C5,loss_benchmark_bridge.csv,LB_MMLU_PRO,float64,43,43,0,0.0,43,43,100.0,1.1894208037825047,55.20279255319149,21.280762067733242,0,0,benchmark,1.3279403073286051
+C5,loss_benchmark_bridge.csv,Loss_Source,object,43,43,0,0.0,19,0,0.0,,,,0,0,loss,"Pythia training log (Attachment B, final checkpoint D=299.9B tokens)"
+C5,loss_benchmark_bridge.csv,Loss_Comparability,object,43,43,0,0.0,2,0,0.0,,,,0,0,loss,"High (same model, same validation set)"
+C6,loss_benchmark_bridge_expanded.csv,Model,object,75,75,0,0.0,75,0,0.0,,,,0,0,other,EleutherAI/pythia-160m
+C6,loss_benchmark_bridge_expanded.csv,N_params_B,float64,75,75,0,0.0,40,75,100.0,0.162405,72.706,17.12254881333333,0,0,architecture_or_parameters,0.162405
+C6,loss_benchmark_bridge_expanded.csv,D_tokens_B,float64,75,7,68,90.666667,1,7,100.0,299.893,299.893,299.893,0,0,data_volume,299.893
+C6,loss_benchmark_bridge_expanded.csv,Val_Loss,float64,75,75,0,0.0,31,75,100.0,1.65,2.84,2.147790666666667,0,0,loss,2.5978
+C6,loss_benchmark_bridge_expanded.csv,LB_Average,float64,75,75,0,0.0,75,75,100.0,3.795510241848182,47.98045991216864,19.109724016216422,0,0,benchmark,5.730394616916023
+C6,loss_benchmark_bridge_expanded.csv,LB_IFEval,float64,75,75,0,0.0,75,75,100.0,8.433068702154728,86.3837949972739,37.2547965324598,0,0,benchmark,18.15516163778773
+C6,loss_benchmark_bridge_expanded.csv,LB_BBH,float64,75,75,0,0.0,75,75,100.0,2.198832279508135,61.87325566878789,25.398973892938123,0,0,benchmark,2.198832279508135
+C6,loss_benchmark_bridge_expanded.csv,LB_MATH,float64,75,75,0,0.0,61,75,100.0,0.0755287009063444,62.53776435045317,13.011916458689086,0,0,benchmark,0.906344410876133
+C6,loss_benchmark_bridge_expanded.csv,LB_GPQA,float64,75,75,0,0.0,55,75,100.0,0.0,21.588366890380318,6.598061148396718,9,0,benchmark,1.1185682326621946
+C6,loss_benchmark_bridge_expanded.csv,LB_MUSR,float64,75,75,0,0.0,73,75,100.0,1.3734374999999996,22.69583333333333,8.690892361111112,0,0,benchmark,10.675520833333332
+C6,loss_benchmark_bridge_expanded.csv,LB_MMLU_PRO,float64,75,75,0,0.0,72,75,100.0,1.1617169030732852,55.20279255319149,23.703703703703706,0,0,benchmark,1.3279403073286051
+C6,loss_benchmark_bridge_expanded.csv,Loss_Source,object,75,75,0,0.0,31,0,0.0,,,,0,0,loss,"Pythia training log (Attachment B, final checkpoint D=299.9B tokens)"
+C6,loss_benchmark_bridge_expanded.csv,Loss_Comparability,object,75,75,0,0.0,2,0,0.0,,,,0,0,loss,"High (same model, same validation set)"
+C7,model_architecture_metadata.csv,model_name,object,45,45,0,0.0,45,0,0.0,,,,0,0,other,EleutherAI/pythia-70m
+C7,model_architecture_metadata.csv,n_layers,int64,45,45,0,0.0,18,45,100.0,6.0,80.0,34.31111111111111,0,0,architecture_or_parameters,6
+C7,model_architecture_metadata.csv,n_heads,int64,45,45,0,0.0,15,45,100.0,8.0,232.0,34.51111111111111,0,0,architecture_or_parameters,8
+C7,model_architecture_metadata.csv,d_model,int64,45,45,0,0.0,16,45,100.0,512.0,8192.0,3628.088888888889,0,0,architecture_or_parameters,512
+C7,model_architecture_metadata.csv,vocab_size,int64,45,45,0,0.0,12,45,100.0,32000.0,256128.0,94804.0,0,0,architecture_or_parameters,50257
+C7,model_architecture_metadata.csv,max_position_embeddings,int64,45,45,0,0.0,5,45,100.0,2048.0,131072.0,13744.355555555556,0,0,architecture_or_parameters,2048
+C7,model_architecture_metadata.csv,training_data_TB,float64,45,45,0,0.0,15,45,100.0,0.3,18.0,6.432222222222223,0,0,data_volume,0.3
+C9,C9: data/train-00000-of-00001.parquet,eval_name,object,4576,4576,0,0.0,4576,0,0.0,,,,0,0,other,0-hero_Matter-0.2-7B-DPO_bfloat16
+C9,C9: data/train-00000-of-00001.parquet,Precision,object,4576,4576,0,0.0,3,0,0.0,,,,0,0,other,bfloat16
+C9,C9: data/train-00000-of-00001.parquet,Type,object,4576,4576,0,0.0,7,0,0.0,,,,0,0,other,"💬 chat models (RLHF, DPO, IFT, ...)"
+C9,C9: data/train-00000-of-00001.parquet,T,object,4576,4576,0,0.0,7,0,0.0,,,,0,0,other,💬
+C9,C9: data/train-00000-of-00001.parquet,Weight type,object,4576,4576,0,0.0,2,0,0.0,,,,0,0,other,Original
+C9,C9: data/train-00000-of-00001.parquet,Architecture,object,4576,4576,0,0.0,64,0,0.0,,,,0,0,other,MistralForCausalLM
+C9,C9: data/train-00000-of-00001.parquet,Model,object,4576,4576,0,0.0,4497,0,0.0,,,,0,0,other,"<a target=""_blank"" href=""https://huggingface.co/0-hero/Matter-0.2-7B-DPO"" style=""color: var(--link-text-color); text-dec"
+C9,C9: data/train-00000-of-00001.parquet,fullname,object,4576,4576,0,0.0,4497,0,0.0,,,,0,0,other,0-hero/Matter-0.2-7B-DPO
+C9,C9: data/train-00000-of-00001.parquet,Model sha,object,4576,4576,0,0.0,4477,0,0.0,,,,0,0,other,26a66f0d862e2024ce4ad0a09c37052ac36e8af6
+C9,C9: data/train-00000-of-00001.parquet,Average ⬆️,float64,4576,4576,0,0.0,4522,4576,100.0,0.7378506308720487,52.08138397879168,21.814863006261174,0,0,benchmark,8.90636130175029
+C9,C9: data/train-00000-of-00001.parquet,Hub License,object,4576,4576,0,0.0,27,0,0.0,,,,0,0,other,apache-2.0
+C9,C9: data/train-00000-of-00001.parquet,Hub ❤️,int64,4576,4576,0,0.0,336,4576,100.0,0.0,6093.0,49.02010489510489,2008,0,other,3
+C9,C9: data/train-00000-of-00001.parquet,#Params (B),float64,4576,4576,0,0.0,483,4576,100.0,-1.0,140.63,11.237100743006993,7,3,architecture_or_parameters,7.242
+C9,C9: data/train-00000-of-00001.parquet,Available on the hub,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.6322115384615384,1683,0,other,True
+C9,C9: data/train-00000-of-00001.parquet,MoE,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.016608391608391608,4500,0,other,False
+C9,C9: data/train-00000-of-00001.parquet,Flagged,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.00021853146853146853,4575,0,other,False
+C9,C9: data/train-00000-of-00001.parquet,Chat Template,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.5249125874125874,2174,0,other,True
+C9,C9: data/train-00000-of-00001.parquet,CO₂ cost (kg),float64,4576,4576,0,0.0,4576,4576,100.0,0.039245173068546815,186.61044332743728,3.96964311275104,0,0,other,1.219174164123715
+C9,C9: data/train-00000-of-00001.parquet,IFEval Raw,float64,4576,4576,0,0.0,3769,4576,100.0,0.0,0.8997581971391464,0.45584486234306876,7,0,benchmark,0.3302792147058693
+C9,C9: data/train-00000-of-00001.parquet,IFEval,float64,4576,4576,0,0.0,3769,4576,100.0,0.0,89.97581971391463,45.58448623430687,7,0,benchmark,33.02792147058693
+C9,C9: data/train-00000-of-00001.parquet,BBH Raw,float64,4576,4576,0,0.0,4470,4576,100.0,0.21782097894078087,0.8269136508088061,0.4866422947079099,0,0,benchmark,0.3596254301656297
+C9,C9: data/train-00000-of-00001.parquet,BBH,float64,4576,4576,0,0.0,4477,4576,100.0,0.25152703505644675,76.69996850001888,27.647478672721277,0,0,benchmark,10.055525080241035
+C9,C9: data/train-00000-of-00001.parquet,MATH Lvl 5 Raw,float64,4576,4576,0,0.0,743,4576,100.0,0.0,0.7145015105740181,0.15550498709880686,134,0,benchmark,0.014350453172205438
+C9,C9: data/train-00000-of-00001.parquet,MATH Lvl 5,float64,4576,4576,0,0.0,739,4576,100.0,0.0,71.45015105740181,15.550498709880689,134,0,benchmark,1.4350453172205437
+C9,C9: data/train-00000-of-00001.parquet,GPQA Raw,float64,4576,4576,0,0.0,259,4576,100.0,0.2063758389261745,0.47063758389261745,0.29998379102720546,0,0,benchmark,0.25922818791946306
+C9,C9: data/train-00000-of-00001.parquet,GPQA,float64,4576,4576,0,0.0,227,4576,100.0,0.0,29.418344519015662,6.717595091336702,241,0,benchmark,1.230425055928408
+C9,C9: data/train-00000-of-00001.parquet,MUSR Raw,float64,4576,4576,0,0.0,2882,4576,100.0,0.2928541666666667,0.6023645833333333,0.40636777025058274,0,0,benchmark,0.381375
+C9,C9: data/train-00000-of-00001.parquet,MUSR,float64,4576,4576,0,0.0,3338,4576,100.0,0.0,38.688020833333326,9.983966733136656,1,0,benchmark,5.871874999999999
+C9,C9: data/train-00000-of-00001.parquet,MMLU-PRO Raw,float64,4576,4576,0,0.0,2697,4576,100.0,0.1,0.7303025265957447,0.3286463733656636,0,0,benchmark,0.1163563829787234
+C9,C9: data/train-00000-of-00001.parquet,MMLU-PRO,float64,4576,4576,0,0.0,2697,4576,100.0,0.0,70.03361406619385,25.40515259618484,1,0,benchmark,1.8173758865248217
+C9,C9: data/train-00000-of-00001.parquet,Merged,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.15625,3861,0,other,False
+C9,C9: data/train-00000-of-00001.parquet,Official Providers,bool,4576,4576,0,0.0,2,4576,100.0,0.0,1.0,0.10270979020979021,4106,0,other,False
+C9,C9: data/train-00000-of-00001.parquet,Upload To Hub Date,object,4576,4576,0,0.0,525,0,0.0,,,,0,0,date_or_time,2024-04-13
+C9,C9: data/train-00000-of-00001.parquet,Submission Date,object,4576,4576,0,0.0,263,0,0.0,,,,0,0,date_or_time,2024-08-05
+C9,C9: data/train-00000-of-00001.parquet,Generation,int64,4576,4576,0,0.0,10,4576,100.0,0.0,10.0,0.7550262237762237,1775,0,other,0
+C9,C9: data/train-00000-of-00001.parquet,Base Model,object,4576,4576,0,0.0,3291,0,0.0,,,,0,0,other,0-hero/Matter-0.2-7B-DPO

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/gyDYBGqGtugirZa/c+EfsaHeOhM</id>
+  <title>arXiv Query: search_query=ti:"Open LLM Leaderboard"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-25T11:58:25Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:%22Open+LLM+Leaderboard%22&amp;start=0&amp;max_results=10&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2603.12872v1</id>
+    <title>CLARIN-PT-LDB: An Open LLM Leaderboard for Portuguese to assess Language, Culture and Civility</title>
+    <updated>2026-03-13T10:18:27Z</updated>
+    <link href="https://arxiv.org/abs/2603.12872v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.12872v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper reports on the development of a leaderboard of Open Large Language Models (LLM) for European Portuguese (PT-PT), and on its associated benchmarks. This leaderboard comes as a way to address a gap in the evaluation of LLM for European Portuguese, which so far had no leaderboard dedicated to this variant of the language. The paper also reports on novel benchmarks, including some that address aspects of performance that so far have not been available in benchmarks for European Portuguese, namely model safeguards and alignment to Portuguese culture. The leaderboard is available at https://huggingface.co/spaces/PORTULAN/portuguese-llm-leaderboard.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-13T10:18:27Z</published>
+    <arxiv:comment>Accepted at PROPOR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>João Silva</name>
+    </author>
+    <author>
+      <name>Luís Gomes</name>
+    </author>
+    <author>
+      <name>António Branco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.07545v1</id>
+    <title>Open-LLM-Leaderboard: From Multi-choice to Open-style Questions for LLMs Evaluation, Benchmark, and Arena</title>
+    <updated>2024-06-11T17:59:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.07545v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.07545v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multiple-choice questions (MCQ) are frequently used to assess large language models (LLMs). Typically, an LLM is given a question and selects the answer deemed most probable after adjustments for factors like length. Unfortunately, LLMs may inherently favor certain answer choice IDs, such as A/B/C/D, due to inherent biases of priori unbalanced probabilities, influencing the prediction of answers based on these IDs. Previous research has introduced methods to reduce this ''selection bias'' by simply permutating options on a few test samples and applying to new ones. Another problem of MCQ is the lottery ticket choice by ''random guessing''. The LLM does not learn particular knowledge, but the option is guessed correctly. This situation is especially serious for those small-scale LLMs. To address them, a more thorough approach involves shifting from MCQ to open-style questions, which can fundamentally eliminate selection bias and random guessing issues. However, transitioning causes its own set of challenges in (1) identifying suitable open-style questions and (2) validating the correctness of LLM open-style responses against human-annotated ground-truths. This work aims to tackle these significant difficulties, and establish a new LLM evaluation benchmark through entirely open-style questions. Consequently, we introduce the Open-LLM-Leaderboard to track various LLMs' performance and reflect true capability of them, such as GPT-4o/4/3.5, Claude 3, Gemini, etc. Our code and dataset are available at https://github.com/VILA-Lab/Open-LLM-Leaderboard.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-11T17:59:47Z</published>
+    <arxiv:comment>Code and dataset are available at https://github.com/VILA-Lab/Open-LLM-Leaderboard</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aidar Myrzakhan</name>
+    </author>
+    <author>
+      <name>Sondos Mahmoud Bsharat</name>
+    </author>
+    <author>
+      <name>Zhiqiang Shen</name>
+    </author>
+  </entry>
+</feed>
+

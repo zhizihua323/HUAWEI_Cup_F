@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "run_id": "20260925T100306+08",
+  "independent_verifier": true,
+  "imports_fit_module": false,
+  "failures": [],
+  "checks": [
+    {
+      "check": "raw_shapes",
+      "status": "PASS",
+      "detail": [
+        1176,
+        360,
+        450,
+        1704
+      ]
+    },
+    {
+      "check": "B6_support_partition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B7_360_repeat_90_new",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B8_160_common",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "input_manifest_hashes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B1_formula_predictions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B6_formula_predictions",
+      "status": "PASS",
+      "detail": "8.881784197001252e-16"
+    },
+    {
+      "check": "B6_fold_parameter_formula_predictions",
+      "status": "PASS",
+      "detail": "8.881784197001252e-16"
+    },
+    {
+      "check": "G1_recomputed",
+      "status": "PASS",
+      "detail": "43/45"
+    },
+    {
+      "check": "G2_recomputed",
+      "status": "PASS",
+      "detail": "[{\"split\": \"leave_N\", \"improvement\": 0.3312516401201788, \"ratio_count\": 9, \"required\": 8}, {\"split\": \"leave_D\", \"improvement\": 0.32412098609334333, \"ratio_count\": 5, \"required\": 4}]"
+    },
+    {
+      "check": "G3_bootstrap",
+      "status": "PASS",
+      "detail": "200/200/180"
+    },
+    {
+      "check": "bootstrap_seed_and_no_highQ",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "G4_jacobian_finite_difference",
+      "status": "PASS",
+      "detail": "53.944075012371655 vs 53.94407500357512"
+    },
+    {
+      "check": "profile_grid_accounted_and_weakness_propagated",
+      "status": "PASS",
+      "detail": "22"
+    },
+    {
+      "check": "B7_repeat_isolation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B7_new_formula",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B8_partition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "B8_no_old_k",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "checks_have_no_unresolved_critical",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

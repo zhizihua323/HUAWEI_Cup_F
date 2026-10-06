@@ -1,0 +1,13 @@
+{
+  "run_id": "20260925T113744+08",
+  "started_at": "2026-09-25T12:04:35.639810+08:00",
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "scipy": "1.16.3",
+  "solver": "scipy.optimize.minimize(SLSQP); fixed-q high-precision KKT reductions",
+  "random_seed": 20260930,
+  "network_access": false,
+  "model_refit": false
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "s40_summarize",
+  "completed_local": "2026-09-24T21:40:55+08:00",
+  "outputs": {
+    "audit.json": "905744155a44e98f4453c5b2b8937c547b2a0b98b142f17f862557202a3cbbcd",
+    "raw_field_counts.csv": "36824a36d1f2c6ae47975efe11287a86c1cf4f4bc4bdb0fc80f9154d820dd1c0",
+    "domain_summary.csv": "788911134f007a6b86448878fbb26ae449525aa9820d7d4be3e2040b822dc8d7",
+    "summary_denominators.csv": "f8f913f40b0c00668215964e2e3a3c8f880791a48f5aecb81811f6b368abc163",
+    "sensitivity_domain_summary.csv": "037fadbb59ce6bad3f15a9d448ad4dd95c47321c78c651c61090befb0e35c10c",
+    "sensitivity_comparison.csv": "2381c5eabae73bda4f46987d70d5eec6690269c86ef6ccb0e8778db2cdbfe532",
+    "feature_summary.csv": "e3390bf6fccd0c634490ee16a58406f29cafc7cd593a3346a71782a782db1e0c",
+    "extension_shift.csv": "a5fdc1fb67e9fffb83b2e8accf38789fc650178c61cf45c8e5e6a1af38a3fe22",
+    "unresolved_indicator_correlations.csv": "2b32308700e49dde1d34e365a8a57d61303543c97b00a85d267787ce1a419c17",
+    "indicator_direction_pending.csv": "7156e94d83aaa1376759d7386f3d9eb3aa93cb67b60f0d3c0be276d7a95196a7",
+    "conditional_bootstrap.csv": "753e870e00328167725779a9ad5740285f4c0ff6614bbcb3c7d2f1017d4e4559",
+    "quality_baseline_q01c.md": "07d5e29a507109d81ff52992a49a5c36710179e13174371ae9112f9d74ce6d65"
+  }
+}

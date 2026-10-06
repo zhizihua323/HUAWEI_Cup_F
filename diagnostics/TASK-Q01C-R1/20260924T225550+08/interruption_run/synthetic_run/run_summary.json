@@ -1,0 +1,151 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "synthetic_run",
+  "status": "COMPLETE_PENDING_REVIEW",
+  "started_local": "2026-09-24T22:55:55+08:00",
+  "finished_local": "2026-09-24T22:55:57+08:00",
+  "duration_s": 2.167,
+  "stage_exit_codes": {
+    "s11_scan_a2": 0,
+    "s12_scan_a3": 0,
+    "s20_score_primary": 0,
+    "s30_sensitivity": 0,
+    "s40_summarize": 0,
+    "s50_verify": 0,
+    "s60_finalize": 0
+  },
+  "stage_seconds": {
+    "s11_scan_a2": 0.108,
+    "s12_scan_a3": 0.054,
+    "s20_score_primary": 0.124,
+    "s30_sensitivity": 0.061,
+    "s40_summarize": 0.935,
+    "s50_verify": 0.811
+  },
+  "executed_stages": [
+    "s11_scan_a2",
+    "s12_scan_a3",
+    "s20_score_primary",
+    "s30_sensitivity",
+    "s40_summarize",
+    "s50_verify"
+  ],
+  "reused_stages": {
+    "s00_preflight": "valid",
+    "s01_synthetic_tests": "valid",
+    "s10_scan_a1": "valid"
+  },
+  "skipped_stages": {},
+  "stage_terminal_events": {
+    "s11_scan_a2": [
+      "complete"
+    ],
+    "s12_scan_a3": [
+      "complete"
+    ],
+    "s20_score_primary": [
+      "complete"
+    ],
+    "s30_sensitivity": [
+      "complete"
+    ],
+    "s40_summarize": [
+      "complete"
+    ],
+    "s50_verify": [
+      "complete"
+    ]
+  },
+  "conditions": {
+    "synthetic_tests_passed": true,
+    "stages_completed": true,
+    "every_executed_stage_has_start_and_one_terminal": true,
+    "verification_no_fail": true,
+    "verification_no_critical_not_checked": true,
+    "sensitivity_gates_passed": true,
+    "fallback_used": false,
+    "protected_files_unchanged": true,
+    "row_count_expected": true,
+    "unique_q_valid_expected": true,
+    "unique_q_missing_expected": true,
+    "physical_q_valid_expected": true
+  },
+  "command_argv": [
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\src\\quality_q01c.py",
+    "--run-id",
+    "synthetic_run",
+    "--out-root",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225550+08\\interruption_run",
+    "--fixture-dir",
+    "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-Q01C-R1\\20260924T225550+08\\synthetic_fixture",
+    "--resume"
+  ],
+  "process_pid": 11700,
+  "hold_after_stage_hook": null,
+  "audit_totals": {
+    "total_records": 660,
+    "unique_id_sub_path_keys": 660,
+    "duplicate_occurrences": 0,
+    "quality_conflicts": 0,
+    "domain_collisions": 0
+  },
+  "q_valid_true": 658,
+  "q_valid_false": 2,
+  "checks": {
+    "n_checks": 14,
+    "n_pass": 14,
+    "n_fail": 0,
+    "n_not_checked": 0
+  },
+  "sensitivity_imputation": {
+    "gates": {
+      "n_valid_min": 100,
+      "coverage_min": 0.95,
+      "n_unique_finite_min": 2
+    },
+    "all_gates_passed": true,
+    "imputed_records_total": 2,
+    "parameters": [
+      {
+        "domain": "commoncrawl",
+        "feature": "modernbert_professionalism",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "commoncrawl",
+        "candidate_rows": 164,
+        "n_valid": 163,
+        "coverage": 0.9939024390243902,
+        "n_unique_finite": 6,
+        "median": 0.6,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=commoncrawl); no holdout/extension/global fallback permitted"
+      },
+      {
+        "domain": "github",
+        "feature": "modernbert_professionalism",
+        "source_scope": "A1_calibration & is_unique_first",
+        "source_domain": "github",
+        "candidate_rows": 160,
+        "n_valid": 160,
+        "coverage": 1.0,
+        "n_unique_finite": 6,
+        "median": 0.6,
+        "gate_ok": true,
+        "gate_failures": [],
+        "source_proof": "rows equal to (evaluation_role=A1_calibration & is_unique_first & domain=github); no holdout/extension/global fallback permitted"
+      }
+    ]
+  },
+  "peak_rss_mb": 111.8,
+  "resume_events": [],
+  "protected_artifacts": {
+    "changed": [],
+    "removed": [],
+    "added": []
+  },
+  "content_read": false,
+  "fallback_used": false,
+  "old_quality_overwritten": false,
+  "strategy_changed": false,
+  "handoff_file": "handoff.md"
+}

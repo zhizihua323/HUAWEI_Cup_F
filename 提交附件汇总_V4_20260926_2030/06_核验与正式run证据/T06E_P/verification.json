@@ -1,0 +1,171 @@
+{
+  "verifier": "independent_standalone_no_execution_module_import",
+  "summary": {
+    "total": 12,
+    "pass": 12,
+    "fail": 0,
+    "not_checked": 0
+  },
+  "checks": [
+    {
+      "check_id": "V-Q-ANCHOR",
+      "status": "PASS",
+      "observed": {
+        "n": 40930,
+        "seven_domain_means": [
+          0.859575481214475,
+          0.5704182825511838,
+          0.48437572257777806,
+          0.5522120960395883,
+          0.45902097221578064,
+          0.583199289528651,
+          0.47793745610516497
+        ],
+        "q_A_star": 0.5695341857475174
+      },
+      "method": "explicit seven-domain count formula on T03E Parquet"
+    },
+    {
+      "check_id": "V-A-CDF",
+      "status": "PASS",
+      "observed": {
+        "rows": 40929,
+        "max_q_diff": 0.0,
+        "max_fa_diff": 0.0
+      },
+      "method": "explicit <= counts with side=right and 1/7 domain weights"
+    },
+    {
+      "check_id": "V-B6-CDF",
+      "status": "PASS",
+      "observed": {
+        "levels": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.6,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "weights": [
+          0.0,
+          0.125
+        ]
+      },
+      "method": "unique Q levels only; grid duplicates excluded from CDF"
+    },
+    {
+      "check_id": "V-H3",
+      "status": "PASS",
+      "observed": {
+        "mapping_rows": 40931,
+        "q_A_star_mapped": 0.6
+      },
+      "method": "independent ceil(8F_A) inverse and support predicates"
+    },
+    {
+      "check_id": "V-QC-SAME-FA",
+      "status": "PASS",
+      "observed": {
+        "q_C_star": 0.5694585639959848,
+        "Q_B_from_same_F_A": 0.6,
+        "F_A_at_q_C_star": 0.5615302933212377
+      },
+      "method": "F_A evaluated from Q_baseline CDF only"
+    },
+    {
+      "check_id": "V-P0",
+      "status": "PASS",
+      "observed": {
+        "max_abs_diff": 0.0
+      },
+      "method": "A4 row normalization then column mean"
+    },
+    {
+      "check_id": "V-REGMIX-PREDICTIONS",
+      "status": "PASS",
+      "observed": {
+        "max_saved_prediction_diff": 2.6645352591003757e-15,
+        "max_metric_diff": 0.0,
+        "metrics": {
+          "train_1m": {
+            "rmse": 0.2722748326209449,
+            "spearman": 0.5457052841864937
+          },
+          "test_1m": {
+            "rmse": 0.22697777728471713,
+            "spearman": 0.6250743877317463
+          },
+          "test_60m": {
+            "rmse": 1.5173310791562076,
+            "spearman": 0.5591496910048065
+          },
+          "test_1B": {
+            "rmse": 3.188945347793164,
+            "spearman": 0.37229853479853475
+          },
+          "est_10b": {
+            "rmse": 3.58045739701531,
+            "spearman": -0.4536290322580645
+          },
+          "est_70b": {
+            "rmse": 3.9633176996590183,
+            "spearman": -0.5164650537634409
+          }
+        }
+      },
+      "method": "direct p @ frozen coefficient transpose; independent rank averages"
+    },
+    {
+      "check_id": "V-PQ",
+      "status": "PASS",
+      "observed": {
+        "rank": 17,
+        "augmented_rank": 17,
+        "relative_residual": 9.368877196481023e-16
+      },
+      "method": "numpy.linalg.svd projection and rank"
+    },
+    {
+      "check_id": "V-SCENARIOS",
+      "status": "PASS",
+      "observed": {
+        "scenario_count": 21,
+        "numeric_loss_filled": 0
+      },
+      "method": "registry hash, ID order, and scenario-input slot audit"
+    },
+    {
+      "check_id": "V-MANIFEST-SNAPSHOT",
+      "status": "PASS",
+      "observed": {
+        "input_hashes_match": true,
+        "snapshot_hashes_match": true,
+        "freeze_links_match": true
+      },
+      "method": "independent SHA256 verification; final output manifest read-back happens after finalization"
+    },
+    {
+      "check_id": "V-NO-B-READ",
+      "status": "PASS",
+      "observed": {
+        "declared_inputs": 52
+      },
+      "method": "input manifest path audit"
+    },
+    {
+      "check_id": "V-CHECKS-ZERO-FAIL",
+      "status": "PASS",
+      "observed": {
+        "total": 32,
+        "pass": 32,
+        "fail": 0,
+        "not_checked": 0
+      },
+      "method": "read checks.json summary"
+    }
+  ],
+  "created_local_time": "2026-09-25T08:07:20+08:00"
+}

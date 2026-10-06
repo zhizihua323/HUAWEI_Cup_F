@@ -1,0 +1,17 @@
+[2026-09-25T00:39:55.740+08:00] TASK-Q01C start run_id=midstage_run mode=fixture resume=True stage=all pid=38816
+[2026-09-25T00:39:55.755+08:00] stage=s00_preflight REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:39:55.759+08:00] stage=s01_synthetic_tests REUSABLE (stage marker validated); not recomputed
+[2026-09-25T00:39:55.766+08:00] stage=s10_scan_a1 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:39:55.774+08:00] stage=s11_scan_a2 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:39:55.781+08:00] stage=s12_scan_a3 REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:39:55.790+08:00] stage=s20_score_primary REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:39:55.798+08:00] stage=s30_sensitivity REUSABLE (checkpoint and stage marker validated); not recomputed
+[2026-09-25T00:39:55.914+08:00] stage=s40_summarize domain rows=20 denominators=280 sensitivity rows=20 comparison=20
+[2026-09-25T00:39:56.569+08:00] stage=s40_summarize complete (summaries + report)
+[2026-09-25T00:39:56.569+08:00] stage=s40_summarize done elapsed_s=0.769
+[2026-09-25T00:39:56.598+08:00] running independent verifier: D:\anaconda\python.exe -X utf8 C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c_verify.py --run-dir C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c_tests\q01c_r2_scratch_20260925003952\midstage_interruption\midstage_run --fixture-manifest C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\outputs\quality_q01c_tests\q01c_r2_scratch_20260925003952\synthetic_fixture\fixture_manifest.json
+[2026-09-25T00:39:57.221+08:00] stage=s50_verify complete checks={'n_checks': 14, 'n_pass': 14, 'n_fail': 0, 'n_not_checked': 0}
+[2026-09-25T00:39:57.221+08:00] stage=s50_verify done elapsed_s=0.649
+final manifest written with 66 files; read-only recheck follows
+[2026-09-25T00:39:57.298+08:00] stage=s60_finalize done elapsed_s=0.074
+[2026-09-25T00:39:57+08:00] TASK-Q01C end status=COMPLETE_PENDING_REVIEW exit_code=0

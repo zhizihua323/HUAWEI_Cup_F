@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "frozen_contract_loaded",
+      "status": "PASS",
+      "detail": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-T06E-INTEGRATE\\20260925T110904+08"
+    },
+    {
+      "check": "primary_model_M0_B1",
+      "status": "PASS",
+      "detail": "M0_B1, E/A/B/alpha/beta from t07_parameter_table"
+    },
+    {
+      "check": "three_budgets_exact",
+      "status": "PASS",
+      "detail": "1e18;1e20;1e22"
+    },
+    {
+      "check": "H_values_exact",
+      "status": "PASS",
+      "detail": "2048;4096;8192;32768;131072"
+    },
+    {
+      "check": "unit_conversion",
+      "status": "PASS",
+      "detail": "N_physical=1e9*N_B; D_physical=1e9*D_B; 1B*1B training compute=6e18"
+    },
+    {
+      "check": "H_crit",
+      "status": "PASS",
+      "detail": "30000.0"
+    },
+    {
+      "check": "three_g_functions_compared",
+      "status": "PASS",
+      "detail": "G_EXP/G_POWER/G_LOG present for S01 and supplementary S03"
+    },
+    {
+      "check": "null_only_N_D_optimized",
+      "status": "PASS",
+      "detail": "S00 Q/p marked NOT_IDENTIFIED_NOT_OPTIMIZED/FIXED_P0"
+    },
+    {
+      "check": "joint_Q_p_forbidden",
+      "status": "PASS",
+      "detail": "quality scenarios fix p=p0; mixture scenarios do not optimize Q"
+    },
+    {
+      "check": "scenario_only_quality_mixture",
+      "status": "PASS",
+      "detail": "none promoted to identified joint model"
+    },
+    {
+      "check": "S17_no_numeric",
+      "status": "PASS",
+      "detail": "NO_NUMERIC_OPTIMUM; no legacy_negative_boundary substring"
+    },
+    {
+      "check": "support_and_oos",
+      "status": "PASS",
+      "detail": "no OOS numeric optimum; no clipping"
+    },
+    {
+      "check": "budget_feasibility",
+      "status": "PASS",
+      "detail": "max_relative_violation=9.403629568e-13"
+    },
+    {
+      "check": "KKT",
+      "status": "PASS",
+      "detail": "max_kkt_residual=2.7932317030401693e-08"
+    },
+    {
+      "check": "joint_draws_whole_rows",
+      "status": "PASS",
+      "detail": "draws sampled from saved B1/B6 model rows; no per-parameter resampling"
+    },
+    {
+      "check": "manifest_inputs_current",
+      "status": "PASS",
+      "detail": "{'integrate': {'manifest': 'diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/output_manifest.json', 'entries': 23, 'mismatch_count': 0, 'status': 'PASS', 'mismatches': []}, 'B': {'manifest': 'diagnostics/TASK-T06E-B/20260925T100306+08/output_manifest.json', 'entries': 104, 'mismatch_count': 0, 'status': 'PASS', 'mismatches': []}, 'P': {'manifest': 'diagnostics/TASK-T06E-P/20260925T075729+08/output_manifest.json', 'entries': 49, 'mismatch_count': 0, 'status': 'PASS', 'mismatches': []}}"
+    }
+  ]
+}

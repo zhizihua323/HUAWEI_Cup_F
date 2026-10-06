@@ -1,0 +1,144 @@
+{
+  "generated_local": "2026-09-25T01:58:02+08:00",
+  "n_tests": 17,
+  "n_failed": 0,
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "penalty_midpoint_top2",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "penalty_midpoint_top3",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "cluster_penalty_mean",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "candidate_formula",
+      "actual": 0.792,
+      "expected": 0.792,
+      "tolerance": 1e-15,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "penalty_lower_bound",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "penalty_upper_bound",
+      "actual": 1.0,
+      "expected": 1.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "lambda_zero_identity",
+      "actual": 0.8,
+      "expected": 0.8,
+      "tolerance": 1e-15,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "rule_not_applicable_identity",
+      "actual": 0.8,
+      "expected": 0.8,
+      "tolerance": 1e-15,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "duplicate_member_no_weight_increase",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-15,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "penalty_monotone_nondecreasing",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "candidate_monotone_nonincreasing",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "candidate_ge_098q",
+      "actual": 0.98,
+      "expected": 0.98,
+      "tolerance": 1e-12,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "new_zero_values",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "original_zero_preserved",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "degenerate_quantile_detected",
+      "actual": false,
+      "expected": false,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": "q99<=q95 must not qualify"
+    },
+    {
+      "test": "unknown_domain_not_applicable",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "test": "invalid_row_status_enumerated",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "anchors": {
+    "B1_rows": 1176,
+    "B1_N_unique": 8,
+    "B1_N_min": 0.070542,
+    "B1_N_max": 11.965825,
+    "B1_D_min": 0.134,
+    "B1_D_max": 299.893,
+    "B6_rows": 360,
+    "B6_N_unique": 9,
+    "B6_D_unique": 5,
+    "B6_ND_groups": 45,
+    "B6_Q_levels": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "B6_Q_train_le_0.6_rows": 225,
+    "B6_Q_stress_gt_0.6_rows": 135,
+    "B7_rows": 450,
+    "B7_B6_exact_overlap_keys": 360,
+    "B7_new_keys": 90,
+    "B7_overlap_exact_loss_count": 360,
+    "B7_overlap_max_abs_loss_diff": 0.0,
+    "B8_rows": 1704,
+    "B8_ND_groups": 150,
+    "B8_B6_common_keys": 160,
+    "B8_B6_loss_exact_count": 0,
+    "B8_B6_max_abs_loss_diff": 2.5769,
+    "B6_loss_all_finite_positive": true,
+    "B1_loss_all_finite_positive": true
+  },
+  "overlap_checks": {
+    "B6_B7_exact_loss_max_abs_diff": 0.0,
+    "B6_B8_exact_loss_max_abs_diff": 2.5769
+  },
+  "units": {
+    "N": "1e9 parameters",
+    "D": "1e9 tokens",
+    "loss": "source validation cross-entropy"
+  },
+  "source_labels": {
+    "B1": "observed",
+    "B6": "semisynthetic",
+    "B7": "semisynthetic_with_B6_repeats",
+    "B8": "semisynthetic_with_extrapolation"
+  }
+}

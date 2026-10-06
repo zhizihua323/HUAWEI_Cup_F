@@ -1,0 +1,66 @@
+﻿dataset,file,check,key,rows,dup_count,unique_keys,is_unique,note
+C1,leaderboard_cleaned.csv,exact_duplicate_rows,(all columns),4576,0,4576,True,byte/float-identical full rows
+C1,leaderboard_cleaned.csv,primary_key_candidate,Model,4576,79,4497,False,"candidate key; uniqueness measured, not assumed"
+C1,leaderboard_cleaned.csv,primary_key_candidate,Model + Submission Date,4576,36,4540,False,"candidate key; uniqueness measured, not assumed"
+C1,leaderboard_cleaned.csv,model_identity_repeat,Model,4576,79,4497,False,repeated model names; not automatically the same row
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,#Params (B),4576,4091,482,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,IFEval,4576,807,3769,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,BBH,4576,99,4477,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,MATH Lvl 5,4576,3842,734,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,GPQA,4576,4349,227,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,MUSR,4576,1272,3304,False,repeated identical values inside one numeric field
+C1,leaderboard_cleaned.csv,numeric_duplicate_within_field,MMLU-PRO,4576,1879,2697,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,exact_duplicate_rows,(all columns),4576,0,4576,True,byte/float-identical full rows
+C2,leaderboard_enhanced.csv,primary_key_candidate,Model,4576,79,4497,False,"candidate key; uniqueness measured, not assumed"
+C2,leaderboard_enhanced.csv,primary_key_candidate,Model + Submission Date,4576,36,4540,False,"candidate key; uniqueness measured, not assumed"
+C2,leaderboard_enhanced.csv,model_identity_repeat,Model,4576,79,4497,False,repeated model names; not automatically the same row
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,#Params (B),4576,4091,482,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,IFEval,4576,807,3769,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,BBH,4576,99,4477,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,MATH Lvl 5,4576,3842,734,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,GPQA,4576,4349,227,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,MUSR,4576,1272,3304,False,repeated identical values inside one numeric field
+C2,leaderboard_enhanced.csv,numeric_duplicate_within_field,MMLU-PRO,4576,1879,2697,False,repeated identical values inside one numeric field
+C3,leaderboard_extended_timeseries.csv,exact_duplicate_rows,(all columns),4599,0,4599,True,byte/float-identical full rows
+C3,leaderboard_extended_timeseries.csv,primary_key_candidate,Model + Year,4599,79,4520,False,"candidate key; uniqueness measured, not assumed"
+C3,leaderboard_extended_timeseries.csv,primary_key_candidate,Model,4599,79,4520,False,"candidate key; uniqueness measured, not assumed"
+C3,leaderboard_extended_timeseries.csv,model_identity_repeat,Model,4599,79,4520,False,repeated model names; not automatically the same row
+C3,leaderboard_extended_timeseries.csv,numeric_duplicate_within_field,Params_B,4599,4111,488,False,repeated identical values inside one numeric field
+C3,leaderboard_extended_timeseries.csv,numeric_duplicate_within_field,Average,4599,1959,2640,False,repeated identical values inside one numeric field
+C4,epoch_all_ai_models.csv,exact_duplicate_rows,(all columns),3523,0,3523,True,byte/float-identical full rows
+C4,epoch_all_ai_models.csv,primary_key_candidate,Model,3523,5,3518,False,"candidate key; uniqueness measured, not assumed"
+C4,epoch_all_ai_models.csv,primary_key_candidate,Model + Publication date,3523,4,3519,False,"candidate key; uniqueness measured, not assumed"
+C4,epoch_all_ai_models.csv,model_identity_repeat,Model,3523,5,3518,False,repeated model names; not automatically the same row
+C4,epoch_all_ai_models.csv,numeric_duplicate_within_field,Parameters,3523,1358,939,False,repeated identical values inside one numeric field
+C4,epoch_all_ai_models.csv,numeric_duplicate_within_field,Training compute (FLOP),3523,137,1253,False,repeated identical values inside one numeric field
+C5,loss_benchmark_bridge.csv,exact_duplicate_rows,(all columns),43,0,43,True,byte/float-identical full rows
+C5,loss_benchmark_bridge.csv,primary_key_candidate,Model,43,0,43,True,"candidate key; uniqueness measured, not assumed"
+C5,loss_benchmark_bridge.csv,model_identity_repeat,Model,43,0,43,True,repeated model names; not automatically the same row
+C5,loss_benchmark_bridge.csv,numeric_duplicate_within_field,N_params_B,43,5,38,False,repeated identical values inside one numeric field
+C5,loss_benchmark_bridge.csv,numeric_duplicate_within_field,D_tokens_B,43,6,1,False,repeated identical values inside one numeric field
+C5,loss_benchmark_bridge.csv,numeric_duplicate_within_field,Val_Loss,43,13,30,False,repeated identical values inside one numeric field
+C6,loss_benchmark_bridge_expanded.csv,exact_duplicate_rows,(all columns),75,0,75,True,byte/float-identical full rows
+C6,loss_benchmark_bridge_expanded.csv,primary_key_candidate,Model,75,0,75,True,"candidate key; uniqueness measured, not assumed"
+C6,loss_benchmark_bridge_expanded.csv,model_identity_repeat,Model,75,0,75,True,repeated model names; not automatically the same row
+C6,loss_benchmark_bridge_expanded.csv,numeric_duplicate_within_field,N_params_B,75,35,40,False,repeated identical values inside one numeric field
+C6,loss_benchmark_bridge_expanded.csv,numeric_duplicate_within_field,D_tokens_B,75,6,1,False,repeated identical values inside one numeric field
+C6,loss_benchmark_bridge_expanded.csv,numeric_duplicate_within_field,Val_Loss,75,44,31,False,repeated identical values inside one numeric field
+C7,model_architecture_metadata.csv,exact_duplicate_rows,(all columns),45,0,45,True,byte/float-identical full rows
+C7,model_architecture_metadata.csv,primary_key_candidate,model_name,45,0,45,True,"candidate key; uniqueness measured, not assumed"
+C7,model_architecture_metadata.csv,model_identity_repeat,model_name,45,0,45,True,repeated model names; not automatically the same row
+C7,model_architecture_metadata.csv,numeric_duplicate_within_field,n_layers,45,27,18,False,repeated identical values inside one numeric field
+C7,model_architecture_metadata.csv,numeric_duplicate_within_field,max_position_embeddings,45,40,5,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,exact_duplicate_rows,(all columns),4576,0,4576,True,byte/float-identical full rows
+C9,C9: data/train-00000-of-00001.parquet,primary_key_candidate,eval_name,4576,0,4576,True,"candidate key; uniqueness measured, not assumed"
+C9,C9: data/train-00000-of-00001.parquet,primary_key_candidate,fullname,4576,79,4497,False,"candidate key; uniqueness measured, not assumed"
+C9,C9: data/train-00000-of-00001.parquet,primary_key_candidate,fullname + Precision,4576,0,4576,True,"candidate key; uniqueness measured, not assumed"
+C9,C9: data/train-00000-of-00001.parquet,model_identity_repeat,Model,4576,79,4497,False,repeated model names; not automatically the same row
+C9,C9: data/train-00000-of-00001.parquet,model_identity_repeat,fullname,4576,79,4497,False,repeated model names; not automatically the same row
+C9,C9: data/train-00000-of-00001.parquet,model_identity_repeat,Base Model,4576,1285,3291,False,repeated model names; not automatically the same row
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,#Params (B),4576,4093,483,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,IFEval,4576,807,3769,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,BBH,4576,99,4477,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,MATH Lvl 5,4576,3837,739,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,GPQA,4576,4349,227,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,MUSR,4576,1238,3338,False,repeated identical values inside one numeric field
+C9,C9: data/train-00000-of-00001.parquet,numeric_duplicate_within_field,MMLU-PRO,4576,1879,2697,False,repeated identical values inside one numeric field

@@ -1,0 +1,128 @@
+{
+  "task": "TASK-T03E",
+  "protected_columns": [
+    "file_id",
+    "source_line",
+    "key_sha256",
+    "domain",
+    "evaluation_role",
+    "is_unique_first",
+    "overlap_a1",
+    "Q_valid",
+    "Q_baseline"
+  ],
+  "rows_total": 9,
+  "input_checks": [
+    {
+      "sha256": "abc",
+      "bytes": 10,
+      "matches_manifest": true,
+      "manifest_sha256": "abc"
+    }
+  ],
+  "input_sha256_stable": true,
+  "role_reads": {
+    "A1_calibration": {
+      "rows_role_read": 4,
+      "rows_in_assembly": 4,
+      "columns": {
+        "file_id": true,
+        "source_line": true,
+        "key_sha256": true,
+        "domain": true,
+        "evaluation_role": true,
+        "is_unique_first": true,
+        "overlap_a1": true,
+        "Q_valid": true,
+        "Q_baseline": true
+      },
+      "row_count_identical": true,
+      "key_sequence_identical": true
+    },
+    "A1_holdout": {
+      "rows_role_read": 2,
+      "rows_in_assembly": 2,
+      "columns": {
+        "file_id": true,
+        "source_line": true,
+        "key_sha256": true,
+        "domain": true,
+        "evaluation_role": true,
+        "is_unique_first": true,
+        "overlap_a1": true,
+        "Q_valid": true,
+        "Q_baseline": true
+      },
+      "row_count_identical": true,
+      "key_sequence_identical": true
+    },
+    "extension_overlap_A1": {
+      "rows_role_read": 1,
+      "rows_in_assembly": 1,
+      "columns": {
+        "file_id": true,
+        "source_line": true,
+        "key_sha256": true,
+        "domain": true,
+        "evaluation_role": true,
+        "is_unique_first": true,
+        "overlap_a1": true,
+        "Q_valid": true,
+        "Q_baseline": true
+      },
+      "row_count_identical": true,
+      "key_sequence_identical": true
+    },
+    "extension_new_records": {
+      "rows_role_read": 2,
+      "rows_in_assembly": 2,
+      "columns": {
+        "file_id": true,
+        "source_line": true,
+        "key_sha256": true,
+        "domain": true,
+        "evaluation_role": true,
+        "is_unique_first": true,
+        "overlap_a1": true,
+        "Q_valid": true,
+        "Q_baseline": true
+      },
+      "row_count_identical": true,
+      "key_sequence_identical": true
+    }
+  },
+  "frozen_calibration_consistency": {
+    "frozen_rows": 4,
+    "assembly_rows": 4,
+    "key_sequence_identical": true,
+    "Q_baseline": {
+      "nan_pattern_identical": true,
+      "max_abs_delta": 0.0,
+      "within_1e-12": true
+    },
+    "Q_C": {
+      "nan_pattern_identical": true,
+      "max_abs_delta": 0.0,
+      "within_1e-12": true
+    },
+    "P": {
+      "nan_pattern_identical": true,
+      "max_abs_delta": 0.0,
+      "within_1e-12": true
+    },
+    "p_top2gram": {
+      "nan_pattern_identical": true,
+      "max_abs_delta": 0.0,
+      "within_1e-12": true
+    },
+    "p_top3gram": {
+      "nan_pattern_identical": true,
+      "max_abs_delta": 0.0,
+      "within_1e-12": true
+    },
+    "Q_support_status": true
+  },
+  "generated_local": "2026-09-25T01:59:26+08:00",
+  "pid": 41784,
+  "status": "PASS"
+}

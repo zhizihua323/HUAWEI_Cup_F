@@ -1,0 +1,11 @@
+{
+  "seal_hash_matches": true,
+  "bridge_identity_exact": true,
+  "six_task_vector_preserved": true,
+  "partial_models_in_dataset": 0,
+  "corrupt_json_scored": false,
+  "medium_D_imputed": false,
+  "c5_source_preserved": true,
+  "c6_source_preserved": true,
+  "final_eligibility": "CONDITIONAL_ASSOCIATION_ONLY"
+}

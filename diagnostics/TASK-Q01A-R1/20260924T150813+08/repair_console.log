@@ -1,0 +1,9 @@
+[2026-09-24T15:08:17.826+08:00] TASK-Q01A-R1 repair start local=2026-09-24T15:08:17+08:00 run_dir=C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\diagnostics\TASK-Q01A-R1\20260924T150813+08
+[2026-09-24T15:08:17.826+08:00] boundary: no compressed input (A1-A3) is opened, decompressed or hashed in this script
+[2026-09-24T15:08:17.892+08:00] stage=events rows=133 raw_event_keys=19 extract_events=19 identity_events=0
+[2026-09-24T15:08:29.354+08:00] stage=row_masks rows=272505 corrections=19 unchanged_column_diffs={}
+[2026-09-24T15:08:29.847+08:00] stage=raw_field_counts rows=264 event_cross_check_mismatches=4
+[2026-09-24T15:08:30.316+08:00] stage=tables patterns_kept=316 patterns_changed=49 pairwise_kept=39100 pairwise_changed=629 denominators_changed=60 concentration_rows=254
+[2026-09-24T15:08:30.319+08:00] stage=anchors ok=True anchors={"raw_anomaly_record_counts_by_file_field": {"A1|modernbert_professionalism": 5, "A1|modernbert_reasoning": 13, "A3_github|modernbert_professionalism": 1}, "raw_anomaly_union_records": {"A1": 18, "A3_github": 1}, "raw_anomaly_union_total": 19, "two_field_union_records": 19, "two_field_intersection_records": 0, "nan_element_totals_by_file_field": {"A1|modernbert_professionalism": 30, "A1|modernbert_reasoning": 78, "A3_github|modernbert_professionalism": 6}, "nan_element_grand_total": 114, "all_unique_raw_union": 19, "all_unique_raw_intersection_two_fields": 0, "all_unique_denominators": {"n_total": 261086, "n_valid_0": 0, "n_valid_1": 0, "n_valid_2": 19, "n_valid_3": 261067, "n_range_defined": 261086, "n_std0_defined": 261086, "n_false_from_missing_range": 0, "n_q_nonmissing": 261067, "n_q_missing": 19}, "denominator_rule_check": {"q_std_n_effective": 261067, "q_std_variance_divisor": 261
+[2026-09-24T15:08:30.356+08:00] stage=changes rows=794
+[2026-09-24T15:08:30.420+08:00] stage=done status=COMPLETED errors=[]

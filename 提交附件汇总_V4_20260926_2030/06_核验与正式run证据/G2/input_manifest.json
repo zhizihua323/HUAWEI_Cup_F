@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "run_id": "20260925T195336+08",
+  "inputs": [
+    {
+      "path": "tasks/TASK-G2_Q2广义标度律与强制验证闭合.md",
+      "role": "task_contract",
+      "bytes": 9479,
+      "sha256": "fc7dcc67103edd5a1549824fd960b73d73935fc13cde7d2e38c4856660d7a747"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_model_contract.json",
+      "role": "frozen_T07_model_contract",
+      "bytes": 6458,
+      "sha256": "925ffeaec52dd3d72751e5e6d5e99c9cb077ee5106e554fb858530f6b0b8160e"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/scenario_registry_filled.csv",
+      "role": "frozen_scenario_registry",
+      "bytes": 11153,
+      "sha256": "af8673afda6f1057fc104e0e257ef183d9811a5835db9a080596425800126237"
+    },
+    {
+      "path": "solution/outputs/mixture/model.json",
+      "role": "frozen_RegMix_linear_model",
+      "bytes": 77379,
+      "sha256": "3ddd88c26476b5965d507c9b242f7e16ea2fd4e9f33bf81a0e0815b86fda3fed"
+    },
+    {
+      "path": "F题/real_attachments/A_data_value/domain_mapping_guide.csv",
+      "role": "A16_domain_mapping_guide",
+      "bytes": 1296,
+      "sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480"
+    },
+    {
+      "path": "paper/T06_RESULT_FREEZE.md",
+      "role": "readonly_T06_freeze",
+      "bytes": 2990,
+      "sha256": "dd34f802a6f940065864b30312fdc436549d8b7a3da215bece4131db6182efad"
+    },
+    {
+      "path": "paper/T07_RESULT_FREEZE.md",
+      "role": "readonly_T07_freeze",
+      "bytes": 4000,
+      "sha256": "c96b481932daedfac92ef0e45fd17f2938cec6f26cf7e7a991baa46ab4c8b86b"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "role": "source_B1",
+      "bytes": 111459,
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "role": "source_B10",
+      "bytes": 4744,
+      "sha256": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "role": "source_B2",
+      "bytes": 89643,
+      "sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "role": "source_B4",
+      "bytes": 1421,
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "role": "source_B5",
+      "bytes": 1967,
+      "sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "role": "source_B9",
+      "bytes": 13400,
+      "sha256": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14540,
+      "sha256": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 14040,
+      "sha256": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482"
+    },
+    {
+      "path": "F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "role": "source_B3_trajectory",
+      "bytes": 13540,
+      "sha256": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-B-R1/20260925T103130+08/run_summary.json",
+      "role": "readonly_T06E_B_run_summary",
+      "bytes": 5032,
+      "sha256": "65814989860698db79018c252cc52195662a1f96c78597344ca11382759f0f46"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-P/20260925T075729+08/run_summary.json",
+      "role": "readonly_T06E_P_run_summary",
+      "bytes": 1836,
+      "sha256": "8bbf51e82bc4601de3c65a96460e06fe5df02312c5459c14bfe74d953118a98e"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/t07_parameter_table.csv",
+      "role": "frozen_T07_parameter_table",
+      "bytes": 4285,
+      "sha256": "fc3649a1b076c69ae0e0d907618719211e3100b1d7d763da2a2f554c129d20cc"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/integrated_identifiability_matrix.csv",
+      "role": "frozen_identifiability_matrix",
+      "bytes": 6822,
+      "sha256": "f2512bab0ef3775b2735ba06ed4164c88d3f798fee7ff10fad5b0edb5b55eda5"
+    },
+    {
+      "path": "diagnostics/TASK-T06E-INTEGRATE/20260925T110904+08/scenario_registry_filled.csv",
+      "role": "frozen_scenario_registry_duplicate_role",
+      "bytes": 11153,
+      "sha256": "af8673afda6f1057fc104e0e257ef183d9811a5835db9a080596425800126237"
+    }
+  ],
+  "actual_file_count": 26,
+  "all_actual_read_files_registered": true,
+  "readonly_boundary": "T06/T07 and old scaling/paper files are not modified."
+}

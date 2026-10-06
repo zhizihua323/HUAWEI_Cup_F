@@ -1,0 +1,19 @@
+﻿role,domain,n_total,n_unique_first,n_Q_valid,n_Q_missing,n_analysis_valid,analysis_coverage,confirmatory_rows,analysis_scope,first_read_time
+A1_calibration,arxiv,1122,1122,1122,0,1122,1.0,1122,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,book,137,137,137,0,137,1.0,137,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,c4,8041,8041,8041,0,8041,1.0,8041,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,commoncrawl,7691,7691,7688,3,7688,0.9996099336887271,7688,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,github,7963,7963,7963,0,7963,1.0,7963,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,stackexchange,7966,7966,7966,0,7966,1.0,7966,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_calibration,wikipedia,8023,8023,8013,10,8013,0.9987535834475881,8013,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:30+08:00
+A1_holdout,arxiv,297,297,297,0,297,1.0,297,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,book,34,34,34,0,34,1.0,34,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,c4,1959,1959,1959,0,1959,1.0,1959,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,commoncrawl,1949,1949,1948,1,1948,0.9994869163673679,1948,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,github,2037,2037,2037,0,2037,1.0,2037,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,stackexchange,2034,2034,2034,0,2034,1.0,2034,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+A1_holdout,wikipedia,1977,1977,1973,4,1973,0.9979767324228629,1973,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.460+08:00
+extension_overlap_A1,arxiv,1419,0,0,0,0,,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.650+08:00
+extension_overlap_A1,github,10000,0,0,0,0,,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.650+08:00
+extension_new_records,arxiv,16104,16104,16104,0,16104,1.0,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.650+08:00
+extension_new_records,github,193752,193752,193751,1,193751,0.9999948387629547,0,"is_unique_first & Q_valid & finite(Q_baseline, top2gram, top3gram)",2026-09-25T01:59:36.650+08:00

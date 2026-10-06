@@ -1,0 +1,2 @@
+{"ts": "2026-09-25T01:57:47+08:00", "mode": "calibration-preflight", "stage": "calibration_preflight", "event": "start", "pid": 2024}
+{"ts": "2026-09-25T01:57:47+08:00", "mode": "calibration-preflight", "stage": "calibration_preflight", "event": "complete", "pid": 2024, "labels": ["arxiv", "book", "c4", "commoncrawl", "github", "stackexchange", "wikipedia"], "calibration_rows": 40943, "unique_first": 40943}

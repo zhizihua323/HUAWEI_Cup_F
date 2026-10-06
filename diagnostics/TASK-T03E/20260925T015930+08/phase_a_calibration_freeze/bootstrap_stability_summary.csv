@@ -1,0 +1,4 @@
+﻿domain,n,replicates,joint_pass_count,required,status
+c4,8041,200,200,190,PASS
+commoncrawl,7688,200,200,190,PASS
+wikipedia,8013,200,200,190,PASS

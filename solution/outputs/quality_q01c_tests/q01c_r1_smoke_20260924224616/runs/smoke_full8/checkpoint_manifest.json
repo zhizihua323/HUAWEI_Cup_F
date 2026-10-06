@@ -1,0 +1,143 @@
+{
+  "run_id": "smoke_full8",
+  "generated_local": "2026-09-24T22:47:39+08:00",
+  "checkpoints": [
+    {
+      "path": "checkpoints/s00_preflight.stage.COMPLETE",
+      "bytes": 647,
+      "sha256": "9d27881d427ca127810107a099fb1f03f1778641b7247e0ace3253f6be1e42fa"
+    },
+    {
+      "path": "checkpoints/s01_synthetic_tests.stage.COMPLETE",
+      "bytes": 253,
+      "sha256": "128b447c11ecbfedc373680304742bd079f242cc54e131ba70090cb1d47a78ec"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.checkpoint.COMPLETE",
+      "bytes": 335,
+      "sha256": "b4aa65aa554e0c3b94da846dff89aa91bde8ed81f27e6a39ad1c129262ae624c"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.meta.json",
+      "bytes": 2627,
+      "sha256": "279911392b3cbea039b170135cb717bb9f42722f35520e6b9a90af7d2c277857"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.payload.parquet",
+      "bytes": 64328,
+      "sha256": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9"
+    },
+    {
+      "path": "checkpoints/s10_scan_a1.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "8af4667f65224f4f5c6e88758e513a2dd08a9823c1be4fd9856b2daa04d504d9"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.checkpoint.COMPLETE",
+      "bytes": 334,
+      "sha256": "76680e7cdee44b7781f26af974b1331671960f1ed1acd3da66116b4e24564ecf"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.meta.json",
+      "bytes": 2620,
+      "sha256": "38e119cc7eef1757291ca17006a52aebcf63e421d9e149e52e14eb594fb76f3c"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.payload.parquet",
+      "bytes": 32703,
+      "sha256": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47"
+    },
+    {
+      "path": "checkpoints/s11_scan_a2.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "d44003077f11ce805bd9cbedc28440d2e5cba934400f51811ecc1bf78ced3b87"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.checkpoint.COMPLETE",
+      "bytes": 334,
+      "sha256": "45e1f33f011271500a79ade732c6a583f9915066cc87dbfdc6070718098376a4"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.meta.json",
+      "bytes": 2667,
+      "sha256": "a505a21d1a0e36221bd658d3f7ea874ef05d967ceb484302c369399642b1e68e"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.payload.parquet",
+      "bytes": 33422,
+      "sha256": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b"
+    },
+    {
+      "path": "checkpoints/s12_scan_a3.stage.COMPLETE",
+      "bytes": 374,
+      "sha256": "142fc07c9779f02ee97b158996cb51ea4706bd4fca800be8f854c346dec5182b"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.checkpoint.COMPLETE",
+      "bytes": 341,
+      "sha256": "e92bc6235871f8328f6555a983b5a9c466959b13331887b01a2a9c7fa193ed00"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.meta.json",
+      "bytes": 2820,
+      "sha256": "691ac38a49d07cbbb340bf6572580a74841605d55e5ee9a220b5bdc8b7d02944"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.payload.parquet",
+      "bytes": 102422,
+      "sha256": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9"
+    },
+    {
+      "path": "checkpoints/s20_score_primary.stage.COMPLETE",
+      "bytes": 357,
+      "sha256": "c45cbc320551bbe52fa189589ae3faa8caef2e804bf38bdf65403540c6b7551f"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.checkpoint.COMPLETE",
+      "bytes": 339,
+      "sha256": "a6824120a7a0ecd3723d3bbb15a9749f76ae827b4350bf7c47538380cd846919"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.meta.json",
+      "bytes": 2933,
+      "sha256": "f1c472b83520a82dd966f8f35ace7f37dd8616e4b50dee1817460aa55a4b9cc8"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.payload.parquet",
+      "bytes": 113182,
+      "sha256": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f"
+    },
+    {
+      "path": "checkpoints/s30_sensitivity.stage.COMPLETE",
+      "bytes": 375,
+      "sha256": "2ddcce65e95f15bc42f96aeff6f5df766422c3940e755cf623e39d0892b23b7d"
+    },
+    {
+      "path": "checkpoints/s40_summarize.checkpoint.COMPLETE",
+      "bytes": 337,
+      "sha256": "78e0933f4619d8a4e3c283c7dde30b5b53e3f4e1da55996acfddf2228bf3059e"
+    },
+    {
+      "path": "checkpoints/s40_summarize.meta.json",
+      "bytes": 667,
+      "sha256": "3727c37c7468106a0e557e6534c4b9eaec0c38ba4a955b97f98ab2af2d8c9687"
+    },
+    {
+      "path": "checkpoints/s40_summarize.payload.parquet",
+      "bytes": 24946,
+      "sha256": "b2ad7bc64aa0b5a3b87b2ebed918e1db36c374f0bc84dd0c87ec3c4185e2756a"
+    },
+    {
+      "path": "checkpoints/s40_summarize.stage.COMPLETE",
+      "bytes": 1357,
+      "sha256": "b0caf18142c0b9be9eba0c75a075b4d94432f4b7e412832ad3b6364d75bd2d92"
+    },
+    {
+      "path": "checkpoints/s50_verify.stage.COMPLETE",
+      "bytes": 424,
+      "sha256": "1684ba161b215781f448d56ca153d5c1bf26906754468d2caf2b5a612eea1407"
+    }
+  ],
+  "resume_policy": "a COMPLETE checkpoint is reused only when input/config/code hashes match",
+  "resume_probes": []
+}

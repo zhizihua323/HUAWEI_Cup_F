@@ -1,0 +1,62 @@
+[
+  {
+    "path": "paper\\final_work\\FINAL_MANUSCRIPT_V2.docx",
+    "sha256": "6dddf569a799079d173225ca3c52324fb97079732937666caab3a3122396471a",
+    "bytes": 3866621
+  },
+  {
+    "path": "paper\\final_work\\_qa\\v2_render_8\\FINAL_MANUSCRIPT_V2.pdf",
+    "sha256": "8ca95d4b45c02f431b518e0d004eb728c0585a0331f9ca516f68e37b7f8de004",
+    "bytes": 2045806
+  },
+  {
+    "path": "paper\\final_work\\FINAL_MANUSCRIPT_V2_SOURCE.md",
+    "sha256": "988101f693d50f3acba9ece0e8123e85c5a60ef7f467b4f55d7b39f4bfb67e5a",
+    "bytes": 53203
+  },
+  {
+    "path": "paper\\final_work\\FINAL_MANUSCRIPT_V2_INTEGRATED.md",
+    "sha256": "5115abb94c8a5569004a5243ea39e9f11dccb706ce2f774c21ab23e414f596ac",
+    "bytes": 55728
+  },
+  {
+    "path": "paper\\final_figures\\submission_v2\\fig01_submission_framework.png",
+    "sha256": "27d047d15697583c4d437fd7d8244dc1d7a19314f0172cf670dd5a9e70f66385",
+    "bytes": 294464
+  },
+  {
+    "path": "paper\\final_figures\\submission_v2\\fig02_submission_q1_quality_validation.png",
+    "sha256": "f53d7baceaa21772c6036e8b5e6ed39cf7a81acf88f3481e8f1f0461052123b3",
+    "bytes": 695863
+  },
+  {
+    "path": "paper\\final_figures\\submission_v2\\fig03_submission_regmix_transport.png",
+    "sha256": "49844bd8b9d5a9661402c836934025b9f5ce7784084429f65c43fa9b16f190c1",
+    "bytes": 999725
+  },
+  {
+    "path": "paper\\final_figures\\submission_v2\\fig04_submission_q2_validation.png",
+    "sha256": "b0d70570fa6655162fdf8783f6696fc9e6cf32544076f97895e7df3b2e6cb57e",
+    "bytes": 814140
+  },
+  {
+    "path": "paper\\final_figures\\submission_v2\\fig06_submission_q4_scenarios.png",
+    "sha256": "c9485250e86c46ad12e02f1a6ca67d0432444a9429349a217b4a3bc079ac7fa4",
+    "bytes": 665253
+  },
+  {
+    "path": "paper\\FINAL_SCIENTIFIC_FREEZE.md",
+    "sha256": "55c413033b7675466fb46f2f070494b8ffae6fd2cbbfaec9895bdb8feed3d977",
+    "bytes": 7221
+  },
+  {
+    "path": "paper\\FINAL_PAPER_PATCH_CONTRACT.md",
+    "sha256": "fd698917f6cb2c5f4a98a7c5a402d7d9afaaf9ff166ceed72a5cd7a742ce40c1",
+    "bytes": 10482
+  },
+  {
+    "path": "paper\\FINAL_RESULT_INDEX_V2.md",
+    "sha256": "5fbc51ea0fd5138392b33d3f695dd8b7430ed4327f320477598bf363a8a67595",
+    "bytes": 3966
+  }
+]

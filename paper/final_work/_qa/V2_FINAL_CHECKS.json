@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "pages": 26,
+  "checks": [
+    {
+      "check": "A4",
+      "status": "PASS",
+      "detail": [
+        595.303937007874,
+        841.889763779528
+      ]
+    },
+    {
+      "check": "abstract_two_pages",
+      "status": "PASS",
+      "detail": {
+        "abstract_pages": [
+          1,
+          2
+        ],
+        "toc_page": 3
+      }
+    },
+    {
+      "check": "continuous_footer",
+      "status": "PASS",
+      "detail": 26
+    },
+    {
+      "check": "no_placeholders",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "anonymous_body",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "no_header",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "all_display_math_editable",
+      "status": "PASS",
+      "detail": 27
+    },
+    {
+      "check": "no_empty_sum_operand",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "no_rendered_box",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "tables_and_figures",
+      "status": "PASS",
+      "detail": {
+        "tables": 9,
+        "figures": 5
+      }
+    },
+    {
+      "check": "reference_count",
+      "status": "PASS",
+      "detail": [
+        "kaplan2020scaling",
+        "hoffmann2022training",
+        "penedo2024fineweb",
+        "warner2025modernbert",
+        "xie2023dsir",
+        "spearman1904general",
+        "efron1979bootstrap",
+        "openai_tools",
+        "liu2025regmix",
+        "scheffe1958mixtures",
+        "biderman2023pythia",
+        "zhou2023ifeval",
+        "suzgun2023bbh",
+        "hendrycks2021math",
+        "rein2023gpqa",
+        "sprague2023musr",
+        "wang2024mmlupro",
+        "koenker1978regression"
+      ]
+    },
+    {
+      "check": "five_keywords",
+      "status": "PASS",
+      "detail": 5
+    },
+    {
+      "check": "science_qualifiers",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "frozen_anchor_text",
+      "status": "PASS",
+      "detail": 23
+    },
+    {
+      "check": "toc_exact_page_numbers",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "style_Title",
+      "status": "PASS",
+      "detail": {
+        "size": 16.0,
+        "eastAsia": "黑体"
+      }
+    },
+    {
+      "check": "style_Heading 1",
+      "status": "PASS",
+      "detail": {
+        "size": 14.0,
+        "eastAsia": "黑体"
+      }
+    },
+    {
+      "check": "style_Heading 2",
+      "status": "PASS",
+      "detail": {
+        "size": 12.0,
+        "eastAsia": "宋体"
+      }
+    },
+    {
+      "check": "style_Normal",
+      "status": "PASS",
+      "detail": {
+        "size": 12.0,
+        "eastAsia": "宋体"
+      }
+    },
+    {
+      "check": "style_Caption",
+      "status": "PASS",
+      "detail": {
+        "size": 12.0,
+        "eastAsia": "宋体"
+      }
+    }
+  ],
+  "science_executed": false,
+  "scope": "Editorial artifact QA, not a new scientific acceptance run",
+  "rendering": "LibreOffice at D:/LibreOffice/program/soffice.exe, via render_docx.py",
+  "remaining_author_action": "Read and approve manuscript; reconcile historical source-file AI model attribution before submission packaging."
+}

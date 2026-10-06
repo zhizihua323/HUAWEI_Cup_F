@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Training Compute-Optimal Large Language Models",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Scaling Laws for Neural Language Models",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "RegMix Data Mixture as Regression for Language Model Pre-training",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Pythia A Suite for Analyzing Large Language Models Across Training and Scaling",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Are Emergent Abilities of Large Language Models a Mirage",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Instruction-Following Evaluation for Large Language Models",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Measuring Mathematical Problem Solving With the MATH Dataset",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "GPQA A Graduate-Level Google-Proof Q&A Benchmark",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "MuSR Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "MMLU-Pro A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  },
+  {
+    "query": "Open-LLM-Leaderboard From Multi-choice to Open-style Questions for LLMs Evaluation Benchmark and Arena",
+    "error": "Response status code does not indicate success: 429 (Too Many Requests)."
+  }
+]

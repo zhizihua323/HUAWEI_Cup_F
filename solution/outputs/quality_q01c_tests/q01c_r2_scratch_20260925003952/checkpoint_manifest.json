@@ -1,0 +1,109 @@
+{
+  "run_id": "q01c_r2_scratch_20260925003952",
+  "generated_local": "2026-09-25T00:39:57+08:00",
+  "synthetic_run_dir": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\solution\\outputs\\quality_q01c_tests\\q01c_r2_scratch_20260925003952\\midstage_interruption\\midstage_run",
+  "checkpoints": [
+    {
+      "stage": "s10_scan_a1",
+      "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+      "meta": "901e2c3f9afcdefbbccb382933557723864248fdbf0bdb27d127e8f7ceac3aba",
+      "checkpoint_marker": "e98d5638ec8765ce13854af2c4f7b68ca8441243bb3f865d6ab224ca7531a1af",
+      "stage_marker": "3297cae1c60605925b12bdad46ca8a792385fb45d6bae37811b0a437f923e904"
+    },
+    {
+      "stage": "s11_scan_a2",
+      "payload": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+      "meta": "63e56f0b7755ad28ebee5f8363b0ebb837a91a625bba8288dd511465035256b4",
+      "checkpoint_marker": "30509805fc5a89a85e2659cbedbf5081d7ceec3d046e926dfb7ce34f5ea5d343",
+      "stage_marker": "567d1d373191dd45e6c2f7638387b2d8283a0148dd5e22f8ec1e218f6bb9344b"
+    },
+    {
+      "stage": "s12_scan_a3",
+      "payload": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+      "meta": "3cbdc3874656355ace8632d04be516f2666761dbd3ea44e2366f4353afe266e4",
+      "checkpoint_marker": "9363644969930730516b82f319001f1959f6b08054ede4c0183bdb81ecbe4e23",
+      "stage_marker": "b65e5a8a80da62791b4461e321761f2df979628b1904420e1f5b0e4821d74f64"
+    },
+    {
+      "stage": "s20_score_primary",
+      "payload": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+      "meta": "6f5eaebbb35b682c48af10992c8d3727c1c3696bef8035bea4b14d70a1504416",
+      "checkpoint_marker": "b52bf16eb71d1d81180699cb3fa4e1104e64ad3793a26c8e8ba44bbaea1e2968",
+      "stage_marker": "0bcb8fb23332ef73b7597f7703eaa6d15232b0d054ccc0fb9b2681574ef5f25f"
+    },
+    {
+      "stage": "s30_sensitivity",
+      "payload": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f",
+      "meta": "6cfdf373a4793189b39718581d432f1f5f344c0ee71a3a535a875b3e72d83b9e",
+      "checkpoint_marker": "e04653aea72fae5bc643af0b3c28a9450a511659fb8e04853e1a5c80ad707ae5",
+      "stage_marker": "107f18c8f29aa924ce3b2f8d896465f669976cdfde43c8ceacf8f1aa48afd6b7"
+    }
+  ],
+  "hash_invariance": {
+    "before": {
+      "s10_scan_a1": {
+        "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+        "meta": "901e2c3f9afcdefbbccb382933557723864248fdbf0bdb27d127e8f7ceac3aba",
+        "checkpoint_marker": "e98d5638ec8765ce13854af2c4f7b68ca8441243bb3f865d6ab224ca7531a1af",
+        "stage_marker": "3297cae1c60605925b12bdad46ca8a792385fb45d6bae37811b0a437f923e904"
+      },
+      "s11_scan_a2": {
+        "payload": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+        "meta": "63e56f0b7755ad28ebee5f8363b0ebb837a91a625bba8288dd511465035256b4",
+        "checkpoint_marker": "30509805fc5a89a85e2659cbedbf5081d7ceec3d046e926dfb7ce34f5ea5d343",
+        "stage_marker": "567d1d373191dd45e6c2f7638387b2d8283a0148dd5e22f8ec1e218f6bb9344b"
+      },
+      "s12_scan_a3": {
+        "payload": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+        "meta": "3cbdc3874656355ace8632d04be516f2666761dbd3ea44e2366f4353afe266e4",
+        "checkpoint_marker": "9363644969930730516b82f319001f1959f6b08054ede4c0183bdb81ecbe4e23",
+        "stage_marker": "b65e5a8a80da62791b4461e321761f2df979628b1904420e1f5b0e4821d74f64"
+      },
+      "s20_score_primary": {
+        "payload": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+        "meta": "6f5eaebbb35b682c48af10992c8d3727c1c3696bef8035bea4b14d70a1504416",
+        "checkpoint_marker": "b52bf16eb71d1d81180699cb3fa4e1104e64ad3793a26c8e8ba44bbaea1e2968",
+        "stage_marker": "0bcb8fb23332ef73b7597f7703eaa6d15232b0d054ccc0fb9b2681574ef5f25f"
+      },
+      "s30_sensitivity": {
+        "payload": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f",
+        "meta": "6cfdf373a4793189b39718581d432f1f5f344c0ee71a3a535a875b3e72d83b9e",
+        "checkpoint_marker": "e04653aea72fae5bc643af0b3c28a9450a511659fb8e04853e1a5c80ad707ae5",
+        "stage_marker": "107f18c8f29aa924ce3b2f8d896465f669976cdfde43c8ceacf8f1aa48afd6b7"
+      }
+    },
+    "after": {
+      "s10_scan_a1": {
+        "payload": "df38fc0ded0cc711708e833b5555ed444d12c30ea291b8d5ba8e6bd050da2dc9",
+        "meta": "901e2c3f9afcdefbbccb382933557723864248fdbf0bdb27d127e8f7ceac3aba",
+        "checkpoint_marker": "e98d5638ec8765ce13854af2c4f7b68ca8441243bb3f865d6ab224ca7531a1af",
+        "stage_marker": "3297cae1c60605925b12bdad46ca8a792385fb45d6bae37811b0a437f923e904"
+      },
+      "s11_scan_a2": {
+        "payload": "1dc40e00292ee46f29139f5a682efbc0fed1031e90b865daee8e4c4071544a47",
+        "meta": "63e56f0b7755ad28ebee5f8363b0ebb837a91a625bba8288dd511465035256b4",
+        "checkpoint_marker": "30509805fc5a89a85e2659cbedbf5081d7ceec3d046e926dfb7ce34f5ea5d343",
+        "stage_marker": "567d1d373191dd45e6c2f7638387b2d8283a0148dd5e22f8ec1e218f6bb9344b"
+      },
+      "s12_scan_a3": {
+        "payload": "e4da3f6866992b00a95f60d3cbbd77e99f5b327f1c6eaf7b0b62ccd26005258b",
+        "meta": "3cbdc3874656355ace8632d04be516f2666761dbd3ea44e2366f4353afe266e4",
+        "checkpoint_marker": "9363644969930730516b82f319001f1959f6b08054ede4c0183bdb81ecbe4e23",
+        "stage_marker": "b65e5a8a80da62791b4461e321761f2df979628b1904420e1f5b0e4821d74f64"
+      },
+      "s20_score_primary": {
+        "payload": "0a090b97a3776c8527a07b51a6509a1da4d01ff528c0b70271bcf1e4d1729fe9",
+        "meta": "6f5eaebbb35b682c48af10992c8d3727c1c3696bef8035bea4b14d70a1504416",
+        "checkpoint_marker": "b52bf16eb71d1d81180699cb3fa4e1104e64ad3793a26c8e8ba44bbaea1e2968",
+        "stage_marker": "0bcb8fb23332ef73b7597f7703eaa6d15232b0d054ccc0fb9b2681574ef5f25f"
+      },
+      "s30_sensitivity": {
+        "payload": "d121b195d6c6dc9ca2ee7089566bc2043f424addb734863f6a9a6a185ec7a93f",
+        "meta": "6cfdf373a4793189b39718581d432f1f5f344c0ee71a3a535a875b3e72d83b9e",
+        "checkpoint_marker": "e04653aea72fae5bc643af0b3c28a9450a511659fb8e04853e1a5c80ad707ae5",
+        "stage_marker": "107f18c8f29aa924ce3b2f8d896465f669976cdfde43c8ceacf8f1aa48afd6b7"
+      }
+    },
+    "invariant": true
+  }
+}

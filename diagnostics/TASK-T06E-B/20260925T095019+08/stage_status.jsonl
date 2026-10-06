@@ -1,0 +1,3 @@
+{"time": "2026-09-25T09:50:49.570151+08:00", "stage": "cache_load", "status": "START", "detail": "hash-bound deterministic B1/B6 folds and profiles from interrupted engineering run"}
+{"time": "2026-09-25T09:50:49.629176+08:00", "stage": "cache_load", "status": "PASS", "detail": "22 profiles and frozen split evidence loaded; no Q>0.6 training"}
+{"time": "2026-09-25T09:50:50.315773+08:00", "stage": "B7_B8", "status": "PASS", "detail": "B7 new=90 repeats=360; B8 common=160 outside=1544"}

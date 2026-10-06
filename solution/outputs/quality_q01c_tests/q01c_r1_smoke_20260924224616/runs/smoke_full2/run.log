@@ -1,0 +1,19 @@
+[2026-09-24T22:46:24.591+08:00] TASK-Q01C start run_id=smoke_full2 mode=fixture resume=False stage=all pid=16712
+[2026-09-24T22:46:24.832+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:46:24.835+08:00] stage=s00_preflight done elapsed_s=0.24
+[2026-09-24T22:46:25.044+08:00] stage=s01_synthetic_tests complete tests=9
+[2026-09-24T22:46:25.044+08:00] stage=s01_synthetic_tests done elapsed_s=0.208
+[2026-09-24T22:46:25.044+08:00] ERROR unhandled: TypeError: RunContext.status() got multiple values for argument 'stage'
+[2026-09-24T22:46:25.050+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2141, in main
+    result = run_stage(ctx, name, state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2038, in run_stage
+    return scan_file_stage(ctx, spec, state['config_sha'], state['preflight'])
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 575, in scan_file_stage
+    record_checkpoint_decision(ctx, stage, spec['file_id'], 'rescan', reason, None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 547, in record_checkpoint_decision
+    ctx.status(stage, 'checkpoint_decision', **decision)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RunContext.status() got multiple values for argument 'stage'
+

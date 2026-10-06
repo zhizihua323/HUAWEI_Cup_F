@@ -1,0 +1,15 @@
+[verify] F01_fixture_rows: PASS
+[verify] F02_q_valid_equivalence: PASS
+[verify] F03_group_and_q_recomputation: PASS
+[verify] F04_coverage_fields: PASS
+[verify] F05_denominators: PASS
+[verify] F06_missing_marking: PASS
+[verify] F07_sensitivity_parameters: PASS
+[verify] F08_sensitivity_separation: PASS
+[verify] F09_checkpoint_marker_chain: PASS
+[verify] F10_stage_events: FAIL
+[verify] F11_scan_counters: PASS
+[verify] F12_no_real_inputs_and_no_content: PASS
+[verify] F13_strict_json: PASS
+[verify] F14_required_artifacts: FAIL
+[verify-fixture] summary: {"n_checks": 14, "n_pass": 12, "n_fail": 2, "n_not_checked": 0}

@@ -1,0 +1,32 @@
+[2026-09-24T22:48:21.246+08:00] TASK-Q01C start run_id=rehearsal2_p1 mode=fixture resume=False stage=all pid=16308
+[2026-09-24T22:48:21.520+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:48:21.523+08:00] stage=s00_preflight done elapsed_s=0.274
+[2026-09-24T22:48:21.730+08:00] stage=s01_synthetic_tests complete tests=9
+[2026-09-24T22:48:21.730+08:00] stage=s01_synthetic_tests done elapsed_s=0.206
+[2026-09-24T22:48:21.910+08:00] stage=s10_scan_a1 complete rows=600 elapsed_s=0.2
+[2026-09-24T22:48:21.914+08:00] stage=s10_scan_a1 done elapsed_s=0.184
+[2026-09-24T22:48:21.914+08:00] HOOK hold-after-stage=s10_scan_a1: waiting for external interruption pid=16308
+[2026-09-24T22:48:33.082+08:00] TASK-Q01C start run_id=rehearsal2_p1 mode=fixture resume=True stage=all pid=27180
+[2026-09-24T22:48:33.091+08:00] stage=s00_preflight already complete and validated; not recomputed
+[2026-09-24T22:48:33.092+08:00] stage=s01_synthetic_tests already complete and validated; not recomputed
+[2026-09-24T22:48:33.095+08:00] stage=s10_scan_a1 already complete and validated; not recomputed
+[2026-09-24T22:48:33.095+08:00] ERROR unhandled: TypeError: 'NoneType' object is not subscriptable
+[2026-09-24T22:48:33.097+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2156, in main
+    result = run_stage(ctx, name, state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2047, in run_stage
+    return scan_file_stage(ctx, spec, state['config_sha'], state['preflight'])
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 554, in scan_file_stage
+    expected_input_sha = preflight['primary'][spec['file_id']]['sha256']
+                         ~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[2026-09-24T22:48:41.963+08:00] TASK-Q01C start run_id=rehearsal2_p1 mode=fixture resume=True stage=all pid=12188
+[2026-09-24T22:48:41.970+08:00] stage=s00_preflight already complete and validated; not recomputed
+[2026-09-24T22:48:41.971+08:00] stage=s01_synthetic_tests already complete and validated; not recomputed
+[2026-09-24T22:48:41.973+08:00] stage=s10_scan_a1 already complete and validated; not recomputed
+[2026-09-24T22:48:42.084+08:00] stage=s11_scan_a2 complete rows=30 elapsed_s=0.1
+[2026-09-24T22:48:42.086+08:00] stage=s11_scan_a2 done elapsed_s=0.113
+[2026-09-24T22:48:42.130+08:00] stage=s12_scan_a3 complete rows=30 elapsed_s=0.0
+[2026-09-24T22:48:42.132+08:00] stage=s12_scan_a3 done elapsed_s=0.046
+[2026-09-24T22:48:42.139+08:00] ERROR stage_failure: s10_scan_a1 checkpoint not reusable: legacy: missing file(s)

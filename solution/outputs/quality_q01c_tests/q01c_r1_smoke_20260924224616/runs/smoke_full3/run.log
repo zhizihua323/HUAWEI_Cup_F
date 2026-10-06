@@ -1,0 +1,18 @@
+[2026-09-24T22:46:31.108+08:00] TASK-Q01C start run_id=smoke_full3 mode=fixture resume=False stage=all pid=39340
+[2026-09-24T22:46:31.314+08:00] stage=s00_preflight complete (fixture mode); A1-A3 untouched
+[2026-09-24T22:46:31.317+08:00] stage=s00_preflight done elapsed_s=0.205
+[2026-09-24T22:46:31.583+08:00] stage=s01_synthetic_tests complete tests=9
+[2026-09-24T22:46:31.583+08:00] stage=s01_synthetic_tests done elapsed_s=0.266
+[2026-09-24T22:46:31.842+08:00] ERROR unhandled: KeyError: 'parquet_sha256'
+[2026-09-24T22:46:31.844+08:00] Traceback (most recent call last):
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2142, in main
+    result = run_stage(ctx, name, state)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 2039, in run_stage
+    return scan_file_stage(ctx, spec, state['config_sha'], state['preflight'])
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 582, in scan_file_stage
+    result = _scan_file_fresh(ctx, spec, config_sha, preflight)
+  File "C:\Users\28762\Desktop\The Huawei Cup National Postgraduate Mathematical Modeling Contest\GPT_Workspace\solution\src\quality_q01c.py", line 704, in _scan_file_fresh
+    rss_mb=ctx.rss_mb(), parquet_sha256=meta['parquet_sha256'], decompress_passes=1)
+                                        ~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'parquet_sha256'
+

@@ -1,0 +1,2 @@
+[2026-09-25T01:57:47.475+08:00] [calibration-preflight] input verification (calibration-preflight): matches=True
+[2026-09-25T01:57:47.863+08:00] [calibration-preflight] preflight complete: labels=["arxiv", "book", "c4", "commoncrawl", "github", "stackexchange", "wikipedia"]

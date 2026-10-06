@@ -1,0 +1,18 @@
+{
+  "asset": "table08_q4_models_contributions",
+  "transformation": "field_selection_and_formatting_only",
+  "sources": [
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/taskwise_coefficients.csv",
+      "fields": "selected_contribution_model; mean_bC_log10_compute",
+      "unit": "Benchmark points per log10 compute",
+      "denominator": "taskwise frozen fit"
+    },
+    {
+      "file": "diagnostics/TASK-G4/20260925T195716+0800/scale_non_scale_contributions.csv",
+      "fields": "delta_scale_signed_points; delta_non_scale_signed_points; shares",
+      "unit": "Benchmark points",
+      "denominator": "frozen endpoint windows"
+    }
+  ]
+}

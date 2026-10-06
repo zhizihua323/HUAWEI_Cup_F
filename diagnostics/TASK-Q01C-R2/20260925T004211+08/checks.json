@@ -1,0 +1,339 @@
+{
+  "run_id": "20260925T004211+08",
+  "task": "TASK-Q01C-R2",
+  "generated_local": "2026-09-25T00:42:48+08:00",
+  "summary": {
+    "n_checks": 13,
+    "n_pass": 13,
+    "n_fail": 0,
+    "n_not_checked": 0,
+    "n_not_verifiable": 0
+  },
+  "checks": [
+    {
+      "check_id": "R01_distinct_processes",
+      "description": "mid-stage P1/P2 run in two distinct OS processes on one run directory",
+      "status": "PASS",
+      "actual": {
+        "p1_pid": 14452,
+        "p2_pid": 15776
+      },
+      "expected": {
+        "distinct": true
+      },
+      "evidence": "resume_evidence.json / stage_status.jsonl",
+      "note": ""
+    },
+    {
+      "check_id": "R02_p1_external_termination",
+      "description": "P1 was externally terminated after the S30 checkpoint marker was complete",
+      "status": "PASS",
+      "actual": {
+        "hold": "s30_sensitivity",
+        "exit_code": 1
+      },
+      "expected": {
+        "hold_after_stage": "s30_sensitivity"
+      },
+      "evidence": "interruption evidence",
+      "note": ""
+    },
+    {
+      "check_id": "R03_zero_recomputation_midstage",
+      "description": "P2 added zero computations for every checkpoint completed by P1 (s10..s30)",
+      "status": "PASS",
+      "actual": {
+        "new_computations": {
+          "s10_scan_a1": 0,
+          "s11_scan_a2": 0,
+          "s12_scan_a3": 0,
+          "s20_score_primary": 0,
+          "s30_sensitivity": 0
+        }
+      },
+      "expected": {
+        "all zero": true
+      },
+      "evidence": "stage_compute_counters.json",
+      "note": ""
+    },
+    {
+      "check_id": "R04_checkpoint_hash_invariant",
+      "description": "payload/meta/marker hashes of every completed checkpoint are identical before and after P2",
+      "status": "PASS",
+      "actual": {
+        "stages": [
+          "s10_scan_a1",
+          "s11_scan_a2",
+          "s12_scan_a3",
+          "s20_score_primary",
+          "s30_sensitivity"
+        ]
+      },
+      "expected": {
+        "invariant": true
+      },
+      "evidence": "checkpoint_manifest.json",
+      "note": ""
+    },
+    {
+      "check_id": "R05_unified_validation_entry",
+      "description": "the three CLI flows call the single stage reuse validation entry and the probe reports the same structured verdict schema",
+      "status": "PASS",
+      "actual": {
+        "flows": {
+          "main_loop": true,
+          "stage_prerequisites": true,
+          "probe_resume": true
+        },
+        "probe_verdict_counts": {
+          "REUSABLE": 7,
+          "NOT_STARTED": 3,
+          "INVALID": 0
+        },
+        "validation_schema_version": 3
+      },
+      "expected": {
+        "all three flows call validate_stage": true
+      },
+      "evidence": "quality_q01c.py static check + probe report",
+      "note": ""
+    },
+    {
+      "check_id": "R06_three_rejection_paths",
+      "description": "payload / config / code-fingerprint damage each hard-stops through the normal --resume CLI with zero recomputation and no overwrite",
+      "status": "PASS",
+      "actual": {
+        "payload_hash": {
+          "resume_exit": 2,
+          "probe_exit": 2,
+          "zero_recomputation": true,
+          "files_unchanged": true,
+          "expected_failed_check": "payload_sha256",
+          "probe_invalid_reason": {
+            "s30_sensitivity": "validation failed: payload_sha256"
+          }
+        },
+        "config_mismatch": {
+          "resume_exit": 2,
+          "probe_exit": 2,
+          "zero_recomputation": true,
+          "files_unchanged": true,
+          "expected_failed_check": "config_sha256",
+          "probe_invalid_reason": {
+            "s10_scan_a1": "validation failed: config_sha256",
+            "s11_scan_a2": "validation failed: config_sha256",
+            "s12_scan_a3": "validation failed: config_sha256",
+            "s20_score_primary": "validation failed: config_sha256",
+            "s30_sensitivity": "validation failed: config_sha256"
+          }
+        },
+        "code_fingerprint": {
+          "resume_exit": 2,
+          "probe_exit": 2,
+          "zero_recomputation": true,
+          "files_unchanged": true,
+          "expected_failed_check": "code_fingerprint",
+          "probe_invalid_reason": {
+            "s30_sensitivity": "validation failed: code_fingerprint"
+          }
+        }
+      },
+      "expected": {
+        "all three cases hard stop": true
+      },
+      "evidence": "rejection_summary.json",
+      "note": ""
+    },
+    {
+      "check_id": "R07_marker_chain_and_stage_scope",
+      "description": "every checkpoint re-hashes cleanly and stage markers bind only stage-local immutable outputs",
+      "status": "PASS",
+      "actual": {
+        "details": [
+          {
+            "stage": "s10_scan_a1",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          },
+          {
+            "stage": "s11_scan_a2",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          },
+          {
+            "stage": "s12_scan_a3",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          },
+          {
+            "stage": "s20_score_primary",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          },
+          {
+            "stage": "s30_sensitivity",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          },
+          {
+            "stage": "s40_summarize",
+            "files": true,
+            "payload_sha": true,
+            "marker_binds_meta": true,
+            "stage_kind": "stage",
+            "stage_binds_global_parquet": false,
+            "stage_outputs_hash_match": true,
+            "checkpoint_identity_recorded": true,
+            "ok": true
+          }
+        ]
+      },
+      "expected": {
+        "all_ok": true
+      },
+      "evidence": "independent re-hash of checkpoints/",
+      "note": ""
+    },
+    {
+      "check_id": "R08_immutable_input_bindings",
+      "description": "S20 binds the validated S10/S11/S12 chain; S30 binds S20; S40 binds S30 (independently recomputed)",
+      "status": "PASS",
+      "actual": {
+        "s20_binding_matches_chain": true,
+        "s30_binding_matches_s20": true,
+        "s40_binding_matches_s30": true
+      },
+      "expected": {
+        "all bindings match": true
+      },
+      "evidence": "checkpoint metadata vs independent identity recomputation",
+      "note": ""
+    },
+    {
+      "check_id": "R09_s60_closure",
+      "description": "S60 appears in stage_seconds / executed_stages / terminal events / exit codes with a unique terminal and the verifier contains no S60 exclusion",
+      "status": "PASS",
+      "actual": {
+        "stage_seconds": 0.029,
+        "in_executed": true,
+        "terminal": [
+          "complete"
+        ],
+        "exit_code": 0,
+        "status_events": [
+          "stage_reuse_validation",
+          "start",
+          "start",
+          "complete"
+        ],
+        "exclusion_patterns": []
+      },
+      "expected": {
+        "unique terminal, non-negative duration, exit 0, no exclusion": true
+      },
+      "evidence": "synthetic run run_summary.json / stage_status.jsonl / verifier source",
+      "note": ""
+    },
+    {
+      "check_id": "R10_manifest_closure",
+      "description": "the finished run manifest matches every file and nothing was written after it",
+      "status": "PASS",
+      "actual": {
+        "files": 66,
+        "mismatches": [],
+        "written_after_manifest": []
+      },
+      "expected": {
+        "none": true
+      },
+      "evidence": "synthetic run output_manifest.json",
+      "note": ""
+    },
+    {
+      "check_id": "R11_regression_protection",
+      "description": "formal Q01C run 56/56, R1 run manifest, previous runs and old quality outputs unchanged",
+      "status": "PASS",
+      "actual": {
+        "formal_files": 56,
+        "formal_mismatch": [],
+        "r1_files": 138,
+        "r1_mismatch": [],
+        "snapshot_changed": []
+      },
+      "expected": {
+        "all unchanged": true
+      },
+      "evidence": "output manifests + protected_artifacts snapshots",
+      "note": ""
+    },
+    {
+      "check_id": "R12_code_snapshot_consistency",
+      "description": "the R2 code snapshot is byte-identical to the executed sources",
+      "status": "PASS",
+      "actual": {
+        "snapshot_files": 0,
+        "mismatches": []
+      },
+      "expected": {
+        "mismatches": []
+      },
+      "evidence": "code_snapshot/ vs solution src/tests",
+      "note": ""
+    },
+    {
+      "check_id": "R13_no_real_input_access",
+      "description": "no R2 dynamic path references a real attachment; the synthetic run is fixture-only",
+      "status": "PASS",
+      "actual": {
+        "dynamic_real_path_hits": [],
+        "fixture_mode": "fixture",
+        "declared_access": {
+          "opened": 0,
+          "read": 0,
+          "stat": 0,
+          "hash": 0,
+          "decompress": 0,
+          "scan": 0,
+          "basis": "fixture path isolation and code/command audit; the real attachments are never referenced by any R2 process"
+        }
+      },
+      "expected": {
+        "no real path references; declared access counters 0": true
+      },
+      "evidence": "static scan + synthetic run input_manifest.json",
+      "note": ""
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+{
+  "correction": "Use for (source,model),g in groupby",
+  "exception": "ValueError: groupby(['source','model']) unpacking expected tuple",
+  "failed_stage": "BOOTSTRAP_SUMMARY",
+  "status": "FAILED_ENGINEERING_RUN",
+  "completed": "200x3 bootstrap draws and seed audit written before summary failure",
+  "scientific_result": "NOT_REACHED"
+}

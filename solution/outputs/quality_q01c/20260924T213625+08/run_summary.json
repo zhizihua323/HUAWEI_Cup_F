@@ -1,0 +1,12 @@
+{
+  "task": "TASK-Q01C",
+  "run_id": "20260924T213625+08",
+  "status": "FAILED",
+  "error": "ValueError: Out of range float values are not JSON compliant: np.float64(nan)",
+  "stage_exit_codes": {
+    "s00_preflight": 0
+  },
+  "stages_completed": 1,
+  "fallback_used": false,
+  "finished_local": "2026-09-24T21:36:27+08:00"
+}

@@ -1,0 +1,78 @@
+{
+  "task_id": "TASK-T08",
+  "run_id": "20260925T142203+0800",
+  "status": "COMPLETE_PENDING_CONTROLLER_REVIEW",
+  "forecast_origin": "2025-03-13",
+  "forecast_origin_rule": "maximum day-granularity observation date among C01-audited, identity-unique, non-ambiguous C1/C2/C8 records; C8 eval timestamps verified for the same date",
+  "historical_growth_support": {
+    "n_observed_ND_records": 7,
+    "n_observed_ND_families": 1,
+    "n_candidate_adjacent_pairs": 6,
+    "n_valid_family_level_intervals": 1,
+    "n_independent_model_families": 1,
+    "min_families_required": 3,
+    "min_family_level_intervals_required": 10,
+    "identifiable": false,
+    "conservative_growth_rate_annual_log": null,
+    "base_growth_rate_annual_log": null,
+    "optimistic_growth_rate_annual_log": null,
+    "reason_if_not_identifiable": "fewer than 3 independent model families or fewer than 10 valid family-level intervals; no imputation or external growth assumptions allowed"
+  },
+  "main_benchmark": {
+    "eligibility": "CONDITIONAL_ASSOCIATION_ONLY",
+    "models": 7,
+    "tasks": [
+      "IFEval",
+      "BBH",
+      "MATH Lvl 5",
+      "GPQA",
+      "MUSR",
+      "MMLU-PRO"
+    ],
+    "auxiliary_mean": "benchmark_mean_aux",
+    "all_frozen_candidates": "CONSTANT",
+    "scale_associated_component": 0.0,
+    "conditional_remainder_name": "non-scale associated residual / conditional remainder",
+    "benchmark_future_eligibility": "CONDITIONAL_BASELINE_ONLY",
+    "benchmark_progress": "NOT_IDENTIFIABLE_PROGRESS"
+  },
+  "loss_space": {
+    "model": "M0_B1",
+    "scenario": "S00_NULL_M0_B1",
+    "H": 2048,
+    "growth_rate_status": "NOT_IDENTIFIABLE",
+    "numerical_loss_scenarios_emitted": false,
+    "loss_to_benchmark_conversion_count": 0
+  },
+  "counts": {
+    "c8_complete": 1854,
+    "c8_partial": 6,
+    "c8_corrupt_json": 4,
+    "t05_main": 7,
+    "t05_conditional": 38,
+    "t05_total": 45,
+    "output_rows": {
+      "scale_non_scale_decomposition": 49,
+      "historical_strata_summary": 931,
+      "taskwise_progress": 7,
+      "forecast_12m_24m_scenarios": 42,
+      "forecast_uncertainty": 48,
+      "loss_space_scale_scenarios": 6,
+      "support_oos_audit": 29
+    }
+  },
+  "checks_file": "checks.json",
+  "verification_file": "verification.json",
+  "generated_at_utc": "2026-09-25T06:22:09.252934+00:00",
+  "verification": {
+    "file": "verification.json",
+    "status": "PASS",
+    "n_checks": 32,
+    "n_pass": 32,
+    "n_fail": 0,
+    "verifier_is_independent": true,
+    "imports_execution_module": false
+  },
+  "manifest_status": "PENDING_FINAL_GENERATION",
+  "finalized_at_utc": "2026-09-25T06:23:22.148940+00:00"
+}

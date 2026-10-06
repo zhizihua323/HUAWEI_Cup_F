@@ -1,0 +1,3800 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T16:43:38Z",
+      "timestamp": 1790268218692,
+      "version": "4.1.0"
+    },
+    "reference-count": 62,
+    "publisher": "National Academy of Sciences",
+    "issue": "27",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              24
+            ]
+          ],
+          "date-time": "2024-06-24T00:00:00Z",
+          "timestamp": 1719187200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.pnas.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Proc. Natl. Acad. Sci. U.S.A."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The population loss of trained deep neural networks often follows precise power-law scaling relations with either the size of the training dataset or the number of parameters in the network. We propose a theory that explains the origins of and connects these scaling laws. We identify variance-limited and resolution-limited scaling behavior for both dataset and model size, for a total of four scaling regimes. The variance-limited scaling follows simply from the existence of a well-behaved infinite data or infinite width limit, while the resolution-limited regime can be explained by positing that models are effectively resolving a smooth data manifold. In the large width limit, this can be equivalently obtained from the spectrum of certain kernels, and we present evidence that large width and large dataset resolution-limited scaling exponents are related by a duality. We exhibit all four scaling regimes in the controlled setting of large random feature and pretrained models and test the predictions empirically on a range of standard architectures and datasets. We also observe several empirical relationships between datasets and scaling exponents under modifications of task and architecture aspect ratio. Our work provides a taxonomy for classifying different scaling regimes, underscores that there can be different mechanisms driving improvements in loss, and lends insight into the microscopic origin and relationships between scaling exponents.</jats:p>",
+    "DOI": "10.1073/pnas.2311878121",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2024-06-24T15:01:33Z",
+      "timestamp": 1719241293000
+    },
+    "update-policy": "https://doi.org/10.1073/pnas.cm10313",
+    "source": "Crossref",
+    "is-referenced-by-count": 136,
+    "title": [
+      "Explaining neural scaling laws"
+    ],
+    "prefix": "10.1073",
+    "volume": "121",
+    "author": [
+      {
+        "given": "Yasaman",
+        "family": "Bahri",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Google DeepMind, Mountain View, CA 94043"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ethan",
+        "family": "Dyer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind, Mountain View, CA 94043"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jared",
+        "family": "Kaplan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8910-0950",
+        "authenticated-orcid": false,
+        "given": "Jaehoon",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google DeepMind, Mountain View, CA 94043"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Utkarsh",
+        "family": "Sharma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "341",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          24
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_4_1_2",
+        "unstructured": "J. Hestness et al. Deep learning scaling is predictable empirically. arXiv [Preprint] (2017). https://doi.org/10.48550/arXiv.1712.00409 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_2_2",
+        "unstructured": "J. Kaplan et al. Scaling laws for neural language models. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2001.08361 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_3_2",
+        "unstructured": "J. S. Rosenfeld A. Rosenfeld Y. Belinkov N. Shavit “A constructive prediction of the generalization error across scales” in International Conference on Learning Representations (2020)."
+      },
+      {
+        "key": "e_1_3_4_4_2",
+        "unstructured": "T. Henighan et al. Scaling laws for autoregressive generative modeling. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2010.14701 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_5_2",
+        "unstructured": "J. S. Rosenfeld J. Frankle M. Carbin N. Shavit “On the predictability of pruning across scales” in International Conference on Machine Learning (PMLR 2021) pp. 9075–9083."
+      },
+      {
+        "key": "e_1_3_4_6_2",
+        "unstructured": "S. Ahmad G. Tesauro “Scaling and generalization in neural networks: A case study” in Advances in Neural Information Processing Systems (1989) pp. 160–168."
+      },
+      {
+        "key": "e_1_3_4_7_2",
+        "unstructured": "D. Cohn G. Tesauro “Can neural networks do better than the Vapnik–Chervonenkis bounds?” in Advances in Neural Information Processing Systems (1991) pp. 911–917."
+      },
+      {
+        "key": "e_1_3_4_8_2",
+        "unstructured": "T. B. Brown et al. Language models are few-shot learners. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2010.14701 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_9_2",
+        "first-page": "30016",
+        "article-title": "An empirical analysis of compute-optimal large language model training",
+        "volume": "35",
+        "author": "Hoffmann J.",
+        "year": "2022",
+        "unstructured": "J. Hoffmann , An empirical analysis of compute-optimal large language model training. Adv. Neural Inf. Process. Syst. 35, 30016–30030 (2022).",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_3_4_10_2",
+        "first-page": "1",
+        "article-title": "Scaling laws from the data manifold dimension",
+        "volume": "23",
+        "author": "Sharma U.",
+        "year": "2022",
+        "unstructured": "U. Sharma, J. Kaplan, Scaling laws from the data manifold dimension. J. Mach. Learn. Res. 23, 1–34 (2022).",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "e_1_3_4_11_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D. Bisla A. N. Saridena A. Choromanska A theoretical-empirical approach to estimating sample complexity of DNNs. arXiv [Preprint] (2021). https://doi.org/10.48550/arXiv.2105.01867 (Accessed 1 January 2021).",
+        "DOI": "10.1109/CVPRW53098.2021.00365"
+      },
+      {
+        "key": "e_1_3_4_12_2",
+        "unstructured": "R. M. Neal “Bayesian learning for neural networks ” PhD thesis Department of Computer Science University of Toronto Toronto ON Canada (1994)."
+      },
+      {
+        "key": "e_1_3_4_13_2",
+        "unstructured": "J. Lee et al. “Deep neural networks as Gaussian processes” in International Conference on Learning Representations (2018)."
+      },
+      {
+        "key": "e_1_3_4_14_2",
+        "unstructured": "A. Matthews J. Hron M. Rowland R. E. Turner Z. Ghahramani “Gaussian process behaviour in wide deep neural networks” in International Conference on Learning Representations (2018)."
+      },
+      {
+        "key": "e_1_3_4_15_2",
+        "unstructured": "A. Jacot F. Gabriel C. Hongler “Neural Tangent Kernel: Convergence and generalization in neural networks” in Advances in Neural Information Processing Systems (2018)."
+      },
+      {
+        "key": "e_1_3_4_16_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. Lee et al. “Wide neural networks of any depth evolve as linear models under gradient descent” in Advances in Neural Information Processing Systems (2019).",
+        "DOI": "10.1088/1742-5468/abc62b"
+      },
+      {
+        "key": "e_1_3_4_17_2",
+        "unstructured": "E. Dyer G. Gur-Ari “Asymptotics of wide networks from Feynman diagrams” in International Conference on Learning Representations (2020)."
+      },
+      {
+        "key": "e_1_3_4_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-5468/abc61d"
+      },
+      {
+        "key": "e_1_3_4_19_2",
+        "unstructured": "B. Bordelon A. Canatar C. Pehlevan “Spectrum dependent learning curves in kernel regression and wide neural networks” in International Conference on Machine Learning (PMLR 2020) pp. 1024–1034."
+      },
+      {
+        "key": "e_1_3_4_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10208-006-0196-8"
+      },
+      {
+        "key": "e_1_3_4_21_2",
+        "unstructured": "I. Steinwart et al. “Optimal rates for regularized least squares regression” in COLT (2009) pp. 79–93."
+      },
+      {
+        "key": "e_1_3_4_22_2",
+        "first-page": "8464",
+        "article-title": "Sobolev norm learning rates for regularized least-squares algorithms",
+        "volume": "21",
+        "author": "Fischer S.",
+        "year": "2020",
+        "unstructured": "S. Fischer, I. Steinwart, Sobolev norm learning rates for regularized least-squares algorithms. J. Mach. Learn. Res. 21, 8464–8501 (2020).",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "e_1_3_4_23_2",
+        "unstructured": "M. Hutter Learning curve theory. arXiv [Preprint] (2021). https://doi.org/10.48550/arXiv.2102.04074 (Accessed 10 February 2021)."
+      },
+      {
+        "key": "e_1_3_4_24_2",
+        "first-page": "10131",
+        "article-title": "Generalization error rates in kernel regression: The crossover from the noiseless to noisy regime",
+        "volume": "34",
+        "author": "Cui H.",
+        "year": "2021",
+        "unstructured": "H. Cui, B. Loureiro, F. Krzakala, L. Zdeborová, Generalization error rates in kernel regression: The crossover from the noiseless to noisy regime. Adv. Neural Inf. Process. Syst. 34, 10131–10143 (2021).",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_3_4_25_2",
+        "unstructured": "A. Maloney D. A. Roberts J. Sully A solvable model of neural scaling laws. arXiv [Preprint] (2022). https://doi.org/10.48550/arXiv.2210.16859 (Accessed 1 November 2022)."
+      },
+      {
+        "key": "e_1_3_4_26_2",
+        "unstructured": "A. Wei W. Hu J. Steinhardt “More than a toy: Random matrix models predict how real-world neural representations generalize” in International Conference on Machine Learning (PMLR 2022) pp. 23549–23588."
+      },
+      {
+        "key": "e_1_3_4_27_2",
+        "first-page": "1313",
+        "article-title": "Weighted sums of random kitchen sinks: Replacing minimization with randomization in learning",
+        "volume": "21",
+        "author": "Rahimi A.",
+        "year": "2008",
+        "unstructured": "A. Rahimi, B. Recht, Weighted sums of random kitchen sinks: Replacing minimization with randomization in learning. Adv. Neural Inf. Process. Syst. 21, 1313–1320 (2008).",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_3_4_28_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "T. Hastie A. Montanari S. Rosset R. J. Tibshirani Surprises in high-dimensional ridgeless least squares interpolation. arXiv [Preprint] (2019). https://doi.org/10.48550/arXiv.1903.08560 (Accessed 1 January 2021).",
+        "DOI": "10.1214/21-AOS2133"
+      },
+      {
+        "key": "e_1_3_4_29_2",
+        "unstructured": "S. d’Ascoli M. Refinetti G. Biroli F. Krzakala “Double trouble in double descent: Bias and variance(s) in the lazy regime” in International Conference on Machine Learning (PMLR 2020) pp. 2280–2290."
+      },
+      {
+        "key": "e_1_3_4_30_2",
+        "unstructured": "M. S. Advani A. M. Saxe High-dimensional dynamics of generalization error in neural networks. arXiv [Preprint] (2017). https://doi.org/10.48550/arXiv.1710.03667 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.neunet.2020.08.022"
+      },
+      {
+        "key": "e_1_3_4_32_2",
+        "unstructured": "S. Mei A. Montanari The generalization error of random features regression: Precise asymptotics and double descent curve. arXiv [Preprint] (2019). https://doi.org/10.48550/arXiv.1908.05355 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_33_2",
+        "unstructured": "B. Adlam J. Pennington “The Neural Tangent Kernel in high dimensions: Triple descent and a multi-scale theory of generalization” in International Conference on Machine Learning (PMLR 2020) pp. 74–84."
+      },
+      {
+        "key": "e_1_3_4_34_2",
+        "first-page": "11022",
+        "article-title": "Understanding double descent requires a fine-grained bias-variance decomposition",
+        "volume": "33",
+        "author": "Adlam B.",
+        "year": "2020",
+        "unstructured": "B. Adlam, J. Pennington, Understanding double descent requires a fine-grained bias-variance decomposition. Adv. Neural Inf. Process. Syst. 33, 11022–11032 (2020).",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_3_4_35_2",
+        "unstructured": "A. Andreassen E. Dyer Asymptotics of wide convolutional neural networks. arxiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2008.08675 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-5468/ab633c"
+      },
+      {
+        "key": "e_1_3_4_37_2",
+        "unstructured": "P. Nakkiran B. Neyshabur H. Sedghi “The deep bootstrap framework: Good online learners are good offline generalizers” in International Conference on Learning Representations (2021)."
+      },
+      {
+        "key": "e_1_3_4_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF01456804"
+      },
+      {
+        "key": "e_1_3_4_39_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/0514012"
+      },
+      {
+        "key": "e_1_3_4_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF01194301"
+      },
+      {
+        "key": "e_1_3_4_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00020-009-1680-3"
+      },
+      {
+        "key": "e_1_3_4_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4612-1494-6"
+      },
+      {
+        "key": "e_1_3_4_43_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P. J. Bickel et al. “Local polynomial regression on unknown manifolds” in Complex Datasets and Inverse Problems (Institute of Mathematical Statistics 2007) pp. 177–186.",
+        "DOI": "10.1214/074921707000000148"
+      },
+      {
+        "key": "e_1_3_4_44_2",
+        "unstructured": "D. de Laat “Approximating manifolds by meshes: Asymptotic bounds in higher codimension” Thesis University of Groningen Groningen The Netherlands (2011)."
+      },
+      {
+        "key": "e_1_3_4_45_2",
+        "unstructured": "S. Yaida “Non-Gaussian processes and neural networks at finite widths” in Mathematical and Scientific Machine Learning Conference (2020)."
+      },
+      {
+        "key": "e_1_3_4_46_2",
+        "unstructured": "B. Hanin M. Nica “Finite depth and width corrections to the neural tangent” in International Conference on Learning Representations (2020)."
+      },
+      {
+        "key": "e_1_3_4_47_2",
+        "unstructured": "E. Levina P. J. Bickel “Maximum likelihood estimation of intrinsic dimension” in Advances in Neural Information Processing Systems (2005) pp. 777–784."
+      },
+      {
+        "key": "e_1_3_4_48_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P. McCullagh J. A. Nelder Generalized Linear Models (CRC Press 1989) vol. 37.",
+        "DOI": "10.1007/978-1-4899-3242-6"
+      },
+      {
+        "key": "e_1_3_4_49_2",
+        "unstructured": "R. M. Rifkin R. A. Lippert “Notes on regularized least squares” (Tech. Rep. MIT-CSAIL-TR-2007-025 MIT Computer Science and Artificial Intelligence Laboratory MA 2007)."
+      },
+      {
+        "key": "e_1_3_4_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-0-387-84858-7"
+      },
+      {
+        "key": "e_1_3_4_51_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P. Nakkiran More data can hurt for linear regression: Sample-wise double descent. arXiv [Preprint] (2019). https://doi.org/10.48550/arXiv.1912.07242 (Accessed 1 January 2021).",
+        "DOI": "10.1088/1742-5468/ac3a74"
+      },
+      {
+        "key": "e_1_3_4_52_2",
+        "unstructured": "R. Novak et al. “Bayesian deep convolutional networks with many channels are Gaussian processes” in International Conference on Learning Representations (2019)."
+      },
+      {
+        "key": "e_1_3_4_53_2",
+        "unstructured": "A. Garriga-Alonso L. Aitchison C. E. Rasmussen “Deep convolutional networks as shallow Gaussian processes” in International Conference on Learning Representations (2019)."
+      },
+      {
+        "key": "e_1_3_4_54_2",
+        "unstructured": "G. Yang Scaling limits of wide neural networks with weight sharing: Gaussian process behavior gradient independence and neural tangent kernel derivation. arXiv [Preprint] (2019). https://doi.org/10.48550/arXiv.1902.04760 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_55_2",
+        "unstructured": "A. Lewkowycz Y. Bahri E. Dyer J. Sohl-Dickstein G. Gur-Ari The large learning rate phase of deep learning: The catapult mechanism. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2003.02218 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_56_2",
+        "unstructured": "W. Huang W. Du R. Y. Da Xu C. Liu Implicit bias of deep linear networks in the large learning rate phase. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2011.12547 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_57_2",
+        "unstructured": "L. Chizat E. Oyallon F. Bach “On lazy training in differentiable programming” in Advances in Neural Information Processing Systems (2019) pp. 2937–2947."
+      },
+      {
+        "key": "e_1_3_4_58_2",
+        "unstructured": "A. Loukas “How close are the eigenvectors of the sample and actual covariance matrices?” in International Conference on Machine Learning (PMLR 2017) pp. 2228–2237."
+      },
+      {
+        "key": "e_1_3_4_59_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-021-23103-1"
+      },
+      {
+        "key": "e_1_3_4_60_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. Zagoruyko N. Komodakis “Wide residual networks” in British Machine Vision Conference (2016).",
+        "DOI": "10.5244/C.30.87"
+      },
+      {
+        "key": "e_1_3_4_61_2",
+        "unstructured": "P. Nakkiran Y. Bansal Distributional generalization: A new kind of generalization. arXiv [Preprint] (2020). https://doi.org/10.48550/arXiv.2009.08092 (Accessed 1 January 2021)."
+      },
+      {
+        "key": "e_1_3_4_62_2",
+        "unstructured": "W. Grathwohl et al. “Your classifier is secretly an energy based model and you should treat it like one” in International Conference on Learning Representations (2020)."
+      }
+    ],
+    "container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pnas.org/doi/pdf/10.1073/pnas.2311878121",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2024-06-24T15:03:15Z",
+      "timestamp": 1719241395000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pnas.org/doi/10.1073/pnas.2311878121"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          24
+        ]
+      ]
+    },
+    "references-count": 62,
+    "journal-issue": {
+      "issue": "27",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1073/pnas.2311878121"
+    ],
+    "URL": "https://doi.org/10.1073/pnas.2311878121",
+    "relation": {},
+    "ISSN": [
+      "0027-8424",
+      "1091-6490"
+    ],
+    "issn-type": [
+      {
+        "value": "0027-8424",
+        "type": "print"
+      },
+      {
+        "value": "1091-6490",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          24
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-08-25",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-03-05",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-06-24",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e2311878121"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2026-09-21T20:24:05Z",
+      "timestamp": 1790022245190,
+      "version": "4.0.1"
+    },
+    "reference-count": 77,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "8103",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ],
+          "date-time": "2026-02-04T00:00:00Z",
+          "timestamp": 1770163200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ],
+          "date-time": "2026-02-04T00:00:00Z",
+          "timestamp": 1770163200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nature"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          26
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41586-025-10072-4",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          4
+        ]
+      ],
+      "date-time": "2026-02-04T16:02:43Z",
+      "timestamp": 1770220963000
+    },
+    "page": "857-863",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 35,
+    "title": [
+      "Synthesizing scientific literature with retrieval-augmented language models"
+    ],
+    "prefix": "10.1038",
+    "volume": "650",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1055-6657",
+        "authenticated-orcid": false,
+        "given": "Akari",
+        "family": "Asai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jacqueline",
+        "family": "He",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rulin",
+        "family": "Shao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Weijia",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amanpreet",
+        "family": "Singh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joseph Chee",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kyle",
+        "family": "Lo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luca",
+        "family": "Soldaini",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sergey",
+        "family": "Feldman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0355-7157",
+        "authenticated-orcid": false,
+        "given": "Mike",
+        "family": "D’Arcy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Wadden",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9984-1277",
+        "authenticated-orcid": false,
+        "given": "Matt",
+        "family": "Latzke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jenna",
+        "family": "Sparks",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jena D.",
+        "family": "Hwang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Varsha",
+        "family": "Kishore",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Minyang",
+        "family": "Tian",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pan",
+        "family": "Ji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0582-7085",
+        "authenticated-orcid": false,
+        "given": "Shengyan",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-4341-3864",
+        "authenticated-orcid": false,
+        "given": "Hao",
+        "family": "Tong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bohao",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4399-6253",
+        "authenticated-orcid": false,
+        "given": "Yanyu",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luke",
+        "family": "Zettlemoyer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Graham",
+        "family": "Neubig",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel S.",
+        "family": "Weld",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Doug",
+        "family": "Downey",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4263-395X",
+        "authenticated-orcid": false,
+        "given": "Wen-tau",
+        "family": "Yih",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pang Wei",
+        "family": "Koh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hannaneh",
+        "family": "Hajishirzi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "10072_CR1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Asai, A., Min, S., Zhong, Z. & Chen, D. Retrieval-based language models and applications. In Proc. 61st Annual Meeting of the Association for Computational Linguistics (Volume 6: Tutorial Abstracts) (eds Chen, Y.-N., Mieskes, M. & Reddy, S.) 41–46 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.acl-tutorials.6"
+      },
+      {
+        "key": "10072_CR2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mallen, A. et al. When not to trust language models: investigating effectiveness of parametric and non-parametric memories. In Proc. 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (eds Rogers, A., Boyd-Graber, J. & Okazaki, N.) 9802–9822 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.acl-long.546"
+      },
+      {
+        "key": "10072_CR3",
+        "unstructured": "Mishra, A. et al. Fine-grained hallucination detection and editing for language models. In Proc. 1st Conf. Language Modeling (Philadelphia, 2024; https://colmweb.org)."
+      },
+      {
+        "key": "10072_CR4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kasai, J. et al. RealTime QA: what’s the answer right now? In Proc. 37th Int. Conf. Neural Information Processing Systems (NeurIPS ’23) (eds Oh, A. et al.) 49025–49043 (Curran Associates, 2023).",
+        "DOI": "10.52202/075280-2130"
+      },
+      {
+        "key": "10072_CR5",
+        "unstructured": "Lewis, P. et al. Retrieval-augmented generation for knowledge-intensive NLP tasks. In Proc. 34th Int. Conf. Neural Information Processing Systems (NIPS ’20) (eds Larochelle, H., Ranzato, M., Hadsell, R., Balcan, M. F. & Lin, H.) 9459–9474 (Curran Associates, 2020)."
+      },
+      {
+        "key": "10072_CR6",
+        "unstructured": "Guu, K., Lee, K., Tung, Z., Pasupat, P. & Chang, M. Retrieval augmented language model pre-training. In Proc. 37th International Conference on Machine Learning (eds Daumé, H. & Singh, A.) 3929–3938 (PMLR, 2020)."
+      },
+      {
+        "key": "10072_CR7",
+        "unstructured": "Asai, A., Wu, Z., Wang, Y., Sil, A. & Hajishirzi, H. Self-RAG: learning to retrieve, generate, and critique through self-reflection. In Proc. 12th Int. Conf. Learning Representations (eds Kim. B et al.) (2024)."
+      },
+      {
+        "key": "10072_CR8",
+        "unstructured": "Agarwal, S., Laradji, I.H., Charlin, L. & Pal, C. Litllm: a toolkit for scientific literature review. Preprint at https://arxiv.org/abs/2402.01788v1 (2024)."
+      },
+      {
+        "key": "10072_CR9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zheng, Y. et al. OpenResearcher: unleashing AI for accelerated scientific research. In Proc. 2024 Conf. Empirical Methods in Natural Language Processing: System Demonstrations (eds Hernández Farías, D. I., Hope, T. & Li, M.) 209–218 (Association for Computational Linguistics, 2024).",
+        "DOI": "10.18653/v1/2024.emnlp-demo.22"
+      },
+      {
+        "key": "10072_CR10",
+        "unstructured": "Skarlinski, M. D. et al. Language agents achieve superhuman synthesis of scientific knowledge. Preprint at https://arxiv.org/abs/2409.13740 (2024)."
+      },
+      {
+        "key": "10072_CR11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Phan, L. et al. Humanity’s last exam. Preprint at https://arxiv.org/abs/2501.14249 (2025).",
+        "DOI": "10.21203/rs.3.rs-6615297/v1"
+      },
+      {
+        "key": "10072_CR12",
+        "unstructured": "Wang, X. et al. Scibench: evaluating college-level scientific problem-solving abilities of large language models. In Proc. 41st Int. Conf. Machine Learning (eds Salakhutdinov, R. et al.) 50622–50649 (PMLR, 2024)."
+      },
+      {
+        "key": "10072_CR13",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xu, F. et al. KIWI: a dataset of knowledge-intensive writing instructions for answering research questions. In Findings of the Association for Computational Linguistics: ACL 2024 (eds Ku, L.-W., Martins, A. & Srikumar, V.) 12969–12990 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.findings-acl.770"
+      },
+      {
+        "key": "10072_CR14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xu, F., Song, Y., Iyyer, M. & Choi, E. A critical evaluation of evaluations for long-form question answering. In Proc. 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (eds Rogers, A., Boyd-Graber, J. & Okazaki, N.) 3225–3245 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.acl-long.181"
+      },
+      {
+        "key": "10072_CR15",
+        "unstructured": "Kamoda, G., Asai, A., Brassard, A. & Sakaguchi, K. Quantifying the influence of evaluation aspects on long-form response assessment. In Proc. 31st Int. Conf. Computational Linguistics (eds Rambow, O. et al.) 8787–8808 (ACL, 2025)."
+      },
+      {
+        "key": "10072_CR16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Krishna, K., Roy, A. & Iyyer, M. Hurdles to progress in long-form question answering. In Proc. 2021 Conf. North American Chapter of the Association for Computational Linguistics: Human Language Technologies (eds Toutanova, K. et al.) 4940–4957 (ACL, 2021).",
+        "DOI": "10.18653/v1/2021.naacl-main.393"
+      },
+      {
+        "key": "10072_CR17",
+        "unstructured": "Dubey, A. et al. The Llama 3 herd of models. Preprint at https://arxiv.org/abs/2407.21783v1 (2024)."
+      },
+      {
+        "key": "10072_CR18",
+        "unstructured": "Hurst, A. et al. Gpt-4o System Card. Preprint at https://arxiv.org/abs/2410.21276 (2024)."
+      },
+      {
+        "key": "10072_CR19",
+        "unstructured": "Kandpal, N., Deng, H., Roberts, A., Wallace, E. & Raffel, C. Large language models struggle to learn long-tail knowledge. In Proc. 40th International Conference on Machine Learning (eds Krause, A. et al.) 15696–15707 (PMLR, 2023)."
+      },
+      {
+        "key": "10072_CR20",
+        "unstructured": "Dubois, Y., Galambosi, B., Liang, P. & Hashimoto, T. B. Length-controlled alpacaeval: a simple way to debias automatic evaluators. In Proc. 1st Conf. Language Modeling (Philadelphia, 2025; https://colmweb.org)."
+      },
+      {
+        "key": "10072_CR21",
+        "unstructured": "Wu, M. et al. Reasoning or memorization? Unreliable results of reinforcement learning due to data contamination. In Proc. 40th Annual AAAI Conference on Artificial Intelligence (2026)."
+      },
+      {
+        "key": "10072_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jiang, M. et al. Investigating data contamination for pre-training language models. In Proc. 2024 Conf. North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) (eds Duh, K., Gomez, H. & Bethard, S.) 8706–8719 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.naacl-long.482"
+      },
+      {
+        "key": "10072_CR23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shao, R. et al. Scaling retrieval-based language models with a trillion-token datastore. In Proc. 38th Int. Conf. Neural Information Processing Systems (NIPS ’24) (eds Globerson, A. et al.) 91260–91299 (Curran Associates, 2024).",
+        "DOI": "10.52202/079017-2896"
+      },
+      {
+        "key": "10072_CR24",
+        "unstructured": "Soldaini, L. et al. Dolma: an open corpus of three trillion tokens for language model pretraining research. In Proc. 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (eds Ku, L.-W., Martins, A. & Srikumar, V.) 15725–15788 (ACL, 2024)."
+      },
+      {
+        "key": "10072_CR25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lo, K., Wang, L. L., Neumann, M., Kinney, R. & Weld, D. S2ORC: the semantic scholar open research corpus. In Proc. 58th Annual Meeting of the Association for Computational Linguistics (eds Jurafsky, D. Chai, J., Schluter, N. & Tetreault, J.) 4969–4983 (ACL, 2020).",
+        "DOI": "10.18653/v1/2020.acl-main.447"
+      },
+      {
+        "key": "10072_CR26",
+        "unstructured": "Kinney, R. M. et al. The Semantic Scholar open data platform. Preprint at https://arxiv.org/abs/2301.10140v1 (2023)."
+      },
+      {
+        "key": "10072_CR27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karpukhin, V. et al. Dense passage retrieval for open-domain question answering. In Proc. 2020 Conf. Empirical Methods in Natural Language Processing (EMNLP 2020) 6769–6781 (ACL, 2020).",
+        "DOI": "10.18653/v1/2020.emnlp-main.550"
+      },
+      {
+        "key": "10072_CR28",
+        "unstructured": "Thakur, N., Reimers, N., Rücklé, A., Srivastava, A. & Gurevych, I. BEIR: a heterogeneous benchmark for zero-shot evaluation of information retrieval models. In Proc. Neural Information Processing Systems Track on Datasets and Benchmarks 1 (NeurIPS Datasets and Benchmarks 2021) (eds Vanschoren, J. & Yeung, S.) (Curran Associates, 2021)."
+      },
+      {
+        "key": "10072_CR29",
+        "unstructured": "Izacard, G. et al. Unsupervised dense information retrieval with contrastive learning. Trans. Machine Learning Res. https://api.semanticscholar.org/CorpusID:249097975 (2022)."
+      },
+      {
+        "key": "10072_CR30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Asai, A. et al. Task-aware retrieval with instructions. In Findings of the Association for Computational Linguistics: ACL 2023 (eds Rogers, A., Boyd-Graber, J. & Okazaki, N.) 3650–3675 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.findings-acl.225"
+      },
+      {
+        "key": "10072_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1162/tacl_a_00638",
+        "volume": "12",
+        "author": "NF Liu",
+        "year": "2024",
+        "unstructured": "Liu, N. F. et al. Lost in the middle: how language models use long contexts. Trans. Assoc. Comput. Linguist. 12, 157–173 (2024).",
+        "journal-title": "Trans. Assoc. Comput. Linguist."
+      },
+      {
+        "key": "10072_CR32",
+        "unstructured": "Xu, F., Shi, W. & Choi, E. RECOMP: improving retrieval-augmented LMs with compression and selective augmentation. In Proc. 12th Int. Conf. Learning Representations (Vienna, 2024; https://iclr.cc/Conferences/2024)."
+      },
+      {
+        "key": "10072_CR33",
+        "unstructured": "Nogueira, R. & Cho, K. Passage re-ranking with BERT. Preprint at https://arxiv.org/abs/1901.04085v1 (2019)."
+      },
+      {
+        "key": "10072_CR34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xiao, S. et al. C-Pack: packed resources for general Chinese embeddings. In Proc. 47th Int. ACM SIGIR Conf. Research and Development in Information Retrieval (SIGIR’24) 641–649 (ACM, 2024).",
+        "DOI": "10.1145/3626772.3657878"
+      },
+      {
+        "key": "10072_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "1316",
+        "DOI": "10.1162/tacl_a_00605",
+        "volume": "11",
+        "author": "O Ram",
+        "year": "2023",
+        "unstructured": "Ram, O. et al. In-context retrieval-augmented language models. Trans. Assoc. Comput. Linguist. 11, 1316–1331 (2023).",
+        "journal-title": "Trans. Assoc. Comput. Linguist."
+      },
+      {
+        "key": "10072_CR36",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu, N. F., Zhang, T. & Liang, P. Evaluating verifiability in generative search engines. In Findings of the Association for Computational Linguistics: EMNLP 2023 (eds Bouamor, H., Pino, J. & Bali, K.) 7001–7025 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.findings-emnlp.467"
+      },
+      {
+        "key": "10072_CR37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jiang, Z. et al. Active retrieval augmented generation. In Proc. 2023 Conf. Empirical Methods in Natural Language Processing (eds Bouamor, H., Pino, J. & Bali, K.) 7969–7992 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.emnlp-main.495"
+      },
+      {
+        "key": "10072_CR38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wadden, D. et al. SciRIFF: a resource to enhance language model instruction-following over scientific literature. In Proc. 2025 Conf. Empirical Methods in Natural Language Processing (eds Christodoulopoulos, C. Chakraborty, T. Rose, C. & Peng, V.) 6083–6120 (ACL, 2024).",
+        "DOI": "10.18653/v1/2025.emnlp-main.310"
+      },
+      {
+        "key": "10072_CR39",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li, M. et al. Superfiltering: weak-to-strong data filtering for fast instruction-tuning. In Proc. 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (eds Ku, L.-W., Martins, A. & Srikumar, V.) 14255–14273 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.acl-long.769"
+      },
+      {
+        "key": "10072_CR40",
+        "unstructured": "Ivison, H. et al. Camels in a changing climate: enhancing LM adaptation with Tulu 2. Preprint at https://arxiv.org/abs/2311.10702 (2023)."
+      },
+      {
+        "key": "10072_CR41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jin, Q., Dhingra, B., Liu, Z., Cohen, W. & Lu, X. PubMedQA: a dataset for biomedical research question answering. In Proc. 2019 Conf. Empirical Methods in Natural Language Processing and the 9th Int. Joint Conf. Natural Language Processing (EMNLP-IJCNLP) (eds Inui, K., Jiang, J., Ng, V. & Wan, X.) 2567–2577 (ACL, 2019).",
+        "DOI": "10.18653/v1/D19-1259"
+      },
+      {
+        "key": "10072_CR42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wadden, D. et al. Fact or fiction: verifying scientific claims. In Proc. 2020 Conf. Empirical Methods in Natural Language Processing (EMNLP) (eds Webber, B., Cohn, T., He, Y. & Liu, Y.) 7534–7550 (ACL, 2020).",
+        "DOI": "10.18653/v1/2020.emnlp-main.609"
+      },
+      {
+        "key": "10072_CR43",
+        "unstructured": "Lee, Y. et al. QASA: advanced question answering on scientific articles. In Proc. 40th Int. Conf. Machine Learning (eds Krause, A. et al.) 19036–19052 (PMLR, 2023)."
+      },
+      {
+        "key": "10072_CR44",
+        "unstructured": "Kim, S. et al. PROMETHEUS: inducing fine-grained evaluation capability in language models. In Proc. 12th International Conference on Learning Representations (eds Kim. B et al.) (2024)."
+      },
+      {
+        "key": "10072_CR45",
+        "unstructured": "Si, C., Yang, D. & Hashimoto, T. Can LLMs generate novel research ideas? A large-scale human study with 100+ NLP researchers. In Proc. 13th Int. Conf. Learning Representations (Singapore, 2025; https://iclr.cc/Conferences/2025)."
+      },
+      {
+        "key": "10072_CR46",
+        "unstructured": "Rein, D. et al. GPQA: a graduate-level Google-proof Q&A benchmark. In Proc. 1st Conf. Language Modeling (Philadelphia, 2024; https://colmweb.org)."
+      },
+      {
+        "key": "10072_CR47",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Malaviya, C. et al. ExpertQA: expert-curated questions and attributed answers. In Proc. 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) (eds Duh, K., Gomez, H. & Bethard, S.) 3025–3045 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.naacl-long.167"
+      },
+      {
+        "key": "10072_CR48",
+        "unstructured": "Chiang, W. L. et al. Chatbot arena: an open platform for evaluating llms by human preference. In Proc. 41st International Conference on Machine Learning (eds Salakhutdinov, R. et al.) 8359–8388 (PMLR, 2024)."
+      },
+      {
+        "key": "10072_CR49",
+        "unstructured": "Singh, S. et al. The leaderboard illusion. In Proc. 39th Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track (San Diego, Mexico City, 2025; https://neurips.cc)."
+      },
+      {
+        "key": "10072_CR50",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gao, T., Yen, H., Yu, J. & Chen, D. Enabling large language models to generate text with citations. In Proc. 2023 Conference on Empirical Methods in Natural Language Processing (eds Bouamor, H., Pino, J. & Bali, K.) 6465–6488 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.emnlp-main.398"
+      },
+      {
+        "key": "10072_CR51",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kamalloo, E., Upadhyay, S. & Lin, J. Towards robust QA evaluation via open LLMs. In Proc. 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR ’24) 2811–2816 (ACM, 2024).",
+        "DOI": "10.1145/3626772.3657675"
+      },
+      {
+        "key": "10072_CR52",
+        "unstructured": "Kim, S. et al. The BiGGen Bench: a principled benchmark for fine-grained evaluation of language models with language models. In Proc. 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) (eds Chiruzzo, L., Ritter, A. & Wang, L.) 5877–5919 (ACL, 2025)."
+      },
+      {
+        "key": "10072_CR53",
+        "unstructured": "Phan, L. N. et al. SciFive: a text-to-text transformer model for biomedical literature. Preprint at https://arxiv.org/abs/2106.03598 (2021)."
+      },
+      {
+        "key": "10072_CR54",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yuan, H. et al. BioBART: pretraining and evaluation of a biomedical generative language model. In Proc. 21st Workshop on Biomedical Language Processing (eds Demner-Fushman, D., Cohen, K. B., Ananiadou, S. & Tsujii, J.) 97–109 (ACL, 2022).",
+        "DOI": "10.18653/v1/2022.bionlp-1.9"
+      },
+      {
+        "key": "10072_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "bbac409",
+        "DOI": "10.1093/bib/bbac409",
+        "volume": "23",
+        "author": "R Luo",
+        "year": "2022",
+        "unstructured": "Luo, R. et al. BioGPT: generative pre-trained transformer for biomedical text generation and mining. Brief. Bioinform. 23, bbac409 (2022).",
+        "journal-title": "Brief. Bioinform."
+      },
+      {
+        "key": "10072_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "172",
+        "DOI": "10.1038/s41586-023-06291-2",
+        "volume": "620",
+        "author": "K Singhal",
+        "year": "2023",
+        "unstructured": "Singhal, K. et al. Large language models encode clinical knowledge. Nature 620, 172–180 (2023).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10072_CR57",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xie, Q. et al. Medical foundation large language models for comprehensive text analysis and beyond. npj Digital Med. 8, 141 (2025).",
+        "DOI": "10.1038/s41746-025-01533-1"
+      },
+      {
+        "key": "10072_CR58",
+        "unstructured": "Wu, C., Zhang, X., Zhang, Y., Wang, Y. & Xie, W. PMC-LLaMA: further finetuning LLaMA on medical papers. Preprint at https://arxiv.org/abs/2304.14454v1 (2023)."
+      },
+      {
+        "key": "10072_CR59",
+        "unstructured": "Chen, Z. et al. MEDITRON-70B: scaling medical pretraining for large language models. Preprint at https://arxiv.org/abs/2311.16079 (2023)."
+      },
+      {
+        "key": "10072_CR60",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Luo, Y. et al. BioMedGPT: open multimodal generative pre-trained transformer for biomedicine. IEEE J. Biomed. Health Inform. https://doi.org/10.1109/JBHI.2024.3505955 (2024).",
+        "DOI": "10.1109/JBHI.2024.3505955"
+      },
+      {
+        "key": "10072_CR61",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang, K. et al. BiomedGPT: a generalist vision-language foundation model for diverse biomedical tasks. Nat. Med. 30, 3129–3141 (2024).",
+        "DOI": "10.1038/s41591-024-03185-2"
+      },
+      {
+        "key": "10072_CR62",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Labrak, Y. et al. BioMistral: a collection of open-source pretrained large language models for medical domains. In Findings of the Association for Computational Linguistics: ACL 2024 (eds Ku, L.-W., Martins, A. & Srikumar, V.) 5848–5864 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.findings-acl.348"
+      },
+      {
+        "key": "10072_CR63",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deng, C. et al. K2: a foundation language model for geoscience knowledge understanding and utilization. In Proc. 17th ACM Int. Conf. Web Search and Data Mining (WSDM ’24) 161–170 (ACM, 2024).",
+        "DOI": "10.1145/3616855.3635772"
+      },
+      {
+        "key": "10072_CR64",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nguyen, T. D. et al. AstroLLaMA: towards specialized foundation models in astronomy. In Proc. Second Workshop on Information Extraction from Scientific Publications (eds Ghosal, T. et al.) 49–55 (ACL, 2023).",
+        "DOI": "10.18653/v1/2023.wiesp-1.7"
+      },
+      {
+        "key": "10072_CR65",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang, D. et al. SciInstruct: a self-reflective instruction annotated dataset for training scientific language models. In Proc. 38th Int. Conf. Neural Information Processing Systems (NIPS ’24) (eds Globerson, A. et al.) 1443–1473 (Curran Associates, 2024).",
+        "DOI": "10.52202/079017-0046"
+      },
+      {
+        "key": "10072_CR66",
+        "unstructured": "Cai, H. et al. Uni-SMART: Universal Science Multimodal Analysis and Research Transformer. Preprint at https://arxiv.org/abs/2403.10301 (2024)."
+      },
+      {
+        "key": "10072_CR67",
+        "unstructured": "Microsoft Research AI4Science, Microsoft Azure Quantum. The impact of large language models on scientific discovery: a preliminary study using GPT-4. Preprint at https://arxiv.org/abs/2311.07361 (2023)."
+      },
+      {
+        "key": "10072_CR68",
+        "doi-asserted-by": "publisher",
+        "first-page": "e202311983",
+        "DOI": "10.1002/anie.202311983",
+        "volume": "62",
+        "author": "Z Zheng",
+        "year": "2023",
+        "unstructured": "Zheng, Z. et al. A GPT-4 reticular chemist for guiding MOF discovery. Angew. Chem. Int. Ed. 62, e202311983 (2023).",
+        "journal-title": "Angew. Chem. Int. Ed."
+      },
+      {
+        "key": "10072_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "101008",
+        "DOI": "10.1115/1.4062773",
+        "volume": "90",
+        "author": "NR Brodnik",
+        "year": "2023",
+        "unstructured": "Brodnik, N. R. et al. Perspective: Large language models in applied mechanics. J. Appl. Mech. 90, 101008 (2023).",
+        "journal-title": "J. Appl. Mech."
+      },
+      {
+        "key": "10072_CR70",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li, J. et al. The dawn after the dark: an empirical study on factuality hallucination in large language models. In Proc. 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (eds Ku, L.-W., Martins, A. & Srikumar, V.) 10879–10899 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.acl-long.586"
+      },
+      {
+        "key": "10072_CR71",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baek, J., Jauhar, S. K., Cucerzan, S. & Hwang, S. J. ResearchAgent: iterative research idea generation over scientific literature with large language models. In Proc. 2025 Conf. Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) (eds Chiruzzo, L., Ritter, A. & Wang, L.) 6709–6738 (ACL, 2025).",
+        "DOI": "10.18653/v1/2025.naacl-long.342"
+      },
+      {
+        "key": "10072_CR72",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang, Z. et al. Large language models for automated open-domain scientific hypotheses discovery. In Findings of the Association for Computational Linguistics: ACL 2024 (eds Ku, L.-W., Martins, A. & Srikumar, V.) 13545–13565 (ACL, 2024).",
+        "DOI": "10.18653/v1/2024.findings-acl.804"
+      },
+      {
+        "key": "10072_CR73",
+        "unstructured": "Huang, Q., Vora, J., Liang, P. & Leskovec, J. MLAgentBench: evaluating language agents on machine learning experimentation. In Proc. 41st Int. Conf. Machine Learning (eds Salakhutdinov, R. et al.) 20271–20309 (PMLR, 2024)."
+      },
+      {
+        "key": "10072_CR74",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tian, M. et al. SciCode: a research coding benchmark curated by scientists. In Proc. 38th Int. Conf. Neural Information Processing Systems (NIPS ’24) (eds Globerson, A. et al.) 30624–30650 (Curran Associates, 2024).",
+        "DOI": "10.52202/079017-0963"
+      },
+      {
+        "key": "10072_CR75",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, Y. et al. AutoSurvey: large language models can automatically write surveys. In Proc. 38th Int. Conf. Neural Information Processing Systems (NIPS ’24) (eds Globerson, A. et al.) 115119–115145 (Curran Associates, 2024).",
+        "DOI": "10.52202/079017-3655"
+      },
+      {
+        "key": "10072_CR76",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dasigi, P. et al. A dataset of information-seeking questions and answers anchored in research papers. In Proc. 2021 Conf. North American Chapter of the Association for Computational Linguistics: Human Language Technologies (eds Toutanova, K. et al.) 4599–4610 (ACL, 2021).",
+        "DOI": "10.18653/v1/2021.naacl-main.365"
+      },
+      {
+        "key": "10072_CR77",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu, Y., Dong, Y. & Charlin, L., Multi-XScience: a large-scale dataset for extreme multi-document summarization of scientific articles. In Proc. 2020 Conf. Empirical Methods in Natural Language Processing (EMNLP) (eds Webber, B., Cohn, T., He, Y. & Liu, Y.) 8068–8074 (ACL, 2020).",
+        "DOI": "10.18653/v1/2020.emnlp-main.648"
+      }
+    ],
+    "container-title": [
+      "Nature"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41586-025-10072-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41586-025-10072-4",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41586-025-10072-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          11
+        ]
+      ],
+      "date-time": "2026-03-11T10:02:58Z",
+      "timestamp": 1773223378000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41586-025-10072-4"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          4
+        ]
+      ]
+    },
+    "references-count": 77,
+    "journal-issue": {
+      "issue": "8103",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            26
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10072"
+    ],
+    "URL": "https://doi.org/10.1038/s41586-025-10072-4",
+    "relation": {},
+    "ISSN": [
+      "0028-0836",
+      "1476-4687"
+    ],
+    "issn-type": [
+      {
+        "value": "0028-0836",
+        "type": "print"
+      },
+      {
+        "value": "1476-4687",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "16 February 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "17 December 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "4 February 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 March 2026",
+        "order": 5,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Update",
+        "order": 6,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "In the version of this article initially published, the Acknowledgements did not include thanks to DARPA for support (agreement no. HR00112520300) as is now amended in the HTML and PDF versions of the article.",
+        "order": 7,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T18:50:34Z",
+      "timestamp": 1790275834653,
+      "version": "4.1.0"
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/2023.findings-acl.824",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2023-08-05T00:57:42Z",
+      "timestamp": 1691197062000
+    },
+    "page": "13003-13051",
+    "source": "Crossref",
+    "is-referenced-by-count": 193,
+    "title": [
+      "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them"
+    ],
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Mirac",
+        "family": "Suzgun",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nathan",
+        "family": "Scales",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nathanael",
+        "family": "Schärli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Gehrmann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yi",
+        "family": "Tay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hyung Won",
+        "family": "Chung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aakanksha",
+        "family": "Chowdhery",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Quoc",
+        "family": "Le",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ed",
+        "family": "Chi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Denny",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1643",
+    "event": {
+      "name": "Findings of the Association for Computational Linguistics: ACL 2023",
+      "location": "Toronto, Canada",
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2023,
+            7
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "Findings of the Association for Computational Linguistics: ACL 2023"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2023-08-05T01:38:35Z",
+      "timestamp": 1691199515000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://aclanthology.org/2023.findings-acl.824"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/2023.findings-acl.824",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T22:44:03Z",
+      "timestamp": 1790289843080,
+      "version": "4.1.0"
+    },
+    "reference-count": 2,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              6
+            ]
+          ],
+          "date-time": "2023-02-06T00:00:00Z",
+          "timestamp": 1675641600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 23596,
+        "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          1958,
+          7,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Summary</jats:title>\n               <jats:p>A theory is developed for experiments with mixtures of q components whose purpose is the empirical prediction of the response to any mixture of the components, when the response depends only on the proportion of the components and not on the total amount.</jats:p>",
+    "DOI": "10.1111/j.2517-6161.1958.tb00299.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2018-12-07T05:04:52Z",
+      "timestamp": 1544159092000
+    },
+    "page": "344-360",
+    "source": "Crossref",
+    "is-referenced-by-count": 919,
+    "title": [
+      "Experiments with Mixtures"
+    ],
+    "prefix": "10.1093",
+    "volume": "20",
+    "author": [
+      {
+        "given": "Henry",
+        "family": "Scheffé",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of California , Berkeley"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2024090920480172700_cit1",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.2307/3001794",
+        "article-title": "Use of the simplex design in the study of joint action of related hormones",
+        "volume": "11",
+        "author": "Claringbold",
+        "year": "1955",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "2024090920480172700_cit2",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1093/biomet/35.1-2.58",
+        "article-title": "Tests of significance in multivariate analysis",
+        "volume": "35",
+        "author": "Rao",
+        "year": "1948",
+        "journal-title": "Biometrika"
+      }
+    ],
+    "container-title": [
+      "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.2517-6161.1958.tb00299.x",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2517-6161.1958.tb00299.x",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://academic.oup.com/jrsssb/article-pdf/20/2/344/49096463/jrsssb_20_2_344.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/jrsssb/article-pdf/20/2/344/49096463/jrsssb_20_2_344.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2024-09-09T21:12:04Z",
+      "timestamp": 1725916324000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/jrsssb/article/20/2/344/7027344"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1958,
+          7,
+          1
+        ]
+      ]
+    },
+    "references-count": 2,
+    "journal-issue": {
+      "issue": "2",
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1958,
+            7,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1111/j.2517-6161.1958.tb00299.x",
+    "relation": {},
+    "ISSN": [
+      "1369-7412",
+      "1467-9868"
+    ],
+    "issn-type": [
+      {
+        "value": "1369-7412",
+        "type": "print"
+      },
+      {
+        "value": "1467-9868",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          1958,
+          7
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          1958,
+          7,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T01:44:54Z",
+      "timestamp": 1790300694285,
+      "version": "4.1.0"
+    },
+    "reference-count": 51,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1982,
+              1,
+              1
+            ]
+          ],
+          "date-time": "1982-01-01T00:00:00Z",
+          "timestamp": 378691200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          1982,
+          1,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Summary</jats:title>\n                  <jats:p>The simplex plays an important role as sample space in many practical situations where compositional data, in the form of proportions of some whole, require interpretation. It is argued that the statistical analysis of such data has proved difficult because of a lack both of concepts of independence and of rich enough parametric classes of distributions in the simplex. A variety of independence hypotheses are introduced and interrelated, and new classes of transformed-normal distributions in the simplex are provided as models within which the independence hypotheses can be tested through standard theory of parametric hypothesis testing. The new concepts and statistical methodology are illustrated by a number of applications.</jats:p>",
+    "DOI": "10.1111/j.2517-6161.1982.tb01195.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2018-12-07T02:05:39Z",
+      "timestamp": 1544148339000
+    },
+    "page": "139-160",
+    "source": "Crossref",
+    "is-referenced-by-count": 3108,
+    "title": [
+      "The Statistical Analysis of Compositional Data"
+    ],
+    "prefix": "10.1093",
+    "volume": "44",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Aitchison",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Hong Kong"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2024090920525254000_rssb01195-cit-0001",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1007/BF01031393",
+        "article-title": "A new approach to null correlations of proportions",
+        "volume": "13",
+        "author": "Aitchison",
+        "year": "1981",
+        "journal-title": "J. Math. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0002",
+        "doi-asserted-by": "crossref",
+        "first-page": "147",
+        "DOI": "10.1007/978-94-009-8549-0_11",
+        "article-title": "Distributions on the simplex for the analysis of neutrality",
+        "volume-title": "Statistical Distributions in Scientific Work",
+        "author": "Aitchison",
+        "year": "1981"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0003",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1007/978-94-009-8552-0_29",
+        "article-title": "Some distribution theory related to the analysis of subjective performance in inferential tasks",
+        "volume-title": "Statistical Distributions in Scientific Work",
+        "author": "Aitchison",
+        "year": "1981"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0004",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1093/biomet/63.1.1",
+        "article-title": "Statistical diagnosis when the cases are not classified with certainty",
+        "volume": "63",
+        "author": "Aitchison",
+        "year": "1976",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0005",
+        "volume-title": "The Lognormal Distribution.",
+        "author": "Aitchison",
+        "year": "1957"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0006",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.2307/2335470",
+        "article-title": "Logistic-normal distributions: some properties and uses",
+        "volume": "67",
+        "author": "Aitchison",
+        "year": "1980",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0007",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1093/biomet/59.1.19",
+        "article-title": "Separate sample logistic discrimination",
+        "volume": "59",
+        "author": "Andrrson",
+        "year": "1972",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0008",
+        "first-page": "95",
+        "article-title": "Methods for assessing multivariate normality",
+        "volume-title": "Multivariate Analysis",
+        "author": "Andrews",
+        "year": "1973"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0009",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1111/j.2517-6161.1964.tb00553.x",
+        "article-title": "The analysis of transformations (with discussion)",
+        "volume": "26",
+        "author": "Box",
+        "year": "1964",
+        "journal-title": "J. R. Statist. Soc. B"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0010",
+        "first-page": "177",
+        "article-title": "Models of consumer behaviour",
+        "volume": "82",
+        "author": "Brown",
+        "year": "1972",
+        "journal-title": "Econ. J."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0011",
+        "doi-asserted-by": "crossref",
+        "first-page": "4185",
+        "DOI": "10.1029/JZ065i012p04185",
+        "article-title": "On correlations between variables of constant sum",
+        "volume": "65",
+        "author": "Chayes",
+        "year": "1960",
+        "journal-title": "J. Geophys. Res."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0012",
+        "doi-asserted-by": "crossref",
+        "first-page": "440",
+        "DOI": "10.1086/626835",
+        "article-title": "Numerical correlation and petrographic variation",
+        "volume": "70",
+        "author": "Chayes",
+        "year": "1962",
+        "journal-title": "J. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0013",
+        "volume-title": "Ratio Correlation.",
+        "author": "Chayes",
+        "year": "1971"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0014",
+        "doi-asserted-by": "crossref",
+        "first-page": "692",
+        "DOI": "10.1086/627204",
+        "article-title": "An approximate statistical test for correlations between proportions",
+        "volume": "74",
+        "author": "Chayes",
+        "year": "1966",
+        "journal-title": "J. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0015",
+        "first-page": "1290",
+        "article-title": "Sedimentation in an Arctic lake",
+        "volume": "38",
+        "author": "Coakley",
+        "year": "1968",
+        "journal-title": "J. Sedimentary Petrology"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0016",
+        "doi-asserted-by": "crossref",
+        "first-page": "194",
+        "DOI": "10.1080/01621459.1969.10500963",
+        "article-title": "Concepts of independence for proportions with a generalization of the Dirichlet distribution",
+        "volume": "64",
+        "author": "Connor",
+        "year": "1969",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0017",
+        "first-page": "57",
+        "article-title": "Some procedures associated with the logistic qualitative response curve",
+        "volume-title": "Research Papers in Statistics: Festschrift for J. Neyman",
+        "author": "Cox",
+        "year": "1966"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0018",
+        "volume-title": "The Analysis of Binary Data.",
+        "author": "Cox",
+        "year": "1970"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0019",
+        "first-page": "467",
+        "article-title": "Null correlations for proportions",
+        "volume": "3",
+        "author": "Darroch",
+        "year": "1969",
+        "journal-title": "J. Math. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "467",
+        "DOI": "10.1111/j.2517-6161.1974.tb01023.x",
+        "article-title": "F-independence and null correlations of continuous, bounded-sum, positive variables",
+        "volume": "36",
+        "author": "Darroch",
+        "year": "1974",
+        "journal-title": "J. R. Statist. Soc. B"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0021",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1007/BF02312478",
+        "article-title": "Null correlations for proportions II",
+        "volume": "2",
+        "author": "Darroch",
+        "year": "1970",
+        "journal-title": "J. Math. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0022",
+        "doi-asserted-by": "crossref",
+        "first-page": "641",
+        "DOI": "10.1080/01621459.1971.10482324",
+        "article-title": "A characterization of the Dirichlet distribution",
+        "volume": "66",
+        "author": "Darroch",
+        "year": "1971",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0023",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1007/BF01031740",
+        "article-title": "No-association of proportions",
+        "volume": "10",
+        "author": "Darroch",
+        "year": "1978",
+        "journal-title": "J. Math. Geol."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0024",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1111/j.2517-6161.1979.tb01052.x",
+        "article-title": "Conditional independence in statistical theory (with discussion)",
+        "volume": "41",
+        "author": "Dawid",
+        "year": "1979",
+        "journal-title": "J. R. Statist. Soc. B"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "313",
+        "DOI": "10.2307/2528164",
+        "article-title": "A general maximum likelihood discriminant",
+        "volume": "23",
+        "author": "Day",
+        "year": "1967",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0026",
+        "doi-asserted-by": "crossref",
+        "first-page": "524",
+        "DOI": "10.2307/2232051",
+        "article-title": "Specification and testing in applied demand analysis",
+        "volume": "88",
+        "author": "Deaton",
+        "year": "1978",
+        "journal-title": "Econ. J."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0027",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511805653",
+        "volume-title": "Economics and Consumer Behavior.",
+        "author": "Deaton",
+        "year": "1980"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0028",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.2307/2528963",
+        "article-title": "Robust estimates, residuals and outlier detection with multiresponse data",
+        "volume": "28",
+        "author": "Gnanadesikan",
+        "year": "1972",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0029",
+        "doi-asserted-by": "crossref",
+        "first-page": "244",
+        "DOI": "10.2307/1907719",
+        "article-title": "Additive preferences",
+        "volume": "28",
+        "author": "Houthakker",
+        "year": "1960",
+        "journal-title": "Econometrica"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0030",
+        "first-page": "681",
+        "article-title": "Multivariate distributions which have beta conditional distributions",
+        "volume": "70",
+        "author": "James",
+        "year": "1975",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0031",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.1007/978-94-009-8549-0_9",
+        "article-title": "Distributions associated with neutrality properties for random proportions",
+        "volume-title": "Statistical Distributions in Scientific Work",
+        "author": "James",
+        "year": "1981"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0032",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1214/aos/1176344900",
+        "article-title": "A new characterization of the Dirichlet distribution through neutrality",
+        "volume": "8",
+        "author": "James",
+        "year": "1980",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0033",
+        "volume-title": "Theory of Probability.",
+        "author": "Jeffreys",
+        "year": "1961"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0034",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1093/biomet/36.1-2.149",
+        "article-title": "Systems of frequency curves generated by methods of translation",
+        "volume": "36",
+        "author": "Johnson",
+        "year": "1949",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0035",
+        "volume-title": "Distributions in Statistics. Continuous Multivariate Distributions.",
+        "author": "Johnson",
+        "year": "1972"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0036",
+        "first-page": "502",
+        "article-title": "Composition and origin of glacial till Mexico and Kasoog quadrangles, New York",
+        "volume": "32",
+        "author": "Kaiser",
+        "year": "1962",
+        "journal-title": "J. Sedimentary Petrology"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0037",
+        "doi-asserted-by": "crossref",
+        "first-page": "581",
+        "DOI": "10.1093/biomet/59.3.581",
+        "article-title": "A Bayesian method for histograms",
+        "volume": "59",
+        "author": "Leonard",
+        "year": "1973",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0038",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1111/j.1468-0084.1976.mp38001001.x",
+        "article-title": "Income, household size and price changes 1953-1973",
+        "volume": "38",
+        "author": "Leser",
+        "year": "1976",
+        "journal-title": "Oxford Bull. Econ. Statist."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0039",
+        "first-page": "367",
+        "article-title": "The law of the geometric mean",
+        "volume": "29",
+        "author": "McAlister",
+        "year": "1879",
+        "journal-title": "Proc. R. Soc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0040",
+        "first-page": "431",
+        "article-title": "An algorithm for least-squares estimation of non-linear parameters",
+        "volume": "11",
+        "author": "Marquardt",
+        "year": "1963",
+        "journal-title": "J. SIAM"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0041",
+        "volume-title": "Multivariate Statistical Methods.",
+        "author": "Morrison",
+        "year": "1976"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0042",
+        "first-page": "65",
+        "article-title": "On the compound multinomial distribution, the multivariate β-distribution and correlations among proportions",
+        "volume": "49",
+        "author": "Mosimann",
+        "year": "1962",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0043",
+        "doi-asserted-by": "crossref",
+        "first-page": "630",
+        "DOI": "10.1080/01621459.1970.10481136",
+        "article-title": "Size allometry: size and shape variables with characterizations of the lognormal and generalized gamma distributions",
+        "volume": "65",
+        "author": "Mosimann",
+        "year": "1970",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0044",
+        "first-page": "187",
+        "article-title": "Statistical problems of size and shape. I. Biological applications and basic theorems",
+        "volume-title": "Statistical Distributions in Scientific Work",
+        "author": "Mosimann",
+        "year": "1975"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0045",
+        "first-page": "219",
+        "article-title": "Statistical problems of size and shape. II. Characterizations of the lognormal, gamma and Dirichlet distributions",
+        "volume-title": "Statistical Distributions in Scientific Work",
+        "author": "Mosimann",
+        "year": "1975"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0046",
+        "first-page": "489",
+        "article-title": "Mathematical contributions to the theory of evolution. On a form of spurious correlations which may arise when indices are used in the measurement of organs",
+        "volume": "60",
+        "author": "Pearson",
+        "year": "1897",
+        "journal-title": "Proc. R. Soc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0047",
+        "first-page": "22",
+        "article-title": "On the correlation of percentage values",
+        "volume": "126",
+        "author": "Sarmanov",
+        "year": "1959",
+        "journal-title": "Doklady Akad. Nauk. SSSR"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0048",
+        "doi-asserted-by": "crossref",
+        "first-page": "730",
+        "DOI": "10.1080/01621459.1974.10480196",
+        "article-title": "EDF statistics for goodness of fit and some comparisons",
+        "volume": "69",
+        "author": "Stephens",
+        "year": "1974",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0049",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1093/petrology/13.2.219",
+        "article-title": "Major element chemical variation in the Eocene lavas of the Isle of Skye, Scotland",
+        "volume": "13",
+        "author": "Thompson",
+        "year": "1972",
+        "journal-title": "J. Petrology"
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1214/aoms/1177732360",
+        "article-title": "The large-sample distribution of the likelihood ratio for testing composite hypotheses",
+        "volume": "9",
+        "author": "Wilks",
+        "year": "1938",
+        "journal-title": "Ann. Math. Statist."
+      },
+      {
+        "key": "2024090920525254000_rssb01195-cit-0051",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.1080/01621459.1943.10501775",
+        "article-title": "Statistical laws of family expenditure",
+        "volume": "38",
+        "author": "Working",
+        "year": "1943",
+        "journal-title": "J. Amer. Statist. Assoc."
+      }
+    ],
+    "container-title": [
+      "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.2517-6161.1982.tb01195.x",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://academic.oup.com/jrsssb/article-pdf/44/2/139/49097906/jrsssb_44_2_139.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/jrsssb/article-pdf/44/2/139/49097906/jrsssb_44_2_139.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2024-09-09T17:41:44Z",
+      "timestamp": 1725903704000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/jrsssb/article/44/2/139/7027742"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1982,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 51,
+    "journal-issue": {
+      "issue": "2",
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1982,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1111/j.2517-6161.1982.tb01195.x",
+    "relation": {},
+    "ISSN": [
+      "1369-7412",
+      "1467-9868"
+    ],
+    "issn-type": [
+      {
+        "value": "1369-7412",
+        "type": "print"
+      },
+      {
+        "value": "1467-9868",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          1982,
+          1
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          1982,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T03:21:03Z",
+      "timestamp": 1790306463849,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "JSTOR",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Econometrica"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1978,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.2307/1913643",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          7,
+          5
+        ]
+      ],
+      "date-time": "2006-07-05T17:07:15Z",
+      "timestamp": 1152119235000
+    },
+    "page": "33",
+    "source": "Crossref",
+    "is-referenced-by-count": 13048,
+    "title": [
+      "Regression Quantiles"
+    ],
+    "prefix": "10.2307",
+    "volume": "46",
+    "author": [
+      {
+        "given": "Roger",
+        "family": "Koenker",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "suffix": "join(' '",
+        "given": "Gilbert",
+        "family": "Bassett",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1121",
+    "container-title": [
+      "Econometrica"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2018-04-18T11:26:24Z",
+      "timestamp": 1524050784000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.jstor.org/stable/1913643?origin=crossref"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1978,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            1978,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2307/1913643",
+    "relation": {},
+    "ISSN": [
+      "0012-9682"
+    ],
+    "issn-type": [
+      {
+        "value": "0012-9682",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1978,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T10:59:27Z",
+      "timestamp": 1790333967742,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "University of Chicago Press",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Political Economy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1974,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1086/260169",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T19:44:00Z",
+      "timestamp": 1027712640000
+    },
+    "page": "34-55",
+    "source": "Crossref",
+    "is-referenced-by-count": 7154,
+    "title": [
+      "Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition"
+    ],
+    "prefix": "10.1086",
+    "volume": "82",
+    "author": [
+      {
+        "given": "Sherwin",
+        "family": "Rosen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "200",
+    "container-title": [
+      "Journal of Political Economy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.journals.uchicago.edu/doi/pdf/10.1086/260169",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          7
+        ]
+      ],
+      "date-time": "2018-04-07T12:34:19Z",
+      "timestamp": 1523104459000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.journals.uchicago.edu/doi/10.1086/260169"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1974,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            1974,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1086/260169"
+    ],
+    "URL": "https://doi.org/10.1086/260169",
+    "relation": {},
+    "ISSN": [
+      "0022-3808",
+      "1537-534X"
+    ],
+    "issn-type": [
+      {
+        "value": "0022-3808",
+        "type": "print"
+      },
+      {
+        "value": "1537-534X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1974,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T02:54:39Z",
+      "timestamp": 1790304879590,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "Institute of Mathematical Statistics",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Ann. Statist."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1979,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1214/aos/1176344552",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          12,
+          17
+        ]
+      ],
+      "date-time": "2007-12-17T15:20:07Z",
+      "timestamp": 1197904807000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 12787,
+    "title": [
+      "Bootstrap Methods: Another Look at the Jackknife"
+    ],
+    "prefix": "10.1214",
+    "volume": "7",
+    "author": [
+      {
+        "given": "B.",
+        "family": "Efron",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "108",
+    "container-title": [
+      "The Annals of Statistics"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://projecteuclid.org/download/pdf_1/euclid.aos/1176344552",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          6
+        ]
+      ],
+      "date-time": "2021-04-06T00:13:47Z",
+      "timestamp": 1617668027000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1979,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            1979,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1214/aos/1176344552",
+    "relation": {},
+    "ISSN": [
+      "0090-5364"
+    ],
+    "issn-type": [
+      {
+        "value": "0090-5364",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1979,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T02:43:12Z",
+      "timestamp": 1790304192962,
+      "version": "4.1.0"
+    },
+    "reference-count": 19,
+    "publisher": "Elsevier BV",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1977,
+              7,
+              1
+            ]
+          ],
+          "date-time": "1977-07-01T00:00:00Z",
+          "timestamp": 236563200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Econometrics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1977,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/0304-4076(77)90052-5",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T00:15:22Z",
+      "timestamp": 1027642522000
+    },
+    "page": "21-37",
+    "source": "Crossref",
+    "is-referenced-by-count": 6608,
+    "title": [
+      "Formulation and estimation of stochastic frontier production function models"
+    ],
+    "prefix": "10.1016",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Dennis",
+        "family": "Aigner",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "C.A.Knox",
+        "family": "Lovell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB1",
+        "doi-asserted-by": "crossref",
+        "first-page": "568",
+        "DOI": "10.2307/2525845",
+        "article-title": "Efficiency estimation of production functions",
+        "volume": "13",
+        "author": "Afriat",
+        "year": "1972",
+        "journal-title": "International Economic Review"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB2",
+        "first-page": "826",
+        "article-title": "On estimating the industry production function",
+        "volume": "58",
+        "author": "Aigner",
+        "year": "1968",
+        "journal-title": "American Economic Review"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.2307/2525708",
+        "article-title": "On the estimation of production frontiers",
+        "volume": "17",
+        "author": "Aigner",
+        "year": "1976",
+        "journal-title": "International Economic Review"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB4",
+        "doi-asserted-by": "crossref",
+        "first-page": "997",
+        "DOI": "10.2307/1914031",
+        "article-title": "Regression analysis when the dependent variable is truncated normal",
+        "volume": "41",
+        "author": "Amemiya",
+        "year": "1973",
+        "journal-title": "Econometrica"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB5",
+        "doi-asserted-by": "crossref",
+        "first-page": "557",
+        "DOI": "10.1214/aoms/1177729751",
+        "article-title": "Estimating the mean and variance of normal populations from singly and doubly truncated samples",
+        "volume": "21",
+        "author": "Cohen",
+        "year": "1950",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB6",
+        "doi-asserted-by": "crossref",
+        "first-page": "225",
+        "DOI": "10.1093/biomet/44.1-2.225",
+        "article-title": "On the solution of estimating equations for truncated and censored samples from normal populations",
+        "volume": "44",
+        "author": "Cohen",
+        "year": "1957",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB7",
+        "series-title": "Ph.D. dissertation",
+        "article-title": "An application of bounded nonparametric estimating functions to the analysis of bank cost and production functions",
+        "author": "Dugger",
+        "year": "1974"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB8",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.2307/2343100",
+        "article-title": "The measurement of productive efficiency",
+        "volume": "120",
+        "author": "Farrell",
+        "year": "1957",
+        "journal-title": "Journal of the Royal Statistical Society"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB9",
+        "series-title": "Nonlinear methods in econometrics",
+        "author": "Goldfeld",
+        "year": "1971"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB10",
+        "doi-asserted-by": "crossref",
+        "first-page": "226",
+        "DOI": "10.1214/aoms/1177729439",
+        "article-title": "Maximum likelihood estimation in truncated samples",
+        "volume": "23",
+        "author": "Halperin",
+        "year": "1952",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB11",
+        "doi-asserted-by": "crossref",
+        "first-page": "457",
+        "DOI": "10.2307/2281315",
+        "article-title": "Estimation in the truncated normal distribution",
+        "volume": "47",
+        "author": "Halperin",
+        "year": "1952",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB12",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.2307/2527783",
+        "article-title": "Maximum likelihood estimation from incomplete data",
+        "volume": "14",
+        "author": "Hartley",
+        "year": "1958",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB13",
+        "series-title": "Manufacturing production functions in the United States",
+        "author": "Hildebrand",
+        "year": "1965"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB14",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.2307/1905432",
+        "article-title": "Random simultaneous equations and the theory of production",
+        "volume": "12",
+        "author": "Marschak",
+        "year": "1944",
+        "journal-title": "Econometrica"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB15",
+        "doi-asserted-by": "crossref",
+        "first-page": "515",
+        "DOI": "10.2307/2525875",
+        "article-title": "Estimating the efficiency of production",
+        "volume": "15",
+        "author": "Richmond",
+        "year": "1974",
+        "journal-title": "International Economic Review"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB16",
+        "doi-asserted-by": "crossref",
+        "first-page": "238",
+        "DOI": "10.2307/1924032",
+        "article-title": "On the statistical estimation of parametric frontier production functions",
+        "volume": "58",
+        "author": "Schmidt",
+        "year": "1976",
+        "journal-title": "Review of Economics and Statistics"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB17",
+        "doi-asserted-by": "crossref",
+        "first-page": "776",
+        "DOI": "10.1086/259787",
+        "article-title": "Using a probabilistic frontier production function to measure technical efficiency",
+        "volume": "79",
+        "author": "Timmer",
+        "year": "1971",
+        "journal-title": "Journal of Political Economy"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB18",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.2307/1266751",
+        "article-title": "The sum of values from a normal and a truncated normal distribution",
+        "volume": "6",
+        "author": "Weinstein",
+        "year": "1964",
+        "journal-title": "Technometrics"
+      },
+      {
+        "key": "10.1016/0304-4076(77)90052-5_BIB20",
+        "doi-asserted-by": "crossref",
+        "first-page": "784",
+        "DOI": "10.2307/1910099",
+        "article-title": "Specification and estimation of Cobb–Douglas production functions",
+        "volume": "34",
+        "author": "Zellner",
+        "year": "1966",
+        "journal-title": "Econometrica"
+      }
+    ],
+    "container-title": [
+      "Journal of Econometrics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:0304407677900525?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:0304407677900525?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2019-04-12T10:51:30Z",
+      "timestamp": 1555066290000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/0304407677900525"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1977,
+          7
+        ]
+      ]
+    },
+    "references-count": 19,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            1977,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "0304407677900525"
+    ],
+    "URL": "https://doi.org/10.1016/0304-4076(77)90052-5",
+    "relation": {},
+    "ISSN": [
+      "0304-4076"
+    ],
+    "issn-type": [
+      {
+        "value": "0304-4076",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1977,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "DOI": "10.1016/0014-2921(77)90017-4",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T01:32:16Z",
+      "timestamp": 1790299936353,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "University of Illinois Press",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "The American Journal of Psychology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1904,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.2307/1412107",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          22
+        ]
+      ],
+      "date-time": "2006-04-22T02:18:20Z",
+      "timestamp": 1145672300000
+    },
+    "page": "201",
+    "source": "Crossref",
+    "is-referenced-by-count": 4136,
+    "title": [
+      "\"General Intelligence,\" Objectively Determined and Measured"
+    ],
+    "prefix": "10.5406",
+    "volume": "15",
+    "author": [
+      {
+        "given": "C.",
+        "family": "Spearman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "3673",
+    "container-title": [
+      "The American Journal of Psychology"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          8
+        ]
+      ],
+      "date-time": "2022-12-08T16:38:57Z",
+      "timestamp": 1670517537000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.jstor.org/stable/1412107?origin=crossref"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1904,
+          4
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            1904,
+            4
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2307/1412107",
+    "relation": {},
+    "ISSN": [
+      "0002-9556"
+    ],
+    "issn-type": [
+      {
+        "value": "0002-9556",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1904,
+          4
+        ]
+      ]
+    }
+  }
+]

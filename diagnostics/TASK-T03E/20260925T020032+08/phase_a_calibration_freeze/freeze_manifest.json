@@ -1,0 +1,366 @@
+{
+  "task": "TASK-T03E",
+  "candidate_version": "t03e_candidate_v1",
+  "primary_result": "D = Q_baseline",
+  "candidate_formula": "C = Q_baseline * (1 - 0.02 * P)",
+  "lambda_primary": 0.02,
+  "lambda_grid_report_only": [
+    0.0,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "design_domains": [
+    "book",
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "active_domains": [
+    "c4",
+    "commoncrawl",
+    "wikipedia"
+  ],
+  "domains_status": {
+    "book": "INSUFFICIENT_CALIBRATION",
+    "c4": "ACTIVE",
+    "commoncrawl": "ACTIVE",
+    "wikipedia": "ACTIVE"
+  },
+  "thresholds": {
+    "c4": {
+      "a2": 10.068169900367069,
+      "b2": 17.10498651675123,
+      "lo2": 0.0,
+      "hi2": 20.920010222335815,
+      "a3": 10.236220472440944,
+      "b3": 19.403145377828928,
+      "lo3": 0.0,
+      "hi3": 24.635815775809203,
+      "n_valid": 8041
+    },
+    "commoncrawl": {
+      "a2": 6.255321791464951,
+      "b2": 10.793186190584164,
+      "lo2": 0.3948158072041508,
+      "hi2": 12.849200304645828,
+      "a3": 5.977031450843722,
+      "b3": 10.383268579318552,
+      "lo3": 0.0,
+      "hi3": 12.759083312427727,
+      "n_valid": 7688
+    },
+    "wikipedia": {
+      "a2": 17.880728527955668,
+      "b2": 26.539302446642385,
+      "lo2": 0.0,
+      "hi2": 32.692207792207554,
+      "a3": 13.0,
+      "b3": 26.0,
+      "lo3": 0.0,
+      "hi3": 32.0,
+      "n_valid": 8013
+    }
+  },
+  "support_ranges": {
+    "c4": {
+      "lo2": 0.0,
+      "hi2": 20.920010222335815,
+      "lo3": 0.0,
+      "hi3": 24.635815775809203
+    },
+    "commoncrawl": {
+      "lo2": 0.3948158072041508,
+      "hi2": 12.849200304645828,
+      "lo3": 0.0,
+      "hi3": 12.759083312427727
+    },
+    "wikipedia": {
+      "lo2": 0.0,
+      "hi2": 32.692207792207554,
+      "lo3": 0.0,
+      "hi3": 32.0
+    }
+  },
+  "acceptance_thresholds": {
+    "candidate_version": "t03e_candidate_v1",
+    "primary_result": "D = Q_baseline",
+    "confirmatory_candidate": "C = Q_baseline * (1 - 0.02 * P), P = (p_top2gram + p_top3gram)/2",
+    "lambda_primary": 0.02,
+    "lambda_grid_report_only": [
+      0.0,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "design_domains_exact": [
+      "book",
+      "c4",
+      "commoncrawl",
+      "wikipedia"
+    ],
+    "domain_exact_matching": "character-exact string equality only; no fuzzy/alias/merge/fallback",
+    "active_domain_rules": {
+      "min_calibration_valid_n": 1000,
+      "quantile_requirement": "q0.99 > q0.95 for both indicators",
+      "statuses": [
+        "ACTIVE",
+        "DESIGN_LABEL_ABSENT",
+        "INSUFFICIENT_CALIBRATION",
+        "CALIBRATION_DEGENERATE"
+      ]
+    },
+    "bootstrap": {
+      "replicates": 200,
+      "master_seed": 20260925,
+      "sub_seed_rule": "int(sha256(\"20260925|<domain>|<replicate>\")[:16],16) -> PCG64",
+      "unit": "unique A1-calibration valid keys per domain, sampled with replacement",
+      "reference_rows": "same full-calibration valid rows for every replicate",
+      "requirements": {
+        "joInt_pass_min": 190,
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    "holdout_gates": {
+      "min_valid_n": 200,
+      "spearman_min": 0.98,
+      "top10_jaccard_min": 0.85,
+      "penalty_mean_abs_tol": 0.05,
+      "out_of_support_max": 0.05,
+      "status_priority": [
+        "FAIL",
+        "REJECT_KEEP_D",
+        "INSUFFICIENT_EVIDENCE_KEEP_D",
+        "ACCEPT_STABILITY"
+      ]
+    },
+    "extension_gates": {
+      "min_valid_n": 200,
+      "spearman_min": 0.98,
+      "top10_jaccard_min": 0.85,
+      "out_of_support_max": 0.05,
+      "statuses": [
+        "MIGRATION_FAILED_KEEP_D",
+        "INSUFFICIENT_EXTENSION_EVIDENCE",
+        "NOT_TESTED_FOR_ACTIVE_CORRECTION"
+      ]
+    },
+    "overlap_rule": "same key + same domain + identical Q_baseline/top2/top3 + same candidate version => abs(Q_C_left - Q_C_right) <= 1e-12",
+    "prohibited": [
+      "A/B candidates",
+      "PCA/entropy/CRITIC",
+      "lambda learning",
+      "bonus",
+      "clip",
+      "domain renaming/merging/fallback",
+      "using Q_baseline as a supervision target",
+      "fitting a new RegMix bridge model"
+    ]
+  },
+  "bootstrap_summary": [
+    {
+      "domain": "c4",
+      "n": 8041,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "commoncrawl",
+      "n": 7688,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    },
+    {
+      "domain": "wikipedia",
+      "n": 8013,
+      "replicates": 200,
+      "joint_pass_count": 200,
+      "required": 190,
+      "status": "PASS",
+      "thresholds": {
+        "penalty_mae_max": 0.1,
+        "rank_spearman_min": 0.98,
+        "top10_jaccard_min": 0.85
+      }
+    }
+  ],
+  "rng": {
+    "algorithm": "numpy PCG64 via numpy.random.default_rng",
+    "master_seed": 20260925,
+    "sub_seed_rule": "int(sha256(\"20260925|<domain>|<replicate>\")[:16],16)"
+  },
+  "row_selection_rule": "A1_calibration & is_unique_first & Q_valid & finite(Q_baseline, top2, top3)",
+  "joint_key_definition": "key_sha256 = sha256(json([str(id), str(sub_path)]))",
+  "source_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+  "source_manifest_sha256": "9e9393ab5120a342eac9ff5446a13fd2674728cc7de37e190621bb25d835e20a",
+  "source_code_sha256": {
+    "t03e_preregistered_rule_sensitivity.py": "a7765badb37417ee5ab7a8441dbdbc2a7c992ec015953dfa38d9d56497327265",
+    "t03e_verify.py": "750800f329da5d01a3970816d887bf3ee40ac1f557523cd4cfc8ae5bdd24e9e3",
+    "t03e_selftest.py": "bc9bd0772af7b56819cbc842d09469fd79794ec3b8dd7d4584566d0422e3ffb3",
+    "requirements_frozen.txt": "25297de048f1456f9c530c3d2849f111d405d3f933ea92975c4d7fdafecd43df"
+  },
+  "config_sha256": "6ec3fff8d9643abe1b73bc449024d51a2f9e26dae507fe2f115c9707c58fd912",
+  "config_file": "run_config.json",
+  "phase_a_conclusion": "CALIBRATION_QUALIFIED_PENDING_VALIDATION",
+  "frozen_files": [
+    {
+      "path": "phase_a_calibration_freeze/artificial_tests.json",
+      "bytes": 3098,
+      "sha256": "02ddb264ad8417e8ce705a3311bec3cc41dd94811ff31847aff35748845711b6"
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_seed_manifest.csv",
+      "bytes": 84151,
+      "sha256": "9b3514744b20c04078d1c341967ed6ef7aaa36c6812466859312def8d5a6ceaf"
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_stability_detail.csv",
+      "bytes": 93800,
+      "sha256": "b678e9e31c88829096d239289952e4e2fc7b9d7767ec3b6e480d704bb7d34e73"
+    },
+    {
+      "path": "phase_a_calibration_freeze/bootstrap_stability_summary.csv",
+      "bytes": 151,
+      "sha256": "0a546a4cd3e7daaf31df723f0f251399a67b8bfa5ceb43fce04da042c235fcb8"
+    },
+    {
+      "path": "phase_a_calibration_freeze/calibration_candidate_rows.parquet",
+      "bytes": 8720500,
+      "sha256": "19d099d3d5ac457acb1ec8133f5c401e5bdd532f458e50081ecfbaec783e41aa"
+    },
+    {
+      "path": "phase_a_calibration_freeze/calibration_feature_profile.csv",
+      "bytes": 1131,
+      "sha256": "f45b32dfc1447225a6a8083f0ba33f61c5e14b2a566bf1a648cd611da2175b01"
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/code_snapshot_manifest.json",
+      "bytes": 726,
+      "sha256": "6fbd1607dbecb0cd18ba4d1782e345be8042e8faa687a0cd40bbf0c9cf124f3b"
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/requirements_frozen.txt",
+      "bytes": 207,
+      "sha256": "25297de048f1456f9c530c3d2849f111d405d3f933ea92975c4d7fdafecd43df"
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_preregistered_rule_sensitivity.py",
+      "bytes": 131669,
+      "sha256": "a7765badb37417ee5ab7a8441dbdbc2a7c992ec015953dfa38d9d56497327265"
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_selftest.py",
+      "bytes": 9072,
+      "sha256": "bc9bd0772af7b56819cbc842d09469fd79794ec3b8dd7d4584566d0422e3ffb3"
+    },
+    {
+      "path": "phase_a_calibration_freeze/code_snapshot/t03e_verify.py",
+      "bytes": 73528,
+      "sha256": "750800f329da5d01a3970816d887bf3ee40ac1f557523cd4cfc8ae5bdd24e9e3"
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_active_domains.csv",
+      "bytes": 365,
+      "sha256": "91bf929edf8234eb3b6d2ce132dabfaf4150f045c6e57ff3bdd2b4236f59bcd6"
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_primary_spec.json",
+      "bytes": 2560,
+      "sha256": "3233daf58cb717d30466f54a1c5fabb8ea9146bd2d6498ae15678ca898b5760a"
+    },
+    {
+      "path": "phase_a_calibration_freeze/frozen_thresholds.csv",
+      "bytes": 871,
+      "sha256": "df44ae65e0396c3a598e450090ca91571bb87feabe545f527021cc030d8c7aea"
+    },
+    {
+      "path": "phase_a_calibration_freeze/lambda_sensitivity_calibration.csv",
+      "bytes": 542,
+      "sha256": "c420a5db6838f167abe2f57fe321d002164db048b78e5bc9e557ba3a6629d7a6"
+    },
+    {
+      "path": "phase_a_calibration_freeze/phase_a_summary.json",
+      "bytes": 3776,
+      "sha256": "3542026ef8e92d55e049b0f36e6d2eda94b3ca16bf38196f29951ab6f0b11c46"
+    },
+    {
+      "path": "phase_a_calibration_freeze/preregistered_acceptance.json",
+      "bytes": 2260,
+      "sha256": "a97595a1da44d0c88cd74b76ceef5c617299b9665c0fc573e04e93a25ec7c496"
+    },
+    {
+      "path": "phase_a_calibration_freeze/prior_exposure.md",
+      "bytes": 1553,
+      "sha256": "5baa31b1b7cb66714f8a5cf56041acafdf43851d8af5abe8c88264b9b1f48b8e"
+    },
+    {
+      "path": "metadata_preflight/artificial_tests.json",
+      "bytes": 3098,
+      "sha256": "ae30e520271a58a392f816521803d8a08516a3fb93723d2b8c6d526d236d5f76"
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_inventory.csv",
+      "bytes": 226,
+      "sha256": "0e485009013a919dc0cf1004c86f0c35bac0b432affe92956a0da79d890f6d88"
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_label_match.csv",
+      "bytes": 220,
+      "sha256": "65f96ea5a8ed68a476d1d2d442690f5e89a6585c95108ebf9ee4b32c249b2ec2"
+    },
+    {
+      "path": "metadata_preflight/calibration_domain_labels.csv",
+      "bytes": 262,
+      "sha256": "d6ecc41ffaa98b11ec2b5732ab5e0be3edddee61feb007dc24026eae1d5e0945"
+    },
+    {
+      "path": "metadata_preflight/calibration_key_commitment.json",
+      "bytes": 374,
+      "sha256": "c2fc1df4d968584a3f4d854737cc923e3d3e819a23c415e4d86e387e179a4fac"
+    },
+    {
+      "path": "metadata_preflight/calibration_rows.parquet",
+      "bytes": 8262835,
+      "sha256": "abc44e5b2b4ef50d35faad837472e74f95d185007ff9ea6648cde2254085a77d"
+    },
+    {
+      "path": "metadata_preflight/input_manifest_preflight.json",
+      "bytes": 7784,
+      "sha256": "037bf2f96c0e3133afcca2a1584ec8ba36c0699f69da8d88373379aa510a0280"
+    },
+    {
+      "path": "metadata_preflight/preflight_summary.json",
+      "bytes": 4778,
+      "sha256": "bd19104a37ecdb99fab17bc2ef12f9a5c11efe60006fc99a357338b24da21b38"
+    },
+    {
+      "path": "run_config.json",
+      "bytes": 5022,
+      "sha256": "6ec3fff8d9643abe1b73bc449024d51a2f9e26dae507fe2f115c9707c58fd912"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 1115,
+      "sha256": "0a27971ace00d7df4d33b7c7402fe179e844df0b5df39489348a39a143fc07c7"
+    }
+  ],
+  "frozen_file_count": 28,
+  "generated_local": "2026-09-25T02:00:35+08:00",
+  "pid": 2804
+}

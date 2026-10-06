@@ -1,0 +1,24 @@
+{
+  "asset": "fig02_q1_quality_validation",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "solution/outputs/quality_q01c/20260924T215718+08/run_config.json",
+      "fields": "primary_q_rule; group_rule",
+      "unit": "0-1",
+      "denominator": "11-feature strict complete case"
+    },
+    {
+      "file": "paper/FINAL_PAPER_PATCH_CONTRACT.md",
+      "fields": "Q1 final denominator and A2/A3 passed criteria",
+      "unit": "count",
+      "denominator": "physical rows and unique keys reported separately"
+    },
+    {
+      "file": "diagnostics/TASK-G1/20260925T223500+08/manual_validation_statistics.csv",
+      "fields": "effect_size; ci_low_2_5pct; ci_high_97_5pct; n_a",
+      "unit": "Spearman rho",
+      "denominator": "pairwise complete author ratings"
+    }
+  ]
+}

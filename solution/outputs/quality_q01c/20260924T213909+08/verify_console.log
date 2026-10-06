@@ -1,0 +1,21 @@
+[verify] V01_totals: PASS
+[verify] V02_q_valid_equivalence: PASS
+[verify] V03_group_and_Q_recomputation: PASS
+[verify] V04_no_weight_reallocation: PASS
+[verify] V05_q_range_and_missing_anchors: PASS
+[verify] V06_usable_group_distribution: PASS
+[verify] V07_missing_and_overlap_anchors: PASS
+[verify] V08_coverage_fields: PASS
+[verify] V09_q_std_effective_n_and_divisor: PASS
+[verify] V10_disagreement_denominators: PASS
+[verify] V11_sensitivity_parameters_recomputed: PASS
+[verify] V12_parameter_sources_no_leakage: PASS
+[verify] V13_sensitivity_separation_and_coverage: PASS
+[verify] V14_summary_denominators_long_table: PASS
+[verify] V15_sensitivity_comparison_consistency: PASS
+[verify] V16_protected_artifacts_unchanged: PASS
+[verify] V17_no_content_columns: PASS
+[verify] V18_strict_json: PASS
+[verify] V19_resume_and_checkpoint_evidence: FAIL
+[verify] V20_anchors_vs_Q01A_R1: NOT_CHECKED
+[verify] summary: {"n_checks": 20, "n_pass": 18, "n_fail": 1, "n_not_checked": 1}

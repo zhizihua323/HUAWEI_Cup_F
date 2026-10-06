@@ -1,0 +1,12 @@
+{
+  "asset": "fig01_framework",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "paper/FINAL_RESULT_INDEX_V2.md",
+      "fields": "Q1-Q4 final interface and eligibility",
+      "unit": "none",
+      "denominator": "not applicable"
+    }
+  ]
+}

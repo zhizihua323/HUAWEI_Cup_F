@@ -1,0 +1,68 @@
+{
+  "run_id": "20260924T150854+08",
+  "phase": "repair_from_artifacts",
+  "status": "COMPLETED",
+  "errors": [],
+  "event_cross_check_mismatches": [],
+  "anchors": {
+    "raw_anomaly_record_counts_by_file_field": {
+      "A1|modernbert_professionalism": 5,
+      "A1|modernbert_reasoning": 13,
+      "A3_github|modernbert_professionalism": 1
+    },
+    "raw_anomaly_union_records": {
+      "A1": 18,
+      "A3_github": 1
+    },
+    "raw_anomaly_union_total": 19,
+    "two_field_union_records": 19,
+    "two_field_intersection_records": 0,
+    "nan_element_totals_by_file_field": {
+      "A1|modernbert_professionalism": 30,
+      "A1|modernbert_reasoning": 78,
+      "A3_github|modernbert_professionalism": 6
+    },
+    "nan_element_grand_total": 114,
+    "all_unique_raw_union": 19,
+    "all_unique_raw_intersection_two_fields": 0,
+    "all_unique_denominators": {
+      "n_total": 261086,
+      "n_valid_0": 0,
+      "n_valid_1": 0,
+      "n_valid_2": 19,
+      "n_valid_3": 261067,
+      "n_range_defined": 261086,
+      "n_std0_defined": 261086,
+      "n_false_from_missing_range": 0,
+      "n_q_nonmissing": 261067,
+      "n_q_missing": 19
+    },
+    "denominator_rule_check": {
+      "q_std_n_effective": 261067,
+      "q_std_variance_divisor": 261066,
+      "range_mean_n_effective": 261086,
+      "range_std_n_effective": 261086,
+      "false_from_missing_range": 0
+    }
+  },
+  "tables": {
+    "raw_field_counts_corrected": 264,
+    "raw_mask_corrections": 19,
+    "missing_patterns_corrected": 395,
+    "missing_pairwise_corrected": 51750,
+    "summary_denominators_corrected": 650,
+    "missing_concentration": 254,
+    "changes": 794
+  },
+  "rows": {
+    "row_masks": 272505,
+    "parsed": 272505
+  },
+  "boundary_evidence": {
+    "compressed_inputs_opened": 0,
+    "compressed_inputs_hashed": 0,
+    "unchanged_columns_outside_permitted": {}
+  },
+  "numeric_Q_computed": false,
+  "strategy_selected": false
+}

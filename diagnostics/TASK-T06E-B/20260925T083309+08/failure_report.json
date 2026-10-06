@@ -1,0 +1,8 @@
+{
+  "reason": "Single-thread profile execution projected to exceed practical runtime; no solver/model/gate change",
+  "correction": "Restart formal run with thread-level parallel execution of identical fixed profile tasks",
+  "status": "SUPERSEDED_ENGINEERING_RUN",
+  "scientific_result": "NOT_REACHED",
+  "profile_evidence_preserved": "Only stage log; profile arrays had not yet been persisted",
+  "completed": "B1/B6 full and folds; B1 M0 E profile only"
+}

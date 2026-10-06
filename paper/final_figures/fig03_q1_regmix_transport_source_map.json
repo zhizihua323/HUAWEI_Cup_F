@@ -1,0 +1,30 @@
+{
+  "asset": "fig03_q1_regmix_transport",
+  "transformation": "display_only_no_refit_no_clipping",
+  "sources": [
+    {
+      "file": "solution/outputs/mixture/linear_test_1m_predictions.csv",
+      "fields": "all actual_metric/* and pred_metric/*",
+      "unit": "Loss",
+      "denominator": "256 mixtures x 13 domains"
+    },
+    {
+      "file": "solution/outputs/mixture/linear_test_60m_predictions.csv",
+      "fields": "all actual_metric/* and pred_metric/*",
+      "unit": "Loss",
+      "denominator": "256 mixtures x 13 domains"
+    },
+    {
+      "file": "solution/outputs/mixture/linear_test_1B_predictions.csv",
+      "fields": "all actual_metric/* and pred_metric/*",
+      "unit": "Loss",
+      "denominator": "64 mixtures x 13 domains"
+    },
+    {
+      "file": "solution/outputs/mixture/metrics.csv",
+      "fields": "n; rmse_all_domains; spearman_equal_domain_mean; role",
+      "unit": "Loss; rank correlation",
+      "denominator": "frozen scale-specific test sets"
+    }
+  ]
+}

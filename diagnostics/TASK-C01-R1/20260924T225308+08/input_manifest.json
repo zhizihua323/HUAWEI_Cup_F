@@ -1,0 +1,250 @@
+{
+  "task": "TASK-C01-R1",
+  "run_id": "20260924T225308+08",
+  "source_task": "TASK-C01",
+  "source_run_id": "20260924T175553+08",
+  "inputs": [
+    {
+      "input": "data_inventory.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/data_inventory.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\data_inventory.csv",
+      "bytes": 3170,
+      "sha256": "c14e30f58019e69543a992b6059c4caa2b4e54c3a3e2294ae235b99b1b361dc3",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "c14e30f58019e69543a992b6059c4caa2b4e54c3a3e2294ae235b99b1b361dc3",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "field_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/field_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\field_audit.csv",
+      "bytes": 23843,
+      "sha256": "aef9a5fcb701d31053a198b2b7e1175062acd3a194cd623be3d004bc629c874d",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "aef9a5fcb701d31053a198b2b7e1175062acd3a194cd623be3d004bc629c874d",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "missingness.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/missingness.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\missingness.csv",
+      "bytes": 7612,
+      "sha256": "2b26aba55fca5c22e22a1a913ca5252304ff329f9d615776a8ffd26727d60586",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "2b26aba55fca5c22e22a1a913ca5252304ff329f9d615776a8ffd26727d60586",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "duplicate_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/duplicate_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\duplicate_audit.csv",
+      "bytes": 8987,
+      "sha256": "75afca3edb2d48801708ec6bc6e498318253ea6238447f0a61be328111de9fce",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "75afca3edb2d48801708ec6bc6e498318253ea6238447f0a61be328111de9fce",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "model_identity_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/model_identity_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\model_identity_audit.csv",
+      "bytes": 3073,
+      "sha256": "94e9d0cbe02ca6c16eb652cfd8b96f2e9a00db8eee272f1592589a2084a6a9cf",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "94e9d0cbe02ca6c16eb652cfd8b96f2e9a00db8eee272f1592589a2084a6a9cf",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "date_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/date_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\date_audit.csv",
+      "bytes": 1995,
+      "sha256": "fcbe960e4252b930204fbdff522b6e57ac9b05da5ea5143fb9bf34ae19f938e6",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "fcbe960e4252b930204fbdff522b6e57ac9b05da5ea5143fb9bf34ae19f938e6",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "unit_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/unit_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\unit_audit.csv",
+      "bytes": 13733,
+      "sha256": "d9b0a4d4c3e1504f9edb331921e19471eb656155d21180b21a374419ab515165",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "d9b0a4d4c3e1504f9edb331921e19471eb656155d21180b21a374419ab515165",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c5_c6_comparability_audit.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c5_c6_comparability_audit.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c5_c6_comparability_audit.csv",
+      "bytes": 2050,
+      "sha256": "6e725dcb658c478e377096e8995615958484441aa01127d33b9a8d4908882200",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "6e725dcb658c478e377096e8995615958484441aa01127d33b9a8d4908882200",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c8_parse_log.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_parse_log.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_parse_log.csv",
+      "bytes": 1379498,
+      "sha256": "68d1f602c7a38e3b4059c8b26623a8aa0af00f4cae8e442ee21f55e70a53ab1b",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "68d1f602c7a38e3b4059c8b26623a8aa0af00f4cae8e442ee21f55e70a53ab1b",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c8_corrupt_files.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_corrupt_files.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_corrupt_files.csv",
+      "bytes": 3082,
+      "sha256": "7ed2b6d7de145dfb0c84d119e37525b178eb36bb554ece8c2b13ef918ab1dcf5",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "7ed2b6d7de145dfb0c84d119e37525b178eb36bb554ece8c2b13ef918ab1dcf5",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "supporting_evidence"
+    },
+    {
+      "input": "c8_directory_file_counts.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_directory_file_counts.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_directory_file_counts.csv",
+      "bytes": 74387,
+      "sha256": "6434a16da4e7864d7b34444d02bc956e393d70d2273b1933e028f316d1168c97",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "6434a16da4e7864d7b34444d02bc956e393d70d2273b1933e028f316d1168c97",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "supporting_evidence"
+    },
+    {
+      "input": "c8_task_inventory.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_task_inventory.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_task_inventory.csv",
+      "bytes": 9280,
+      "sha256": "0fb4c3cbb4f614d3301f1c0d952447a8dc562b59f1de587eee26eb537b0eb954",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "0fb4c3cbb4f614d3301f1c0d952447a8dc562b59f1de587eee26eb537b0eb954",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c8_group_scores_all_runs.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_group_scores_all_runs.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_group_scores_all_runs.csv",
+      "bytes": 3498107,
+      "sha256": "9540c25aacbca83f83e3884772649a4c1af50cb5e89d56c1609178fd194cb812",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "9540c25aacbca83f83e3884772649a4c1af50cb5e89d56c1609178fd194cb812",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "supporting_evidence"
+    },
+    {
+      "input": "c8_model_task_aggregate.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_model_task_aggregate.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_model_task_aggregate.csv",
+      "bytes": 4833226,
+      "sha256": "ce1c91872d681a5c183142ef56b34960a9cf63fb6dba790d5c4117d3ab05c111",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "ce1c91872d681a5c183142ef56b34960a9cf63fb6dba790d5c4117d3ab05c111",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c8_model_wide_canonical.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_model_wide_canonical.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_model_wide_canonical.csv",
+      "bytes": 415132,
+      "sha256": "a540d47b83a67b00112cd24525caa641a989f03338187fd5f2628f371bb6e882",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "a540d47b83a67b00112cd24525caa641a989f03338187fd5f2628f371bb6e882",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "supporting_evidence"
+    },
+    {
+      "input": "join_coverage.csv",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/join_coverage.csv",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\join_coverage.csv",
+      "bytes": 5153,
+      "sha256": "6a0e9aacd41fc3460b6998a06dcb84a999d7f453e0978e75a1a10fac7df2ec24",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "6a0e9aacd41fc3460b6998a06dcb84a999d7f453e0978e75a1a10fac7df2ec24",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "c8_leaf_metrics.csv.gz",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/c8_leaf_metrics.csv.gz",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\c8_leaf_metrics.csv.gz",
+      "bytes": 3911064,
+      "sha256": "e1a00625956658ff66c020d8f4e586b0b1044cde0755c6ee2ddf9a7a1bfe6762",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "e1a00625956658ff66c020d8f4e586b0b1044cde0755c6ee2ddf9a7a1bfe6762",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "supporting_evidence"
+    },
+    {
+      "input": "run_summary.json",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/run_summary.json",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\run_summary.json",
+      "bytes": 6260,
+      "sha256": "bfec246727bc1ced9e4830f194119d007171c3d4be7693d2bdf1e14a325f73f5",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "bfec246727bc1ced9e4830f194119d007171c3d4be7693d2bdf1e14a325f73f5",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "checks.json",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/checks.json",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\checks.json",
+      "bytes": 16034,
+      "sha256": "5cf067b47ff3cc1c9e58a15166c0e49aa6d73049b4b822a7807072081f4e7f02",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "5cf067b47ff3cc1c9e58a15166c0e49aa6d73049b4b822a7807072081f4e7f02",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "output_manifest.json",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/output_manifest.json",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\output_manifest.json",
+      "bytes": 10820,
+      "sha256": "3596610cc4aae2034dac91347d0132fb90a910920b6ad45f285bede32242b970",
+      "frozen_manifest_present": false,
+      "frozen_manifest_sha256": null,
+      "matches_frozen_manifest": false,
+      "frozen_manifest_role": null
+    },
+    {
+      "input": "handoff.md",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/handoff.md",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\handoff.md",
+      "bytes": 14810,
+      "sha256": "5b6b9377064ba0ae9394f68eb3c7c7fb77febf9acb087c7806c982536bde238b",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "5b6b9377064ba0ae9394f68eb3c7c7fb77febf9acb087c7806c982536bde238b",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "required_output"
+    },
+    {
+      "input": "audit_c01.py",
+      "path": "diagnostics/TASK-C01/20260924T175553+08/audit_c01.py",
+      "full_path": "C:\\Users\\28762\\Desktop\\The Huawei Cup National Postgraduate Mathematical Modeling Contest\\GPT_Workspace\\diagnostics\\TASK-C01\\20260924T175553+08\\audit_c01.py",
+      "bytes": 117027,
+      "sha256": "ac9f45660d13d37aa6e55ec1d11f786ba069c73fe7c0dd96007c03863925590d",
+      "frozen_manifest_present": true,
+      "frozen_manifest_sha256": "ac9f45660d13d37aa6e55ec1d11f786ba069c73fe7c0dd96007c03863925590d",
+      "matches_frozen_manifest": true,
+      "frozen_manifest_role": "execution_code"
+    }
+  ]
+}
